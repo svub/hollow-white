@@ -3,7 +3,7 @@
     // addItem {{ element }} {{ item }}
     h3 {{ item.title }}
     img(:src="item.thumbnail")
-    button(@click="addItem(element)" v-if="!added") add
+    button(@click="addItem({ item: element })" v-if="!added") add
 </template>
 <script lang="ts">
   import { Component, Vue, Prop } from 'vue-property-decorator';

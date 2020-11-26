@@ -20,9 +20,9 @@ import { log } from '../../shared/util';
       'paragraph-element': ParagraphElement,
       'if-element': IfElement,
       'else-element': ElseElement,
-      'add-item-element': AddItemElement,
-      'remove-item-element': RemoveItemElement,
-      'change-state-element': ChangeStateElement,
+      'addItem-element': AddItemElement,
+      'removeItem-element': RemoveItemElement,
+      'state-element': ChangeStateElement,
     }
   })
   export default class TextElement extends Vue {
