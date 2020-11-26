@@ -132,6 +132,9 @@ export default new Vuex.Store({
       commit('setSection', link);
       commit('addToPath');
     },
+    changeState({ commit }, payload: { state: ChangeState }) {
+      commit('changeState', payload);
+    },
     addItem({ commit }, payload: { item: AddItem }) {
       commit('addItem', payload);
     },

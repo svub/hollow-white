@@ -12,7 +12,7 @@
   import AddItemElement from './AddItemElement.vue';
   import RemoveItemElement from './RemoveItemElement.vue';
   import ChangeStateElement from './ChangeStateElement.vue';
-import { log } from '../../shared/util';
+  import { log } from '../../shared/util';
 
   @Component({
     name: 'TextElement',
