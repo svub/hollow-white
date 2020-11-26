@@ -1,5 +1,9 @@
 module.exports = {
+  plugins: [
+    '@babel/plugin-syntax-dynamic-import'
+  ],
   presets: [
-    '@vue/cli-plugin-babel/preset'
+    process.env.VUE_PLATFORM === 'web' ? '@vue/app' : {}, 
+    ['@babel/env', { targets: { esmodules: true } }]
   ]
 }

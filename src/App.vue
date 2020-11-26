@@ -1,28 +1,59 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+<template web lang="pug">
+  main(:class="page")
+    transition
+      Start(key="1" v-if="page === 'start'")
+      Read(key="2" v-if="page === 'read'")
+    HelloWorld(:msg="msg")
+</template>
+<template native>
+  <Page>
+    <ActionBar :title="navbarTitle"/>
+    <GridLayout rows="auto, auto">
+      <HelloWorld :msg="msg"/>
+    </GridLayout>
+  </Page>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+  import { Component, Vue } from 'vue-property-decorator';
+  import HelloWorld from '~/components/HelloWorld.vue';
+  import Start from '~/views/Start.vue';
+  import Read from '~/views/Read.vue';
+  import { State, Action } from 'vuex-class';
+  import book from './book';
+  import config from './config';
 
-@Component({
-  components: {
-    HelloWorld,
-  },
-})
-export default class App extends Vue {}
+  const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
+
+  @Component({
+    name: 'home',
+    components: {
+      HelloWorld,
+      Start,
+      Read,
+    },
+  })
+  export default class App extends Vue {
+    private navbarTitle = `App.vue`;
+    private msg = `Mode=${VUE_APP_MODE} and Platform=${VUE_APP_PLATFORM}`;
+
+    @State page
+    @Action init
+
+    created() {
+      this.init({ book, config });
+    }
+  }
 </script>
 
-<style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+<style web lang="stylus">
+  @import '~styles/style-one';
+
+  .w-page
+    height 100%
+    width 100%
+
+</style>
+<style native lang="stylus">
+  @import '~styles/style-one';
 </style>
