@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import { Book, Chapter, Link, Reference, Section, Item, State, Config, ChangeState, AddItem, RemoveItem } from '../shared/entities';
 import { equal, load, log, warn } from '../shared/util';
-import { error } from '../../../importer/src/shared/util';
+import { error } from '../shared/util';
 
 Vue.use(Vuex)
 
