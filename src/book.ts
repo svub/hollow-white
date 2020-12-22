@@ -1,6 +1,6 @@
 import { Book } from "./shared/entities";
 
-const book: Book = {
+const book: Book = ({
   "title": "Hollow White",
   "chapters": [
     {
@@ -13663,6 +13663,6 @@ const book: Book = {
       ]
     }
   ]
-} as Book;
+} as unknown) as Book;
 
 export default book;
