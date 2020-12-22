@@ -3,6 +3,7 @@
     transition
       Start(key="1" v-if="page === 'start'")
       Read(key="2" v-if="page === 'read'")
+      Tester(key="3" v-if="page === 'test'")
     HelloWorld(:msg="msg")
 </template>
 <template native>
@@ -19,9 +20,11 @@
   import HelloWorld from '~/components/HelloWorld.vue';
   import Start from '~/views/Start.vue';
   import Read from '~/views/Read.vue';
+  import Tester from '~/views/Tester.vue';
   import { State, Action } from 'vuex-class';
   import book from './book';
   import config from './config';
+import { warn } from './shared/util';
 
   const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
@@ -31,6 +34,7 @@
       HelloWorld,
       Start,
       Read,
+      Tester,
     },
   })
   export default class App extends Vue {
@@ -39,9 +43,14 @@
 
     @State page
     @Action init
+    @Action("page") setPage;
 
     created() {
       this.init({ book, config });
+      if (localStorage.getItem('runTester')) {
+        warn('running tester...');
+        this.setPage('test');
+      }
     }
   }
 </script>
