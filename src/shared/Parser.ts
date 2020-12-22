@@ -1,4 +1,5 @@
-import { Book, Chapter, Section, ElementType, Paragraph, If, Else, HasElements, Link, ChangeState, AddItem, RemoveItem } from './entities';
+import { Book, Chapter, Section, ElementType, Paragraph, If, Else, HasElements, Link, ChangeState, AddItem, RemoveItem,
+  SpecialLink, Style } from './entities';
 import { Token, TokenType } from './Lexer';
 
 export enum CommandType {
@@ -12,12 +13,18 @@ export enum CommandType {
   state = 'state',
   next = '>',
   jump = '>>',
+  special = '<',
+  comment = '#',
+  style = 'style',
+  endstyle = 'endstyle',
+  credits = 'credits',
 }
 
 export type Command = {
   type: string;
   fields: string[];
   line: number;
+  url?: string;
 };
 
 export class ParserError extends Error {
@@ -42,6 +49,12 @@ export default class Parser {
     let section: Section | null = null;
     let ifElement: If | null = null;
     let elseElement: Else | null = null;
+    let styleElement: Style | null = null;
+    // let specials: Chapter = {
+    //   id: '__specials__',
+    //   title: 'Special Sections',
+    //   sections: [],
+    // };
     const getTitle = (command: Command): string => {
       const next = tokens[this.position + 1];
       if (next.type !== TokenType.paragraph) {
@@ -51,7 +64,7 @@ export default class Parser {
       return next.data;
     }
     const topContainer = (token: Token, command?: Command): HasElements => {
-      const element = ([elseElement, ifElement, section].find(e => e !== null));
+      const element = ([styleElement, elseElement, ifElement, section].find(e => e !== null));
       if (!element) {
         if (command)
           this.error(`Found a "// ${command.type}" before first "// section"`, token, command);
@@ -76,6 +89,7 @@ export default class Parser {
             book = {
               title: getTitle(command),
               chapters: [],
+              specials: [],
             }
             break;
           case CommandType.chapter:
@@ -109,7 +123,8 @@ export default class Parser {
             section!.next.push(link);
             break;
           case CommandType.jump:
-            if (!section) this.error('Found a "// >" before first "// section"', token, command);
+            if (!chapter) this.error('Found a "// >>" before first "// chapter"', token, command);
+            if (!section) this.error('Found a "// >>" before first "// section"', token, command);
             const jump: Link = {
               title: command.fields.slice(2).join(' '),
               chapterId: command.fields[0], // cross chapter link
@@ -117,6 +132,16 @@ export default class Parser {
             };
             // TODO add related commands
             section!.next.push(jump);
+            break;
+          case CommandType.special:
+            if (!chapter) this.error('Found a "// <" before first "// chapter"', token, command);
+            if (!section) this.error('Found a "// <" before first "// section"', token, command);
+            const special: SpecialLink = {
+              title: command.fields.slice(1).join(' '),
+              id: command.fields[0],
+            };
+            // TODO add related commands
+            section!.next.push(special);
             break;
           case CommandType.state:
             const state: ChangeState = {
@@ -161,9 +186,35 @@ export default class Parser {
             if (!ifElement) this.error('Found "// endif" before "// if"', token, command);
             ifElement = elseElement = null;
             break;
+          case CommandType.comment:
+            break; // ignore comments
+          case CommandType.style:
+            if (styleElement) this.error('Found another "// if" before "// end if"', token, command);
+            styleElement = {
+              type: ElementType.style,
+              classes: command.fields.join(' '),
+              elements: [],
+            };
+            section!.elements.push(styleElement);
+            break;
+          case CommandType.endstyle:
+            if (!styleElement) this.error('Found "// endstyle" before "// style"', token, command);
+            styleElement = null;
+            break;
+          case CommandType.credits:
+            if (!book) this.error('Found a "// credits" before "// book"', token, command);
+            const credits = {
+              id: 'credits',
+              title: getTitle(command),
+              elements: [],
+              next: [],
+            };
+            book!.specials.push(credits);
+            section = credits;
+            break;
           default:
             this.error(`Command type ${command.type} not implemented`, token, command);
-          }
+        }
       } else { // text
         if (!section) this.error('Found a text before first "// section"', token);
         const element: Paragraph = {
@@ -193,6 +244,7 @@ export default class Parser {
       type: elements[0].toLocaleLowerCase(),
       fields: elements.slice(1),
       line: token.line,
+      ... (token.url ? { url: token.url } : {}),
     }
   }
 

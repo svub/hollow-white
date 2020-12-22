@@ -7,10 +7,11 @@ export type Token = {
   type: TokenType;
   data: string;
   line: number;
+  url?: string;
 }
 
 export default class Lexer {
-  tokenize(raw: string): Token[] {
+  tokenize(raw: string, url?: string): Token[] {
     let position = 0;
     let line = 0;
     const tokens: Token[] = [];
@@ -18,7 +19,7 @@ export default class Lexer {
       const commandStart = raw.indexOf('//', position);
       const textEnd = commandStart < 0 ? raw.length -1 : commandStart;
 
-      const text = raw.substring(position, textEnd).trim();
+      const text = raw.substring(position, textEnd);
       if (text.length > 0) {
         text.split("\n")
           .map(paragraph => paragraph.trim())
@@ -29,6 +30,7 @@ export default class Lexer {
                 type: TokenType.paragraph,
                 data: paragraph,
                 line,
+                url
               });
         });
       }
@@ -47,6 +49,7 @@ export default class Lexer {
         type: TokenType.command,
         data: raw.substring(commandStart + 2, commandEnd).trim(),
         line,
+        url,
       });
       position = commandEnd + 1;
     } while (position < raw.length);

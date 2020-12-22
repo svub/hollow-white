@@ -27,6 +27,7 @@ export interface Config {
 
 export interface Book extends Title {
   chapters: Chapter[];
+  specials: Section[];
 }
 
 export interface Chapter extends Entity, Title {
@@ -36,10 +37,12 @@ export interface Chapter extends Entity, Title {
 
 export interface Section extends HasElements, Entity, Title {
   elements: Element[];
-  next: Link[];
+  next: (Link | SpecialLink)[];
 }
 
 export interface Link extends Title, Reference {}
+
+export interface SpecialLink extends Title, Entity {}
 
 export interface Item extends Entity, Title {
   thumbnail: string;
@@ -59,6 +62,7 @@ export enum ElementType {
   addItem = 'addItem',
   removeItem = 'removeItem',
   state = 'state',
+  style = 'style',
 }
 
 export type Element = {
@@ -88,4 +92,8 @@ export interface ChangeState extends Element {
   type: ElementType.state;
   id: string;
   modifier: string;
+}
+export interface Style extends Element, HasElements {
+  type: ElementType.style;
+  classes: string;
 }

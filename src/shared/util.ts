@@ -18,8 +18,16 @@ function _log(f = console.log, message: string, ...data: any[]){
     f.apply(console, [message, ...(data.map(o => shortenString(JSON.stringify(o))))]);
 }
 
+function _logRaw(f = console.log, message: string, ...data: any[]){
+    f.apply(console, [message, ...(data.map(o => JSON.stringify(o, undefined, ' ')))]);
+}
+
 export function log(message: string, ...data: any[]) {
     _log(console.log, message, ...data);
+}
+
+export function logRaw(message: string, ...data: any[]) {
+    _logRaw(console.log, message, ...data);
 }
 
 export function warn(message: string, ...data: any[]) {
