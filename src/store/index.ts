@@ -60,10 +60,10 @@ export default new Vuex.Store({
         throw new Error("Book not defined - forgot to call init?");
       }
       const { chapter, section } = find(state.book, chapterId, sectionId);
-      log('setSection', chapterId, chapter.id, sectionId, section.id);
+      // log('setSection', chapterId, chapter.id, sectionId, section.id);
       state.chapter = chapter ?? state.book.chapters[0];
       state.section = section ?? state.chapter.sections[0];
-      log('setSection >', state.chapter.id, state.section.id);
+      log('setSection:', state.chapter.id, state.section.id);
 
       // persist
       localStorage.chapterId = JSON.stringify(state.chapter.id);

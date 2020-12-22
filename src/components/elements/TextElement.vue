@@ -12,7 +12,7 @@
   import AddItemElement from './AddItemElement.vue';
   import RemoveItemElement from './RemoveItemElement.vue';
   import ChangeStateElement from './ChangeStateElement.vue';
-  import { log } from '../../shared/util';
+  import { log, logRaw } from '../../shared/util';
 
   @Component({
     name: 'TextElement',
@@ -28,8 +28,12 @@
   export default class TextElement extends Vue {
     @Prop(Array) private elements: Element[];
 
+    // mounted() {
+    //   logRaw('text elemetents:', this.elements);
+    // }
+
     componentName(element: Element): string {
-      log('compName', `${element.type}-element`);
+      // log('compName', `${element.type}-element`);
       return `${element.type}-element`;
     }
   }
