@@ -11,7 +11,7 @@
 import { Component, Vue, Prop } from "vue-property-decorator";
 import { Store } from "vuex";
 import { Action, State } from "vuex-class";
-import { log } from "../../../../importer/src/shared/util";
+import { log } from "../../shared/util";
 import { AddItem, Item } from "../../shared/entities";
 import { AppState } from "../../store";
 
