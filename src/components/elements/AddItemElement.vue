@@ -1,6 +1,7 @@
 <template lang="pug">
 //- .add.item(v-observe-visibility="{ callback: visibilityChanged, once: true, intersection: { threshold: 1 } }")
 .add.item(v-observe-visibility="visibilityChanged")
+  //- addItem {{ element }} {{ item }}
   h3 {{ item.title }}
   img(:src="item.thumbnail")
   //- button(@click="addItem({ item: element })" v-if="!items[element.id]") add
@@ -24,7 +25,7 @@ export default class AddItemElement extends Vue {
   @Action addItem;
 
   visibilityChanged(isVisible, entry) {
-    log('AddItemElement.visibilityChanged: visible', isVisible);
+    log("AddItemElement.visibilityChanged: visible", isVisible);
     if (isVisible) {
       // wait two seconds before adding the item
       setTimeout(() => this.addItem({ item: this.element }), 2000);

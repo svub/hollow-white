@@ -1,25 +1,24 @@
 <template lang="pug">
-  .style(:class="element.classes")
-    TextElement.text(v-if="conditionFits" :elements="element.elements")
+.style(:class="element.classes")
+  //- style {{ element.classes }}
+  TextElement.text(:elements="element.elements")
 </template>
 
 <script lang="ts">
-  import { Component, Vue, Prop } from 'vue-property-decorator';
-  import { Style } from '../../shared/entities';
-  import { log } from '../../shared/util';
-  import { AppState } from '../../store';
-  import TextElement from './TextElement.vue';
+import { Component, Vue, Prop } from "vue-property-decorator";
+import { Style } from "../../shared/entities";
+import { log } from "../../shared/util";
+import { AppState } from "../../store";
+import TextElement from "./TextElement.vue";
 
-  @Component({
-    name: 'StyleElement',
-    components: {
-      TextElement: () => import('./TextElement.vue'),
-    },
-  })
-  export default class StyleElement extends Vue {
-    @Prop(Object) private element: Style;
-  }
-
+@Component({
+  name: "StyleElement",
+  components: {
+    TextElement: () => import("./TextElement.vue"),
+  },
+})
+export default class StyleElement extends Vue {
+  @Prop(Object) private element: Style;
+}
 </script>
-<style scoped lang="stylus">
-</style>
+<style scoped lang="stylus"></style>

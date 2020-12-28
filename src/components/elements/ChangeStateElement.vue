@@ -1,5 +1,5 @@
 <template lang="pug">
-// changeState {{ element }}
+//- changeState {{ element }}
 </template>
 
 <script lang="ts">

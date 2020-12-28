@@ -1,5 +1,5 @@
 <template lang="pug">
-// removeItem {{ element }}
+//- removeItem {{ element }}
 </template>
 
 <script lang="ts">

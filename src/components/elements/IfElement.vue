@@ -1,6 +1,6 @@
 <template lang="pug">
 .if
-  <!-- if {{ element.condition }} = {{ conditionFits }} -->
+  //- if {{ element.condition }} = {{ conditionFits }}
   TextElement.text(v-if="conditionFits", :elements="element.elements")
 </template>
 

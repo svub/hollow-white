@@ -1,7 +1,6 @@
 <template lang="pug">
 .else
-  // else {{ element.ifCondition }}
-  //- p else {{ element.ifCondition }} = {{ !conditionFits }}
+  //- else {{ element.ifCondition }} = {{ !conditionFits }}
   TextElement.text(v-if="!conditionFits", :elements="element.elements")
 </template>
 <script lang="ts">
