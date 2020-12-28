@@ -1,8 +1,11 @@
+declare const VueObserveVisibility: any;
+
 import Vue from 'vue';
 import App from './App.vue'
 import store from './store';
 
 Vue.config.productionTip = false;
+Vue.use(VueObserveVisibility);
 
 new Vue({
   store,
