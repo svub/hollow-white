@@ -1,6 +1,6 @@
-# Text Adventure App
+# Hollow White
 
-> Turn your writings into an interactive app that blends game and book into one experience.
+> WIP.
 
 ## Project setup
 
