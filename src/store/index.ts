@@ -13,6 +13,7 @@ export interface AppState {
   book: Book | null;
   chapter: Chapter | null;
   section: Section | null;
+  theme: string;
   path: Array<Reference>;
   items: { [id: string]: Item };
   states: { [id: string]: State };
@@ -25,6 +26,7 @@ const state: AppState = {
   book: null,
   chapter: null,
   section: null,
+  theme: '',
   path: [],
   items: {},
   states: {},
@@ -46,12 +48,16 @@ export default new Vuex.Store({
       localStorage.started = state.started = true;
     },
     init(state, setup: { book: Book; config: Config }) {
+      // load states
       for (const key in state) {
         const value = localStorage.getItem(key);
         if (value) {
           state[key] = JSON.parse(value);
         }
       }
+      // load theme
+      state.theme = localStorage.getItem('theme') ?? '';
+
       state.config = setup.config;
       state.book = setup.book;
     },
@@ -114,6 +120,12 @@ export default new Vuex.Store({
       // TODO is it enough to just remove the item? or do I need to recreate the map?
       Vue.delete(state.items, item.id);
     },
+    changeTheme(state, { theme }: { theme: string }) {
+      if (state.config?.themes && state.config?.themes?.indexOf(theme) < 0) {
+        return warn(`changeTheme: theme ${ theme } not configured`);
+      }
+      state.theme = theme;
+    },
   },
   actions: {
     init({ commit }, setup: { book: Book; config: Config }) {
@@ -140,6 +152,9 @@ export default new Vuex.Store({
     },
     removeItem({ commit }, payload: { item: RemoveItem }) {
       commit('removeItem', payload);
+    },
+    changeTheme({ commit }, theme: string) {
+      commit('changeTheme', { theme });
     },
   },
   modules: {

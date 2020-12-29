@@ -1,5 +1,5 @@
 <template web lang="pug">
-main(:class="page")
+main(:class="mainClass")
   transition
     Start(key="1", v-if="page === 'start'")
     Read(key="2", v-if="page === 'read'")
@@ -43,13 +43,14 @@ export default class App extends Vue {
   // private msg = `Mode=${VUE_APP_MODE} and Platform=${VUE_APP_PLATFORM}`;
 
   @State page;
+  @State theme;
   @Action init;
   @Action("page") setPage;
 
   created() {
     this.init({ book, config });
-    console.log(this.init);
-    console.log(this.$store);
+
+    // start on particular page for testing
     const testPage = localStorage.getItem("testPage");
     if (testPage) {
       warn("TEST: going to page ", testPage);
@@ -59,6 +60,10 @@ export default class App extends Vue {
     // for debugging and testing
     window["appState"] = appState;
   }
+
+  get mainClass(): string {
+    return `${this.page} ${this.theme}`;
+  }
 }
 </script>
 
@@ -66,11 +71,10 @@ export default class App extends Vue {
 @import '~styles/main';
 
 main {
-  height 100%
-  width 100%
-  max-width 60em
-  margin auto
+  height: 100%;
+  width: 100%;
+  max-width: 60em;
+  margin: auto;
 }
 </style>
-<style native lang="stylus">
-</style>
+<style native lang="stylus"></style>
