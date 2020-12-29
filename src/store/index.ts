@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { Book, Chapter, Link, Reference, Section, Item, State, Config, ChangeState, AddItem, RemoveItem } from '../shared/entities';
-import { equal, load, log, warn } from '../shared/util';
+import { equal, log, warn, load, store, loadAll } from '../shared/util';
 import { error } from '../shared/util';
 
 Vue.use(Vuex)
@@ -45,18 +45,18 @@ export default new Vuex.Store({
       state.page = page;
     },
     start(state) {
-      localStorage.started = state.started = true;
+      store('started', state.started = true);
     },
     init(state, setup: { book: Book; config: Config }) {
       // load states
       for (const key in state) {
-        const value = localStorage.getItem(key);
+        const value = load(key);
         if (value) {
-          state[key] = JSON.parse(value);
+          state[key] = value;
         }
       }
       // load theme, use default, or none
-      state.theme = localStorage.getItem('theme') ?? setup.config?.themes?.[0] ?? '';
+      state.theme = load('theme') ?? setup.config?.themes?.[0] ?? '';
 
       state.config = setup.config;
       state.book = setup.book;
@@ -72,8 +72,8 @@ export default new Vuex.Store({
       log('setSection:', state.chapter.id, state.section.id);
 
       // persist
-      localStorage.chapterId = JSON.stringify(state.chapter.id);
-      localStorage.sectionId = JSON.stringify(state.section.id);
+      store('chapterId', state.chapter.id);
+      store('sectionId', state.section.id);
     },
     addToPath(state) {
       if (!state.chapter) {
@@ -87,7 +87,7 @@ export default new Vuex.Store({
         warn("Trying to add same state to path", state.path, state.chapter.id, state.section.id);
       } else {
         state.path.push(ref);
-        localStorage.path = JSON.stringify(state.path);
+        store('path', state.path);
       }
     },
     changeState(appState, { state }: { state: ChangeState }) {
@@ -125,13 +125,13 @@ export default new Vuex.Store({
         return warn(`changeTheme: theme ${ theme } not configured`);
       }
       state.theme = theme;
-      localStorage.setItem('theme', theme);
+      store('theme', theme);
     },
   },
   actions: {
     init({ commit }, setup: { book: Book; config: Config }) {
       commit('init', setup);
-      commit('setSection', load('chapterId', 'sectionId'));
+      commit('setSection', loadAll('chapterId', 'sectionId'));
       log('post init state', state.page, state.path, state.started, state.chapter, state.section);
     },
     page({ commit }, page) {

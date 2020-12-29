@@ -39,10 +39,18 @@ export function error(message: string, ...data: any[]): never {
     throw new Error(message);
 }
 
-export function load(...keys: string[]): object {
+export function load(key: string, defaultValue = undefined): any {
+    return localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)!) : defaultValue;
+}
+
+export function loadAll(...keys: string[]): any {
     const result = Object.create(null);
     for (const key of keys) {
-        result[key] = JSON.parse(localStorage.getItem(key)!);
+        result[key] = load(key)!;
     }
     return result;
+}
+
+export function store(key: string, value: unknown) {
+    localStorage.setItem(key, JSON.stringify(value));
 }
