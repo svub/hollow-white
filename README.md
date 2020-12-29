@@ -1,6 +1,6 @@
-# iBook App
+# Hollow White
 
-> Turn your writing into an interactive narrative merging game and book.
+> WIP.
 
 ## Project setup
 ```
