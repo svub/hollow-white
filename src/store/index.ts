@@ -55,8 +55,8 @@ export default new Vuex.Store({
           state[key] = JSON.parse(value);
         }
       }
-      // load theme
-      state.theme = localStorage.getItem('theme') ?? '';
+      // load theme, use default, or none
+      state.theme = localStorage.getItem('theme') ?? setup.config?.themes?.[0] ?? '';
 
       state.config = setup.config;
       state.book = setup.book;
