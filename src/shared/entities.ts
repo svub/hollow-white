@@ -22,6 +22,7 @@ export interface Reference {
 
 // entities
 export interface Config {
+  themes?: string[];
   items: Item[];
 }
 
