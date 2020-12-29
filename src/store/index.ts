@@ -125,6 +125,7 @@ export default new Vuex.Store({
         return warn(`changeTheme: theme ${ theme } not configured`);
       }
       state.theme = theme;
+      localStorage.setItem('theme', theme);
     },
   },
   actions: {

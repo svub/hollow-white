@@ -67,14 +67,5 @@ export default class App extends Vue {
 }
 </script>
 
-<style web lang="stylus">
-@import '~styles/main';
-
-main {
-  height: 100%;
-  width: 100%;
-  max-width: 60em;
-  margin: auto;
-}
-</style>
-<style native lang="stylus"></style>
+<style web lang="stylus" src="styles/web.styl"></style>
+<style native lang="stylus" src="styles/mobile.styl"></style>
