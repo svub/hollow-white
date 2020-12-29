@@ -63,11 +63,7 @@ export default class App extends Vue {
 </script>
 
 <style web lang="stylus">
-@import '~styles/reset';
-@import '~styles/typography';
-@import '~styles/layout';
-@import '~styles/style-bright';
-@import '~styles/style-dark';
+@import '~styles/main';
 
 main {
   height 100%
