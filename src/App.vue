@@ -1,9 +1,16 @@
 <template web lang="pug">
 main(:class="mainClass")
-  transition
+  transition(name='pages')
+    //- use dynamic component: component(:is=page)
     Start(key="1", v-if="page === 'start'")
     Read(key="2", v-if="page === 'read'")
     Tester(key="3", v-if="page === 'test'")
+  transition(name='overlay' appear)
+    .overlay(:class="overlay" v-if="!!overlay")
+      Chapters(v-if="overlay === 'chapters'" :chapters="progress")
+      Items(v-if="overlay === 'items'" :items="Object.values(items)")
+      .actions
+        button.close(@click="setOverlay('')")
   //- HelloWorld(:msg="msg")
 </template>
 <template native>
@@ -21,11 +28,14 @@ import { Component, Vue } from "vue-property-decorator";
 import Start from "./views/Start.vue";
 import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
-import { State, Action } from "vuex-class";
+import { State, Action, Getter } from "vuex-class";
 import book from "./book";
 import config from "./config";
-import { warn } from "./shared/util";
+import { load, warn } from "./shared/util";
 import appState from "./store";
+import { Chapter } from "./shared/entities";
+import Chapters from './components/overlays/Chapters.vue';
+import Items from './components/overlays/Items.vue';
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
@@ -36,6 +46,8 @@ const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
     Start,
     Read,
     Tester,
+    Chapters,
+    Items,
   },
 })
 export default class App extends Vue {
@@ -43,9 +55,14 @@ export default class App extends Vue {
   // private msg = `Mode=${VUE_APP_MODE} and Platform=${VUE_APP_PLATFORM}`;
 
   @State page;
+  @State overlay;
   @State theme;
+  @State items;
   @Action init;
   @Action("page") setPage;
+  @Action("overlay") setOverlay;
+  @Getter progress: Chapter[];
+
 
   created() {
     this.init({ book, config });
@@ -55,6 +72,11 @@ export default class App extends Vue {
     if (testPage) {
       warn("TEST: going to page ", testPage);
       this.setPage(testPage);
+    }
+    const testOverlay = localStorage.getItem("testOverlay");
+    if (testOverlay) {
+      warn("TEST: opening overlay ", testOverlay);
+      this.setOverlay(testOverlay);
     }
 
     // for debugging and testing

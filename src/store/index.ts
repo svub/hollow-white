@@ -1,13 +1,16 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { Book, Chapter, Link, Reference, Section, Item, State, Config, ChangeState, AddItem, RemoveItem } from '../shared/entities';
-import { equal, log, warn, load, store, loadAll } from '../shared/util';
+import { equal, log, warn, load, store, loadAll, logRaw } from '../shared/util';
 import { error } from '../shared/util';
+import { clone } from '../../../importer/src/shared/util';
+import uniq from 'lodash/uniq';
 
 Vue.use(Vuex)
 
 export interface AppState {
   page: string;
+  overlay?: string;
   started: boolean;
   config: Config | null;
   book: Book | null;
@@ -21,6 +24,7 @@ export interface AppState {
 
 const state: AppState = {
   page: 'start',
+  overlay: undefined,
   started: false,
   config: null,
   book: null,
@@ -43,6 +47,9 @@ export default new Vuex.Store({
   mutations: {
     page(state, { page }) {
       state.page = page;
+    },
+    overlay(state, { overlay }) {
+      state.overlay = overlay;
     },
     start(state) {
       store('started', state.started = true);
@@ -135,7 +142,12 @@ export default new Vuex.Store({
       log('post init state', state.page, state.path, state.started, state.chapter, state.section);
     },
     page({ commit }, page) {
+      if (['start', 'read', 'tester'].indexOf(page) < 0) error('Page not found', page);
       commit('page', { page });
+    },
+    overlay({ commit }, overlay = '') {
+      if (['chapters', 'items', 'options', 'credits', ''].indexOf(overlay) < 0) error('Overlay not found', overlay);
+      commit('overlay', { overlay });
     },
     start({ commit, dispatch }) {
       commit('start');
@@ -144,6 +156,7 @@ export default new Vuex.Store({
     goto({ commit }, link: Link) {
       commit('setSection', link);
       commit('addToPath');
+      window.scrollTo(0, 0);
     },
     changeState({ commit }, payload: { state: ChangeState }) {
       commit('changeState', payload);
@@ -157,6 +170,21 @@ export default new Vuex.Store({
     changeTheme({ commit }, theme: string) {
       commit('changeTheme', { theme });
     },
+  },
+  getters: {
+    progress({ path, book }): Chapter[] {
+      if (book === undefined) error('book not loaded');
+      return logRaw('progress',
+        uniq(path.map(ref => ref.chapterId))
+        .map(id => clone(book!.chapters.find(chapter => chapter.id === id)))
+        .filter(chapter => !!chapter)
+        .map((chapter: Chapter) => {
+          chapter.sections = chapter.sections
+            .filter(section => !!path.find(r => r.chapterId === chapter.id && r.sectionId === section.id));
+            // .map(section => { return { id: section.id, title: section.title, elements: [], next: [] } });
+          return chapter;
+        }));
+    }
   },
   modules: {
   }
