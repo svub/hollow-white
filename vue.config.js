@@ -4,7 +4,7 @@ module.exports = {
       config
           .plugin('html')
           .tap(args => {
-              args[0].title = "Hollow White";
+              args[0].title = "iBook App";
               return args;
           })
   }
