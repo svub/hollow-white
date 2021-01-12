@@ -10,6 +10,11 @@ export function equal(a: any, b: any): boolean {
     return JSON.stringify(a) == JSON.stringify(b);
 }
 
+export function clone<T extends any | unknown>(a: T): T {
+    if (a === undefined) return a;
+    return JSON.parse(JSON.stringify(a));
+}
+
 export function shortenString(s: string, maxLength = 100): string {
     return s && s.length > maxLength - 3 ? `${s.substr(0, maxLength - 3)}...` : s;
 }
@@ -22,16 +27,19 @@ function _logRaw(f = console.log, message: string, ...data: any[]){
     f.apply(console, [message, ...(data.map(o => JSON.stringify(o, undefined, ' ')))]);
 }
 
-export function log(message: string, ...data: any[]) {
-    _log(console.log, message, ...data);
+export function log<T>(message: string, o: T, ...rest: any[]): T {
+    _log(console.log, message, [o, ...rest]);
+    return o;
 }
 
-export function logRaw(message: string, ...data: any[]) {
-    _logRaw(console.log, message, ...data);
+export function logRaw<T>(message: string, o: T, ...rest: any[]): T {
+    _logRaw(console.log, message, [o, ...rest]);
+    return o;
 }
 
-export function warn(message: string, ...data: any[]) {
-    _log(console.warn, message, ...data);
+export function warn<T>(message: string, o: T, ...rest: any[]): T {
+    _log(console.warn, message, [o, ...rest]);
+    return o;
 }
 
 export function error(message: string, ...data: any[]): never {
