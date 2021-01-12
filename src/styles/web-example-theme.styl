@@ -23,6 +23,23 @@ main
       width calc(50% - gap)
       padding gap
 
+main.start
+  .status
+    .chapter:before
+      content "Chapter "
+    .chapter::after
+      content " | "
+    .progress:before
+      content "Total progress "
+
+  button.start:before
+    content "Start"
+  button.continue:before
+    content "Continue"
+  button.options:before
+    content "Options"
+  button.credits:before
+    content "Credits"
 
 nav
   display flex
