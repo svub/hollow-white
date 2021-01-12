@@ -27,17 +27,17 @@ function _logRaw(f = console.log, message: string, ...data: any[]){
     f.apply(console, [message, ...(data.map(o => JSON.stringify(o, undefined, ' ')))]);
 }
 
-export function log<T>(message: string, o: T, ...rest: any[]): T {
+export function log<T>(message: string, o?: T, ...rest: any[]): T | undefined {
     _log(console.log, message, [o, ...rest]);
     return o;
 }
 
-export function logRaw<T>(message: string, o: T, ...rest: any[]): T {
+export function logRaw<T>(message: string, o?: T, ...rest: any[]): T | undefined {
     _logRaw(console.log, message, [o, ...rest]);
     return o;
 }
 
-export function warn<T>(message: string, o: T, ...rest: any[]): T {
+export function warn<T>(message: string, o?: T, ...rest: any[]): T | undefined {
     _log(console.warn, message, [o, ...rest]);
     return o;
 }
