@@ -27,6 +27,7 @@ export interface Config {
 }
 
 export interface Book extends Title {
+  subTitle?: string;
   chapters: Chapter[];
   specials: Section[];
 }
