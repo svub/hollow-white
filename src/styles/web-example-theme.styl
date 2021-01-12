@@ -1,0 +1,66 @@
+background = #ffe
+text = #332
+gap = 8px
+
+body
+  background background
+  color text
+  width 100%
+
+main
+  width 100%
+  max-width 60em
+  margin auto
+  padding 3*gap
+
+  .next.links
+    display flex
+    flex-direction row
+    justify-content space-between
+    margin-bottom 6*gap
+
+    button
+      width calc(50% - gap)
+      padding gap
+
+
+nav
+  display flex
+  flex-direction row
+  .back::before
+    content "< back"
+
+  .menu
+    flex-grow 1
+    display flex
+    flex-direction row
+    justify-content flex-end
+    .chapters::before
+      content "chapters"
+
+.overlay
+  position fixed
+  top 0
+  left 0
+  height 100%
+  width 100%
+  padding 3*gap
+  background background
+
+  .actions
+    .close::before
+      content: 'Close'
+
+@keyframes overlay {
+    0% { opacity: 0; transform: translateY(100%); }
+    50% { opacity: 1; }
+    100% { transform: translateY(0); }
+}
+
+.overlay-enter-active {
+    animation: overlay .8s;
+}
+
+.overlay-leave-active {
+    animation: overlay .4s reverse;
+}
