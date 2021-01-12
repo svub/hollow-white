@@ -12,10 +12,7 @@ import { log, warn, error } from "../../shared/util";
 import { AppState } from "../../store";
 import TextElement from "./TextElement.vue";
 
-export function evaluateCondition(
-  condition: string,
-  store: Store<AppState>
-): boolean {
+export function evaluateCondition(condition: string, store: Store<AppState>): boolean {
   // examples conditions (case insensitive), "IF" is not part of condition:
   // // IF STATE karma > 0
   // // IF ITEM banana
@@ -26,21 +23,19 @@ export function evaluateCondition(
 
   const appState = store.state;
   const name = elements[1];
-  log("if test", elements[0].toLowerCase(), name);
+  log("if.evaluate: type, var, rest", elements[0].toLowerCase(), name, elements.slice(2));
   /* eslint-disable no-case-declarations */
   switch (elements[0].toLowerCase()) {
     case "state":
       if (elements.length != 4) {
-        error(
-          `Failed to parse condition "${condition}": should be four elements; example: STATE x > 0`
-        );
+        error(`Failed to parse condition "${condition}": should be four elements; example: STATE x > 0`);
       }
       if (!appState.states[name]) {
         warn(`State ${elements[1]} not found`);
       }
       const state = appState.states[name]?.value ?? 0;
       const value = parseInt(elements[3]);
-      log("if test state, value", state, value);
+      log("if.evaluate: state, value", state, value);
       switch (elements[2]) {
         case "=":
         case "==":

@@ -17,6 +17,5 @@ export default class ParagraphElement extends Vue {
   }
 }
 
-// Vue.component('paragraph-element', ParagraphElement);
 </script>
 <style scoped lang="stylus"></style>
