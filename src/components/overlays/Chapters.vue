@@ -4,7 +4,7 @@
     .chapter(v-for="chapter in chapters", @click="toggle(chapter.id)")
       h3 {{ chapter.title }}
       .sections(:class="{ open:  opened === chapter.id}")
-        .section(v-for="section in chapter.sections" @click="goto({ chapterId: chapter.id, sectionId: section.id }); overlay()")
+        button.section(v-for="section in chapter.sections" @click="goto({ chapterId: chapter.id, sectionId: section.id }); overlay()")
           h4 {{ section.title }}
 </template>
 
