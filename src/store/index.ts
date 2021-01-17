@@ -176,8 +176,9 @@ export default new Vuex.Store({
       if (book === undefined) error('book not loaded');
       return logRaw('progress',
         uniq(path.map(ref => ref.chapterId))
-        .map(id => clone(book!.chapters.find(chapter => chapter.id === id)))
+        .map(id => book!.chapters.find(chapter => chapter.id === id))
         .filter(chapter => !!chapter)
+        .map(chapter => clone(chapter)!)
         .map((chapter: Chapter) => {
           chapter.sections = chapter.sections
             .filter(section => !!path.find(r => r.chapterId === chapter.id && r.sectionId === section.id));

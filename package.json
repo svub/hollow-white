@@ -21,6 +21,7 @@
     "setup-webpack-config": "node ./node_modules/vue-cli-plugin-nativescript-vue/lib/scripts/webpack-maintenance pre"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.167",
     "core-js": "^3.6.5",
     "crypto-js": "^4.0.0",
     "intersection-observer": "^0.12.0",
