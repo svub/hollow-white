@@ -1,5 +1,5 @@
 import { Book, Chapter, Section, ElementType, Paragraph, If, Else, HasElements, Link, ChangeState, AddItem, RemoveItem,
-  SpecialLink, Style } from './entities';
+  SpecialLink, Style, Specials } from './entities';
 import { Token, TokenType } from './Lexer';
 
 export enum CommandType {
@@ -89,7 +89,7 @@ export default class Parser {
             book = {
               title: getTitle(command),
               chapters: [],
-              specials: [],
+              specials: new Map(),
             }
             break;
           case CommandType.chapter:
@@ -204,12 +204,12 @@ export default class Parser {
           case CommandType.credits:
             if (!book) this.error('Found a "// credits" before "// book"', token, command);
             const credits = {
-              id: 'credits',
+              id: Specials.credits,
               title: getTitle(command),
               elements: [],
               next: [],
             };
-            book!.specials.push(credits);
+            book!.specials.set(Specials.credits, credits);
             section = credits;
             break;
           default:

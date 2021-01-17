@@ -32,7 +32,7 @@ export function log<T>(message: string, o?: T, ...rest: any[]): T | undefined {
     return o;
 }
 
-export function logRaw<T>(message: string, o?: T, ...rest: any[]): T | undefined {
+export function logRaw<T>(message: string, o: T, ...rest: any[]): T {
     _logRaw(console.log, message, [o, ...rest]);
     return o;
 }

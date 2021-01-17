@@ -26,10 +26,14 @@ export interface Config {
   items: Item[];
 }
 
+export enum Specials {
+  credits = 'credits',
+}
+
 export interface Book extends Title {
   subTitle?: string;
   chapters: Chapter[];
-  specials: Section[];
+  specials: Map<Specials, Section>;
 }
 
 export interface Chapter extends Entity, Title {
@@ -45,6 +49,10 @@ export interface Section extends HasElements, Entity, Title {
 export interface Link extends Title, Reference {}
 
 export interface SpecialLink extends Title, Entity {}
+
+export function isSpecialLink(link: Link | SpecialLink): link is SpecialLink {
+  return !!(link as SpecialLink).id;
+}
 
 export interface Item extends Entity, Title {
   thumbnail: string;
