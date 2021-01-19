@@ -89,7 +89,7 @@ export default class Parser {
             book = {
               title: getTitle(command),
               chapters: [],
-              specials: new Map(),
+              specials: {},
             }
             break;
           case CommandType.chapter:
@@ -203,20 +203,20 @@ export default class Parser {
             break;
           case CommandType.credits:
             if (!book) this.error('Found a "// credits" before "// book"', token, command);
-            const credits = {
+            const credits: Section = {
               id: Specials.credits,
               title: getTitle(command),
               elements: [],
               next: [],
             };
-            book!.specials.set(Specials.credits, credits);
+            book!.specials[Specials.credits] = credits;
             section = credits;
             break;
           default:
             this.error(`Command type ${command.type} not implemented`, token, command);
         }
       } else { // text
-        if (!section) this.error('Found a text before first "// section"', token);
+        if (!section) this.error('Found text before first "// section"', token);
         const element: Paragraph = {
           type: ElementType.paragraph,
           text: token.data,
