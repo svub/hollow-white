@@ -15,7 +15,7 @@
   .next.links
     button(
       v-for="link in section.next",
-      @click="goto(link)"
+      @click="open(link)"
       :disabled="!enabled(link)"
       :class="{ selected: selected(link) }") {{ link.title }}
 </template>
@@ -51,6 +51,13 @@ export default class Read extends Vue {
     // chapter and section in progress -> yes, we went through this decision
     const chapter = this.progress.find(chapter => chapter.id === link.chapterId);
     return !!chapter.sections.find(section => section.id === link.sectionId);
+  }
+
+  open(link: Link | SpecialLink) {
+    if (isSpecialLink(link)) {
+      return this.overlay(link.id);
+    }
+    this.goto(link);
   }
 }
 </script>

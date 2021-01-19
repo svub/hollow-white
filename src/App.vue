@@ -11,6 +11,7 @@ main(:class="mainClass")
       Items(v-if="overlay === 'items'" :items="Object.values(items)")
       .actions
         button.close(@click="setOverlay('')")
+      Credits(v-if="overlay === 'credits'")
   //- HelloWorld(:msg="msg")
 </template>
 <template native>
@@ -36,6 +37,7 @@ import appState from "./store";
 import { Chapter } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
 import Items from './components/overlays/Items.vue';
+import Credits from './components/overlays/Credits.vue';
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
@@ -48,6 +50,7 @@ const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
     Tester,
     Chapters,
     Items,
+    Credits,
   },
 })
 export default class App extends Vue {
