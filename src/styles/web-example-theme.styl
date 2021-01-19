@@ -83,6 +83,14 @@ main.read
     .close::before
       content: 'Close'
 
+.overlay.credits
+  .title h2:before
+    content 'Credits'
+
+.overlay.options
+  .title h2:before
+    content 'Options'
+
 @keyframes overlay {
     0% { opacity: 0; transform: translateY(100%); }
     50% { opacity: 1; }
