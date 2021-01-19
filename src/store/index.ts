@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { Book, Chapter, Link, Reference, Section, Item, State, Config, ChangeState, AddItem, RemoveItem } from '../shared/entities';
+import { Book, Chapter, Link, Reference, Section, Item, State, Config, ChangeState, AddItem, RemoveItem, Option } from '../shared/entities';
 import { equal, log, warn, load, store, loadAll, logRaw } from '../shared/util';
 import { error } from '../shared/util';
 import { clone } from '../../../importer/src/shared/util';
 import uniq from 'lodash/uniq';
+import { optionalCallExpression } from '@babel/types';
 
 Vue.use(Vuex)
 
@@ -20,6 +21,7 @@ export interface AppState {
   path: Array<Reference>;
   items: { [id: string]: Item };
   states: { [id: string]: State };
+  options: { [id: string]: Option };
 }
 
 const state: AppState = {
@@ -34,6 +36,7 @@ const state: AppState = {
   path: [],
   items: {},
   states: {},
+  options: {},
 }
 
 const find = (book, chapterId, sectionId): { chapter: Chapter; section: Section } => {
@@ -54,8 +57,8 @@ export default new Vuex.Store({
     start(state) {
       store('started', state.started = true);
     },
-    init(state, setup: { book: Book; config: Config }) {
-      // load states
+    init(state, { book, config }: { book: Book; config: Config }) {
+      // restore state from local storage
       for (const key in state) {
         const value = load(key);
         if (value) {
@@ -63,10 +66,10 @@ export default new Vuex.Store({
         }
       }
       // load theme, use default, or none
-      state.theme = load('theme') ?? setup.config?.themes?.[0] ?? '';
+      state.theme = load('theme') ?? config?.themes?.[0] ?? '';
 
-      state.config = setup.config;
-      state.book = setup.book;
+      state.config = config;
+      state.book = book;
     },
     setSection(state, { chapterId, sectionId }: { chapterId: string; sectionId: string }) {
       if (!state.book) {
@@ -114,10 +117,6 @@ export default new Vuex.Store({
       if (!itemDefinition) {
         return error(`Definition for item ${ item.id } not found!`, state.config!.items);
       }
-      // state.items = {
-      //   ...state.items,
-      //   [itemDefinition.id]: itemDefinition,
-      // }
       Vue.set(state.items, itemDefinition.id, itemDefinition);
     },
     removeItem(state, { item }: { item: RemoveItem }) {
@@ -134,6 +133,12 @@ export default new Vuex.Store({
       state.theme = theme;
       store('theme', theme);
     },
+    setOption(state, { option, choice }: { option: Option, choice: Option }) {
+      if (option.choices.indexOf(choice) < 0) {
+        error('setOption: given choice is not a choice of given option.', option, choice);
+      }
+      Vue.set(state.options, option.id, choice.id);
+    }
   },
   actions: {
     init({ commit }, setup: { book: Book; config: Config }) {
@@ -170,6 +175,9 @@ export default new Vuex.Store({
     changeTheme({ commit }, theme: string) {
       commit('changeTheme', { theme });
     },
+    setOption({ commit, state }, payload: { option: Option, choice: Option }) {
+      commit('setOption', payload);
+    }
   },
   getters: {
     progress({ path, book }): Chapter[] {

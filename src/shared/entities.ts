@@ -6,25 +6,31 @@ export interface HasElements {
 export interface Entity {
   id: string;
 }
-export interface TextEntity extends Entity {
-  text?: string;
-}
 export interface Text {
   text?: string;
 }
 export interface Title {
   title: string;
 }
+export interface TextEntity extends Entity, Text {
+}
 export interface Reference {
   chapterId: string;
   sectionId: string;
 }
 
-// entities
+// Config
+export interface Choice extends Entity, Title {}
+export interface Option extends Entity, Title {
+  choices: Choice[];
+}
 export interface Config {
   themes?: string[];
   items: Item[];
+  options: Option[];
 }
+
+// entities
 
 export enum Specials {
   credits = 'credits',
@@ -33,7 +39,7 @@ export enum Specials {
 export interface Book extends Title {
   subTitle?: string;
   chapters: Chapter[];
-  specials: Map<Specials, Section>;
+  specials: {[id: string]: Section};
 }
 
 export interface Chapter extends Entity, Title {

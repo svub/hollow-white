@@ -12,6 +12,7 @@ main(:class="mainClass")
       .actions
         button.close(@click="setOverlay('')")
       Credits(v-if="overlay === 'credits'")
+      Options(v-if="overlay === 'options'")
   //- HelloWorld(:msg="msg")
 </template>
 <template native>
@@ -38,6 +39,7 @@ import { Chapter } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
 import Items from './components/overlays/Items.vue';
 import Credits from './components/overlays/Credits.vue';
+import Options from './components/overlays/Options.vue';
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
@@ -51,6 +53,7 @@ const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
     Chapters,
     Items,
     Credits,
+    Options,
   },
 })
 export default class App extends Vue {
