@@ -9,24 +9,25 @@
         span.chapter {{ chapter.id }}
         span.progress {{ Math.floor(progress * 100) }}%
       button(@click="start" :class="{ start: !started, continue: started }")
-      button.options
-      button.credits
+      button.options(@click="overlay('options')")
+      button.credits(@click="overlay('credits')")
 </template>
 
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
-  import { State, Action } from 'vuex-class'
+  import { State, Action, Getter } from 'vuex-class'
 import { Book, Chapter, Section } from '../shared/entities';
 
   @Component({
     name: 'Start',
   })
   export default class Start extends Vue {
-    @State started: boolean;
     @Action start: Function;
+    @Action overlay: Function;
     @State book: Book;
     @State chapter: Chapter;
     @State section: Section;
+    @Getter started: boolean;
 
     get progress(): number {
       // calculate for chapters only
