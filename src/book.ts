@@ -34,7 +34,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Formatting is also supported via Markdown. For example *emphasis* (&lt;em&gt; tag in HTML), _underlined_ (&lt;u&gt; tag), /italics/ (&lt;i&gt; tag) - all formattings can be adjusted with CSS."
+       "text": "Formatting is also supported via Markdown. For example *emphasis* (&lt;em&gt; tag in HTML) and **bold** (&lt;b&gt; tag) - all formattings can be adjusted with CSS."
       },
       {
        "type": "if",
@@ -93,14 +93,7 @@ const book: Book = (({
    ]
   }
  ],
- "specials": [
-  {
-   "id": "credits",
-   "title": "A special chapter that with info about the authors",
-   "elements": [],
-   "next": []
-  }
- ]
+ "specials": {}
 }) as unknown) as Book;
 
 export default book;

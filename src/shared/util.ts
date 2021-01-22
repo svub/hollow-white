@@ -6,7 +6,7 @@ export async function loadJson(url: string) {
     return await (await fetch(url)).json()
 }
 
-export function equal(a: any, b: any): boolean {
+export function equal<T>(a: T, b: T): boolean {
     return JSON.stringify(a) == JSON.stringify(b);
 }
 
@@ -34,6 +34,11 @@ export function log<T>(message: string, o?: T, ...rest: any[]): T | undefined {
 
 export function logRaw<T>(message: string, o: T, ...rest: any[]): T {
     _logRaw(console.log, message, [o, ...rest]);
+    return o;
+}
+
+export function logVar<T>(message: string, o: T, ...rest: any[]): T {
+    console.log.apply(console, [message, o, ...rest]);
     return o;
 }
 
