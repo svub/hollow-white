@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="35px" viewBox="0 0 31 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico_HW_Menue</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.504464286">
+        <g id="Bars/Kapitel1" transform="translate(-308.000000, -6.000000)" fill-rule="nonzero" stroke="#FFFFFF">
+            <g id="ico_HW_Menue" transform="translate(309.000000, 7.000000)">
+                <polyline id="Path-2" points="0 25 0 8.43885575 14.2551988 0 29 8.43885575 29 25"></polyline>
+                <polyline id="Path-2-Copy" transform="translate(14.500000, 20.500000) scale(1, -1) translate(-14.500000, -20.500000) " points="0 33 0 16.4388557 14.2551988 8 29 16.4388557 29 33"></polyline>
+                <polyline id="Path-2-Copy-2" stroke-width="1.5" points="8 12.25 8 24.1153516 14.3902615 19.3333333 21 24.1153516 21 12.25"></polyline>
+                <polyline id="Path-2-Copy-4" stroke-width="1.5" points="11.9 6 11.9 9.86482379 11.9 12.25 14.5 11.25 17.1 12.25 17.1 9.78484558 17.1 6"></polyline>
+                <polyline id="Path-2-Copy-5" stroke-width="1.5" transform="translate(14.500000, 13.625000) scale(1, -1) translate(-14.500000, -13.625000) " points="11.9 11.25 11.9 13.5688943 11.9 15 14.5 16 17.1 15 17.1 13.5209073 17.1 11.25"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
