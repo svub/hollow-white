@@ -3,31 +3,43 @@
   .title
     h2.options
 
+  .reset(v-if="started")
+    label
+    button(@click="doReset")
+
   .list
-    .option(v-for="option in config.options")
-      label {{ option.label }}
+    .option(v-for="option in config.options" :class="option.id")
+      label {{ option.title }}
       .choices
-        .choice(v-for="choice in option.choices")
-          button(@click="choose(option, choice)" :class="") {{ choice.label }}
+        .choice(v-for="choice in option.choices" :class="choice.id")
+          button(@click="choose(option, choice)") {{ choice.title }}
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import { State, Action } from 'vuex-class'
+import { State, Action, Getter } from 'vuex-class'
 import { Choice, Config, Option } from '../../shared/entities';
 import { error, logRaw } from '../../shared/util';
+import config from '../../config';
 
 @Component({
   name: 'Options',
-  components: {},
+  components: {
+  },
 })
 export default class Options extends Vue {
-  @State config: Config;
   @State options: Options;
+  @Getter started: boolean;
   @Action setOption: Function;
+  @Action reset: Function;
+  config = config;
 
   choose(option: Option, choice: Choice) {
-    this.setOption(option.id, choice.id);
+    this.setOption({ option, choice });
+  }
+
+  doReset() {
+    if (confirm('Really start from scratch?')) this.reset()
   }
 }
 </script>

@@ -1,18 +1,18 @@
 <template web lang="pug">
-main(:class="mainClass")
+main(:class="appClasses")
   transition(name='pages')
     //- use dynamic component: component(:is=page)
     Start(key="1", v-if="page === 'start'")
     Read(key="2", v-if="page === 'read'")
     Tester(key="3", v-if="page === 'test'")
-  transition(name='overlay' appear)
+  transition(name='overlay' type="animation" appear)
     .overlay(:class="overlay" v-if="!!overlay")
-      Chapters(v-if="overlay === 'chapters'" :chapters="progress")
+      Chapters(v-if="overlay === 'chapters'" :chapters="chapters")
       Items(v-if="overlay === 'items'" :items="Object.values(items)")
-      .actions
-        button.close(@click="setOverlay('')")
       Credits(v-if="overlay === 'credits'")
       Options(v-if="overlay === 'options'")
+      .actions
+        button.close(@click="setOverlay('')")
   //- HelloWorld(:msg="msg")
 </template>
 <template native>
@@ -33,13 +33,14 @@ import Tester from "./views/Tester.vue";
 import { State, Action, Getter } from "vuex-class";
 import book from "./book";
 import config from "./config";
-import { load, warn } from "./shared/util";
-import appState from "./store";
-import { Chapter } from "./shared/entities";
+import { clone, load, logRaw, logVar, warn } from "./shared/util";
+import appState, { Position } from "./store";
+import { Chapter, Option } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
 import Items from './components/overlays/Items.vue';
 import Credits from './components/overlays/Credits.vue';
 import Options from './components/overlays/Options.vue';
+import uniq from "lodash/uniq";
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
@@ -64,14 +65,16 @@ export default class App extends Vue {
   @State overlay;
   @State theme;
   @State items;
+  @State path;
+  @State options: { [id: string]: Option };
   @Action init;
   @Action("page") setPage;
   @Action("overlay") setOverlay;
-  @Getter progress: Chapter[];
+  // @Getter progress: Position[];
 
 
   created() {
-    this.init({ book, config });
+    logRaw('App.created state', this.$store.state);
 
     // start on particular page for testing
     const testPage = localStorage.getItem("testPage");
@@ -89,8 +92,22 @@ export default class App extends Vue {
     window["appState"] = appState;
   }
 
-  get mainClass(): string {
-    return `${this.page} ${this.theme}`;
+  get appClasses(): string {
+    return `${this.page} ${Object.values(this.options).join(' ')}`;
+  }
+
+  get chapters() {
+    return logRaw('progress',
+      uniq(this.path.map(ref => ref.chapterId))
+      .map(id => clone(book.chapters.find(chapter => chapter.id === id)))
+      .filter(chapter => !!chapter)
+      // .map(chapter => clone(chapter)!)
+      .map((chapter: Chapter) => {
+        chapter.sections = chapter.sections
+          .filter(section => !!this.path.find(r => r.chapterId === chapter.id && r.sectionId === section.id));
+          // .map(section => { return { id: section.id, title: section.title, elements: [], next: [] } });
+        return chapter;
+      }));
   }
 }
 </script>
