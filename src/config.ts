@@ -1,7 +1,7 @@
 import { Config } from './shared/entities';
 
 const config: Config = {
-  "items": [
+  items: [
     {
       "id": "sandbox",
       "title": "A sandbox to play in",
@@ -9,6 +9,22 @@ const config: Config = {
       "media": "URL to media file",
       "category": "category (optional)"
     },
+  ],
+  options: [
+    {
+      id: "theme",
+      title: "Theme",
+      choices: [
+        {
+          id: 'light-theme',
+          title: "Light",
+        },
+        {
+          id: 'dark-theme',
+          title: "Dark",
+        }
+      ]
+    }
   ]
 };
 

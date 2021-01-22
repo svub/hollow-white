@@ -1,16 +1,32 @@
-background = #ffe
-text = #332
 gap = 8px
 
 body
-  background background
-  color text
   width 100%
 
 button
   padding gap
 
+main, main.light-theme
+  --backgroundColor #ffe
+  --textColor #332
+
+main.dark-theme
+  --backgroundColor #110
+  --textColor #eed
+
+inverted() {
+  background var(--textColor)
+  color var(--backgroundColor)
+  transition color 2s, background-color 2s
+}
+normal() {
+  background var(--backgroundColor)
+  color var(--textColor)
+  transition color 2s, background-color 2s
+}
+
 main
+  normal()
   width 100%
   max-width 60em
   margin auto
@@ -75,7 +91,10 @@ main.read
   height 100%
   width 100%
   padding 3*gap
-  background background
+  normal()
+
+  .title
+    margin-bottom 8*gap
 
   .actions
     margin-top 8*gap
@@ -91,16 +110,33 @@ main.read
   .title h2:before
     content 'Options'
 
-@keyframes overlay {
-    0% { opacity: 0; transform: translateY(100%); }
-    50% { opacity: 1; }
-    100% { transform: translateY(0); }
-}
+  .reset
+    margin-bottom 8*gap
+    label
+      display block
+      &:before
+        content 'Reset'
+    button:before
+      content 'Clear story progress'
 
-.overlay-enter-active {
+  .list
+    .option.theme .choices
+      display flex
+      flex-direction row
+
+.overlay // animations
+  @keyframes overlay {
+      0% { opacity: 0; transform: translateY(100%); }
+      50% { opacity: 1; }
+      100% { transform: translateY(0); }
+  }
+
+  &.overlay-enter-active {
+    // animation-fill-mode forwards
     animation: overlay .6s;
-}
+  }
 
-.overlay-leave-active {
+  &.overlay-leave-active {
+    // animation-fill-mode backwards
     animation: overlay .3s reverse;
-}
+  }
