@@ -1,16 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { Chapter, Link, Reference, Section, Item, State, Config, ChangeState, AddItem, RemoveItem, Option } from '../shared/entities';
-// import { equal, log, warn, load, store, loadAll, logRaw } from '../shared/util';
-import { equal, log, warn, loadAll, logRaw } from '../shared/util';
+import { Chapter, Link, Reference, Section, Item, State, ChangeState, AddItem, RemoveItem, Option, Choice } from '../shared/entities';
+import { equal, warn } from '../shared/util';
 import { error } from '../shared/util';
-import { clone } from '../../../importer/src/shared/util';
-import uniq from 'lodash/uniq';
-import { optionalCallExpression } from '@babel/types';
 import VuexPersistence from 'vuex-persist';
 import book from '@/book';
 import config from '@/config';
-import { Choice } from '../../../importer/src/shared/entities';
 
 Vue.use(Vuex)
 
