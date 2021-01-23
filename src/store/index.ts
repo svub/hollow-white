@@ -29,11 +29,14 @@ export interface BookState {
 
 export interface AppState extends Settings, BookState {}
 
+const defaultOptions = {}
+config.options.forEach(option => defaultOptions[option.id] = option.choices.find(c => c.default) ?? option.choices[0]);
+
 function initialSettings(): Settings {
   return {
     page: 'start',
     overlay: undefined,
-    options: {},
+    options: defaultOptions,
   };
 }
 function initialBookState(): BookState {

@@ -20,7 +20,9 @@ export interface Reference {
 }
 
 // Config
-export interface Choice extends Entity, Title {}
+export interface Choice extends Entity, Title {
+  default?: boolean;
+}
 export interface Option extends Entity, Title {
   choices: Choice[];
 }
