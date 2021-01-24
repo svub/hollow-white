@@ -1,4 +1,4 @@
-gap = 8px
+@import 'web-constants'
 
 body
   width 100%
@@ -28,7 +28,7 @@ normal() {
 main
   normal()
   width 100%
-  max-width 60em
+  max-width maxWidth
   margin auto
   padding 3*gap
 
@@ -84,23 +84,19 @@ main.read
       background text
       color background
 
-.overlay
-  position fixed
-  top 0
-  left 0
-  height 100%
-  width 100%
-  padding 3*gap
-  normal()
+.backdrop
+  .overlay
+    normal()
+    padding 3*gap
 
-  .title
-    margin-bottom 8*gap
+    .title
+      margin-bottom 8*gap
 
-  .actions
-    margin-top 8*gap
+    .actions
+      padding-top 8*gap
 
-    .close::before
-      content: 'Close'
+      .close::before
+        content: 'Close'
 
 .overlay.credits
   .title h2:before
@@ -124,19 +120,3 @@ main.read
       display flex
       flex-direction row
 
-.overlay // animations
-  @keyframes overlay {
-      0% { opacity: 0; transform: translateY(100%); }
-      50% { opacity: 1; }
-      100% { transform: translateY(0); }
-  }
-
-  &.overlay-enter-active {
-    // animation-fill-mode forwards
-    animation: overlay .6s;
-  }
-
-  &.overlay-leave-active {
-    // animation-fill-mode backwards
-    animation: overlay .3s reverse;
-  }

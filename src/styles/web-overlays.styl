@@ -1,0 +1,51 @@
+@import 'web-constants'
+
+// animations
+@keyframes overlay
+  0%
+    opacity 0
+    transform translateY(100%)
+  50%
+    opacity 1
+  100%
+    transform translateY(0)
+
+@keyframes overlay-backdrop
+  0%
+    backdrop-filter blur(0px)
+  80%
+    backdrop-filter blur(4px)
+
+.backdrop
+  position fixed
+  top 0
+  left 0
+  height 100%
+  width 100%
+  display flex
+  flex-direction column
+  backdrop-filter blur(4px)
+
+  &:before // spacer
+    margin auto
+    content ''
+    flex 1 1 gap
+
+  .overlay
+    margin auto
+    width 100%
+    max-width maxWidth
+    max-height 100%
+    overflow auto
+    box-shadow 0 0 50px var(--textColor)
+
+  &.overlay-enter-active, &.overlay-enter-active .overlay
+    animation-duration .6s
+  &.overlay-leave-active, &.overlay-leave-active .overlay
+    animation-duration .3s
+    animation-direction reverse
+
+  &.overlay-enter-active, &.overlay-leave-active
+    animation-name overlay-backdrop
+  &.overlay-enter-active .overlay, &.overlay-leave-active .overlay
+    animation-name overlay

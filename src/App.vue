@@ -5,14 +5,17 @@ main(:class="appClasses")
     Start(key="1", v-if="page === 'start'")
     Read(key="2", v-if="page === 'read'")
     Tester(key="3", v-if="page === 'test'")
-  transition(name='overlay' type="animation" appear)
-    .overlay(:class="overlay" v-if="!!overlay")
-      Chapters(v-if="overlay === 'chapters'" :chapters="chapters")
-      Items(v-if="overlay === 'items'" :items="Object.values(items)")
-      Credits(v-if="overlay === 'credits'")
-      Options(v-if="overlay === 'options'")
-      .actions
-        button.close(@click="setOverlay('')")
+  //- transition(name='overlay' type="animation" appear :duration='10000')
+  transition(name='overlay' appear)
+    .backdrop(v-if="!!overlay")
+      .overlay(:class="overlay")
+        .content
+          Chapters(v-if="overlay === 'chapters'" :chapters="chapters")
+          Items(v-if="overlay === 'items'" :items="Object.values(items)")
+          Credits(v-if="overlay === 'credits'")
+          Options(v-if="overlay === 'options'")
+        .actions
+          button.close(@click="setOverlay('')")
   //- HelloWorld(:msg="msg")
 </template>
 <template native>
