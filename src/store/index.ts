@@ -9,6 +9,8 @@ import config from '@/config';
 
 Vue.use(Vuex)
 
+const dontStore = ['page', 'overlay'];
+
 export interface Settings {
   page: string;
   overlay?: string;
@@ -243,6 +245,14 @@ export default new Vuex.Store({
   plugins: [
     new VuexPersistence<AppState>({
       storage: window.localStorage,
+      reducer: (state) => {
+        const reduced = {}
+        Object.keys(state).forEach(key => {
+          if (dontStore.indexOf(key) < 0) reduced[key] = state[key];
+        });
+        return reduced;
+      },
+      filter: (mutation) => dontStore.indexOf(mutation.type) < 0
     }).plugin
   ],
 })
