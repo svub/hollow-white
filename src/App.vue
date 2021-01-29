@@ -14,6 +14,7 @@ main(:class="appClasses")
           Items(v-if="overlay === 'items'" :items="Object.values(items)")
           Credits(v-if="overlay === 'credits'")
           Options(v-if="overlay === 'options'")
+          FeedbackMode(v-if="overlay === 'feedbackMode'")
         .actions
           button.close(@click="setOverlay('')")
   //- HelloWorld(:msg="msg")
@@ -43,22 +44,14 @@ import Chapters from './components/overlays/Chapters.vue';
 import Items from './components/overlays/Items.vue';
 import Credits from './components/overlays/Credits.vue';
 import Options from './components/overlays/Options.vue';
+import FeedbackMode from './components/overlays/FeedbackMode.vue';
 import uniq from "lodash/uniq";
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
 @Component({
   name: "home",
-  components: {
-    // HelloWorld,
-    Start,
-    Read,
-    Tester,
-    Chapters,
-    Items,
-    Credits,
-    Options,
-  },
+  components: { Start, Read, Tester, Chapters, Items, Credits, Options, FeedbackMode },
 })
 export default class App extends Vue {
   private navbarTitle = `App.vue`;

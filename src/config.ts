@@ -25,7 +25,9 @@ const config: Config = {
         }
       ]
     }
-  ]
+  ],
+  feedbackMode: true,
+  feedbackLink: 'https://test.com',
 };
 
 export default config;

@@ -17,6 +17,7 @@ export interface Settings {
   options: { [id: string]: Option };
 }
 
+const dontReset = ['items'];
 export interface BookState {
   position: Reference | null;
   path: Array<Reference>;
@@ -165,7 +166,7 @@ export default new Vuex.Store({
       warn('resetting...');
       const initial = initialBookState();
       for (const field of Object.keys(initial)) {
-        state[field] = initial[field];
+        if (dontReset.indexOf(field) < 0) state[field] = initial[field];
       }
     },
   },
@@ -180,7 +181,7 @@ export default new Vuex.Store({
       commit('page', { page });
     },
     overlay({ commit }, overlay = '') {
-      if (['chapters', 'items', 'options', 'credits', ''].indexOf(overlay) < 0) error('Overlay not found', overlay);
+      if (['chapters', 'items', 'options', 'credits', 'feedbackMode', ''].indexOf(overlay) < 0) error('Overlay not found', overlay);
       commit('overlay', { overlay });
     },
     start({ commit, dispatch }) {

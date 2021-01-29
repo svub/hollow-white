@@ -30,6 +30,8 @@ export interface Config {
   themes?: string[];
   items: Item[];
   options: Option[];
+  feedbackMode?: boolean;
+  feedbackLink?: string;
 }
 
 // entities

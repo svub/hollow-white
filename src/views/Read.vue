@@ -3,10 +3,12 @@
   nav
     button.back(@click="page('start')")
     .menu
+      button.feedback-mode(v-if="config.feedbackMode" @click="overlay('feedbackMode')")
       button.chapters(@click="overlay('chapters')")
 
   .title
     //- .icon icon
+    .position(v-if="config.feedbackMode") {{ position.chapter.id }}-{{ position.section.id }}
     h2(v-if="position.chapter.sections.indexOf(position.section) === 0") {{ position.chapter.title }}
     h3 {{ position.section.title }}
 
@@ -24,9 +26,10 @@
 import { Component, Vue } from "vue-property-decorator";
 import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
-import { Chapter, Link, Section, SpecialLink, isSpecialLink, Reference } from "../shared/entities";
+import { Link, SpecialLink, isSpecialLink, Reference } from "../shared/entities";
 import TextElement from "../components/elements/TextElement.vue";
 import { Position } from "../store";
+import config from "../config";
 
 @Component({
   name: "Read",
@@ -38,6 +41,7 @@ export default class Read extends Vue {
   @Action goto: Function;
   @Action overlay: Function;
   @Getter position: Position;
+  config = config;
 
   enabled(link: Link | SpecialLink): boolean {
     // enabled if: decision taken before (in path); or if last in progress == current (any decision possible)
@@ -56,6 +60,7 @@ export default class Read extends Vue {
 
   open(link: Link | SpecialLink) {
     if (isSpecialLink(link)) {
+      // TODO ### for other special links such as restart are there more?
       return this.overlay(link.id);
     }
     this.goto(link);
