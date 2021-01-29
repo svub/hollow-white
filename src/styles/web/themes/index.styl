@@ -1,1 +1,10 @@
-@import 'web-example-theme.styl'
+@import 'web-light-theme'
+@import 'web-dark-theme'
+
+.overlay.feedback-mode
+  .title h2:before
+    content 'Danke für dein Feedback!'
+  textarea:before
+    content 'Bitte kopiere den Inhalt des folgenden Textfeldes und sende es mit dem Feedbackformular. Einfach den Link unten anklicken.'
+  a.feedback-link:before
+    content 'Feedbackformular starten'
