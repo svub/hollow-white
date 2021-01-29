@@ -7,7 +7,7 @@ main(:class="appClasses")
     Tester(key="3", v-if="page === 'test'")
   //- transition(name='overlay' type="animation" appear :duration='10000')
   transition(name='overlay' appear)
-    .backdrop(v-if="!!overlay")
+    .backdrop(v-if="!!overlay" @click="setOverlay('')")
       .overlay(:class="overlay")
         .content
           Chapters(v-if="overlay === 'chapters'" :chapters="chapters")
