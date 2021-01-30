@@ -11,13 +11,14 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 import { State, Action } from 'vuex-class'
 import { Book, Section, Specials } from '../../shared/entities';
 import { error, logRaw } from '../../shared/util';
+import book from "../../book";
 
 @Component({
   name: 'Credits',
   components: {}
 })
 export default class Credits extends Vue {
-  @State book: Book;
+  book = book;
 
   get credits(): Section {
     logRaw('credits', this.book.specials);

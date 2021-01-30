@@ -10,8 +10,7 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import { State, Action } from 'vuex-class'
-import { Config, Item } from '../../shared/entities';
+import { Item } from '../../shared/entities';
 
 @Component({
   name: 'Items',
@@ -19,8 +18,6 @@ import { Config, Item } from '../../shared/entities';
 })
 export default class Items extends Vue {
   @Prop(Array) items: Item[];
-  // @State items: { [id: string]: Item };
-  @State config: Config;
 
   itemIndex(item: Item): number {
     return this.items.map(i => i.id).indexOf(item.id);
