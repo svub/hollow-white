@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="266px" viewBox="0 0 300 266" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="HW-Beta" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01a_Home_Erstansicht" transform="translate(-38.000000, -138.000000)">
+            <g id="Group" transform="translate(38.000000, 141.000000)">
+                <g id="Logo" transform="translate(0.000000, 169.000000)" fill="#FFFFFF" font-family="EstiloPro-Book, Estilo Pro" font-size="52.8" font-weight="normal" letter-spacing="-0.480000007" line-spacing="43.2">
+                    <text id="HOLLOW-WHITE">
+                        <tspan x="46.5528" y="34.4128">HOLLOW </tspan>
+                        <tspan x="78.4944" y="77.6128">WHITE</tspan>
+                    </text>
+                </g>
+                <polygon id="Stroke-1" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" points="148.882108 0 215 34.5658548 215 112.274387 149 147 83 112.274387 83 34.5658548"></polygon>
+                <path d="M118,54.4044391 L118,110 L148.5,88.3721309 L179,110 L179,54.4044391 M132.979171,25 L132.979171,78.6296101 M164.79982,25 L164.79982,78.6296101 M132.08017,56.2076885 L148.946739,44.5815166 L164.467729,56.2076885" id="Stroke-2" stroke="#FFFFFF" stroke-width="5.5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

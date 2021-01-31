@@ -1,0 +1,30 @@
+main.start
+  .status
+    .chapter:before
+      content "Kapitel "
+    .chapter::after
+      content " | "
+    .progress:before
+      content "Gesamtfortschritt "
+
+  button.start:before
+    content "Beginnen"
+  button.continue:before
+    content "Fortsetzen"
+  button.options:before
+    content "Optionen"
+  button.credits:before
+    content "Credits"
+
+main.read
+  .next.links:before
+    content "Deine Entscheidung"
+
+
+.overlay.feedback-mode
+  .title h2:before
+    content 'Danke für dein Feedback!'
+  textarea:before
+    content 'Bitte kopiere den Inhalt des folgenden Textfeldes und sende es mit dem Feedbackformular. Einfach den Link unten anklicken.'
+  a.feedback-link:before
+    content 'Feedbackformular starten'
