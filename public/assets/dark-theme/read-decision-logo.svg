@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="38px" viewBox="0 0 34 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico_decision_hw</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="HW-Beta" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03a_Chapter_Sections_Dark" transform="translate(-170.000000, -2601.000000)">
+            <g id="ico_decision_hw" transform="translate(25.000000, 2602.000000)" filter="url(#filter-1)">
+                <g transform="translate(146.000000, 0.000000)" id="Group-4" stroke="#A6A6A6">
+                    <polygon id="Stroke-1" stroke-linecap="round" points="16.1091048 0 32.2758621 8.46510731 32.2758621 27.4957683 16.137931 36 1.11656836e-13 27.4957683 1.11656836e-13 8.46510731"></polygon>
+                    <path d="M8.68965517,13.507309 L8.68965517,27.3103448 L16.137931,21.940667 L23.5862069,27.3103448 L23.5862069,13.507309 M12.347655,6.20689655 L12.347655,19.5218342 M20.118441,6.20689655 L20.118441,19.5218342 M12.347655,13.9550123 L16.2470272,11.0685145 L20.0373425,13.9550123" id="Stroke-2" stroke-width="1.56"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

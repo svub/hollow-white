@@ -1,10 +1,17 @@
-@import 'web-light-theme'
-@import 'web-dark-theme'
+@import 'vars'
+@import 'texts'
 
-.overlay.feedback-mode
-  .title h2:before
-    content 'Danke für dein Feedback!'
-  textarea:before
-    content 'Bitte kopiere den Inhalt des folgenden Textfeldes und sende es mit dem Feedbackformular. Einfach den Link unten anklicken.'
-  a.feedback-link:before
-    content 'Feedbackformular starten'
+for theme in themes
+  src = s("web-%s", unquote(theme))
+  @import src
+// @import 'web-light-theme'
+// @import 'web-dark-theme'
+
+
+html, body, main
+  background var(--bgColor)
+  color var(--fgColor)
+  display flex
+  width 100%
+  min-height 100%
+

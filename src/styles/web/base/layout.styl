@@ -1,13 +1,38 @@
+@import 'buttons'
+@import 'macros'
+
 html
   min-height 100%
   display flex
 
 main
-  max-width 60em
-  height 100%;
-  margin auto
-  padding 25px
+  article
+    max-width 60em
+    height 100%;
+    margin auto
+    padding 25px
 
+main.start
+  text-align center
+
+  .page:before
+    asset('start-logo.svg', 137px, 152px)
+
+  button
+    &.start, &.continue
+      @extends .pill-button
+
+    &.options, &.credits
+      @extends .text-button
+      display block
+      margin auto
+      font-size 16px
+      font-weight 300
+      letter-spacing 1.25px
+      line-height 20px
+      opacity .75
+
+main.read
   .next.links
     icon-width = 180px
     icon-height = 130px
@@ -21,7 +46,6 @@ main
     padding-top icon-height
 
     &:before
-      content "Deine Entscheidung"
       width icon-width
       height icon-height
       position absolute

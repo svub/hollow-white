@@ -1,0 +1,13 @@
+@import 'vars'
+
+asset(src, w, h)
+  for theme in themes
+    selector = s(".%s", theme)
+    url = s("/%s/%s", unquote(theme), unquote(src))
+    {selector} &
+      background url(url)
+  // background s("var(--assetFolder)%s", src)
+  // background-url /var(--assetFolder)src
+  content (selector + '---' + url)
+  width w
+  height h

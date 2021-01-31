@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="19px" viewBox="0 0 23 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico_mainmenu_chapters</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.666667 0 0 0 0 0.666667 0 0 0 0 0.666667 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="HW-Beta" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03a_Chapter_Sections_Dark" transform="translate(-327.000000, -46.000000)">
+            <g id="ico_mainmenu_chapters" transform="translate(327.000000, 45.000000)" filter="url(#filter-1)">
+                <g>
+                    <g id="Group-3" transform="translate(0.000000, 1.000000)" fill-rule="nonzero" stroke="#979797">
+                        <circle id="Oval-5" fill="#979797" cx="1.5" cy="1.5" r="1"></circle>
+                        <line x1="7" y1="1.5" x2="22" y2="1.5" id="Line" stroke-width="1.6" stroke-linecap="square"></line>
+                        <line x1="7" y1="9.5" x2="22" y2="9.5" id="Line-Copy" stroke-width="1.6" stroke-linecap="square"></line>
+                        <line x1="7" y1="17.5" x2="22" y2="17.5" id="Line-Copy-2" stroke-width="1.6" stroke-linecap="square"></line>
+                    </g>
+                    <circle id="Oval-5-Copy" stroke="#979797" fill="#979797" fill-rule="nonzero" cx="1.5" cy="10.5" r="1"></circle>
+                    <circle id="Oval-5-Copy-2" stroke="#979797" fill="#979797" fill-rule="nonzero" cx="1.5" cy="18.5" r="1"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
