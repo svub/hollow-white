@@ -38,7 +38,7 @@ export default class Lexer {
       if (commandStart < 0) break; // done
 
       const lineEnd = raw.indexOf("\n", commandStart);
-      const nextCommand = raw.indexOf('//', commandStart + 2);
+      const nextCommand = raw.indexOf('// ', commandStart + 2); // enforce space after // to avoid collition with https://...
       line++; // not precise, will count a line for each command, even if they are in the same line
       const commandEnd = (lineEnd < 0 && nextCommand < 0)
         ? raw.length - 1
