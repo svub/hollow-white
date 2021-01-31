@@ -17,7 +17,7 @@
     "remove-webpack-config": "node ./node_modules/vue-cli-plugin-nativescript-vue/lib/scripts/webpack-maintenance post",
     "serve:android": "npm run setup-webpack-config && tns run android --env.development",
     "serve:ios": "npm run setup-webpack-config && tns run ios --env.development",
-    "serve:web": "vue-cli-service serve --mode development.web",
+    "serve:web": "vue-cli-service serve --mode development.web --port 8081",
     "setup-webpack-config": "node ./node_modules/vue-cli-plugin-nativescript-vue/lib/scripts/webpack-maintenance pre"
   },
   "dependencies": {
