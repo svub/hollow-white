@@ -1,5 +1,5 @@
 <template web lang="pug">
-main(:class="appClasses")
+main(:class="page")
   transition(name='pages')
     //- use dynamic component: component(:is=page)
     Start(key="1", v-if="page === 'start'")
@@ -29,7 +29,7 @@ main(:class="appClasses")
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 // import HelloWorld from './components/HelloWorld.vue';
 import Start from "./views/Start.vue";
 import Read from "./views/Read.vue";
@@ -88,9 +88,9 @@ export default class App extends Vue {
     window["appState"] = appState;
   }
 
-  get appClasses(): string {
-    return `${this.page} ${Object.values(this.options).join(' ')}`;
-  }
+  // get appClasses(): string {
+  //   return `${this.page} ${Object.values(this.options).join(' ')}`;
+  // }
 
   get chapters() {
     return logRaw('progress',
@@ -104,6 +104,10 @@ export default class App extends Vue {
           // .map(section => { return { id: section.id, title: section.title, elements: [], next: [] } });
         return chapter;
       }));
+  }
+
+  @Watch('options', { deep: true, immediate: true }) optionsChanged() {
+    document.body.className = Object.values(this.options).join(' ');
   }
 }
 </script>
