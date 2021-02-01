@@ -10,13 +10,15 @@ export type Token = {
   url?: string;
 }
 
+const COMMAND_START = '// ';
+
 export default class Lexer {
   tokenize(raw: string, url?: string): Token[] {
     let position = 0;
     let line = 0;
     const tokens: Token[] = [];
     do {
-      const commandStart = raw.indexOf('//', position);
+      const commandStart = raw.indexOf(COMMAND_START, position);
       const textEnd = commandStart < 0 ? raw.length -1 : commandStart;
 
       const text = raw.substring(position, textEnd);
@@ -38,7 +40,7 @@ export default class Lexer {
       if (commandStart < 0) break; // done
 
       const lineEnd = raw.indexOf("\n", commandStart);
-      const nextCommand = raw.indexOf('// ', commandStart + 2); // enforce space after // to avoid collition with https://...
+      const nextCommand = raw.indexOf(COMMAND_START, commandStart + 2); // enforce space after // to avoid collition with https://...
       line++; // not precise, will count a line for each command, even if they are in the same line
       const commandEnd = (lineEnd < 0 && nextCommand < 0)
         ? raw.length - 1
