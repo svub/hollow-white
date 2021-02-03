@@ -5,7 +5,6 @@ main(:class="page")
     Start(key="1", v-if="page === 'start'")
     Read(key="2", v-if="page === 'read'")
     Tester(key="3", v-if="page === 'test'")
-  //- transition(name='overlay' type="animation" appear :duration='10000')
   transition(name='overlay' appear)
     .backdrop(v-if="!!overlay" @click="setOverlay('')")
       .overlay(:class="overlay")
@@ -66,7 +65,6 @@ export default class App extends Vue {
   @Action init;
   @Action("page") setPage;
   @Action("overlay") setOverlay;
-  // @Getter progress: Position[];
 
 
   created() {
@@ -78,6 +76,7 @@ export default class App extends Vue {
       warn("TEST: going to page ", testPage);
       this.setPage(testPage);
     }
+    // open particular overlay for testing
     const testOverlay = localStorage.getItem("testOverlay");
     if (testOverlay) {
       warn("TEST: opening overlay ", testOverlay);
@@ -88,20 +87,14 @@ export default class App extends Vue {
     window["appState"] = appState;
   }
 
-  // get appClasses(): string {
-  //   return `${this.page} ${Object.values(this.options).join(' ')}`;
-  // }
-
   get chapters() {
     return logRaw('progress',
       uniq(this.path.map(ref => ref.chapterId))
       .map(id => clone(book.chapters.find(chapter => chapter.id === id)))
       .filter(chapter => !!chapter)
-      // .map(chapter => clone(chapter)!)
       .map((chapter: Chapter) => {
         chapter.sections = chapter.sections
           .filter(section => !!this.path.find(r => r.chapterId === chapter.id && r.sectionId === section.id));
-          // .map(section => { return { id: section.id, title: section.title, elements: [], next: [] } });
         return chapter;
       }));
   }

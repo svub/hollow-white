@@ -6,7 +6,7 @@
     .sub-title(v-if="book.subTitle") {{ book.subTitle }}
   .buttons
     .status(v-if="started")
-      span.chapter {{ chapter.id }}
+      span.chapter {{ position.chapter.id }}
       span.progress {{ Math.floor(progress * 100) }}%
     button(@click="start", :class="{ start: !started, continue: started }")
     button.options(@click="overlay('options')")
@@ -15,9 +15,9 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { State, Action, Getter } from "vuex-class";
-import { Chapter, Section } from "../shared/entities";
+import { Action, Getter } from "vuex-class";
 import book from "../book";
+import { Position } from "../store";
 
 @Component({
   name: "Start",
@@ -25,8 +25,7 @@ import book from "../book";
 export default class Start extends Vue {
   @Action start: Function;
   @Action overlay: Function;
-  @State chapter: Chapter;
-  @State section: Section;
+  @Getter position: Position;
   @Getter started: boolean;
   book = book;
 
@@ -42,7 +41,7 @@ export default class Start extends Vue {
     for (const chapter of this.book.chapters) {
       for (const section of chapter.sections) {
         total++;
-        if (chapter.id === this.chapter.id && section.id === this.section.id)
+        if (chapter.id === this.position.chapter.id && section.id === this.position.section.id)
           index = total;
       }
     }
