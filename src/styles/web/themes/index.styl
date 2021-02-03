@@ -1,11 +1,9 @@
-@import 'vars'
-@import 'texts'
+@import 'themes/vars'
+@import 'themes/web/texts'
 
 for theme in themes
-  src = s("web-%s", unquote(theme))
+  src = s("themes/web/%s", unquote(theme))
   @import src
-// @import 'web-light-theme'
-// @import 'web-dark-theme'
 
 
 html, body, main
@@ -15,3 +13,6 @@ html, body, main
   width 100%
   min-height 100%
 
+.overlay
+  background var(--bgColor)
+  color var(--fgColor)
