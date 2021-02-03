@@ -184,7 +184,19 @@ const config: Config = {
       "media": "URL to media file",
       "category": "category (optional)"
     }
-  ]
+  ],
+  options: [{
+    id: 'theme',
+    title: 'Theme',
+    choices: [{
+      id: 'dark-theme',
+      title: 'Dark',
+      default: true,
+    },{
+      id: 'light-theme',
+      title: 'Light',
+    }]
+  }],
 };
 
 export default config;

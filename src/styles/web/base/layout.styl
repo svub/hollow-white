@@ -6,31 +6,48 @@ html
   display flex
 
 main
-  article
-    max-width 60em
-    height 100%;
-    margin auto
-    padding 25px
+  max-width 30em
+  height 100%;
+  margin auto
+  padding 25px
+
+  .page
+    flex-column()
 
 main.start
   text-align center
+  asset('start-background.png')
+  background-size contain
 
-  .page:before
-    asset('start-logo.svg', 137px, 152px)
+  .title
+    flex 2
+    flex-column()
+    justify-items center
 
-  button
-    &.start, &.continue
-      @extends .pill-button
-
-    &.options, &.credits
-      @extends .text-button
-      display block
+    .logo
+      asset('start-logo.svg', 300px, 266px)
       margin auto
-      font-size 16px
-      font-weight 300
-      letter-spacing 1.25px
-      line-height 20px
-      opacity .75
+    h1
+      display none
+
+  .buttons
+    flex 1
+    flex-column()
+
+    button
+      margin-bottom 40px
+
+      &.start, &.continue
+        @extends .pill-button
+
+      &.options, &.credits
+        @extends .text-button
+        display block
+        font-size 16px
+        font-weight 300
+        letter-spacing 1.25px
+        line-height 20px
+        opacity .75
 
 main.read
   .next.links
