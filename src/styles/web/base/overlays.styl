@@ -1,4 +1,4 @@
-@import 'web-constants'
+@import '../../common/constants'
 
 // animations
 @keyframes overlay
@@ -37,7 +37,7 @@
     max-width maxWidth
     max-height 100%
     overflow auto
-    box-shadow 0 0 50px var(--textColor)
+    box-shadow 0 0 50px @css { rgba(var(--textColorRgb), .2) }
 
   &.overlay-enter-active, &.overlay-enter-active .overlay
     animation-duration .6s
