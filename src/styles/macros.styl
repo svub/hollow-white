@@ -1,6 +1,5 @@
 @import 'vars'
 
-// asset(src, w = 100%, h = 100%)
 asset(src, w = false, h = false)
   for theme in themes
     selector = s(".%s", theme)
@@ -11,8 +10,6 @@ asset(src, w = false, h = false)
         width w
       if h
         height h
-  // background s("var(--assetFolder)%s", src)
-  // background-url /var(--assetFolder)src
 
 flex-column()
   display flex

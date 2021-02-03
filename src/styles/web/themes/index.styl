@@ -1,10 +1,10 @@
-@import 'themes/vars'
-@import 'themes/web/texts'
+@import '../../vars'
+@import 'texts'
+@import 'layout'
 
 for theme in themes
-  src = s("themes/web/%s", unquote(theme))
+  src = s("%s", unquote(theme))
   @import src
-
 
 html, body, main
   background var(--bgColor)
