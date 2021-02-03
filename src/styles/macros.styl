@@ -1,13 +1,20 @@
 @import 'vars'
 
-asset(src, w, h)
+// asset(src, w = 100%, h = 100%)
+asset(src, w = false, h = false)
   for theme in themes
     selector = s(".%s", theme)
-    url = s("/%s/%s", unquote(theme), unquote(src))
+    url = s("/assets/%s/%s", unquote(theme), unquote(src))
     {selector} &
-      background url(url)
+      background center center no-repeat url(url)
+      if w
+        width w
+      if h
+        height h
   // background s("var(--assetFolder)%s", src)
   // background-url /var(--assetFolder)src
-  content (selector + '---' + url)
-  width w
-  height h
+
+flex-column()
+  display flex
+  flex-direction column
+  width 100%
