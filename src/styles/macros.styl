@@ -1,11 +1,19 @@
 @import 'vars'
 
-asset(src, w = false, h = false)
+asset(src, w = false, h = false, size = '')
   for theme in themes
     selector = s(".%s", theme)
     url = s("/assets/%s/%s", unquote(theme), unquote(src))
+    if w is a 'string' or w is a 'ident' // skip w and h
+      size = w
+      w = false
     {selector} &
-      background center center no-repeat url(url)
+      background-image url(url)
+      background-repeat no-repeat
+      if size
+        background-size unquote(size)
+      if w or h
+        background-position center
       if w
         width w
       if h
@@ -14,4 +22,9 @@ asset(src, w = false, h = false)
 flex-column()
   display flex
   flex-direction column
+  width 100%
+
+flex-row()
+  display flex
+  flex-direction row
   width 100%
