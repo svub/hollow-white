@@ -14,7 +14,7 @@
 
   TextElement.text(:elements="position.section.elements")
 
-  .next.links
+  .next.links(:class="'count-'+position.section.next.length")
     button(
       v-for="link in position.section.next",
       @click="open(link)"
