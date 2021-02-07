@@ -4,14 +4,9 @@ asset(src, w = false, h = false, size = '')
   for theme in themes
     selector = s(".%s", theme)
     url = s("/assets/%s/%s", unquote(theme), unquote(src))
-    if w is a 'string' or w is a 'ident' // skip w and h
-      size = w
-      w = false
     {selector} &
       background-image url(url)
       background-repeat no-repeat
-      if size
-        background-size unquote(size)
       if w or h
         background-position center
       if w

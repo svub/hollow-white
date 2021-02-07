@@ -1,0 +1,70 @@
+// @import '../../vars'
+
+main.read
+  nav
+    flex-row()
+    padding-bottom pad
+
+    .back
+      margin-right auto
+      asset('read-nav-logo.svg', 27px, 30px)
+
+    .menu
+      .chapters
+        asset('read-nav-chapters.svg', 27px, 30px)
+
+  .text
+    p
+      color var(--textColor)
+      margin-bottom 1.333em
+
+    .style
+      &.note-black p
+        color var(--fgColor)
+        font-style italic
+      &.note-blue p
+        color var(--blueText)
+        font-style italic
+
+  .next.links
+    icon-width = 180px
+    icon-height = 130px
+
+    position relative
+    flex-row()
+    justify-content space-between
+    // align-items stretch
+    margin-bottom 24px
+    padding-top icon-height
+
+    &:before
+      width icon-width
+      height icon-height
+      position absolute
+      top 0
+      left "calc(50% - (%s / 2))" % icon-width
+      padding-top "calc(%s - 1em - 24px)" % icon-height
+      asset('read-decision-logo.svg')
+      background-position center (icon-height - 95px)
+      color @css { rgba(var(--textColorRgb), .75) }
+      text-transform uppercase
+      font-family "Merriweather Sans"
+      font-size 14px
+      font-weight 300
+      letter-spacing 0
+      line-height 18px
+      text-align center
+
+    button
+      // width calc(50% - 8px)
+      width 158px
+      height @width
+      min-width (maxWidth / 3)
+      max-width s('calc((%s / 2) - %s)', maxWidth, gap)
+      min-height @min-width
+      max-height @max-width
+      padding 24px
+      border 1.5px solid @css { rgba(var(--textColorRgb), .75) }
+      border-radius 30px
+      margin auto
+      z-index 1
