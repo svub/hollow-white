@@ -16,7 +16,13 @@ const book: Book = (({
        "text": "Die Personen und die Handlung der Geschichte sind frei erfunden und fiktiv. Etwaige Ähnlichkeiten mit tatsächlichen Begebenheiten oder Personen sind rein zufällig."
       }
      ],
-     "next": []
+     "next": [
+      {
+        "title": "Kapitel 1",
+        "chapterId": "1",
+        "sectionId": "001"
+       },
+      ]
     }
    ]
   },
