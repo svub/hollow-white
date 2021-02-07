@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { Chapter, Link, Reference, Section, Item, State, ChangeState, AddItem, RemoveItem, Option, Choice } from '../shared/entities';
+import { Chapter, Link, Reference, Section, Item, State, ChangeState, AddItem, RemoveItem, Option, Choice, Overlays } from '../shared/entities';
 import { equal, warn } from '../shared/util';
 import { error } from '../shared/util';
 import VuexPersistence from 'vuex-persist';
@@ -14,6 +14,7 @@ const dontStore = ['page', 'overlay'];
 export interface Settings {
   page: string;
   overlay?: string;
+  overlayData?: any;
   options: { [id: string]: Option };
 }
 
@@ -78,8 +79,9 @@ export default new Vuex.Store({
     page(state, { page }) {
       state.page = page;
     },
-    overlay(state, { overlay }) {
+    overlay(state, { overlay, data}: { overlay: string; data: any | undefined }) {
       state.overlay = overlay;
+      state.overlayData = data;
     },
     // init(state, { book, config }: { book: Book; config: Config }) {
     //   // restore state from local storage
@@ -180,9 +182,11 @@ export default new Vuex.Store({
       if (['start', 'read', 'tester'].indexOf(page) < 0) error('Page not found', page);
       commit('page', { page });
     },
-    overlay({ commit }, overlay = '') {
-      if (['chapters', 'items', 'options', 'credits', 'feedbackMode', ''].indexOf(overlay) < 0) error('Overlay not found', overlay);
-      commit('overlay', { overlay });
+    overlay({ commit }, overlay: string | { overlay: string; data: any } = '') {
+      // if (['chapters', 'items', 'options', 'credits', 'feedbackMode', ''].indexOf(overlay) < 0) error('Overlay not found', overlay);
+      const data = typeof overlay === 'string' ? { overlay, data: undefined } : overlay;
+      if (data.overlay !== '' && !Overlays[data.overlay]) error('Overlay not found', overlay);
+      commit('overlay', overlay);
     },
     start({ commit, dispatch }) {
       const p = find();

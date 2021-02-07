@@ -6,7 +6,7 @@ main(:class="page")
     Read(key="2", v-if="page === 'read'")
     Tester(key="3", v-if="page === 'test'")
   transition(name='overlay' appear)
-    .backdrop(v-if="!!overlay" @click="setOverlay('')")
+    .backdrop(v-if="!!overlay" @click.self="setOverlay('')")
       .overlay(:class="overlay")
         .content
           Chapters(v-if="overlay === 'chapters'" :chapters="chapters")
@@ -14,6 +14,7 @@ main(:class="page")
           Credits(v-if="overlay === 'credits'")
           Options(v-if="overlay === 'options'")
           FeedbackMode(v-if="overlay === 'feedbackMode'")
+          Share(v-if="overlay === 'shareOverlay'" :url="overlayData.url" :title="overlayData.title")
         .actions
           button.close(@click="setOverlay('')")
   //- HelloWorld(:msg="msg")
@@ -33,24 +34,24 @@ import { Component, Vue, Watch } from "vue-property-decorator";
 import Start from "./views/Start.vue";
 import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
-import { State, Action, Getter } from "vuex-class";
+import { State, Action } from "vuex-class";
 import book from "./book";
-import config from "./config";
-import { clone, load, logRaw, logVar, warn } from "./shared/util";
-import appState, { Position } from "./store";
+import { clone, logRaw, warn } from "./shared/util";
+import appState from "./store";
 import { Chapter, Option } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
 import Items from './components/overlays/Items.vue';
 import Credits from './components/overlays/Credits.vue';
 import Options from './components/overlays/Options.vue';
 import FeedbackMode from './components/overlays/FeedbackMode.vue';
+import Share from './components/overlays/Share.vue';
 import uniq from "lodash/uniq";
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
 @Component({
   name: "home",
-  components: { Start, Read, Tester, Chapters, Items, Credits, Options, FeedbackMode },
+  components: { Start, Read, Tester, Chapters, Items, Credits, Options, FeedbackMode, Share },
 })
 export default class App extends Vue {
   private navbarTitle = `App.vue`;
@@ -58,6 +59,7 @@ export default class App extends Vue {
 
   @State page;
   @State overlay;
+  @State overlayData;
   @State theme;
   @State items;
   @State path;

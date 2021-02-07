@@ -36,9 +36,21 @@ export interface Config {
 
 // entities
 
-export enum Specials {
+export enum Overlays {
+  options = 'options',
   credits = 'credits',
+  chapters = 'chapters',
+  items = 'items',
+  shareOverlay = 'shareOverlay',
 }
+
+export enum Functions {
+  reset = 'reset',
+  share = 'share',
+}
+
+export const Specials = { ...Overlays, ...Functions };
+export type Specials = typeof Specials;
 
 export interface Book extends Title {
   subTitle?: string;
@@ -58,7 +70,9 @@ export interface Section extends HasElements, Entity, Title {
 
 export interface Link extends Title, Reference {}
 
-export interface SpecialLink extends Title, Entity {}
+export interface SpecialLink extends Title, Entity {
+  data?: string;
+}
 
 export function isSpecialLink(link: Link | SpecialLink): link is SpecialLink {
   return !!(link as SpecialLink).id;
