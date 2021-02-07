@@ -1,0 +1,38 @@
+main.start
+  text-align center
+  asset('start-background.png')
+  background-size cover
+
+  .title
+    flex 2
+    flex-column()
+    justify-items center
+
+    .logo
+      asset('start-logo.svg', 300px, 266px)
+      margin auto
+    h1
+      display none
+
+  .buttons
+    flex 1
+    flex-column()
+
+    .status
+      @extend .small
+      margin-bottom 20px
+
+    button
+      margin-bottom 40px
+
+      &.start, &.continue
+        @extends .pill-button
+
+      &.options, &.credits
+        @extends .text-button
+        display block
+        font-size 16px
+        font-weight 300
+        letter-spacing 1.25px
+        line-height 20px
+        opacity .75
