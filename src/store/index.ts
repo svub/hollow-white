@@ -15,7 +15,7 @@ export interface Settings {
   page: string;
   overlay?: string;
   overlayData?: any;
-  options: { [id: string]: Option };
+  options: { [id: string]: string };
 }
 
 const dontReset = ['items'];
@@ -32,8 +32,8 @@ export function inPath(link: Reference | Link, path: Array<Reference>): boolean 
   return !!path.find(pathItem => pathItem.chapterId === link.chapterId && pathItem.sectionId === link.sectionId);
 }
 
-const defaultOptions = {}
-config.options.forEach(option => defaultOptions[option.id] = option.choices.find(c => c.default) ?? option.choices[0]);
+const defaultOptions: { [id: string]: string } = {};
+config.options.forEach(option => defaultOptions[option.id] = (option.choices.find(c => c.default) ?? option.choices[0]).id);
 
 function initialSettings(): Settings {
   return {
