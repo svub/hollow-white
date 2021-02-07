@@ -1,6 +1,7 @@
 import { Book, Chapter, Section, ElementType, Paragraph, If, Else, HasElements, Link, ChangeState, AddItem, RemoveItem,
   SpecialLink, Style, Specials } from './entities';
 import { Token, TokenType } from './Lexer';
+import { Overlays, Functions } from './entities';
 
 export enum CommandType {
   book = 'book',
@@ -136,9 +137,13 @@ export default class Parser {
           case CommandType.special:
             if (!chapter) this.error('Found a "// <" before first "// chapter"', token, command);
             if (!section) this.error('Found a "// <" before first "// section"', token, command);
+            const id = command.fields.shift()!;
+            if (!Overlays[id] && !Functions[id]) this.error('Special function not found', token, id, Overlays, Functions);
+            const data = [Functions.share].includes(Functions[id]) ? command.fields.shift() : '';
             const special: SpecialLink = {
-              title: command.fields.slice(1).join(' '),
-              id: command.fields[0],
+              title: command.fields.join(' '),
+              id,
+              data,
             };
             // TODO add related commands
             section!.next.push(special);

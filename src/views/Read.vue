@@ -26,7 +26,7 @@
 import { Component, Vue } from "vue-property-decorator";
 import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
-import { Link, SpecialLink, isSpecialLink, Reference } from "../shared/entities";
+import { Link, SpecialLink, isSpecialLink, Reference, Overlays, Functions } from "../shared/entities";
 import TextElement from "../components/elements/TextElement.vue";
 import { Position } from "../store";
 import config from "../config";
@@ -40,13 +40,14 @@ export default class Read extends Vue {
   @Action page: Function;
   @Action goto: Function;
   @Action overlay: Function;
+  @Action reset: Function;
   @Getter position: Position;
   config = config;
 
   enabled(link: Link | SpecialLink): boolean {
     // enabled if: decision taken before (in path); or if last in progress == current (any decision possible)
     if (this.path.length === 0 || isSpecialLink(link) || this.selected(link)) return true;
-    const lastPos: Reference = last(this.path);
+    const lastPos: Reference = last(this.path)!;
     return ((lastPos.chapterId === this.position.chapter.id) && lastPos.sectionId === this.position.section.id);
   }
 
@@ -55,15 +56,29 @@ export default class Read extends Vue {
     // chapter and section in progress -> yes, we went through this decision
     // const chapter = this.progress.find(chapter => chapter.id === link.chapterId);
     // return !!chapter.sections.find(section => section.id === link.sectionId);
-    this.path.indexOf(link as Reference) > -1;
+    // return this.path.indexOf(link as Reference) > -1;
+    return !!this.path.find(pathItem => pathItem.chapterId === link.chapterId && pathItem.sectionId === link.sectionId);
   }
 
   open(link: Link | SpecialLink) {
     if (isSpecialLink(link)) {
-      // TODO ### for other special links such as restart are there more?
-      return this.overlay(link.id);
+      // Special functions
+      if (link.id === Functions.reset) return this.reset();
+      if (link.id === Functions.share) return this.share(link.title, link.data);
+      // Overlays
+      if (Overlays[link.id]) return this.overlay(link.id);
     }
     this.goto(link);
+  }
+
+  share(title: string, url: string) {
+    const data = { title, url };
+    if (navigator.share) {
+      navigator.share(data);
+    }
+    else {
+      this.overlay({ overlay: Overlays.shareOverlay, data });
+    }
   }
 }
 </script>
