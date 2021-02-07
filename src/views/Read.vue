@@ -28,7 +28,7 @@ import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
 import { Link, SpecialLink, isSpecialLink, Reference, Overlays, Functions } from "../shared/entities";
 import TextElement from "../components/elements/TextElement.vue";
-import { Position } from "../store";
+import { inPath, Position } from "../store";
 import config from "../config";
 
 @Component({
@@ -53,11 +53,7 @@ export default class Read extends Vue {
 
   selected(link: Link | SpecialLink): boolean {
     if (isSpecialLink(link)) return false;
-    // chapter and section in progress -> yes, we went through this decision
-    // const chapter = this.progress.find(chapter => chapter.id === link.chapterId);
-    // return !!chapter.sections.find(section => section.id === link.sectionId);
-    // return this.path.indexOf(link as Reference) > -1;
-    return !!this.path.find(pathItem => pathItem.chapterId === link.chapterId && pathItem.sectionId === link.sectionId);
+    return inPath(link, this.path);
   }
 
   open(link: Link | SpecialLink) {
