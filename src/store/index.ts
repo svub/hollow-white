@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { Chapter, Link, Reference, Section, Item, State, ChangeState, AddItem, RemoveItem, Option, Choice, Overlays } from '../shared/entities';
-import { equal, warn } from '../shared/util';
+import { Chapter, Link, Reference, Section, Item, State, ChangeState, AddItem, RemoveItem, Option, Choice, Overlays, SpecialLink, isSpecialLink } from '../shared/entities';
+import { equal, warn, store } from '../shared/util';
 import { error } from '../shared/util';
 import VuexPersistence from 'vuex-persist';
 import book from '@/book';
@@ -27,6 +27,10 @@ export interface BookState {
 }
 
 export interface AppState extends Settings, BookState {}
+
+export function inPath(link: Reference | Link, path: Array<Reference>): boolean {
+  return !!path.find(pathItem => pathItem.chapterId === link.chapterId && pathItem.sectionId === link.sectionId);
+}
 
 const defaultOptions = {}
 config.options.forEach(option => defaultOptions[option.id] = option.choices.find(c => c.default) ?? option.choices[0]);
@@ -55,16 +59,6 @@ function initialState(): AppState {
 
 const state: AppState = initialState();
 
-// export interface Getters {
-//   progress({ path }, getters): Chapter[];
-//   chapter({ chapterId }, getters): Chapter;
-//   section({ sectionId }, getters): Section;
-// }
-
-// const getters: Getters = {
-
-// }
-
 export interface Position { chapter: Chapter; section: Section }
 
 const find = (chapterId?: string | null, sectionId?: string | null): Position => {
@@ -83,33 +77,7 @@ export default new Vuex.Store({
       state.overlay = overlay;
       state.overlayData = data;
     },
-    // init(state, { book, config }: { book: Book; config: Config }) {
-    //   // restore state from local storage
-    //   // for (const key in state) {
-    //   //   const value = load(key);
-    //   //   if (value) {
-    //   //     state[key] = value;
-    //   //   }
-    //   // }
-    //   // load theme, use default, or none
-    //   // state.theme = load('theme') ?? config?.themes?.[0] ?? '';
-
-    //   state.config = config;
-    //   state.book = book;
-    // },
     setSection(state, { chapterId, sectionId }: { chapterId: string; sectionId: string }) {
-      // if (!book) {
-      //   throw new Error("Book not defined - forgot to call init?");
-      // }
-      // const { chapter, section } = find(book, chapterId, sectionId);
-      // log('setSection', chapterId, chapter.id, sectionId, section.id);
-      // state.chapter = chapter ?? book.chapters[0];
-      // state.section = section ?? state.chapter.sections[0];
-      // log('setSection:', state.chapter.id, state.section.id);
-
-      // persist
-      // store('chapterId', state.chapter.id);
-      // store('sectionId', state.section.id);
 
       state.position = { chapterId, sectionId };
     },
@@ -117,16 +85,13 @@ export default new Vuex.Store({
       if (!position) {
         throw new Error("Can not add to path, no current chapter/section");
       }
-      // const ref: Reference = { chapterId: state.chapterId, sectionId: state.sectionId };
       if (path.length > 0 && equal(position, path[path.length - 1])) {
         warn("Trying to add same state to path", path, position);
       } else {
         path.push(position);
-        // store('path', state.path);
       }
     },
     changeState(appState, { state }: { state: ChangeState }) {
-      // appState.states[state.id] = state;
       const currentState: State = appState.states[state.id] ?? { id: state.id, value: 0 };
       currentState.value += parseInt(state.modifier);
       appState.states = {
@@ -151,13 +116,6 @@ export default new Vuex.Store({
       // TODO is it enough to just remove the item? or do I need to recreate the map?
       Vue.delete(state.items, item.id);
     },
-    // changeTheme(state, { theme }: { theme: string }) {
-    //   if (config.themes && config.themes?.indexOf(theme) < 0) {
-    //     return warn(`changeTheme: theme ${ theme } not configured`);
-    //   }
-    //   state.theme = theme;
-    //   // store('theme', theme);
-    // },
     setOption(state, { option, choice }: { option: Option; choice: Choice }) {
       if (!option.choices.find(c => c.id === choice.id)) {
         error('setOption: given choice is not a choice of given option.', option, choice);
@@ -173,32 +131,26 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    // init({ commit }, setup: { book: Book; config: Config }) {
-    //   commit('init', setup);
-    //   // commit('setSection', loadAll('chapterId', 'sectionId'));
-    //   log('post init state', state.page, state.path, state.started, state.chapter, state.section);
-    // },
     page({ commit }, page) {
       if (['start', 'read', 'tester'].indexOf(page) < 0) error('Page not found', page);
       commit('page', { page });
     },
     overlay({ commit }, overlay: string | { overlay: string; data: any } = '') {
-      // if (['chapters', 'items', 'options', 'credits', 'feedbackMode', ''].indexOf(overlay) < 0) error('Overlay not found', overlay);
-      const data = typeof overlay === 'string' ? { overlay, data: undefined } : overlay;
-      if (data.overlay !== '' && !Overlays[data.overlay]) error('Overlay not found', overlay);
-      commit('overlay', overlay);
+      const entry = typeof overlay === 'string' ? { overlay, data: undefined } : overlay;
+      if (entry.overlay !== '' && !Overlays[entry.overlay]) error('Overlay not found', overlay);
+      commit('overlay', entry);
     },
     start({ commit, dispatch }) {
-      const p = find();
-      commit('setSection', {
-        chapterId: p.chapter.id,
-        sectionId: p.section.id,
+      const startingPoint = find();
+      dispatch('goto', {
+        chapterId: startingPoint.chapter.id,
+        sectionId: startingPoint.section.id,
       });
       dispatch('page', 'read');
     },
-    goto({ commit }, link: Link) {
+    goto({ commit, state }, link: Reference) {
       commit('setSection', link);
-      commit('addToPath');
+      if (!inPath(link, state.path)) commit('addToPath');
       window.scrollTo(0, 0);
     },
     changeState({ commit }, payload: { state: ChangeState }) {
@@ -210,11 +162,7 @@ export default new Vuex.Store({
     removeItem({ commit }, payload: { item: RemoveItem }) {
       commit('removeItem', payload);
     },
-    // changeTheme({ commit }, theme: string) {
-    //   commit('changeTheme', { theme });
-    // },
     setOption({ commit }, payload: { option: Option; choice: Choice }) {
-    // setOption({ commit }, payload: { option: Option; choice: Choice }) {
       commit('setOption', payload);
     },
     reset({ commit, dispatch }) {
@@ -225,17 +173,6 @@ export default new Vuex.Store({
   },
   getters: {
     progress({ path }, getters): Position[] {
-      // return logRaw('progress',
-      //   uniq(path.map(ref => ref.chapterId))
-      //   .map(id => book!.chapters.find(chapter => chapter.id === id))
-      //   .filter(chapter => !!chapter)
-      //   .map(chapter => clone(chapter)!)
-      //   .map((chapter: Chapter) => {
-      //     chapter.sections = chapter.sections
-      //       .filter(section => !!path.find(r => r.chapterId === chapter.id && r.sectionId === section.id));
-      //       // .map(section => { return { id: section.id, title: section.title, elements: [], next: [] } });
-      //     return chapter;
-      //   }));
       return (path.map(ref => find(ref.chapterId, ref.sectionId)));
     },
     position({ position }, getters): Position {
@@ -260,4 +197,5 @@ export default new Vuex.Store({
       filter: (mutation) => dontStore.indexOf(mutation.type) < 0
     }).plugin
   ],
+  devtools: true,
 })
