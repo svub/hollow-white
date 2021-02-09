@@ -68,3 +68,11 @@ main.read
       border-radius 30px
       margin auto
       z-index 1
+
+      &:disabled
+        color @css { rgba(var(--textColorRgb), .75) }
+
+      &.selected
+        color var(--fgColorInverse)
+        background var(--bgColorInverse)
+
