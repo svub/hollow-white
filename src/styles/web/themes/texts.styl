@@ -22,14 +22,24 @@ main.read
   .next.links.count-1:before
     content "Weiter zu"
 
-.overlay.options
-  .title h2:before
-    content 'Optionen'
+.overlay
 
-.overlay.feedback-mode
-  .title h2:before
-    content 'Danke für dein Feedback!'
-  textarea:before
-    content 'Bitte kopiere den Inhalt des folgenden Textfeldes und sende es mit dem Feedbackformular. Einfach den Link unten anklicken.'
-  a.feedback-link:before
-    content 'Feedbackformular starten'
+  .actions
+    button.close:before
+      content 'Schließen'
+
+  &.options
+    .title h2:before
+      content 'Optionen'
+
+  &.feedback-mode
+    .title h2:before
+      content 'Danke für dein Feedback!'
+    textarea:before
+      content 'Bitte kopiere den Inhalt des folgenden Textfeldes und sende es mit dem Feedbackformular. Einfach den Link unten anklicken.'
+    a.feedback-link:before
+      content 'Feedbackformular starten'
+
+  &.chapters
+    .chapter-id:before
+      content 'Kapitel '
