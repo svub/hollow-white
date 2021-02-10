@@ -39,13 +39,13 @@ main.read
 
     &:before
       width icon-width
-      height icon-height
+      // height icon-height
       position absolute
       top 0
       left "calc(50% - (%s / 2))" % icon-width
-      padding-top "calc(%s - 1em - 24px)" % icon-height
+      padding-top "calc(%s - 1em - 30px)" % icon-height
       asset('read-decision-logo.svg')
-      background-position center (icon-height - 95px)
+      background-position center (icon-height - 91px)
       color @css { rgba(var(--textColorRgb), .75) }
       text-transform uppercase
       font-family "Merriweather Sans"
@@ -67,7 +67,7 @@ main.read
       border 1.5px solid @css { rgba(var(--textColorRgb), .75) }
       border-radius 30px
       margin auto
-      z-index 1
+      // z-index 1
 
       &:disabled
         color @css { rgba(var(--textColorRgb), .75) }
