@@ -2,6 +2,7 @@
 .chapters
   .list(ref='scroll')
     .chapter(v-for="chapter in chapters", @click="toggle(chapter.id)")
+      .chapter-id {{ chapter.id }}
       h3 {{ chapter.title }}
       .sections(:class="{ open:  opened === chapter.id}")
         button.section(v-for="section in chapter.sections" @click="goto({ chapterId: chapter.id, sectionId: section.id }); overlay()")
