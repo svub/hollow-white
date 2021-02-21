@@ -1,4 +1,9 @@
+.word-break
+  word-break normal
+  overflow-wrap anywhere
+
 .pill-button
+  @extends .word-break
   height 60px
   width 100%
   background var(--bgColorInverse)
@@ -11,6 +16,7 @@
   line-height 25px
 
 .outline-button
+  @extends .word-break
   height 60px
   margin 0 auto
   padding 0 pad
@@ -24,4 +30,5 @@
   line-height 20px
 
 .text-button
+  @extends .word-break
   border none
