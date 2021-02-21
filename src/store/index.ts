@@ -140,12 +140,14 @@ export default new Vuex.Store({
       if (entry.overlay !== '' && !Overlays[entry.overlay]) error('Overlay not found', overlay);
       commit('overlay', entry);
     },
-    start({ commit, dispatch }) {
-      const startingPoint = find();
-      dispatch('goto', {
-        chapterId: startingPoint.chapter.id,
-        sectionId: startingPoint.section.id,
-      });
+    start({ getters, dispatch }) {
+      if (!getters.started) {
+        const startingPoint = find();
+        dispatch('goto', {
+          chapterId: startingPoint.chapter.id,
+          sectionId: startingPoint.section.id,
+        });
+      }
       dispatch('page', 'read');
     },
     goto({ commit, state }, link: Reference) {
