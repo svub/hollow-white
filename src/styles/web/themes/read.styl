@@ -34,7 +34,7 @@ main.read
     flex-row()
     justify-content space-between
     // align-items stretch
-    margin-bottom 24px
+    margin-bottom 166px
     padding-top icon-height
 
     &:before
@@ -58,7 +58,7 @@ main.read
     button
       // width calc(50% - 8px)
       @extends .word-break
-      width 158px
+      width 154px
       height @width
       min-width (maxWidth / 3)
       max-width s('calc((%s / 2) - %s)', maxWidth, gap)
@@ -68,7 +68,9 @@ main.read
       border 1.5px solid @css { rgba(var(--textColorRgb), .75) }
       border-radius 30px
       margin auto
-      // z-index 1
+
+      &:not(:last-child)
+        margin-right gap
 
       &:disabled
         color @css { rgba(var(--textColorRgb), .75) }
