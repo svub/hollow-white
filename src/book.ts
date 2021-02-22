@@ -4,7 +4,7 @@ const book: Book = (({
  "title": "Hollow White",
  "chapters": [
   {
-   "id": "intro",
+   "id": "0",
    "title": "Vorwort",
    "sections": [
     {
@@ -18,11 +18,11 @@ const book: Book = (({
      ],
      "next": [
       {
-        "title": "Kapitel 1",
-        "chapterId": "1",
-        "sectionId": "001"
-       },
-      ]
+       "title": "Kapitel 1",
+       "chapterId": "1",
+       "sectionId": "001"
+      }
+     ]
     }
    ]
   },
@@ -4808,11 +4808,11 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "Albert geht kurz in die Küche. Gespannt hörst du, wie er den Hollow Mule Gin zubereitet."
+       "text": "Albert geht kurz in die Küche. Gespannt hörst du, wie er den Hollow Mule Gin zubereitet."
       },
       {
-       "type": "paragraph",
-       "text": "// ITEM gin-mule"
+       "type": "addItem",
+       "id": "gin-mule"
       },
       {
        "type": "style",
@@ -4820,7 +4820,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "1. Glas im Kühlschrank kühl stellen"
+         "text": "1. Glas im Kühlschrank kühlstellen"
         },
         {
          "type": "paragraph",
@@ -5430,7 +5430,7 @@ const book: Book = (({
      ]
     },
     {
-     "id": "032",
+     "id": "031",
      "title": "Splitter aus Tonbandgerät weiter untersuchen",
      "elements": [
       {
@@ -7403,7 +7403,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "mit Rose gehen",
+       "title": "Mit Rose gehen",
        "chapterId": "5",
        "sectionId": "037"
       }
@@ -7615,12 +7615,8 @@ const book: Book = (({
    "sections": [
     {
      "id": "001",
-     "title": "Kurz vor dem Alarm,",
+     "title": "Kurz vor dem Alarm, tief unterhalb der Erde am Kalten Stern.",
      "elements": [
-      {
-       "type": "paragraph",
-       "text": "tief unterhalb der Erde am Kalten Stern."
-      },
       {
        "type": "paragraph",
        "text": "Tief unterhalb der Erde betrachten zwei Forscher die massive Spitze des *Kalten Stern*, die sich durch die Decke in die tief liegende Höhle bohrt. Ein orange-rötliches Licht flackert auf deren Gesichtern und im Hintergrund blinken unterschiedliche Instrumente an einer ominösen Apparatur. Wasser läuft an einigen Wänden von der Decke hinunter."
@@ -10729,7 +10725,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "»Hollow White, Hollow White ...🎶🎶🎶«"
+         "text": "»Hollow White, Hollow White ...«"
         }
        ]
       },
@@ -12636,7 +12632,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Vor dir erstreckt sich ein Zeitstrahl mit vielen Sprungsequenzen."
+       "text": "Vor dir erstreckt sich ein langer Zeitstrahl mit vielen unterschiedlichen Sprungsequenzen."
       },
       {
        "type": "paragraph",
@@ -12648,11 +12644,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Du siehst deinen Sprung, gefolgt von Hannahs und Georys Sprung. Hannahs und Georgys Zeitstrahl gehen 60 Jahre weiter in die Vergangenheit als deiner. Das muss der Moment gewesen sein, als bei Hannahs und Georgy´s Sprung auch etwas gewaltig schief ging und die beiden ganze 60 Jahre weiter in die Vergangenheit gesprungen sind als du selbst."
+       "text": "Du siehst deinen Sprung, gefolgt von Hannahs und Georys. Hannahs und Georgys Linien ziehen sich ganze 60 Jahre weiter in die Vergangenheit als deiner. Das muss der Moment gewesen sein, als etwas gewaltig schief ging und die beiden ganze 60 Jahre weiter in die Vergangenheit gesprungen sind."
       },
       {
        "type": "paragraph",
-       "text": "Du spielst das Tonbandgerät weiter ab und die Stimme ist wieder zu hören."
+       "text": "Du spielst das Tonbandgerät ab und die Stimme ist wieder zu hören."
       },
       {
        "type": "style",
@@ -12670,7 +12666,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Unruhig wanderst du mit dem Laternenlicht weiter entlang des Zeitstrahls zu den letzten Zeichnungen. Auf der letzten Kreidezeichnung ist die Sonne zu sehen, die von einem Schwarzen Kreis verschlungen wird."
+       "text": "Unruhig wanderst du mit dem Laternenlicht weiter entlang des Zeitstrahls zu den letzten Zeichnungen. Auf der letzten Kreidezeichnung ist die Sonne zu sehen, die von einem Schwarzen Kreis umschlungen wird."
       },
       {
        "type": "paragraph",
@@ -12749,7 +12745,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Du machst die Laterne an, nimmst die kleine Truhe und begibst dich langsam zurück an die Oberfläche. Mit jeder Treppenstufe, gehen dir Georgies letzte Worte von dem Tonband durch den Kopf. Ob du wohl nun das schlimmste verhindern konntest? Was für Auswirkungen deine Entscheidungen wohl auf die Zukunft haben? Bin ich in Gefahr?"
+       "text": "Du machst die Laterne an, nimmst die kleine Truhe und begibst dich langsam zurück an die Oberfläche. Mit jeder Treppenstufe, gehen dir Georgies letzte Worte von dem Tonband durch den Kopf. Ob du wohl nun das Schlimmste verhindern konntest? Was für Auswirkungen deine Entscheidungen wohl auf die Zukunft haben? Bin ich in Gefahr?"
       },
       {
        "type": "paragraph",
@@ -13055,7 +13051,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "»Sie stehen unter Verdacht! Unter Verdacht den *Schwarzen Kreis* verraten zu haben und mit den Weißen Rosen in Verbindung stehen! Wir werden dem nachgehen. Falls dem so sei, kennen sie das Urteil. Wir haben ein Auge auf sie!«, sagt die Person mit furchteinflößender Stimme."
+         "text": "»Sie stehen unter Verdacht! Unter Verdacht den *Schwarzen Kreis* verraten zu haben und mit den Weißen Rosen in Verbindung stehen! Wir werden dem nachgehen. Falls dem so sei, kennen wir alle das Urteil. Wir haben ein Auge auf sie!«, sagt die Person mit furchteinflößender Stimme."
         },
         {
          "type": "paragraph",
@@ -13095,7 +13091,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "Du stehst wieder in purer Leere. Als du einen Blick Richtung deiner Hand wirftst, ist die Waffe verschwunden. Du zitterst immer noch stark."
+         "text": "Du stehst wieder in purer Leere. Als du einen Blick Richtung deiner Hand wirfst, ist die Waffe verschwunden. Du zitterst immer noch stark."
         },
         {
          "type": "paragraph",
@@ -13269,10 +13265,23 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "Alles wird schwarz."
-      },
+      }
+     ],
+     "next": [
+      {
+       "title": "Aufwachen",
+       "chapterId": "11",
+       "sectionId": "009"
+      }
+     ]
+    },
+    {
+     "id": "009",
+     "title": "Aufwachen",
+     "elements": [
       {
        "type": "paragraph",
-       "text": "Als du wieder aufwachst, starrst du ins helle Licht einer Neonröhre. Es ist fast unerträglich hell."
+       "text": "Als du wieder aufwachst, starrst du ins helle Licht einer Neonröhre. Es ist fast unerträglich hell. Deine Augen sind trocken und brennen."
       },
       {
        "type": "paragraph",
@@ -13284,7 +13293,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Panisch tastest du deinen Bauch ab. Schmerzen."
+       "text": "Panisch tastest du mit deinen zitternden Händen deinen Bauch ab. Schmerzen."
       },
       {
        "type": "paragraph",
@@ -13295,22 +13304,22 @@ const book: Book = (({
       {
        "title": "Schläuche abreissen",
        "chapterId": "11",
-       "sectionId": "009"
+       "sectionId": "010"
       },
       {
        "title": "Alarm drücken",
        "chapterId": "11",
-       "sectionId": "010"
+       "sectionId": "011"
       }
      ]
     },
     {
-     "id": "009",
+     "id": "010",
      "title": "Schläuche abreissen",
      "elements": [
       {
        "type": "paragraph",
-       "text": "Du versuchst panisch die Schläuche abzureissen."
+       "text": "Panisch reißt du die ganzen Schläuche, welche an dir hängen ab."
       },
       {
        "type": "paragraph",
@@ -13322,7 +13331,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Bevor du aufstehst, steht schon ein Arzt und sein Helferteam im Zimmer und versuchen dich zu beruhigen."
+       "text": "Bevor du es schaffst aufzustehen, steht schon ein Arzt und sein Helferteam im Zimmer und versuchen dich zu beruhigen."
       },
       {
        "type": "paragraph",
@@ -13334,7 +13343,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Du wehrst dich."
+       "text": "Du wehrst dich. Schlägst um dich rum."
       },
       {
        "type": "paragraph",
@@ -13346,7 +13355,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Total verzweifelt versuchst du dich an etwas festzuhalten als du wieder Schwindelerscheinungen merkst. Der Arzt schafft es gerade noch dich aufzufangen."
+       "text": "Total verzweifelt versuchst du dich an etwas festzuhalten als du wieder Schwindelerscheinungen merkst. Albert schafft es gerade noch dich aufzufangen."
       },
       {
        "type": "paragraph",
@@ -13368,15 +13377,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "In seinen Armen hält er euer Baby."
+       "text": "Dein Blick ist wie verzaubert auf ihn gerichtet. In seinen Armen hält er euer Baby."
       },
       {
        "type": "paragraph",
-       "text": "Langsam steht er auf und begrüßt dich."
-      },
-      {
-       "type": "paragraph",
-       "text": "»Schau, wer da wach ist«, sagt er mit ruhiger Stimme und legt dir vorsichtig die Kleine auf die Brust."
+       "text": "»Schau, wer da wach ist«, sagt er mit ruhiger Stimme, steht langsam auf und legt dir behutsam die Kleine auf die Brust."
       },
       {
        "type": "paragraph",
@@ -13392,7 +13397,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Verzaubert schaust du auf das kleine Wunder und sagst,"
+       "text": "Du schaust auf das kleine Wunder und sagst,"
       },
       {
        "type": "paragraph",
@@ -13408,7 +13413,7 @@ const book: Book = (({
      ]
     },
     {
-     "id": "010",
+     "id": "011",
      "title": "Auf Alarm drücken",
      "elements": [
       {
@@ -13429,23 +13434,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Er trägt euer Baby in seinen Armen."
+       "text": "Er trägt ein Baby in seinen Armen. Euer Baby."
       },
       {
        "type": "paragraph",
-       "text": "Du bist so erleichtert, dass dir vor Freude Tränen über deine Wangen laufen."
+       "text": "Freudentränen laufen dir über deine Wangen und eine Welle der Erleichterung."
       },
       {
        "type": "paragraph",
-       "text": "Albert kommt zu dir und legt dir vorsichtig die Kleine auf die Brust."
-      },
-      {
-       "type": "paragraph",
-       "text": "Ein magischer Moment."
-      },
-      {
-       "type": "paragraph",
-       "text": "Gemeinsam schaut ihr euch das kleine Wunder an. Albert schaut überglücklich zu dir und spricht."
+       "text": "Gemeinsam sitzt ihr am Bett und Albert legt dir behutsam die Kleine auf die Brust. Ein magischer Moment."
       },
       {
        "type": "paragraph",
@@ -13453,7 +13450,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Die Zeit bleibt gefühlt stehen. Albert und du seid total in den magischen Bann der Kleinen gezogen."
+       "text": "Die Zeit bleibt gefühlt stehen in diesem Moment. Die Kleine schaut mit großen strahlenden Augen zu dir."
       },
       {
        "type": "paragraph",
@@ -13641,11 +13638,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Doch *Hollow White* ist noch nicht zu Ende. Du kannst das Abenteuer wiederholen oder mit unterschiedlichen Entscheidungen eines der anderen möglichen Enden erreichen. Oder du machst dich auf die Suche nach den restlichen versteckten Sammelobjekten. Deine bisherige Sammlung bleibt natürlich erhalten. Beachte nur, dass dein Fortschritt und Sammelobjekte, beim löschen der App oder Zurücksetzen des Speicherstandes in den Optionen verloren gehen."
+       "text": "Doch *Hollow White* ist nicht zu Ende. Du kannst das Abenteuer wiederholen und mit unterschiedlichen Entscheidungen ein anderes Ende erreichen. Oder du machst dich auf die Suche nach den restlichen versteckten Sammelobjekten. Deine bisherige Sammlung bleibt natürlich erhalten. Beachte nur, dass deine Sammelobjekte beim löschen der App verloren gehen."
       },
       {
        "type": "paragraph",
-       "text": "Bevor wir zu dieser *letzten Entscheidung* kommen, ist es an der Zeit für ein persönliches *Nachwort*:"
+       "text": "Bevor wir zur *letzten Entscheidung* kommen, ist es an der Zeit für ein persönliches *Nachwort*:"
       },
       {
        "type": "paragraph",
@@ -13653,11 +13650,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Inspiriert von Mystery Klassikern, aktuellen Werken und Zeitgeschehen ist die Idee zu *Hollow White* entstanden. Ein immersives Mystery Text Adventure an dem wir seit Winter 2018 kreativ arbeiten."
+       "text": "Inspiriert von Mystery-Klassikern, aktuellen Werken und Zeitgeschehen ist die Idee zu *Hollow White* entstanden. Ein immersives Mystery-Text-Adventure an dem wir seit Winter 2018 kreativ arbeiten."
       },
       {
        "type": "paragraph",
-       "text": "Motivation war es eine fiktive, spannende Geschichte mit einer eigenen Art von Schreibstil zu schaffen, in welcher die Leser selbst ins Geschehen eintauchen und sich mit den Charakteren und deren Entscheidungen stark verbinden."
+       "text": "Motivation war es, eine fiktive, spannende Geschichte mit einer eigenen Art von Schreibstil zu schaffen, in welcher die Leser selbst ins Geschehen eintauchen und sich mit den Charakteren und deren Entscheidungen verbinden."
       },
       {
        "type": "paragraph",
@@ -13669,7 +13666,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "*Sven*, ein alter Freund noch aus Studienzeiten der kontinuierlich wertvolles Feedback gegeben und letztendlich die komplette Programmierung und Realisierung der App in die Hand genommen hat. Ohne ihn würde es *Hollow White* in der Form nicht geben."
+       "text": "*Thomas*, der mit Kreativität und langen Nächten die ersten Entwürfe und letztendlich die gesamte Geschichte geschrieben und immer weiter verbessert hat. Dazu gehörten Diagramme und Tabellen, ein fast wissenschaftlicher Prozess, um sicherzustellen, dass alle Verbindungen, Zeitsprünge, Charaktere und Aktionen sich zu einer handfesten Geschichte zusammenfügen. Dann hat er noch seine Designer-Fähigkeiten in den Ring geworfen und die *Hollow White App* gestaltet."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Sven*, der kontinuierlich wertvolles Feedback gegeben und letztendlich die komplette Programmierung und Realisierung der App in die Hand genommen hat. Ohne ihn würde es *Hollow White* in dieser Form nicht geben."
       },
       {
        "type": "paragraph",
@@ -13677,15 +13678,27 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "*Thomas*, das bin ich …"
-      },
-      {
-       "type": "paragraph",
        "text": "Großen Dank gilt unseren ganzen Unterstützern, Testern, Freunden und Familien. Jeder Impuls und Feedback hat uns erreicht und ist in *Hollow White* geflossen."
       },
       {
-       "type": "paragraph",
-       "text": "Und zum Schluss nochmal Danke an Dich. Wir hoffen du hattest eine ganz besondere Leseerfahrung und *Hollow White* bleibt dir lange Zeit in Erinnerung. Wir freuen uns über dein Feedback und wenn du der großen Welt draußen von deinem Abenteuer erzählst."
+       "type": "if",
+       "condition": "STATE karma > 3",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "Und zum Schluss nochmal Danke an Dich. Wir hoffen du hattest eine ganz besondere Leseerfahrung und *Hollow White* bleibt dir lange Zeit in Erinnerung. Wir freuen uns über [dein Feedback](mailto:feedback@hollowwhite.de) und wenn du der großen Welt draußen von deinem Abenteuer erzählst."
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE karma > 3",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "Und zum Schluss nochmal Danke an Dich. Wir hoffen du hattest eine ganz besondere Leseerfahrung und *Hollow White* bleibt dir lange Zeit in Erinnerung. Wir freuen uns über [dein Feedback](mailto:feedback@schwarzerkreis.de) und wenn du der großen Welt draußen von deinem Abenteuer erzählst."
+        }
+       ]
       },
       {
        "type": "paragraph",
@@ -13714,15 +13727,31 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "Lass uns zusammen etwas Gutes tun. Jetzt mit einer Spende Projekte weltweit unterstützen!"
-      },
-      {
-       "type": "paragraph",
-       "text": "Hollow White mit Freunden teilen [auf Twitter teilen]() oder einfach einen [Link zur Hollow White Website](https://schwarzerkreis.de) schicken."
+       "text": "Lass uns zusammen etwas Gutes tun. Du kannst jetzt mit einer Spende Projekte weltweit unterstützen!"
       },
       {
        "type": "paragraph",
        "text": "[Spende für einen guten Zweck](https://app.effectivealtruism.org/donations/new/organizations)."
+      },
+      {
+       "type": "if",
+       "condition": "STATE karma > 3",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "Du kannst auch Hollow White mit Freunden teilen [auf Twitter teilen]() oder einfach einen [Link zur Hollow White Website](https://hollowwhite.de) schicken."
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE karma > 3",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "Du kannst auch Hollow White mit Freunden teilen [auf Twitter teilen]() oder einfach einen [Link zur Hollow White Website](https://schwarzerkreis.de) schicken."
+        }
+       ]
       },
       {
        "type": "paragraph",
