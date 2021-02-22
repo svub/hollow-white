@@ -14,6 +14,7 @@ import { Action, State } from "vuex-class";
 import { log } from "../../shared/util";
 import { AddItem, Item } from "../../shared/entities";
 import { AppState } from "../../store";
+import config from "@/config";
 
 @Component({
   name: "AddItemElement",
@@ -33,9 +34,10 @@ export default class AddItemElement extends Vue {
   }
 
   get item(): Item {
-    return (this.$store.state as AppState).config.items.find(
-      (item) => item.id === this.element.id
-    );
+    // return (this.$store.state as AppState).config.items.find(
+    //   (item) => item.id === this.element.id
+    // );
+    return config.items.find((item) => item.id === this.element.id)!;
   }
 }
 </script>
