@@ -1,5 +1,5 @@
 <template web lang="pug">
-main(:class="page")
+main(:class="page" lang="config.language || 'en'")
   transition(name='pages')
     //- use dynamic component: component(:is=page)
     Start(key="1", v-if="page === 'start'")
@@ -46,6 +46,7 @@ import Options from './components/overlays/Options.vue';
 import FeedbackMode from './components/overlays/FeedbackMode.vue';
 import Share from './components/overlays/Share.vue';
 import uniq from "lodash/uniq";
+import { config } from "vue/types/umd";
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
@@ -67,6 +68,8 @@ export default class App extends Vue {
   @Action init;
   @Action("page") setPage;
   @Action("overlay") setOverlay;
+
+  config = config;
 
 
   created() {

@@ -32,6 +32,7 @@ export interface Config {
   options: Option[];
   feedbackMode?: boolean;
   feedbackLink?: string;
+  language?: string; // default 'en'
 }
 
 // entities
