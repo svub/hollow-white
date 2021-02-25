@@ -1,19 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="34px" height="38px" viewBox="0 0 34 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>ico_decision_hw</title>
-    <defs>
-        <filter id="filter-1">
-            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="HW-Beta" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="03a_Chapter_Sections_Dark" transform="translate(-170.000000, -2601.000000)">
-            <g id="ico_decision_hw" transform="translate(25.000000, 2602.000000)" filter="url(#filter-1)">
-                <g transform="translate(146.000000, 0.000000)" id="Group-4" stroke="#A6A6A6">
-                    <polygon id="Stroke-1" stroke-linecap="round" points="16.1091048 0 32.2758621 8.46510731 32.2758621 27.4957683 16.137931 36 1.11656836e-13 27.4957683 1.11656836e-13 8.46510731"></polygon>
-                    <path d="M8.68965517,13.507309 L8.68965517,27.3103448 L16.137931,21.940667 L23.5862069,27.3103448 L23.5862069,13.507309 M12.347655,6.20689655 L12.347655,19.5218342 M20.118441,6.20689655 L20.118441,19.5218342 M12.347655,13.9550123 L16.2470272,11.0685145 L20.0373425,13.9550123" id="Stroke-2" stroke-width="1.56"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.65" fill-rule="evenodd" clip-rule="evenodd" d="M24.2049 5.55786L23.971 5.43433L23.7373 5.55821L7.76585 14.0233L7.5 14.1642V14.4651V33.4958V33.7962L7.76533 33.9373L23.7653 42.4415L24 42.5662L24.2347 42.4415L40.2347 33.9373L40.5 33.7962V33.4958V14.4651V14.1637L40.2335 14.023L24.2049 5.55786ZM8.5 14.766L23.9718 6.56566L39.5 14.7665V33.1953L24 41.4338L8.5 33.1953V14.766ZM19.5677 12.2069V25.5218H21.1277V20.3481L24.2404 18.0439L27.3385 20.4032V25.5218H28.8985V12.2069H27.3385V18.4423L24.7196 16.448L24.2537 16.0931L23.783 16.4416L21.1277 18.4072V12.2069H19.5677ZM15.9097 19.5073V33.3104V34.8342L17.1458 33.9431L24.138 28.9022L31.1301 33.9431L32.3662 34.8342V33.3104V19.5073H30.8062V31.7865L24.5941 27.308L24.138 26.9791L23.6818 27.308L17.4697 31.7865V19.5073H15.9097Z" fill="white"/>
 </svg>
