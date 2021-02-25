@@ -36,6 +36,7 @@ import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
 import { State, Action } from "vuex-class";
 import book from "./book";
+import config from "./config";
 import { clone, logRaw, warn } from "./shared/util";
 import appState from "./store";
 import { Chapter, Option } from "./shared/entities";
@@ -46,7 +47,6 @@ import Options from './components/overlays/Options.vue';
 import FeedbackMode from './components/overlays/FeedbackMode.vue';
 import Share from './components/overlays/Share.vue';
 import uniq from "lodash/uniq";
-import { config } from "vue/types/umd";
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
