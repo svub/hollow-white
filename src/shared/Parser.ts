@@ -138,7 +138,7 @@ export default class Parser {
             if (!chapter) this.error('Found a "// <" before first "// chapter"', token, command);
             if (!section) this.error('Found a "// <" before first "// section"', token, command);
             const id = command.fields.shift()!;
-            if (!Overlays[id] && !Functions[id]) this.error('Special function not found', token, id, Overlays, Functions);
+            if (!Overlays[id] && !Functions[id]) this.error('Special func not found', token, id, Overlays, Functions);
             const data = [Functions.share].includes(Functions[id]) ? command.fields.shift() : '';
             const special: SpecialLink = {
               title: command.fields.join(' '),
@@ -151,21 +151,21 @@ export default class Parser {
           case CommandType.state:
             const state: ChangeState = {
               type: ElementType.state,
-              id: command.fields[0],
+              id: command.fields[0].toLowerCase(),
               modifier: command.fields[1],
             };
             topContainer(token, command).elements.push(state);
             break;
           case CommandType.item:
             if (!section) this.error('Found a "// item" before first "// section"', token, command);
-            const item = (command.fields[0].toLocaleLowerCase() === 'remove')
+            const item = (command.fields[0].toLowerCase() === 'remove')
               ? {
                 type: ElementType.removeItem,
-                id: command.fields[1],
+                id: command.fields[1].toLowerCase(),
               } as RemoveItem
               : {
                 type: ElementType.addItem,
-                id: command.fields[0],
+                id: command.fields[0].toLowerCase(),
               } as AddItem;
             topContainer(token, command).elements.push(item);
             break;
@@ -246,7 +246,7 @@ export default class Parser {
     //                            handle nbsp
     const elements = token.data.split(/ |\u00A0/).map(s => s.trim()).filter(s => s.length > 0);
     return {
-      type: elements[0].toLocaleLowerCase(),
+      type: elements[0].toLowerCase(),
       fields: elements.slice(1),
       line: token.line,
       ... (token.url ? { url: token.url } : {}),

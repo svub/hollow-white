@@ -13,7 +13,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "node"
+      "webpack-env"
     ],
     "paths": {
       "@/*": [
@@ -39,9 +39,9 @@
       "esnext",
       "dom",
       "dom.iterable",
-      "scripthost"
+      "scripthost",
     ],
-    "noImplicitAny": false
+    "noImplicitAny": false,
   },
   "include": [
     "src/**/*.ts",

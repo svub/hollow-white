@@ -22,10 +22,11 @@ export function evaluateCondition(condition: string, store: Store<AppState>): bo
     .filter((s) => s.length > 0);
 
   const appState = store.state;
-  const name = elements[1];
-  log("if.evaluate: type, var, rest", elements[0].toLowerCase(), name, elements.slice(2));
+  const name = elements[1].toLowerCase();
+  const type = elements[0].toLowerCase();
+  log("if.evaluate: type, var, rest", type, name, elements.slice(2));
   /* eslint-disable no-case-declarations */
-  switch (elements[0].toLowerCase()) {
+  switch (type) {
     case "state":
       if (elements.length != 4) {
         error(`Failed to parse condition "${condition}": should be four elements; example: STATE x > 0`);
