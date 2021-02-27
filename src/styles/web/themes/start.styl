@@ -17,13 +17,14 @@ main.start
   .buttons
     flex 1
     flex-column()
+    justify-content space-between
 
     .status
       @extend .small
       margin-bottom 20px
 
     button
-      margin-bottom 40px
+      min-height 2.5em
 
       &.start, &.continue
         @extends .pill-button
