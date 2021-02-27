@@ -12,6 +12,16 @@ const book: Book = (({
      "title": "Personen und die Handlung",
      "elements": [
       {
+       "type": "state",
+       "id": "snow",
+       "modifier": "5"
+      },
+      {
+       "type": "state",
+       "id": "rose",
+       "modifier": "3"
+      },
+      {
        "type": "paragraph",
        "text": "Die Personen und die Handlung der Geschichte sind frei erfunden und fiktiv. Etwaige Ähnlichkeiten mit tatsächlichen Begebenheiten oder Personen sind rein zufällig."
       }
@@ -174,7 +184,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -279,12 +289,12 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Midnight",
+       "id": "midnight",
        "modifier": "+1"
       },
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -371,12 +381,12 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Crash",
+       "id": "crash",
        "modifier": "+1"
       },
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-3"
       },
       {
@@ -452,7 +462,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -721,7 +731,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "if",
-       "condition": "STATE crash > 0",
+       "condition": "STATE Crash > 0",
        "elements": [
         {
          "type": "paragraph",
@@ -773,7 +783,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "STATE crash > 0",
+       "ifCondition": "STATE Crash > 0",
        "elements": [
         {
          "type": "paragraph",
@@ -869,7 +879,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -950,7 +960,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -984,7 +994,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -1188,7 +1198,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE crash > 0",
+       "condition": "STATE Crash > 0",
        "elements": [
         {
          "type": "paragraph",
@@ -1263,7 +1273,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -1354,7 +1364,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Snow",
+       "id": "snow",
        "modifier": "-1"
       },
       {
@@ -1389,12 +1399,12 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Snow",
+       "id": "snow",
        "modifier": "-1"
       },
       {
        "type": "state",
-       "id": "Truck",
+       "id": "truck",
        "modifier": "-1"
       },
       {
@@ -1479,7 +1489,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -1564,12 +1574,12 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Snow",
+       "id": "snow",
        "modifier": "-1"
       },
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -1645,7 +1655,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Snow",
+       "id": "snow",
        "modifier": "+1"
       },
       {
@@ -1766,7 +1776,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -1829,7 +1839,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "First-aid",
+       "id": "first-aid",
        "modifier": "+1"
       },
       {
@@ -1864,7 +1874,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -1939,7 +1949,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Snow",
+       "id": "snow",
        "modifier": "+1"
       },
       {
@@ -1990,7 +2000,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Snow",
+       "id": "snow",
        "modifier": "+1"
       },
       {
@@ -2057,7 +2067,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Snow",
+       "id": "snow",
        "modifier": "+1"
       },
       {
@@ -2092,7 +2102,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Snow",
+       "id": "snow",
        "modifier": "-1"
       },
       {
@@ -2149,7 +2159,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Snow",
+       "id": "snow",
        "modifier": "-1"
       },
       {
@@ -2184,7 +2194,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -2231,12 +2241,12 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Snow",
+       "id": "snow",
        "modifier": "-1"
       },
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -2266,7 +2276,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -2304,7 +2314,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -2542,7 +2552,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Snow < 1",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -2576,7 +2586,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "STATE Snow < 1",
+       "ifCondition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -2636,7 +2646,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Snow < 1",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -2670,7 +2680,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "STATE Snow < 1",
+       "ifCondition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -2706,12 +2716,12 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
        "type": "if",
-       "condition": "STATE Snow < 0",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -2797,21 +2807,17 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Snow > 0",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
-         "text": "»Ich kann nicht fassen, was Snow passiert ist.«"
-        },
-        {
-         "type": "paragraph",
-         "text": "Was zieht sie in diese gefährliche und tödliche Gegend?«"
+         "text": "Ich kann nicht fassen, was Snow passiert ist. Was zieht sie in diese gefährliche und tödliche Gegend?«"
         }
        ]
       },
       {
        "type": "else",
-       "ifCondition": "STATE Snow > 0",
+       "ifCondition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -2861,21 +2867,17 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Snow > 0",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
-         "text": "»Ich kann nicht fassen, was Snow passiert ist.«"
-        },
-        {
-         "type": "paragraph",
-         "text": "Was zieht sie in diese gefährliche und tödliche Gegend?«"
+         "text": "Ich kann nicht fassen, was Snow passiert ist. Was zieht sie in diese gefährliche und tödliche Gegend?«"
         }
        ]
       },
       {
        "type": "else",
-       "ifCondition": "STATE Snow > 0",
+       "ifCondition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -2891,7 +2893,7 @@ const book: Book = (({
        "sectionId": "009"
       },
       {
-       "title": "Das Städchen Snow Peaks",
+       "title": "Das Städtchen Snow Peaks",
        "chapterId": "3",
        "sectionId": "010"
       }
@@ -3157,7 +3159,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Snow < 0",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -3167,7 +3169,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "STATE Snow < 0",
+       "ifCondition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -3540,7 +3542,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -3707,7 +3709,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -3869,7 +3871,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -3903,7 +3905,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -4209,7 +4211,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -4219,7 +4221,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "du wünscht ihr eine gute Nacht",
+       "title": "Du wünscht ihr eine gute Nacht",
        "chapterId": "4",
        "sectionId": "006"
       }
@@ -4291,7 +4293,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Snow < 0",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -4309,7 +4311,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "STATE Snow < 0",
+       "ifCondition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -4648,7 +4650,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -4678,7 +4680,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -4734,7 +4736,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Snow < 0",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -5048,7 +5050,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Snow < 0",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -5159,7 +5161,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Snow < 0",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -5169,7 +5171,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "STATE Snow < 0",
+       "ifCondition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -5806,7 +5808,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -6443,7 +6445,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -6558,7 +6560,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -7169,7 +7171,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -7246,7 +7248,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -7281,7 +7283,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -7308,7 +7310,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -7369,7 +7371,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -7415,7 +7417,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -7697,7 +7699,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -7727,7 +7729,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -7798,7 +7800,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -7848,7 +7850,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -7984,7 +7986,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -8214,7 +8216,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -8261,7 +8263,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -8291,7 +8293,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -8615,12 +8617,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "rose",
-       "modifier": "+1"
-      },
-      {
-       "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+3"
       },
       {
@@ -8647,11 +8644,11 @@ const book: Book = (({
       {
        "type": "state",
        "id": "rose",
-       "modifier": "-3"
+       "modifier": "-1"
       },
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-3"
       },
       {
@@ -8884,7 +8881,7 @@ const book: Book = (({
       },
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -9183,7 +9180,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -9192,7 +9189,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Rose < 0",
+       "condition": "STATE Rose <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -9346,7 +9343,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -9395,7 +9392,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Rose < 0",
+       "condition": "STATE Rose <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -9430,7 +9427,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -10075,7 +10072,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -10335,7 +10332,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -10673,7 +10670,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Dean",
+       "id": "dean",
        "modifier": "+1"
       },
       {
@@ -11330,7 +11327,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -11375,7 +11372,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -11533,7 +11530,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Snow < 0",
+       "condition": "STATE Snow <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -11673,7 +11670,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+2"
       },
       {
@@ -11908,7 +11905,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -11945,7 +11942,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+1"
       },
       {
@@ -11991,7 +11988,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -12508,7 +12505,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-2"
       },
       {
@@ -12732,7 +12729,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "+10"
       },
       {
@@ -12865,7 +12862,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "state",
-       "id": "Karma",
+       "id": "karma",
        "modifier": "-10"
       },
       {
@@ -13717,7 +13714,8 @@ const book: Book = (({
       },
       {
        "title": "Hollow White neu beginnen",
-       "id": "restart"
+       "id": "reset",
+       "data": ""
       }
      ]
     },
@@ -13761,7 +13759,8 @@ const book: Book = (({
      "next": [
       {
        "title": "Hollow White neu beginnen",
-       "id": "restart"
+       "id": "reset",
+       "data": ""
       }
      ]
     }
