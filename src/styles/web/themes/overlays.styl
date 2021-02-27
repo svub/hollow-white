@@ -1,15 +1,23 @@
 .overlay
+  closePad = 60px
+  position relative
   z-index 2
   background var(--overlayBg)
   font-family "Merriweather Sans"
 
   .content
     padding 4*gap
+    padding-bottom 3*closePad
+    max-height 100%
+    overflow auto
 
   .actions
     flex-row()
     align-items flex-end
-    padding 60px
+    position absolute
+    bottom 0
+    z-index 1
+    padding closePad
     // background: linear-gradient(0deg, #000000 0%, rgba(12,19,23,0.8) 47.79%, rgba(30,42,49,0) 100%, rgba(0,0,0,0.1) 100%);
     background @css { linear-gradient(0deg, var(--bgColor) 0%, rgba(var(--bgColorRgb), .8) 47.79%, rgba(var(--bgColorRgb), 0) 100%) }
 
