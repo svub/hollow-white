@@ -197,6 +197,7 @@ const config: Config = {
       title: 'Light',
     }]
   }],
+  feedbackMode: !!['localhost', '-preview', '-testing'].find(test => location.href.indexOf(test) >= 0)
 };
 
 export default config;
