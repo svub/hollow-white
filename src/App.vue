@@ -37,7 +37,7 @@ import Tester from "./views/Tester.vue";
 import { State, Action } from "vuex-class";
 import book from "./book";
 import config from "./config";
-import { clone, logRaw, warn } from "./shared/util";
+import { clone, logJson, warn } from "./shared/util";
 import appState from "./store";
 import { Chapter, Option } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
@@ -73,7 +73,7 @@ export default class App extends Vue {
 
 
   created() {
-    logRaw('App.created state', this.$store.state);
+    logJson('App.created state', this.$store.state);
 
     // start on particular page for testing
     const testPage = localStorage.getItem("testPage");
@@ -93,7 +93,7 @@ export default class App extends Vue {
   }
 
   get chapters() {
-    return logRaw('progress',
+    return logJson('progress',
       uniq(this.path.map(ref => ref.chapterId))
       .map(id => clone(book.chapters.find(chapter => chapter.id === id)))
       .filter(chapter => !!chapter)

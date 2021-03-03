@@ -13,7 +13,7 @@ import AddItemElement from "./AddItemElement.vue";
 import RemoveItemElement from "./RemoveItemElement.vue";
 import ChangeStateElement from "./ChangeStateElement.vue";
 import StyleElement from "./StyleElement.vue";
-import { log, logRaw } from "../../shared/util";
+import { logJson } from "../../shared/util";
 
 @Component({
   name: "TextElement",
@@ -30,16 +30,14 @@ import { log, logRaw } from "../../shared/util";
 export default class TextElement extends Vue {
   @Prop(Array) private elements: Element[];
 
-  // mounted() {
-  //   logRaw('text elemetents:', this.elements);
-  // }
+  mounted() {
+    logJson('text elemetents:', this.elements);
+  }
 
   componentName(element: Element): string {
-    // log('compName', `${element.type}-element`);
     return `${element.type}-element`;
   }
 }
 
-// Vue.component('paragraph-element', ParagraphElement);
 </script>
 <style scoped lang="stylus"></style>

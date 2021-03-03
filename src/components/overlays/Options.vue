@@ -16,10 +16,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 import { State, Action, Getter } from 'vuex-class'
-import { Choice, Config, Option } from '../../shared/entities';
-import { error, logRaw } from '../../shared/util';
+import { Choice, Option } from '../../shared/entities';
 import config from '../../config';
 
 @Component({

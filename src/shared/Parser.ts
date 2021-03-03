@@ -203,13 +203,13 @@ export default class Parser {
             break; // ignore comments
           case CommandType.style:
             if (styleElement) this.error('Found another "// if" before "// end if"', token, command);
-            styleElement = {
+            const tempElement: Style = {
               type: ElementType.style,
               classes: command.fields.join(' '),
               elements: [],
             };
-            // section!.elements.push(styleElement);
-            topContainer(token, command).elements.push(styleElement);
+            topContainer(token, command).elements.push(tempElement);
+            styleElement = tempElement;
             break;
           case CommandType.endstyle:
             if (!styleElement) this.error('Found "// endstyle" before "// style"', token, command);

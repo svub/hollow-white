@@ -23,13 +23,15 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
+// import hyphenopoly from "hyphenopoly";
 import { Link, SpecialLink, isSpecialLink, Reference, Overlays, Functions } from "../shared/entities";
 import TextElement from "../components/elements/TextElement.vue";
 import { inPath, Position } from "../store";
 import config from "../config";
+import { logJson } from "../shared/util";
 
 @Component({
   name: "Read",
@@ -42,9 +44,21 @@ export default class Read extends Vue {
   @Action overlay: Function;
   @Action reset: Function;
   @Getter position: Position;
+  // translator: Function;
   config = config;
 
-  enabled(link: Link | SpecialLink): boolean {
+  // not working :( - can't find a suitable version that works for dynamic languages
+  // might have to do that as part of the parsing process
+  // async created() {
+  //   const lang = config.language || "en-us";
+  //   log('Read created', lang);
+  //   const hyphenator = hyphenopoly.config({ "require": [lang] });
+  //   logRaw('create hypenator', hyphenator);
+  //   this.translator = await hyphenator.get(lang);
+  //   logRaw('create translator', this.translator);
+  // }
+
+enabled(link: Link | SpecialLink): boolean {
     // enabled if: decision taken before (in path); or if last in progress == current (any decision possible)
     if (this.path.length === 0 || isSpecialLink(link) || this.selected(link)) return true;
     const lastPos: Reference = last(this.path)!;
@@ -75,6 +89,10 @@ export default class Read extends Vue {
     else {
       this.overlay({ overlay: Overlays.shareOverlay, data });
     }
+  }
+
+  @Watch('position') pageChange() {
+    logJson('page change', this.position.section);
   }
 }
 </script>
