@@ -1,4 +1,4 @@
-// @import '../../vars'
+@import '../../vars'
 
 main.read
   nav
@@ -22,6 +22,10 @@ main.read
       color var(--textColor)
       margin-bottom 1.333em
 
+      p // showdown sometimes generates p tags inside, hide them
+        margin 0
+        display inline
+
     .style
       &.note-black p
         color var(--fgColor)
@@ -29,6 +33,18 @@ main.read
       &.note-blue p
         color var(--blueText)
         font-style italic
+      &.recording
+        .element.paragraph-element:first-child > p:before, .element.paragraph-element:last-child > p:after
+          font-style normal
+
+        p
+          font-style italic
+
+        // &:before, &:after
+        .element.paragraph-element:first-child > p:before
+          content: "[ 🔴 REC ] "
+        .element.paragraph-element:last-child > p:after
+          content: " [ ■ STOP ]"
 
   .next.links
     icon-width = 180px
