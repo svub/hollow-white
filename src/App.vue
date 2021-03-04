@@ -104,9 +104,13 @@ export default class App extends Vue {
       }));
   }
 
-  @Watch('options', { deep: true, immediate: true }) optionsChanged() {
-    document.body.className = Object.values(this.options).join(' ');
+  @Watch('options', { deep: true, immediate: true })
+  @Watch('overlay', { immediate: true })
+  updateBodyClasses() {
+    document.body.className = Object.values(this.options).join(' ') + (this.overlay ? ' overlay-open' : '');
   }
+  //   document.body.className = Object.values(this.options).join(' ');
+  // }
 }
 </script>
 
