@@ -1,7 +1,11 @@
+body.overlay-open
+  overflow hidden
+
 .overlay
   closePad = 60px
   position relative
   z-index 2
+  // overflow auto
   background var(--overlayBg)
   font-family "Merriweather Sans"
 
@@ -9,14 +13,14 @@
     padding 4*gap
     padding-bottom 3*closePad
     max-height 100%
-    overflow auto
+    // overflow auto
 
   .actions
     flex-row()
     align-items flex-end
-    position absolute
+    position fixed
     bottom 0
-    z-index 1
+    z-index 3
     padding closePad
     // background: linear-gradient(0deg, #000000 0%, rgba(12,19,23,0.8) 47.79%, rgba(30,42,49,0) 100%, rgba(0,0,0,0.1) 100%);
     background @css { linear-gradient(0deg, var(--bgColor) 0%, rgba(var(--bgColorRgb), .8) 47.79%, rgba(var(--bgColorRgb), 0) 100%) }
@@ -27,7 +31,7 @@
   &.chapters .list
     flex-column()
     text-align center
-    padding-top 70px
+    padding 70px 0 3*closePad
 
     .chapter
       margin-bottom 35px
