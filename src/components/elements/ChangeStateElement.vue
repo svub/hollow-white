@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import { log, logJson } from "@/shared/util";
+import { log, logJson } from "../../shared/util";
 import { Component, Vue, Prop, Watch } from "vue-property-decorator";
 import { Action } from "vuex-class";
 import { ChangeState } from '../../shared/entities';
@@ -21,7 +21,7 @@ export default class ChangeStateElement extends Vue {
     this.stateChange();
   }
 
-  @Watch('element.id') stateChange() {
+  @Watch('element.id', { deep: true }) stateChange() {
     logJson('ChangeStateElement element.id changed', this.element);
     this.changeState({ state: this.element });
   }

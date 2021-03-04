@@ -3,11 +3,10 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator";
-import { Store } from "vuex";
+import { log, logJson } from "../../shared/util";
+import { Component, Vue, Prop, Watch } from "vue-property-decorator";
 import { Action } from "vuex-class";
 import { RemoveItem, Item } from "../../shared/entities";
-import { AppState } from "../../store";
 
 @Component({
   name: "RemoveItemElement",
@@ -17,7 +16,13 @@ export default class RemoveItemElement extends Vue {
 
   @Action removeItem;
 
-  mounted() {
+  beforeMount() {
+    log('RemoveItemElement.mounted');
+    this.doRemoveItem();
+  }
+
+  @Watch('element.id', { deep: true }) doRemoveItem() {
+    logJson('RemoveItemElement element.id changed', this.element);
     this.removeItem({ item: this.element });
   }
 }
