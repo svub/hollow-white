@@ -12,18 +12,8 @@ const book: Book = (({
      "title": "Personen und die Handlung",
      "elements": [
       {
-       "type": "state",
-       "id": "snow",
-       "modifier": "1"
-      },
-      {
-       "type": "state",
-       "id": "rose",
-       "modifier": "1"
-      },
-      {
        "type": "paragraph",
-       "text": "Der Charakter dessen Rolle übernommen wird, die Personen und die Handlung der Geschichte sind frei erfunden und fiktiv. Etwaige Ähnlichkeiten mit tatsächlichen Begebenheiten oder Personen sind rein zufällig."
+       "text": "Die Personen und die Handlung der Geschichte sind frei erfunden und fiktiv. Etwaige Ähnlichkeiten mit tatsächlichen Begebenheiten oder Personen sind rein zufällig."
       }
      ],
      "next": [
@@ -44,6 +34,16 @@ const book: Book = (({
      "id": "001",
      "title": "»Ella, wach auf! Wach auf!«",
      "elements": [
+      {
+       "type": "state",
+       "id": "snow",
+       "modifier": "=1"
+      },
+      {
+       "type": "state",
+       "id": "rose",
+       "modifier": "=1"
+      },
       {
        "type": "paragraph",
        "text": "Erschreckt reißt du in allerletzter Sekunde das Lenkrad zur Seite, um dem gähnenden Abgrund der sich neben dir erstreckt, auszuweichen."
@@ -70,7 +70,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Eine leuchtende Neonröhre flackert und du fährst mit dem letzten Tropfen Sprit in die trostlos wirkende Tankstelle ein. Weit und breit kein Mensch und alles ist in Dunkelheit getaucht. Du ziehst den rostigen Tankrüssel aus der Säule und lässt das Benzin laufen. Danach betrittst du den Laden, der sehr viel größer ist, als er von außen erscheint. Sofort sticht dir ein intensiv beissender Geruch in die Nase. Instinktiv hälst du die Luft an und versucht mit so wenig Atemzüge wie möglich auszukommen. Niemand da. An der Kasse drückst du auf eine kleine Klingel, doch es bleibt still und der schrille Ton hallt bis durch die hinteren Gänge."
+       "text": "Eine leuchtende Neonröhre flackert und du fährst mit dem letzten Tropfen Sprit in die trostlos wirkende Tankstelle ein. Weit und breit kein Mensch und alles ist in Dunkelheit getaucht. Du ziehst den rostigen Tankrüssel aus der Säule und lässt das Benzin laufen. Danach betrittst du den Laden, der sehr viel größer ist, als er von außen erscheint. Sofort sticht dir ein intensiv beißender Geruch in die Nase. Instinktiv hälst du die Luft an und versucht mit so wenig Atemzüge wie möglich auszukommen. Niemand da. An der Kasse drückst du auf eine kleine Klingel, doch es bleibt still und der schrille Ton hallt bis durch die hinteren Gänge."
       },
       {
        "type": "paragraph",
@@ -175,7 +175,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Kurz entspannen",
+       "title": "Kurz ent­spannen",
        "chapterId": "1",
        "sectionId": "004"
       },
@@ -311,7 +311,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "»Ganz schön spät unterwegs Junge Dame. Zimmer 55, Treppe hoch und links den Gang entlang, sagt sie und gibt dir den Zimmerschlüssel.«"
+       "text": "»Ganz schön spät unterwegs Junge Dame. Zimmer 55, Treppe hoch und links den Gang entlang«, sagt sie und gibt dir den Zimmerschlüssel."
       },
       {
        "type": "paragraph",
@@ -375,7 +375,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Als du die Tür öffnest und aus dem Auto steigst, siehst du weit und breit nur verschneite Wälder und keine Menschenseele. Verdammt. Dir wird Angst und die Dunkelheit bricht herein."
+       "text": "Als du die Tür öffnest und aus dem Auto steigst, siehst du weit und breit nur verschneite Wälder und keine Menschenseele. Verdammt. Du bekommst Angst und die Dunkelheit bricht herein."
       }
      ],
      "next": [
@@ -398,7 +398,7 @@ const book: Book = (({
       {
        "type": "state",
        "id": "crash",
-       "modifier": "+1"
+       "modifier": "+2"
       },
       {
        "type": "state",
@@ -1092,11 +1092,11 @@ const book: Book = (({
      "elements": [
       {
        "type": "style",
-       "classes": "note-black",
+       "classes": "recording",
        "elements": [
         {
          "type": "paragraph",
-         "text": "[ • REC ] »Drei Tage bin ich nun bei Albert und Snow. Ich will mir gar nicht ausmalen, was geschehen wäre, wenn die beiden mich nicht gefunden hätten. Ich hoffe, der Sturm legt sich bald, damit ich weiter meiner Spur nach Hannah in Snow Peaks folgen kann. [ ■ Stop ]"
+         "text": "»Drei Tage bin ich nun bei Albert und Snow. Ich will mir gar nicht ausmalen, was geschehen wäre, wenn die beiden mich nicht gefunden hätten. Ich hoffe, der Sturm legt sich bald, damit ich weiter meiner Spur nach Hannah in Snow Peaks folgen kann."
         }
        ]
       },
@@ -1261,10 +1261,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "Ihr verlasst zusammen die alte Holzhütte und beginnt euren gemeinsamen Weg nach *Snow Peaks*."
-      },
-      {
-       "type": "paragraph",
-       "text": "Peaks"
       }
      ],
      "next": [
@@ -1279,7 +1275,7 @@ const book: Book = (({
   },
   {
    "id": "2",
-   "title": "Der Weg nach Snow",
+   "title": "Der Weg nach Snow Peaks",
    "sections": [
     {
      "id": "001",
@@ -2472,7 +2468,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE crash > 0",
+       "condition": "STATE Crash > 0",
        "elements": [
         {
          "type": "paragraph",
@@ -2488,7 +2484,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "Frank gibt dir noch eine Salbe mit und setzt sich zurück zu Albert. Du bedankst dich und verlässt das Wohnzimmer."
+         "text": "Frank gibt dir noch etwas Salbe und setzt sich zurück zu Albert. Du bedankst dich und verlässt das Wohnzimmer."
         }
        ]
       }
@@ -2580,7 +2576,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Die Zeit vergeht und Marie erzählt über das Leben in *Snow Peaks*, von ihrem Leben ausserhalb der Stadt und den aktuellen lokalen Nachrichten. Total erschöpft aber erleichtert hörst du ihrer beruhigenden Stimme einfach nur zu. Ihre Art strahlt etwas sehr vertrautes aus."
+       "text": "Die Zeit vergeht und Marie erzählt über das Leben in *Snow Peaks*, von ihrem Leben ausserhalb der Stadt und den aktuellen lokalen Nachrichten. Total erschöpft aber erleichtert hörst du ihrer beruhigenden Stimme einfach nur zu. Ihre Art strahlt etwas sehr vertrautes und friedliches aus."
       },
       {
        "type": "paragraph",
@@ -2596,7 +2592,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Als du am nächsten Morgen aufwachst, weckt dich das Licht, das hell in das Zimmer durch das Fenster strahlt. Es scheint schon später Vormittag zu sein. Du machst dich in dem kleinen Badezimmer fertig und ziehst dir frische Kleidung, welche Marie dir hingelegt hat, an. Ein weißer warmer Pullover und eine festere Schneehose. Die Sachen wirken neben dem Mantel sehr elegant, lassen dich aber auch etwas älter erscheinen."
+       "text": "Als du am nächsten Morgen aufwachst, weckt dich das Licht, das hell in das Zimmer durch das Fenster strahlt. Es scheint schon später Vormittag zu sein. Du machst dich in dem kleinen Badezimmer fertig und ziehst dir frische Kleidung, welche Marie dir hingelegt hat, an. Ein weißer warmer Pullover und eine festere Schneehose. Die Sachen wirken neben dem Mantel sehr elegant, lassen dich aber auch etwas älter aussehen."
       },
       {
        "type": "if",
@@ -2653,14 +2649,9 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Kaffee?",
+       "title": "Kaffee",
        "chapterId": "3",
        "sectionId": "006"
-      },
-      {
-       "title": "Direkt in die Stadt",
-       "chapterId": "3",
-       "sectionId": "011"
       }
      ]
     },
@@ -2670,7 +2661,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "»Frank und Albert kennen sich schon sehr lange. Albert hat uns damals viel bei der Renovierung unseres Anwesens geholfen. Und wie Männer so sind, haben die beiden viel Zeit beim Angeln am Ice River zusammen verbracht."
+       "text": "»Frank und Albert kennen sich schon sehr lange. Albert hat uns damals viel bei der Renovierung unseres Anwesens geholfen. Und wie Männer so sind, haben die beiden viel Zeit beim Angeln am *Ice River* zusammen verbracht."
       },
       {
        "type": "paragraph",
@@ -2747,20 +2738,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Kaffee?",
+       "title": "Kaffee",
        "chapterId": "3",
        "sectionId": "006"
-      },
-      {
-       "title": "Direkt in die Stadt",
-       "chapterId": "3",
-       "sectionId": "011"
       }
      ]
     },
     {
      "id": "006",
-     "title": "Kaffee?",
+     "title": "Kaffee",
      "elements": [
       {
        "type": "state",
@@ -2773,7 +2759,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "Du setzt dich fassungslos und traurig auf den etwas klapprigen Holzstuhl in der Küche. Dir gehen die letzten Tage durch den Kopf. Wie oft seid ihr mit dem Leben davon gekommen in der erbarmungslosen Landschaft von White Valley und doch musste nun Snow mit seinem Leben bezahlen."
+         "text": "Du setzt dich fassungslos und traurig auf den etwas klapprigen Holzstuhl in der Küche. Dir gehen die letzten Tage durch den Kopf. Wie oft seid ihr mit dem Leben davon gekommen in der erbarmungslosen Landschaft von *White Valley* und doch musste nun Snow mit seinem Leben bezahlen."
         }
        ]
       },
@@ -2919,7 +2905,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "Ich kann nicht fassen, was Snow passiert ist. Was zieht sie in diese gefährliche und tödliche Gegend?«"
+         "text": "Ich kann nicht fassen, was Snow passiert ist. Was zieht sie in diese gefährliche und tödliche Gegend?«"
         }
        ]
       },
@@ -3418,12 +3404,12 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Ja",
+       "title": "Mehr über die Zeit vor Snow Peaks erfahren",
        "chapterId": "3",
        "sectionId": "022"
       },
       {
-       "title": "Nein",
+       "title": "Gespräch beenden",
        "chapterId": "3",
        "sectionId": "023"
       }
@@ -3431,7 +3417,7 @@ const book: Book = (({
     },
     {
      "id": "022",
-     "title": "Zeit vor Snow Peaks",
+     "title": "Mehr über die Zeit vor Snow Peaks erfahren",
      "elements": [
       {
        "type": "paragraph",
@@ -4111,7 +4097,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Ella setzt sich."
+       "text": "Du setzt dich."
       },
       {
        "type": "paragraph",
@@ -4225,7 +4211,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Als ihr den Keller verlasst, bringt dich Patricia in ein Dachgeschosszimmer im 3. Stockwerk oberhalb des Antiquariats. Ein kleines Zimmerchen mit Schrägen und Badezimmer."
+       "text": "Als ihr den Keller verlässt, bringt dich Patricia in ein Dachgeschosszimmer im 3. Stockwerk oberhalb des Antiquariats. Ein kleines Zimmerchen mit Schrägen und Badezimmer."
       },
       {
        "type": "paragraph",
@@ -4264,7 +4250,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "Als du sie umarmst spürst du den Schmerz, der noch tief in ihr schlummert. Es muss furchtbar gewesen sein, was die beiden als Kinder durch den Zeitsprung mitgemacht haben, auch wenn bereits viele Jahre vergangen sind."
+       "text": "Als du sie umarmst spürst du den Schmerz, der noch tief in ihr schlummert. Es muss furchtbar gewesen sein, was die beiden als Kinder durch den Zeitsprung mitgemacht haben, auch wenn bereits viele Jahrzehnte vergangen sind."
       }
      ],
      "next": [
@@ -4858,7 +4844,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "Albert geht kurz in die Küche. Gespannt hörst du, wie er den Hollow Mule Gin zubereitet."
+       "text": "Albert geht kurz in die Küche. Gespannt hörst du, wie er den Hollow White Mule Gin zubereitet."
       },
       {
        "type": "addItem",
@@ -4941,7 +4927,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "Eiswürfel vorbereiten und ins geühlte Glas geben"
+         "text": "Eiswürfel vorbereiten und ins gekühlte Glas geben"
         },
         {
          "type": "paragraph",
