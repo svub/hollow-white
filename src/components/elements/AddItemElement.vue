@@ -9,12 +9,11 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
-import { Store } from "vuex";
 import { Action, State } from "vuex-class";
-import { log } from "../../shared/util";
+import { log, logJson } from "../../shared/util";
 import { AddItem, Item } from "../../shared/entities";
 import { AppState } from "../../store";
-import config from "@/config";
+import config from "../../config";
 
 @Component({
   name: "AddItemElement",
@@ -25,8 +24,8 @@ export default class AddItemElement extends Vue {
   @State items;
   @Action addItem;
 
-  visibilityChanged(isVisible, entry) {
-    log("AddItemElement.visibilityChanged: visible", isVisible);
+  visibilityChanged(isVisible) {
+    logJson("AddItemElement.visibilityChanged", this.element, isVisible);
     if (isVisible) {
       // wait two seconds before adding the item
       setTimeout(() => this.addItem({ item: this.element }), 2000);
@@ -34,9 +33,6 @@ export default class AddItemElement extends Vue {
   }
 
   get item(): Item {
-    // return (this.$store.state as AppState).config.items.find(
-    //   (item) => item.id === this.element.id
-    // );
     return config.items.find((item) => item.id === this.element.id)!;
   }
 }

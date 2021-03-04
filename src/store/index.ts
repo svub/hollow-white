@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { Chapter, Link, Reference, Section, Item, State, ChangeState, AddItem, RemoveItem, Option, Choice, Overlays, SpecialLink, isSpecialLink } from '../shared/entities';
-import { equal, warn, store } from '../shared/util';
+import { equal, warn, logJson } from '../shared/util';
 import { error } from '../shared/util';
 import VuexPersistence from 'vuex-persist';
 import book from '@/book';
@@ -93,11 +93,17 @@ export default new Vuex.Store({
     },
     changeState(appState, { state }: { state: ChangeState }) {
       const currentState: State = appState.states[state.id] ?? { id: state.id, value: 0 };
+      logJson('changeState from', currentState, 'to', state);
+      if (state.modifier.indexOf('=') > -1) // allow =1 to set a state
+      currentState.value = parseInt(state.modifier.replace('=', ''));
+      else
       currentState.value += parseInt(state.modifier);
+      logJson('changeState result', currentState);
       appState.states = {
         ...appState.states,
         [currentState.id]: currentState,
       }
+      logJson('changeStates result', appState.states);
     },
     addItem(state, { item }: { item: AddItem }) {
       if (state.items[item.id]) {

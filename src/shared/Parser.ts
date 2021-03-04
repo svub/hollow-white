@@ -65,6 +65,14 @@ export default class Parser {
       return next.data;
     }
     const topContainer = (token: Token, command?: Command): HasElements => {
+      /* TODO: this is not working for recursion.
+        There should be a list of elements representing the depth in the tree and
+        then a push/pop technique to add a layer and remove one - only this way, there can be an infinite amount
+        of recursion, e.g. an if with a style inside and then another if inside.
+        If changed, needs to be changed further down, e.g.
+        section!.elements.push(ifElement);
+        needs to be changed to
+        topContainer()... */
       const element = ([styleElement, elseElement, ifElement, section].find(e => e !== null));
       if (!element) {
         if (command)
@@ -195,12 +203,13 @@ export default class Parser {
             break; // ignore comments
           case CommandType.style:
             if (styleElement) this.error('Found another "// if" before "// end if"', token, command);
-            styleElement = {
+            const tempElement: Style = {
               type: ElementType.style,
               classes: command.fields.join(' '),
               elements: [],
             };
-            section!.elements.push(styleElement);
+            topContainer(token, command).elements.push(tempElement);
+            styleElement = tempElement;
             break;
           case CommandType.endstyle:
             if (!styleElement) this.error('Found "// endstyle" before "// style"', token, command);

@@ -23,7 +23,7 @@ function _log(f = console.log, message: string, ...data: any[]){
     f.apply(console, [message, ...(data.map(o => shortenString(JSON.stringify(o))))]);
 }
 
-function _logRaw(f = console.log, message: string, ...data: any[]){
+function _logJson(f = console.log, message: string, ...data: any[]){
     f.apply(console, [message, ...(data.map(o => JSON.stringify(o, undefined, ' ')))]);
 }
 
@@ -32,12 +32,12 @@ export function log<T>(message: string, o?: T, ...rest: any[]): T | undefined {
     return o;
 }
 
-export function logRaw<T>(message: string, o: T, ...rest: any[]): T {
-    _logRaw(console.log, message, [o, ...rest]);
+export function logJson<T>(message: string, o: T, ...rest: any[]): T {
+    _logJson(console.log, message, [o, ...rest]);
     return o;
 }
 
-export function logVar<T>(message: string, o: T, ...rest: any[]): T {
+export function logRaw<T>(message: string, o: T, ...rest: any[]): T {
     console.log.apply(console, [message, o, ...rest]);
     return o;
 }
