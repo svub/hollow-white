@@ -33,7 +33,7 @@ export default class AddItemElement extends Vue {
   }
 
   get item(): Item {
-    return config.items.find((item) => item.id === this.element.id);
+    return config.items.find((item) => item.id === this.element.id)!;
   }
 }
 </script>
