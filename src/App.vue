@@ -1,5 +1,5 @@
 <template web lang="pug">
-main(:class="page" lang="config.language || 'en'")
+main(:class="page" :lang="config.language || 'en'")
   transition(name='pages')
     //- use dynamic component: component(:is=page)
     Start(key="1", v-if="page === 'start'")
