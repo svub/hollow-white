@@ -12,13 +12,14 @@
       label {{ option.title }}
       .choices
         .choice(v-for="choice in option.choices" :class="choice.id")
-          button(@click="choose(option, choice)") {{ choice.title }}
+          button(@click="choose(option, choice)" :class="{ active: options[option.id] === choice.id }") {{ choice.title }}
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { State, Action, Getter } from 'vuex-class'
 import { Choice, Option } from '../../shared/entities';
+import { Options as OptionsType} from '../../store';
 import config from '../../config';
 
 @Component({
@@ -27,7 +28,7 @@ import config from '../../config';
   },
 })
 export default class Options extends Vue {
-  @State options: Options;
+  @State options: OptionsType;
   @Getter started: boolean;
   @Action setOption: Function;
   @Action reset: Function;
