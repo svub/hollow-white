@@ -15,6 +15,10 @@ body.overlay-open
     max-height 100%
     // overflow auto
 
+    h2
+      font-weight 400
+      margin-bottom 40px
+
   .actions
     flex-row()
     align-items flex-end
@@ -49,4 +53,64 @@ body.overlay-open
           color var(--textColor)
           line-height 1.3
           margin-bottom 50px
+
+  &.options
+
+    .content
+      padding-left 0
+      padding-right 0
+
+    label
+      @extends h4
+      color var(--textColor)
+      margin-right auto
+
+    highlight-row()
+      flex-row()
+      align-items center
+      margin-bottom 2px
+      padding 16px 31px 16px 25px
+      background var(--bgHighlight)
+
+    .reset
+      highlight-row()
+      margin-bottom 60px
+
+      button
+        image-button('options-reset.svg')
+        background var(--alert)
+
+    .list
+      flex-column()
+
+      .option
+        highlight-row()
+
+        .choices
+          flex-row(false)
+
+        button
+          justify-self flex-end
+          background var(--inactive)
+          margin-left 20px
+
+          &.active
+            background var(--active)
+
+        &.theme .dark-theme button
+          image-button('options-theme-dark.svg')
+        &.theme .light-theme button
+          image-button('options-theme-light.svg')
+
+        &.font .font-sans button
+          image-button('options-font-sans.svg')
+        &.font .font-serif button
+          image-button('options-font-serif.svg')
+
+        &.size .size-m button
+          image-button('options-size-m.svg')
+        &.size .size-l button
+          image-button('options-size-l.svg')
+        &.size .size-xl button
+          image-button('options-size-xl.svg')
 

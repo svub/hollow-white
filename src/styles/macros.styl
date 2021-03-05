@@ -20,7 +20,11 @@ flex-column()
   flex-direction column
   width 100%
 
-flex-row()
+flex-row(w = 100%)
   display flex
   flex-direction row
-  width 100%
+  if w
+    width w
+
+fontSize(size)
+  font-size calc(size * var(--font-scaling))
