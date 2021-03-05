@@ -1,3 +1,5 @@
+@import '../../macros'
+
 .word-break
   word-break normal
   overflow-wrap break-word // for iOS
@@ -33,3 +35,12 @@
 .text-button
   @extends .word-break
   border none
+
+// TODO: use everywhere!
+image-button(url)
+  dim = 48px
+  asset(url, dim, dim)
+  border-radius 12px
+  cursor pointer
+  overflow hidden // hide text in button
+  color transparent

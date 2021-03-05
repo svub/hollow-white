@@ -23,7 +23,6 @@ main.read
     content "Weiter zu"
 
 .overlay
-
   .actions
     button.close:before
       content 'Schließen'
@@ -31,6 +30,15 @@ main.read
   &.options
     .title h2:before
       content 'Optionen'
+    .reset label:before
+      content 'Speicherstand löschen'
+    // .list .option
+    //   &.theme:before
+    //     content 'Design'
+    //   &.font:before
+    //     content 'Textstil'
+    //   &.size:before
+    //     content 'Textgröße'
 
   &.feedback-mode
     .title h2:before
