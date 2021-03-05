@@ -187,14 +187,39 @@ const config: Config = {
   ],
   options: [{
     id: 'theme',
-    title: 'Theme',
+    title: 'Design',
     choices: [{
-      id: 'dark-theme',
-      title: 'Dark',
-      default: true,
-    },{
       id: 'light-theme',
-      title: 'Light',
+      title: '',
+    }, {
+      id: 'dark-theme',
+      title: '',
+      default: true,
+    }]
+  }, {
+    id: 'font',
+    title: 'Textstil',
+    choices: [{
+      id: 'font-sans',
+      title: '',
+    }, {
+      id: 'font-serif',
+      title: '',
+      default: true,
+    }]
+  }, {
+    id: 'size',
+    title: 'Textgröße',
+    choices: [{
+      id: 'size-m',
+      title: '',
+      default: true,
+    }, {
+      id: 'size-l',
+      title: '',
+    }, {
+      id: 'size-xl',
+      title: '',
     }]
   }],
   feedbackMode: !!['localhost', '-preview', '-testing'].find(test => location.href.indexOf(test) >= 0)
