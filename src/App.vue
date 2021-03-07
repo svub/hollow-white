@@ -1,5 +1,5 @@
 <template web lang="pug">
-main(:class="page" lang="config.language || 'en'")
+main(:class="page" :lang="config.language || 'en'")
   transition(name='pages')
     //- use dynamic component: component(:is=page)
     Start(key="1", v-if="page === 'start'")
@@ -92,6 +92,10 @@ export default class App extends Vue {
     window["appState"] = appState;
   }
 
+  mounted() {
+    this.updateClasses();
+  }
+
   get chapters() {
     return logJson('progress',
       uniq(this.path.map(ref => ref.chapterId))
@@ -106,8 +110,8 @@ export default class App extends Vue {
 
   @Watch('options', { deep: true, immediate: true })
   @Watch('overlay', { immediate: true })
-  updateBodyClasses() {
-    document.body.className = Object.values(this.options).join(' ') + (this.overlay ? ' overlay-open' : '');
+  updateClasses() {
+    document.documentElement.className = Object.values(this.options).join(' ') + (this.overlay ? ' overlay-open' : '');
   }
   //   document.body.className = Object.values(this.options).join(' ');
   // }
