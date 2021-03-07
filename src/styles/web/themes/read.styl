@@ -24,7 +24,7 @@ main.read
   .text
     p
       color var(--textColor)
-      margin-bottom 1.333em
+      margin-bottom 1rem
 
       p // showdown sometimes generates p tags inside, hide them
         margin 0
@@ -73,10 +73,8 @@ main.read
       color @css { rgba(var(--textColorRgb), .75) }
       text-transform uppercase
       font-family "Merriweather Sans"
-      font-size 14px
+      @extends h5
       font-weight 300
-      letter-spacing 0
-      line-height 18px
       text-align center
 
     button
@@ -88,10 +86,10 @@ main.read
       max-width s('calc((%s / 2) - %s)', maxWidth, gap)
       min-height @min-width
       max-height @max-width
-      padding 24px
+      padding (24 / baseFontSize)rem
       margin auto
       border 1.5px solid @css { rgba(var(--textColorRgb), .75) }
-      border-radius 30px
+      border-radius (30 / baseFontSize)rem
       background var(--decisionButtonBg)
 
       &:not(:last-child)

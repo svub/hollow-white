@@ -1,3 +1,5 @@
+@import '../../vars'
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 
@@ -10,31 +12,33 @@ body
   // font-size 24px
 
 h2
-  font-size 30px
-  line-height 38px
+  font-size (30 / baseFontSize)rem
+  line-height 1.26666666738
   font-weight bold
-  margin-bottom 32px
+  margin-bottom (32 / baseFontSize)rem
 
 h3
-  font-size 20px
-  line-height 28px
-  margin-bottom 32px
+  font-size (20/24)rem
+  line-height 1.4
+  margin-bottom (32 / baseFontSize)rem
 
 h4
-  font-size 16px
+  font-size (16 / baseFontSize)rem
+  line-height 1.6
   font-weight 300
   letter-spacing 0
-  line-height 1.6
 
 h5
-  font-size 14px
+  font-size (14 / baseFontSize)rem
+  line-height (18 / baseFontSize)rem
+  font-weight 300
   letter-spacing 0
-  line-height 18px
 
 p
-  font-size 18px
-  line-height 28px
+  font-size (18 / baseFontSize)rem
+  line-height 1.555555556
   font-weight 300
+  letter-spacing 0
 
 em
   font-style normal
@@ -42,9 +46,9 @@ em
 
 button
   font-family 'Merriweather Sans', Helvetica, 'Open Sans', Verdana, Arial, sans-serif
-  font-size 14px
+  font-size (14 / baseFontSize)rem
   letter-spacing .88px
-  line-height 18px
+  line-height 1.285714286
   text-align center
 
 ol
@@ -53,6 +57,6 @@ ol
 // special
 
 .small
-  font-size 12px
+  font-size (12 / baseFontSize)rem
   letter-spacing 1.5px
-  line-height 15px
+  line-height 1.25
