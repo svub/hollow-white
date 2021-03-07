@@ -1,11 +1,11 @@
 main.start
   .status
     .chapter:before
-      content "Kapitel "
+      content "Kapitel "
     .chapter::after
       content " | "
     .progress:before
-      content "Gesamtfortschritt "
+      content "Gesamtfortschritt "
 
   button.start:before
     content "Beginnen"
@@ -32,13 +32,6 @@ main.read
       content 'Optionen'
     .reset label:before
       content 'Speicherstand löschen'
-    // .list .option
-    //   &.theme:before
-    //     content 'Design'
-    //   &.font:before
-    //     content 'Textstil'
-    //   &.size:before
-    //     content 'Textgröße'
 
   &.feedback-mode
     .title h2:before
