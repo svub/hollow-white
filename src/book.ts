@@ -13801,7 +13801,81 @@ const book: Book = (({
    ]
   }
  ],
- "specials": {}
+ "specials": {
+  "credits": {
+   "id": "credits",
+   "title": "Credits",
+   "elements": [
+    {
+     "type": "paragraph",
+     "text": "_Idee, Geschichte, Konzept und Design_"
+    },
+    {
+     "type": "paragraph",
+     "text": "Tom Kiris"
+    },
+    {
+     "type": "paragraph",
+     "text": "_Entwicklung, Konzept und Programmierung_"
+    },
+    {
+     "type": "paragraph",
+     "text": "Sven Buschbeck"
+    },
+    {
+     "type": "paragraph",
+     "text": "_Lektor und Mentoring_"
+    },
+    {
+     "type": "paragraph",
+     "text": "Fritz Krautzberger"
+    },
+    {
+     "type": "paragraph",
+     "text": "_Music_"
+    },
+    {
+     "type": "paragraph",
+     "text": "Buddy aka Lord Neon"
+    },
+    {
+     "type": "paragraph",
+     "text": "_Korrekturen_"
+    },
+    {
+     "type": "paragraph",
+     "text": "Sven Buschbeck"
+    },
+    {
+     "type": "paragraph",
+     "text": "Alexandra Röhl"
+    },
+    {
+     "type": "paragraph",
+     "text": "Fritz Krautzberger"
+    },
+    {
+     "type": "paragraph",
+     "text": "_Testing_"
+    },
+    {
+     "type": "paragraph",
+     "text": "Elke, Buddy, Chris, Bernd, Michi, Varinja, Andi, Silke, Ben, Alessandro, Chris A."
+    },
+    {
+     "type": "paragraph",
+     "text": "© Tom Kiris"
+    }
+   ],
+   "next": [
+    {
+     "title": "Zurück",
+     "id": "start",
+     "data": ""
+    }
+   ]
+  }
+ }
 }) as unknown) as Book;
 
 export default book;
