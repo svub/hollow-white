@@ -6,6 +6,9 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 import { Paragraph } from "../../shared/entities";
 import showdown from 'showdown';
 
+const converter = new showdown.Converter();
+converter.setOption('simpleLineBreaks', true)
+
 @Component({
   name: "ParagraphElement",
 })
@@ -13,7 +16,7 @@ export default class ParagraphElement extends Vue {
   @Prop(Object) private element: Paragraph;
 
   get text(): string {
-    return new showdown.Converter().makeHtml(this.element.text)
+    return converter.makeHtml(this.element.text)
   }
 }
 
