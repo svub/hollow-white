@@ -13873,7 +13873,7 @@ const book: Book = (({
    "elements": [
     {
      "type": "paragraph",
-     "text": "/Idee, Geschichte, Konzept und Design/"
+     "text": "_Idee, Geschichte, Konzept und Design_"
     },
     {
      "type": "paragraph",
@@ -13881,7 +13881,7 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "/Entwicklung, Konzept und Programmierung/"
+     "text": "_Entwicklung, Konzept und Programmierung_"
     },
     {
      "type": "paragraph",
@@ -13889,7 +13889,7 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "/Lektor und Mentoring/"
+     "text": "_Lektor und Mentoring_"
     },
     {
      "type": "paragraph",
@@ -13897,7 +13897,7 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "/Music/"
+     "text": "_Music_"
     },
     {
      "type": "paragraph",
@@ -13905,7 +13905,7 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "/Korrekturen/"
+     "text": "_Korrekturen_"
     },
     {
      "type": "paragraph",
@@ -13921,7 +13921,7 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "/Testing/"
+     "text": "_Testing_"
     },
     {
      "type": "paragraph",
