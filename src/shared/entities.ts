@@ -50,7 +50,11 @@ export enum Functions {
   share = 'share',
 }
 
-export const Specials = { ...Overlays, ...Functions };
+export enum Pages {
+  reset = 'start',
+}
+
+export const Specials = { ...Overlays, ...Functions, ...Pages };
 export type Specials = typeof Specials;
 
 export interface Book extends Title {

@@ -10,13 +10,14 @@
       span.progress {{ Math.floor(progress * 100) }}%
     button(@click="start", :class="{ start: !started, continue: started }")
     button.options(@click="overlay('options')")
-    button.credits(@click="overlay('credits')")
+    button.credits(@click="overlay('credits')" v-if="hasCredits")
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Action, Getter } from "vuex-class";
 import book from "../book";
+import { Specials } from "../shared/entities";
 import { Position } from "../store";
 
 @Component({
@@ -30,11 +31,6 @@ export default class Start extends Vue {
   book = book;
 
   get progress(): number {
-    // calculate for chapters only
-    // const index = this.book.chapters.map(chapter => chapter.id).indexOf(this.chapter.id);
-    // return (index + 1) / this.book.chapters.length;
-
-    book;
     // calculate over all sections
     let index = -1;
     let total = 0;
@@ -46,6 +42,10 @@ export default class Start extends Vue {
       }
     }
     return index / total;
+  }
+
+  get hasCredits(): boolean {
+    return !!this.book!.specials[Specials.credits];
   }
 }
 </script>

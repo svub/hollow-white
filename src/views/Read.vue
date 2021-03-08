@@ -27,23 +27,23 @@ import { Component, Vue, Watch } from "vue-property-decorator";
 import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
 // import hyphenopoly from "hyphenopoly";
-import { Link, SpecialLink, isSpecialLink, Reference, Overlays, Functions } from "../shared/entities";
+import { Link, SpecialLink, isSpecialLink, Reference, Overlays, Functions, Places, Pages } from "../shared/entities";
 import TextElement from "../components/elements/TextElement.vue";
 import { inPath, Position } from "../store";
 import config from "../config";
-import { logJson } from "../shared/util";
+import { error, logJson } from "../shared/util";
 
 @Component({
   name: "Read",
   components: { TextElement },
 })
 export default class Read extends Vue {
-  @State path: Reference[];
-  @Action page: Function;
-  @Action goto: Function;
-  @Action overlay: Function;
-  @Action reset: Function;
-  @Getter position: Position;
+  @State path!: Reference[];
+  @Action page!: Function;
+  @Action goto!: Function;
+  @Action overlay!: Function;
+  @Action reset!: Function;
+  @Getter position!: Position;
   // translator: Function;
   config = config;
 
@@ -58,7 +58,7 @@ export default class Read extends Vue {
   //   logRaw('create translator', this.translator);
   // }
 
-enabled(link: Link | SpecialLink): boolean {
+  enabled(link: Link | SpecialLink): boolean {
     // enabled if: decision taken before (in path); or if last in progress == current (any decision possible)
     if (this.path.length === 0 || isSpecialLink(link) || this.selected(link)) return true;
     const lastPos: Reference = last(this.path)!;
@@ -75,13 +75,16 @@ enabled(link: Link | SpecialLink): boolean {
       // Special functions
       if (link.id === Functions.reset) return this.reset();
       if (link.id === Functions.share) return this.share(link.title, link.data);
+      // Pages
+      if (Pages[link.id]) return this.goto(link);
       // Overlays
       if (Overlays[link.id]) return this.overlay(link.id);
     }
     this.goto(link);
   }
 
-  share(title: string, url: string) {
+  share(title: string, url?: string) {
+    if (!url) error('Read.share: url not defined', title);
     const data = { title, url };
     if (navigator.share) {
       navigator.share(data);
