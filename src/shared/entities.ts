@@ -51,7 +51,7 @@ export enum Functions {
 }
 
 export enum Pages {
-  reset = 'start',
+  start = 'start',
 }
 
 export const Specials = { ...Overlays, ...Functions, ...Pages };
