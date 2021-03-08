@@ -73,6 +73,11 @@ const book: Book = (({
        "id": "credits"
       },
       {
+       "title": "Share this!",
+       "id": "share",
+       "data": "https://github.com/svub/ibook-app"
+      },
+      {
        "title": "next section",
        "chapterId": "1",
        "sectionId": "002"

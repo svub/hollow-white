@@ -32,7 +32,7 @@ export function log<T>(message: string, o?: T, ...rest: any[]): T | undefined {
     return o;
 }
 
-export function logJson<T>(message: string, o: T, ...rest: any[]): T {
+export function logJson<T>(message: string, o: T | undefined, ...rest: any[]): T | undefined {
     _logJson(console.log, message, [o, ...rest]);
     return o;
 }

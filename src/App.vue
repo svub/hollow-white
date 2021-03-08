@@ -64,7 +64,7 @@ export default class App extends Vue {
   @State theme;
   @State items;
   @State path;
-  @State options: { [id: string]: Option };
+  @State options!: { [id: string]: Option };
   @Action init;
   @Action("page") setPage;
   @Action("overlay") setOverlay;
@@ -101,11 +101,11 @@ export default class App extends Vue {
       uniq(this.path.map(ref => ref.chapterId))
       .map(id => clone(book.chapters.find(chapter => chapter.id === id)))
       .filter(chapter => !!chapter)
-      .map((chapter: Chapter) => {
-        chapter.sections = chapter.sections
-          .filter(section => !!this.path.find(r => r.chapterId === chapter.id && r.sectionId === section.id));
+      .map((chapter) => {
+        chapter!.sections = chapter!.sections
+          .filter(section => !!this.path.find(r => r.chapterId === chapter!.id && r.sectionId === section.id));
         return chapter;
-      }));
+      }))!;
   }
 
   @Watch('options', { deep: true, immediate: true })
