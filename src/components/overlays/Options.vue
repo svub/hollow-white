@@ -5,7 +5,7 @@
 
   .reset(v-if="started")
     label
-    button.reset(@click="confirm = true")
+    button(@click="confirm = true")
     transition(name="fade" appear)
       .confirm(v-if="confirm")
         h2
