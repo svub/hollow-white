@@ -30,8 +30,19 @@ main.read
   &.options
     .title h2:before
       content 'Optionen'
-    .reset label:before
-      content 'Speicherstand löschen'
+    .reset
+      label:before
+        content 'Speicherstand löschen'
+      .confirm
+        h2:before
+          content 'Bist du sicher?'
+        p:before
+          content 'Dein Gesamtfortschritt und Sammelobjekte gehen verloren.'
+        button.ok:before
+          content 'Speicherstand löschen'
+        button.cancel:before
+          content 'Abbrechen'
+
 
   &.feedback-mode
     .title h2:before
