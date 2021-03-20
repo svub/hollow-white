@@ -5,7 +5,13 @@
 
   .reset(v-if="started")
     label
-    button(@click="doReset")
+    button.reset(@click="confirm = true")
+    transition(name="fade" appear)
+      .confirm(v-if="confirm")
+        h2
+        p
+        button.ok(@click="reset(); confirm = false")
+        button.cancel(@click="confirm = false")
 
   .list
     .option(v-for="option in config.options" :class="option.id")
@@ -33,14 +39,15 @@ export default class Options extends Vue {
   @Action setOption: Function;
   @Action reset: Function;
   config = config;
+  confirm = false;
 
   choose(option: Option, choice: Choice) {
     this.setOption({ option, choice });
   }
 
-  doReset() {
-    if (confirm('Really start from scratch?')) this.reset()
-  }
+  // doReset() {
+  //   if (confirm('Really start from scratch?')) this.reset()
+  // }
 }
 </script>
 
