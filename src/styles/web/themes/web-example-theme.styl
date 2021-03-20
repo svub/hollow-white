@@ -102,17 +102,52 @@ main.read
     content 'Credits'
 
 .overlay.options
+  position relative
+
   .title h2:before
     content 'Options'
 
   .reset
     margin-bottom 8*gap
+
     label
       display block
+
       &:before
         content 'Reset'
-    button:before
+
+    button.reset:before
       content 'Clear story progress'
+
+    .confirm
+      display flex
+      flex-direction column
+      position absolute
+      top 0
+      right 0
+      bottom 0
+      left 0
+      padding 3*gap
+      background var(--backgroundColor)
+
+      &:before, &:after
+        content ''
+        flex 1
+
+      &.fade-enter-active, &.fade-leave-active
+        transition opacity .5s
+
+      &.fade-enter, &.fade-leave-to
+        opacity 0
+
+      h2:before
+        content 'Reset everything?'
+      p:before
+        content 'Your progress will be lost.'
+      button.ok:before
+        content "Yep, let's start from scratch"
+      button.cancel:before
+        content 'Nope! Get me out of here!'
 
   .list
     .option.theme .choices
