@@ -58,6 +58,7 @@
           margin-bottom 50px
 
   &.options
+    position relative
 
     .content
       padding-left 0
@@ -79,9 +80,38 @@
       highlight-row()
       margin-bottom 60px
 
-      button
+      > button
         image-button('options-reset.svg')
         background var(--alert)
+
+      .confirm
+        display flex
+        flex-direction column
+        position absolute
+        top 0
+        right 0
+        bottom 0
+        left 0
+        padding 3*gap
+        background var(--overlayBg)
+
+        &:before, &:after
+          content ''
+          flex 1
+
+        button
+          @extends .pill-button
+
+          &.ok
+            margin (40 / baseFontSize)rem 0 (20 / baseFontSize)rem
+            color var(--fgColor)
+            background var(--alert)
+
+        &.fade-enter-active, &.fade-leave-active
+          transition opacity .5s
+
+        &.fade-enter, &.fade-leave-to
+          opacity 0
 
     .list
       flex-column()
