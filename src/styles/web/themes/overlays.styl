@@ -27,7 +27,7 @@
     align-items flex-end
     position fixed
     bottom 0
-    width maxWidth
+    max-width maxWidth
     z-index 3
     padding closePad
     background @css { linear-gradient(0deg, var(--bgColor) 0%, rgba(var(--bgColorRgb), .8) 47.79%, rgba(var(--bgColorRgb), 0) 100%) }
@@ -45,6 +45,7 @@
       .chapter-id
         @extends h5
         color var(--textColor)
+        margin-bottom 4px
 
       h3
         margin-bottom 14px
@@ -118,13 +119,16 @@
 
   &.credits
     p
-      font-size 80%
+      font-weight 400
 
       em
-        @extends p
+        @extends p, .small
         display block
         margin-top 1rem
         font-weight 300
-        font-style italic
+        letter-spacing 0
+
+    .paragraph-element:last-child
+      margin-top 1em
 
 
