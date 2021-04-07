@@ -8,12 +8,10 @@ html
     --fgColorRgb 255, 255, 255
     --fgColorInverse black
     --fgColorInverseRgb 0, 0, 0
-    // --textColor #aaa
-    --textColor rbga(255, 255, 255, .65)
+    --textColor rbga(255, 255, 255, .75)
     --textColorRgb 170, 170, 170
     --textColorInverse #333
     --textColorInverseRgb 51, 51, 51
-    // --assetsFolder 'dark-theme/'
 
     // specials
     --overlayBg @css { radial-gradient(circle, #394349 0%, #0D1B22 100%) }
@@ -34,12 +32,10 @@ html
     --fgColorRgb 0, 0, 0
     --fgColorInverse white
     --fgColorInverseRgb 255, 255, 255
-    // --textColor #aaa
     --textColor rbga(0, 0, 0, .65)
     --textColorRgb 170, 170, 170
     --textColorInverse #ccc
     --textColorInverseRgb 204, 204, 204
-    // --assetsFolder 'light-theme/'
 
     // specials
     --overlayBg @css { radial-gradient(circle, #394349 0%, #0D1B22 100%) }
@@ -51,17 +47,17 @@ html
     --inactive #888
     --bgHighlight rgba(255, 255, 255, .1)
 
-  &.font-serif // main.read .text
-    font-family 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-  &.font-sans // main.read .text
-    font-family 'Merriweather Sans', Helvetica, 'Open Sans', Verdana, Arial, sans-serif
+  --fontSerif 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  --fontSans 'Merriweather Sans', Helvetica, 'Open Sans', Verdana, Arial, sans-serif
+
+  &.font-serif
+    --fontFamily var(--fontSerif)
+  &.font-sans
+    --fontFamily var(--fontSans)
 
   &.size-m
     font-size baseFontSize
-    // --scaling-factor 1
   &.size-l
     font-size baseFontSize + 4px
-    // --scaling-factor 1.2
   &.size-xl
     font-size baseFontSize + 12px
-    // --scaling-factor 1.5
