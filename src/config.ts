@@ -217,9 +217,9 @@ const config: Config = {
     }, {
       id: 'size-l',
       title: '',
-    }, {
-      id: 'size-xl',
-      title: '',
+    // }, {
+    //   id: 'size-xl',
+    //   title: '',
     }]
   }],
   feedbackMode: !!['localhost', '-preview', '-testing'].find(test => location.href.indexOf(test) >= 0)

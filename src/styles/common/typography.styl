@@ -1,8 +1,7 @@
 @import '../vars'
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap');
 // general
 
 body
@@ -10,6 +9,7 @@ body
   // font-family 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   // font-family 'Merriweather Sans', Helvetica, 'Open Sans', Verdana, Arial, sans-serif
   // font-size 24px
+  font-family var(--fontFamily)
 
 h2
   font-size (30 / baseFontSize)rem
@@ -34,6 +34,12 @@ h5
   font-weight 300
   letter-spacing 0
 
+h6
+  font-size (12 / baseFontSize)rem
+  line-height (15 / baseFontSize)rem
+  font-weight 300
+  letter-spacing 0
+
 p
   font-size (18 / baseFontSize)rem
   line-height 1.555555556
@@ -45,7 +51,7 @@ em
   font-weight normal
 
 button
-  font-family 'Merriweather Sans', Helvetica, 'Open Sans', Verdana, Arial, sans-serif
+  font-family var(--fontSans)
   font-size (14 / baseFontSize)rem
   letter-spacing .88px
   line-height 1.285714286
