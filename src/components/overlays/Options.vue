@@ -1,8 +1,5 @@
 <template lang="pug">
 .options
-  .title
-    h2.options
-
   .reset(v-if="started")
     label
     button(@click="confirm = true")

@@ -8,6 +8,8 @@ main(:class="page" :lang="config.language || 'en'")
   transition(name='overlay' appear)
     .backdrop(v-if="!!overlay" @click.self="setOverlay('')")
       .overlay(:class="overlay")
+        .title
+          h2
         .content
           Chapters(v-if="overlay === 'chapters'" :chapters="chapters")
           Items(v-if="overlay === 'items'" :items="Object.values(items)")

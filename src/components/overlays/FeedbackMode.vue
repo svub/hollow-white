@@ -1,8 +1,5 @@
 <template lang="pug">
 .feedback-mode
-  .title
-    h2
-
   .state
     h3
     p
