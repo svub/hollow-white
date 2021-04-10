@@ -13,7 +13,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "Example text"
+       "text": "<p>Example text</p>"
       },
       {
        "type": "state",
@@ -22,7 +22,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "More text after first state change (see console)"
+       "text": "<p>More text after first state change (see console)</p>"
       },
       {
        "type": "addItem",
@@ -30,11 +30,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "More text after sandbox item."
+       "text": "<p>More text after sandbox item.</p>"
       },
       {
        "type": "paragraph",
-       "text": "Formatting is also supported via Markdown. For example *emphasis* (&lt;em&gt; tag in HTML) and **bold** (&lt;b&gt; tag) - all formattings can be adjusted with CSS."
+       "text": "<p>Formatting is also supported via Markdown. For example <em>emphasis</em> (&lt;em&gt; tag in HTML) and <strong>bold</strong> (&lt;b&gt; tag) - all formattings can be adjusted with CSS. Add <a href=\"https://github.com/svub/ibook-app\">links</a> via Markdown.</p>"
       },
       {
        "type": "if",
@@ -42,7 +42,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "Example state > 0"
+         "text": "<p>Example state &gt; 0</p>"
         }
        ]
       },
@@ -52,7 +52,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "Example state <= 0"
+         "text": "<p>Example state &lt;= 0</p>"
         }
        ]
       },
@@ -62,7 +62,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "Making a block with special styling (CSS)"
+         "text": "<p>Making a block with special styling (CSS)</p>"
         }
        ]
       }
@@ -70,7 +70,8 @@ const book: Book = (({
      "next": [
       {
        "title": "Special link: go to credits",
-       "id": "credits"
+       "id": "credits",
+       "data": ""
       },
       {
        "title": "Share this!",
@@ -90,7 +91,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "Nothing here yet"
+       "text": "<p>Nothing here yet</p>"
       }
      ],
      "next": []
@@ -98,7 +99,61 @@ const book: Book = (({
    ]
   }
  ],
- "specials": {}
+ "specials": {
+  "credits": {
+   "id": "credits",
+   "title": "Credits",
+   "elements": [
+    {
+     "type": "paragraph",
+     "text": "<p>A special section with info about the authors.</p>"
+    }
+   ],
+   "next": []
+  }
+ },
+ "config": {
+  "items": [
+   {
+    "id": "sandbox",
+    "category": "boxes",
+    "title": "A sandbox to play in",
+    "elements": [
+     {
+      "type": "paragraph",
+      "text": "<p>A <em>sandback</em> with <strong>toys</strong> and <a href=\"https://test.com\">markdown</a> enabled.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Go play!</p>"
+     }
+    ]
+   }
+  ],
+  "options": [
+   {
+    "id": "theme",
+    "title": "Theme",
+    "choices": [
+     {
+      "id": "light-theme",
+      "title": "Light",
+      "default": true
+     },
+     {
+      "id": "dark-theme",
+      "title": "Dark",
+      "default": false
+     }
+    ]
+   }
+  ],
+  "feedbackMode": {
+   "enabled": true,
+   "feedbackLink": "mailto:sven.buschbeck@gmail.com"
+  },
+  "language": "en"
+ }
 }) as unknown) as Book;
 
 export default book;

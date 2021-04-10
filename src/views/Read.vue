@@ -4,6 +4,7 @@
     button.back(@click="page('start')")
     .menu
       button.feedback-mode(v-if="config.feedbackMode" @click="overlay('feedbackMode')")
+      button.items(v-if="config.items && Object.values(items).length > 0" @click="overlay('items')")
       button.chapters(@click="overlay('chapters')")
 
   .title
@@ -27,10 +28,10 @@ import { Component, Vue, Watch } from "vue-property-decorator";
 import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
 // import hyphenopoly from "hyphenopoly";
-import { Link, SpecialLink, isSpecialLink, Reference, Overlays, Functions, Places, Pages } from "../shared/entities";
+import { Link, SpecialLink, isSpecialLink, Reference, Overlays, Functions, Pages } from "../shared/entities";
 import TextElement from "../components/elements/TextElement.vue";
-import { inPath, Position } from "../store";
-import config from "../config";
+import { inPath, Items, Position } from "../store";
+import book from "../book";
 import { error, logJson } from "../shared/util";
 
 @Component({
@@ -39,13 +40,14 @@ import { error, logJson } from "../shared/util";
 })
 export default class Read extends Vue {
   @State path!: Reference[];
+  @State items!: Items;
   @Action page!: Function;
   @Action goto!: Function;
   @Action overlay!: Function;
   @Action reset!: Function;
   @Getter position!: Position;
   // translator: Function;
-  config = config;
+  config = book.config;
 
   // not working :( - can't find a suitable version that works for dynamic languages
   // might have to do that as part of the parsing process

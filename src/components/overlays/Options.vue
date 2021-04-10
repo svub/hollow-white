@@ -23,7 +23,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import { State, Action, Getter } from 'vuex-class'
 import { Choice, Option } from '../../shared/entities';
 import { Options as OptionsType} from '../../store';
-import config from '../../config';
+import book from '../../book';
 
 @Component({
   name: 'Options',
@@ -35,7 +35,7 @@ export default class Options extends Vue {
   @Getter started: boolean;
   @Action setOption: Function;
   @Action reset: Function;
-  config = config;
+  config = book.config;
   confirm = false;
 
   choose(option: Option, choice: Choice) {

@@ -38,7 +38,6 @@ import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
 import { State, Action } from "vuex-class";
 import book from "./book";
-import config from "./config";
 import { clone, logJson, warn } from "./shared/util";
 import appState from "./store";
 import { Chapter, Option } from "./shared/entities";
@@ -71,7 +70,7 @@ export default class App extends Vue {
   @Action("page") setPage;
   @Action("overlay") setOverlay;
 
-  config = config;
+  config = book.config;
 
 
   created() {
