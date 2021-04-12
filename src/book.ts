@@ -117,11 +117,16 @@ const book: Book = (({
    {
     "id": "sandbox",
     "category": "boxes",
+    "mediaUrl": "link",
     "title": "A sandbox to play in",
     "elements": [
      {
       "type": "paragraph",
       "text": "<p>A <em>sandback</em> with <strong>toys</strong> and <a href=\"https://test.com\">markdown</a> enabled.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>The item can have three types: link, audio, and video. For video, use the WebM format to support all browsers.</p>"
      },
      {
       "type": "paragraph",
