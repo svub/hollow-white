@@ -191,7 +191,14 @@ export default new Vuex.Store({
     },
     started({ position }): boolean {
       return !!position;
-    }
+    },
+    feedbackEnabled(): boolean {
+      if (!book.config.feedbackMode || !book.config.feedbackMode?.enabled) return false;
+      if (book.config.feedbackMode.urlFragments) {
+        return !!book.config.feedbackMode.urlFragments.find(test => location.href.indexOf(test) >= 0)
+      }
+      return true;
+    },
   },
   modules: {
   },

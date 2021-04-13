@@ -3,13 +3,13 @@
   nav
     button.back(@click="page('start')")
     .menu
-      button.feedback-mode(v-if="config.feedbackMode" @click="overlay('feedbackMode')")
+      button.feedback-mode(v-if="feedbackEnabled" @click="overlay('feedbackMode')")
       button.items(v-if="config.items && Object.values(items).length > 0" @click="overlay('items')")
       button.chapters(@click="overlay('chapters')")
 
   .title
     //- .icon icon
-    .position(v-if="config.feedbackMode") {{ position.chapter.id }}-{{ position.section.id }}
+    .position(v-if="feedbackEnabled") {{ position.chapter.id }}-{{ position.section.id }}
     h2(v-if="position.chapter.sections.indexOf(position.section) === 0") {{ position.chapter.title }}
     h3 {{ position.section.title }}
 
@@ -46,11 +46,13 @@ export default class Read extends Vue {
   @Action overlay!: Function;
   @Action reset!: Function;
   @Getter position!: Position;
+  @Getter feedbackEnabled!: boolean;
   // translator: Function;
   config = book.config;
 
   // not working :( - can't find a suitable version that works for dynamic languages
   // might have to do that as part of the parsing process
+  // TODO: move that to importer! that saves on deps and does the work once! :)
   // async created() {
   //   const lang = config.language || "en-us";
   //   log('Read created', lang);

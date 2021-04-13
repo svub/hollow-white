@@ -92,6 +92,7 @@ export interface Option extends Entity, Title {
 
 export interface FeedbackMode {
   enabled: boolean;
+  urlFragments?: string[];
   feedbackLink?: string;
 }
 
