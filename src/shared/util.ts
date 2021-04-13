@@ -67,3 +67,7 @@ export function loadAll(...keys: string[]): any {
 export function store(key: string, value: unknown) {
     localStorage.setItem(key, JSON.stringify(value));
 }
+
+export function parseBool(string = 'false', otherValueOptions: string[] = []): boolean {
+    return ['true', 'yes', 'on', 'enabled', '1', ...otherValueOptions].indexOf(string.trim().toLocaleLowerCase()) >= 0;
+}

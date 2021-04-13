@@ -1,8 +1,5 @@
 <template lang="pug">
 .feedback-mode
-  .title
-    h2
-
   .state
     h3
     p
@@ -13,14 +10,14 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import config from '../../config';
+import book from '../../book';
 
 @Component({
   name: 'FeedbackMode',
   components: {}
 })
 export default class FeedbackMode extends Vue {
-  config = config;
+  config = book.config;
 
   get stateString(): string {
     return JSON.stringify(this.$store.state, undefined, ' ');

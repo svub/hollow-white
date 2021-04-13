@@ -1,8 +1,5 @@
 <template lang="pug">
 .credits
-  .title
-    h2.credits
-
   TextElement.text(:elements="credits.elements")
 </template>
 

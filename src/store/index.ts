@@ -5,7 +5,6 @@ import { equal, warn, logJson } from '../shared/util';
 import { error } from '../shared/util';
 import VuexPersistence from 'vuex-persist';
 import book from '@/book';
-import config from '@/config';
 
 Vue.use(Vuex)
 
@@ -16,15 +15,18 @@ export interface Settings {
   page: string;
   overlay?: string;
   overlayData?: any;
-  options: { [id: string]: string };
+  options: Options;
 }
 
 const dontReset = ['items'];
+
+export type Items = { [id: string]: Item };
+export type States = { [id: string]: State };
 export interface BookState {
   position: Reference | null;
   path: Array<Reference>;
-  items: { [id: string]: Item };
-  states: { [id: string]: State };
+  items: Items;
+  states: States;
 }
 
 export interface AppState extends Settings, BookState {}
@@ -34,7 +36,7 @@ export function inPath(link: Reference | Link, path: Array<Reference>): boolean 
 }
 
 const defaultOptions: { [id: string]: string } = {};
-config.options.forEach(option => defaultOptions[option.id] = (option.choices.find(c => c.default) ?? option.choices[0]).id);
+book.config.options.forEach(option => defaultOptions[option.id] = (option.choices.find(c => c.default) ?? option.choices[0]).id);
 
 function initialSettings(): Settings {
   return {
@@ -110,9 +112,9 @@ export default new Vuex.Store({
       if (state.items[item.id]) {
         return warn(`addItem: item ${ item.id } already in inventory`);
       }
-      const itemDefinition: Item | undefined = config.items.find(i => i.id === item.id);
+      const itemDefinition: Item | undefined = book.config.items.find(i => i.id === item.id);
       if (!itemDefinition) {
-        return error(`Definition for item ${ item.id } not found!`, config.items);
+        return error(`Definition for item ${ item.id } not found!`, book.config.items);
       }
       Vue.set(state.items, itemDefinition.id, itemDefinition);
     },

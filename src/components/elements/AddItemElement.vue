@@ -13,7 +13,7 @@ import { Action, State } from "vuex-class";
 import { log, logJson } from "../../shared/util";
 import { AddItem, Item } from "../../shared/entities";
 import { AppState } from "../../store";
-import config from "../../config";
+import book from "../../book";
 
 @Component({
   name: "AddItemElement",
@@ -33,7 +33,7 @@ export default class AddItemElement extends Vue {
   }
 
   get item(): Item {
-    return config.items.find((item) => item.id === this.element.id)!;
+    return book.config.items.find((item) => item.id === this.element.id)!;
   }
 }
 </script>

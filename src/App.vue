@@ -8,6 +8,8 @@ main(:class="page" :lang="config.language || 'en'")
   transition(name='overlay' appear)
     .backdrop(v-if="!!overlay" @click.self="setOverlay('')")
       .overlay(:class="overlay")
+        .title
+          h2
         .content
           Chapters(v-if="overlay === 'chapters'" :chapters="chapters")
           Items(v-if="overlay === 'items'" :items="Object.values(items)")
@@ -36,7 +38,6 @@ import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
 import { State, Action } from "vuex-class";
 import book from "./book";
-import config from "./config";
 import { clone, logJson, warn } from "./shared/util";
 import appState from "./store";
 import { Chapter, Option } from "./shared/entities";
@@ -69,7 +70,7 @@ export default class App extends Vue {
   @Action("page") setPage;
   @Action("overlay") setOverlay;
 
-  config = config;
+  config = book.config;
 
 
   created() {

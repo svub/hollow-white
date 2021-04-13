@@ -19,22 +19,6 @@ export interface Reference {
   sectionId: string;
 }
 
-// Config
-export interface Choice extends Entity, Title {
-  default?: boolean;
-}
-export interface Option extends Entity, Title {
-  choices: Choice[];
-}
-export interface Config {
-  themes?: string[];
-  items: Item[];
-  options: Option[];
-  feedbackMode?: boolean;
-  feedbackLink?: string;
-  language?: string; // default 'en'
-}
-
 // entities
 
 export enum Overlays {
@@ -43,6 +27,7 @@ export enum Overlays {
   chapters = 'chapters',
   items = 'items',
   shareOverlay = 'shareOverlay',
+  feedbackMode = 'feedbackMode',
 }
 
 export enum Functions {
@@ -57,10 +42,13 @@ export enum Pages {
 export const Specials = { ...Overlays, ...Functions, ...Pages };
 export type Specials = typeof Specials;
 
+// book mark-up
+
 export interface Book extends Title {
   subTitle?: string;
   chapters: Chapter[];
   specials: {[id: string]: Section};
+  config: Config;
 }
 
 export interface Chapter extends Entity, Title {
@@ -69,7 +57,6 @@ export interface Chapter extends Entity, Title {
 }
 
 export interface Section extends HasElements, Entity, Title {
-  elements: Element[];
   next: (Link | SpecialLink)[];
 }
 
@@ -83,18 +70,46 @@ export function isSpecialLink(link: Link | SpecialLink): link is SpecialLink {
   return !!(link as SpecialLink).id;
 }
 
-export interface Item extends Entity, Title {
-  thumbnail: string;
-  media: string;
-  description?: string;
-  category?: string;
+// > config
+
+export enum MediaType {
+  link = 'link',
+  audio = 'audio',
+  video = 'video',
 }
 
 export interface State extends Entity {
   value: number;
 }
 
-// elements
+export interface Choice extends Entity, Title {
+  default?: boolean;
+}
+
+export interface Option extends Entity, Title {
+  choices: Choice[];
+}
+
+export interface FeedbackMode {
+  enabled: boolean;
+  feedbackLink?: string;
+}
+
+export interface Item extends Entity, Title, HasElements {
+  category?: string;
+  mediaUrl?: string;
+  mediaType?: MediaType;
+}
+
+export interface Config {
+  items: Item[];
+  options: Option[];
+  feedbackMode?: FeedbackMode;
+  language?: string; // default 'en'
+}
+
+// text elements
+
 export enum ElementType {
   paragraph = 'paragraph',
   if = 'if',
@@ -108,31 +123,38 @@ export enum ElementType {
 export type Element = {
   type: ElementType;
 }
+
 export interface Paragraph extends Element {
   type: ElementType.paragraph;
   text: string;
 }
+
 export interface If extends Element, HasElements {
   type: ElementType.if;
   condition: string;
 }
+
 export interface Else extends Element, HasElements {
   type: ElementType.else;
   ifCondition: string;
 }
+
 export interface AddItem extends Element {
   type: ElementType.addItem;
   id: string;
 }
+
 export interface RemoveItem extends Element {
   type: ElementType.removeItem;
   id: string;
 }
+
 export interface ChangeState extends Element {
   type: ElementType.state;
   id: string;
   modifier: string;
 }
+
 export interface Style extends Element, HasElements {
   type: ElementType.style;
   classes: string;

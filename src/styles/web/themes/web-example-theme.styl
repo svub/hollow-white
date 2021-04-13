@@ -74,8 +74,18 @@ main.read
       display flex
       flex-direction row
       justify-content flex-end
+      .feedback-mode::before
+        content "feedback"
+      .items::before
+        content "items"
       .chapters::before
         content "chapters"
+
+  .text
+    .item
+      border 1px solid var(--textColor)
+      &:before
+        content "Item"
 
   .next.links
     margin-top 8*gap
@@ -164,6 +174,14 @@ main.read
     content 'Please copy and paste the text from below into your feedback form.'
   a.feedback-link:before
     content 'Open feedback form'
+
+.overlay.items
+  .title h2:before
+    content 'Items you collected'
+
+.overlay.chapters
+  .title h2:before
+    content 'Chapters you read'
 
 .overlay.shareOverlay
   p.intro:before
