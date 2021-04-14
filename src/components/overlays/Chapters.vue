@@ -15,7 +15,6 @@ import Component from "vue-class-component";
 import { Prop } from "vue-property-decorator";
 import { Action, Getter } from "vuex-class";
 import { Chapter } from "../../shared/entities";
-import { warn } from "../../shared/util";
 
 @Component({
   name: "Chapters",
