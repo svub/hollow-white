@@ -1,16 +1,16 @@
 <template lang="pug">
-.page.read
+.page.read(:class="`chapter-${position.chapter.id} section-${position.section.id}${isFirst ? ' first-section' : ''}`")
   nav
     button.back(@click="page('start')")
     .menu
       button.feedback-mode(v-if="feedbackEnabled" @click="overlay('feedbackMode')")
-      button.items(v-if="config.items && Object.values(items).length > 0" @click="overlay('items')")
+      button.items(v-if="config.items && itemCount > 0" @click="overlay('items')")
       button.chapters(@click="overlay('chapters')")
 
   .title
     //- .icon icon
     .position(v-if="feedbackEnabled") {{ position.chapter.id }}-{{ position.section.id }}
-    h2(v-if="position.chapter.sections.indexOf(position.section) === 0") {{ position.chapter.title }}
+    h2(v-if="isFirst") {{ position.chapter.title }}
     h3 {{ position.section.title }}
 
   TextElement.text(:elements="position.section.elements")
@@ -47,6 +47,7 @@ export default class Read extends Vue {
   @Action reset!: Function;
   @Getter position!: Position;
   @Getter feedbackEnabled!: boolean;
+  @Getter itemCount!: number;
   // translator: Function;
   config = book.config;
 
@@ -96,6 +97,10 @@ export default class Read extends Vue {
     else {
       this.overlay({ overlay: Overlays.shareOverlay, data });
     }
+  }
+
+  get isFirst(): boolean {
+    return this.position.chapter.sections.indexOf(this.position.section) === 0;
   }
 
   @Watch('position') pageChange() {
