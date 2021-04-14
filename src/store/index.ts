@@ -199,6 +199,9 @@ export default new Vuex.Store({
       }
       return true;
     },
+    itemCount({ items }): number {
+      return Object.values(items).length;
+    },
   },
   modules: {
   },
