@@ -12,7 +12,7 @@ main(:class="page" :lang="config.language || 'en'")
           h2
         .content
           Chapters(v-if="overlay === 'chapters'" :chapters="chapters")
-          Items(v-if="overlay === 'items'" :items="Object.values(items)")
+          Items(v-if="overlay === 'items'" :itemIds="Object.values(items)")
           Credits(v-if="overlay === 'credits'")
           Options(v-if="overlay === 'options'")
           FeedbackMode(v-if="overlay === 'feedbackMode'")

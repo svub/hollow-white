@@ -20,12 +20,12 @@ export interface Settings {
 
 const dontReset = ['items'];
 
-export type Items = { [id: string]: Item };
+export type Items = string[];
 export type States = { [id: string]: State };
 export interface BookState {
   position: Reference | null;
   path: Array<Reference>;
-  items: Items;
+  items: string[];
   states: States;
 }
 
@@ -49,7 +49,7 @@ function initialBookState(): BookState {
   return {
     position: null,
     path: [],
-    items: {},
+    items: [],
     states: {},
   };
 }
@@ -109,21 +109,22 @@ export default new Vuex.Store({
       logJson('changeStates result', appState.states);
     },
     addItem(state, { item }: { item: AddItem }) {
-      if (state.items[item.id]) {
-        return warn(`addItem: item ${ item.id } already in inventory`);
+      if (state.items.includes(item.id)) {
+        return log(`addItem: item ${ item.id } already in inventory`);
       }
-      const itemDefinition: Item | undefined = book.config.items.find(i => i.id === item.id);
-      if (!itemDefinition) {
+      if (!book.config.items.find(i => i.id === item.id)) {
         return error(`Definition for item ${ item.id } not found!`, book.config.items);
       }
-      Vue.set(state.items, itemDefinition.id, itemDefinition);
+      // Vue.set(state.items, itemDefinition.id, itemDefinition);
+      state.items.push(item.id);
     },
     removeItem(state, { item }: { item: RemoveItem }) {
-      if (!state.items[item.id]) {
+      if (state.items.includes(item.id)) {
         return warn(`removeItem: item ${ item.id } not in inventory`);
       }
       // TODO is it enough to just remove the item? or do I need to recreate the map?
-      Vue.delete(state.items, item.id);
+      // Vue.delete(state.items, item.id);
+      state.items.splice(state.items.indexOf(item.id), 1);
     },
     setOption(state, { option, choice }: { option: Option; choice: Choice }) {
       if (!option.choices.find(c => c.id === choice.id)) {

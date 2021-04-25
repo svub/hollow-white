@@ -30,11 +30,15 @@ import book from '../../book';
   components: { TextElement }
 })
 export default class Items extends Vue {
-  @Prop(Array) items: Item[];
+  @Prop(Array) itemIds: string[];
   @Getter itemCount: number;
 
   itemIndex(item: Item): number {
-    return this.items.map(i => i.id).indexOf(item.id);
+    return this.itemIds.indexOf(item.id);
+  }
+
+  get items(): Item[] {
+    return this.itemIds.map(id => book.config.items.find(item => item.id === id));
   }
 
   get totalItems(): number {
