@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { Chapter, Link, Reference, Section, Item, State, ChangeState, AddItem, RemoveItem, Option, Choice, Overlays, SpecialLink, isSpecialLink } from '../shared/entities';
-import { equal, warn, logJson } from '../shared/util';
-import { error } from '../shared/util';
+import { Chapter, Link, Reference, Section, State, ChangeState, AddItem, RemoveItem, Option, Choice, Overlays, SpecialLink, isSpecialLink } from '../shared/entities';
+import { equal, warn, logJson, error } from '../shared/util';
 import VuexPersistence from 'vuex-persist';
 import book from '@/book';
 
