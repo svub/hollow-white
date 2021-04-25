@@ -10,6 +10,14 @@
   background var(--overlayBg)
   font-family "Merriweather Sans"
 
+  > .title
+    text-align center
+    margin-top toRem(100)
+
+    h2
+      font-weight 400
+      margin-bottom toRem(40)
+
   .content
     padding 4*gap
 
@@ -17,10 +25,6 @@
       content ''
       display block
       height 3*closePad
-
-    h2
-      font-weight 400
-      margin-bottom (40 / baseFontSize)rem
 
   .actions
     flex-row()
@@ -162,4 +166,59 @@
     .paragraph-element:last-child
       margin-top 1em
 
+  &.items
+    flex-column()
+    text-align center
 
+    .title h2
+      margin-bottom gap
+
+    .content
+      padding 0 pad pad
+
+      .count
+        @extends .label
+
+        .total
+          &:before
+            content ' von '
+          &:after
+            content ' Karten entdeckt'
+
+    .item
+      flex-column()
+      background var(--bgColor)
+      rawAsset('/assets/items/card/stars@2x.jpg')
+      background-size contain
+      height toRem(402)
+      margin-top toRem(40)
+      border-radius toRem(30)
+      border 1px solid var(--itemOutline)
+
+      .title
+        flex-column()
+        height 100%
+
+        &:before
+          content ''
+          flex 1
+          margin toRem(65) toRem(42) toRem(16)
+          rawAsset('/assets/items/bubblegum.svg')
+          background-size contain
+          background-position center
+
+        .number
+          display none
+
+        h3
+          @extends h5
+          &:before
+            content 'Gegenstand'
+            display block
+            @extends .label
+            font-size toRem(12)
+            line-height toRem(20)
+            font-weight 300
+
+      .content
+        display none
