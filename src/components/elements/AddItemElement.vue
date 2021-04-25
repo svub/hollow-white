@@ -1,26 +1,23 @@
 <template lang="pug">
-//- .add.item(v-observe-visibility="{ callback: visibilityChanged, once: true, intersection: { threshold: 1 } }")
 .add.item(v-observe-visibility="visibilityChanged")
   //- addItem {{ element }} {{ item }}
-  h3 {{ item.title }}
-  img(:src="item.thumbnail")
-  //- button(@click="addItem({ item: element })" v-if="!items[element.id]") add
+  ItemElement(:item="item")
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
 import { Action, State } from "vuex-class";
-import { log, logJson } from "../../shared/util";
+import { logJson } from "../../shared/util";
 import { AddItem, Item } from "../../shared/entities";
-import { AppState } from "../../store";
 import book from "../../book";
+import ItemElement from './ItemElement.vue';
 
 @Component({
   name: "AddItemElement",
+  components: { ItemElement },
 })
 export default class AddItemElement extends Vue {
   @Prop(Object) private element: AddItem;
-
   @State items;
   @Action addItem;
 
