@@ -1,5 +1,5 @@
 <template lang="pug">
-.add.item(v-observe-visibility="visibilityChanged")
+.add-item(v-observe-visibility="visibilityChanged")
   //- addItem {{ element }} {{ item }}
   ItemElement(:item="item")
 </template>
