@@ -4,7 +4,7 @@
 
   .item(v-for="item in items" :class="[item.id, item.category].join(' ')")
     .title
-      .number #[span.current {{ itemIndex(item) }}] #[span.total {{ totalItems }}]
+      .number #[span.current {{ itemIndex(item)+1 }}] #[span.total {{ itemCount }}]
       h3 {{ item.title }}
 
     .content
@@ -23,6 +23,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 import TextElement from '../elements/TextElement.vue';
 import { Item } from '../../shared/entities';
 import { Getter } from 'vuex-class';
+import book from '../../book';
 
 @Component({
   name: 'Items',
@@ -37,7 +38,7 @@ export default class Items extends Vue {
   }
 
   get totalItems(): number {
-    return Object.keys(this.items).length;
+    return book.config.items.length
   }
 }
 </script>
