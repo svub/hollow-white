@@ -1,19 +1,22 @@
 @import 'vars'
 
+rawAsset(url, w = false, h = false)
+  background-image url(url)
+  background-repeat no-repeat
+  if w or h
+    background-position center
+    // background-size contain
+  if w
+    width w
+  if h
+    height h
+
 asset(src, w = false, h = false, size = '')
   for theme in themes
     selector = s(".%s", theme)
     url = s("/assets/%s/%s", unquote(theme), unquote(src))
     {selector} &
-      background-image url(url)
-      background-repeat no-repeat
-      if w or h
-        background-position center
-        // background-size contain
-      if w
-        width w
-      if h
-        height h
+      rawAsset(url, w, h)
 
 flex-column()
   display flex
@@ -28,3 +31,6 @@ flex-row(w = 100%)
 
 fontSize(size)
   font-size calc(size * var(--font-scaling))
+
+toRem(pixels)
+  (pixels / baseFontSize)rem
