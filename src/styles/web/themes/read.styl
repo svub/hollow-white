@@ -1,4 +1,5 @@
 @import '../../vars'
+@import '../../macros'
 
 main.read
   nav
@@ -55,7 +56,7 @@ main.read
       margin-bottom 3*pad
 
   .next.links
-    icon-width = 180px
+    icon-width = 250px
     icon-height = 130px
 
     position relative
@@ -66,18 +67,18 @@ main.read
     padding-top icon-height
 
     &:before
+      @extends h5
       width icon-width
       // height icon-height
       position absolute
       top 0
       left "calc(50% - (%s / 2))" % icon-width
-      padding-top "calc(%s - 1em - 27px)" % icon-height
+      padding-top "calc(%s - 2em)" % icon-height
       asset('read-decision-logo.svg')
-      background-position center (icon-height - 91px)
+      background-position "center calc(%s - %s - %s)" % (icon-height 2em 55px)
       color @css { rgba(var(--textColorRgb), .75) }
       text-transform uppercase
       font-family "Merriweather Sans"
-      @extends h5
       font-weight 300
       text-align center
 
@@ -90,7 +91,8 @@ main.read
       max-width s('calc((%s / 2) - %s)', maxWidth, gap)
       min-height @min-width
       max-height @max-width
-      padding (24 / baseFontSize)rem
+      // padding (24 / baseFontSize)rem
+      padding 24px 20px
       margin auto
       border 1.5px solid @css { rgba(var(--textColorRgb), .75) }
       border-radius (30 / baseFontSize)rem
