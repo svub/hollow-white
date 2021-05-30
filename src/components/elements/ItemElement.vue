@@ -18,16 +18,20 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import { Getter, State } from 'vuex-class';
-import TextElement from './TextElement.vue';
+// import TextElement from './TextElement.vue';
 import { Items } from '../../store';
 import { Item } from '../../shared/entities';
 
 @Component({
   name: 'ItemElement',
-  components: { TextElement }
+  components: {
+    // avoid error due to recursive use of TextElement
+    // alternative solutions: https://stackoverflow.com/a/58875919/548955
+    TextElement: () => import('./TextElement.vue'),
+  }
 })
 export default class ItemElement extends Vue {
-  @Prop(Array) item: Item;
+  @Prop(Object) item: Item;
   @State items: Items;
   @Getter itemCount: number;
 

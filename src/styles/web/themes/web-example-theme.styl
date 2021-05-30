@@ -25,6 +25,9 @@ normal() {
   transition color 2s, background-color 2s
 }
 
+.item
+  border 1px solid var(--textColor)
+
 main
   normal()
   width 100%
@@ -82,10 +85,8 @@ main.read
         content "chapters"
 
   .text
-    .item
-      border 1px solid var(--textColor)
-      &:before
-        content "Item"
+    .item:before
+      content "Item"
 
   .next.links
     margin-top 8*gap
@@ -176,8 +177,32 @@ main.read
     content 'Open feedback form'
 
 .overlay.items
-  .title h2:before
-    content 'Items you collected'
+  .title
+    margin-bottom 0
+
+    h2:before
+      content 'Your items'
+
+  .items
+    .count
+      margin-bottom 8*gap
+
+      .count:before
+        content 'You collected '
+      .count:after
+        content ' of '
+      .total:after
+        content ' items.'
+    .item
+      .title
+        margin-bottom gap
+
+        .number
+          display inline-block
+          .current:before
+            content 'Item '
+          .current:after
+            content ' of '
 
 .overlay.chapters
   .title h2:before
