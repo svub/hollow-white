@@ -78,10 +78,10 @@ export default class Read extends Vue {
   open(link: Link | SpecialLink) {
     if (isSpecialLink(link)) {
       // Special functions
-      if (link.id === Functions.reset) return this.reset();
+      if (link.id === Functions.reset) return this.reset({ keepItems: true });
       if (link.id === Functions.share) return this.share(link.title, link.data);
       // Pages
-      if (Pages[link.id]) return this.goto(link);
+      if (Pages[link.id]) return this.page(link.id);
       // Overlays
       if (Overlays[link.id]) return this.overlay(link.id);
     }
