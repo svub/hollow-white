@@ -13,7 +13,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Example text</p>"
+       "text": "<p>Hey hello! This is an ibook example. You can find the original text with commands and mark up <a href=\"https://docs.google.com/document/d/e/2PACX-1vT5bShbhPzfbS6kkR30qALUyVy7ptxTOxH9E9cBO7mlpSuJqpwhR3mvuLih4DQoUQbDQISUNA9QAbtv/pub\">here</a>. It contains some example text, states, items, styling, and conditionals.</p>"
       },
       {
        "type": "state",
@@ -94,7 +94,23 @@ const book: Book = (({
        "text": "<p>Nothing here yet</p>"
       }
      ],
-     "next": []
+     "next": [
+      {
+       "title": "start over again",
+       "id": "reset",
+       "data": ""
+      },
+      {
+       "title": "go to home screen",
+       "id": "start",
+       "data": ""
+      },
+      {
+       "title": "open options screen",
+       "id": "options",
+       "data": ""
+      }
+     ]
     }
    ]
   }
