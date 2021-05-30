@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { Chapter, Link, Reference, Section, State, ChangeState, AddItem, RemoveItem, Option, Choice, Overlays, SpecialLink, isSpecialLink } from '../shared/entities';
-import { equal, warn, logJson, error } from '../shared/util';
+import { equal, warn, logJson, log, error } from '../shared/util';
 import VuexPersistence from 'vuex-persist';
 import book from '@/book';
 
@@ -16,8 +16,6 @@ export interface Settings {
   overlayData?: any;
   options: Options;
 }
-
-const dontReset = ['items'];
 
 export type Items = string[];
 export type States = { [id: string]: State };
@@ -131,11 +129,12 @@ export default new Vuex.Store({
       }
       Vue.set(state.options, option.id, choice.id);
     },
-    reset(state) {
-      warn('resetting...');
+    reset(state, { keepItems = false }: { keepItems: boolean }) {
+      warn('resetting... keep items?', keepItems);
       const initial = initialBookState();
       for (const field of Object.keys(initial)) {
-        if (dontReset.indexOf(field) < 0) state[field] = initial[field];
+        if (field === 'items' && keepItems) continue;
+        state[field] = initial[field];
       }
     },
   },
@@ -143,6 +142,7 @@ export default new Vuex.Store({
     page({ commit }, page) {
       if (['start', 'read', 'tester'].indexOf(page) < 0) error('Page not found', page);
       commit('page', { page });
+      window.scrollTo(0, 0);
     },
     overlay({ commit }, overlay: string | { overlay: string; data: any } = '') {
       const entry = typeof overlay === 'string' ? { overlay, data: undefined } : overlay;
@@ -176,8 +176,8 @@ export default new Vuex.Store({
     setOption({ commit }, payload: { option: Option; choice: Choice }) {
       commit('setOption', payload);
     },
-    reset({ commit, dispatch }) {
-      commit('reset');
+    reset({ commit, dispatch }, payload: { keepItems: boolean } = { keepItems: false }) {
+      commit('reset', payload);
       dispatch('page', 'start');
       dispatch('overlay', '');
     },

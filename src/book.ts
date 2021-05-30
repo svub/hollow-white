@@ -3292,7 +3292,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es ist so warm, dass du den Mantel, den dir Marie gegeben hat, ausziehst&nbsp;und um deinem Arm legst. Du läufst eine bewachsene Passage mit vielen hohen Bäumen und Sträuchern entlang, bis der untere Teil des <em>Kalten Stern</em> vor dir emporragt.</p>"
+       "text": "<p>Es ist so warm, dass du den Mantel, den dir Marie gegeben hat, ausziehst&nbsp;und um deinem Arm legst. Du läufst eine bewachsene Passage mit vielen hohen Bäumen und Sträuchern entlang, bis der untere Teil des <em>Kalten Sterns</em> vor dir emporragt.</p>"
       },
       {
        "type": "paragraph",
@@ -3490,7 +3490,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Der Name <em>Snow Peaks</em>&nbsp;ist durch die Spitzen des <em>Kalten Stern</em>, die in die Höhen ragen, und den konstanten Witterungsverhältnissen außerhalb der Kuppel entstanden.</p>"
+       "text": "<p>Der Name <em>Snow Peaks</em>&nbsp;ist durch die Spitzen des <em>Kalten Sterns</em>, die in die Höhen ragen, und den konstanten Witterungsverhältnissen außerhalb der Kuppel entstanden.</p>"
       },
       {
        "type": "paragraph",
@@ -6463,7 +6463,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Es ist schon so lange her, doch den Moment, als ich hier erschienen bin, werde ich nie vergessen. Ich erinnere mich an dieses grelle Licht und ein lautes Summen. Und an das Gesicht eines Mannes, als ich plötzlich zwischen Hundegebelle in einem dreckigen Hundezwinger aufgewacht bin. Es war furchtbar.«</p>"
+       "text": "<p>»Es ist schon so lange her, doch den Moment, als ich hier erschienen bin, werde ich nie vergessen. Ich erinnere mich an dieses grelle Licht und ein lautes Summen, als ich plötzlich inmitten von Hundegebell in einem dreckigen Hundezwinger aufgewacht bin. Es war furchtbar.«</p>"
       },
       {
        "type": "paragraph",
@@ -7855,27 +7855,47 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Unterhalb der Erde betrachtest du die massive Spitze des <em>Kalten Sterns</em>, die sich durch die Decke tief in die Höhle bohrt. Ein orange-rötliches Licht flackert auf deinem weißen glatten Schutzanzug und im Hintergrund blinken unterschiedliche Instrumente an einer ominösen Apparatur. Wasser läuft an einigen Wänden von der Decke hinunter.</p>"
+       "text": "<p>Du betrachtest die massive Spitze des <em>Kalten Sterns</em>, die sich durch die Decke einer tief liegenden Höhle bohrt. Ein orange-rötliches Licht flackert auf deinem weißen, glatten Schutzanzug und im Hintergrund blinken unterschiedliche Instrumente an einer ominösen Apparatur. Wasser läuft an einigen Wänden von der Decke hinunter.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Es ist feucht und du stehst halb mit deinen Stiefeln im seichten Wasser, auf dessen Oberfläche sich das Licht in beeindruckenden Glanzeffekten spiegelt.</p>"
+       "text": "<p>Es ist nass und die Luft ist feucht.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»<em>Georgy</em>, es scheint teilweise wieder zu funktionieren!«, sagt eine Stimme hinter dir.</p>"
+       "text": "<p>Mit deinen Stiefeln stehst du halbtief im seichten Wasser, auf dessen Oberfläche sich das Licht beeindruckend spiegelt. Die Spitze des <em>Kalten Sterns</em>&nbsp;pulsiert leuchtend und es summt leise nur wenige Meter vor dir. Vorsichtig steckst du etwas zurück in die Seitentasche deines Anzugs.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du drehst dich um und ein Wissenschaftler in gleicher Montur steht vor dir.</p>"
+       "text": "<p>»<em>Georgy!</em>«, sagt eine Stimme hinter dir.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du sprichst.</p>"
+       "text": "<p>Du drehst dich um und <em>Dean</em>, der die gleiche Montur wie du trägt, steht vor dir. Er nimmt seine Schutzmaske ab, wischt sich zittrig den Schweiß von der Stirn und atmet tief durch. Er wirkt nervös.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ja <em>Dean</em>, ich konnte diesmal auch keine gravierenden&nbsp;Indifferenzen messen. Das Summen hat aufgehört, sobald der Splitter wieder verdeckt wird. Ich glaube die zerstörte Steuereinheit ist wieder in Takt. Lass uns das Sicherheitssystem wieder aktivieren und die nächsten Schritte planen.«</p>"
+       "text": "<p>»Dean, alles in Ordnung?« fragst du.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Dean schaut auf die blinkenden Lichter im Hintergrund.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>»Georgy, die Geräte reagieren zum Teil wieder … trotzdem habe ich ein sehr ungutes Gefühl bei der ganzen Sache.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Wie lief es mit dem Splitter?«, entgegnet Dean.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Du wirfst einen Blick auf die Spitze des <em>Kalten Sterns</em>&nbsp;und antwortest.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>»Ich glaube wir haben es hinbekommen. Ich konnte diesmal keine gravierenden&nbsp;Indifferenzen messen. Das Summen hört auf, sobald der Splitter wieder verdeckt wird. Die Verbindung scheint halbwegs in Takt zu sein. Lass uns das Sicherheitssystem wieder aktivieren und die nächsten Schritte planen.«</p>"
       },
       {
        "type": "paragraph",
@@ -7883,15 +7903,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Georgy, es hat Wochen gedauert alles wieder zu rekonstruieren. Viele der zerstörten Instrumente sind nicht mehr richtig funktionsfähig. Unser Vorgehen ist so ziemlich das riskanteste, an was ich bisher gearbeitet habe. Glaubst du, es ist nicht zu früh für die nächsten Schritte?«, fragt dich Dean mit zweifelnder Stimme.</p>"
+       "text": "<p>»Georgy, es hat Wochen gedauert, alles wieder zu rekonstruieren. Viele der zerstörten Instrumente sind nicht mehr richtig funktionsfähig. Unser Vorgehen ist sehr riskant«, sagt Dean mit zweifelnder Stimme.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich weiß Dean, es steht sehr viel auf dem Spiel, aber wir müssen diesen letzten Versuch mit der uns noch vorhandenen Apparatur wagen.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Du und ich, wir beide sind es Ella schuldig, dass zu beenden, was sie angefangen hat. Sonst wäre alles umsonst gewesen. Wir bekommen es hin! Mit den letzten roten Splittern in unseren Händen können wir womöglich alles rückgängig machen«, antwortest du.</p>"
+       "text": "<p>»Ich weiß, Dean, aber wir müssen diesen letzten Versuch mit der uns noch vorhandenen Apparatur wagen. Du und ich, wir beide sind es Ella schuldig, das zu beenden, was sie angefangen hat. Sonst wäre alles umsonst gewesen. Wir bekommen es hin! Mit dem letzten roten Splitter in unserer Hand können wir womöglich alles rückgängig machen«, antwortest du hoffnungsvoll.</p>"
       },
       {
        "type": "paragraph",
@@ -7899,7 +7915,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Mich quälen auch die Gedanken an Ellas Verschwinden, aber was garantiert uns, dass dann wieder alles beim Alten ist, wenn wir die Apparatur zum laufen bekommen. Liegen wir mit unseren Berechnungen und Hypothesen richtig oder rufen wir vielleicht sogar noch mehr kausale Katastrophen und weitere Opfer der Zeit hervor. Wir sollten uns genau überlegen, für was wir den letzten Splitter einsetzen«, sagt Dean schwermütig.</p>"
+       "text": "<p>»Mich quälen auch die Gedanken an Ellas Verschwinden, aber was garantiert uns, dass dann wieder alles beim Alten ist, wenn wir die Apparatur zum laufen bekommen. Liegen wir mit unseren Hypothesen richtig oder rufen wir vielleicht sogar noch mehr kausale Katastrophen und weitere Opfer der Zeit hervor. Wir sollten uns genau überlegen, wofür wir den letzten Splitter einsetzen«, sagt Dean schwermütig.</p>"
       },
       {
        "type": "paragraph",
@@ -7915,7 +7931,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Nein, natürlich nicht Georgy, aber das rechtfertigt und entschuldigt nicht im geringsten unsere Entscheidungen, Fehleinschätzungen und dessen Auswirkungen. Versetze dich in die Lage, was wir, du, ich und auch unsere Dr. Ella Monroe hunderten von Menschen womöglich angetan haben. Wir sind nicht besser als die da draußen.«</p>"
+       "text": "<p>»Nein, natürlich nicht Georgy, aber das rechtfertigt und entschuldigt nicht im geringsten unsere Entscheidungen, Fehleinschätzungen und Auswirkungen. Versetze dich in die Lage, was wir, du, ich und auch Ella hunderten von Menschen womöglich angetan haben. Wir sind nicht besser als die da draußen!«</p>"
       }
      ],
      "next": [
@@ -7950,7 +7966,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es war die richtige Entscheidung sie alle hierher zu holen.«</p>"
+       "text": "<p>Es war die richtige Entscheidung, sie alle hierher zu holen.«</p>"
       }
      ],
      "next": [
@@ -7976,7 +7992,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Dean dreht dir den Rücken zu.</p>"
+       "text": "<p>Dean dreht dir den Rücken zu und starrt auf die Kreidezeichnungen. Viele Linien und Verknüpfungen sind auf die Wände gezeichnet.</p>"
       },
       {
        "type": "paragraph",
@@ -7984,15 +8000,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ist die Hölle auf Erden da draußen die große Rettung vor dem <em>Hollow White</em>&nbsp;oder haben wir nicht jeden einzelnen in eine grausame Dystopie katapultiert?!</p>"
+       "text": "<p>Ist diese Hölle auf Erden dort die große Rettung vor dem <em>Hollow White</em>&nbsp;oder haben wir nicht jeden einzelnen in eine grausame Dystopie katapultiert?!</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Weder Erinnerungen, Identität und Heimat sind ihnen geblieben. Es ist grausam. Grausamer als der Tod! Als wir mit den Tonbändern experimentiert und diese durch die Zeit geschickt haben, fand ich es noch amüsant. Aber Menschen Georgy!</p>"
+       "text": "<p>Weder Erinnerungen, Identität und Heimat sind ihnen geblieben. Es ist grausam. Als wir mit den Tonbändern experimentiert und diese durch die Zeit geschickt haben, fand ich es noch amüsant. Aber Menschen, Georgy!</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Ich will nicht wissen, was mit all denen passiert ist, die wir nicht hierher holen konnten. Sie sind verloren, für immer. Diese Verlorenen der Zeit.</p>"
+       "text": "<p>Ich will nicht wissen, was mit all denen passiert ist, die wir nicht hierher holen konnten. Sie sind verloren, für immer. Verlorene der Zeit.</p>"
       },
       {
        "type": "paragraph",
@@ -8016,7 +8032,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Tür des Aufzugs geht auf und zwei Soldaten betreten die Einrichtung. »Schluss für heute! Es geht wieder zurück, ihr Laborratten.«</p>"
+       "text": "<p>Die Tür des Aufzugs, welcher in die tiefliegende Höhle führt, geht auf und zwei Soldaten betreten die Forschungsstätte.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>»Schluss für heute! Es geht wieder zurück, ihr Laborratten!«</p>"
       }
      ],
      "next": [
@@ -8055,7 +8075,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Das war ja sehr clever, Georgy! Hör mir zu, damit machst du die Situation nur noch schwerer! Aber ich bin bei dir, ich werde dich unterstützen, zusammen schaffen wir es,« sagt Dean und schaut dir überzeugt in die Augen.</p>"
+       "text": "<p>»Das war ja sehr clever, Georgy! Hör mir zu, damit machst du die Situation nur noch schwerer. Aber ich bin bei dir, ich werde dich unterstützen, zusammen schaffen wir es,« sagt Dean und schaut dir überzeugt in die Augen.</p>"
       },
       {
        "type": "paragraph",
@@ -8174,7 +8194,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Deine Blicke schauen zu Dean, der diesen Moment nutzt und in sekundenschnelle die Waffe aus dem Halfter des einen Soldaten zieht und diese an dessen Kopf hält.</p>"
+       "text": "<p>Deine Blicke schauen zu Dean, der diesen Moment ergreift und in sekundenschnelle die Waffe aus dem Halfter des einen Soldaten zieht und diese an dessen Kopf hält.</p>"
       },
       {
        "type": "paragraph",
@@ -8785,7 +8805,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Judy zieht erschrocken ihre Hand vom <em>Kalten Stern</em>.</p>"
+       "text": "<p>Du&nbsp;ziehst erschrocken deine Hand vom <em>Kalten Stern</em>.</p>"
       },
       {
        "type": "paragraph",
@@ -8797,7 +8817,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ihr rennt gemeinsam zurück aus der Richtung woher ihr gekommen seid.</p>"
+       "text": "<p>Ihr rennt gemeinsam zurück aus der Richtung, woher ihr gekommen seid.</p>"
       },
       {
        "type": "paragraph",
@@ -8813,7 +8833,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam lauft ihr in windeseile durch die kleine enge Passage. Ihr duckt euch und weicht den Dornen aus, an welchen ihr immer wieder hängen bleibt.</p>"
+       "text": "<p>Gemeinsam lauft ihr in Windeseile durch die kleine enge Passage. Ihr duckt euch und weicht den Dornen aus, an welchen ihr immer wieder hängen bleibt.</p>"
       },
       {
        "type": "paragraph",
@@ -8821,7 +8841,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Von allen Seiten beißen sich die kleinen messerscharfen Dornen in eure Kleidung und hinterlassen kleine feine Schnitte.</p>"
+       "text": "<p>Von allen Seiten beißen sich die kleinen messerscharfen Dornen in eure Kleidung und hinterlassen kleine, feine Schnitte.</p>"
       },
       {
        "type": "paragraph",
@@ -8928,7 +8948,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Mit Rose auf den Schultern von Charlie, klettert ihr zusammen die Leiter den Schacht runter in die kalte und dunkle Kanalisation. Charlie macht eine kleine Taschenlampe an und ihr bindet Roses Wunde ab.</p>"
+       "text": "<p>Mit Rose auf den Schultern von Charlie klettert ihr zusammen die Leiter den Schacht runter in die kalte und dunkle Kanalisation. Charlie macht eine kleine Taschenlampe an und ihr bindet Roses Wunde ab.</p>"
       },
       {
        "type": "paragraph",
@@ -9032,7 +9052,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Cara schneidet vorsichtig mit einer Schere den blutigen Stoff der Bluse weg und betrachtet die Schusswunde. Das Blut tritt sofort aus der Wunde, als ihr den Stofffetzen von der Wunde nimmt.</p>"
+       "text": "<p>Cara schneidet vorsichtig mit einer Schere den blutigen Stoff der Bluse weg und betrachtet die Schusswunde. Das Blut tritt sofort aus der Wunde, als ihr den Stofffetzen von der Wunde nehmt.</p>"
       },
       {
        "type": "paragraph",
@@ -9040,15 +9060,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Cara kümmert sich um die schwere Verletzung von Rose. Im Schock nimmt dich Charlie zur Seite, »Komm Judy, gehe in die Küche, du kannst gerade nicht helfen, Cara weiß was sie tut.«</p>"
+       "text": "<p>Cara kümmert sich um die schwere Verletzung von Rose. Im Schock nimmt dich Charlie zur Seite. »Komm Judy, gehe in die Küche, du kannst gerade nicht helfen, Cara weiß was sie tut.«</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Besorgt eingepackt in einer Decke starrst du auf deine blutverschmierten Klamotten, die direkt vor dir auf dem Boden liegen.</p>"
+       "text": "<p>Eingepackt in eine Decke starrst du besorgt auf deine blutverschmierten Klamotten, die direkt vor dir auf dem Boden liegen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Cara betritt ebenso Blut überströmt die Küche&nbsp;und wäscht sich die Hände.</p>"
+       "text": "<p>Cara betritt ebenso blutüberströmt die Küche&nbsp;und wäscht sich die Hände.</p>"
       },
       {
        "type": "paragraph",
@@ -9076,11 +9096,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es ist noch dunkel in <em>Snow Peaks</em> und im Hintergrund sind immer noch die Sirenen an der Kuppel zu hören. Ihr fahrt zügig, aber auch vorsichtig durch Nebenstraßen und Gassen raus aus der Stadt. Ihr umrandet das Gebiet um der Kuppel. Sie können überall sein, ihr müsst vorsichtig sein. Als ihr die Stadt endlich verlasst, siehst du in der Ferne das Westlager. Dunkle Erinnerungen überkommen dich, aus einer Zeit, die weit weg schien, aber jetzt wieder voll präsent ist.</p>"
+       "text": "<p>Es ist noch dunkel in <em>Snow Peaks</em> und im Hintergrund sind immer noch die Sirenen an der Kuppel zu hören. Ihr fahrt zügig, aber auch vorsichtig durch Nebenstraßen und Gassen raus aus der Stadt. Ihr umrandet das Gebiet um der Kuppel. Sie können überall sein, ihr müsst vorsichtig agieren. Als ihr die Stadt endlich verlasst, siehst du in der Ferne das Westlager. Dunkle Erinnerungen überkommen dich, aus einer Zeit, die weit weg schien, aber jetzt wieder voll präsent ist.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Mit ihr kommt zusätzlich die Angst, die Angst vom <em>Schwarzen Kreis</em>&nbsp;und der Gedanke doch noch erwischt zu werden.</p>"
+       "text": "<p>Mit ihr kommt zusätzlich die Angst, die Angst vorm <em>Schwarzen Kreis</em>&nbsp;und der Gedanke doch noch erwischt zu werden.</p>"
       },
       {
        "type": "paragraph",
@@ -9124,7 +9144,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>In der Hektik läuft ihr ein Stück lang den falschen Weg und landet in einer Sackgasse. Es geht tief nach unten und das Wasser strömt wie ein Wasserfall rauschend hinunter. Keine Chance hier weiterzukommen.</p>"
+       "text": "<p>In der Hektik lauft ihr ein Stück lang den falschen Weg und landet in einer Sackgasse. Es geht tief nach unten und das Wasser strömt wie ein Wasserfall rauschend hinunter. Keine Chance, hier weiterzukommen.</p>"
       },
       {
        "type": "paragraph",
@@ -9158,7 +9178,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Wohin des Weges so mitten in der Nacht?«, fragt der Soldat mit provokanten Ton. »Sie wissen schon, dass eine Ausgangssperre besteht?«</p>"
+       "text": "<p>»Wohin des Weges so mitten in der Nacht?«, fragt der Soldat in provokantem Ton. »Sie wissen schon, dass eine Ausgangssperre besteht?«</p>"
       },
       {
        "type": "paragraph",
@@ -9174,7 +9194,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Wer ist da hinten!?« Der Soldat reißt die hintere Tür der Rückbank ruckartig auf und leuchtet mit seiner Taschenlampe auf die verletzte Rose.«</p>"
+       "text": "<p>»Wer ist da hinten!?« Der Soldat reißt die hintere Tür der Rückbank ruckartig auf und leuchtet mit seiner Taschenlampe auf die verletzte Rose.</p>"
       },
       {
        "type": "paragraph",
@@ -9182,7 +9202,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Madame Rose, sind sie das?«, entgegnet der bewaffnete Soldat.</p>"
+       "text": "<p>»Madame Rose, sind Sie das?«, fragt der bewaffnete Soldat.</p>"
       },
       {
        "type": "paragraph",
@@ -9190,7 +9210,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Sie ist schwer verletzt, wir müssen schleunigst weg von hier, unterbricht Cara«.</p>"
+       "text": "<p>»Sie ist schwer verletzt, wir müssen schleunigst weg von hier, unterbricht Cara.«</p>"
       },
       {
        "type": "paragraph",
@@ -9198,7 +9218,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Einheit »Frozen Lake Brücke«, alles in Ordnung bei Ihnen«?</p>"
+       "text": "<p>»Einheit ›Frozen Lake Brücke‹, alles in Ordnung bei Ihnen«?</p>"
       },
       {
        "type": "paragraph",
@@ -9206,23 +9226,23 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Dieser drückt nach einer kurzen Pause auf den Sprachknopf und antwortet.</p>"
+       "text": "<p>Dieser drückt nach einer kurzen Pause auf den Sprachknopf und antwortet:</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Alles Roger, alles in Ordnung hier, bisher keine Spur von den gesuchten Personen. Hier ist es ruhig. Over and Out«!</p>"
+       "text": "<p>›Alles Roger, alles in Ordnung hier, bisher keine Spur von den gesuchten Personen. Hier ist es ruhig. Over and Out!‹</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Überrascht, schaut ihr den Soldaten an, der seine Waffe in den Halfter steckt.</p>"
+       "text": "<p>Überrascht schaut ihr den Soldaten an, der seine Waffe in den Halfter steckt.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Los, fahrt los. Viel Zeit bleibt Euch nicht, die ganze Stadt ist in Alarmbereitschaft.</p>"
+       "text": "<p>»Madame Rose, ich …«,&nbsp;doch bevor er seinen Satz ausspricht, sagt Rose: »Danke <em>Henry</em>, passen sie auf sich auf!«</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Madame Rose, ich …«, doch bevor er seinen Satz ausspricht, sagt Rose: »Danke <em>Henry</em>, passen sie auf sich auf!«</p>"
+       "text": "<p>»Los, fahrt los. Viel Zeit bleibt euch nicht, die ganze Stadt ist in Alarmbereitschaft«, sagt Henry.</p>"
       },
       {
        "type": "paragraph",
@@ -9230,7 +9250,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ein alter Freund von Pete, sagt Rose mit schwacher Stimme und schläft ein.</p>"
+       "text": "<p>»Ein alter Freund von Pete«, sagt Rose mit schwacher Stimme und schläft ein.</p>"
       }
      ],
      "next": [
@@ -9251,7 +9271,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Charlie tritt kräftig aufs Gaspedal. Das Fahrzeug beschleunigt. Du hältst dich am Vordersitz fest und stützt Rose. Ihr kracht mit voller Geschwindigkeit an dem Soldaten vorbei und durchbrecht die Schranke. Dieser läuft noch hektisch ein kurzes Stück mit gezogener Waffe und Funkgerät hinter eurem Fahrzeug her aber schießt glücklicherweise nicht.</p>"
+       "text": "<p>Charlie tritt kräftig aufs Gaspedal. Das Fahrzeug beschleunigt. Du hältst dich am Vordersitz fest und stützt Rose. Ihr kracht mit voller Geschwindigkeit an dem Soldaten vorbei und durchbrecht die Schranke. Dieser läuft noch hektisch ein kurzes Stück mit gezogener Waffe und Funkgerät hinter eurem Fahrzeug her, aber schießt glücklicherweise nicht.</p>"
       },
       {
        "type": "paragraph",
@@ -9276,7 +9296,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Es ist traumhaft, nicht wahr …«, sagt Rose mit schwacher Stimme, die mittlerweile wieder aufgewacht ist. »Rose du musst dich ausruhen.«</p>"
+       "text": "<p>»Es ist traumhaft, nicht wahr?«, sagt Rose mit schwacher Stimme, die mittlerweile wieder aufgewacht ist.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>»Rose du musst dich ausruhen.«</p>"
       },
       {
        "type": "paragraph",
@@ -9284,19 +9308,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du beginnst zu erzählen…</p>"
+       "text": "<p>Du beginnst zu erzählen:</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»An die Zeit vor dem Zeitsprung kann ich mich garnicht erinnern. Nur an Fragmente. Ein See, das Gesicht eines Mannes. Dann bin ich hier in einem Käfig aufgewacht. Überall lautes Gebelle, von eingesperrten hungrigen Hunden. Sie haben mich erst am nächsten Tag in dem Hundezwinger gefunden und mich aus dem Käfig geholt. Danach bin ich recht schnell in das Lager gekommen, wo mir später auch Cara begegnet ist. Es war eine schlimme Zeit… und dann die Nachricht, dass ich schwanger bin. Zum einen unfassbare Freude, zum anderen Angst davor, dass mein Kind in dieser Hölle aufwächst. Und jetzt… wo ich weiß das mein Kind lebt, schöpfe ich wieder Hoffnung. Hoffnung sie zu finden.«</p>"
+       "text": "<p>»An die Zeit vor dem Zeitsprung kann ich mich wirklich gar nicht erinnern. Ich bin hier in einem Käfig aufgewacht. Überall lautes Gebell, von eingesperrten hungrigen Hunden. Sie haben mich erst am nächsten Tag in dem Hundezwinger gefunden und mich aus dem Käfig geholt. Danach bin ich recht schnell in das Lager gekommen, wo mir später auch Cara begegnet ist. Es war eine schlimme Zeit … und dann die Nachricht, dass ich schwanger bin. Zum einen unfassbare Freude, zum anderen Angst davor, dass mein Kind in dieser Hölle aufwächst. Und jetzt … wo ich weiß, dass mein Kind lebt, schöpfe ich wieder Hoffnung. Hoffnung, sie zu finden.«</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Rose lächelt und gibt Dir einen Schlüssel, den sie um den Hals trägt.</p>"
+       "text": "<p>Rose lächelt und gibt dir einen Schlüssel, den sie um den Hals trägt.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Judy, der <em>Schwarze Kreis</em> hat mir alles genommen was mir lieb war. Meine Familie, meinen Ehemann und letztlich Hannah. Lass nicht zu, dass sie alles, was uns lieb und wert ist, zerstören.</p>"
+       "text": "<p>»Judy, der <em>Schwarze Kreis</em> hat mir alles genommen, was mir lieb war. Meine Familie, meinen Ehemann und letztlich Hannah. Lass nicht zu, dass sie alles, was uns lieb und wert ist, zerstören.«</p>"
       },
       {
        "type": "paragraph",
@@ -9304,7 +9328,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich habe viel geopfert, um mich in das tiefe Geschwür des <em>Schwarzen Kreises</em>&nbsp;einzuschleusen. Mir wurde dieses Zeichen unter meine Haut gemalt. Ich musste mich vielen unmoralischen Entscheidungen und Prüfungen auseinandersetzen um nicht aufzufliegen. Das mit Hannah war nur eine von vielen Gräueltaten, die der <em>Schwarze Kreis</em>&nbsp;mir aufgezwungen hat. Immer mit der Angst um das eigene Leben, hat es mich fast gebrochen, doch mein Wunsch diese System zu stürzen hat mich am Leben gehalten. Hannah hat mir Kraft gegeben in der Zeit, wo sie bei mir aufgewachsen ist.</p>"
+       "text": "<p>»Ich habe viel geopfert, um mich in das tiefe Geschwür des <em>Schwarzen Kreises</em>&nbsp;einzuschleusen. Mir wurde dieses Zeichen unter meine Haut gemalt. Ich musste mich mit vielen unmoralischen Entscheidungen und Prüfungen auseinandersetzen, um nicht aufzufliegen. Das mit Hannah war nur eine von vielen Gräueltaten, die der <em>Schwarze Kreis</em>&nbsp;mir aufgezwungen hat. Immer mit der Angst um das eigene Leben, hat es mich fast gebrochen, doch mein Wunsch, diese System zu stürzen, hat mich am Leben gehalten. Hannah hat mir Kraft gegeben in der Zeit, wo sie bei mir aufgewachsen ist.</p>"
       },
       {
        "type": "paragraph",
@@ -9337,7 +9361,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Tage nachdem ihr Rose bei der Hütte mit Feuer bestattet habt, schaust du auf die Urne mit ihrer Asche oberhalb des Kaminsims. Du musst oft an euer letztes Gespräch denken und den Schlüssel, den sie dir nach ihrem Tod gegeben hat. »Schau nach den <em>Weißen Rosen</em>«, waren ihre letzten Worte. Du schaust rüber zu Cara und Charlie. Cara liegt mit Trauer erfüllt in seinen Armen. Für beide war Rose wie eine Mutter.</p>"
+         "text": "<p>Tage nachdem ihr Rose bei der Hütte mit Feuer bestattet habt, schaust du auf die Urne mit ihrer Asche oberhalb des Kaminsims. Du musst oft an euer letztes Gespräch denken und an den Schlüssel, den sie dir nach ihrem Tod gegeben hat. »Schau nach den <em>Weißen Rosen</em>«, waren ihre letzten Worte. Du schaust rüber zu Cara und Charlie. Cara liegt mit Trauer erfüllt in seinen Armen. Für beide war Rose wie eine Mutter.</p>"
         }
        ]
       },
@@ -9347,11 +9371,11 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Tage vergehen bei der abgelegenen Holzhütte in den verschneiten Wäldern von <em>White Valley</em>. Rose Zustand ist vorerst stabil. Sie ist dennoch sehr schwach und nicht ansprechbar. Sie liegt auf einem mit Fell bedeckten Holzbett in einem kleinen ruhigen Nebenzimmer am Kamin und schläft. Du musst oft an euer Gespräch aus dem Auto denken und den Schlüssel, den sie dir gegeben hat. »Schau nach den <em>Weißen Rosen</em>«, waren ihre Worte. Du würdest sie am liebsten fragen, was sie damit gemeint hat, aber im Moment ist sie zu schwach um mit ihr zu sprechen.</p>"
+         "text": "<p>Tage vergehen bei der abgelegenen Holzhütte in den verschneiten Wäldern von <em>White Valley</em>. Rose Zustand ist vorerst stabil. Sie ist dennoch sehr schwach und nicht ansprechbar. Sie liegt auf einem mit Fell bedeckten Holzbett in einem kleinen ruhigen Nebenzimmer am Kamin und schläft. Du musst oft an euer Gespräch aus dem Auto denken und an den Schlüssel, den sie dir gegeben hat. »Schau nach den <em>Weißen Rosen</em>«, waren ihre Worte. Du würdest sie am liebsten fragen, was sie damit gemeint hat, aber im Moment ist sie zu schwach, um mit ihr zu sprechen.</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>Cara hat immer eine Auge auf sie und kümmert sich. In der Zeit in den Lagern konnte sie selbst viel von den Ärzten, die die&nbsp;<em>Erschienenen des Hollow White</em> versorgt haben lernen und war immer sehr engagiert, den Verletzten und Schwachen dort zu helfen.</p>"
+         "text": "<p>Cara hat immer eine Auge auf sie und kümmert sich. In der Zeit in den Lagern konnte sie selbst viel von den Ärzten, die die&nbsp;<em>Erschienenen des Hollow White</em> versorgt haben, lernen und war immer sehr engagiert, den Verletzten und Schwachen dort zu helfen.</p>"
         }
        ]
       }
@@ -9380,7 +9404,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Cara, können wir kurz uns unter vier Augen sprechen?«</p>"
+       "text": "<p>»Cara, können wir kurz unter vier Augen sprechen?«</p>"
       },
       {
        "type": "if",
@@ -9394,7 +9418,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Klar«, antwortet Cara, steht auf und geht mit dir in Rose´s und Petés Schlafzimmer.</p>"
+       "text": "<p>»Klar«, antwortet Cara, steht auf und geht mit dir in Roses und Petes Schlafzimmer.</p>"
       },
       {
        "type": "paragraph",
@@ -9406,19 +9430,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Cara überlegt einen kurzen Moment, schaut dich an und zeigt direkt auf das Gemälde, welches vor euch im Zimmer hängt. Auf dem Bild siehst du eine impressionistische leicht surreal gemalte Landschaft eines Waldes. Unter einem Baum blühen weiße Rosen.</p>"
+       "text": "<p>Cara überlegt einen kurzen Moment, schaut dich an und zeigt direkt auf das Gemälde, welches vor euch im Zimmer hängt. Auf dem Bild siehst du eine impressionistische, leicht surreal gemalte Landschaft eines Waldes. Unter einem Baum blühen weiße Rosen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich kenne den Ort, nicht weit von hier. Rose hat mir erzählt, dass sie mit Pete oft dort war, als sie noch jünger waren«, sagt Cara.</p>"
+       "text": "<p>»Ich kenne den Ort, er ist nicht weit von hier. Rose hat mir erzählt, dass sie mit Pete oft dort war, als sie noch jünger waren«, sagt Cara.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Ihr zieht euch warm an, packt paar Sachen für unterwegs ein und geht los.</p>"
+       "text": "<p>Ihr zieht euch warm an, packt ein paar Sachen für unterwegs ein und geht los.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Es ist noch hell und ihr brecht auf.</p>"
+       "text": "<p>Es ist noch hell, als ihr aufbrecht.</p>"
       },
       {
        "type": "if",
@@ -9441,15 +9465,15 @@ const book: Book = (({
     },
     {
      "id": "011",
-     "title": "Weiße Rose suchen",
+     "title": "Weiße Rosen suchen",
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Du suchst die komplette Hütte und nähere Umgebung ab. Keine Spur von weißen Rose.</p>"
+       "text": "<p>Du suchst die komplette Hütte und nähere Umgebung ab. Keine Spur von weißen Rosen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Erschöpft setzt du dich in Roses Schlafzimmer auf das Holzbett und starrst auf die Decke. In Gedanken versunken, bemerkst du das Gemälde, welches dir gegenüber an der Wand hängt. Eine impressionistische Landschaft eines Waldes. Unter einem Baum blühen weiße Rosen. Du stehst auf und schaust dir das Bild genauer an.</p>"
+       "text": "<p>Erschöpft setzt du dich in Roses Schlafzimmer auf das Holzbett und starrst auf die Decke. In Gedanken versunken bemerkst du das Gemälde, welches dir gegenüber an der Wand hängt. Eine impressionistische Landschaft eines Waldes. Unter einem Baum blühen weiße Rosen. Du stehst auf und schaust dir das Bild genauer an.</p>"
       },
       {
        "type": "paragraph",
@@ -9461,15 +9485,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich kenne den Ort, nicht weit von hier. Rose hat mir erzählt, dass sie mit Pete oft dort Zeit verbracht hat, als sie noch jünger waren«, sagt Cara.</p>"
+       "text": "<p>»Ich kenne den Ort, nicht weit von hier. Rose hat mir erzählt, dass sie mit Pete dort oft Zeit verbracht hat, als sie noch jünger waren«, sagt Cara.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Ihr zieht euch warm an und packt paar Sachen für unterwegs ein.</p>"
+       "text": "<p>Ihr zieht euch warm an und packt ein paar Sachen für unterwegs ein.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Es ist noch hell und ihr brecht auf.</p>"
+       "text": "<p>Es ist noch hell, als ihr aufbrecht.</p>"
       },
       {
        "type": "if",
@@ -9500,11 +9524,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Schau, da vorne«, ruft Cara. »Der Baum von dem Ölgemälde.</p>"
+       "text": "<p>»Schau, da vorne«, ruft Cara. »Der Baum von dem Ölgemälde.«</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Ihr lauft zu einer riesigen Tanne. Als du dich um den Stamm drumrum bewegst, fällt dir eine Schnitzerei an der Rückseite im Holz auf. Es ist schwer zu erkennen aber mit etwas Fantasie könnte es sich um eine Rose handeln.</p>"
+       "text": "<p>Ihr lauft zu einer riesigen Tanne. Als du dich um den Stamm drumrum bewegst, fällt dir eine Schnitzerei an der Rückseite im Holz auf. Es ist schwer zu erkennen, aber mit etwas Fantasie könnte es sich um eine Rose handeln.</p>"
       },
       {
        "type": "paragraph",
@@ -9512,7 +9536,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Darunter ist eine Art Loch im Baum. Vorsichtig, schaust du durch die kleine Öffnung. Es ist so dunkel und feucht, dass du nichts erkennen kannst.</p>"
+       "text": "<p>Darunter ist eine Art Loch im Baum. Vorsichtig schaust du durch die kleine Öffnung. Es ist so dunkel und feucht, dass du nichts erkennen kannst.</p>"
       },
       {
        "type": "paragraph",
@@ -9583,7 +9607,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es wird langsam dunkel und ihr beschließt zurück zur Hütte zu gehen.</p>"
+       "text": "<p>Es wird langsam dunkel und ihr beschließt, zurück zur Hütte zu gehen.</p>"
       },
       {
        "type": "if",
@@ -9591,7 +9615,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Bevor ihr euch aufmacht bleibt Cara kurz stehen und holt etwas aus ihrem Rucksack.</p>"
+         "text": "<p>Bevor ihr euch aufmacht, bleibt Cara kurz stehen und holt etwas aus ihrem Rucksack.</p>"
         },
         {
          "type": "paragraph",
@@ -9599,11 +9623,11 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Sie öffnet diese und verteilt Rosés Asche an der großen Tanne.</p>"
+         "text": "<p>Sie öffnet diese und verteilt Roses Asche an der großen Tanne.</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>»Ruhe in Frieden unsere weiße Rose«, sagt Cara und wischt sich die Tränen aus den Augen.&nbsp;Ihr steht noch eine längere Zeit da und verabschiedet Euch von eurer Rose.</p>"
+         "text": "<p>»Ruhe in Frieden, unsere weiße Rose«, sagt Cara und wischt sich die Tränen aus den Augen.&nbsp;Ihr steht noch längere Zeit da und verabschiedet euch von eurer Rose.</p>"
         }
        ]
       }
@@ -9635,7 +9659,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Du weisst doch, was für Angst ich vor Kleingeziefer habe!«. Sie macht die Augen zu, zögert noch einmal und geht langsam mit ihrer Hand in die kalte und glitschige Öffnung des Baumes. Sie flucht und es ist sichtlich kein Spaß für sie.</p>"
+       "text": "<p>»Du weisst doch, was für Angst ich vor Kleingeziefer habe!« Sie macht die Augen zu, zögert noch einmal und geht langsam mit ihrer Hand in die kalte und glitschige Öffnung des Baumes. Sie flucht – es ist sichtlich kein Spaß für sie.</p>"
       },
       {
        "type": "paragraph",
@@ -9651,7 +9675,7 @@ const book: Book = (({
       },
       {
        "type": "addItem",
-       "id": "chest"
+       "id": "chest-old"
       },
       {
        "type": "paragraph",
@@ -9659,7 +9683,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es wird langsam dunkel und ihr beschließt zurück zur Hütte zu gehen.</p>"
+       "text": "<p>Es wird langsam dunkel und ihr beschließt, zurück zur Hütte zu gehen.</p>"
       },
       {
        "type": "if",
@@ -9667,7 +9691,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Bevor ihr euch aufmacht bleibt Cara kurz stehen und holt etwas aus ihrem Rucksack.</p>"
+         "text": "<p>Bevor ihr euch aufmacht, bleibt Cara kurz stehen und holt etwas aus ihrem Rucksack.</p>"
         },
         {
          "type": "paragraph",
@@ -9675,11 +9699,11 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Sie öffnet diese und verteilt Rosés Asche an der Tanne.</p>"
+         "text": "<p>Sie öffnet diese und verteilt Roses Asche an der Tanne.</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>»Ruhe in Frieden unsere weiße Rose«, sagt Cara und wischt sich die Tränen aus den Augen.&nbsp;Ihr steht noch eine längere Zeit da und verabschiedet Euch von eurer Rose.</p>"
+         "text": "<p>»Ruhe in Frieden, unsere weiße Rose«, sagt Cara und wischt sich die Tränen aus den Augen.&nbsp;Ihr steht noch eine längere Zeit da und verabschiedet euch von eurer Rose.</p>"
         }
        ]
       }
@@ -9698,11 +9722,11 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Zurück bei der Hütte angekommen ist es bereits dunkel geworden. Ihr hört vereinzelt Wölfe in den Wäldern heulen. Im Kaminzimmer sitzt ihr vor dem warmen Feuer. Im Schutz der Hütte, holst du den kleinen Schlüssel aus Roses Zimmer.</p>"
+       "text": "<p>Zurück bei der Hütte angekommen, ist es bereits dunkel geworden. Ihr hört vereinzelt Wölfe in den dunklen Wäldern heulen. Im Kaminzimmer sitzt ihr vor dem warmen Feuer. Im Schutz der Hütte holst du den kleinen Schlüssel aus Roses Zimmer.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Langsam steckst du diesen in das Schloss der Truhe.</p>"
+       "text": "<p>Langsam steckst du ihn in das Schloss der Truhe.</p>"
       },
       {
        "type": "paragraph",
@@ -9718,15 +9742,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Truhe öffnen sich.</p>"
+       "text": "<p>Die Truhe öffnet sich.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Mehrere Bilder und zwei verschlossene Umschläge liegen in der Truhe.</p>"
+       "text": "<p>Gemeinsam schaut ihr gespannt in das Innere.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam schaut ihr über den darin sich befindenden Inhalt:</p>"
+       "text": "<p>Darin: mehrere Fotos und ein verschlossener Umschlag.</p>"
       },
       {
        "type": "style",
@@ -9734,43 +9758,59 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p><em>Bild 1</em></p>"
+         "text": "<p><em>Foto&nbsp;1</em></p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>Ein gemeinsames Bild von dir und dem unbekannten Mann aus deiner letzten Erinnerung am Frozen Lake</p>"
+         "text": "<p>Ein kleiner weißer Husky-Welpe.</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p><em>Bild 2</em></p>"
+         "text": "<p>Auf der Rückseite des Fotos steht: Snow</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>Ein kleiner weißer Husky Welpe</p>"
+         "text": "<p><em>Foto 2</em></p>"
         },
         {
          "type": "paragraph",
-         "text": "<p><em>Bild 3</em></p>"
+         "text": "<p>Eine Frau mit Babybauch zusammen mit einem bärtigen Mann</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>Eine unbekannte Frau mit Babybauch und dem unbekannten Mann vom ersten Bild.</p>"
+         "text": "<p>Auf der Rückseite des Fotos steht: Bald zu dritt</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p><em>Bild 4</em></p>"
+         "text": "<p><em>Foto 3</em></p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>Ein geborenes Baby in den Händen der unbekannten Frau</p>"
+         "text": "<p>Ein neugeborenes Baby in den Händen der Frau in einem Krankenbett.</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p><em>Bild 5</em></p>"
+         "text": "<p>Auf der Rückseite des Fotos steht: Unser Sonnenschein Rose.</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>Eine jüngere Rose und Pete vor der Tanne mit der geschnitzten Rose. Rose und Pete kennen sich schon ein ganzes Leben lang.</p>"
+         "text": "<p><em>Foto 4-12</em></p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Viele Familienbilder mit der Frau, dem Mann und einer heranwachsenden Rose</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p><em>Foto 13</em></p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Ein junges Pärchen unter der Tanne mit der geschnitzten Rose.</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Auf der Rückseite steht: Für meine Rose. In Liebe, Pete</p>"
         }
        ]
       },
@@ -9780,75 +9820,49 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Du findest noch ein weiteres Bild in der Truhe. Es ist in schwarz/weiß. Darauf siehst du eine unbekannte Frau, wie sie auf einem Abhang am Frozen Lake steht. Umschlossen von großen verschneiten Tannen in einer unbefleckten Landschaft. Eine atemberaubende Aufnahme mit dem Panorama von White Valley.</p>"
+         "text": "<p>Du findest noch ein weiteres Bild in der Truhe. Es ist schwarz-weiß. Darauf siehst du die Frau bzw. Roses Mutter, wie sie auf einem Abhang am Ice River steht. Umschlossen von großen verschneiten Tannen in einer unbefleckten Landschaft. Eine atemberaubende Aufnahme mit dem Panorama von White Valley.</p>"
+        },
+        {
+         "type": "addItem",
+         "id": "photo-ella-old"
         }
        ]
       },
       {
        "type": "paragraph",
-       "text": "<p>Du legst die Bilder zur Seite und öffnest den ersten Umschlag auf welchem Judy steht.</p>"
+       "text": "<p>Nachdenklich legst du die Fotos zurück in die Truhe und begreifst, dass jedes der Bilder letzte Erinnerungen an Roses Familie sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Der erste Brief ist von dem unbekannten Mann auf den Bildern.</p>"
+       "text": "<p>Ihre Mutter, ihr Vater und ihr Mann Pete.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Er heißt Albert.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>Liebe Judy,</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>ich habe unzählige Male diesen Brief angefangen und immer wieder von vorne begonnen.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Es ist sehr viel Zeit vergangen, wenn du diesen Brief in den Händen hältst und liest. Wenn du diese Zeilen jedoch liest, war unsere Rose erfolgreich und hat dich gefunden.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Es gibt so viel, was ich dir sagen möchte, aber ich kann nicht. Ich darf nicht, weil es dich in Gefahr bringen könnte.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Es gibt keinen Tag, an welchem ich dich nicht vermisse.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>In Liebe</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Albert</p>"
-        }
-       ]
+       "text": "<p>Was wohl mit ihrer Familie genau geschehen ist?</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du legst Alberts Brief zur Seite.</p>"
+       "text": "<p>Du ahnst Schreckliches.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Also war Albert der Mann aus deiner letzten Erinnerung, bevor du hier im späteren <em>Snow Peaks</em>&nbsp;erschienen bist. Du kannst dich weder an seine Person oder eurem Verhältnis zueinander erinnern. Dennoch machen dich seine Zeilen etwas traurig und nachdenklich.</p>"
+       "text": "<p>Immer mehr verstehst du Roses inneren Schmerz und ihren unermüdlichen Kampf gegen das erbarmungslose Regime des <em>Schwarzen Kreises</em>.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du nimmst den zweiten Brief aus der Truhe.</p>"
+       "text": "<p>In der Truhe befindet sich noch ein ungeöffneter Umschlag.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du öffnest den Umschlag.</p>"
+       "text": "<p>Dein Name ist in eleganter Schrift darauf geschrieben. Du öffnest ihn vorsichtig. Deine Hände zittern vor Aufregung.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>In diesem befindet sich ein einfacher weißer Zettel mit nur drei handgeschriebenen Zeilen in eleganter Handschrift. Der Absender ist unbekannt.</p>"
+       "text": "<p>In diesem befindet sich ein mehrfach gefalteter weißer Zettel. Schritt für Schritt faltest du diesen auf.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Drei handgeschriebene Zeilen –&nbsp;wieder in eleganter Handschrift. Der Absender ist unbekannt.</p>"
       },
       {
        "type": "style",
@@ -9870,11 +9884,31 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Cara schaut mit drauf und liest die drei Zeilen nochmal vor.</p>"
+       "text": "<p>»Was hat das zu bedeuten?«, fragst du dich.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Klar, du sollst um 00:22 Uhr beim Midnight sein. Das Midnight ist ein Motel in <em>White Valley</em>, manche nennen das Gebiet auch <em>Hollow White</em>«, sagt Cara selbstverständlich.</p>"
+       "text": "<p>Cara liest laut die Worte nochmal vor.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>»Hollow White. Midnight. 00:22 …</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Klar … das ist eindeutig!</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Du sollst um 00:22 Uhr beim Midnight sein. Das Midnight ist ein altes Motel in den <em>White Valleys</em>, manche nennen das Gebiet auch <em>Hollow White</em>«, sagt Cara selbstverständlich.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Überrascht schenkst du Cara ein hoffnungsvolles Lächeln.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ob der Hinweis dich zu Hannah führt?</p>"
       }
      ],
      "next": [
@@ -9895,6 +9929,11 @@ const book: Book = (({
      "title": "Mit Cara sprechen",
      "elements": [
       {
+       "type": "state",
+       "id": "karma",
+       "modifier": "+1"
+      },
+      {
        "type": "paragraph",
        "text": "<p>»Du kanntest also Rose schon länger?«</p>"
       },
@@ -9908,15 +9947,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die meiste Zeit war sie im Krankenhaus von <em>Snow Peaks</em>&nbsp;beschäftigt, aber es gab immer wieder diese Untersuchungen, wo sie zu uns ins Lager gebracht wurde. Sie stand bereits direkt unter der Gewalt des <em>Schwarzen Kreises</em> und wurde gezwungen, dich, nachdem sie von deiner Schwangerschaft erfahren haben, zu observieren. Hierzu hat sie mich ins Spiel gebracht und wir haben uns des öfteren getroffen und Informationen ausgetauscht.</p>"
+       "text": "<p>Die meiste Zeit war sie im Krankenhaus von <em>Snow Peaks</em>&nbsp;beschäftigt, aber es gab immer wieder diese Untersuchungen, wo sie zu uns ins Lager gebracht wurde. Sie stand bereits direkt unter der Gewalt des <em>Schwarzen Kreises</em> und wurde gezwungen, dich zu observieren, nachdem sie von deiner Schwangerschaft erfahren haben. Hierzu hat sie mich ins Spiel gebracht und wir haben uns des öfteren getroffen und Informationen ausgetauscht.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Als du ins Krankenhaus von <em>Snow Peaks</em>&nbsp;verlegt wurdest habe ich eine längere Zeit nichts von dir und Rose gehört. Ich bin vom Schlimmsten ausgegangen, bis du eines Tages zurück ins Lager gebracht wurdest. Ich weiß nicht ob du dich erinnern kannst, aber du warst die erste Zeit nicht ansprechbar. Ich habe mir große Sorgen gemacht aber du hast es geschafft.</p>"
+       "text": "<p>Als du ins Krankenhaus von <em>Snow Peaks</em>&nbsp;verlegt wurdest, habe ich eine längere Zeit nichts von dir und Rose gehört. Ich bin vom Schlimmsten ausgegangen, bis du eines Tages zurück ins Lager gebracht wurdest. Ich weiß nicht, ob du dich erinnern kannst, aber du warst die erste Zeit nicht ansprechbar. Ich habe mir große Sorgen gemacht, aber du hast es geschafft.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Es sind einige Jahre verstrichen als mich über Josef eine Nachricht von Rose erreicht hat. Es ging um deine Tochter Hannah und einen Plan uns aus dem Lager zu befreien. Ich musste Rose versprechen, zu unserem eigenen Schutz nichts zu sagen.</p>"
+       "text": "<p>Es sind einige Jahre verstrichen, als mich über Josef eine Nachricht von Rose erreicht hat. Es ging um deine Tochter Hannah und einen Plan, uns aus dem Lager zu befreien. Ich musste Rose versprechen, zu unserem eigenen Schutz nichts zu sagen.</p>"
       },
       {
        "type": "paragraph",
@@ -9924,7 +9963,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du bist erleichtert, dass Cara egal wie schwierig es war, immer zu dir gehalten hat. Eine wahre Freundschaft.</p>"
+       "text": "<p>Du bist erleichtert, dass Cara, egal wie schwierig es war, immer zu dir gehalten hat. Eine wahre Freundschaft.</p>"
       }
      ],
      "next": [
@@ -9949,7 +9988,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Sie ist wach. Schwach aber ansprechbar.</p>"
+         "text": "<p>Sie ist wach. Schwach, aber ansprechbar.</p>"
         },
         {
          "type": "paragraph",
@@ -9973,11 +10012,11 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Die beiden haben mir zum eigenen Schutz nur das Nötigste erzählt. Viele Jahre haben Pete und ich diese aufbewahrt in unserem kleinen Versteck mit dem Wunsch, dass diese eines Tages eine Judy, welcher wir begegnen werden, bekommen soll. Ich habe mich ein Leben lang gefragt, was dort wohl drin ist?«</p>"
+         "text": "<p>Die beiden haben mir zum eigenen Schutz nur das Nötigste erzählt. Viele Jahre haben Pete und ich diese Truhe in unserem kleinen Versteck aufbewahrt mit dem Wunsch, dass sie eines Tages eine Judy, welcher wir begegnen werden, bekommen soll.«</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>Du zeigst Rose die Bilder und Briefe. Mit einem Lächeln schaut sie sich lange die Fotos ihrer Eltern an. Bevor ihr zu den Briefen kommt, ist Rose wieder friedlich eingeschlafen.</p>"
+         "text": "<p>Mit einem Lächeln im Gesicht, schläft sie wieder ein.</p>"
         }
        ]
       },
@@ -10003,11 +10042,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ihr fahrt auf einen verschneiten Parkplatz vor dem Motel und macht den Motor des Autos aus. Ihr wartet etwas. Es ist Punkt 00:00. Alles ruhig. 00:22. Niemand erscheint. 00:45. Ungeduldig und nervös steigst du aus dem Auto und läufst an den Appartements des Midnights entlang. Als du Dich umsiehst fallen dir die Zimmernummern auf den Türen auf. Zimmer 00:55, Zimmer 00:56, Zimmer 00:57 u.s.w.</p>"
+       "text": "<p>Ihr fahrt auf einen verschneiten Parkplatz vor dem Motel und macht den Motor des Autos aus. Ihr wartet etwas. Es ist Punkt 00:00. Alles ruhig. 00:22. Niemand erscheint. 00:45. Ungeduldig und nervös steigst du aus dem Auto und läufst an den Appartements des Midnights entlang. Als du dich umsiehst, fallen dir die Zimmernummern auf den Türen auf. Zimmer 00:55, Zimmer 00:56, Zimmer 00:57 u.s.w.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Dir wird schnell klar, dass es sich nicht um eine Uhrzeit sondern Zimmernummer im <em>Midnight Motel</em>&nbsp;handelt. Welches Genie hat sich das denn ausgedacht!?</p>"
+       "text": "<p>Dir wird schnell klar, dass es sich nicht um eine Uhrzeit, sondern um eine Zimmernummer im <em>Midnight Motel</em>&nbsp;handelt. Welches Genie hat sich das denn ausgedacht!?</p>"
       },
       {
        "type": "paragraph",
@@ -10041,7 +10080,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du gehst einen Schritt zurück als die Tür sich vor dir langsam öffnet.</p>"
+       "text": "<p>Du gehst einen Schritt zurück, als die Tür sich vor dir langsam öffnet.</p>"
       },
       {
        "type": "paragraph",
@@ -10066,11 +10105,11 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Die Tür ist verschlossen, als du die Klinke herrunterdrückst. Doch du hörst auf einmal Geräusche die sich aus dem Zimmer der Tür nähern.</p>"
+       "text": "<p>Die Tür ist verschlossen, als du die Klinke herunterdrückst. Doch du hörst auf einmal Geräusche, die sich aus dem Zimmer der Tür nähern.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du gehst einen Schritt zurück, als die Tür sich vor dir langsam einen Spalt öffnet. Eine Kette versperrt die Tür.</p>"
+       "text": "<p>Du gehst einen Schritt zurück, als die Tür sich langsam einen Spalt öffnet. Eine Kette hält sie zurück</p>"
       },
       {
        "type": "paragraph",
@@ -10101,19 +10140,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Der&nbsp;<em>Kalte Stern</em>&nbsp;strahlt eine regelrechte Hitze von sich und taucht die komplette Höhle in ein Orangefarbenes warmes Licht. Der Boden ist mit seichtem geschmolzenem Eiswasser bedeckt, so dass sich zum Teil kleine Flüsschen bilden und einige Steinpassagen aus dem seichten Gewässer ragen.</p>"
+       "text": "<p>Der&nbsp;<em>Kalte Stern</em>&nbsp;strahlt eine enorme Hitze aus und taucht die komplette Höhle in ein orangefarbenes, warmes Licht. Der Boden ist mit seichtem geschmolzenem Eiswasser bedeckt, so dass sich zum Teil kleine Flüsschen bilden und einige Steinpassagen aus dem seichten Gewässer ragen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Auf einer trockenen Oberfläche arbeitest du ununterbrochen an einem reflektierenden, spiegelähnlichen Instrument, welches direkt an der Spitze des <em>Kalten Stern</em>&nbsp;befestigt ist. Einige Kabel hängen chaotisch herunter und ziehen sich viele Meter lang zu den etwas abseits stehenden Apparaten.</p>"
+       "text": "<p>Auf einer trockenen Oberfläche arbeitest du ununterbrochen an einem reflektierenden, spiegelähnlichen Instrument, das direkt an der Spitze des <em>Kalten Sterns</em>&nbsp;befestigt ist. Einige Kabel hängen chaotisch herunter und erstrecken sich viele Meter lang zu den etwas abseits stehenden Apparaten.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>In der Arbeit vertieft, spürst du plötzlich etwas an deiner Schulter.</p>"
+       "text": "<p>In der Arbeit vertieft spürst du plötzlich etwas an deiner Schulter.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Hast du mich erschreckt!«, schreckst du auf.</p>"
+       "text": "<p>»Hast du mich erschreckt!«, rufst du.</p>"
       },
       {
        "type": "paragraph",
@@ -10121,7 +10160,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Du musst auch mal eine Pause machen Onkel Georgy«.</p>"
+       "text": "<p>»Du musst auch mal eine Pause machen, Onkel Georgy.«</p>"
       },
       {
        "type": "paragraph",
@@ -10129,7 +10168,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Was würde ich nur ohne dich machen«, sagst du mit einem Zwinkern zu Hannah.«</p>"
+       "text": "<p>»Was würde ich nur ohne dich machen«, sagst du mit einem Zwinkern zu Hannah.</p>"
       },
       {
        "type": "paragraph",
@@ -10137,15 +10176,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Glaubst du, deine Erfindung wird funktionieren?«.</p>"
+       "text": "<p>»Glaubst du, deine Erfindung wird funktionieren?«</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du wischst dir den Schweiss von der Stirn.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>»Natürlich, zusammen bekommen wir das doch hin! Davon bin ich fest überzeugt.«</p>"
+       "text": "<p>Du wischst dir den Schweiss von der Stirn. »Natürlich, zusammen bekommen wir das doch hin! Davon bin ich fest überzeugt.«</p>"
       },
       {
        "type": "paragraph",
@@ -10165,11 +10200,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Schon wieder ein Jahr her, als wir drei an deinem Geburtstag beim <em>Frozen Lake</em> waren. Ich erinnere mich noch, wie Ella dort fast im See eingebrochen wäre. Ich hatte ihr noch gesagt, dass Eis ist zu dünn, aber du kennst sie ja, was für ein Sturschädel sie sein kann. Aber als es unter ihr nur noch so geknackt hat, hättest du ihr Gesicht sehen sollen.&nbsp;Das werde ich nie vergessen«, lachst du. »Harte Schale, weicher Kern«, sagst du demütig und schaust auf die vor euch stehende Apparatur.</p>"
+       "text": "<p>»Schon wieder ein Jahr her, als wir drei an deinem Geburtstag beim <em>Frozen Lake</em> waren. Ich erinnere mich noch, wie Ella dort fast im See eingebrochen wäre. Ich hatte ihr noch gesagt, das Eis ist zu dünn, aber du kennst sie ja, was für ein Sturschädel sie sein kann. Aber als es unter ihr nur noch so geknackt hat, hättest du ihr Gesicht sehen sollen.&nbsp;Das werde ich nie vergessen«, lachst du. »Harte Schale, weicher Kern«, sagst du demütig und schaust auf die vor euch stehende Apparatur.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ja, das war schön. Vor allem, dass wir mal raus durften zusammen. Und Ellas Geschenk! Der Fotoapparat, den sie heimlich mitgenommen hat. Fotografieren macht sehr viel Spaß Onkel Georgy«, sagt Hannah.</p>"
+       "text": "<p>»Ja, das war schön. Vor allem, dass wir mal raus durften zusammen. Und Ellas Geschenk! Der Fotoapparat, den sie heimlich mitgenommen hat. Fotografieren macht sehr viel Spaß, Onkel Georgy«, sagt Hannah.</p>"
       },
       {
        "type": "paragraph",
@@ -10177,7 +10212,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Onkel Georgy, werden wir Ella wieder sehen?« fragt Hannah.</p>"
+       "text": "<p>»Onkel Georgy, werden wir Ella wiedersehen?« fragt Hannah.</p>"
       },
       {
        "type": "paragraph",
@@ -10193,7 +10228,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Zurück im Lager im <em>Forschungszentrum</em> liegst du spät Abends nervös in deinem Bett. Seit Tagen bist du kaum zum Schlafen gekommen. Es gehen dir zu viele Dinge durch den Kopf. Ellas Verschwinden, Deans Tod, die Zeit in der Zelle und das ungewisse Schicksals der kleinen Hannah und deiner Zukunft. Noch nie hast du so unter Druck gestanden, als dich plötzlich ein vorbeihuschender Schatten aus deiner Gedankenwelt reist.</p>"
+       "text": "<p>Zurück im Lager im <em>Forschungszentrum</em> liegst du spät Abends nervös in deinem Bett. Seit Tagen bist du kaum zum Schlafen gekommen. Es gehen dir zu viele Dinge durch den Kopf. Ellas Verschwinden, Deans Tod, die Zeit in der Zelle und das ungewisse Schicksal der kleinen Hannah und deiner Zukunft. Noch nie hast du so unter Druck gestanden, als dich plötzlich ein vorbeihuschender Schatten aus deiner Gedankenwelt reist.</p>"
       }
      ],
      "next": [
@@ -10291,6 +10326,10 @@ const book: Book = (({
        "text": "<p>Sie öffnet die linke Hand. Ein geflochtenes Armband aus dünnen Kabeln und Drähten.</p>"
       },
       {
+       "type": "addItem",
+       "id": "bracelet"
+      },
+      {
        "type": "paragraph",
        "text": "<p>»Für Dich«, sagt Hannah mit strahlenden Augen.</p>"
       },
@@ -10304,15 +10343,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»So wirst du mich nie vergessen Onkel Georgy.«</p>"
+       "text": "<p>»So wirst du mich nie vergessen, Onkel Georgy.«</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Mit besorgtem Blick sagst du »Zeit schlafen zu gehen, Kleines!«</p>"
-      },
-      {
-       "type": "addItem",
-       "id": "bracelet"
+       "text": "<p>Mit besorgtem Blick sagst du »Zeit, schlafen zu gehen, Kleines!«</p>"
       }
      ],
      "next": [
@@ -10329,19 +10364,15 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Sie öffnet die rechte Hand. »Ohh, tut mir leid Onkel Georgy« und steckt schnell etwas in ihre Tasche zurück.</p>"
+       "text": "<p>Sie öffnet die rechte Hand. »Ooh, tut mir leid, Onkel Georgy« sagt sie &nbsp;und steckt schnell etwas in ihre Tasche zurück.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Das ist unfair.«, sagst du.</p>"
+       "text": "<p>»Das ist unfair«, sagst du.</p>"
       },
       {
        "type": "paragraph",
        "text": "<p>Hannah lacht und zieht etwas aus ihrer Hosentasche.</p>"
-      },
-      {
-       "type": "addItem",
-       "id": "heart"
       },
       {
        "type": "paragraph",
@@ -10350,6 +10381,10 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Ein kleiner Stein, der die Form eines Herzens hat.</p>"
+      },
+      {
+       "type": "addItem",
+       "id": "heart"
       },
       {
        "type": "paragraph",
@@ -10409,7 +10444,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Du starrst auf die leeren Plätze von Ella und Dean in eurem Labor. Alles hat sich in nur wenigen Wochen tragisch verändert. Erst Ella, die spurlos verschwunden ist, gefolgt von Dean, der vom <em>Schwarzen Kreis</em>&nbsp;brutal ermordet wurde. Noch nie hast du dich so alleine gefühlt und dennoch liegt es jetzt an dir, die Arbeit am <em>Kalten Stern</em>&nbsp;abzuschließen. Die einzige Chance für Hannah und dich dem <em>Schwarzen Kreis</em>&nbsp;zu entkommen.</p>"
+       "text": "<p>Du starrst auf die leeren Plätze von Ella und Dean in eurem Labor. Alles hat sich in nur wenigen Wochen tragisch verändert. Erst Ella, die spurlos verschwunden ist, gefolgt von Dean, der vom <em>Schwarzen Kreis</em>&nbsp;brutal ermordet wurde. Noch nie hast du dich so alleine gefühlt und dennoch liegt es jetzt an dir, die Arbeit am <em>Kalten Stern</em>&nbsp;abzuschließen. Die einzige Chance für Hannah und dich, dem <em>Schwarzen Kreis</em>&nbsp;zu entkommen.</p>"
       },
       {
        "type": "paragraph",
@@ -10417,7 +10452,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du hast nur noch diesen einen Tag bis der <em>Schwarze Kreis</em>&nbsp;Ergebnisse einfordert.</p>"
+       "text": "<p>Du hast nur noch diesen einen Tag, bis der <em>Schwarze Kreis</em>&nbsp;Ergebnisse einfordert.</p>"
       },
       {
        "type": "paragraph",
@@ -10429,15 +10464,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Sie lässt kleine Schiffchen eine kleine Wasserquelle, die aus der Wand kommt, durch den seichten Strom des Wasser fahren.</p>"
+       "text": "<p>Sie lässt kleine Schiffchen eine Wasserquelle, die aus der Wand kommt, hinab durch den seichten Strom fahren.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du kämpfst stark gegen deine Angst an und versuchst gleichzeitig dir deine Sorgen nicht anmerken zu lassen, um Hannah nicht unnötig zu beunruhigen.</p>"
+       "text": "<p>Du kämpfst stark gegen deine Angst an und versuchst gleichzeitig, dir deine Sorgen nicht anmerken zu lassen, um Hannah nicht unnötig zu beunruhigen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Ein halber Tag vergeht und die Anspannung ist dir sichtlich ins Gesicht geschrieben. Hektisch bedienst du die Konsole. Die Instrumente fahren hoch und die Apparatur gibt unterschiedliche Töne von sich. Hannah nimmt deine Hand. »Geht es dir gut Onkel Georgy?«</p>"
+       "text": "<p>Ein halber Tag vergeht und die Anspannung ist dir sichtlich ins Gesicht geschrieben. Hektisch bedienst du die Konsole. Die Instrumente fahren hoch und die Apparatur gibt unterschiedliche Töne von sich. Hannah nimmt deine Hand. »Geht es dir gut, Onkel Georgy?«</p>"
       },
       {
        "type": "paragraph",
@@ -10465,7 +10500,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Hannah steht mit dem Splitter nun direkt an der Spitze des <em>Kalten Stern</em>.</p>"
+       "text": "<p>Hannah steht mit dem Splitter nun direkt an der Spitze des <em>Kalten Sterns</em>.</p>"
       },
       {
        "type": "paragraph",
@@ -10477,11 +10512,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich bin so schnell es geht bei Dir!«.</p>"
+       "text": "<p>»Ich bin so schnell es geht bei dir!«</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Höhle erleuchtet strahlend hell und ein lauter Knall ertönt. Du hältst Dir die Augen zu. Als du sie wieder öffnest, ist die kleine Hannah weg.</p>"
+       "text": "<p>Die Höhle erleuchtet strahlend hell und ein lauter Knall ertönt. Du hältst dir die Augen zu. Als du sie wieder öffnest, ist die kleine Hannah weg.</p>"
       },
       {
        "type": "paragraph",
@@ -10501,15 +10536,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Dir geht eine Erinnerungen durch den Kopf aus der Zeit, als du in der Zelle warst:</p>"
+       "text": "<p>Dir geht eine Erinnerung durch den Kopf aus der Zeit, als du in der Zelle warst:</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du sitzt in der Zelle, als der Arzt herein kommt und deinen gesundheitlichen Zustand kontrolliert. Er blickt sich kurz um, schaut dich an, nickt dir zu und schiebt dir heimlich Ellas Splitter unter die Matratze. Dieser wurde nach dem verschwinden in der Höhle aufgefunden.</p>"
+       "text": "<p>Du sitzt in der Zelle, als der Arzt herein kommt und deinen gesundheitlichen Zustand kontrolliert. Er blickt sich kurz um, schaut dich an, nickt dir zu und schiebt dir heimlich Ellas Splitter unter die Matratze. Dieser wurde nach dem Verschwinden in der Höhle aufgefunden.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du küsst die kalte glatte Fläche des roten Splitters. »Bring mir Glück… Ella«</p>"
+       "text": "<p>Du küsst die kalte glatte Fläche des roten Splitters. »Bring mir Glück, Ella.«</p>"
       },
       {
        "type": "paragraph",
@@ -10525,7 +10560,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Tu es nicht Georgy!«, ertönt eine dumpfe Stimme hinter der Maskierung.</p>"
+       "text": "<p>»Tu es nicht, Georgy!«, ertönt eine dumpfe Stimme hinter der Maskierung.</p>"
       },
       {
        "type": "paragraph",
@@ -10556,7 +10591,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als du zurückweichst, ertönt ein Schuss dessen Kugel nur wenige Meter vor deinen Füßen im Wasser einschlägt.</p>"
+       "text": "<p>Als du zurückweichst, ertönt ein Schuss, dessen Kugel nur wenige Meter vor deinen Füßen im Wasser einschlägt.</p>"
       },
       {
        "type": "paragraph",
@@ -10622,7 +10657,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Doch dein Schrei wird durch die laute, erste Phase deiner Sprungsequenz übertönt.</p>"
+       "text": "<p>Doch dein Schrei wird durch die laute erste Phase deiner Sprungsequenz übertönt.</p>"
       },
       {
        "type": "paragraph",
@@ -10638,7 +10673,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich dachte… ich dachte du wärst tot!«, schreit Georgy.</p>"
+       "text": "<p>»Ich dachte … ich dachte, du wärst tot!«, schreist du.</p>"
       },
       {
        "type": "paragraph",
@@ -10654,7 +10689,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Klatschend, wird er diesmal von der runter zählenden Sequenz im Hintergrund unterbrochen.</p>"
+       "text": "<p>Sein Klatschen wird von der runter zählenden Sequenz im Hintergrund unterbrochen.</p>"
       },
       {
        "type": "paragraph",
@@ -10662,11 +10697,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Opfer bringen, Dean!?!… hörst du eigentlich, was du redest!«</p>"
+       "text": "<p>»Opfer bringen, Dean!? … hörst du eigentlich, was du redest!«</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Mit dem Stein in der Hand gehst du vorsichtig Schritt für Schritt langsam zur Spitze des <em>Kalten Stern</em>.</p>"
+       "text": "<p>Mit dem Stein in der Hand gehst du vorsichtig Schritt für Schritt zur Spitze des <em>Kalten Stern</em>.</p>"
       },
       {
        "type": "paragraph",
@@ -10686,7 +10721,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Mutter Spinne, die unsere Welt und das Universum zusammenhält, wird schon bald über uns und das Ganze Universum richten. Wir sind nur ein kleiner Teil, von etwas ganz Großem!«</p>"
+       "text": "<p>»Mutter Spinne, die unsere Welt und das Universum zusammenhält, wird schon bald über uns und das ganze Universum richten. Wir sind nur ein kleiner Teil von etwas ganz Großem!«</p>"
       },
       {
        "type": "paragraph",
@@ -10706,7 +10741,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Du kannst die Menschheit nicht vor Ihrem unausweichlichen Schicksal verschonen. Die schwarze Apokalypse ist der Schritt hin zu einer neuen und besseren Welt. Der <em>Hollow White</em> war erst der Anfang. Der Stein der alles ins Rollen brachte. Der Impuls für die Entstehung des <em>Schwarzen Kreises</em>&nbsp;und des uns allen bevorstehenden<em>Hollow Black</em>.«</p>"
+       "text": "<p>»Du kannst die Menschheit nicht vor ihrem unausweichlichen Schicksal verschonen. Die schwarze Apokalypse ist der Schritt hin zu einer neuen und besseren Welt. Der <em>Hollow White</em> war erst der Anfang. Der Stein der alles ins Rollen brachte. Der Impuls für die Entstehung des <em>Schwarzen Kreises</em>&nbsp;und des uns allen bevorstehenden<em>Hollow Black</em>.«</p>"
       },
       {
        "type": "paragraph",
@@ -10722,15 +10757,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Es tut mir leid Georgy, ich habe es versucht. Du hattest deine Chance«, schreit er dir hinterher.</p>"
+       "text": "<p>»Es tut mir leid, Georgy, ich habe es versucht. Du hattest deine Chance«, schreit er dir hinterher.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du drehst dich um und läufst die letzten Meter, so schnell du kannst zur Spitze des <em>Kalten Stern</em>.</p>"
+       "text": "<p>Du drehst dich um und läufst die letzten Meter so schnell du kannst zur Spitze des <em>Kalten Sterns</em>.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Das laute Summen baut sich auf und füllt die ganze Halle der Höhle.</p>"
+       "text": "<p>Das laute Summen baut sich auf und erfüllt die ganze Halle der Höhle.</p>"
       },
       {
        "type": "paragraph",
@@ -10760,7 +10795,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Wir werden Euch finden, Georgy! Wir finden Euch!« schreit Dean und feuert mehrer Schüsse in deine Richtung.</p>"
+       "text": "<p>»Wir werden euch finden, Georgy! Wir finden Euch!« schreit Dean und feuert mehrer Schüsse in deine Richtung.</p>"
       },
       {
        "type": "paragraph",
@@ -10833,11 +10868,11 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Ein Jahr nach Ella´s und Alberts Ankunft in <em>Snow Peaks</em>.</p>"
+       "text": "<p>Ein Jahr nach Ellas und Alberts Ankunft in <em>Snow Peaks</em>.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Entfernte Klänge sind in den stillen und dunklen Gassen der Altstadt in <em>Snow Peaks</em>&nbsp;zu hören. Die Beleuchtung des <em>Stardust Diners</em>&nbsp;strahlt eine warme wohlige Atmosphäre aus.</p>"
+       "text": "<p>Entfernte Klänge sind in den stillen und dunklen Gassen der Altstadt in <em>Snow Peaks</em>&nbsp;zu hören. Die Beleuchtung des <em>Stardust Diners</em>&nbsp;strahlt eine warme, wohlige Atmosphäre aus.</p>"
       },
       {
        "type": "style",
@@ -10851,11 +10886,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Deine Aufmerksamkeit ist ganz der heutigen Liveband, die auf einer kleinen Bühne mit Ihren Akustikgitarren spielen, gewidmet. Als der letzte Song beendet ist, wird kräftig vom Publikum applaudiert. Das <em>Stardust Diner</em>&nbsp;ist so gut besucht wie schon lange nicht mehr.</p>"
+       "text": "<p>Deine Aufmerksamkeit gehört ganz der heutigen Liveband, die auf einer kleinen Bühne mit ihren Akustikgitarren spielt. Als der letzte Song beendet ist, wird kräftig vom Publikum applaudiert. Das <em>Stardust Diner</em>&nbsp;ist so gut besucht wie schon lange nicht mehr.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Danke <em>Snow Peaks</em>, ihr seid großartig« bedankt sich der Sänger. Der Gitarrist verbeugt sich und verlässt die Bühne.</p>"
+       "text": "<p>»Danke <em>Snow Peaks</em>, ihr seid großartig«, bedankt sich der Sänger. Der Gitarrist verbeugt sich und verlässt die Bühne.</p>"
       }
      ],
      "next": [
@@ -10881,7 +10916,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»<em>Snow Peaks</em>! Unsere Zugabe für heute Abend. Unser Song <em>Waiting</em>&nbsp;«</p>"
+       "text": "<p>»<em>Snow Peaks</em>! Unsere Zugabe für heute Abend. Unser Song <em>Waiting</em>&nbsp;.«</p>"
       },
       {
        "type": "addItem",
@@ -10902,7 +10937,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Du legst gerade deine Schürze ab, als Jony der Besitzer des <em>Stardust Diners</em> die Küche betritt. »Elli, was soll ich nur ohne Dich machen?«</p>"
+       "text": "<p>Du legst gerade deine Schürze ab, als Jony, der Besitzer des <em>Stardust Diners</em>, die Küche betritt. »Elli, was soll ich nur ohne Dich machen?«</p>"
       },
       {
        "type": "paragraph",
@@ -10910,7 +10945,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Jony, es ist ja nur für eine kurze Zeit, du wirst sehen, bevor du dich umsiehst, bin ich wieder zurück«, sagt du.</p>"
+       "text": "<p>»Jony, es ist ja nur für eine kurze Zeit. Du wirst sehen – bald bin ich wieder zurück«, sagt du.</p>"
       },
       {
        "type": "paragraph",
@@ -10918,7 +10953,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Sag deinem Mann, dass er schön auf Dich aufpassen soll, nicht dass mir was zu Ohren kommt«, lächelt Jony und umarmt dich herzlich.</p>"
+       "text": "<p>»Sag deinem Mann, dass er schön auf dich aufpassen soll, nicht dass mir was zu Ohren kommt«, lächelt Jony und umarmt dich herzlich.</p>"
       },
       {
        "type": "paragraph",
@@ -10926,15 +10961,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Mit einem zusichernden Blick gibst du&nbsp;Jony&nbsp;einen Kuss auf die Wange und verlässt das Diner.</p>"
+       "text": "<p>Mit einem bestätigenden Blick gibst du&nbsp;Jony&nbsp;einen Kuss auf die Wange und verlässt das Diner.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Draußen steht Albert mit seinem Truck davor.</p>"
+       "text": "<p>Draußen steht Albert mit seinem Truck.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Er nimmst dich in den Arm, gibt dir einen Kuss und spricht dir sanft ins Ohr. »Bist du bereit?«.</p>"
+       "text": "<p>Er nimmst dich in den Arm, gibt dir einen Kuss und spricht dir sanft ins Ohr. »Bist du bereit?«</p>"
       }
      ],
      "next": [
@@ -10960,7 +10995,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Bis in einer Stunde, ich hole dich genau hier wieder ab«, sagt er, startet den Motor und fährt weiter.</p>"
+       "text": "<p>»Bis in einer Stunde, ich hole dich genau hier wieder ab«, sagt er und fährt weiter.</p>"
       },
       {
        "type": "paragraph",
@@ -10968,7 +11003,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Herzlich Willkommen zur freien Nacht zum Gedenken an die <em>Verschwundenen</em>«.</p>"
+       "text": "<p>»Herzlich Willkommen zur freien Nacht zum Gedenken an die <em>Verschwundenen</em>.«</p>"
       },
       {
        "type": "paragraph",
@@ -10976,7 +11011,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Seltsam, ich finde Sie nicht in unseren Büchern. Wie war Ihr Name nochmal?</p>"
+       "text": "<p>»Seltsam, ich finde Sie nicht in unseren Büchern. Wie war Ihr Name nochmal?«</p>"
       }
      ],
      "next": [
@@ -11002,7 +11037,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Fertig, sie können rein. Wenn sie fragen haben, kommen sie gerne auf mich zu.«</p>"
+       "text": "<p>Fertig, Sie können rein. Wenn Sie fragen haben, kommen Sie gerne auf mich zu.«</p>"
       },
       {
        "type": "paragraph",
@@ -11010,7 +11045,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es ist still und ruhig in der Kuppel aber du begegnest dem ein oder anderen Einwohner von <em>Snow Peaks</em>. Du schaust auf den <em>Kalten Stern</em>, der mittlerweile von den grünen Bäumen und Büschen eingewachsen ist. Du denkst an die letzten Wochen und sprichst: »Hannah, ich denke jeden Tag an Dich. Es geht bald los. Ich freue mich, aber habe auch Angst. Wenn du mich hörst: Ich habe Dich nicht vergesser …«</p>"
+       "text": "<p>Es ist still und ruhig in der Kuppel, dennoch begegnest du dem einen oder anderen Einwohner von <em>Snow Peaks</em>. Du schaust auf den <em>Kalten Stern</em>, der mittlerweile von den grünen Bäumen und Büschen eingewachsen ist. Du denkst an die letzten Wochen und sprichst: »Hannah, ich denke jeden Tag an dich. Es geht bald los. Ich freue mich, aber habe auch Angst. Wenn du mich hörst: Ich habe dich nicht vergessen …«</p>"
       },
       {
        "type": "paragraph",
@@ -11039,15 +11074,15 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>»Ich kann sie leider nicht in unseren Büchern finden Miss Blake. Aber kein Problem, ich lege Sie einfach neu an. Aus Sicherheitsgründen müssen wir immer noch jeden Besucher erfassen, auch wenn es schon lange keine Ereignisse des Verschwindens mehr gab.«</p>"
+       "text": "<p>»Ich kann Sie leider nicht in unseren Büchern finden, Miss Blake. Aber kein Problem, ich lege Sie einfach neu an. Aus Sicherheitsgründen müssen wir immer noch jeden Besucher erfassen, auch wenn es schon lange keine Ereignisse des Verschwindens mehr gab.«</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»So, sie können rein. Wenn sie fragen haben, kommen sie gerne auf mich zu.« Mit einem Lächeln, betrittst du die Kuppel und gehst in Zentrum zum <em>Kalten Stern</em>.</p>"
+       "text": "<p>»So, Sie können rein. Wenn Sie fragen haben, kommen Sie gerne auf mich zu.« Mit einem Lächeln betrittst du die Kuppel und gehst in Zentrum zum <em>Kalten Stern</em>.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Es ist still und ruhig in der Kuppel. Du schaust auf den <em>Kalten Stern</em>, der mittlerweile von den grünen Bäumen und Büschen eingewachsen ist. Du denkst an die letzten Wochen und sprichst: »Hannah, ich denke jeden Tag an Dich. Es geht bald los. Ich freue mich, aber habe auch Angst. Wenn du mich hörst. Ich vermisse Dich.«</p>"
+       "text": "<p>Es ist still und ruhig in der Kuppel. Du schaust auf den <em>Kalten Stern</em>, der mittlerweile von den grünen Bäumen und Büschen eingewachsen ist. Du denkst an die letzten Wochen und sprichst: »Hannah, ich denke jeden Tag an dich. Es geht bald los. Ich freue mich, aber habe auch Angst. Wenn du mich hörst: Ich vermisse dich.«</p>"
       },
       {
        "type": "paragraph",
@@ -11055,7 +11090,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Das Baby strampelt. Du gehst zurück zu Albert, der auf dich draußen bereits wartet.</p>"
+       "text": "<p>Das Baby strampelt. Du gehst zurück zu Albert, der draußen bereits auf dich wartet.</p>"
       }
      ],
      "next": [
@@ -11072,7 +11107,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Als ihr in das Anwesen einbiegt, begrüsst Euch Frank, der gerade die Post leert.</p>"
+       "text": "<p>Als ihr in das Anwesen einbiegt, begrüsst euch Frank, der gerade die Post leert.</p>"
       },
       {
        "type": "paragraph",
@@ -11084,7 +11119,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Es war eine gute Idee ,hier raus zu Marie und Frank zu ziehen. Ich mag es hier etwas außerhalb der Stadt.« Albert berührt glücklich deine Hand und legt seine Hand&nbsp;auf den Babybauch.</p>"
+       "text": "<p>»Es war eine gute Idee, hier raus zu Marie und Frank zu ziehen. Ich mag es hier etwas außerhalb der Stadt.« Albert berührt glücklich deine Hand und legt seine auf den Babybauch.</p>"
       },
       {
        "type": "paragraph",
@@ -11159,11 +11194,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Frank, Marie und auch Du schaut Ihn gespannt an.</p>"
+       "text": "<p>Frank, Marie und auch du schauen Ihn gespannt an.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ella, du &nbsp;gehörst jetzt offiziell zu unserer Gemeinde von <em>Snow Peaks</em>.«</p>"
+       "text": "<p>»Ella, du gehörst jetzt offiziell zu unserer Gemeinde von <em>Snow Peaks</em>.«</p>"
       },
       {
        "type": "paragraph",
@@ -11179,7 +11214,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Das sind wunderbare Neuigkeiten, sagt Marie.«</p>"
+       "text": "<p>»Das sind wunderbare Neuigkeiten«, sagt Marie.</p>"
       },
       {
        "type": "paragraph",
@@ -11201,7 +11236,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Albert ist für die Stadt beschäftigt und tagsüber meistens mit dem Truck unterwegs.</p>"
+       "text": "<p>Albert ist Beschäftigter der Stadt und tagsüber meistens mit dem Truck unterwegs.</p>"
       },
       {
        "type": "paragraph",
@@ -11308,11 +11343,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du gehst langsam die Treppe runter und öffnest vorsichtig die Tür einen kleinen Spalt.</p>"
+       "text": "<p>Du gehst langsam die Treppe runter und öffnest die Tür vorsichtig einen kleinen Spalt.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Eine alte Frau mit schneeweißen Haar ist zu erkennen und steht warm eingepackt vor eurer Haustüre. Auf die Frage, wie du ihr helfen könntest, sagt die Frau nichts.</p>"
+       "text": "<p>Eine alte Frau mit schneeweißem Haar ist zu erkennen und steht warm eingepackt vor eurer Haustüre. Auf die Frage, wie du ihr helfen könntest, sagt die Frau nichts.</p>"
       }
      ],
      "next": [
@@ -11367,6 +11402,11 @@ const book: Book = (({
      "id": "013",
      "title": "Tür nicht öffnen",
      "elements": [
+      {
+       "type": "state",
+       "id": "karma",
+       "modifier": "+1"
+      },
       {
        "type": "paragraph",
        "text": "<p>Du lässt die Türe wieder ins Schloss fallen, diese Situation ist zu seltsam, so selten ist hier draußen Besuch. Erneut klopft es an die Tür.</p>"
@@ -12489,7 +12529,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die massive Steinspitze des <em>Kalten Stern</em> ragt von der oberen Decke bis in die Mitte des Raumes bis auf Kopfhöhe nach unten. Der Boden ist teilweise mit seichtem Wasser bedeckt und das orange, rötliche warme Licht der Spitze beleuchtet die Höhle und spiegelt sich im reflektierenden Wasser.</p>"
+       "text": "<p>Die massive Steinspitze des <em>Kalten Sterns</em> ragt von der oberen Decke bis in die Mitte des Raumes bis auf Kopfhöhe nach unten. Der Boden ist teilweise mit seichtem Wasser bedeckt und das orange, rötliche warme Licht der Spitze beleuchtet die Höhle und spiegelt sich im reflektierenden Wasser.</p>"
       },
       {
        "type": "paragraph",
@@ -12505,7 +12545,7 @@ const book: Book = (({
       },
       {
        "type": "addItem",
-       "id": "chest-old"
+       "id": "chest"
       },
       {
        "type": "style",
@@ -12579,7 +12619,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Zu Beginn hattest du mit Hannah´s Erscheinen wirklich gehadert, du warst dir unsicher und konntest dir ihr Alter nicht erklären. Jetzt bist du einfach nur froh, dass du ihr nochmal begegnen und zusammen mit ihr Zeit verbringen konntest. Der Abschied schmerzt.</p>"
+         "text": "<p>Zu Beginn hattest du mit Hannahs Erscheinen wirklich gehadert, du warst dir unsicher und konntest dir ihr Alter nicht erklären. Jetzt bist du einfach nur froh, dass du ihr nochmal begegnen und zusammen mit ihr Zeit verbringen konntest. Der Abschied schmerzt.</p>"
         }
        ]
       },
@@ -12876,7 +12916,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ein letzter Blick auf die glühende Spitze des <em>Kalten Stern</em>.</p>"
+       "text": "<p>Ein letzter Blick auf die glühende Spitze des <em>Kalten Sterns</em>.</p>"
       },
       {
        "type": "paragraph",
@@ -13009,7 +13049,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ein letzter Blick auf die glühende Spitze des <em>Kalten Stern</em>&nbsp;und die daran verbundene Apparatur.</p>"
+       "text": "<p>Ein letzter Blick auf die glühende Spitze des <em>Kalten Sterns</em>&nbsp;und die daran verbundene Apparatur.</p>"
       },
       {
        "type": "paragraph",
@@ -13783,7 +13823,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Doch <em>Hollow White</em>&nbsp;ist nicht zu Ende. Du kannst das Abenteuer wiederholen und mit&nbsp;<em>unterschiedlichen Entscheidungen</em>&nbsp;ein anderes Ende erreichen. Oder du machst dich auf die Suche nach den restlichen versteckten <em>Sammelobjekten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Beachte nur, dass deine Sammelobjekte beim löschen der App verloren gehen.</p>"
+       "text": "<p>Doch <em>Hollow White</em>&nbsp;ist nicht zu Ende. Du kannst das Abenteuer wiederholen und mit&nbsp;<em>unterschiedlichen Entscheidungen</em>&nbsp;ein anderes Ende erreichen. Oder du machst dich auf die Suche nach den restlichen versteckten <em>Sammelkarten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Beachte nur, dass deine Sammelobjekte beim löschen der App verloren gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -13922,7 +13962,7 @@ const book: Book = (({
    "elements": [
     {
      "type": "paragraph",
-     "text": "<p><em>Idee, Story, Konzept und Design</em></p>"
+     "text": "<p><em>Idee, Story und UX & UI</em></p>"
     },
     {
      "type": "paragraph",
@@ -13962,7 +14002,63 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "<p>Sven Buschbeck, Fritz Krautzberger, Minh Chau Lu, Elke, Buddy, Chris, Alexandra Röhl, Bernd, Michi, Varinja, Andi, Silke, Ben, Alessandro, Chris A.,</p>"
+     "text": "<p>Sven Buschbeck</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Fritz Krautzberger</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Minh Chau Lu</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Elke</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Buddy</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Chris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Alexandra Röhl</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Bernd</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Michi</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Varinja</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Andi</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Silke</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Ben</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Alessandro</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Chris A.</p>"
     },
     {
      "type": "paragraph",
@@ -14179,6 +14275,17 @@ const book: Book = (({
     ]
    },
    {
+    "id": "photo-ella-old",
+    "category": "",
+    "title": "Foto",
+    "elements": [
+     {
+      "type": "paragraph",
+      "text": "<p>Beschreibung einfügen</p>"
+     }
+    ]
+   },
+   {
     "id": "ringofrose",
     "category": "",
     "title": "Roses Ring",
@@ -14339,17 +14446,17 @@ const book: Book = (({
     "choices": [
      {
       "id": "size-m",
-      "title": "Mittel",
+      "title": "M",
       "default": false
      },
      {
       "id": "size-l",
-      "title": "Groß",
+      "title": "L",
       "default": false
      },
      {
       "id": "size-xl",
-      "title": "Sehr groß",
+      "title": "XL",
       "default": false
      }
     ]
