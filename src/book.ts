@@ -30,8 +30,12 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>More text after sandbox item.</p>"
+       "text": "<p>More text after sandbox item. Followed by an item that has not been configured. You'll see this kind of error message:</p>"
       },
+      {
+        "type": "addItem",
+        "id": "missing"
+       },
       {
        "type": "paragraph",
        "text": "<p>Formatting is also supported via Markdown. For example <em>emphasis</em> (&lt;em&gt; tag in HTML) and <strong>bold</strong> (&lt;b&gt; tag) - all formattings can be adjusted with CSS. Add <a href=\"https://github.com/svub/ibook-app\">links</a> via Markdown.</p>"
