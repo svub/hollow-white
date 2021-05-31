@@ -27,6 +27,7 @@ normal() {
 
 .item
   border 1px solid var(--textColor)
+  margin-bottom 1em
 
 main
   normal()
@@ -85,8 +86,25 @@ main.read
         content "chapters"
 
   .text
-    .item:before
-      content "Item"
+    .item
+      padding gap
+      &:before
+        content "Item"
+
+    .error
+      padding gap
+      border gap solid #e44
+      margin-bottom 1em
+      .title
+        @extends h2
+      .message, .example
+        @extends p
+      .example
+        font-family monospace
+        font-size .6em
+        white-space pre-wrap
+        display block
+        unicode-bidi embed
 
   .next.links
     margin-top 8*gap
