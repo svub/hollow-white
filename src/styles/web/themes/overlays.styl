@@ -1,5 +1,6 @@
-.overlay-open body
-  overflow hidden
+html.overlay-open
+  &, body
+    overflow hidden
 
 .overlay
   closePad = 60px
@@ -13,6 +14,7 @@
   > .title
     text-align center
     margin-top toRem(100)
+    padding 0 4*gap
 
     h2
       font-weight 400
