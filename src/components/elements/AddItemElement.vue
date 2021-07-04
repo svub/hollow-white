@@ -11,9 +11,12 @@
       A title for the item
 
       Some description for the item. Can be multiple lines.
-      The item can have a category, here "item" and a type (optional).
-      There are three types: link, audio, and video -- add the URL to the link or media file afterwards.
-      For video, use the WebM format to support all browsers.
+
+      About the "itemdef" line you see above:
+      The item can have a category, here it's "item" and a type, here it's "link" - both are optional.
+      There are three types: link, audio, and video
+      After the type, add the URL to the link or media file.
+      For videos: encode them in the WebM format to support all browsers.
 
       // enditemdef
 </template>
