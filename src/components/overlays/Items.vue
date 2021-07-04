@@ -1,6 +1,6 @@
 <template lang="pug">
 .items
-  .count #[span.count {{ itemCount }}] #[span.total {{ totalItems }}]
+  .count #[span.current {{ itemCount }}] #[span.total {{ totalItems }}]
 
   ItemElement(v-for="item in items" :class="[item.id, item.category].join(' ')" :item="item")
 </template>
