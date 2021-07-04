@@ -44,10 +44,12 @@ p
   line-height 1.555555556
   font-weight 300
   letter-spacing 0
+  color var(--textColor)
 
 em
+  @extends p
   font-style normal
-  font-weight normal
+  color @css { rgba(var(--fgColorRgb), .95) }
 
 button
   font-family var(--fontSans)
