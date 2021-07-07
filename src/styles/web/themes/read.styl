@@ -1,7 +1,7 @@
 @import '../../vars'
 @import '../../macros'
 
-main.read
+.page.read
   nav
     flex-row()
     padding-bottom pad
@@ -68,7 +68,7 @@ main.read
     flex-row()
     justify-content space-between
     // align-items stretch
-    margin-bottom 166px
+    border-bottom 166px solid transparent // margin-bottom get's ignored with .page pos:absolute
     padding-top icon-height
 
     &:before
