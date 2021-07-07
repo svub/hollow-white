@@ -1,11 +1,11 @@
 <template web lang="pug">
 main(:class="page" :lang="config.language || 'en'")
-  transition(name='pages')
+  transition(name="page")
     //- use dynamic component: component(:is=page)
     Start(key="1", v-if="page === 'start'")
     Read(key="2", v-if="page === 'read'")
     Tester(key="3", v-if="page === 'test'")
-  transition(name='overlay' appear)
+  transition(name="overlay" appear)
     .backdrop(v-if="!!overlay" @click.self="setOverlay('')")
       .overlay(:class="overlay")
         .title

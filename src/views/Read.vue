@@ -13,7 +13,8 @@
     h2(v-if="isFirst") {{ position.chapter.title }}
     h3 {{ position.section.title }}
 
-  TextElement.text(:elements="position.section.elements")
+  transition(name="section")
+    TextElement.text(:elements="position.section.elements" :key="position.section.id")
 
   .next.links(:class="'count-'+position.section.next.length")
     button(
