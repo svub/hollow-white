@@ -1,40 +1,39 @@
-main.start
+.page.start
   text-align center
   asset('start-background.jpg')
   background-size cover
 
-  > .page
-    .title
-      flex 2
-      flex-column()
-      justify-items center
+  .title
+    flex 2
+    flex-column()
+    justify-items center
 
-      .logo
-        asset('start-logo.svg', 300px, 266px)
-        margin auto
-      h1
-        display none
+    .logo
+      asset('start-logo.svg', 300px, 266px)
+      margin auto
+    h1
+      display none
 
-    .buttons
-      flex 1
-      flex-column()
-      justify-content space-between
+  .buttons
+    flex 1
+    flex-column()
+    justify-content space-between
 
-      .status
-        @extend .small
-        margin-bottom 20px
+    .status
+      @extend .small
+      margin-bottom 20px
 
-      button
-        min-height 2.5em
+    button
+      min-height 2.5em
 
-        &.start, &.continue
-          @extends .pill-button
+      &.start, &.continue
+        @extends .pill-button
 
-        &.options, &.credits
-          @extends .text-button
-          display block
-          font-size 16px
-          font-weight 300
-          letter-spacing 1.25px
-          line-height 20px
-          opacity .75
+      &.options, &.credits
+        @extends .text-button
+        display block
+        font-size 16px
+        font-weight 300
+        letter-spacing 1.25px
+        line-height 20px
+        opacity .75
