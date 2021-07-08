@@ -20,96 +20,103 @@
         asset('read-nav-chapters.svg', width, height)
         margin-right -9px
 
-  .title .position
-    @extends h3
-    margin-bottom .5*gap
+  .content
+    display grid
+    grid-template "a"
 
-  .text
-    p
-      margin-bottom 1rem
+    .section
+      grid-area a
 
-      p // showdown sometimes generates p tags inside, hide them
-        margin 0
-        display inline
+      .title .position
+        @extends h3
+        margin-bottom .5*gap
 
-    .style
-      &.note-black p
-        color var(--fgColor)
-        font-style italic
-      &.note-blue p
-        color var(--blueText)
-        font-style italic
-      &.recording
-        .element.paragraph-element:first-child > p:before, .element.paragraph-element:last-child > p:after
-          font-style normal
-
+      .text
         p
-          font-style italic
+          margin-bottom 1rem
 
-        // &:before, &:after
-        .element.paragraph-element:first-child > p:before
-          content: "[ 🔴 REC ] "
-        .element.paragraph-element:last-child > p:after
-          content: " [ ■ STOP ]"
+          p // showdown sometimes generates p tags inside, hide them
+            margin 0
+            display inline
 
-    .add-item
-      margin-bottom 3*pad
+        .style
+          &.note-black p
+            color var(--fgColor)
+            font-style italic
+          &.note-blue p
+            color var(--blueText)
+            font-style italic
+          &.recording
+            .element.paragraph-element:first-child > p:before, .element.paragraph-element:last-child > p:after
+              font-style normal
 
-    .error
-      @extends p
-      padding-left pad
-      border-left pad solid var(--alert)
+            p
+              font-style italic
 
-  .next.links
-    icon-width = 250px
-    icon-height = 130px
+            // &:before, &:after
+            .element.paragraph-element:first-child > p:before
+              content: "[ 🔴 REC ] "
+            .element.paragraph-element:last-child > p:after
+              content: " [ ■ STOP ]"
 
-    position relative
-    flex-row()
-    justify-content space-between
-    // align-items stretch
-    border-bottom 166px solid transparent // margin-bottom get's ignored with .page pos:absolute
-    padding-top icon-height
+        .add-item
+          margin-bottom 3*pad
 
-    &:before
-      @extends h5
-      width icon-width
-      // height icon-height
-      position absolute
-      top 0
-      left "calc(50% - (%s / 2))" % icon-width
-      padding-top "calc(%s - 2em)" % icon-height
-      asset('read-decision-logo.svg')
-      background-position "center calc(%s - %s - %s)" % (icon-height 2em 55px)
-      color @css { rgba(var(--textColorRgb), .75) }
-      text-transform uppercase
-      font-family "Merriweather Sans"
-      font-weight 300
-      text-align center
+        .error
+          @extends p
+          padding-left pad
+          border-left pad solid var(--alert)
 
-    button
-      // width calc(50% - 8px)
-      @extends .word-break
-      width 154px
-      height @width
-      min-width (maxWidth / 3)
-      max-width s('calc((%s / 2) - %s)', maxWidth, gap)
-      min-height @min-width
-      max-height @max-width
-      // padding (24 / baseFontSize)rem
-      padding 24px 20px
-      margin auto
-      border 1.5px solid @css { rgba(var(--textColorRgb), .75) }
-      border-radius (30 / baseFontSize)rem
-      background var(--decisionButtonBg)
+      .next.links
+        icon-width = 250px
+        icon-height = 130px
 
-      &:not(:last-child)
-        margin-right gap
+        position relative
+        flex-row()
+        justify-content space-between
+        // align-items stretch
+        border-bottom 166px solid transparent // margin-bottom get's ignored with .page pos:absolute
+        padding-top icon-height
 
-      &:disabled
-        color @css { rgba(var(--textColorRgb), .75) }
+        &:before
+          @extends h5
+          width icon-width
+          // height icon-height
+          position absolute
+          top 0
+          left "calc(50% - (%s / 2))" % icon-width
+          padding-top "calc(%s - 2em)" % icon-height
+          asset('read-decision-logo.svg')
+          background-position "center calc(%s - %s - %s)" % (icon-height 2em 55px)
+          color @css { rgba(var(--textColorRgb), .75) }
+          text-transform uppercase
+          font-family "Merriweather Sans"
+          font-weight 300
+          text-align center
 
-      &.selected
-        color var(--fgColorInverse)
-        background var(--bgColorInverse)
+        button
+          // width calc(50% - 8px)
+          @extends .word-break
+          width 154px
+          height @width
+          min-width (maxWidth / 3)
+          max-width s('calc((%s / 2) - %s)', maxWidth, gap)
+          min-height @min-width
+          max-height @max-width
+          // padding (24 / baseFontSize)rem
+          padding 24px 20px
+          margin auto
+          border 1.5px solid @css { rgba(var(--textColorRgb), .75) }
+          border-radius (30 / baseFontSize)rem
+          background var(--decisionButtonBg)
+
+          &:not(:last-child)
+            margin-right gap
+
+          &:disabled
+            color @css { rgba(var(--textColorRgb), .75) }
+
+          &.selected
+            color var(--fgColorInverse)
+            background var(--bgColorInverse)
 

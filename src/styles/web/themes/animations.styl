@@ -1,0 +1,36 @@
+z = 150px
+main
+  perspective 1000px
+
+.page-enter-active, .page-leave-active
+  transition transform .4s ease-in-out //cubic-bezier(0, 0.55, 0.45, 1)
+.page-enter
+  transform translate3d(110vw, 0, z*-1)
+.page-enter-to
+  transform translate3d(0, 0, 0)
+.page-leave
+  transform translate3d(0, 0, 0)
+.page-leave-to
+  transform translate3d(110vw, 0, z*-1)
+
+.start
+  &.page-enter
+    transform translate3d(-100vw, 0, z) rotateY(-90deg)
+  &.page-enter-to
+    transform translate3d(0, 0, 0) rotateY(0deg)
+  &.page-leave
+    transform translate3d(0, 0, 0) rotateY(0deg)
+  &.page-leave-to
+    transform translate3d(-100vw, 0, z) rotateY(-90deg)
+
+.section-enter-active, .section-leave-active
+  transition transform .4s cubic-bezier(0, 0.55, 0.45, 1)
+.section-enter
+  transform translate3d(100vw, 0, 0)
+.section-enter-to
+  transform translate3d(0, 0, 0)
+.section-leave
+  transform translate3d(0, 0, 0)
+.section-leave-to
+  transform translate3d(-100vw, 0, 0)
+

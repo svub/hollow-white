@@ -23,28 +23,4 @@ html, body, main
 @import 'start'
 @import 'read'
 @import 'overlays'
-
-z = 100px
-main
-  perspective 1000px
-
-.pages-enter-active, .pages-leave-active
-  transition transform .4s cubic-bezier(0, 0.55, 0.45, 1)
-.pages-enter
-  transform translate3d(100vw, 0, z)
-.pages-enter-to
-  transform translate3d(0, 0, 0)
-.pages-leave
-  transform translate3d(0, 0, 0)
-.pages-leave-to
-  transform translate3d(100vw, 0, z)
-
-.start
-  &.pages-enter
-    transform translate3d(-100vw, 0, z*-1)
-  &.pages-enter-to
-    transform translate3d(0, 0, 0)
-  &.pages-leave
-    transform translate3d(0, 0, 0)
-  &.pages-leave-to
-    transform translate3d(-100vw, 0, z*-1)
+@import 'animations'
