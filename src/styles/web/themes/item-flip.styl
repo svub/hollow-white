@@ -1,0 +1,29 @@
+.item
+  perspective 1000px
+  height 10rem
+
+  &:not(.flipped) .flipper
+    transform rotateY(180deg)
+
+  .flipper
+    transition 10s
+    transform-style preserve-3d
+    display grid
+    grid-template "a"
+    transform-origin 50% 0
+    height 100%
+    overflow h
+
+    .title, .content
+      backface-visibility hidden
+      grid-area a
+      top 0
+      width 100%
+
+    .title
+      z-index 2
+      transform rotateY(180deg)
+
+    .content
+      transform rotateY(0deg)
+      overflow auto
