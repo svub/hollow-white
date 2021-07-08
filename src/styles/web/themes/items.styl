@@ -1,46 +1,48 @@
 @import '../../macros'
 @import '../../vars'
+@import 'item-flip'
 
 items = bag bracelet bubblegum cheesecake chest chest-old coffee coin crepe end first-aid fox ghostfellows gin heart ink key key-rose lordneon maevia matches pete-letter photo-ella photo-ella-old propaganda recorder ringofrose rose secret-message splitter-judy splitter-recorder
 
 .item
-  flex-column()
   height toRem(402)
   max-height 500px
-  margin-top toRem(40)
-  border-radius toRem(30)
-  border 1px solid var(--itemOutline)
-  background var(--bgColor)
-  rawAsset('/assets/items/card/stars@2x.jpg')
-  background-size cover
-  text-align center;
 
-  .title
-    flex-column()
-    height 100%
+  .flipper
+    margin-top toRem(40)
+    border-radius toRem(30)
+    border 1px solid var(--itemOutline)
+    background var(--bgColor)
+    rawAsset('/assets/items/card/stars@2x.jpg')
+    background-size cover
+    text-align center;
 
-    &:before
-      content ''
-      flex 1
-      margin toRem(65) toRem(42) toRem(16)
-      background-size contain
-      background-position center
+    .title
+      flex-column()
+      height 100%
 
-    .number
-      display none
-
-    h3
-      @extends h5
       &:before
-        content 'Gegenstand'
-        display block
-        @extends .label
-        font-size toRem(12)
-        line-height toRem(20)
-        font-weight 300
+        content ''
+        flex 1
+        margin toRem(65) toRem(42) toRem(16)
+        background-size contain
+        background-position center
 
-  .content
-    display none
+      .number
+        display none
+
+      h3
+        @extends h5
+        &:before
+          content 'Gegenstand'
+          display block
+          @extends .label
+          font-size toRem(12)
+          line-height toRem(20)
+          font-weight 300
+
+    .content
+      padding 1rem
 
 for item in items
   .item.{item} .title:before
