@@ -67,6 +67,11 @@ const find = (chapterId?: string | null, sectionId?: string | null): Position =>
   return { chapter, section };
 };
 
+const scrollUpThen = (callback: Function, wait = 100) => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  setTimeout(callback, wait);
+};
+
 export default new Vuex.Store({
   state,
   mutations: {
@@ -141,8 +146,9 @@ export default new Vuex.Store({
   actions: {
     page({ commit }, page) {
       if (['start', 'read', 'tester'].indexOf(page) < 0) error('Page not found', page);
-      commit('page', { page });
-      window.scrollTo(0, 0);
+      scrollUpThen(() => {
+        commit('page', { page });
+      });
     },
     overlay({ commit }, overlay: string | { overlay: string; data: any } = '') {
       const entry = typeof overlay === 'string' ? { overlay, data: undefined } : overlay;
@@ -160,9 +166,10 @@ export default new Vuex.Store({
       dispatch('page', 'read');
     },
     goto({ commit, state }, link: Reference) {
-      commit('setSection', link);
-      if (!inPath(link, state.path)) commit('addToPath');
-      window.scrollTo(0, 0);
+      scrollUpThen(() => {
+        commit('setSection', link);
+        if (!inPath(link, state.path)) commit('addToPath');
+      }, 250); // 250 is just a guess
     },
     changeState({ commit }, payload: { state: ChangeState }) {
       commit('changeState', payload);
