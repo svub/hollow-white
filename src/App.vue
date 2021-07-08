@@ -40,7 +40,7 @@ import { State, Action } from "vuex-class";
 import book from "./book";
 import { clone, logJson, warn } from "./shared/util";
 import appState from "./store";
-import { Chapter, Option } from "./shared/entities";
+import { Option } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
 import Items from './components/overlays/Items.vue';
 import Credits from './components/overlays/Credits.vue';

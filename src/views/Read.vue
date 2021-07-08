@@ -7,21 +7,23 @@
       button.items(v-if="config.items && itemCount > 0" @click="overlay('items')")
       button.chapters(@click="overlay('chapters')")
 
-  .title
-    //- .icon icon
-    .position(v-if="feedbackEnabled") {{ position.chapter.id }}-{{ position.section.id }}
-    h2(v-if="isFirst") {{ position.chapter.title }}
-    h3 {{ position.section.title }}
+  .content
+    transition(name="section")
+      .section(:key="`${position.chapter.id}-${position.section.id}`")
+        .title
+          //- .icon icon
+          .position(v-if="feedbackEnabled") {{ position.chapter.id }}-{{ position.section.id }}
+          h2(v-if="isFirst") {{ position.chapter.title }}
+          h3 {{ position.section.title }}
 
-  transition(name="section")
-    TextElement.text(:elements="position.section.elements" :key="position.section.id")
+          TextElement.text(:elements="position.section.elements")
 
-  .next.links(:class="'count-'+position.section.next.length")
-    button(
-      v-for="link in position.section.next",
-      @click="open(link)"
-      :disabled="!enabled(link)"
-      :class="{ selected: selected(link) }") {{ link.title }}
+        .next.links(:class="'count-'+position.section.next.length")
+          button(
+            v-for="link in position.section.next",
+            @click="open(link)"
+            :disabled="!enabled(link)"
+            :class="{ selected: selected(link) }") {{ link.title }}
 </template>
 
 <script lang="ts">
