@@ -67,9 +67,17 @@ const find = (chapterId?: string | null, sectionId?: string | null): Position =>
   return { chapter, section };
 };
 
-const scrollUpThen = (callback: Function, wait = 100) => {
+// cf. https://stackoverflow.com/a/55686711/548955
+const scrollUpThen = (callback: Function) => {
+  const onScroll = function () {
+    if (window.pageYOffset < 1) {
+      window.removeEventListener('scroll', onScroll);
+      callback();
+    }
+  }
+  window.addEventListener('scroll', onScroll)
+  onScroll()
   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-  setTimeout(callback, wait);
 };
 
 export default new Vuex.Store({
@@ -169,7 +177,7 @@ export default new Vuex.Store({
       scrollUpThen(() => {
         commit('setSection', link);
         if (!inPath(link, state.path)) commit('addToPath');
-      }, 250); // 250 is just a guess
+      });
     },
     changeState({ commit }, payload: { state: ChangeState }) {
       commit('changeState', payload);
