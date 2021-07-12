@@ -8,7 +8,7 @@
       button.chapters(@click="overlay('chapters')")
 
   .content
-    transition(name="section")
+    transition(name="section" mode="out-in")
       .section(:key="`${position.chapter.id}-${position.section.id}`")
         .title
           //- .icon icon
