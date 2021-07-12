@@ -24,47 +24,50 @@ export function evaluateCondition(condition: string, store: Store<AppState>): bo
   const appState = store.state;
   const name = elements[1].toLowerCase();
   const type = elements[0].toLowerCase();
-  log("if.evaluate: type, var, rest", type, name, elements.slice(2));
   /* eslint-disable no-case-declarations */
-  switch (type) {
-    case "state":
-      if (elements.length != 4) {
-        error(`Failed to parse condition "${condition}": should be four elements; example: STATE x > 0`);
-      }
-      if (!appState.states[name]) {
-        warn(`State ${elements[1]} not found`);
-      }
-      const state = appState.states[name]?.value ?? 0;
-      const value = parseInt(elements[3]);
-      log("if.evaluate: state, value", state, value);
-      switch (elements[2]) {
-        case "=":
-        case "==":
-        case "===":
-          return state == value;
-        case "<":
-          return state < value;
-        case "<=":
-          return state <= value;
-        case ">":
-          return state > value;
-        case ">=":
-          return state >= value;
-        case "!=":
-        case "!==":
-          return state != value;
-        default:
-          throw new Error(
-            `Operator ${elements[2]} not supported. Support: =, <, <=, >, >=, !=`
-          );
-      }
-    case "item":
-      return !!appState.items[name];
-    default:
-      throw new Error(
-        `Type ${elements[0]} not supported. Supported: state, item`
-      );
-  }
+  const evaluate = () => {
+    switch (type) {
+      case "state":
+        if (elements.length != 4) {
+          error(`Failed to parse condition "${condition}": should be four elements; example: STATE x > 0`);
+        }
+        if (!appState.states[name]) {
+          warn(`State ${elements[1]} not found`);
+        }
+        const state = appState.states[name]?.value ?? 0;
+        const value = parseInt(elements[3]);
+        log("if.evaluate: state, value", state, value);
+        switch (elements[2]) {
+          case "=":
+          case "==":
+          case "===":
+            return state == value;
+          case "<":
+            return state < value;
+          case "<=":
+            return state <= value;
+          case ">":
+            return state > value;
+          case ">=":
+            return state >= value;
+          case "!=":
+          case "!==":
+            return state != value;
+          default:
+            throw new Error(
+              `Operator ${elements[2]} not supported. Support: =, <, <=, >, >=, !=`
+            );
+        }
+      case "item":
+        return appState.items.indexOf(name) >= 0;
+      default:
+        throw new Error(
+          `Type ${elements[0]} not supported. Supported: state, item`
+        );
+    }
+  };
+  const result = evaluate();
+  log("if.evaluate: type, var, rest, result", type, name, elements.slice(2), result);
 }
 
 @Component({
