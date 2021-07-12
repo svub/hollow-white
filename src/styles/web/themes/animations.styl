@@ -3,7 +3,7 @@ body
   perspective 1000px
 
 .page-enter-active, .page-leave-active
-  transition transform 40s ease-in-out
+  transition transform .4s ease-in-out
 .page-enter
   transform translate3d(110vw, 0, z*-1)
 .page-enter-to
@@ -23,14 +23,25 @@ body
   &.page-leave-to
     transform translate3d(-100vw, 0, z) rotateY(-90deg)
 
-.section-enter-active, .section-leave-active
-  transition transform .4s cubic-bezier(0, 0.55, 0.45, 1)
-.section-enter
-  transform translate3d(100vw, 0, 0)
-.section-enter-to
-  transform translate3d(0, 0, 0)
-.section-leave
-  transform translate3d(0, 0, 0)
-.section-leave-to
-  transform translate3d(-100vw, 0, 0)
+.section-enter-active
+  animation .4s section-in
+.section-leave-active
+  animation .3s section-out
 
+@keyframes section-in
+  from
+    transform translate3d(100vw, 0, 0) rotateY(20deg)
+    opacity .5
+
+  to
+    transform translate3d(0, 0, 0) rotateY(0deg)
+    opacity 1
+
+@keyframes section-out
+  from
+    transform translate3d(0, 0, 0)
+    opacity 1
+
+  to
+    transform translate3d(-100vw, 0, 0)
+    opacity 0
