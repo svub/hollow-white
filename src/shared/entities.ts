@@ -107,6 +107,7 @@ export interface Config {
   options: Option[];
   feedbackMode?: FeedbackMode;
   language?: string; // default 'en'
+  pageScrollUpDelay?: number; // delay to allow for page change animations
 }
 
 // text elements
