@@ -106,9 +106,9 @@ export default class Read extends Vue {
     return this.position.chapter.sections.indexOf(this.position.section) === 0;
   }
 
-  @Watch('position') pageChange() {
-    logJson('page change', this.position.section);
-  }
+  // @Watch('position') pageChange() {
+  //   logJson('page change', this.position.section);
+  // }
 }
 </script>
 
