@@ -73,7 +73,7 @@
         justify-content space-between
         // align-items stretch
         border-bottom 166px solid transparent // margin-bottom get's ignored with .page pos:absolute
-        padding-top icon-height
+        padding-top "calc(%s + 14px)" % icon-height
 
         &:before
           @extends h5
@@ -87,7 +87,8 @@
           background-position "center calc(%s - %s - %s)" % (icon-height 2em 55px)
           color @css { rgba(var(--textColorRgb), .75) }
           text-transform uppercase
-          font-family "Merriweather Sans"
+          // font-family "Merriweather Sans"
+          font-family var(--fontSans)
           font-weight 300
           text-align center
 
