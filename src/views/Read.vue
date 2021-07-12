@@ -8,7 +8,7 @@
       button.chapters(@click="overlay('chapters')")
 
   .content
-    transition(name="section")
+    transition(name="section" mode="out-in")
       .section(:key="`${position.chapter.id}-${position.section.id}`")
         .title
           //- .icon icon
@@ -106,9 +106,9 @@ export default class Read extends Vue {
     return this.position.chapter.sections.indexOf(this.position.section) === 0;
   }
 
-  @Watch('position') pageChange() {
-    logJson('page change', this.position.section);
-  }
+  // @Watch('position') pageChange() {
+  //   logJson('page change', this.position.section);
+  // }
 }
 </script>
 
