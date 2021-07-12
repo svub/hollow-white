@@ -14392,7 +14392,8 @@ const book: Book = (({
     "-testing"
    ]
   },
-  "language": "de"
+  "language": "de",
+  "pageScrollUpDelay": 300
  }
 }) as unknown) as Book;
 
