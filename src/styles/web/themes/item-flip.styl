@@ -2,7 +2,7 @@
   perspective 1000px
 
   &:not(.flipped) .flipper
-    transform rotateY(180deg)
+    transform rotateY(179.9999deg) // iOS Safari hack, 180 deg makes the SVG disappear.
 
   .flipper
     transition 1s cubic-bezier(0.25, 0.25, 0.45, 1) //ease-in-out
