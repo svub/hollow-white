@@ -91,7 +91,6 @@ export default new Vuex.Store({
       state.overlayData = data;
     },
     setSection(state, { chapterId, sectionId }: { chapterId: string; sectionId: string }) {
-
       state.position = { chapterId, sectionId };
     },
     addToPath({ position, path }) {
@@ -108,9 +107,9 @@ export default new Vuex.Store({
       const currentState: State = appState.states[state.id] ?? { id: state.id, value: 0 };
       logJson('changeState from', currentState, 'to', state);
       if (state.modifier.indexOf('=') > -1) // allow =1 to set a state
-      currentState.value = parseInt(state.modifier.replace('=', ''));
+        currentState.value = parseInt(state.modifier.replace('=', ''));
       else
-      currentState.value += parseInt(state.modifier);
+        currentState.value += parseInt(state.modifier);
       logJson('changeState result', currentState);
       appState.states = {
         ...appState.states,
@@ -174,10 +173,14 @@ export default new Vuex.Store({
       dispatch('page', 'read');
     },
     goto({ commit, state }, link: Reference) {
-      scrollUpThen(() => {
-        commit('setSection', link);
-        if (!inPath(link, state.path)) commit('addToPath');
-      });
+      // const scrollUp = () => {
+      //   window.scrollTo(0, 0);
+      //   window.removeEventListener('animation', scrollUp);
+      // };
+      // window.addEventListener('animationend', scrollUp);
+      setTimeout(() => window.scrollTo(0, 0), book.config.pageScrollUpDelay ?? 1);
+      commit('setSection', link);
+      if (!inPath(link, state.path)) commit('addToPath');
     },
     changeState({ commit }, payload: { state: ChangeState }) {
       commit('changeState', payload);
