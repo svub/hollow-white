@@ -1,7 +1,7 @@
 <template lang="pug">
 .else
   //- else {{ element.ifCondition }} = {{ !conditionFits }}
-  TextElement.text(v-if="!conditionFits", :elements="element.elements")
+  TextElement.text(v-if="conditionFits", :elements="element.elements")
 </template>
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
@@ -18,7 +18,7 @@ export default class ElseElement extends Vue {
   @Prop(Object) private element: Else;
 
   get conditionFits(): boolean {
-    return evaluateCondition(this.element.ifCondition, this.$store);
+    return !evaluateCondition(this.element.ifCondition, this.$store);
   }
 }
 </script>
