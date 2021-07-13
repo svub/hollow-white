@@ -68,6 +68,7 @@ export function evaluateCondition(condition: string, store: Store<AppState>): bo
   };
   const result = evaluate();
   log("if.evaluate: type, var, rest, result", type, name, elements.slice(2), result);
+  return result;
 }
 
 @Component({
