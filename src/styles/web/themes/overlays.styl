@@ -30,7 +30,7 @@ html.overlay-open
 
   .actions
     flex-row()
-    align-items flex-end
+    justify-content center
     position fixed
     bottom 0
     max-width maxWidth
@@ -40,6 +40,8 @@ html.overlay-open
 
     button.close
       @extends .outline-button
+      image-button('options-close-x.svg')
+      border-radius 50%
 
   &.chapters .list
     flex-column()
