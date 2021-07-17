@@ -40,7 +40,21 @@
           font-weight 300
 
     .content
-      padding 1rem
+      flex-column()
+
+      .text
+        flex 1
+        flex-column()
+        justify-content center
+        padding 2*pad
+
+        p, em
+          font-size toRem(17)
+        // p
+        //     color @css { rgba(var(--fgColorRgb), .65) }
+
+        //   em
+        //     color @css { rgba(var(--fgColorRgb), .95) }
 
 for item in items
   .item.{item} .title:before
