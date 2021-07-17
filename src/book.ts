@@ -161,6 +161,11 @@ const book: Book = (({
      "title": "Tankstelle verlassen",
      "elements": [
       {
+       "type": "state",
+       "id": "karma",
+       "modifier": "-1"
+      },
+      {
        "type": "paragraph",
        "text": "<p>Dir ist das alles nicht geheuer und du beschließt, die Tankstelle schleunigst zu verlassen.</p>"
       },
@@ -531,6 +536,11 @@ const book: Book = (({
      "id": "010",
      "title": "Eine ist Keine",
      "elements": [
+      {
+       "type": "state",
+       "id": "karma",
+       "modifier": "+1"
+      },
       {
        "type": "if",
        "condition": "ITEM matches",
@@ -1971,7 +1981,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "ITEM First-aid > 0",
+       "condition": "ITEM First-aid",
        "elements": [
         {
          "type": "paragraph",
@@ -1981,7 +1991,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "ITEM First-aid > 0",
+       "ifCondition": "ITEM First-aid",
        "elements": [
         {
          "type": "paragraph",
@@ -2076,6 +2086,11 @@ const book: Book = (({
        "modifier": "+1"
       },
       {
+       "type": "state",
+       "id": "karma",
+       "modifier": "+1"
+      },
+      {
        "type": "paragraph",
        "text": "<p>In Eile durchstöberst du einen Schrank und eine alte Holztruhe und findest paar alte Klamotten. Hose und Pullover sind dir beides zu groß, doch du bist froh, wieder etwas Trockenes am Leib zu spüren.</p>"
       },
@@ -2143,8 +2158,13 @@ const book: Book = (({
        "modifier": "+1"
       },
       {
+       "type": "state",
+       "id": "karma",
+       "modifier": "+1"
+      },
+      {
        "type": "if",
-       "condition": "ITEM First-aid > 0",
+       "condition": "ITEM First-aid",
        "elements": [
         {
          "type": "state",
@@ -2159,7 +2179,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "ITEM First-aid > 0",
+       "ifCondition": "ITEM First-aid",
        "elements": [
         {
          "type": "paragraph",
@@ -2204,7 +2224,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "ITEM First-aid > 0",
+       "condition": "ITEM First-aid",
        "elements": [
         {
          "type": "state",
@@ -2219,7 +2239,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "ITEM First-aid > 0",
+       "ifCondition": "ITEM First-aid",
        "elements": [
         {
          "type": "paragraph",
@@ -2282,6 +2302,11 @@ const book: Book = (({
       {
        "type": "state",
        "id": "snow",
+       "modifier": "-1"
+      },
+      {
+       "type": "state",
+       "id": "karma",
        "modifier": "-1"
       },
       {
@@ -2766,6 +2791,11 @@ const book: Book = (({
        "condition": "STATE Snow <= 0",
        "elements": [
         {
+         "type": "state",
+         "id": "karma",
+         "modifier": "-3"
+        },
+        {
          "type": "paragraph",
          "text": "<p>Es herrscht Totenstille in dem großen Anwesen, welche durch die knarzende Treppe, die du nach unten gehst, gebrochen wird. Du betrittst die Küche von Marie und Frank.</p>"
         },
@@ -2807,6 +2837,11 @@ const book: Book = (({
        "type": "else",
        "ifCondition": "STATE Snow <= 0",
        "elements": [
+        {
+         "type": "state",
+         "id": "karma",
+         "modifier": "+3"
+        },
         {
          "type": "paragraph",
          "text": "<p>Als du die Treppe nach unten in die Küche gehst, begrüßt dich Snow freudig aber noch schwach auf den Beinen.</p>"
@@ -3377,7 +3412,7 @@ const book: Book = (({
        "sectionId": "018"
       },
       {
-       "title": "»Sicherheitsvorschrift?«",
+       "title": "»Sicherheits­vorschrift?«",
        "chapterId": "3",
        "sectionId": "019"
       }
@@ -3407,7 +3442,7 @@ const book: Book = (({
        "sectionId": "018"
       },
       {
-       "title": "»Sicherheitsvorschrift?«",
+       "title": "»Sicherheits­vorschrift?«",
        "chapterId": "3",
        "sectionId": "019"
       }
@@ -3424,7 +3459,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "»Sicherheitsvorschrift?«",
+       "title": "»Sicherheits­vorschrift?«",
        "chapterId": "3",
        "sectionId": "019"
       }
@@ -3470,7 +3505,7 @@ const book: Book = (({
        "sectionId": "020"
       },
       {
-       "title": "»Verschwundene?«",
+       "title": "»Verschwun­dene?«",
        "chapterId": "3",
        "sectionId": "021"
       }
@@ -3629,6 +3664,11 @@ const book: Book = (({
      "title": "Dem Mann etwas geben",
      "elements": [
       {
+       "type": "state",
+       "id": "karma",
+       "modifier": "+1"
+      },
+      {
        "type": "paragraph",
        "text": "<p>Als du in deinen Taschen wühlst, merkst du, dass du nichts von Wert bei dir hast.</p>"
       },
@@ -3718,10 +3758,6 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>//ITEM stardustdiner</p>"
-      },
-      {
-       "type": "paragraph",
        "text": "<p>Leider reicht es nur, um sich kurz aufzuwärmen und auf der Toilette einen Schluck Leitungswasser zu trinken.</p>"
       },
       {
@@ -3774,7 +3810,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Jonys Geheimes Käsekuchen Rezept</p>"
+       "text": "<p>Johnnys Geheimes Käsekuchen Rezept</p>"
       },
       {
        "type": "paragraph",
@@ -3850,11 +3886,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Wir haben nicht oft neue Gesichter hier in der Stadt. Mein Name ist <em>Jony</em>, mir gehört der Laden«.</p>"
+       "text": "<p>»Wir haben nicht oft neue Gesichter hier in der Stadt. Mein Name ist <em>Johnny</em>, mir gehört der Laden«.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Jony beginnt zu erzählen:</p>"
+       "text": "<p>Johnny beginnt zu erzählen:</p>"
       },
       {
        "type": "paragraph",
@@ -3874,15 +3910,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Gespannt hörst du Jony zu und genießt den noch warmen Käsekuchen.</p>"
+       "text": "<p>Gespannt hörst du Johnny zu und genießt den noch warmen Käsekuchen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Der Kaffee aus dem Stardust ist ein Traum. Die Zeit vergeht wie im Flug und es ist Zeit&nbsp;aufzubrechen. Als du dich verabschiedest, bedankst du dich herzlich bei Jony.</p>"
+       "text": "<p>Der Kaffee aus dem Stardust ist ein Traum. Die Zeit vergeht wie im Flug und es ist Zeit&nbsp;aufzubrechen. Als du dich verabschiedest, bedankst du dich herzlich bei Johnny.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Bis bald, Ella, schön dich kennengelernt zu haben«, winkt Jony und wischt mit einem nassen Lappen über den Tresen.</p>"
+       "text": "<p>»Bis bald, Ella, schön dich kennengelernt zu haben«, winkt Johnny und wischt mit einem nassen Lappen über den Tresen.</p>"
       },
       {
        "type": "paragraph",
@@ -4484,6 +4520,11 @@ const book: Book = (({
      "title": "Ins Bett gehen",
      "elements": [
       {
+       "type": "state",
+       "id": "karma",
+       "modifier": "-1"
+      },
+      {
        "type": "paragraph",
        "text": "<p>Du wünscht Patricia eine gute Nacht und schließt die Tür hinter dir ab.</p>"
       },
@@ -5026,11 +5067,6 @@ const book: Book = (({
      "title": "Patricias Hand nehmen",
      "elements": [
       {
-       "type": "state",
-       "id": "karma",
-       "modifier": "+1"
-      },
-      {
        "type": "paragraph",
        "text": "<p>Du nimmst Patricias Hand und ihr betrachtet das Grab von Patricias und Alberts Eltern. Ihr steht eine kurze Weile in Stille dort und sagt kein Wort, bis Patricia das Schweigen bricht.</p>"
       },
@@ -5191,7 +5227,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Das Rezept hat mir Jony vom <em>Stardust Diner</em>&nbsp;verraten, als ich früher bei ihm als Aushilfe an der Bar gearbeitet habe. Ist schon lange her, aber das Rezept ist immer noch ein Klassiker.«</p>"
+       "text": "<p>»Das Rezept hat mir Johnny vom <em>Stardust Diner</em>&nbsp;verraten, als ich früher bei ihm als Aushilfe an der Bar gearbeitet habe. Ist schon lange her, aber das Rezept ist immer noch ein Klassiker.«</p>"
       },
       {
        "type": "paragraph",
@@ -5258,7 +5294,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Das Rezept hat mir Jony vom <em>Stardust Diner</em>&nbsp;verraten, als ich früher bei ihm als Aushilfe an der Bar gearbeitet habe. Ist schon lange her, aber das Rezept ist immer noch ein Klassiker.«</p>"
+       "text": "<p>»Das Rezept hat mir Johnny vom <em>Stardust Diner</em>&nbsp;verraten, als ich früher bei ihm als Aushilfe an der Bar gearbeitet habe. Ist schon lange her, aber das Rezept ist immer noch ein Klassiker.«</p>"
       },
       {
        "type": "paragraph",
@@ -5286,6 +5322,11 @@ const book: Book = (({
      "title": "»Lieber eine Zigarette!«",
      "elements": [
       {
+       "type": "state",
+       "id": "karma",
+       "modifier": "-1"
+      },
+      {
        "type": "paragraph",
        "text": "<p>»Ich selbst rauche nicht mehr. Du weißt ja, wie schädlich es sein kann, aber ich denke, wir haben noch eine Reservepackung«, sagt Albert.</p>"
       },
@@ -5299,7 +5340,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "ITEM ghostfellow > 0",
+       "condition": "ITEM ghostfellow",
        "elements": [
         {
          "type": "paragraph",
@@ -5309,7 +5350,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "ITEM match > 0",
+       "condition": "ITEM match",
        "elements": [
         {
          "type": "paragraph",
@@ -5319,7 +5360,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "ITEM match > 0",
+       "ifCondition": "ITEM match",
        "elements": [
         {
          "type": "paragraph",
@@ -5913,7 +5954,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Vorbeischleichen",
+       "title": "Vorbei­schleichen",
        "chapterId": "5",
        "sectionId": "002"
       },
@@ -7923,7 +7964,7 @@ const book: Book = (({
        "sectionId": "002"
       },
       {
-       "title": "»Konzentriere dich, Dean!«",
+       "title": "»Konzen­triere dich, Dean!«",
        "chapterId": "6",
        "sectionId": "003"
       }
@@ -7953,7 +7994,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "»Konzentriere dich, Dean!«",
+       "title": "»Konzen­triere dich, Dean!«",
        "chapterId": "6",
        "sectionId": "003"
       }
@@ -8274,6 +8315,11 @@ const book: Book = (({
      "id": "008",
      "title": "»Nicht einschüchtern lassen!«",
      "elements": [
+      {
+       "type": "state",
+       "id": "karma",
+       "modifier": "-1"
+      },
       {
        "type": "paragraph",
        "text": "<p>Der gepanzerte Rangoberst zählt bis null runter, geht mit erhobener Schusswaffe zielgerichtet nach vorne und schießt ohne mit der Wimper zu zucken direkt zwei Schüsse ab.</p>"
@@ -9016,7 +9062,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Rose <=0",
+       "condition": "STATE Rose <= 0",
        "elements": [
         {
          "type": "paragraph",
@@ -9062,7 +9108,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Eilig werden die wichtigsten Sachen gepackt. Hastig sucht ihr Aufzeichnungen, Unterlagen und Notizen zusammen. »Hier, Judy!«, Charly reicht dir sein Feuerzeug. Ihr dürft keine Spuren hinterlassen. Einige Unterlagen versteckt ihr in einigen Koffern.</p>"
+       "text": "<p>Eilig werden die wichtigsten Sachen gepackt. Hastig sucht ihr Aufzeichnungen, Unterlagen und Notizen zusammen. »Hier, Judy!«, Charlie reicht dir sein Feuerzeug. Ihr dürft keine Spuren hinterlassen. Einige Unterlagen versteckt ihr in einigen Koffern.</p>"
       },
       {
        "type": "paragraph",
@@ -9774,7 +9820,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "ITEM photo-ella > 0",
+       "condition": "ITEM photo-ella",
        "elements": [
         {
          "type": "paragraph",
@@ -10532,7 +10578,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Zurückweichen",
+       "title": "Zurück­weichen",
        "chapterId": "8",
        "sectionId": "009"
       },
@@ -10900,7 +10946,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Du legst gerade deine Schürze ab, als Jony der Besitzer des <em>Stardust Diners</em> die Küche betritt. »Elli, was soll ich nur ohne Dich machen?«</p>"
+       "text": "<p>Du legst gerade deine Schürze ab, als Johnny, der Besitzer des <em>Stardust Diners</em>, die Küche betritt. »Elli, was soll ich nur ohne Dich machen?«</p>"
       },
       {
        "type": "paragraph",
@@ -10908,7 +10954,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Jony, es ist ja nur für eine kurze Zeit. Du wirst sehen – bald bin ich wieder zurück«, sagst du.</p>"
+       "text": "<p>»Johnny, es ist ja nur für eine kurze Zeit. Du wirst sehen – bald bin ich wieder zurück«, sagst du.</p>"
       },
       {
        "type": "paragraph",
@@ -10916,7 +10962,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Sag deinem Mann, dass er schön auf dich aufpassen soll, nicht dass mir was zu Ohren kommt«, lächelt Jony&nbsp;und umarmt dich herzlich.</p>"
+       "text": "<p>»Sag deinem Mann, dass er schön auf dich aufpassen soll, nicht dass mir was zu Ohren kommt«, lächelt Johnny&nbsp;und umarmt dich herzlich.</p>"
       },
       {
        "type": "paragraph",
@@ -10924,7 +10970,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Mit einem zusichernden Blick gibst du&nbsp;Jony&nbsp;einen Kuss auf die Wange und verlässt das Diner.</p>"
+       "text": "<p>Mit einem bestätigenden Blick gibst du&nbsp;Johnny&nbsp;einen Kuss auf die Wange und verlässt das Diner.</p>"
       },
       {
        "type": "paragraph",
@@ -11638,7 +11684,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du erzählst Hannah deine ganze Geschichte, beginnend mit dem Tag, an dem du ohne Erinnerung im verschneiten Gebiet von <em>White Valley</em>&nbsp;aufgewacht bist, auf der Suche nach ihr und deiner Identität. Auch von deinen Begegnungen mit Albert, Snow, Frank, Marie, Jony und den letzten Jahren in <em>Snow Peaks</em> berichtest du.</p>"
+       "text": "<p>Du erzählst Hannah deine ganze Geschichte, beginnend mit dem Tag, an dem du ohne Erinnerung im verschneiten Gebiet von <em>White Valley</em>&nbsp;aufgewacht bist, auf der Suche nach ihr und deiner Identität. Auch von deinen Begegnungen mit Albert, Snow, Frank, Marie, Johnny und den letzten Jahren in <em>Snow Peaks</em> berichtest du.</p>"
       },
       {
        "type": "if",
@@ -12591,7 +12637,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "ITEM bracelet > 0",
+       "condition": "ITEM bracelet",
        "elements": [
         {
          "type": "paragraph",
@@ -12601,7 +12647,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "ITEM heart > 0",
+       "condition": "ITEM heart",
        "elements": [
         {
          "type": "paragraph",
@@ -13764,24 +13810,65 @@ const book: Book = (({
      "title": "Ein Ende und ein Anfang",
      "elements": [
       {
-       "type": "paragraph",
-       "text": "<p>Glückwunsch! Du hast eines der Enden von <em>Hollow White</em>&nbsp;erreicht.</p>"
+       "type": "if",
+       "condition": "STATE karma > 3",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>Gratulation! Du hast eines der Enden erreicht.</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Deine Entscheidungen konnten das Schlimmste verhindern. Die Welt ist vorerst gerettet. Die Geschichte von <em>Hollow White</em>&nbsp;hat doch noch ein gutes Ende genommen.</p>"
+        },
+        {
+         "type": "addItem",
+         "id": "end"
+        }
+       ]
       },
       {
-       "type": "addItem",
-       "id": "end"
+       "type": "else",
+       "ifCondition": "STATE karma > 3",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>Gratulation! Du hast eines der Enden erreicht.</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Deine Entscheidungen konnten das Schlimmste leider nicht verhindern. Der Welt steht eine düstere Zukunft bevor. Die Geschichte von <em>Hollow White</em>&nbsp;hat ein tragisches Ende genommen.</p>"
+        },
+        {
+         "type": "addItem",
+         "id": "badend"
+        }
+       ]
       },
       {
        "type": "paragraph",
-       "text": "<p>Doch <em>Hollow White</em>&nbsp;ist nicht zu Ende. Du kannst das Abenteuer wiederholen und mit&nbsp;<em>unterschiedlichen Entscheidungen</em>&nbsp;ein anderes Ende erreichen. Oder du machst dich auf die Suche nach den restlichen versteckten <em>Sammelkarten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Beachte nur, dass deine Sammelobjekte beim Löschen der App verloren gehen.</p>"
+       "text": "<p>Doch <em>Hollow White</em>&nbsp;ist nicht zu Ende. Du kannst das Abenteuer wiederholen und mit&nbsp;<em>unterschiedlichen Entscheidungen</em>&nbsp;ein anderes Ende erreichen. Oder du machst dich auf die Suche nach den restlichen versteckten <em>Sammelkarten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Beachte nur, dass diese beim Löschen des Speicherstandes oder der App verloren gehen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Bevor wir zur <em>letzten Entscheidung</em>&nbsp;kommen, ist es an der Zeit für ein persönliches <em>Nachwort</em>:</p>"
-      },
+       "text": "<p>Bevor wir zur <em>letzten Entscheidung</em>&nbsp;kommen, ist es an der Zeit für ein persönliches <em>Nachwort</em>.</p>"
+      }
+     ],
+     "next": [
+      {
+       "title": "Nachwort",
+       "chapterId": "13",
+       "sectionId": "002"
+      }
+     ]
+    },
+    {
+     "id": "002",
+     "title": "Nachwort",
+     "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Danke an alle Leser, die bis hierher <em>Hollow White</em> gelesen haben. Das bedeutet uns wirklich sehr viel.</p>"
+       "text": "<p>Danke an alle Leser:innen, die bis hierher <em>Hollow White</em> gelesen haben. Das bedeutet uns wirklich sehr viel.</p>"
       },
       {
        "type": "paragraph",
@@ -13789,7 +13876,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Motivation war es, eine fiktive spannende Geschichte mit einer eigenen Art von Schreibstil zu erschaffen, in welcher die Leser selbst ins Geschehen eintauchen und sich mit den Charakteren und deren Entscheidungen verbinden.</p>"
+       "text": "<p>Motivation war es, eine fiktive spannende Geschichte mit einer eigenen Art von Schreibstil zu erschaffen, in welcher die Leser:innen selbst ins Geschehen eintauchen und sich mit den Charakteren und deren Entscheidungen verbinden.</p>"
       },
       {
        "type": "paragraph",
@@ -13848,7 +13935,7 @@ const book: Book = (({
       {
        "title": "Jetzt aktiv werden und unterstützen",
        "chapterId": "13",
-       "sectionId": "002"
+       "sectionId": "003"
       },
       {
        "title": "Hollow White neu beginnen",
@@ -13858,7 +13945,7 @@ const book: Book = (({
      ]
     },
     {
-     "id": "002",
+     "id": "003",
      "title": "Jetzt aktiv werden und unterstützen",
      "elements": [
       {
@@ -13875,7 +13962,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Du kannst auch <em>Hollow White</em>&nbsp;mit Freunden teilen [auf Twitter teilen]() oder einfach einen <a href=\"https://hollowwhite.de\">Link zur Hollow White Website</a> schicken.</p>"
+         "text": "<p>Du kannst auch <em>Hollow White</em>&nbsp;mit Freunden teilen [auf Twitter teilen]() oder einfach einen&nbsp;<a href=\"https://hollowwhite.de\">Link zur Hollow White Website</a> schicken.</p>"
         }
        ]
       },
@@ -14025,7 +14112,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine Packung Streichhölzer mit Wegbeschreibung nach Snow Peaks, aus dem Motel Midnight.</p>"
+      "text": "<p>Eine Packung Streichhölzer aus dem <em>Motel Midnight</em>, mit Wegbeschreibung nach <em>Snow Peaks</em>.</p>"
      }
     ]
    },
@@ -14036,7 +14123,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine Packung sehr starker Zigaretten.</p>"
+      "text": "<p>Eine Packung Zigaretten der Marke <em>Ghost Fellows</em>.</p>"
      }
     ]
    },
@@ -14047,7 +14134,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Der Song <em>The Ride</em>&nbsp;von <em>Lord Neon</em>.</p>"
      }
     ]
    },
@@ -14058,7 +14145,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Ein Polaroid-Foto aufgenommen von Albert. Neben dem <em>Ice River</em>&nbsp;und der weiten Landschaft von <em>White Valley</em>, ist im Vordergrund leicht unscharf <em>Ella</em>&nbsp;darauf abgebildet. Sehr künstlerisch.</p>"
      }
     ]
    },
@@ -14069,7 +14156,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Ein Erste-Hilfe-Kasten mit Desinfiziermittel, Schere und Verbänden etc.</p>"
      }
     ]
    },
@@ -14080,7 +14167,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Verdammt guter Kaffee!</p>"
      }
     ]
    },
@@ -14091,7 +14178,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Eine Münze mit einem Hexagon und den Initialen<em>G. M</em>.</p>"
      }
     ]
    },
@@ -14102,18 +14189,18 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Eine weiße Rose aus der Kuppel von <em>Snow Peaks</em>.</p>"
      }
     ]
    },
    {
     "id": "cheesecake",
     "category": "",
-    "title": "Jonys Käsekuchen",
+    "title": "Johnnys Käsekuchen",
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Der beste Käsekuchen aus dem <em>Stardust Diner</em>.</p>"
      }
     ]
    },
@@ -14124,7 +14211,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Ein altes Crêpe-Rezept von Albert.</p>"
      }
     ]
    },
@@ -14135,7 +14222,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Ein feiner Gin aus <em>Snow Peaks</em>. Streng limitiert.</p>"
      }
     ]
    },
@@ -14146,7 +14233,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Ein mysteriöser Splitter aus deinem Tonbandgerät.</p>"
      }
     ]
    },
@@ -14157,7 +14244,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Judys Splitter aus dem <em>Frozen Lake</em>.</p>"
      }
     ]
    },
@@ -14168,7 +14255,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Eine besondere Tinte, die unter die Haut gestochen wird. Der <em>Schwarzen Kreis</em>&nbsp;setzt diese zur Authentifizierung und Rang-Zuordnung ein.</p>"
      }
     ]
    },
@@ -14179,7 +14266,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Roses Zimmerschlüssel der von ihrem Kater Platon verwahrt wird.</p>"
      }
     ]
    },
@@ -14190,7 +14277,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Ein sehr persönlicher Brief von Roses Mann <em>Pete</em>, denn er kurz vor seinem Tod verfasst hat.</p>"
      }
     ]
    },
@@ -14201,7 +14288,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Eine drohende Nachricht an <em>Georgy</em>&nbsp;vom <em>Schwarzen Kreis</em>.</p>"
      }
     ]
    },
@@ -14212,7 +14299,18 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Eine kleine Truhe mit den Buchstaben HW für <em>Hollow White</em>.</p>"
+     }
+    ]
+   },
+   {
+    "id": "photo-ella-old",
+    "category": "",
+    "title": "Foto",
+    "elements": [
+     {
+      "type": "paragraph",
+      "text": "<p>Ein altes Polaroid-Foto. Neben dem <em>Ice River</em>&nbsp;und der weiten Landschaft von <em>White Valley</em>, ist im Vordergrund leicht unscharf eine <em>unbekannte Frau</em>&nbsp;darauf abgebildet. Es wirkt sehr künstlerisch.</p>"
      }
     ]
    },
@@ -14223,7 +14321,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Ein goldener Ehering von Roses Mann <em>Pete</em>.</p>"
      }
     ]
    },
@@ -14234,7 +14332,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Ein aus Drähten und Kabeln geflochtenes Armband von der kleinen <em>Hannah</em>.</p>"
      }
     ]
    },
@@ -14245,7 +14343,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Ein Stein in Form eines Herzens. Gefunden von der kleinen <em>Hannah</em>&nbsp;in der Höhle am <em>Kalten Stern</em>.</p>"
      }
     ]
    },
@@ -14256,7 +14354,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Der Song <em>Waiting</em>&nbsp;von der Band <em>MAEVIA</em>.</p>"
      }
     ]
    },
@@ -14267,7 +14365,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Ein Propaganda-Zettel mit dem Erkennungszeichen des <em>Schwarzen Kreises</em>.</p>"
      }
     ]
    },
@@ -14278,7 +14376,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Der Polarfuchs - eIn sehr seltenes und scheues Tier in <em>White Valley</em>.</p>"
      }
     ]
    },
@@ -14289,7 +14387,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Eine kleine alte Truhe mit den Buchstaben HW für <em>Hollow White</em>. Etwas rostig.</p>"
      }
     ]
    },
@@ -14300,7 +14398,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Der Schlüssel zum Zugang der Höhle zum <em>Kalten Stern</em>.</p>"
      }
     ]
    },
@@ -14311,7 +14409,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p><em>Georgys Tonbandgerät</em>&nbsp;mit vielen Informationen zum <em>Hollow White</em>&nbsp;und noch bevorstehenden Ereignissen.</p>"
      }
     ]
    },
@@ -14322,7 +14420,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Eine Tasche mit diversen Utensilien, wie das Tonbandgerät, etwas Geld und das Foto von der kleinen <em>Hannah</em>&nbsp;etc.</p>"
      }
     ]
    },
@@ -14333,7 +14431,18 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Beschreibung einfügen</p>"
+      "text": "<p>Du kannst das Abenteuer wiederholen und mit&nbsp;<em>unterschiedlichen Entscheidungen</em>&nbsp;ein anderes Ende erreichen.</p>"
+     }
+    ]
+   },
+   {
+    "id": "badend",
+    "category": "",
+    "title": "Gescheitert! Versuche es nochmal …",
+    "elements": [
+     {
+      "type": "paragraph",
+      "text": "<p>Du kannst das Abenteuer wiederholen und mit&nbsp;<em>unterschiedlichen Entscheidungen</em>&nbsp;ein anderes Ende erreichen.</p>"
      }
     ]
    }
@@ -14343,11 +14452,6 @@ const book: Book = (({
     "id": "theme",
     "title": "Design",
     "choices": [
-     {
-      "id": "light-theme",
-      "title": "Light",
-      "default": false
-     },
      {
       "id": "dark-theme",
       "title": "Dark",
@@ -14362,7 +14466,7 @@ const book: Book = (({
      {
       "id": "font-sans",
       "title": "Modern",
-      "default": false
+      "default": true
      },
      {
       "id": "font-serif",
