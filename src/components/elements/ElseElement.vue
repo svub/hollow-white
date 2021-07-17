@@ -15,7 +15,7 @@ import { evaluateCondition } from "./IfElement.vue";
   },
 })
 export default class ElseElement extends Vue {
-  @Prop(Object) private element: Else;
+  @Prop(Object) private element!: Else;
 
   get conditionFits(): boolean {
     return !evaluateCondition(this.element.ifCondition, this.$store);
