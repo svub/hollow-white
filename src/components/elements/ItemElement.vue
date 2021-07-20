@@ -9,10 +9,10 @@
         .content(@click="flipped = false")
           TextElement.description(:elements="item.elements")
           .media(v-if="item.mediaUrl" :class="item.mediaType")
-            a.link(:href="item.mediaUrl") {{ item.title }}
-            audio(v-if="item.mediaType == 'audio'" controls :src="item.mediaUrl")
+            a.link(v-if="item.mediaType == 'link'" :href="item.mediaUrl") {{ item.title }}
+            audio(v-else-if="item.mediaType == 'audio'" controls :src="item.mediaUrl")
               Your browser does not support embedded audio.
-            video(v-if="item.mediaType == 'video'" controls)
+            video(v-else-if="item.mediaType == 'video'" controls)
               source(:src="item.mediaUrl")
               Your browser does not support embedded video.
 </template>
