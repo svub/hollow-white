@@ -14018,7 +14018,8 @@ const book: Book = (({
    },
    {
     "id": "lordneon",
-    "category": "",
+    "mediaType": "audio",
+    "mediaUrl": "/assets/items/lord-neon.mp3",
     "title": "Lord Neon",
     "elements": [
      {
