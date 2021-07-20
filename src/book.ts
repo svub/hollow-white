@@ -1904,9 +1904,9 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Albert und Snow suchen",
+       "title": "Draußen umsehen",
        "chapterId": "2",
-       "sectionId": "015"
+       "sectionId": "012"
       },
       {
        "title": "Hütte verriegeln",
@@ -1922,6 +1922,11 @@ const book: Book = (({
       {
        "type": "state",
        "id": "first-aid",
+       "modifier": "+1"
+      },
+      {
+       "type": "state",
+       "id": "snow",
        "modifier": "+1"
       },
       {
@@ -1985,7 +1990,11 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Dir fällt sofort der Verbandkasten ein. Dein Körper zittert wie verrückt, als du Snow verarztest.</p>"
+         "text": "<p>Dir fällt sofort der Verbandskasten ein. Dein Körper zittert wie verrückt.</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Instinktiv und ohne zu zögern beginnt Albert die Wunden und Schnitte bestmöglich zu verarzten, um die Blutungen zu stoppen.</p>"
         }
        ]
       },
@@ -2001,11 +2010,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Albert nimmt deinen Arm.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>»Ganz ruhig Ella! Atme durch. Wir müssen schleunigst nach <em>Snow Peaks</em>&nbsp;zu einem alten Bekannten. Er kann helfen«, sagt Albert mit fürsorglicher, aber dennoch besorgter Stimme.</p>"
+       "text": "<p>Wir müssen schleunigst nach <em>Snow Peaks</em>&nbsp;zu einem alten Bekannten. Er kann helfen«, sagt Albert mit besorgter Stimme.</p>"
       },
       {
        "type": "paragraph",
@@ -2052,87 +2057,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Zurück in der Hütte angekommen, sieht es nicht gut aus für Snow. Krallen und Bisse haben tiefe Schnitte in seinem Fleisch hinterlassen. Ihr stoppt die Blutung und verbindet die offenen Wunden.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>»Wir müssen schleunigst nach <em>Snow Peaks</em>&nbsp;zu einem alten Bekannten. Er kann helfen«, sagt Albert mit besorgter Stimme.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Vorsichtig wickelt er Snow in eine Decke. Ihr schaut euch um, um einen Weg nach <em>Snow Peaks</em>&nbsp;zu finden.</p>"
-      }
-     ],
-     "next": [
-      {
-       "title": "Weg am Fluss entlang",
-       "chapterId": "2",
-       "sectionId": "018"
-      },
-      {
-       "title": "Wald absuchen",
-       "chapterId": "2",
-       "sectionId": "019"
-      }
-     ]
-    },
-    {
-     "id": "015",
-     "title": "Albert und Snow suchen",
-     "elements": [
-      {
-       "type": "state",
-       "id": "snow",
-       "modifier": "+1"
-      },
-      {
-       "type": "state",
-       "id": "karma",
-       "modifier": "+1"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>In Eile durchstöberst du einen Schrank und eine alte Holztruhe und findest paar alte Klamotten. Hose und Pullover sind dir beides zu groß, doch du bist froh, wieder etwas Trockenes am Leib zu spüren.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Vorsichtig öffnest du die alte Holztür&nbsp;der Hütte und blickst nach draußen. Der kalte Schnee weht dir direkt ins Gesicht. Als du dich umsiehst, fallen dir sofort Fußspuren und vereinzelte Blutflecken auf, welche sich bis in die dunklen Ecken des Waldes ziehen.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Nur einige Schritte weiter siehst du Albert mit einer Flinte zwischen den schwer eingeschneiten Bäumen &nbsp;stehen. Er schaut dich an.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Es ist totenstill.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Ihr hört Snow.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Albert feuert einen weiteren Schuss in die Luft.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Schnee fällt von den Bäumen, mehrere Vögel fliegen aus den Baumwipfeln.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Schnelle Schatten entfernen sich im Umkreis der Hütte und flüchten in die Dunkelheit des Waldes.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Eilig folgt ihr der Blutspur und findet Snow winselnd und verletzt im roten Schnee liegen.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Keine Zeit zu verlieren.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Albert nimmt ihn vorsichtig und ihr eilt zur Hütte. Krallen und Bisse haben tiefe Schnitte in Snows Fleisch hinterlassen.</p>"
+       "text": "<p>Zurück in der Hütte angekommen, sieht es nicht gut aus für Snow. Krallen und Bisse haben tiefe Schnitte in seinem Fleisch hinterlassen.</p>"
       }
      ],
      "next": [
@@ -2178,26 +2103,20 @@ const book: Book = (({
        ]
       },
       {
-       "type": "else",
-       "ifCondition": "ITEM First-aid",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>Instinktiv und ohne zu zögern beginnst du die Wunden und Schnitte bestmöglich zu verarzten, um die Blutungen zu stoppen. Snow versucht mit letzten Kräften sich zu wehren, doch Albert hält ihn fest.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>»Wir müssen schleunigst nach <em>Snow Peaks</em>&nbsp;zu einem alten Bekannten. Er kann helfen«, sagt er mit besorgter Stimme.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Du bist fertig und Snow ist vorerst bestmöglich versorgt, dennoch dürft ihr keine Zeit verlieren.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Vorsichtig wickelt Albert seinen treuen Begleiter in eine Decke und ihr verlasst die Hütte.</p>"
-        }
-       ]
+       "type": "paragraph",
+       "text": "<p>Instinktiv und ohne zu zögern beginnst du die Wunden und Schnitte bestmöglich zu verarzten, um die Blutungen zu stoppen. Snow versucht mit letzten Kräften sich zu wehren, doch Albert hält ihn fest.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>»Wir müssen schleunigst nach <em>Snow Peaks</em>&nbsp;zu einem alten Bekannten. Er kann helfen«, sagt er mit besorgter Stimme.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Du bist fertig und Snow ist vorerst bestmöglich versorgt, dennoch dürft ihr keine Zeit verlieren.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Vorsichtig wickelt Albert seinen treuen Begleiter in eine Decke und ihr verlasst die Hütte.</p>"
       }
      ],
      "next": [
@@ -2238,22 +2157,16 @@ const book: Book = (({
        ]
       },
       {
-       "type": "else",
-       "ifCondition": "ITEM First-aid",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>Albert gibt sein bestes und beginnt Snow zu verarzten, aber man spürt ihm die starke Anspannung und Nervosität an. Die Wunden und Schnitte sind vorerst mehr oder weniger ausreichend versorgt.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Die Zeit läuft.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Vorsichtig wickelt er Snow in eine Decke und ihr schaut euch um, um einen Weg nach <em>Snow Peaks</em>&nbsp;zu finden.</p>"
-        }
-       ]
+       "type": "paragraph",
+       "text": "<p>Albert gibt sein bestes und beginnt Snow zu verarzten, aber man spürt ihm die starke Anspannung und Nervosität an. Die Wunden und Schnitte sind vorerst mehr oder weniger ausreichend versorgt.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Zeit läuft.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Vorsichtig wickelt er Snow in eine Decke und ihr schaut euch um, um einen Weg nach <em>Snow Peaks</em>&nbsp;zu finden.</p>"
       }
      ],
      "next": [
@@ -13850,13 +13763,13 @@ const book: Book = (({
      "title": "Ein Ende und ein Anfang",
      "elements": [
       {
+       "type": "paragraph",
+       "text": "<p>Gratulation! Du hast eines der Enden erreicht.</p>"
+      },
+      {
        "type": "if",
        "condition": "STATE karma > 3",
        "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>Gratulation! Du hast eines der Enden erreicht.</p>"
-        },
         {
          "type": "paragraph",
          "text": "<p>Deine Entscheidungen konnten das Schlimmste verhindern. Die Welt ist vorerst gerettet. Die Geschichte von <em>Hollow White</em>&nbsp;hat doch noch ein gutes Ende genommen.</p>"
@@ -13873,11 +13786,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Gratulation! Du hast eines der Enden erreicht.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Deine Entscheidungen konnten das Schlimmste leider nicht verhindern. Der Welt steht eine düstere Zukunft bevor. Die Geschichte von <em>Hollow White</em>&nbsp;hat ein tragisches Ende genommen.</p>"
+         "text": "<p>Leider konnten deine Entscheidungen das Schlimmste nicht verhindern. Der Welt steht eine düstere Zukunft bevor. Die Geschichte von <em>Hollow White</em>&nbsp;hat ein tragisches Ende genommen.</p>"
         },
         {
          "type": "addItem",
@@ -13887,7 +13796,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Doch <em>Hollow White</em>&nbsp;ist nicht zu Ende. Du kannst das Abenteuer wiederholen und mit&nbsp;<em>unterschiedlichen Entscheidungen</em>&nbsp;ein anderes Ende erreichen. Oder du machst dich auf die Suche nach den restlichen versteckten <em>Sammelkarten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Beachte nur, dass diese beim Löschen des Speicherstandes oder der App verloren gehen.</p>"
+       "text": "<p>Ob mit <em>anderen Entscheidungen</em>, die Geschichte anders ausgegangen wäre?</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Du kannst das Abenteuer wiederholen oder du machst dich auf die Suche nach den restlichen versteckten <em>Sammelkarten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Nur wenn du den Speicherstand oder die App löschst, gehen sie verloren.</p>"
       },
       {
        "type": "paragraph",
@@ -13928,7 +13841,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p><em>Thomas</em>, der mit Kreativität und langen Nächten &nbsp;<em>Hollow White</em>&nbsp;geschrieben hat. Dazu gehörten Diagramme und Tabellen, ein fast wissenschaftlicher Prozess, um sicherzustellen, dass alle Verbindungen, Zeitsprünge, Charaktere und Aktionen sich zu einer handfesten Geschichte zusammenfügen. Dann hat er noch seine Designer-Fähigkeiten in den Ring geworfen und die App gestaltet. Zusammen mit <em>Miu</em> sind die vielfältigen Illustrationen der Sammelobjekte entstanden.</p>"
+       "text": "<p><em>Thomas</em>, der mit Kreativität und langen Nächten <em>Hollow White</em>&nbsp;geschrieben hat. Dazu gehörten Diagramme und Tabellen, ein fast wissenschaftlicher Prozess, um sicherzustellen, dass alle Verbindungen, Zeitsprünge, Charaktere und Aktionen sich zu einer handfesten Geschichte zusammenfügen. Dann hat er noch seine Designer-Fähigkeiten in den Ring geworfen und die App gestaltet. Zusammen mit <em>Miu</em> sind die vielfältigen Illustrationen der Sammelobjekte entstanden.</p>"
       },
       {
        "type": "paragraph",
@@ -13940,7 +13853,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Großen Dank gilt unseren ganzen Unterstützern, Testern, Freunden und Familien. Jeder Impuls und Feedback hat uns erreicht und ist in <em>Hollow White</em>&nbsp;geflossen.</p>"
+       "text": "<p>Großen Dank gilt allen Personen, die uns unterstützt haben. Jeder Impuls hat uns erreicht.</p>"
       },
       {
        "type": "if",
@@ -13948,7 +13861,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Und zum Schluss nochmal Danke an dich. Wir hoffen, du hattest eine ganz besondere Leseerfahrung und <em>Hollow White</em>&nbsp;bleibt dir lange Zeit in Erinnerung. Wir freuen uns über <a href=\"mailto:feedback@hollowwhite.de\">dein Feedback</a> und wenn du der großen Welt draußen von deinem Abenteuer erzählst.</p>"
+         "text": "<p>Und zum Schluss nochmal Danke an dich. Wir hoffen, du hattest eine ganz besondere Leseerfahrung und <em>Hollow White</em>&nbsp;bleibt dir lange Zeit in Erinnerung. Wir freuen uns über dein <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> und wenn du der großen Welt draußen von deinem Abenteuer erzählst.</p>"
         }
        ]
       },
@@ -13958,7 +13871,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Und zum Schluss nochmal Danke an dich. Wir hoffen, du hattest eine ganz besondere Leseerfahrung und <em>Hollow White</em>&nbsp;bleibt dir lange Zeit in Erinnerung. Wir freuen uns über <a href=\"mailto:feedback@schwarzerkreis.de\">dein Feedback</a> und wenn du der großen Welt draußen von deinem Abenteuer erzählst.</p>"
+         "text": "<p>Und zum Schluss nochmal Danke an dich. Wir hoffen, du hattest eine ganz besondere Leseerfahrung und <em>Hollow White</em>&nbsp;bleibt dir lange Zeit in Erinnerung. Wir freuen uns über dein <a href=\"mailto:feedback@schwarzerkreis.de\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> und wenn du der großen Welt draußen von deinem Abenteuer erzählst.</p>"
         }
        ]
       },
@@ -13990,35 +13903,11 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Lass uns zusammen etwas Gutes tun. Du kannst jetzt mit einer Spende Projekte weltweit unterstützen!</p>"
+       "text": "<p>Lass uns zusammen etwas Gutes tun. Du kannst jetzt mit einer Spende Projekte weltweit unterstützen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p><a href=\"https://app.effectivealtruism.org/donations/new/organizations\">Spende für einen guten Zweck</a>.</p>"
-      },
-      {
-       "type": "if",
-       "condition": "STATE karma > 3",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>Du kannst auch <em>Hollow White</em>&nbsp;mit Freunden teilen [auf Twitter teilen]() oder einfach einen&nbsp;<a href=\"https://hollowwhite.de\">Link zur Hollow White Website</a> schicken.</p>"
-        }
-       ]
-      },
-      {
-       "type": "else",
-       "ifCondition": "STATE karma > 3",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>Du kannst auch <em>Hollow White</em>&nbsp;mit Freunden teilen [auf Twitter teilen]() oder einfach einen <a href=\"https://schwarzerkreis.de\">Link zur Hollow White Website</a> schicken.</p>"
-        }
-       ]
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Unterstütze das <em>Hollow White</em> Team. Wir verwenden die Gelder, um unsere Kosten zu decken, alles was übrig bleibt geht an <a href=\"https://effectivealtruism.org\">Effective Altruism</a>.</p>"
+       "text": "<p><a href=\"https://app.effectivealtruism.org/donations/new/organizations\" rel=\"noopener noreferrer\" target=\"_blank\">Spende für einen guten Zweck</a>.</p>"
       }
      ],
      "next": [
@@ -14218,7 +14107,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine Münze mit einem Hexagon und den Initialen<em>G. M</em>.</p>"
+      "text": "<p>Eine Münze mit einem Hexagon und den Initialen <em>G. M</em>.</p>"
      }
     ]
    },
@@ -14471,7 +14360,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Du kannst das Abenteuer wiederholen und mit&nbsp;<em>unterschiedlichen Entscheidungen</em>&nbsp;ein anderes Ende erreichen.</p>"
+      "text": "<p>Ob mit <em>anderen Entscheidungen</em>, die Geschichte anders ausgegangen wäre?</p>"
      }
     ]
    },
@@ -14482,7 +14371,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Du kannst das Abenteuer wiederholen und mit&nbsp;<em>unterschiedlichen Entscheidungen</em>&nbsp;ein anderes Ende erreichen.</p>"
+      "text": "<p>Ob mit <em>anderen Entscheidungen</em>, die Geschichte anders ausgegangen wäre?</p>"
      }
     ]
    }
