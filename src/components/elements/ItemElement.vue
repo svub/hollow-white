@@ -6,8 +6,8 @@
           .number #[span.current {{ itemIndex(item)+1 }}] #[span.total {{ itemCount }}]
           h3 {{ item.title }}
 
-        .content(@click="flipped = false")
-          TextElement.description(:elements="item.elements")
+        .content
+          TextElement.description(@click="flipped = false" :elements="item.elements")
           .media(v-if="item.mediaUrl" :class="item.mediaType")
             a.link(v-if="item.mediaType == 'link'" :href="item.mediaUrl") {{ item.title }}
             audio(v-else-if="item.mediaType == 'audio'" controls :src="item.mediaUrl")
