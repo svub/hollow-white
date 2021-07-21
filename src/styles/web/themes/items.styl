@@ -51,6 +51,9 @@
         p, em
           font-size toRem(17)
 
+      .media > *
+        max-width 100%
+
 for item in items
   .item.{item} .title:before
     rawAsset(s('/assets/items/%s.svg', item))
