@@ -9,11 +9,11 @@ const book: Book = (({
    "sections": [
     {
      "id": "001",
-     "title": "Personen und die Handlung",
+     "title": "Hollow White",
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Die Personen und die Handlung in <em>Hollow White</em>&nbsp;sind frei erfunden und fiktiv. Etwaige Ähnlichkeiten mit tatsächlichen Begebenheiten oder Personen sind rein zufällig.</p>"
+       "text": "<p>Bevor du ins Abenteuer eintauchst, achte darauf, dass du nicht in einem <em>privaten Tab</em>&nbsp;bist, denn sonst kann dein Gesamtfortschritt bzw. aktuelle Leseposition nicht gespeichert werden.</p>"
       }
      ],
      "next": [
@@ -14001,7 +14001,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine Packung Streichhölzer aus dem <em>Motel Midnight</em>, mit Wegbeschreibung nach <em>Snow Peaks</em>.</p>"
+      "text": "<p>Eine <em>Packung Streichhölzer</em> aus dem <em>Motel Midnight</em>, mit Wegbeschreibung nach <em>Snow Peaks</em>.</p>"
      }
     ]
    },
@@ -14012,7 +14012,11 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine Packung Zigaretten der Marke <em>Ghost Fellows</em>.</p>"
+      "text": "<p>Eine <em>Packung Zigaretten</em> der Marke <em>Ghost Fellows</em>. Ziemlich stark.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Rauchen gefährdet die Gesundheit.</p>"
      }
     ]
    },
@@ -14035,7 +14039,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein Polaroid-Foto aufgenommen von Albert. Neben dem <em>Ice River</em>&nbsp;und der weiten Landschaft von <em>White Valley</em>, ist im Vordergrund leicht unscharf <em>Ella</em>&nbsp;darauf abgebildet. Sehr künstlerisch.</p>"
+      "text": "<p>Ein <em>Polaroid-Foto</em>&nbsp;aufgenommen von Albert. Neben dem <em>Ice River</em>&nbsp;und der weiten Landschaft von <em>White Valley</em>, ist im Vordergrund leicht unscharf <em>Ella</em>&nbsp;darauf abgebildet. Sehr künstlerisch.</p>"
      }
     ]
    },
@@ -14046,7 +14050,11 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein Erste-Hilfe-Kasten mit Desinfiziermittel, Schere und Verbänden etc.</p>"
+      "text": "<p>Ein <em>Erste-Hilfe-Kasten</em>&nbsp;mit Desinfiziermittel, Schere und Verbänden etc.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Erste Hilfe kann Leben retten.</p>"
      }
     ]
    },
@@ -14057,7 +14065,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Verdammt guter Kaffee!</p>"
+      "text": "<p>Verdammt guter <em>Kaffee</em>!</p>"
      }
     ]
    },
@@ -14068,7 +14076,11 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine Münze mit einem Hexagon und den Initialen <em>G. M</em>.</p>"
+      "text": "<p>Eine <em>Münze</em>&nbsp;mit einem Hexagon und den Initialen <em>G. M.</em>.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Für was wohl <em>G. M.</em>&nbsp;steht?</p>"
      }
     ]
    },
@@ -14079,7 +14091,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine weiße Rose aus der Kuppel von <em>Snow Peaks</em>.</p>"
+      "text": "<p>Eine <em>weiße Rose</em>&nbsp;aus der Kuppel von <em>Snow Peaks</em>.</p>"
      }
     ]
    },
@@ -14090,7 +14102,11 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Der beste Käsekuchen aus dem <em>Stardust Diner</em>.</p>"
+      "text": "<p>Der beste <em>Käsekuchen</em>&nbsp;aus dem <em>Stardust Diner</em>.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Ein altes Familienrezept.</p>"
      }
     ]
    },
@@ -14101,7 +14117,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein altes Crêpe-Rezept von Albert.</p>"
+      "text": "<p>Ein altes <em>Crêpe-Rezept</em>&nbsp;von Albert.</p>"
      }
     ]
    },
@@ -14112,7 +14128,11 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein feiner Gin aus <em>Snow Peaks</em>. Streng limitiert.</p>"
+      "text": "<p>Ein feiner <em>Gin</em>&nbsp;aus <em>Snow Peaks</em>.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Streng limitiert.</p>"
      }
     ]
    },
@@ -14123,7 +14143,11 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein mysteriöser Splitter aus deinem Tonbandgerät.</p>"
+      "text": "<p>Ein mysteriöser <em>Splitter</em> aus deinem Tonbandgerät.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Wie kommt der da rein?</p>"
      }
     ]
    },
@@ -14134,7 +14158,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Judys Splitter aus dem <em>Frozen Lake</em>.</p>"
+      "text": "<p><em>Judys Splitter</em>&nbsp;aus dem <em>Frozen Lake</em>.</p>"
      }
     ]
    },
@@ -14145,7 +14169,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine besondere Tinte, die unter die Haut gestochen wird. Der <em>Schwarzen Kreis</em>&nbsp;setzt diese zur Authentifizierung und Rang-Zuordnung ein.</p>"
+      "text": "<p>Eine besondere <em>Tinte</em>, die unter die Haut gestochen wird. Der <em>Schwarzen Kreis</em>&nbsp;setzt diese zur Authentifizierung und Rang-Zuordnung ein.</p>"
      }
     ]
    },
@@ -14156,7 +14180,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Roses Zimmerschlüssel der von ihrem Kater Platon verwahrt wird.</p>"
+      "text": "<p><em>Roses Zimmerschlüssel</em>&nbsp;der von ihrem Kater Platon verwahrt wird.</p>"
      }
     ]
    },
@@ -14167,7 +14191,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein sehr persönlicher Brief von Roses Mann <em>Pete</em>, denn er kurz vor seinem Tod verfasst hat.</p>"
+      "text": "<p>Ein sehr persönlicher <em>Brief</em>&nbsp;von Roses Mann <em>Pete</em>, denn er kurz vor seinem Tod noch verfasste. <em>Pete</em>&nbsp;ist bei einem tragischen Unfall ums Leben gekommen. Nicht&nbsp;unwahrscheinlich, dass der <em>Schwarze Kreis</em> dahinter steckte.</p>"
      }
     ]
    },
@@ -14178,7 +14202,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine drohende Nachricht an <em>Georgy</em>&nbsp;vom <em>Schwarzen Kreis</em>.</p>"
+      "text": "<p>Eine <em>Drohung</em>&nbsp;an <em>Georgy</em>&nbsp;vom <em>Schwarzen Kreis</em>. Georgy hatte schon die ein oder andere Konfrontation mit dem <em>Schwarzen Kreis</em>.</p>"
      }
     ]
    },
@@ -14189,7 +14213,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine kleine Truhe mit den Buchstaben HW für <em>Hollow White</em>.</p>"
+      "text": "<p>Eine kleine <em>Truhe</em> mit den Buchstaben HW für <em>Hollow White</em>.</p>"
      }
     ]
    },
@@ -14200,7 +14224,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein altes Polaroid-Foto. Neben dem <em>Ice River</em>&nbsp;und der weiten Landschaft von <em>White Valley</em>, ist im Vordergrund leicht unscharf eine <em>unbekannte Frau</em>&nbsp;darauf abgebildet. Es wirkt sehr künstlerisch.</p>"
+      "text": "<p>Ein altes <em>Polaroid-Foto</em>. Neben dem <em>Ice River</em>&nbsp;und der weiten Landschaft von <em>White Valley</em>, ist im Vordergrund leicht unscharf <em>Roses Mutter</em>&nbsp;darauf abgebildet. Es wirkt sehr künstlerisch.</p>"
      }
     ]
    },
@@ -14211,7 +14235,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein goldener Ehering von Roses Mann <em>Pete</em>.</p>"
+      "text": "<p>Ein goldener <em>Ehering</em> von Roses Mann <em>Pete</em>. Eine Erinnerung an <em>Pete</em>.</p>"
      }
     ]
    },
@@ -14222,7 +14246,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein aus Drähten und Kabeln geflochtenes Armband von der kleinen <em>Hannah</em>.</p>"
+      "text": "<p>Ein aus Drähten und Kabeln geflochtenes <em>Armband</em> von der kleinen <em>Hannah</em>.</p>"
      }
     ]
    },
@@ -14233,7 +14257,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein Stein in Form eines Herzens. Gefunden von der kleinen <em>Hannah</em>&nbsp;in der Höhle am <em>Kalten Stern</em>.</p>"
+      "text": "<p>Ein <em>Stein</em>&nbsp;in Form eines Herzens. Gefunden von der kleinen <em>Hannah</em>&nbsp;in der Höhle am <em>Kalten Stern</em>.</p>"
      }
     ]
    },
@@ -14244,7 +14268,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Der Song <em>Waiting</em>&nbsp;von der Band <em>MAEVIA</em>.</p>"
+      "text": "<p>Der Song <em>Waiting</em>&nbsp;von <em>MAEVIA</em>.</p>"
      }
     ]
    },
@@ -14255,7 +14279,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein Propaganda-Zettel mit dem Erkennungszeichen des <em>Schwarzen Kreises</em>.</p>"
+      "text": "<p>Ein <em>Propaganda-Zettel</em>&nbsp;mit dem Erkennungszeichen des <em>Schwarzen Kreises</em>.</p>"
      }
     ]
    },
@@ -14266,7 +14290,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Der Polarfuchs - eIn sehr seltenes und scheues Tier in <em>White Valley</em>.</p>"
+      "text": "<p>Der <em>Polarfuchs</em>&nbsp;- ein sehr seltenes und scheues Tier in <em>White Valley</em>.</p>"
      }
     ]
    },
@@ -14277,7 +14301,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine kleine alte Truhe mit den Buchstaben HW für <em>Hollow White</em>. Etwas rostig.</p>"
+      "text": "<p>Eine kleine <em>alte Truhe</em>&nbsp;mit den Buchstaben HW für <em>Hollow White</em>. Etwas rostig.</p>"
      }
     ]
    },
@@ -14288,7 +14312,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Der Schlüssel zum Zugang der Höhle zum <em>Kalten Stern</em>.</p>"
+      "text": "<p>Der <em>Schlüssel</em>&nbsp;zum Zugang der Höhle zum <em>Kalten Stern</em>.</p>"
      }
     ]
    },
@@ -14299,7 +14323,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p><em>Georgys Tonbandgerät</em>&nbsp;mit vielen Informationen zum <em>Hollow White</em>&nbsp;und noch bevorstehenden Ereignissen.</p>"
+      "text": "<p><em>Georgys Tonbandgerät</em>&nbsp;mit vielen Informationen zum <em>Hollow White</em>&nbsp;und noch bevorstehenden Geschehnissen.</p>"
      }
     ]
    },
@@ -14310,7 +14334,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine Tasche mit diversen Utensilien, wie das Tonbandgerät, etwas Geld und das Foto von der kleinen <em>Hannah</em>&nbsp;etc.</p>"
+      "text": "<p>Eine <em>Tasche</em>&nbsp;mit diversen Utensilien, wie das Tonbandgerät, etwas Geld und das Foto von der kleinen <em>Hannah</em>&nbsp;etc.</p>"
      }
     ]
    },
