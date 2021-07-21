@@ -7,14 +7,14 @@
           h3 {{ item.title }}
 
         .content
-          TextElement.description(@click="flipped = false" :elements="item.elements")
+          TextElement.description(@click.native="flipped = false" :elements="item.elements")
           .media(v-if="item.mediaUrl" :class="item.mediaType")
             a.link(v-if="item.mediaType == 'link'" :href="item.mediaUrl") {{ item.title }}
             audio(v-else-if="item.mediaType == 'audio'" controls :src="item.mediaUrl")
-              Your browser does not support embedded audio.
+              | Your browser does not support embedded audio.
             video(v-else-if="item.mediaType == 'video'" controls)
               source(:src="item.mediaUrl")
-              Your browser does not support embedded video.
+              | Your browser does not support embedded video.
 </template>
 
 <script lang="ts">
