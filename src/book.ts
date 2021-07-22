@@ -14,6 +14,26 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Bevor du ins Abenteuer eintauchst, achte darauf, dass du nicht in einem <em>privaten Tab</em>&nbsp;bist, denn sonst kann dein Gesamtfortschritt bzw. aktuelle Leseposition nicht gespeichert werden.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p><em>Deine Entscheidungen haben Auswirkungen auf die Geschichte.</em></p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Wir gemeinsam formen damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf unsere eigene Person und unsere Welt um uns rum.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>In jeder Sekunde liegt es somit in unserer Hand, wie die nächste ihren Lauf nimmt.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ein kleiner Funke kann ein ganzes Universum entstehen lassen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Kurz gesagt, Sie da draußen und Ihre zu treffenden Entscheidungen sind jetzt unsere letzte Hoffnung!«</p>"
       }
      ],
      "next": [
@@ -4264,7 +4284,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Albert unterbricht &nbsp;seinen Satz und schaut dich ernst an.</p>"
+       "text": "<p>Albert unterbricht seinen Satz und schaut dich ernst an.</p>"
       },
       {
        "type": "paragraph",
@@ -5291,7 +5311,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Nachdem sich dein Husten beruhigt hat, schaust du Albert an. Dich lässt die Frage nach <em>Judy</em> &nbsp;nicht los. Du fragst ihn, was damals geschehen ist.</p>"
+       "text": "<p>Nachdem sich dein Husten beruhigt hat, schaust du Albert an. Dich lässt die Frage nach <em>Judy</em> nicht los. Du fragst ihn, was damals geschehen ist.</p>"
       }
      ],
      "next": [
@@ -5509,7 +5529,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als du die Lampe einschaltest, siehst du die zersprungenen Teile deines Tonbandgerätes auf dem Boden liegen. Neben dem Band und dem Batteriefach kommt ein kleiner roter Splitter&nbsp;zum Vorschein. Ein Splitter, wie du ihn auch &nbsp;im <em>Observatorium</em> gesehen hast.</p>"
+       "text": "<p>Als du die Lampe einschaltest, siehst du die zersprungenen Teile deines Tonbandgerätes auf dem Boden liegen. Neben dem Band und dem Batteriefach kommt ein kleiner roter Splitter&nbsp;zum Vorschein. Ein Splitter, wie du ihn auch im <em>Observatorium</em> gesehen hast.</p>"
       },
       {
        "type": "addItem",
@@ -5812,6 +5832,72 @@ const book: Book = (({
          "text": "<p>»Ella, wach auf! Wach auf«</p>"
         }
        ]
+      }
+     ],
+     "next": [
+      {
+       "title": "Rückblick Kapitel 1-4",
+       "chapterId": "4",
+       "sectionId": "037"
+      },
+      {
+       "title": "Kapitel 5",
+       "chapterId": "5",
+       "sectionId": "001"
+      }
+     ]
+    },
+    {
+     "id": "037",
+     "title": "Rückblick",
+     "elements": [
+      {
+       "type": "paragraph",
+       "text": "<p><em>Kapitel 1-4</em></p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella wacht ohne Gedächtnis mitten in der verschneiten Landschaft von White Valley auf. Ihre einzige Spur zu ihrere Vergangenheit, befindet sich auf einem Tonbandgerät und einem Foto, auf welchem ein kleines Mädchen Namens Hannah zu sehen ist. Ellas Suche nach dem Mädchen und ihrer Person führt zu dem Städtchen Snow Peaks.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Bei ihrer Odyssee begegnet sie einem Mann Namens Albert, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschehen seltsame Dinge im verschneiten Gebiet von White Valley. Gemeinsam beschließen die beiden nach Snow Peaks aufzubrechen um den Geschehnissen und weiteren Spuren nach Hannah und Ellas Identität auf die Spur zu gehen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als sie gemeinsam das verschneite Städtchen erreichen, trifft Ella auf alte Freunde von Albert: Frank einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb von Snow Peaks in einem größeren Anwesen leben.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die ersten Tage lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella trifft auf Alberts Zwillingsschwester Patricia. Die beiden Geschwister offenbaren ihr, dass sie selbst zu den Verschwundenen des Hollow White gehören und als Kinder ganze 40 Jahre später in der Zukunft aufgewacht sind.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Mit Patricia zusammen besucht Ella das Observatorium, einen Ort, wo die sogenannten Splitter aufbewahrt werden. Mysteriöse Steine, die an den Plätzen der Verschwundenen gefunden wurden und für die Verbliebenen zum Gedenken aufbewahrt werden.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella und Albert tappen auf der Suche nach Hannah im Dunkeln, bis sie in einem Tonbandgerät einen Splitter und daraufhin den Splitter von Alberts Frau Judy finden.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella erfährt, dass Judy vor einigen Jahren in einer Nacht spurlos am Frozen Lake verschwunden ist und Albert sich nach diesem tragischen Verlust in den Wäldern von White Valley trauernd zurückgezogen hat.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als sich Ella und Albert näher kommen, hat sie eines Nachts eine Vision in ihren Träumen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ist sie selbst eine Verschwundene aus einer anderen Zeit?</p>"
       }
      ],
      "next": [
@@ -7001,7 +7087,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Als du so grübelst, erinnerst du dich an den Keller, wo ihr Rose das erste Mal begegnet seid. Du gehst hinunter und öffnest die Tür des <em>Antiquariat</em>. Es ist dunkel. Du zündest eine Kerze an und betrittst den geheimen Kellerabgang, der sich versteckt &nbsp;hinter einem Regal befindet. Als du die Treppenstufen runter gehst, hörst du das klickende Geräusch eines Mechanismus. Die Geheimtür schließt sich hinter dir.</p>"
+       "text": "<p>Als du so grübelst, erinnerst du dich an den Keller, wo ihr Rose das erste Mal begegnet seid. Du gehst hinunter und öffnest die Tür des <em>Antiquariat</em>. Es ist dunkel. Du zündest eine Kerze an und betrittst den geheimen Kellerabgang, der sich versteckt hinter einem Regal befindet. Als du die Treppenstufen runter gehst, hörst du das klickende Geräusch eines Mechanismus. Die Geheimtür schließt sich hinter dir.</p>"
       }
      ],
      "next": [
@@ -8366,7 +8452,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ein letztes Mal: &nbsp;Wo ist Dr. Ella Monroe?«, sagt die Stimme.</p>"
+       "text": "<p>»Ein letztes Mal: Wo ist Dr. Ella Monroe?«, sagt die Stimme.</p>"
       },
       {
        "type": "paragraph",
@@ -10321,7 +10407,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Sie öffnet die rechte Hand. »Ooh, tut mir leid, Onkel Georgy« sagt sie &nbsp;und steckt schnell etwas in ihre Tasche zurück.</p>"
+       "text": "<p>Sie öffnet die rechte Hand. »Ooh, tut mir leid, Onkel Georgy« sagt sie und steckt schnell etwas in ihre Tasche zurück.</p>"
       },
       {
        "type": "paragraph",
@@ -10769,6 +10855,11 @@ const book: Book = (({
      ],
      "next": [
       {
+       "title": "Rückblick Kapitel 1-8",
+       "chapterId": "8",
+       "sectionId": "013"
+      },
+      {
        "title": "Kapitel 9",
        "chapterId": "9",
        "sectionId": "001"
@@ -10803,6 +10894,188 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Du und Dean, ihr seid beide verschwunden.</p>"
+      }
+     ],
+     "next": [
+      {
+       "title": "Rückblick Kapitel 1-8",
+       "chapterId": "8",
+       "sectionId": "013"
+      },
+      {
+       "title": "Kapitel 9",
+       "chapterId": "9",
+       "sectionId": "001"
+      }
+     ]
+    },
+    {
+     "id": "013",
+     "title": "Rückblick",
+     "elements": [
+      {
+       "type": "paragraph",
+       "text": "<p><em>Kapitel 1-4</em></p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella wacht ohne Gedächtnis mitten in der verschneiten Landschaft von White Valley auf. Ihre einzige Spur zu ihrere Vergangenheit, befindet sich auf einem Tonbandgerät und einem Foto, auf welchem ein kleines Mädchen Namens Hannah zu sehen ist. Ellas Suche nach dem Mädchen und ihrer Person führt zu dem Städtchen Snow Peaks.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Bei ihrer Odyssee begegnet sie einem Mann Namens Albert, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschehen seltsame Dinge im verschneiten Gebiet von White Valley. Gemeinsam beschließen die beiden nach Snow Peaks aufzubrechen um den Geschehnissen und weiteren Spuren nach Hannah und Ellas Identität auf die Spur zu gehen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als sie gemeinsam das verschneite Städtchen erreichen, trifft Ella auf alte Freunde von Albert: Frank einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb von Snow Peaks in einem größeren Anwesen leben.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die ersten Tage lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella trifft auf Alberts Zwillingsschwester Patricia. Die beiden Geschwister offenbaren ihr, dass sie selbst zu den Verschwundenen des Hollow White gehören und als Kinder ganze 40 Jahre später in der Zukunft aufgewacht sind.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Mit Patricia zusammen besucht Ella das Observatorium, einen Ort, wo die sogenannten Splitter aufbewahrt werden. Mysteriöse Steine, die an den Plätzen der Verschwundenen gefunden wurden und für die Verbliebenen zum Gedenken aufbewahrt werden.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella und Albert tappen auf der Suche nach Hannah im Dunkeln, bis sie in einem Tonbandgerät einen Splitter und daraufhin den Splitter von Alberts Frau Judy finden.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella erfährt, dass Judy vor einigen Jahren in einer Nacht spurlos am Frozen Lake verschwunden ist und Albert sich nach diesem tragischen Verlust in den Wäldern von White Valley trauernd zurückgezogen hat.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als sich Ella und Albert näher kommen, hat sie eines Nachts eine Vision in ihren Träumen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ist sie selbst eine Verschwundene aus einer anderen Zeit?</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p><em>Kapitel 5-8</em></p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Wir springen in der Geschichte ganze 70 Jahre in die Zukunft.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Dunkle Zeiten herrschen in Snow Peaks.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Der Schwarze Kreis, ein grausames Regime ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks ganze 70 Jahre später in dieser grausamen Dystopie aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der etwas außerhalb liegenden Lagern gefangen gehalten.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Zusammen mit ihrer Freundin Cara gelingt ihr die Flucht.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die beiden schließen sich der Widerstandsgruppe der Weißen Rosen an und treffen auf Rose, die die Bewegung seit Jahren aus dem Untergrund gegen den Schwarzen Kreis anführt.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Rose gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Judy findet eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreises ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt weggenommen hat.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Hannah lebt.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Rose beteuert, dass sie unter gewaltigen Einfluss des Schwarzen Kreis handelte und ihr Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Beim Versuch die Kleine zu finden, werden beide entdeckt und Rose stark verletzt. Zusammen können sie in eine außerhalb der Stadt liegende Hütte flüchten. Rose schwebt in Lebensgefahr.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Judy erfährt von weiteren Geheimnissen aus Rose Vergangenheit und erhält einen rätselhaften Brief.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ist es möglicherweise ein Hinweis zu ihrer Tochter Hannah?</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Spur führt Judy in einer eiskalten Nacht ins Hotel Midnight.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Neben Judy’s Geschichte, lernen wir Georgy’s zeitgleich kennen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Er und ein zweiter Wissenschaftler Namens Dean experimentieren unterhalb der Kuppel am sogenannten Kalten Stern. Ein monumentales Artefakt aus dem Universum und der Ursprung des Hollow White.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Forschungen am Kalten Stern sind mutmaßlich verantwortlich für das verschwinden der Menschen des Hollow Whites vor über 150 Jahren. Die sogenannten Erschienenen sind durch die Experimente in der Zukunft aufgewacht und werden seither vom Schwarzen Kreis in Gefangenschaft gehalten.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Georgy und Dean werden auch gezwungen an einer Apparatur zu arbeiten, welche Zeitreisen möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Nerven liegen blank, so dass Dean eines Tages die Beherrschung verliert und sich mit den Handlangern des Schwarzen Kreis konfrontiert. Beim Versuch Dean zu Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann drohend der Befehl erteilt wird seine Forschungsarbeit am Kalten Stern fortzusetzen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Zeit läuft.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Zuvor muss Georgy erfahren, dass sein Freund und Kollege Dean vom Schwarzen Kreis exekutiert wurde.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Mit Hochdruck arbeitet Georgy daran einen Weg zu finden, dem Schwarzen Kreis zu entkommen. Aber er ist nicht alleine. Die kleine Hannah ist bei ihm.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ein Wettlauf gegen den sicheren Tod beginnt und Georgy ist ununterbrochen daran, die Arbeit von Dr. Ella Monroe, die vor Wochen spurlos am Kalten Stern verschwunden ist, fertig zu bringen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Apparatur ist seit dem Vorfall von Dr. Ella Monroe in einem katastrophalen Zustand, doch es ist Georgy´s und Hannah´s letzte Chance durch einen Zeitsprung, zu entkommen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als Georgy am letzten Tag seiner Frist die Maschine halbwegs funktionsfähig macht, schickt er Hannah als erstes in die Vergangenheit um zumindest sie aus den Fängen des Regimes zu retten. Als er selbst springen will, stellt sich ein alter Bekannter ihm in den Weg.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Es ist Dean, der nicht nur lebt, sondern Georgy verraten hat und zum Schwarzen Kreis gehört. Schüsse fallen und Georgy schafft es gerade noch durch einen Zeitsprung zu entkommen.</p>"
       }
      ],
      "next": [
@@ -12159,7 +12432,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Dame in Weiß führt dich vom Empfang der Kuppel entlang über eine kleine Allee mit Bäumen zu einer Gartenanlage. Auf einem Schild steht: &nbsp;»Nur für Personal«</p>"
+       "text": "<p>Die Dame in Weiß führt dich vom Empfang der Kuppel entlang über eine kleine Allee mit Bäumen zu einer Gartenanlage.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Auf einem Schild steht: »Nur für Personal«</p>"
       },
       {
        "type": "paragraph",
@@ -12259,7 +12536,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Notizen, die Hannah dir zeigt, sind Wahrheiten, die dir als Theorien &nbsp;über die Jahre durch den Kopf gegangen sind. Jetzt werden deine Annahmen bestätigt, die Lösung liegt auf der Hand.</p>"
+       "text": "<p>Die Notizen, die Hannah dir zeigt, sind Wahrheiten, die dir als Theorien über die Jahre durch den Kopf gegangen sind. Jetzt werden deine Annahmen bestätigt, die Lösung liegt auf der Hand.</p>"
       },
       {
        "type": "paragraph",
@@ -12474,7 +12751,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Eine Weile vergeht und ihr legt immer wieder kleine Pausen ein, bis ihr immer mehr in die &nbsp;weitläufige Höhle eindringt. Die Luft wird schwerer und ein alter feuchter Geruch strömt dir in die Nase. Du hörst Wasser plätschern.</p>"
+       "text": "<p>Eine Weile vergeht und ihr legt immer wieder kleine Pausen ein, bis ihr immer mehr in die weitläufige Höhle eindringt. Die Luft wird schwerer und ein alter feuchter Geruch strömt dir in die Nase. Du hörst Wasser plätschern.</p>"
       },
       {
        "type": "paragraph",
@@ -13546,6 +13823,11 @@ const book: Book = (({
      ],
      "next": [
       {
+       "title": "Rückblick Kapitel 1-11",
+       "chapterId": "11",
+       "sectionId": "012"
+      },
+      {
        "title": "Kapitel 12",
        "chapterId": "12",
        "sectionId": "001"
@@ -13607,6 +13889,280 @@ const book: Book = (({
      ],
      "next": [
       {
+       "title": "Rückblick Kapitel 1-11",
+       "chapterId": "11",
+       "sectionId": "012"
+      },
+      {
+       "title": "Kapitel 12",
+       "chapterId": "12",
+       "sectionId": "001"
+      }
+     ]
+    },
+    {
+     "id": "012",
+     "title": "Rückblick",
+     "elements": [
+      {
+       "type": "paragraph",
+       "text": "<p><em>Kapitel 1-4</em></p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella wacht ohne Gedächtnis mitten in der verschneiten Landschaft von White Valley auf. Ihre einzige Spur zu ihrere Vergangenheit, befindet sich auf einem Tonbandgerät und einem Foto, auf welchem ein kleines Mädchen Namens Hannah zu sehen ist. Ellas Suche nach dem Mädchen und ihrer Person führt zu dem Städtchen Snow Peaks.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Bei ihrer Odyssee begegnet sie einem Mann Namens Albert, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschehen seltsame Dinge im verschneiten Gebiet von White Valley. Gemeinsam beschließen die beiden nach Snow Peaks aufzubrechen um den Geschehnissen und weiteren Spuren nach Hannah und Ellas Identität auf die Spur zu gehen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als sie gemeinsam das verschneite Städtchen erreichen, trifft Ella auf alte Freunde von Albert: Frank einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb von Snow Peaks in einem größeren Anwesen leben.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die ersten Tage lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella trifft auf Alberts Zwillingsschwester Patricia. Die beiden Geschwister offenbaren ihr, dass sie selbst zu den Verschwundenen des Hollow White gehören und als Kinder ganze 40 Jahre später in der Zukunft aufgewacht sind.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Mit Patricia zusammen besucht Ella das Observatorium, einen Ort, wo die sogenannten Splitter aufbewahrt werden. Mysteriöse Steine, die an den Plätzen der Verschwundenen gefunden wurden und für die Verbliebenen zum Gedenken aufbewahrt werden.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella und Albert tappen auf der Suche nach Hannah im Dunkeln, bis sie in einem Tonbandgerät einen Splitter und daraufhin den Splitter von Alberts Frau Judy finden.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella erfährt, dass Judy vor einigen Jahren in einer Nacht spurlos am Frozen Lake verschwunden ist und Albert sich nach diesem tragischen Verlust in den Wäldern von White Valley trauernd zurückgezogen hat.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als sich Ella und Albert näher kommen, hat sie eines Nachts eine Vision in ihren Träumen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ist sie selbst eine Verschwundene aus einer anderen Zeit?</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p><em>Kapitel 5-8</em></p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Wir springen in der Geschichte ganze 70 Jahre in die Zukunft.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Dunkle Zeiten herrschen in Snow Peaks.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Der Schwarze Kreis, ein grausames Regime ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks ganze 70 Jahre später in dieser grausamen Dystopie aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der etwas außerhalb liegenden Lagern gefangen gehalten.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Zusammen mit ihrer Freundin Cara gelingt ihr die Flucht.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die beiden schließen sich der Widerstandsgruppe der Weißen Rosen an und treffen auf Rose, die die Bewegung seit Jahren aus dem Untergrund gegen den Schwarzen Kreis anführt.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Rose gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Judy findet eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreises ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt weggenommen hat.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Hannah lebt.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Rose beteuert, dass sie unter gewaltigen Einfluss des Schwarzen Kreis handelte und ihr Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Beim Versuch die Kleine zu finden, werden beide entdeckt und Rose stark verletzt. Zusammen können sie in eine außerhalb der Stadt liegende Hütte flüchten. Rose schwebt in Lebensgefahr.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Judy erfährt von weiteren Geheimnissen aus Rose Vergangenheit und erhält einen rätselhaften Brief.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ist es möglicherweise ein Hinweis zu ihrer Tochter Hannah?</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Spur führt Judy in einer eiskalten Nacht ins Hotel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Neben Judy’s Geschichte, lernen wir Georgy’s zeitgleich kennen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Er und ein zweiter Wissenschaftler Namens Dean experimentieren unterhalb der Kuppel am sogenannten Kalten Stern. Ein monumentales Artefakt aus dem Universum und der Ursprung des Hollow White.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Forschungen am Kalten Stern sind mutmaßlich verantwortlich für das verschwinden der Menschen des Hollow Whites vor über 150 Jahren. Die sogenannten Erschienenen sind durch die Experimente in der Zukunft aufgewacht und werden seither vom Schwarzen Kreis in Gefangenschaft gehalten.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Georgy und Dean werden auch gezwungen an einer Apparatur zu arbeiten, welche Zeitreisen möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Nerven liegen blank, so dass Dean eines Tages die Beherrschung verliert und sich mit den Handlangern des Schwarzen Kreis konfrontiert. Beim Versuch Dean zu Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann drohend der Befehl erteilt wird seine Forschungsarbeit am Kalten Stern fortzusetzen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Zeit läuft.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Zuvor muss Georgy leider erfahren, dass sein Freund und Kollege Dean vom Schwarzen Kreis exekutiert wurde.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Mit Hochdruck arbeitet Georgy daran einen Weg zu finden, dem Schwarzen Kreis zu entkommen. Aber er ist nicht alleine. Die kleine Hannah ist bei ihm.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ein Wettlauf gegen den sicheren Tod beginnt und Georgy ist ununterbrochen daran, die Arbeit von Dr. Ella Monroe, die vor Wochen spurlos am Kalten Stern verschwunden ist, fertig zu bringen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Apparatur ist seit dem Vorfall von Dr. Ella Monroe in einem katastrophalen Zustand, doch es ist Georgy´s und Hannah´s letzte Chance durch einen Zeitsprung, zu entkommen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als Georgy am letzten Tag seiner Frist die Maschine halbwegs funktionsfähig macht, schickt er Hannah als erstes in die Vergangenheit um zumindest sie aus den Fängen des Regimes zu retten. Als er selbst springen will, stellt sich ein alter Bekannter ihm in den Weg.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Es ist Dean, der nicht nur lebt, sondern Georgy verraten hat und zum Schwarzen Kreis gehört. Schüsse fallen und Georgy schafft es gerade noch durch einen Zeitsprung zu entkommen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p><em>Kapitel 9-11</em></p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Wir springen wieder zurück in die Vergangenheit zu Ella.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ein Jahr ist seit ihrer Ankunft in Snow Peaks bereits vergangen. Sie hat in dem Städtchen eine neue Heimat gefunden und erwartet zusammen mit Albert ein Kind.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Kurz vor der Geburt verbringt Ella die meiste Zeit alleine in ihrer gemeinsamen Wohnung beim Anwesen von Marie und Frank.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Eines Tages klopft es an der Türe.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Eine alte Frau mit schneeweißem Haar erscheint.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Es ist Hannah!</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Aber nicht das kleine Mädchen von dem Foto, sondern eine 70 Jahre gealterte Frau.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Sie und Georgy sind durch die fragile Apparatur am Kalten Stern ganze 50 Jahre weiter in die Vergangenheit gesprungen als Ella.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Georgy konnte beim Zeitsprung einige Aufzeichnungen über die Forschungsarbeiten, Hannah, Ella und sich in die Vergangenheit mitnehmen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>So erfährt Ella von der älteren Hannah die Wahrheit zur ihrer Vergangenheit, Identität, die gemeinsame Zeit in der Zukunft, über den Unfall am Kalten Stern und Ella’s bereits verstorbenen Mann Georgy, der sie sein ganzes Leben lang gesucht hat.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Hannah hat einen letzten Wunsch. Sie möchte noch vor ihrem Tod ihre leibliche Mutter aus der Zukunft begegnen. So zeigt sie Ella das letzte große Geheimnis. Die streng geheime Forschungseinrichtung unterhalb der Kuppel am Kalten Stern.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Von dort aus springt Hannah mit dem von Ella damals gefundenen Splitter mit der Maschine zurück in die Zukunft.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Vor Hannahs Sprung erhält Ella noch eine Tonaufnahme und findet Kreideaufzeichnungen an den Wänden in der Höhle.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Auf der Tonaufnahme ist Georgy´s Stimme zu hören. Er warnt davor, dass die Existenz der ganzen Menschheit auf dem Spiel steht. Durch die Experimente in der Zukunft am Kalten Stern wurde eine verheerende Kettenreaktion in der Zeit ausgelöst und der Hollow White hervorgerufen. Die Forschungsstätte muss nach Hannahs Sprung unmittelbar zerstört werden und darf keinesfalls in falsche Hände fallen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella entdeckt eine versteckte Notiz mit Foto in Georgy´s Tonbandgerät. Als sie das Bild betrachtet, stellt sich alles auf den Kopf. Wirklich alles!</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Sie selbst ist <em>nicht</em> Ella!</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ella die zusammen mit Georgy auf dem Motiv abgebildet ist, sieht anders aus.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>So verliert <em>Nicht-Ella</em>&nbsp;in ihrer Verzweiflung ihr Bewusstsein und muss sich in unterschiedlichen Erinnerungen ihrer wahren Vergangenheit und Person stellen.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Sie erfährt von einer Zeit als sie selbst im Namen des Schwarzen Kreises gehandelt hat.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>In einer anderen Erinnerung sieht sie sich und die echte Dr. Ella Monroe gemeinsam am Kalten Stern in der Höhle. Ein Konflikt entsteht und es kam zu einem tragischen Unfall, so dass sie und die wahre Ella in der Zeit gesprungen sind.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Während dem Nervenzusammenbruch, wacht <em>Nicht-Ella</em>&nbsp;in einem Krankenhaus auf. Ihr Kind musste von einem Ärzteteam zur Welt gebracht und gerettet werden.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Als sie wieder zu sich kommt, sitzt Albert mit dem Baby in den Armen vor ihr.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Die Kleine heißt Rose.</p>"
+      }
+     ],
+     "next": [
+      {
        "title": "Kapitel 12",
        "chapterId": "12",
        "sectionId": "001"
@@ -13661,7 +14217,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>» Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele &nbsp;davon im Sekundentakt. Wir gemeinsam formen damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf unsere eigene Person und unsere Welt um uns rum.</p>"
+       "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Wir gemeinsam formen damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf unsere eigene Person und unsere Welt um uns rum.</p>"
       },
       {
        "type": "paragraph",
@@ -13800,7 +14356,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du kannst das Abenteuer wiederholen oder du machst dich auf die Suche nach den restlichen versteckten <em>Sammelkarten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Nur wenn du den Speicherstand oder die App löschst, gehen sie verloren.</p>"
+       "text": "<p>Du kannst das Abenteuer wiederholen und weitere Geheimnisse aufdecken oder du machst dich auf die Suche nach den restlichen versteckten <em>Sammelkarten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Nur wenn du den Speicherstand oder die App löschst, gehen sie verloren.</p>"
       },
       {
        "type": "paragraph",
@@ -13821,7 +14377,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Danke an alle Leser:innen, die bis hierher <em>Hollow White</em> gelesen haben. Das bedeutet uns wirklich sehr viel.</p>"
+       "text": "<p>Danke an alle Leser:innen, die bis hierher <em>Hollow White</em> gelesen haben. Das bedeutet uns sehr viel.</p>"
       },
       {
        "type": "paragraph",
@@ -14053,10 +14609,6 @@ const book: Book = (({
      {
       "type": "paragraph",
       "text": "<p>Eine <em>Packung Zigaretten</em> der Marke <em>Ghost Fellows</em>. Ziemlich stark.</p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p>Rauchen gefährdet die Gesundheit.</p>"
      }
     ]
    },
@@ -14079,7 +14631,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein <em>Polaroid-Foto</em>&nbsp;aufgenommen von Albert. Neben dem <em>Ice River</em>&nbsp;und der weiten Landschaft von <em>White Valley</em>, ist im Vordergrund leicht unscharf <em>Ella</em>&nbsp;darauf abgebildet. Sehr künstlerisch.</p>"
+      "text": "<p>Ein aufgenommenes <em>Foto</em>&nbsp;von Albert. Neben dem <em>Ice River</em>&nbsp;und der weiten Landschaft von <em>White Valley</em>, ist im Vordergrund leicht unscharf <em>Ella</em>&nbsp;darauf abgebildet. Sehr künstlerisch.</p>"
      }
     ]
    },
@@ -14090,11 +14642,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein <em>Erste-Hilfe-Kasten</em>&nbsp;mit Desinfiziermittel, Schere und Verbänden etc.</p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p>Erste Hilfe kann Leben retten.</p>"
+      "text": "<p>Ein <em>Erste-Hilfe-Kasten</em>&nbsp;mit Desinfiziermittel, Schere und Verbänden.</p>"
      }
     ]
    },
@@ -14117,10 +14665,6 @@ const book: Book = (({
      {
       "type": "paragraph",
       "text": "<p>Eine <em>Münze</em>&nbsp;mit einem Hexagon und den Initialen <em>G. M.</em>.</p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p>Für was wohl <em>G. M.</em>&nbsp;steht?</p>"
      }
     ]
    },
@@ -14184,10 +14728,6 @@ const book: Book = (({
      {
       "type": "paragraph",
       "text": "<p>Ein mysteriöser <em>Splitter</em> aus deinem Tonbandgerät.</p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p>Wie kommt der da rein?</p>"
      }
     ]
    },
@@ -14242,7 +14782,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine <em>Drohung</em>&nbsp;an <em>Georgy</em>&nbsp;vom <em>Schwarzen Kreis</em>. Georgy hatte schon die ein oder andere Konfrontation mit dem <em>Schwarzen Kreis</em>.</p>"
+      "text": "<p>Eine <em>Drohung</em>&nbsp;an <em>Georgy</em>&nbsp;vom <em>Schwarzen Kreis</em>. Er hatte schon die ein oder andere Konfrontation mit dem <em>Schwarzen Kreis</em>.</p>"
      }
     ]
    },
@@ -14264,7 +14804,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein altes <em>Polaroid-Foto</em>. Neben dem <em>Ice River</em>&nbsp;und der weiten Landschaft von <em>White Valley</em>, ist im Vordergrund leicht unscharf <em>Roses Mutter</em>&nbsp;darauf abgebildet. Es wirkt sehr künstlerisch.</p>"
+      "text": "<p>Ein altes <em>Foto</em>. Neben dem <em>Ice River</em>&nbsp;und der weiten Landschaft von <em>White Valley</em>, ist im Vordergrund leicht unscharf <em>Roses Mutter</em>&nbsp;darauf abgebildet. Es wirkt sehr künstlerisch.</p>"
      }
     ]
    },
