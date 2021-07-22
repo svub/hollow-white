@@ -13,7 +13,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Bevor du ins Abenteuer eintauchst, achte darauf, dass du nicht in einem <em>privaten Tab</em>&nbsp;bist, denn sonst kann dein Gesamtfortschritt bzw. aktuelle Leseposition nicht gespeichert werden.</p>"
+       "text": "<p>Bevor du ins Abenteuer eintauchst, achte darauf, dass du <em>nicht</em>&nbsp;in einem <em>privaten Tab</em>&nbsp;bist, damit dein Gesamtfortschritt bzw. aktuelle Leseposition automatisch gespeichert werden kann.</p>"
       },
       {
        "type": "paragraph",
@@ -21,7 +21,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Wir gemeinsam formen damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf unsere eigene Person und unsere Welt um uns rum.</p>"
+       "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Wir gemeinsam formen damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf unsere eigene Person und die Welt um uns herum.</p>"
       },
       {
        "type": "paragraph",
@@ -14217,7 +14217,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Wir gemeinsam formen damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf unsere eigene Person und unsere Welt um uns rum.</p>"
+       "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Wir gemeinsam formen damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf unsere eigene Person und die Welt um uns herum.</p>"
       },
       {
        "type": "paragraph",
