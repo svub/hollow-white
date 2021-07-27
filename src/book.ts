@@ -344,11 +344,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du nimmst diesen und gehst todmüde direkt zu deinem Zimmer.</p>"
+       "text": "<p>Du nimmst diesen und schweifst mit letzten Kräften die Treppe hoch.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Ein abgewracktes Bild empfängt dich, als du die Tür aufschließt. Der Teppichboden hat bereits die eine oder andere Flüssigkeit in sich aufgesaugt. Die Wände könnten mal wieder einen Anstrich gebrauchen. Total müde machst du das Licht aus und ziehst die Vorhänge zu. Du schaffst es gerade noch, deine Schuhe auszuziehen und fällst direkt in das weiche quietschende Bett und schläfst ein.</p>"
+       "text": "<p>Todmüde schließt du dein Zimmer auf.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ein abgewracktes Bild empfängt dich. Der Teppichboden hat bereits die eine oder andere Flüssigkeit in sich aufgesaugt. Die Wände könnten mal wieder einen Anstrich gebrauchen. Es riecht nach billigem Putzmittel.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Total müde machst du das Licht aus und ziehst die Vorhänge zu. Du schaffst es gerade noch, deine Schuhe auszuziehen und fällst direkt in das weiche quietschende Bett und schläfst ein.</p>"
       },
       {
        "type": "style",
@@ -382,7 +390,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die&nbsp;ältere Dame sitzt wieder am Empfang, dreht sich auf deine Frage nach dem Weg nach <em>Snow Peaks</em>&nbsp;mit ihrem Stuhl 90 Grad zur Seite und drückt dir eine Packung Streichhölzer in die Hand. Auf der Rückseite befindet sich eine aufgedruckte Wegbeschreibung.</p>"
+       "text": "<p>Die&nbsp;ältere Dame sitzt wieder am Empfang, dreht sich auf deine Frage nach dem Weg nach <em>Snow Peaks</em>&nbsp;mit ihrem Stuhl 90 Grad zur Seite, kritzelt mit einem Stift etwas auf eine Packung Streichhölzer und drückt dir diese in die Hand.</p>"
       },
       {
        "type": "addItem",
@@ -390,7 +398,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Beehren Sie uns bald wieder junge Dame. Auf der Rückseite finden Sie auch unsere Telefonnummer. Wir haben übrigens 24 Stunden geöffnet. Täglich!</p>"
+       "text": "<p>»Auf der Rückseite finden Sie die Wegbeschreibung. Beehren Sie uns bald wieder junge Dame.&nbsp;Wir haben übrigens 24 Stunden geöffnet. Täglich!</p>"
       },
       {
        "type": "paragraph",
@@ -398,7 +406,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Neben den Streichhölzern nimmst du noch einen&nbsp;kleinen roten Apfel aus der an der Rezeption platzierten Obstschale. Nach einigen hastigen Bissen hast du den kompletten Apfel verputzt, verabschiedest dich bei der Dame und gehst zurück zum Auto.</p>"
+       "text": "<p>Neben den Streichhölzern nimmst du noch einen&nbsp;kleinen roten Apfel aus der an der Rezeption platzierten Obstschale. Nach einigen hastigen Bissen hast du den kompletten Apfel verputzt, verabschiedest dich freundlich bei der Dame und gehst zurück zum Auto.</p>"
       },
       {
        "type": "paragraph",
@@ -1387,12 +1395,12 @@ const book: Book = (({
        "text": "<p>Es ist noch eine gute halbe Tagesreise nach <em>Snow Peaks</em>&nbsp;und ihr genießt die Musik von Alberts Mixtapes. Im Moment läuft passend zu eurem Roadtrip <em>»The Ride« von Lord Neon</em>.</p>"
       },
       {
-       "type": "paragraph",
-       "text": "<p>Durch den Bass und den rhythmischen Synthesizer kommst du immer mehr ins Tagträumen. Die Zeit vergeht sehr viel schneller und angenehmer.</p>"
-      },
-      {
        "type": "addItem",
        "id": "lordneon"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Durch den Bass und den rhythmischen Synthesizer kommst du immer mehr ins Tagträumen. Die Zeit vergeht sehr viel schneller und angenehmer.</p>"
       },
       {
        "type": "paragraph",
@@ -3743,82 +3751,6 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Johnnys Geheimes Käsekuchen Rezept</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p><em>Zutaten für Boden:</em></p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 200 g Mehl</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 80 g Zucker</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 100 g Butter</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 1 Ei</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 1 Teel. Backpulver</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 1 Vanillezucker</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p><em>Zutaten für Füllung:</em></p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 200 g Margarine</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 200 g Zucker</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 1 Vanillezucker</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 2 Eier</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 2 Packungen Magerquark</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– ¼ l Sahne leicht schlagen</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 1 Soßenpulver Vanille</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>– 1 TL Rum</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p><em>Zubereitung:</em></p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Bei 175° Grad ca. 85 Min. Unter/Oberhitze im Ofen backen</p>"
-      },
-      {
-       "type": "paragraph",
        "text": "<p>»Wir haben nicht oft neue Gesichter hier in der Stadt. Mein Name ist <em>Johnny</em>, mir gehört der Laden«.</p>"
       },
       {
@@ -4488,42 +4420,6 @@ const book: Book = (({
         {
          "type": "addItem",
          "id": "crepe"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Alberts Crêpe-Rezept</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p><em>Zutaten für 2 Personen:</em></p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>– 200 g Mehl</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>– 2 Eier</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>– 400 ml Milch</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>– 1 Prise Salz</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p><em>Zubereitung:</em></p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Mehl, Eier, Milch und Salz in einer Schüssel umrühren.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>30 Min. im Kühlschrank ziehen lassen. Danach den Teig in eine erhitzte Pfanne mit etwas Öl geben und nach circa 30 Sekunden wenden. Nach weiteren 30 Sekunden den Crêpe von der Pfanne nehmen. Fertig.</p>"
         }
        ]
       },
@@ -4573,7 +4469,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Wir sehen uns heute Abend bei Marie und Frank« sagt er und verlässt durch eine Hintertüre die Küche.</p>"
+       "text": "<p>»Wir sehen uns heute Abend bei Marie und Frank«, sagt er und verlässt durch eine Hintertüre die Küche.</p>"
       },
       {
        "type": "paragraph",
@@ -4617,7 +4513,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Seit dem <em>Hollow White</em> gibt es keinen Tag, wo es nicht schneit. Mal mehr, mal weniger, selten gar nicht«, sagt Patricia.</p>"
+       "text": "<p>»Seit dem <em>Hollow White</em> gibt es kaum einen Tag, an dem es nicht schneit. Mal mehr, mal weniger, selten gar nicht«, sagt Patricia.</p>"
       },
       {
        "type": "paragraph",
@@ -5110,7 +5006,7 @@ const book: Book = (({
        "sectionId": "022"
       },
       {
-       "title": "Peak Rocks Gin",
+       "title": "Gin Peaks",
        "chapterId": "4",
        "sectionId": "023"
       }
@@ -5126,37 +5022,7 @@ const book: Book = (({
       },
       {
        "type": "addItem",
-       "id": "gin"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<ol>\n<li>Glas im Kühlschrank kühlstellen</li>\n</ol>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<ol start=\"2\">\n<li>Eiswürfel vorbereiten und ins gekühlte Glas geben</li>\n</ol>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<ol start=\"3\">\n<li>160 ml Gingerbeer</li>\n</ol>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<ol start=\"4\">\n<li>40 ml Aestesis Gin</li>\n</ol>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<ol start=\"5\">\n<li>Scheibe Limette und eine Scheibe Gurke</li>\n</ol>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<ol start=\"6\">\n<li>Paar Ingwerstücke hinzugeben</li>\n</ol>"
-        }
-       ]
+       "id": "gin-mule"
       },
       {
        "type": "paragraph",
@@ -5185,7 +5051,7 @@ const book: Book = (({
     },
     {
      "id": "023",
-     "title": "Peak Rocks Gin",
+     "title": "Gin Peaks",
      "elements": [
       {
        "type": "paragraph",
@@ -5193,37 +5059,7 @@ const book: Book = (({
       },
       {
        "type": "addItem",
-       "id": "gin"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>Glas im Kühlschrank kühl stellen</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Eiswürfel vorbereiten und ins gekühlte Glas geben</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>160 ml Tonic</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>40 ml Aestesis Gin</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Scheibe Limette und eine Scheibe Gurke</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Mit Wachholderbeeren und Rosmarinzweig garnieren</p>"
-        }
-       ]
+       "id": "gin-peaks"
       },
       {
        "type": "paragraph",
@@ -7070,7 +6906,23 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Du ziehst ein Buch nach dem anderen aus den Regalen und suchst nach etwas, was in Beziehung zu der Zahlenkombination stehen könnte. Aus manchen Ecken kommt dir der Staub nur so entgegen. Du hustest, als du diesen ungewollt einatmest. Hier ist nichts zu finden. Als du Roses Zimmer verlässt, schaust&nbsp;du dich noch einmal um und stellst sicher, dass sich alles im vorgefundenen Zustand befindet, bevor du die Tür hinter dir abschließt. In der Küche angekommen setzt du dich und trinkst einen Schluck Tee.</p>"
+       "text": "<p>Du ziehst ein Buch nach dem anderen aus den Regalen und suchst nach etwas, was in Beziehung zu der Zahlenkombination stehen könnte. Aus manchen Ecken kommt dir der Staub nur so entgegen.&nbsp;Du hustest, als du diesen ungewollt einatmest.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>In einem weiteren Regal stößt du auf eine kleine Plattensammlung. Wahrscheinlich noch von Pete, denkst du dir.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Sofort sticht dir das Plattencover von <em>Lord Neon</em>&nbsp;ins Auge. Was für eine Rarität, die Platte ist über 70 Jahre alt.</p>"
+      },
+      {
+       "type": "addItem",
+       "id": "lordneon2"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Leider ist weiter nichts zu finden. Als du Roses Zimmer verlässt, schaust&nbsp;du dich noch einmal um und stellst sicher, dass sich alles im vorgefundenen Zustand befindet, bevor du die Tür hinter dir abschließt. In der Küche angekommen setzt du dich und trinkst einen Schluck Tee.</p>"
       }
      ],
      "next": [
@@ -7702,7 +7554,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Einige Tage vergehen, die du ausschließlich in deinem Zimmer bist. Du versuchst, das alles zu verarbeiten. Rose, Charles und Cara geben dir die Zeit, die du brauchst.</p>"
+       "text": "<p>Einige Tage vergehen, die du ausschließlich in deinem Zimmer bist. Du versuchst, das alles zu verarbeiten. Rose, Charlie und Cara geben dir die Zeit, die du brauchst.</p>"
       },
       {
        "type": "paragraph",
@@ -8420,7 +8272,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Erinnerung und zugleich letzte Begegnung mit dem <em>Schwarzen Kreis</em> geht dir durch den Kopf:</p>"
+       "text": "<p>Die Erinnerung und zugleich letzte Begegnung mit dem <em>Schwarzen Kreis</em> geht dir durch die Sinne:</p>"
       },
       {
        "type": "paragraph",
@@ -8876,7 +8728,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Rose stürzt.</p>"
+       "text": "<p>Rose schreit laut auf und stürzt.</p>"
       }
      ],
      "next": [
@@ -8903,7 +8755,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du läufst zu Rose und hilfst ihr auf. Hektisch versuchst du dich zu orientieren. Du schaust in alle Richtungen und siehst das Wasserhäuschen. Charlie rennt euch entgegen und nimmt dir Rose ab.</p>"
+       "text": "<p>Du läufst zu Rose und hilfst ihr auf die Beine. Sie schreit schmerzverzerrt auf. Hektisch versuchst du dich zu orientieren. Du schaust in alle Richtungen und siehst das Wasserhäuschen. Charlie rennt euch entgegen und nimmt dir Rose ab.</p>"
       },
       {
        "type": "paragraph",
@@ -8960,6 +8812,10 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>»Judy, drücke mit aller Kraft gegen die Wunde!« sagt Charlie in sehr besorgtem Ton.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Rose ist bereits bewusstlos.</p>"
       },
       {
        "type": "paragraph",
@@ -9376,7 +9232,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "if",
-       "condition": "STATE Rose <= 0",
+       "condition": "STATE Rose < 1",
        "elements": [
         {
          "type": "paragraph",
@@ -9386,7 +9242,7 @@ const book: Book = (({
       },
       {
        "type": "else",
-       "ifCondition": "STATE Rose <= 0",
+       "ifCondition": "STATE Rose < 1",
        "elements": [
         {
          "type": "paragraph",
@@ -9427,7 +9283,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Rose <= 0",
+       "condition": "STATE Rose < 1",
        "elements": [
         {
          "type": "paragraph",
@@ -9614,11 +9470,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Eine Gravur ist darauf zu sehen, wie auf dem Buch in Roses Zimmer. Die Initialen HW, was für Hollow White steht.</p>"
+       "text": "<p>Eine Gravur ist darauf zu sehen, wie auf dem Buch in Roses Zimmer. Die Initialen HW, was für <em>Hollow White</em> steht.</p>"
       },
       {
        "type": "addItem",
-       "id": "chest"
+       "id": "chest-old"
       },
       {
        "type": "paragraph",
@@ -9630,7 +9486,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Rose <= 0",
+       "condition": "STATE Rose < 1",
        "elements": [
         {
          "type": "paragraph",
@@ -9706,7 +9562,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE Rose < 0",
+       "condition": "STATE Rose < 1",
        "elements": [
         {
          "type": "paragraph",
@@ -9805,7 +9661,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Ein geborenes Baby in den Händen der unbekannten Frau</p>"
+         "text": "<p>Viele Familienbilder mit der Frau bzw. Roses Mutter, dem Mann und einer heranwachsenden Rose</p>"
         },
         {
          "type": "paragraph",
@@ -9823,7 +9679,11 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Du findest noch ein weiteres Bild in der Truhe. Es ist in schwarz/weiß. Darauf siehst du eine unbekannte Frau, wie sie auf einem Abhang am Frozen Lake steht. Umschlossen von großen verschneiten Tannen in einer unbefleckten Landschaft. Eine atemberaubende Aufnahme mit dem Panorama von White Valley.</p>"
+         "text": "<p>Du findest noch ein weiteres Bild in der Truhe. Es ist schwarz-weiß. Darauf siehst du Roses Mutter, wie sie auf einem Abhang am Ice River steht. Umschlossen von großen verschneiten Tannen in einer unbefleckten Landschaft. Eine atemberaubende Aufnahme mit dem Panorama von White Valley.</p>"
+        },
+        {
+         "type": "addItem",
+         "id": "photo-ella-old"
         }
        ]
       },
@@ -10749,7 +10609,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Du kannst die Menschheit nicht vor Ihrem unausweichlichen Schicksal verschonen. Die schwarze Apokalypse ist der Schritt hin zu einer neuen und besseren Welt. Der <em>Hollow White</em> war erst der Anfang. Der Stein der alles ins Rollen brachte. Der Impuls für die Entstehung des <em>Schwarzen Kreises</em>&nbsp;und des uns allen bevorstehenden<em>Hollow Black</em>.«</p>"
+       "text": "<p>»Du kannst die Menschheit nicht vor ihrem unausweichlichen Schicksal verschonen. Die schwarze Apokalypse ist der Schritt hin zu einer neuen und besseren Welt. Der <em>Hollow White</em> war erst der Anfang. Der Stein der alles ins Rollen brachte. Der Impuls für die Entstehung des <em>Schwarzen Kreises</em>&nbsp;und des uns allen bevorstehenden <em>Hollow Black</em>.«</p>"
       },
       {
        "type": "paragraph",
@@ -11174,7 +11034,7 @@ const book: Book = (({
        "sectionId": "004"
       },
       {
-       "title": "Nach Hause",
+       "title": "Home Sweet Home",
        "chapterId": "9",
        "sectionId": "007"
       }
@@ -11182,11 +11042,19 @@ const book: Book = (({
     },
     {
      "id": "004",
-     "title": "Kuppel",
+     "title": "Zur Kuppel",
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Ihr fahrt zur Kuppel. Kurz davor lässt dich Albert raus.</p>"
+       "text": "<p>Albert legt ein neues Mixtape ins Kassettendeck, dreht den Zündschlüssel um und fährt dich ein kurzes Stück zur Kuppel ins Zentrum von <em>Snow Peaks</em>.</p>"
+      },
+      {
+       "type": "addItem",
+       "id": "lordneon3"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Kurz davor lässt dich Albert raus.</p>"
       },
       {
        "type": "paragraph",
@@ -11342,7 +11210,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Schon wieder einer dieser komischen Propagandablätter dieser Sekte. Der <em>Schwarze Kreis</em>« flucht Frank und wirft diesen direkt in den Mülleimer.</p>"
+       "text": "<p>»Schon wieder einer dieser komischen Propagandablätter dieser Sekte. Der <em>Schwarze Kreis</em>«, flucht Frank und wirft diesen direkt in den Mülleimer.</p>"
       }
      ],
      "next": [
@@ -12496,7 +12364,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Notizen, die Hannah dir zeigt, sind Wahrheiten, die dir als Theorien über die Jahre durch den Kopf gegangen sind. Jetzt werden deine Annahmen bestätigt, die Lösung liegt auf der Hand.</p>"
+       "text": "<p>Die Notizen, die Hannah dir zeigt, sind Wahrheiten, die dir als Theorien über das letzte Jahr durch den Kopf gegangen sind. Jetzt werden deine Annahmen bestätigt, die Lösung liegt auf der Hand.</p>"
       },
       {
        "type": "paragraph",
@@ -13061,7 +12929,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Der <em>Schwarze Kreis</em>, ein grausames Regime in der Zukunft, hat sehr dunkle Absichten mit unserer Entwicklung am <em>Kalten Stern</em>.</p>"
+         "text": "<p>Der Schwarze Kreis, ein grausames Regime in der Zukunft, hat sehr dunkle Absichten mit unserer Entwicklung am Kalten Stern.</p>"
         },
         {
          "type": "paragraph",
@@ -13069,7 +12937,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Ella, du bist unsere letzte Chance! Du musst unser Werk am <em>Kalten Stern</em> vernichten.</p>"
+         "text": "<p>Ella, du bist unsere letzte Chance! Du musst unser Werk am Kalten Stern vernichten.</p>"
         }
        ]
       },
@@ -14058,7 +13926,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Sie und Georgy sind durch die fragile Apparatur am Kalten Stern ganze 50 Jahre weiter in die Vergangenheit gesprungen als Ella.</p>"
+       "text": "<p>Sie und Georgy sind durch die fragile Apparatur am Kalten Stern ganze 60 Jahre weiter in die Vergangenheit gesprungen als Ella.</p>"
       },
       {
        "type": "paragraph",
@@ -14312,11 +14180,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ob mit <em>anderen Entscheidungen</em>, die Geschichte anders ausgegangen wäre?</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Du kannst das Abenteuer wiederholen und weitere Geheimnisse aufdecken oder du machst dich auf die Suche nach den restlichen versteckten <em>Sammelkarten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Nur wenn du den Speicherstand oder die App löschst, gehen sie verloren.</p>"
+       "text": "<p>Doch <em>Hollow White</em>&nbsp;ist noch nicht zu Ende. Du kannst das Abenteuer wiederholen und weitere Geheimnisse aufdecken oder du machst dich auf die Suche nach den restlichen versteckten <em>Sammelkarten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Nur wenn du den Speicherstand oder die App löschst, gehen sie verloren.</p>"
       },
       {
        "type": "paragraph",
@@ -14488,7 +14352,7 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "<p>Buddy</p>"
+     "text": "<p>Buddy aka Lord Neon</p>"
     },
     {
      "type": "paragraph",
@@ -14557,7 +14421,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine <em>Packung Streichhölzer</em> aus dem <em>Motel Midnight</em>, mit Wegbeschreibung nach <em>Snow Peaks</em>.</p>"
+      "text": "<p>Auf der Rückseite der <em>Streichhölzer</em> befindet sich in schlecht leserlicher Handschrift eine <em>Wegbeschreibung</em>&nbsp;nach <em>Snow Peaks</em>: Ein ganzes Stück Richtung Nordosten bis zum<em>Ice River</em>. Diesem entlang nach Südosten folgen, bis zum <em>Frozen Lake</em>, einem größeren See bei <em>Snow Peaks</em>.</p>"
      }
     ]
    },
@@ -14568,14 +14432,15 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine <em>Packung Zigaretten</em> der Marke <em>Ghost Fellows</em>. Ziemlich stark.</p>"
+      "text": "<p>Eine <em>Packung Zigaretten</em> der Marke <em>Ghost Fellows</em>, mit intensiver Tabaknote.</p>"
      }
     ]
    },
    {
     "id": "lordneon",
+    "category": "lordneon",
     "mediaType": "audio",
-    "mediaUrl": "/assets/items/lord-neon.mp3",
+    "mediaUrl": "/assets/items/lord-neon-the-ride.mp3",
     "title": "Lord Neon",
     "elements": [
      {
@@ -14598,11 +14463,11 @@ const book: Book = (({
    {
     "id": "first-aid",
     "category": "",
-    "title": "Erste-Hilfe-Kasten",
+    "title": "Verbandskasten",
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein <em>Erste-Hilfe-Kasten</em>&nbsp;mit Desinfiziermittel, Schere und Verbänden.</p>"
+      "text": "<p>Ein <em>Verbandskasten</em>&nbsp;mit Desinfiziermittel, Schere und Verbänden.</p>"
      }
     ]
    },
@@ -14624,7 +14489,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine <em>Münze</em>&nbsp;mit einem Hexagon und den Initialen <em>G. M.</em>.</p>"
+      "text": "<p>Eine <em>Münze</em>&nbsp;mit einem Hexagon und den Initialen <em>G. M.</em></p>"
      }
     ]
    },
@@ -14642,41 +14507,120 @@ const book: Book = (({
    {
     "id": "cheesecake",
     "category": "",
-    "title": "Johnnys Käsekuchen",
+    "title": "Johnnys geheimes Käsekuchen-Rezept",
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Der beste <em>Käsekuchen</em>&nbsp;aus dem <em>Stardust Diner</em>.</p>"
+      "text": "<p><em>Zutaten für Boden:</em></p>"
      },
      {
       "type": "paragraph",
-      "text": "<p>Ein altes Familienrezept.</p>"
+      "text": "<p>200 g Mehl, 80 g Zucker, 100 g Butter, 1 Ei, 1 Teelöffel Backpulver, 1 Vanillezucker</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p><em>Zutaten für Füllung:</em></p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>200 g Margarine, 200 g Zucker, 1 Vanillezucker, 2 Eier, 2 Packungen Magerquark, ¼ l Sahne leicht schlagen, 1 Soßenpulver Vanille, 1 TL Rum</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p><em>Zubereitung:</em></p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Bei 175° Grad ca. 85 Min. Unter/Oberhitze im Ofen backen.</p>"
      }
     ]
    },
    {
     "id": "crepe",
     "category": "",
-    "title": "Alberts Crêpe-Rezept",
+    "title": "Alberts geheimes Crêpe-Rezept",
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein altes <em>Crêpe-Rezept</em>&nbsp;von Albert.</p>"
+      "text": "<p><em>Zutaten für 2 Personen:</em></p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>200 g Mehl, 2 Eier, 400 ml Milch, 1 Prise Salz</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p><em>Zubereitung:</em></p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Mehl, Eier, Milch und Salz in einer Schüssel umrühren.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>30 Min. im Kühlschrank ziehen lassen. Danach den Teig in eine erhitzte Pfanne mit etwas Öl geben und nach circa 30 Sekunden wenden. Nach weiteren 30 Sekunden den Crêpe von der Pfanne nehmen. Fertig.</p>"
      }
     ]
    },
    {
-    "id": "gin",
+    "id": "gin-mule",
     "category": "",
-    "title": "aesthesis gin",
+    "title": "Hollow White Mule Gin",
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein feiner <em>Gin</em>&nbsp;aus <em>Snow Peaks</em>.</p>"
+      "text": "<ol>\n<li>Glas im Kühlschrank kühlstellen</li>\n</ol>"
      },
      {
       "type": "paragraph",
-      "text": "<p>Streng limitiert.</p>"
+      "text": "<ol start=\"2\">\n<li>Eiswürfel vorbereiten und ins gekühlte Glas geben</li>\n</ol>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<ol start=\"3\">\n<li>160 ml Gingerbeer</li>\n</ol>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<ol start=\"4\">\n<li>40 ml Aestesis Gin</li>\n</ol>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<ol start=\"5\">\n<li>Scheibe Limette und eine Scheibe Gurke</li>\n</ol>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<ol start=\"6\">\n<li>Paar Ingwerstücke hinzugeben</li>\n</ol>"
+     }
+    ]
+   },
+   {
+    "id": "gin-peaks",
+    "category": "",
+    "title": "Gin Peaks",
+    "elements": [
+     {
+      "type": "paragraph",
+      "text": "<ol>\n<li>Glas im Kühlschrank kühlstellen</li>\n</ol>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<ol start=\"2\">\n<li>Eiswürfel vorbereiten und ins gekühlte Glas geben</li>\n</ol>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<ol start=\"3\">\n<li>160 ml Tonic</li>\n</ol>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<ol start=\"4\">\n<li>40 ml Aestesis Gin</li>\n</ol>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<ol start=\"5\">\n<li>Scheibe Limette und eine Scheibe Gurke</li>\n</ol>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<ol start=\"6\">\n<li>Mit Wachholderbeeren und Rosmarinzweig garnieren</li>\n</ol>"
      }
     ]
    },
@@ -14687,7 +14631,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein mysteriöser <em>Splitter</em> aus deinem Tonbandgerät.</p>"
+      "text": "<p>Ein mysteriöser <em>Splitter</em> aus deinem Tonbandgerät. Wurde offenbar darin versteckt.</p>"
      }
     ]
    },
@@ -14698,7 +14642,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p><em>Judys Splitter</em>&nbsp;aus dem <em>Frozen Lake</em>.</p>"
+      "text": "<p><em>Judys Splitter</em>&nbsp;aus dem <em>Frozen Lake</em>. Sehr ähnlich zu deinem Splitter aus dem Tonbandgerät.</p>"
      }
     ]
    },
@@ -14709,7 +14653,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine besondere <em>Tinte</em>, die unter die Haut gestochen wird. Der <em>Schwarzen Kreis</em>&nbsp;setzt diese zur Authentifizierung und Rang-Zuordnung ein.</p>"
+      "text": "<p>Eine besondere <em>Tinte</em>, die unter die Haut gestochen wird. Der <em>Schwarze Kreis</em>&nbsp;setzt diese zur Authentifizierung und Rang-Zuordnung ein.</p>"
      }
     ]
    },
@@ -14720,7 +14664,20 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p><em>Roses Zimmerschlüssel</em>&nbsp;der von ihrem Kater Platon verwahrt wird.</p>"
+      "text": "<p><em>Roses Zimmerschlüssel</em>&nbsp;der von ihrem Kater Platon verwahrt wird. Ein sehr gemütliches Tier.</p>"
+     }
+    ]
+   },
+   {
+    "id": "lordneon2",
+    "category": "lordneon",
+    "mediaType": "audio",
+    "mediaUrl": "/assets/items/lord-neon-dystopia.mp3",
+    "title": "Lord Neon — Dystopia",
+    "elements": [
+     {
+      "type": "paragraph",
+      "text": "<p>Der Song <em>Dystopia</em>&nbsp;von <em>Lord Neon</em>.</p>"
      }
     ]
    },
@@ -14742,7 +14699,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine <em>Drohung</em>&nbsp;an <em>Georgy</em>&nbsp;vom <em>Schwarzen Kreis</em>. Er hatte schon die ein oder andere Konfrontation mit dem <em>Schwarzen Kreis</em>.</p>"
+      "text": "<p>Eine <em>Drohung</em>&nbsp;an <em>Georgy</em>&nbsp;vom <em>Schwarzen Kreis</em>. Es bleibt nicht mehr viel Zeit!</p>"
      }
     ]
    },
@@ -14775,7 +14732,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein goldener <em>Ehering</em> von Roses Mann <em>Pete</em>. Eine Erinnerung an <em>Pete</em>.</p>"
+      "text": "<p>Ein goldener <em>Ehering</em> von Roses Mann <em>Pete</em>. Eine der wenigen Erinnerungen an ihn.</p>"
      }
     ]
    },
@@ -14797,18 +14754,32 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein <em>Stein</em>&nbsp;in Form eines Herzens. Gefunden von der kleinen <em>Hannah</em>&nbsp;in der Höhle am <em>Kalten Stern</em>.</p>"
+      "text": "<p>Ein winziger <em>Stein</em>&nbsp;in Form eines Herzens. Die kleine <em>Hannah</em>&nbsp;hat diesen in der Höhle am <em>Kalten Stern</em> gefunden.</p>"
      }
     ]
    },
    {
     "id": "maevia",
-    "category": "",
+    "mediaType": "audio",
+    "mediaUrl": "/assets/items/maevia-waiting.mp3",
     "title": "Maevia",
     "elements": [
      {
       "type": "paragraph",
       "text": "<p>Der Song <em>Waiting</em>&nbsp;von <em>MAEVIA</em>.</p>"
+     }
+    ]
+   },
+   {
+    "id": "lordneon3",
+    "category": "lordneon",
+    "mediaType": "audio",
+    "mediaUrl": "/assets/items/lord-neon-chrome-warrior.mp3",
+    "title": "Lord Neon — Chrome Warrior",
+    "elements": [
+     {
+      "type": "paragraph",
+      "text": "<p>Der Song <em>Chrome Warrior</em>&nbsp;von <em>Lord Neon</em>.</p>"
      }
     ]
    },
@@ -14841,7 +14812,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Eine kleine <em>alte Truhe</em>&nbsp;mit den Buchstaben HW für <em>Hollow White</em>. Etwas rostig.</p>"
+      "text": "<p>Eine kleine <em>alte Truhe</em>&nbsp;mit den Buchstaben HW für <em>Hollow White</em>. Etwas rostig. Scheint schon älter zu sein.</p>"
      }
     ]
    },
@@ -14853,6 +14824,10 @@ const book: Book = (({
      {
       "type": "paragraph",
       "text": "<p>Der <em>Schlüssel</em>&nbsp;zum Zugang der Höhle zum <em>Kalten Stern</em>.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Die liegende Acht symbolisiert das Unendlichkeitssymbol.</p>"
      }
     ]
    },
@@ -14863,7 +14838,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p><em>Georgys Tonbandgerät</em>&nbsp;mit vielen Informationen zum <em>Hollow White</em>&nbsp;und noch bevorstehenden Geschehnissen.</p>"
+      "text": "<p><em>Georgys Tonbandgerät</em>&nbsp;mit vielen geheimen Informationen zum <em>Hollow White</em>&nbsp;und noch bevorstehenden Geschehnissen in der Zukunft.</p>"
      }
     ]
    },
