@@ -1,5 +1,5 @@
 <template web lang="pug">
-main(:class="page" :lang="config.language || 'en'")
+main(:class="page" :lang="lang")
   transition(name="page")
     //- use dynamic component: component(:is=page)
     Start(key="1", v-if="page === 'start'")
@@ -89,6 +89,9 @@ export default class App extends Vue {
       this.setOverlay(testOverlay);
     }
 
+    // set root lang
+    document.documentElement.lang = this.lang;
+
     // for debugging and testing
     window["appState"] = appState;
   }
@@ -107,6 +110,10 @@ export default class App extends Vue {
           .filter(section => !!this.path.find(r => r.chapterId === chapter!.id && r.sectionId === section.id));
         return chapter;
       }))!;
+  }
+
+  get lang() {
+    return this.config.language || 'en';
   }
 
   @Watch('options', { deep: true, immediate: true })
