@@ -51,7 +51,6 @@
             p
               font-style italic
 
-            // &:before, &:after
             .element.paragraph-element:first-child > p:before
               content: "[ 🔴 REC ] "
             .element.paragraph-element:last-child > p:after
@@ -73,14 +72,12 @@
         position relative
         flex-row()
         justify-content space-between
-        // align-items stretch
         border-bottom 166px solid transparent // margin-bottom get's ignored with .page pos:absolute
         padding-top "calc(%s + 14px)" % icon-height
 
         &:before
           @extends h5
           width icon-width
-          // height icon-height
           position absolute
           top 0
           left "calc(50% - (%s / 2))" % icon-width
@@ -89,13 +86,11 @@
           background-position "center calc(%s - %s - %s)" % (icon-height 2em 55px)
           color @css { rgba(var(--textColorRgb), .75) }
           text-transform uppercase
-          // font-family "Merriweather Sans"
           font-family var(--fontSans)
           font-weight 300
           text-align center
 
         button
-          // width calc(50% - 8px)
           @extends .word-break
           width 154px
           height @width
@@ -103,7 +98,6 @@
           max-width s('calc((%s / 2) - %s)', maxWidth, gap)
           min-height @min-width
           max-height @max-width
-          // padding (24 / baseFontSize)rem
           padding 24px 20px
           margin auto
           border 1.5px solid @css { rgba(var(--textColorRgb), .75) }
