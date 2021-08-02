@@ -10,7 +10,6 @@ import { Store } from "vuex";
 import { If } from "../../shared/entities";
 import { log, warn, error } from "../../shared/util";
 import { AppState } from "../../store";
-import TextElement from "./TextElement.vue";
 
 export function evaluateCondition(condition: string, store: Store<AppState>): boolean {
   // examples conditions (case insensitive), "IF" is not part of condition:
@@ -32,7 +31,7 @@ export function evaluateCondition(condition: string, store: Store<AppState>): bo
           error(`Failed to parse condition "${condition}": should be four elements; example: STATE x > 0`);
         }
         if (!appState.states[name]) {
-          warn(`State ${elements[1]} not found`);
+          warn(`State ${name} not found`);
         }
         const state = appState.states[name]?.value ?? 0;
         const value = parseInt(elements[3]);
@@ -55,7 +54,7 @@ export function evaluateCondition(condition: string, store: Store<AppState>): bo
             return state != value;
           default:
             throw new Error(
-              `Operator ${elements[2]} not supported. Support: =, <, <=, >, >=, !=`
+              `Operator ${elements[2]} not supported. Supported: =, <, <=, >, >=, !=`
             );
         }
       case "item":

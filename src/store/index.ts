@@ -128,12 +128,13 @@ export default new Vuex.Store({
       state.items.push(item.id);
     },
     removeItem(state, { item }: { item: RemoveItem }) {
-      if (state.items.includes(item.id)) {
+      const index = state.items.indexOf(item.id);
+      if (index < 0) {
         return warn(`removeItem: item ${ item.id } not in inventory`);
       }
       // TODO is it enough to just remove the item? or do I need to recreate the map?
       // Vue.delete(state.items, item.id);
-      state.items.splice(state.items.indexOf(item.id), 1);
+      state.items.splice(index, 1);
     },
     setOption(state, { option, choice }: { option: Option; choice: Choice }) {
       if (!option.choices.find(c => c.id === choice.id)) {
