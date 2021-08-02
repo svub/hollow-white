@@ -70,10 +70,9 @@
         icon-height = 130px
 
         position relative
-        flex-row()
         justify-content space-between
-        border-bottom 166px solid transparent // margin-bottom get's ignored with .page pos:absolute
         padding-top "calc(%s + 14px)" % icon-height
+        border-bottom 166px solid transparent // margin-bottom get's ignored with .page pos:absolute
 
         &:before
           @extends h5
@@ -92,20 +91,8 @@
 
         button
           @extends .word-break
-          width 154px
-          height @width
-          min-width (maxWidth / 3)
-          max-width s('calc((%s / 2) - %s)', maxWidth, gap)
-          min-height @min-width
-          max-height @max-width
-          padding 24px 20px
-          margin auto
           border 1.5px solid @css { rgba(var(--textColorRgb), .75) }
-          border-radius (30 / baseFontSize)rem
           background var(--decisionButtonBg)
-
-          &:not(:last-child)
-            margin-right gap
 
           &:disabled
             color @css { rgba(var(--textColorRgb), .75) }
@@ -114,3 +101,31 @@
             color var(--fgColorInverse)
             background var(--bgColorInverse)
 
+
+        :root:not(.size-xl) &
+          flex-row()
+
+          button
+            width 154px
+            height @width
+            min-width (maxWidth / 3)
+            max-width s('calc((%s / 2) - %s)', maxWidth, gap)
+            min-height @min-width
+            max-height @max-width
+            padding 24px 20px
+            margin auto
+            border-radius (30 / baseFontSize)rem
+
+            &:not(:last-child)
+              margin-right gap
+
+        :root.size-xl &
+          flex-column()
+
+          button
+            width 100%
+            padding 24px 20px
+            border-radius 24px
+
+            &:not(:first-child)
+              margin-top gap
