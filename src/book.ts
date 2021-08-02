@@ -17,8 +17,25 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p><em>Deine Entscheidungen haben Auswirkungen auf die Geschichte.</em></p>"
+       "text": "<p>Hinter <em>Hollow White</em>&nbsp;stecken kreative Köpfe, die Lust hatten, etwas Neues entstehen zu lassen, daher ist das Projekt frei verfügbar. Im Mittelpunkt steht der künstlerische Gedanke der Geschichte und die besondere Leseerfahrung der Leser:innen.</p>"
       },
+      {
+       "type": "paragraph",
+       "text": "<p><em>Deine Entscheidungen haben Auswirkungen auf die Geschichte.</em></p>"
+      }
+     ],
+     "next": [
+      {
+       "title": "Entscheidungen",
+       "chapterId": "0",
+       "sectionId": "002"
+      }
+     ]
+    },
+    {
+     "id": "002",
+     "title": "Entscheidungen",
+     "elements": [
       {
        "type": "paragraph",
        "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Wir gemeinsam formen damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf unsere eigene Person und die Welt um uns herum.</p>"
@@ -278,7 +295,7 @@ const book: Book = (({
        "sectionId": "006"
       },
       {
-       "title": "Weiterfahren",
+       "title": "Weiter­fahren",
        "chapterId": "1",
        "sectionId": "007"
       }
@@ -314,7 +331,7 @@ const book: Book = (({
        "sectionId": "006"
       },
       {
-       "title": "Weiterfahren",
+       "title": "Weiter­fahren",
        "chapterId": "1",
        "sectionId": "007"
       }
@@ -944,7 +961,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Verschwinden",
+       "title": "Ver­schwinden",
        "chapterId": "1",
        "sectionId": "016"
       },
@@ -1219,7 +1236,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Tonaufnahme abspielen",
+       "title": "Ton­auf­nahme abspielen",
        "chapterId": "1",
        "sectionId": "023"
       }
@@ -1250,7 +1267,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Tonaufnahme beenden",
+       "title": "Ton­auf­nahme beenden",
        "chapterId": "1",
        "sectionId": "024"
       }
@@ -5693,7 +5710,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ella wacht ohne Gedächtnis mitten in der verschneiten Landschaft von White Valley auf. Ihre einzige Spur zu ihrere Vergangenheit, befindet sich auf einem Tonbandgerät und einem Foto, auf welchem ein kleines Mädchen Namens Hannah zu sehen ist. Ellas Suche nach dem Mädchen und ihrer Person führt zu dem Städtchen Snow Peaks.</p>"
+       "text": "<p>Ella wacht ohne Gedächtnis mitten in der verschneiten Landschaft von White Valley auf. Ihre einzige Spur zu ihrere Vergangenheit, befindet sich auf einem Tonbandgerät und einem Foto, auf welchem ein kleines Mädchen Namens Hannah zu sehen ist. Ellas Suche nach dem Mädchen und ihrer Person führt zu dem geheimnisvollen Städtchen Snow Peaks.</p>"
       },
       {
        "type": "paragraph",
@@ -5701,11 +5718,21 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen.</p>"
+       "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen. Snow wird dabei stark verletzt.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Als sie gemeinsam das verschneite Städtchen erreichen, trifft Ella auf alte Freunde von Albert: Frank einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb von Snow Peaks in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als sie gemeinsam mit letzten Kräften das verschneite Städtchen erreichen, trifft Ella auf alte Freunde von Albert: Frank einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb von Snow Peaks in einem größeren Anwesen leben.</p>"
+      },
+      {
+       "type": "if",
+       "condition": "STATE Snow <= 0",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
+        }
+       ]
       },
       {
        "type": "paragraph",
@@ -9001,7 +9028,7 @@ const book: Book = (({
        "sectionId": "008"
       },
       {
-       "title": "Kontrolle durchbrechen",
+       "title": "Kontrol­le durchbrechen",
        "chapterId": "7",
        "sectionId": "009"
       }
@@ -9134,7 +9161,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Sternennacht",
+       "title": "Sternen­nacht",
        "chapterId": "7",
        "sectionId": "009b"
       }
@@ -9159,7 +9186,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Sternennacht",
+       "title": "Sternen­nacht",
        "chapterId": "7",
        "sectionId": "009b"
       }
@@ -10744,7 +10771,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ella wacht ohne Gedächtnis mitten in der verschneiten Landschaft von White Valley auf. Ihre einzige Spur zu ihrere Vergangenheit, befindet sich auf einem Tonbandgerät und einem Foto, auf welchem ein kleines Mädchen Namens Hannah zu sehen ist. Ellas Suche nach dem Mädchen und ihrer Person führt zu dem Städtchen Snow Peaks.</p>"
+       "text": "<p>Ella wacht ohne Gedächtnis mitten in der verschneiten Landschaft von White Valley auf. Ihre einzige Spur zu ihrere Vergangenheit, befindet sich auf einem Tonbandgerät und einem Foto, auf welchem ein kleines Mädchen Namens Hannah zu sehen ist. Ellas Suche nach dem Mädchen und ihrer Person führt zu dem geheimnisvollen Städtchen Snow Peaks.</p>"
       },
       {
        "type": "paragraph",
@@ -10752,11 +10779,21 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen.</p>"
+       "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen. Snow wird dabei stark verletzt.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Als sie gemeinsam das verschneite Städtchen erreichen, trifft Ella auf alte Freunde von Albert: Frank einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb von Snow Peaks in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als sie gemeinsam mit letzten Kräften das verschneite Städtchen erreichen, trifft Ella auf alte Freunde von Albert: Frank einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb von Snow Peaks in einem größeren Anwesen leben.</p>"
+      },
+      {
+       "type": "if",
+       "condition": "STATE Snow <= 0",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
+        }
+       ]
       },
       {
        "type": "paragraph",
@@ -10832,7 +10869,25 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Beim Versuch die Kleine zu finden, werden beide entdeckt und Rose stark verletzt. Zusammen können sie in eine außerhalb der Stadt liegende Hütte flüchten. Rose schwebt in Lebensgefahr.</p>"
+       "text": "<p>Beim Versuch die Kleine zu finden, werden beide entdeckt und Rose stark verletzt. Zusammen können sie mit Charlie und Judy, in eine außerhalb der Stadt liegende Hütte flüchten.</p>"
+      },
+      {
+       "type": "if",
+       "condition": "STATE Rose <= 0",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>Leider stirbt Rose. Hätte ihr Tod verhindert werden können?</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>//ELSE</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Rose überlebt, ist aber vorerst nicht ansprechbar.</p>"
+        }
+       ]
       },
       {
        "type": "paragraph",
@@ -10844,11 +10899,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Spur führt Judy in einer eiskalten Nacht ins Hotel Midnight.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>"
+       "text": "<p>Die Spur führt Judy in einer eiskalten Nacht ins Hotel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>"
       },
       {
        "type": "paragraph",
@@ -10880,7 +10931,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Zuvor muss Georgy erfahren, dass sein Freund und Kollege Dean vom Schwarzen Kreis exekutiert wurde.</p>"
+       "text": "<p>Zuvor muss Georgy leider erfahren, dass sein Freund und Kollege Dean vom Schwarzen Kreis exekutiert wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -13738,7 +13789,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ella wacht ohne Gedächtnis mitten in der verschneiten Landschaft von White Valley auf. Ihre einzige Spur zu ihrere Vergangenheit, befindet sich auf einem Tonbandgerät und einem Foto, auf welchem ein kleines Mädchen Namens Hannah zu sehen ist. Ellas Suche nach dem Mädchen und ihrer Person führt zu dem Städtchen Snow Peaks.</p>"
+       "text": "<p>Ella wacht ohne Gedächtnis mitten in der verschneiten Landschaft von White Valley auf. Ihre einzige Spur zu ihrere Vergangenheit, befindet sich auf einem Tonbandgerät und einem Foto, auf welchem ein kleines Mädchen Namens Hannah zu sehen ist. Ellas Suche nach dem Mädchen und ihrer Person führt zu dem geheimnisvollen Städtchen Snow Peaks.</p>"
       },
       {
        "type": "paragraph",
@@ -13746,11 +13797,21 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen.</p>"
+       "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen. Snow wird dabei stark verletzt.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Als sie gemeinsam das verschneite Städtchen erreichen, trifft Ella auf alte Freunde von Albert: Frank einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb von Snow Peaks in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als sie gemeinsam mit letzten Kräften das verschneite Städtchen erreichen, trifft Ella auf alte Freunde von Albert: Frank einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb von Snow Peaks in einem größeren Anwesen leben.</p>"
+      },
+      {
+       "type": "if",
+       "condition": "STATE Snow <= 0",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
+        }
+       ]
       },
       {
        "type": "paragraph",
@@ -13826,7 +13887,25 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Beim Versuch die Kleine zu finden, werden beide entdeckt und Rose stark verletzt. Zusammen können sie in eine außerhalb der Stadt liegende Hütte flüchten. Rose schwebt in Lebensgefahr.</p>"
+       "text": "<p>Beim Versuch die Kleine zu finden, werden beide entdeckt und Rose stark verletzt. Zusammen können sie mit Charlie und Judy, in eine außerhalb der Stadt liegende Hütte flüchten.</p>"
+      },
+      {
+       "type": "if",
+       "condition": "STATE Rose <= 0",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>Leider stirbt Rose. Hätte ihr Tod verhindert werden können?</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>//ELSE</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Rose überlebt, ist aber vorerst nicht ansprechbar.</p>"
+        }
+       ]
       },
       {
        "type": "paragraph",
@@ -13894,7 +13973,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p><em>Kapitel 9-11</em></p>"
+       "text": "<p><em>Kapitel 9-12</em></p>"
       },
       {
        "type": "paragraph",
@@ -13930,11 +14009,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Georgy konnte beim Zeitsprung einige Aufzeichnungen über die Forschungsarbeiten, Hannah, Ella und sich in die Vergangenheit mitnehmen.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>So erfährt Ella von der älteren Hannah die Wahrheit zur ihrer Vergangenheit, Identität, die gemeinsame Zeit in der Zukunft, über den Unfall am Kalten Stern und Ella’s bereits verstorbenen Mann Georgy, der sie sein ganzes Leben lang gesucht hat.</p>"
+       "text": "<p>Von der älteren Hannah erfährt sie die Wahrheit zur ihrer Vergangenheit, Identität, die gemeinsame Zeit in der Zukunft, über den Unfall am Kalten Stern und Ella’s bereits verstorbenen Mann Georgy, der sie sein ganzes Leben lang gesucht hat.</p>"
       },
       {
        "type": "paragraph",
@@ -13958,19 +14033,35 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Sie selbst ist <em>nicht</em> Ella!</p>"
+       "text": "<p>Sie selbst ist nicht&nbsp;Ella!</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Ella die zusammen mit Georgy auf dem Motiv abgebildet ist, sieht anders aus.</p>"
+       "text": "<p>Ella die zusammen mit Georgy auf dem Motiv abgebildet ist, sieht ihr auf keiner Weise ähnlich.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>So verliert <em>Nicht-Ella</em>&nbsp;in ihrer Verzweiflung ihr Bewusstsein und muss sich in unterschiedlichen Erinnerungen ihrer wahren Vergangenheit und Person stellen.</p>"
+       "text": "<p>So verliert Nicht-Ella in ihrer Verzweiflung ihr Bewusstsein und muss sich in unterschiedlichen Erinnerungen ihrer wahren Vergangenheit und Person stellen.</p>"
       },
       {
-       "type": "paragraph",
-       "text": "<p>Sie erfährt von einer Zeit als sie selbst im Namen des Schwarzen Kreises gehandelt hat.</p>"
+       "type": "if",
+       "condition": "STATE karma > 3",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>Sie erfährt von einer Zeit, als sie selbst unter der Gewalt des Schwarzen Kreises stand und sich als Widerstandskämpferin, gegen diesen gestellt hat.</p>"
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE karma > 3",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>Sie erfährt von einer Zeit, als sie selbst im Namen des Schwarzen Kreises gehandelt hat. Nur leider als Person, die Gefolgschaft und Treue dem Schwarzen Kreis geschworen hat.</p>"
+        }
+       ]
       },
       {
        "type": "paragraph",
@@ -13978,7 +14069,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Während dem Nervenzusammenbruch, wacht <em>Nicht-Ella</em>&nbsp;in einem Krankenhaus auf. Ihr Kind musste von einem Ärzteteam zur Welt gebracht und gerettet werden.</p>"
+       "text": "<p>Während dem Nervenzusammenbruch, wacht Nicht-Ella in einem Krankenhaus auf. Ihr Kind musste von einem Ärzteteam zur Welt gebracht und gerettet werden.</p>"
       },
       {
        "type": "paragraph",
@@ -14304,11 +14395,27 @@ const book: Book = (({
  "specials": {
   "credits": {
    "id": "credits",
-   "title": "Credits",
+   "title": "Unterstützen",
    "elements": [
     {
      "type": "paragraph",
-     "text": "<p><em>Idee, Story, Konzept und Design</em></p>"
+     "text": "<p><em>Hollow White</em>&nbsp;ist ein frei zugängliches Kreativprojekt. Helfe uns indem du unser Abenteuer mit deinen Freunden&nbsp;teilst und folgende gemeinnützige Organisation unterstützt:</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><a href=\"https://app.effectivealtruism.org/donations/new/organizations\" rel=\"noopener noreferrer\" target=\"_blank\">Spende für einen guten Zweck</a>.</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><a href=\"…\" rel=\"noopener noreferrer\" target=\"_blank\">Hollow White teilen</a></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Mitwirkende</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Idee, Story und UX & UI</em></p>"
     },
     {
      "type": "paragraph",
@@ -14348,6 +14455,10 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
+     "text": "<p>Silke</p>"
+    },
+    {
+     "type": "paragraph",
      "text": "<p>Elke</p>"
     },
     {
@@ -14380,10 +14491,6 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "<p>Silke</p>"
-    },
-    {
-     "type": "paragraph",
      "text": "<p>Ben</p>"
     },
     {
@@ -14401,6 +14508,10 @@ const book: Book = (({
     {
      "type": "paragraph",
      "text": "<p>© Thomas Kiris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Wir freuen uns über dein <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a>.</p>"
     }
    ],
    "next": [
@@ -14421,7 +14532,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Auf der Rückseite der <em>Streichhölzer</em> befindet sich in schlecht leserlicher Handschrift eine <em>Wegbeschreibung</em>&nbsp;nach <em>Snow Peaks</em>: Ein ganzes Stück Richtung Nordosten bis zum<em>Ice River</em>. Diesem entlang nach Südosten folgen, bis zum <em>Frozen Lake</em>, einem größeren See bei <em>Snow Peaks</em>.</p>"
+      "text": "<p>Auf der Rückseite der <em>Streichhölzer</em> befindet sich in schlecht leserlicher Handschrift eine <em>Wegbeschreibung</em>&nbsp;nach <em>Snow Peaks</em>: Ein ganzes Stück Richtung Nordosten bis zum <em>Ice River</em>. Diesem entlang nach Südosten folgen, bis zum <em>Frozen Lake</em>, einem größeren See bei <em>Snow Peaks</em>.</p>"
      }
     ]
    },
@@ -14441,7 +14552,7 @@ const book: Book = (({
     "category": "lordneon",
     "mediaType": "audio",
     "mediaUrl": "/assets/items/lord-neon-the-ride.mp3",
-    "title": "Lord Neon",
+    "title": "Lord Neon — The Ride",
     "elements": [
      {
       "type": "paragraph",
@@ -14511,27 +14622,15 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p><em>Zutaten für Boden:</em></p>"
+      "text": "<p><em>Zutaten für Boden:</em>&nbsp;200 g Mehl, 80 g Zucker, 100 g Butter, 1 Ei, 1 Teelöffel Backpulver, 1 Vanillezucker</p>"
      },
      {
       "type": "paragraph",
-      "text": "<p>200 g Mehl, 80 g Zucker, 100 g Butter, 1 Ei, 1 Teelöffel Backpulver, 1 Vanillezucker</p>"
+      "text": "<p><em>Zutaten für Füllung:</em>&nbsp;200 g Margarine, 200 g Zucker, 1 Vanillezucker, 2 Eier, 2 Packungen Magerquark, ¼ l Sahne leicht schlagen, 1 Soßenpulver Vanille, 1 TL Rum</p>"
      },
      {
       "type": "paragraph",
-      "text": "<p><em>Zutaten für Füllung:</em></p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p>200 g Margarine, 200 g Zucker, 1 Vanillezucker, 2 Eier, 2 Packungen Magerquark, ¼ l Sahne leicht schlagen, 1 Soßenpulver Vanille, 1 TL Rum</p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p><em>Zubereitung:</em></p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p>Bei 175° Grad ca. 85 Min. Unter/Oberhitze im Ofen backen.</p>"
+      "text": "<p><em>Zubereitung:</em>&nbsp;Bei 175° Grad ca. 85 Min. Unter/Oberhitze im Ofen backen.</p>"
      }
     ]
    },
@@ -14542,23 +14641,11 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p><em>Zutaten für 2 Personen:</em></p>"
+      "text": "<p><em>Zutaten für 2 Personen:</em>&nbsp;200 g Mehl, 2 Eier, 400 ml Milch, 1 Prise Salz</p>"
      },
      {
       "type": "paragraph",
-      "text": "<p>200 g Mehl, 2 Eier, 400 ml Milch, 1 Prise Salz</p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p><em>Zubereitung:</em></p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p>Mehl, Eier, Milch und Salz in einer Schüssel umrühren.</p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p>30 Min. im Kühlschrank ziehen lassen. Danach den Teig in eine erhitzte Pfanne mit etwas Öl geben und nach circa 30 Sekunden wenden. Nach weiteren 30 Sekunden den Crêpe von der Pfanne nehmen. Fertig.</p>"
+      "text": "<p><em>Zubereitung:</em>&nbsp;Mehl, Eier, Milch und Salz in einer Schüssel umrühren. 30 Min. im Kühlschrank ziehen lassen. Danach den Teig in eine erhitzte Pfanne mit etwas Öl geben und nach circa 30 Sekunden wenden. Nach weiteren 30 Sekunden den Crêpe von der Pfanne nehmen. Fertig.</p>"
      }
     ]
    },
