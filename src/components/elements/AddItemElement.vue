@@ -34,9 +34,9 @@ import config from "@/config";
   components: { ItemElement },
 })
 export default class AddItemElement extends Vue {
-  @Prop(Object) private element: AddItem;
-  @State items;
-  @Action addItem;
+  @Prop(Object) private element!: AddItem;
+  @State private items;
+  @Action private addItem;
 
   visibilityChanged(isVisible) {
     logJson("AddItemElement.visibilityChanged", this.element, isVisible);

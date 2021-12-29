@@ -9,7 +9,7 @@ import { Paragraph } from "../../shared/entities";
   name: "ParagraphElement",
 })
 export default class ParagraphElement extends Vue {
-  @Prop(Object) private element: Paragraph;
+  @Prop(Object) private element!: Paragraph;
 }
 
 </script>

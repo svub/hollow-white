@@ -17,7 +17,7 @@ import book from '../../book';
   components: {}
 })
 export default class FeedbackMode extends Vue {
-  config = book.config;
+  private config = book.config;
 
   get stateString(): string {
     return JSON.stringify(this.$store.state, undefined, ' ');

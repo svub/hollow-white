@@ -12,6 +12,7 @@
 </template>
 
 <script lang="ts">
+import { error, warn } from '@/shared/util';
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component({
@@ -19,8 +20,8 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
   components: {}
 })
 export default class Share extends Vue {
-  @Prop(String) url: string;
-  @Prop(String) title: string;
+  @Prop(String) private url!: string;
+  @Prop(String) private title!: string;
 
   copied = false;
 
@@ -31,12 +32,13 @@ export default class Share extends Vue {
   async copy() {
     await this.$nextTick();
     const input = this.$el.querySelector('input');
+    if (!input) error('overlay.share: input not found')
     input.focus();
     input.select();
     try {
       this.copied = document.execCommand('copy');
     } catch (e) {
-      console.warn('copy failed', e);
+      warn('copy failed', e);
     }
   }
 

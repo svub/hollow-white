@@ -32,10 +32,10 @@ import { Item } from '../../shared/entities';
   }
 })
 export default class ItemElement extends Vue {
-  @Prop(Object) item: Item;
-  @State items: Items;
-  @Getter itemCount: number;
-  flipped = false;
+  @Prop(Object) private item!: Item;
+  @State private items!: Items;
+  @Getter private itemCount!: number;
+  private flipped = false;
 
   itemIndex(): number {
     return this.items.indexOf(this.item.id);

@@ -15,11 +15,11 @@ import TextElement from '../elements/TextElement.vue';
   components: { TextElement }
 })
 export default class Credits extends Vue {
-  book = book;
+  private book = book;
 
   get credits(): Section {
-    logJson('Credits', this.book.specials, this.book!.specials[Specials.credits]);
-    return this.book!.specials[Specials.credits] ?? error('Credits not found!');
+    logJson('Credits', this.book.specials, this.book.specials[Specials.credits]);
+    return this.book.specials[Specials.credits] ?? error('Credits not found!');
   }
 }
 </script>
