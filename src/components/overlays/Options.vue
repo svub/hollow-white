@@ -11,7 +11,7 @@
         button.cancel(@click="confirm = false")
 
   .list
-    .option(v-for="option in config.options" :class="option.id")
+    .option(v-for="option in config.options" v-if="option.choices.length > 1" :class="option.id")
       label {{ option.title }}
       .choices
         .choice(v-for="choice in option.choices" :class="choice.id")
