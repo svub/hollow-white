@@ -31,12 +31,12 @@ import book from '../../book';
   },
 })
 export default class Options extends Vue {
-  @State options: OptionsType;
-  @Getter started: boolean;
-  @Action setOption: Function;
-  @Action reset: Function;
-  config = book.config;
-  confirm = false;
+  @State private options!: OptionsType;
+  @Getter private started!: boolean;
+  @Action private setOption!: Function;
+  @Action private reset!: Function;
+  private config = book.config;
+  private confirm = false;
 
   choose(option: Option, choice: Choice) {
     this.setOption({ option, choice });

@@ -6,15 +6,14 @@
 import { log, logJson } from "../../shared/util";
 import { Component, Vue, Prop, Watch } from "vue-property-decorator";
 import { Action } from "vuex-class";
-import { RemoveItem, Item } from "../../shared/entities";
+import { RemoveItem } from "../../shared/entities";
 
 @Component({
   name: "RemoveItemElement",
 })
 export default class RemoveItemElement extends Vue {
-  @Prop(Object) private element: RemoveItem;
-
-  @Action removeItem;
+  @Prop(Object) private element!: RemoveItem;
+  @Action private removeItem;
 
   beforeMount() {
     log('RemoveItemElement.mounted');

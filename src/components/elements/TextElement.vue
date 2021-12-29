@@ -28,7 +28,7 @@ import { logJson } from "../../shared/util";
   },
 })
 export default class TextElement extends Vue {
-  @Prop(Array) private elements: Element[];
+  @Prop(Array) private elements!: Element[];
 
   // mounted() {
   //   logJson('text elements:', this.elements);

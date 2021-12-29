@@ -18,15 +18,15 @@ import ItemElement from '../elements/ItemElement.vue';
   components: { TextElement, ItemElement }
 })
 export default class Items extends Vue {
-  @Prop(Array) itemIds: string[];
-  @Getter itemCount: number;
+  @Prop(Array) private itemIds!: string[];
+  @Getter private itemCount!: number;
 
   itemIndex(item: Item): number {
     return this.itemIds.indexOf(item.id);
   }
 
   get items(): Item[] {
-    return this.itemIds.map(id => book.config.items.find(item => item.id === id));
+    return this.itemIds.map(id => book.config.items.find(item => item.id === id)!);
   }
 
   get totalItems(): number {
