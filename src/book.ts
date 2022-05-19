@@ -17,11 +17,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p><em>Hollow White</em>&nbsp;ist ein interaktives Mystery-Textadventure mit einer Dauer von zirka zwei bis drei Stunden. Es wurde von kreativen Köpfen entwickelt, die Lust hatten etwas Neues zu machen – und es ist frei zugänglich.&nbsp;Unterstützen kannst du uns, indem wir gemeinsam etwas Gutes tun.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p><a href=\"https://www.betterplace.org/de/fundraising-events/38873-etwas-gutes-tun-und-baeume-pflanzen\" rel=\"noopener noreferrer\" target=\"_blank\">Hier erfährst du mehr</a>.</p>"
+       "text": "<p><em>Hollow White</em>&nbsp;ist ein interaktives Mystery-Textadventure mit einer Dauer von zirka zwei bis drei Stunden. Es wurde von kreativen Köpfen entwickelt, die Lust hatten etwas Neues zu machen – und es ist frei zugänglich.&nbsp;Unterstützen kannst du uns, indem wir gemeinsam etwas Gutes tun und du unser Projekt mit Freunden teilst.&nbsp;<a href=\"https://www.betterplace.org/de/fundraising-events/38873-etwas-gutes-tun-und-baeume-pflanzen\" rel=\"noopener noreferrer\" target=\"_blank\">Hier erfährst du mehr</a>.</p>"
       },
       {
        "type": "paragraph",
@@ -46,23 +42,15 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Wir gemeinsam formen damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf unsere eigene Person und die Welt um uns herum.</p>"
+       "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Gemeinsam formen wir damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf uns selbst und die Welt um uns herum.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>In jeder Sekunde liegt es somit in unserer Hand, wie die nächste ihren Lauf nimmt.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Ein kleiner Funke kann ein ganzes Universum entstehen lassen.</p>"
+       "text": "<p>In jeder Sekunde liegt es somit in unserer Hand, wie die nächste ihren Lauf nimmt. Ein kleiner Funke kann ein ganzes Universum entstehen lassen.</p>"
       },
       {
        "type": "paragraph",
        "text": "<p>Kurz gesagt, Sie da draußen und Ihre zu treffenden Entscheidungen sind jetzt unsere letzte Hoffnung!«</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Ella</p>"
       }
      ],
      "next": [
@@ -77,7 +65,7 @@ const book: Book = (({
   },
   {
    "id": "1",
-   "title": "Kapitel 1:",
+   "title": "Ella",
    "sections": [
     {
      "id": "001",
@@ -1040,6 +1028,10 @@ const book: Book = (({
        "text": "<p>Die Tür geht auf und der kalte Schnee weht in die warme Hütte. Albert betritt gefolgt von Snow den Eingang. In der rechten Hand eine Flinte, in der Linken einen geschossenen Hasen. »Alles in Ordnung?«, beruhigt antwortest du mit einem kurzen und erleichterten »Ja«.</p>"
       },
       {
+       "type": "addItem",
+       "id": "cabin"
+      },
+      {
        "type": "paragraph",
        "text": "<p>Beim Essen erzählst du von der&nbsp;Autopanne und deiner Reise nach <em>Snow Peaks</em>. Albert bietet dir an, dich mit seinem Truck in das Städtchen zu bringen, sobald der starke Schneesturm aufgehört hat. Du nimmst das Angebot dankend an und gibst Snow die Überreste vom Abendessen.</p>"
       },
@@ -1386,10 +1378,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Der Weg nach Snow Peaks</p>"
       }
      ],
      "next": [
@@ -1404,7 +1392,7 @@ const book: Book = (({
   },
   {
    "id": "2",
-   "title": "Kapitel 2:",
+   "title": "Der Weg nach Snow Peaks",
    "sections": [
     {
      "id": "001",
@@ -2579,7 +2567,7 @@ const book: Book = (({
       {
        "title": "Rückblick",
        "chapterId": "2",
-       "sectionId": "025"
+       "sectionId": "024"
       },
       {
        "title": "Kapitel 3",
@@ -2615,10 +2603,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen. Snow wird dabei stark verletzt.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Der&nbsp;Hollow White</p>"
       }
      ],
      "next": [
@@ -2633,7 +2617,7 @@ const book: Book = (({
   },
   {
    "id": "3",
-   "title": "Kapitel 3:",
+   "title": "Der Hollow White",
    "sections": [
     {
      "id": "001",
@@ -2980,7 +2964,7 @@ const book: Book = (({
         },
         {
          "type": "addItem",
-         "id": "snow"
+         "id": "snow-lebt"
         },
         {
          "type": "paragraph",
@@ -4419,10 +4403,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Die Verschwundenen</p>"
       }
      ],
      "next": [
@@ -4437,7 +4417,7 @@ const book: Book = (({
   },
   {
    "id": "4",
-   "title": "Kapitel 4:",
+   "title": "Die Verschwundenen",
    "sections": [
     {
      "id": "001",
@@ -6171,10 +6151,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Ella und Albert kommen sich auf ihrer Reise immer näher und können ihre Gefühle zueinander nicht mehr verstecken. Als sie neben Albert einschläft, hat sie eine Vision in einem Traum. Ist sie selbst auch eine Verschwundene aus einer anderen Zeit?</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Die Flucht</p>"
       }
      ],
      "next": [
@@ -6189,7 +6165,7 @@ const book: Book = (({
   },
   {
    "id": "5",
-   "title": "Kapitel 5:",
+   "title": "Die Flucht",
    "sections": [
     {
      "id": "001",
@@ -8321,10 +8297,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreis handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Die Höhle</p>"
       }
      ],
      "next": [
@@ -8339,7 +8311,7 @@ const book: Book = (({
   },
   {
    "id": "6",
-   "title": "Kapitel 6:",
+   "title": "Die Höhle",
    "sections": [
     {
      "id": "001",
@@ -9400,10 +9372,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreis konfrontiert. Beim Versuch Dean zu Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Schwarze Rosen</p>"
       }
      ],
      "next": [
@@ -9418,7 +9386,7 @@ const book: Book = (({
   },
   {
    "id": "7",
-   "title": "Kapitel 7:",
+   "title": "Schwarze Rosen",
    "sections": [
     {
      "id": "001",
@@ -10938,10 +10906,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Hotel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Die Spinne</p>"
       }
      ],
      "next": [
@@ -10956,7 +10920,7 @@ const book: Book = (({
   },
   {
    "id": "8",
-   "title": "Kapitel 8:",
+   "title": "Die Spinne",
    "sections": [
     {
      "id": "001",
@@ -11881,10 +11845,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Als er selbst springen will, stellt sich ein alter Bekannter ihm in den Weg. Es ist Dean, der nicht nur lebt, sondern Georgy dem Anschein nach verraten hat und zum Schwarzen Kreis gehört. Georgy schafft es gerade noch durch einen Zeitsprung, den tödlichen Schüssen zu entkommen.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Neue Heimat</p>"
       }
      ],
      "next": [
@@ -11899,7 +11859,7 @@ const book: Book = (({
   },
   {
    "id": "9",
-   "title": "Kapitel 9:",
+   "title": "Neue Heimat",
    "sections": [
     {
      "id": "001",
@@ -12697,10 +12657,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Eines Tages klopft es an der Haustüre.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Der Wunsch</p>"
       }
      ],
      "next": [
@@ -12715,7 +12671,7 @@ const book: Book = (({
   },
   {
    "id": "10",
-   "title": "Kapitel 10:",
+   "title": "Der Wunsch",
    "sections": [
     {
      "id": "001",
@@ -13977,10 +13933,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Hannah hat einen letzten Wunsch. Sie möchte noch vor ihrem Tod ihre leibliche Mutter aus der Zukunft begegnen.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Kreide</p>"
       }
      ],
      "next": [
@@ -13995,7 +13947,7 @@ const book: Book = (({
   },
   {
    "id": "11",
-   "title": "Kapitel 11:",
+   "title": "Kreide",
    "sections": [
     {
      "id": "001",
@@ -15543,19 +15495,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Wir gemeinsam formen damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf unsere eigene Person und die Welt um uns herum.</p>"
+       "text": "<p>»Unzählige Entscheidungen trifft der Mensch in seinem Leben. Viele davon im Sekundentakt. Gemeinsam formen wir damit unsere Realität, unsere Gefühle und unsere Beziehungen. Unsere Entscheidungen haben Einfluss auf uns selbst und die Welt um uns herum.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>In jeder Sekunde liegt es somit in unserer Hand, wie die nächste ihren Lauf nimmt.</p>"
+       "text": "<p>In jeder Sekunde liegt es somit in unserer Hand, wie die nächste ihren Lauf nimmt. Ein kleiner Funke kann ein ganzes Universum entstehen lassen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Ein kleiner Funke kann ein ganzes Universum entstehen lassen.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Kurz gesagt, Sie da draußen und Ihre getroffenen Entscheidungen sind jetzt unsere letzte Hoffnung!«</p>"
+       "text": "<p>Kurz gesagt, Sie da draußen und Ihre zu treffenden Entscheidungen sind jetzt unsere letzte Hoffnung!«</p>"
       },
       {
        "type": "paragraph",
@@ -15699,15 +15647,19 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Danke an alle Leser:innen, die <em>Hollow White</em> zu Ende gelesen haben. Mit viel Teamspirit und Herzblut haben wir es geschafft <em>Hollow White</em>&nbsp;zu veröffentlichen.</p>"
+       "text": "<p>Danke an alle, die <em>Hollow White</em> zu Ende gelesen haben.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Inspiriert von Mystery-Klassikern, aktuellen Werken und Zeitgeschehen ist die Idee zu <em>Hollow White</em> entstanden. Ein immersives Mystery-Text-Adventure, an dem wir seit Winter 2018 kreativ arbeiten.</p>"
+       "text": "<p>Inspiriert von Mystery-Klassikern, aktuellen Werken und Zeitgeschehen ist die Idee zu <em>Hollow White</em> entstanden. Ein immersives Textadventure, an dem wir seit Winter 2018 kreativ arbeiten.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Motivation war es, eine fiktive spannende Geschichte mit einer eigenen Art von Schreibstil zu erschaffen, in welcher die Leser:innen selbst ins Geschehen eintauchen und sich mit den Charakteren und deren Entscheidungen verbinden.</p>"
+       "text": "<p>Motivation war es, eine fiktive spannende Geschichte mit einer eigenen Art von Schreibstil zu erschaffen, in welcher die Leser selbst ins Geschehen eintauchen und sich mit den Charakteren und deren Entscheidungen verbinden.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Mit viel Teamspirit und Herzblut haben wir es geschafft <em>Hollow White</em>&nbsp;zu veröffentlichen.</p>"
       },
       {
        "type": "paragraph",
@@ -15785,7 +15737,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Lass uns zusammen etwas Gutes tun und Bäume pflanzen.</p>"
+       "text": "<p>Lass uns zusammen etwas Gutes tun.</p>"
       },
       {
        "type": "paragraph",
@@ -15814,7 +15766,7 @@ const book: Book = (({
    "elements": [
     {
      "type": "paragraph",
-     "text": "<p>Lass uns zusammen etwas Gutes tun und Bäume pflanzen.</p>"
+     "text": "<p>Lass uns zusammen etwas Gutes tun.</p>"
     },
     {
      "type": "paragraph",
@@ -15903,6 +15855,10 @@ const book: Book = (({
     {
      "type": "paragraph",
      "text": "<p>Michi</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Bene</p>"
     },
     {
      "type": "paragraph",
@@ -16009,7 +15965,8 @@ const book: Book = (({
    },
    {
     "id": "motelmidnight",
-    "category": "location",
+    "mediaType": "audio",
+    "mediaUrl": "/assets/items/midnight.mp3",
     "title": "Motel Midnight",
     "elements": [
      {
@@ -16031,7 +15988,7 @@ const book: Book = (({
    },
    {
     "id": "cabin",
-    "category": "location",
+    "category": "",
     "title": "Hütte",
     "elements": [
      {
@@ -16099,7 +16056,7 @@ const book: Book = (({
    },
    {
     "id": "snowpeaks",
-    "category": "location",
+    "category": "",
     "title": "Snow Peaks",
     "elements": [
      {
@@ -16132,7 +16089,7 @@ const book: Book = (({
    },
    {
     "id": "stardustdiner",
-    "category": "location",
+    "category": "",
     "title": "Stardust",
     "elements": [
      {
@@ -16176,8 +16133,8 @@ const book: Book = (({
     ]
    },
    {
-    "id": "observatorim",
-    "category": "location",
+    "id": "observatorium",
+    "category": "",
     "title": "Observatorium",
     "elements": [
      {
@@ -16517,7 +16474,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Lass uns zusammen etwas Gutes tun und mit einer Spende Bäume pflanzen.</p>"
+      "text": "<p>Lass uns zusammen etwas Gutes tun.</p>"
      },
      {
       "type": "paragraph",
