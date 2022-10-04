@@ -6,6 +6,7 @@
       button.feedback-mode(v-if="feedbackEnabled" @click="overlay('feedbackMode')")
       button.items(v-if="config.items && itemCount > 0" @click="overlay('items')")
       button.chapters(@click="overlay('chapters')")
+      button.options(@click="overlay('options')")
 
   .content
     transition(name="section" mode="out-in")
