@@ -15888,7 +15888,182 @@ const book: Book = (({
    ]
   }
  ],
- "specials": {},
+ "specials": {
+  "credits": {
+   "id": "credits",
+   "title": "Mitwirkende",
+   "elements": [
+    {
+     "type": "paragraph",
+     "text": "<p><em>Idee, Story und UX & UI</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Thomas Kiris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Konzept und Programmierung</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Sven Buschbeck</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Lektor und Mentoring</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Fritz Krautzberger</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Illustrationen</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Minh Chau Appelhagen-Lu</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Thomas Kiris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Testleser</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Minh Chau Appelhagen-Lu</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Benedikt Rascop</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Bettina Buschbeck</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Sven Buschbeck</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Alexandra Röhl</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Sebastian Anton</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Frank Wehrle</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Elke Kiris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Marina Siciliano</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Ben Regali</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Franz Schelke</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Michael Krett</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Varinja Kiris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Andi Kiris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Bernd Schreyer</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Christoph Jaster</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Michael Heller</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Christian Wussow</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Speziellen Dank</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Silke Kiris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Benedikt Rascop</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Minh Chau Appelhagen-Lu</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Lara Kiris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Lord Neon</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Alessandro Russo</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Franz Schelke</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Christian Aschoff</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Kissshirts.de</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Wir freuen uns über dein <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a>.</p>"
+    }
+   ],
+   "next": [
+    {
+     "title": "White mit anderen teilen",
+     "id": "share",
+     "data": "Hollow"
+    },
+    {
+     "title": "Zurück",
+     "id": "start",
+     "data": ""
+    }
+   ]
+  }
+ },
  "config": {
   "items": [
    {
