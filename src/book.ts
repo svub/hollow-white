@@ -17,11 +17,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p><em>Hollow White</em>&nbsp;ist ein interaktives Mystery-Textadventure mit einer Dauer von zirka zwei bis drei Stunden. Es wurde von kreativen Köpfen entwickelt, die Lust hatten etwas Neues zu machen – und es ist frei zugänglich.&nbsp;Unterstützen kannst du uns, indem wir gemeinsam etwas Gutes tun und du unser Projekt mit Freunden teilst.&nbsp;<a href=\"https://www.betterplace.org/de/fundraising-events/38873-etwas-gutes-tun-und-baeume-pflanzen\" rel=\"noopener noreferrer\" target=\"_blank\">Hier erfährst du mehr</a>.</p>"
+       "text": "<p><em>Hollow White</em>&nbsp;ist ein interaktives Mystery-Textadventure mit einer Dauer von zirka zwei bis drei Stunden. Es wurde von kreativen Köpfen entwickelt, die Lust hatten etwas Neues zu machen – und es ist frei zugänglich.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Neben dem künstlerischen Gedanken der Geschichte von <em>Hollow White</em> stehen deine Entscheidungen im Mittelpunkt.</p>"
+       "text": "<p>Neben dem künstlerischen Gedanken der Geschichte von <em>Hollow White</em>, stehen deine Entscheidungen im Mittelpunkt.</p>"
       },
       {
        "type": "paragraph",
@@ -423,7 +423,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Auf der Rückseite finden Sie die Wegbeschreibung. Beehren Sie uns bald wieder junge Dame.&nbsp;Wir haben übrigens 24 Stunden geöffnet. Täglich!«</p>"
+       "text": "<p>»Auf der Rückseite finden Sie die Wegbeschreibung. Beehren Sie uns bald wieder,&nbsp;junge Dame.&nbsp;Wir haben übrigens 24 Stunden geöffnet. Täglich!«</p>"
       },
       {
        "type": "paragraph",
@@ -499,7 +499,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Unter Schock versuchst du den Gurt zu lösen, aber du hast keine Chance. Dir wird es bei jeder Bewegung schwindelig.</p>"
+       "text": "<p>Unter Schock versuchst du den Gurt zu lösen, aber du hast keine Chance. Dir wird es bei jeder Bewegung schwindlig.</p>"
       },
       {
        "type": "paragraph",
@@ -658,7 +658,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Es wird immer kälter&nbsp;in dieser stillen Nacht. Deine Augen fallen zu. Du bist müde und erschöpft. Immer wieder versuchst du, dich wach zuhalten.</p>"
+       "text": "<p>Es wird immer kälter&nbsp;in dieser stillen Nacht. Deine Augen fallen zu. Du bist müde und erschöpft. Immer wieder versuchst du, dich wachzuhalten.</p>"
       },
       {
        "type": "paragraph",
@@ -711,7 +711,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du beißt die Zähne zusammen und läufst weiter. Mittlerweile hat es angefangen richtig stark zu schneien, sodass deine Sicht nur auf wenige Meter begrenzt ist.</p>"
+       "text": "<p>Du beißt die Zähne zusammen und läufst weiter. Mittlerweile hat es angefangen,&nbsp;richtig stark zu schneien, sodass deine Sicht nur auf wenige Meter begrenzt ist.</p>"
       },
       {
        "type": "paragraph",
@@ -804,7 +804,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Langsam öffnest du die Augen. Dir ist sehr schwindelig. Du hörst dumpf eine Stimme, die zu dir spricht.</p>"
+         "text": "<p>Langsam öffnest du die Augen. Dir ist sehr schwindlig. Du hörst dumpf eine Stimme, die zu dir spricht.</p>"
         },
         {
          "type": "paragraph",
@@ -916,7 +916,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Du kraulst dem Hund die Ohren. Ganz anhänglich, mit&nbsp;treuen Augen schaut dich Snow an. Albert gibt dir dein Diktiergerät. »Das hier lag neben Ihnen im Schnee.&nbsp;Ruhen Sie sich aus. Wir reden nach dem Essen weiter.«</p>"
+         "text": "<p>Du kraulst dem Hund die Ohren. Ganz anhänglich, mit&nbsp;treuen Augen,&nbsp;schaut dich Snow an. Albert gibt dir dein Diktiergerät. »Das hier lag neben Ihnen im Schnee.&nbsp;Ruhen Sie sich aus. Wir reden nach dem Essen weiter.«</p>"
         }
        ]
       },
@@ -934,7 +934,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>»Hollow White, ooh Hollow White, höre die&nbsp;Gesänge des fallenden Sterns. Der die Erde getroffen aus der Dunkelheit …</p>"
+         "text": "<p>»Hollow White, ooh Hollow White, höre die&nbsp;Gesänge des fallenden Sterns. Der die Erde getroffen aus der Dunkelheit …«</p>"
         }
        ]
       },
@@ -1167,7 +1167,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>»Drei Tage bin ich nun bei Albert und Snow. Ich will mir gar nicht ausmalen, was geschehen wäre, wenn die beiden mich nicht gefunden hätten. Ich hoffe, der Sturm legt sich bald, damit ich weiter meiner Spur nach Hannah in Snow Peaks folgen kann.</p>"
+         "text": "<p>»Drei Tage bin ich nun bei Albert und Snow. Ich will mir gar nicht ausmalen, was geschehen wäre, wenn die beiden mich nicht gefunden hätten. Ich hoffe, der Sturm legt sich bald, damit ich weiter meiner Spur nach Hannah in Snow Peaks folgen kann.«</p>"
         }
        ]
       },
@@ -1256,7 +1256,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>»Hollow White, ooh Hollow White, höre die Gesänge des fallenden Sterns. Der die Erde getroffen aus der Dunkelheit so fern. Der weiten Stille entrissen, gereist hierher. Kam nach Snow Peaks. Ooh Snow Peaks, ooh Snow Peaks …«</p>"
+         "text": "<p>Hollow White, ooh Hollow White, höre die Gesänge des fallenden Sterns. Der die Erde getroffen aus der Dunkelheit so fern. Der weiten Stille entrissen, gereist hierher. Kam nach Snow Peaks. Ooh Snow Peaks, ooh Snow Peaks …«</p>"
         }
        ]
       },
@@ -1283,7 +1283,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich kann mich an nichts, wirklich gar nichts mehr erinnern. Ich bin plötzlich mit&nbsp;dem alten Auto im nirgendwo in <em>White Valley</em>&nbsp;gestanden. Es war noch hell und hat geschneit. In meinen Armen&nbsp;diese Tasche, in welcher&nbsp;ich das Tonbandgerät, ein Foto und andere Sachen fand. Albert, ich weiß nicht einmal, wer ich bin! Ich habe mein Gedächtnis verloren. Meine einzige Spur zu meiner Person sind auf diesem Tonbandgerät und dem Foto.«</p>"
+       "text": "<p>»Ich kann mich an nichts, wirklich gar nichts mehr erinnern. Ich bin plötzlich mit&nbsp;dem alten Auto im Nirgendwo in <em>White Valley</em>&nbsp;gestanden. Es war noch hell und hat geschneit. In meinen Armen&nbsp;diese Tasche, in welcher&nbsp;ich das Tonbandgerät, ein Foto und andere Sachen fand. Albert, ich weiß nicht einmal, wer ich bin! Ich habe mein Gedächtnis verloren. Meine einzige Spur zu meiner Person sind auf diesem Tonbandgerät und dem Foto.«</p>"
       },
       {
        "type": "paragraph",
@@ -1348,20 +1348,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 1",
        "chapterId": "1",
        "sectionId": "025"
-      },
-      {
-       "title": "Kapitel 2",
-       "chapterId": "2",
-       "sectionId": "001"
       }
      ]
     },
     {
      "id": "025",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -1373,14 +1368,33 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Dir gefällt Hollow White und du möchtest uns unterstützen?«</p>"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "<p><a href=\"https://bit.ly/3Mg53r5\" rel=\"noopener noreferrer\" target=\"_blank\">Hier erfährst du mehr</a>.</p>"
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Kapitel 2",
        "chapterId": "2",
@@ -1416,7 +1430,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ella, du musst wissen, <em>Snow Peaks</em>&nbsp;ist keine typische Kleinstadt. Seit dem <em>Hollow White</em>, verschwinden immer wieder Einwohner auf unerklärliche Weise. Die Angst ist groß. Viele Menschen haben den Ursprungsort seither im Zentrum verlassen und sich an die äußeren Stadtgrenzen zurückgezogen. Aber selbst dort ist man nicht sicher. Einige Gebäude stehen leer und sind mit der Zeit verfallen. Es wirkt gespenstisch, wenn sich der Nebel tief in die nahezu verlassenen Straßen und Gassen legt. Die Stadt birgt viele Geheimnisse und Gefahren, aber ich habe das Gefühl, dass wir genau dort Antworten zu dir und Hannah&nbsp;finden.«</p>"
+       "text": "<p>»Ella, du musst wissen, <em>Snow Peaks</em>&nbsp;ist keine typische Kleinstadt. Seit dem <em>Hollow White</em>&nbsp;verschwinden immer wieder Einwohner auf unerklärliche Weise. Die Angst ist groß. Viele Menschen haben den Ursprungsort seither im Zentrum verlassen und sich an die äußeren Stadtgrenzen zurückgezogen. Aber selbst dort ist man nicht sicher. Einige Gebäude stehen leer und sind mit der Zeit verfallen. Es wirkt gespenstisch, wenn sich der Nebel tief in die nahezu verlassenen Straßen und Gassen legt. Die Stadt birgt viele Geheimnisse und Gefahren, aber ich habe das Gefühl, dass wir genau dort Antworten zu dir und Hannah&nbsp;finden.«</p>"
       },
       {
        "type": "paragraph",
@@ -1491,7 +1505,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Komm schon Ella«, sagt er.</p>"
+       "text": "<p>»Komm schon, Ella«, sagt er.</p>"
       },
       {
        "type": "paragraph",
@@ -1765,7 +1779,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Vorsicht Ella! Keinen Schritt weiter. Snow muss vorhin doch über den Fluss sein. Schnell zurück Richtung Fischerhütte«, sagt Albert außer Atem.</p>"
+       "text": "<p>»Vorsicht, Ella! Keinen Schritt weiter. Snow muss vorhin doch über den Fluss sein. Schnell zurück Richtung Fischerhütte«, sagt Albert außer Atem.</p>"
       },
       {
        "type": "paragraph",
@@ -1790,7 +1804,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ihr klettert über einige Felsbänke, um auf die andere Seite des Ufers zu gelangen. Die Steine sind sehr nass und rutschig. Vorsichtig überquert ihr Stein für Stein den reißenden Fluss. Kurz bevor ihr das Ufer erreicht, kommt Albert ins Rutschen. Du schaffst es gerade noch seine Hand zu greifen, doch sein Gewicht, reißt ihn und dich bis zur Taille ins eiskalte Wasser.</p>"
+       "text": "<p>Ihr klettert über einige Felsbänke, um auf die andere Seite des Ufers zu gelangen. Die Steine sind sehr nass und rutschig. Vorsichtig überquert ihr Stein für Stein den reißenden Fluss. Kurz bevor ihr das Ufer erreicht, kommt Albert ins Rutschen. Du schaffst es gerade noch seine Hand zu greifen, doch sein Gewicht reißt ihn und dich bis zur Taille ins eiskalte Wasser.</p>"
       },
       {
        "type": "paragraph",
@@ -1798,7 +1812,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Am Ufer angekommen, merkst du sofort, wie stark dein Körper zittert.</p>"
+       "text": "<p>Am Ufer angekommen merkst du sofort, wie stark dein Körper zittert.</p>"
       },
       {
        "type": "paragraph",
@@ -1814,7 +1828,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Schnell sucht ihr im Inneren der Hütte eine Möglichkeit euch zu wärmen.</p>"
+       "text": "<p>Schnell sucht ihr im Inneren der Hütte eine Möglichkeit, euch zu wärmen.</p>"
       }
      ],
      "next": [
@@ -2081,7 +2095,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Mit einem klapprigen Holzstuhl versuchst du die Tür stärker zu verriegeln. Die Scharniere hat es am Türgriff regelrecht aus dem Rahmen gesprengt, als Albert diese zuvor aufgebrochen hat. Mühsam klemmst du die Stuhllehne zwischen den noch innen hängenden Türgriff, sodass sich die Füße am Boden verkeilen.</p>"
+       "text": "<p>Mit einem klapprigen Holzstuhl versuchst du, die Tür stärker zu verriegeln. Die Scharniere hat es am Türgriff regelrecht aus dem Rahmen gesprengt, als Albert diese zuvor aufgebrochen hat. Mühsam klemmst du die Stuhllehne zwischen den noch innen hängenden Türgriff, sodass sich die Füße am Boden verkeilen.</p>"
       },
       {
        "type": "paragraph",
@@ -2418,7 +2432,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich muss die ganze Zeit daran denken, wie es war, als ich Snow damals gefunden habe. Er war noch ein Welpe, unterernährt und schwach im Schnee gelegen. Die Chancen standen schlecht um ihn, aber er hat es geschafft. Er wird es wieder schaffen! Aber&nbsp;dennoch habe ich Angst. Angst, auch noch ihn zu verlieren …«</p>"
+       "text": "<p>»Ich muss ununterbrochen daran denken, wie es war, als ich Snow damals gefunden habe. Er war noch ein Welpe, unterernährt und schwach im Schnee gelegen. Die Chancen standen schlecht um ihn, aber er hat es geschafft. Er wird es wieder schaffen! Aber&nbsp;dennoch habe ich Angst. Angst, auch noch ihn zu verlieren …«</p>"
       },
       {
        "type": "paragraph",
@@ -2467,14 +2481,9 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 2",
        "chapterId": "2",
        "sectionId": "024"
-      },
-      {
-       "title": "Kapitel 3",
-       "chapterId": "3",
-       "sectionId": "001"
       }
      ]
     },
@@ -2526,14 +2535,9 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 2",
        "chapterId": "2",
        "sectionId": "024"
-      },
-      {
-       "title": "Kapitel 3",
-       "chapterId": "3",
-       "sectionId": "001"
       }
      ]
     },
@@ -2565,20 +2569,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 2",
        "chapterId": "2",
        "sectionId": "024"
-      },
-      {
-       "title": "Kapitel 3",
-       "chapterId": "3",
-       "sectionId": "001"
       }
      ]
     },
     {
      "id": "024",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -2590,11 +2589,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -2603,9 +2602,24 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen. Snow wird dabei stark verletzt.</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
+        }
+       ]
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Kapitel 3",
        "chapterId": "3",
@@ -2637,7 +2651,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Es ist spät! Wer ist da und was&nbsp;wollen Sie!«</p>"
+       "text": "<p>»Es ist spät! Wer ist da und was&nbsp;wollen Sie?«</p>"
       },
       {
        "type": "paragraph",
@@ -3231,7 +3245,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Frank erwidert,</p>"
+       "text": "<p>Frank erwidert:</p>"
       },
       {
        "type": "paragraph",
@@ -3328,7 +3342,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als du dem Stadtzentrum langsam näher kommst, betrachtest du die alten Gebäude in diesem Stadtteil, dessen Türen und Fenster zum Teil mit Holzbrettern zugenagelt sind. “Betreten verboten!“, wurde mit weißer Farbe darauf geschmiert. Viele der umliegenden Läden sind geschlossen und mit Metallgittern verriegelt. Die höheren Gebäude verschwinden bis in die tief liegenden Nebelwolken.</p>"
+       "text": "<p>Als du dem Stadtzentrum langsam näher kommst, betrachtest du die alten Gebäude in diesem Stadtteil, dessen Türen und Fenster zum Teil mit Holzbrettern zugenagelt sind. „Betreten verboten!“, wurde mit weißer Farbe darauf geschmiert. Viele der umliegenden Läden sind geschlossen und mit Metallgittern verriegelt. Die höheren Gebäude verschwinden bis in die tief liegenden Nebelwolken.</p>"
       },
       {
        "type": "paragraph",
@@ -3402,7 +3416,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als du dem Stadtzentrum langsam näher kommst, betrachtest du die alten Gebäude in diesem Stadtteil, dessen Türen und Fenster zum Teil mit Holzbrettern zugenagelt sind. “Betreten verboten!“, wurde mit weißer Farbe darauf geschmiert. Viele der umliegenden Läden sind geschlossen und mit Metallgittern verriegelt. Die höheren Gebäude verschwinden bis in die tief liegenden Nebelwolken.</p>"
+       "text": "<p>Als du dem Stadtzentrum langsam näher kommst, betrachtest du die alten Gebäude in diesem Stadtteil, dessen Türen und Fenster zum Teil mit Holzbrettern zugenagelt sind. „Betreten verboten!“, wurde mit weißer Farbe darauf geschmiert. Viele der umliegenden Läden sind geschlossen und mit Metallgittern verriegelt. Die höheren Gebäude verschwinden bis in die tief liegenden Nebelwolken.</p>"
       },
       {
        "type": "paragraph",
@@ -3607,7 +3621,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>»Wissen Sie«, antwortet die Dame in Weiß. »Wir haben recht selten Besucher hier in der <em>Kuppel</em>&nbsp;und es ist sehr ruhig. Neben unseren Mitarbeitern in den Gärten und zur Instandhaltung der Anlage haben wir nur wenige Gäste in der <em>Kuppel</em>. Vereinzelt einige Anwohner, die hier ihre Runden drehen. Die meisten jedoch meiden diesen Ort.«</p>"
+       "text": "<p>»Wissen Sie«, antwortet die Dame in Weiß, »wir haben recht selten Besucher hier in der <em>Kuppel</em>&nbsp;und es ist sehr ruhig. Neben unseren Mitarbeitern in den Gärten und zur Instandhaltung der Anlage haben wir nur wenige Gäste in der <em>Kuppel</em>. Vereinzelt einige Anwohner, die hier ihre Runden drehen. Die meisten jedoch meiden diesen Ort.«</p>"
       }
      ],
      "next": [
@@ -3796,7 +3810,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Neben den Leuten, an denen du vorbeiläufst, bemerkst du einen Mann mit zerlumpter Kleidung an einer bröckeligen Hauswand auf dem kalten Boden, sitzen. Um ihn herum Kartons, aus welchen er sich eine Art Obdach gebaut hat.</p>"
+       "text": "<p>Neben den Leuten, an denen du vorbeiläufst, bemerkst du einen Mann mit zerlumpter Kleidung an einer bröckeligen Hauswand auf dem kalten Boden sitzen. Um ihn herum Kartons, aus welchen er sich eine Art Obdach gebaut hat.</p>"
       },
       {
        "type": "paragraph",
@@ -3927,7 +3941,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Wollen sie schon gehen?«</p>"
+       "text": "<p>»Wollen Sie schon gehen?«</p>"
       }
      ],
      "next": [
@@ -3979,11 +3993,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Uns gibt es fast schon so lange wie den <em>Hollow White</em>&nbsp;selbst. Mein Vater hat einige Jahre nach den damaligen Geschehnissen die Stadt mit aufgebaut und das <em>Stardust</em>&nbsp;gegründet. Unser Restaurant war der Treffpunkt der Stadt und immer gut besucht. Die Leute sind von überall hierhergekommen, um den besten Kuchen von <em>Snow Peaks</em>&nbsp;oder einen unserer Drinks zu bekommen. Das Kuchenrezept stammt übrigens von meiner Mutter. Florierende Zeiten waren das.</p>"
+       "text": "<p>»Uns gibt es fast schon so lang wie den <em>Hollow White</em>&nbsp;selbst. Mein Vater hat einige Jahre nach den damaligen Geschehnissen die Stadt mit aufgebaut und das <em>Stardust</em>&nbsp;gegründet. Unser Restaurant war der Treffpunkt der Stadt und immer gut besucht. Die Leute sind von überall hierhergekommen, um den besten Kuchen von <em>Snow Peaks</em>&nbsp;oder einen unserer Drinks zu bekommen. Das Kuchenrezept stammt übrigens von meiner Mutter. Florierende Zeiten waren das.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Als meine Eltern gestorben sind, habe ich das Stardust übernommen. Ich bin stolz den Lebenstraum meiner Familie weiterführen zu können – ich spüre immer noch die Liebe und Verbundenheit meiner Eltern, wenn ich täglich die Türe aufschließe.</p>"
+       "text": "<p>Als meine Eltern gestorben sind, habe ich das Stardust übernommen. Ich bin stolz, den Lebenstraum meiner Familie weiterführen zu können – ich spüre immer noch die Liebe und Verbundenheit meiner Eltern, wenn ich täglich die Türe aufschließe.</p>"
       },
       {
        "type": "paragraph",
@@ -4080,7 +4094,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p><em>“Antiquariat“</em>.</p>"
+       "text": "<p><em>„Antiquariat“</em>.</p>"
       }
      ],
      "next": [
@@ -4123,7 +4137,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p><em>”Antiquariat“</em>.</p>"
+       "text": "<p><em>„Antiquariat“</em>.</p>"
       }
      ],
      "next": [
@@ -4220,14 +4234,9 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 3",
        "chapterId": "3",
        "sectionId": "034"
-      },
-      {
-       "title": "Kapitel 4",
-       "chapterId": "4",
-       "sectionId": "001"
       }
      ]
     },
@@ -4335,20 +4344,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 3",
        "chapterId": "3",
        "sectionId": "034"
-      },
-      {
-       "title": "Kapitel 4",
-       "chapterId": "4",
-       "sectionId": "001"
       }
      ]
     },
     {
      "id": "034",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -4360,11 +4364,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -4380,7 +4384,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, trifft sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, treffen sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
       },
       {
        "type": "if",
@@ -4389,11 +4393,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Snow <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Snow kann in letzter Sekunde von Frank gerettet werden. Albert und Ella sind mit einem großen Schrecken davongekommen.</p>"
@@ -4402,10 +4408,25 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem Bewohner von Snow Peaks spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
+        }
+       ]
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Kapitel 4",
        "chapterId": "4",
@@ -4445,7 +4466,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Zitternd fragst du, was gerade passiert?</p>"
+       "text": "<p>Zitternd fragst du, was gerade passiert.</p>"
       },
       {
        "type": "paragraph",
@@ -6063,20 +6084,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 4",
        "chapterId": "4",
        "sectionId": "037"
-      },
-      {
-       "title": "Kapitel 5",
-       "chapterId": "5",
-       "sectionId": "001"
       }
      ]
     },
     {
      "id": "037",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -6088,11 +6104,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -6108,7 +6124,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, trifft sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, treffen sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
       },
       {
        "type": "if",
@@ -6117,11 +6133,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Snow <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Snow kann in letzter Sekunde von Frank gerettet werden. Albert und Ella sind mit einem großen Schrecken davongekommen.</p>"
@@ -6130,7 +6148,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem Bewohner von Snow Peaks spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
       },
       {
        "type": "paragraph",
@@ -6151,9 +6169,28 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Ella und Albert kommen sich auf ihrer Reise immer näher und können ihre Gefühle zueinander nicht mehr verstecken. Als sie neben Albert einschläft, hat sie eine Vision in einem Traum. Ist sie selbst auch eine Verschwundene aus einer anderen Zeit?</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Dir gefällt Hollow White und du möchtest uns unterstützen?«</p>"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "<p><a href=\"https://bit.ly/3Mg53r5\" rel=\"noopener noreferrer\" target=\"_blank\">Hier erfährst du mehr</a>.</p>"
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Kapitel 5",
        "chapterId": "5",
@@ -6356,7 +6393,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>»Bitte nicht schießen … bitte …«, flehst du mit flehender Stimme.</p>"
+       "text": "<p>»Bitte nicht schießen … bitte …«, flehst du.</p>"
       },
       {
        "type": "paragraph",
@@ -6483,7 +6520,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Josef, hat mir auf unserer Flucht vom <em>Roten Riesen</em>&nbsp;erzählt. Er meinte, das sei wichtig bei unserer Ankunft«, sagst du und zuckst mit den Schultern.</p>"
+       "text": "<p>»Josef hat mir auf unserer Flucht vom <em>Roten Riesen</em>&nbsp;erzählt. Er meinte, das sei wichtig bei unserer Ankunft«, sagst du und zuckst mit den Schultern.</p>"
       },
       {
        "type": "paragraph",
@@ -6661,7 +6698,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Es tut mir sehr leid, was euch widerfahren ist. Ich habe unsere <em>Gegenbewegung</em>&nbsp;vor etlichen Jahren gegründet. Wir kämpfen für alles, was der <em>Schwarze Kreis</em> in den letzten Jahrzehnten zerstört hat. Deren Ideale und blinder Fanatismus sind das Abscheulichste, was der&nbsp;Menschheit in dem letzten Jahrhundert passieren konnte. Erschreckend, wie schnell, dass alles ging. Wie Hunderte von Menschen, die hier plötzlich erschienen sind, behandelt wurden. Jeder auf diesem Planeten hat seinen Platz und eine Heimat verdient! Egal in welcher Zeit«.</p>"
+       "text": "<p>»Es tut mir sehr leid, was euch widerfahren ist. Ich habe unsere <em>Gegenbewegung</em>&nbsp;vor etlichen Jahren gegründet. Wir kämpfen für alles, was der <em>Schwarze Kreis</em> in den letzten Jahrzehnten zerstört hat. Deren Ideale und blinder Fanatismus sind das Abscheulichste, was der&nbsp;Menschheit in dem letzten Jahrhundert passieren konnte. Erschreckend, wie schnell das alles ging. Wie Hunderte von Menschen, die hier plötzlich erschienen sind, behandelt wurden. Jeder auf diesem Planeten hat seinen Platz und eine Heimat verdient! Egal in welcher Zeit«.</p>"
       },
       {
        "type": "paragraph",
@@ -6751,7 +6788,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Judy, das mit deinem Kind und was euch widerfahren ist, tut mir unendlich leid. Ich habe unsere <em>Gegenbewegung</em>&nbsp;vor etlichen Jahren gegründet. Wir kämpfen für alles, was der <em>Schwarze Kreis</em>&nbsp;in den letzten Jahrzehnten zerstört hat. Deren Ideale und blinder Fanatismus sind das Abscheulichste, was dem Menschen in dem letzten Jahrhundert passieren konnte. Erschreckend, wie schnell, dass alles ging. Wie Hunderte von Menschen, die hier plötzlich erschienen sind, behandelt wurden. Jeder auf diesem Planeten hat seinen Platz und eine Heimat verdient! Egal in welcher Zeit«.</p>"
+       "text": "<p>»Judy, das mit deinem Kind und was euch widerfahren ist, tut mir unendlich leid. Ich habe unsere <em>Gegenbewegung</em>&nbsp;vor etlichen Jahren gegründet. Wir kämpfen für alles, was der <em>Schwarze Kreis</em>&nbsp;in den letzten Jahrzehnten zerstört hat. Deren Ideale und blinder Fanatismus sind das Abscheulichste, was dem Menschen in dem letzten Jahrhundert passieren konnte. Erschreckend, wie schnell das alles ging. Wie Hunderte von Menschen, die hier plötzlich erschienen sind, behandelt wurden. Jeder auf diesem Planeten hat seinen Platz und eine Heimat verdient! Egal in welcher Zeit«.</p>"
       },
       {
        "type": "paragraph",
@@ -8139,14 +8176,9 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 5",
        "chapterId": "5",
        "sectionId": "040"
-      },
-      {
-       "title": "Kapitel 6",
-       "chapterId": "6",
-       "sectionId": "001"
       }
      ]
     },
@@ -8189,20 +8221,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 5",
        "chapterId": "5",
        "sectionId": "040"
-      },
-      {
-       "title": "Kapitel 6",
-       "chapterId": "6",
-       "sectionId": "001"
       }
      ]
     },
     {
      "id": "040",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -8214,11 +8241,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -8234,7 +8261,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, trifft sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, treffen sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
       },
       {
        "type": "if",
@@ -8243,11 +8270,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Snow <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Snow kann in letzter Sekunde von Frank gerettet werden. Albert und Ella sind mit einem großen Schrecken davongekommen.</p>"
@@ -8256,7 +8285,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem Bewohner von Snow Peaks spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
       },
       {
        "type": "paragraph",
@@ -8284,22 +8313,37 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
+       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime, ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in diese Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
+       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in dieser Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreis ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
+       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreises ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreis handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
+       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreises handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
+        }
+       ]
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Kapitel 6",
        "chapterId": "6",
@@ -8383,7 +8427,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du schaust kritisch auf die sich vor dir erstreckende Spitze des <em>Kalten Sterns</em>, welche sich schräg horizontal zu euch neigt und die dahinterliegende, mit Notizen behängte im Schatten liegende Steinwand verdeckt.</p>"
+       "text": "<p>Du schaust kritisch auf die sich vor dir erstreckende Spitze des <em>Kalten Sterns</em>, welche sich schräg horizontal zu euch neigt und die dahinterliegende, mit Notizen behängte, im Schatten liegende Steinwand verdeckt.</p>"
       },
       {
        "type": "paragraph",
@@ -8395,7 +8439,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Nein, natürlich nicht Georgy, aber das rechtfertigt und entschuldigt nicht im Geringsten unsere Entscheidungen, Fehleinschätzungen und Auswirkungen. Versetze dich in die Lage, was wir, du, Ella und ich hunderten von Menschen womöglich angetan haben. Wir sind nicht besser als die da draußen!«</p>"
+       "text": "<p>»Nein, natürlich nicht Georgy, aber das rechtfertigt und entschuldigt nicht im Geringsten unsere Entscheidungen, Fehleinschätzungen und Auswirkungen. Versetze dich in die Lage, was wir, du, Ella und ich hunderten von Menschen womöglich angetan haben. Wir sind nicht besser, als die da draußen!«</p>"
       }
      ],
      "next": [
@@ -8426,7 +8470,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Dean, höre mir genau zu. Die Menschen hätten vor 130 Jahren beim Absturz des <em>Kalten Sterns</em>&nbsp;keine Sekunde überlebt. Wir haben die richtigen Entscheidungen getroffen. Für die Menschen und die Wissenschaft. Der <em>Hollow White</em> hätte sie alle, von der einen auf die andere Sekunde ausgelöscht.</p>"
+       "text": "<p>»Dean, höre mir genau zu. Die Menschen hätten vor 130 Jahren beim Absturz des <em>Kalten Sterns</em>&nbsp;keine Sekunde überlebt. Wir haben die richtigen Entscheidungen getroffen. Für die Menschen und die Wissenschaft. Der <em>Hollow White</em> hätte sie alle von der einen auf die andere Sekunde ausgelöscht.</p>"
       },
       {
        "type": "paragraph",
@@ -8452,7 +8496,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Konzentriere dich jetzt bitte wieder auf das wesentliche unserer Arbeit. Wir können uns derartige Selbstzweifel und Schuldzuschreibungen wirklich nicht erlauben, gerade jetzt nicht. Reiß dich zusammen, ich brauche dich, Dean. Und zwar jetzt und das dringender den je.«</p>"
+       "text": "<p>»Konzentriere dich jetzt bitte wieder auf das Wesentliche unserer Arbeit. Wir können uns derartige Selbstzweifel und Schuldzuschreibungen wirklich nicht erlauben, gerade jetzt nicht. Reiß dich zusammen, ich brauche dich, Dean. Und zwar jetzt und das dringender denn je.«</p>"
       },
       {
        "type": "paragraph",
@@ -8468,7 +8512,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Weder noch Erinnerungen, Identität und Heimat sind ihnen geblieben. Es ist grausam. Als wir mit den Tonbändern experimentiert und diese durch die Zeit geschickt haben, fand ich es noch amüsant. Aber Menschen, Georgy!</p>"
+       "text": "<p>Weder Erinnerungen, noch Identität und Heimat sind ihnen geblieben. Es ist grausam. Als wir mit den Tonbändern experimentiert und diese durch die Zeit geschickt haben, fand ich es noch amüsant. Aber Menschen, Georgy!</p>"
       },
       {
        "type": "paragraph",
@@ -8488,7 +8532,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Das letzte Mal. Bitte vertraue mir. Lass uns unsere Arbeit zu Ende bringen und zusammen das Gleichgewicht in der Zeit wieder herstellen. Sobald unsere Instrumente wieder laufen, können wir hier weg. Der <em>Schwarze Kreis</em>&nbsp;darf unsere Arbeit nicht in die Finger bekommen.«</p>"
+       "text": "<p>Das letzte Mal. Bitte vertraue mir. Lass uns unsere Arbeit zu Ende bringen und zusammen das Gleichgewicht in der Zeit wiederherstellen. Sobald unsere Instrumente wieder laufen, können wir hier weg. Der <em>Schwarze Kreis</em>&nbsp;darf unsere Arbeit nicht in die Finger bekommen.«</p>"
       },
       {
        "type": "paragraph",
@@ -8539,7 +8583,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Das war ja sehr clever, Georgy! Damit machst du die Situation nur noch schwerer. Aber ich bin bei dir mein Freund, ich werde dich unterstützen, zusammen schaffen wir es«, sagt Dean und schaut dir überzeugt in die Augen.</p>"
+       "text": "<p>»Das war ja sehr clever, Georgy! Damit machst du die Situation nur noch schwerer. Aber ich bin bei dir, mein Freund, ich werde dich unterstützen, zusammen schaffen wir es«, sagt Dean und schaut dir überzeugt in die Augen.</p>"
       },
       {
        "type": "paragraph",
@@ -8614,7 +8658,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die beiden Soldaten steigen in den vorderen von euch abgetrennten Bereich des Fahrzeuges und starten den Motor. Eine gepanzerte Einheit übernimmt den Schichtwechsel. Verstärkung trifft ein, um den Bereich der Kuppel zu sichern.</p>"
+       "text": "<p>Die beiden Soldaten steigen in den vorderen, von euch abgetrennten Bereich des Fahrzeuges und starten den Motor. Eine gepanzerte Einheit übernimmt den Schichtwechsel. Verstärkung trifft ein, um den Bereich der Kuppel zu sichern.</p>"
       },
       {
        "type": "paragraph",
@@ -8878,7 +8922,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Dein Kopf wird erneut ins eiskalte Wasser getaucht. Du zappelst, wie ein Fisch, der aus seinem Becken gehüpft ist.</p>"
+       "text": "<p>Dein Kopf wird erneut ins eiskalte Wasser getaucht. Du zappelst wie ein Fisch, der aus seinem Becken gehüpft ist.</p>"
       },
       {
        "type": "paragraph",
@@ -8940,7 +8984,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Hey!« hörst du eine leise Stimme. Du reagierst nicht. Noch einmal ist die Stimme zu hören. »Hey du!«</p>"
+       "text": "<p>»Hey!«, hörst du eine leise Stimme. Du reagierst nicht. Noch einmal ist die Stimme zu hören. »Hey du!«</p>"
       },
       {
        "type": "paragraph",
@@ -8987,7 +9031,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich sitze hier schon eine ganze Weile fest, tut gut wieder eine Stimme zu hören«, sagt Josef.</p>"
+       "text": "<p>»Ich sitze hier schon eine ganze Weile fest, tut gut, wieder eine Stimme zu hören«, sagt Josef.</p>"
       },
       {
        "type": "paragraph",
@@ -9084,7 +9128,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich habe mir das nicht ausgedacht, aber lassen sie uns jetzt nach vorne blicken. Uns geht die Zeit aus. Unsere Arbeit muss Ergebnisse bringen. Wir dürfen uns keine Fehler mehr erlauben. Mit <em>Dr. Monroes</em> Verschwinden haben wir eine unserer besten Forscherinnen und dazu noch wertvolle Zeit verloren.«</p>"
+       "text": "<p>»Ich habe mir das nicht ausgedacht, aber lassen Sie uns jetzt nach vorne blicken. Uns geht die Zeit aus. Unsere Arbeit muss Ergebnisse bringen. Wir dürfen uns keine Fehler mehr erlauben. Mit <em>Dr. Monroes</em> Verschwinden haben wir eine unserer besten Forscherinnen und dazu noch wertvolle Zeit verloren.«</p>"
       },
       {
        "type": "paragraph",
@@ -9092,7 +9136,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Wir sind kurz davor ihr Werk fertig zu stellen.«</p>"
+       "text": "<p>»Wir sind kurz davor, Ihr Werk fertig zu stellen.«</p>"
       }
      ],
      "next": [
@@ -9122,7 +9166,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Mit so einem kritischen Vorfall konnte keiner rechnen. Es ist nicht ihre Schuld.«</p>"
+       "text": "<p>»Mit so einem kritischen Vorfall konnte keiner rechnen. Es ist nicht Ihre Schuld.«</p>"
       }
      ],
      "next": [
@@ -9159,7 +9203,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es tut mir sehr leid … ihr Freund wurde gestern Mittag durch das Seil vom <em>Schwarzen Kreis</em>&nbsp;exekutiert.«</p>"
+       "text": "<p>Es tut mir sehr leid … Ihr Freund wurde gestern Mittag durch das Seil vom <em>Schwarzen Kreis</em>&nbsp;exekutiert.«</p>"
       },
       {
        "type": "paragraph",
@@ -9244,20 +9288,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 6",
        "chapterId": "6",
        "sectionId": "018"
-      },
-      {
-       "title": "Kapitel 7",
-       "chapterId": "7",
-       "sectionId": "001"
       }
      ]
     },
     {
      "id": "018",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -9269,11 +9308,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -9289,7 +9328,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, trifft sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, treffen sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
       },
       {
        "type": "if",
@@ -9298,11 +9337,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Snow <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Snow kann in letzter Sekunde von Frank gerettet werden. Albert und Ella sind mit einem großen Schrecken davongekommen.</p>"
@@ -9311,7 +9352,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem Bewohner von Snow Peaks spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
       },
       {
        "type": "paragraph",
@@ -9339,19 +9380,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
+       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime, ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in diese Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
+       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in dieser Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreis ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
+       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreises ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreis handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
+       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreises handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -9359,7 +9400,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Neben Judys Geschichte, lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
+       "text": "<p>Neben Judys Geschichte lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
       },
       {
        "type": "paragraph",
@@ -9367,14 +9408,29 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Georgy und Dean werden vom Regime gezwungen an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
+       "text": "<p>Georgy und Dean werden vom Regime gezwungen, an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreis konfrontiert. Beim Versuch Dean zu Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
+       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreises konfrontiert. Beim Versuch, Dean zur Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
+        }
+       ]
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Kapitel 7",
        "chapterId": "7",
@@ -9803,7 +9859,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Sie ist schwer verletzt! Wir müssen schleunigst weg von hier!«, unterbricht Cara</p>"
+       "text": "<p>»Sie ist schwer verletzt! Wir müssen schleunigst weg von hier!«, unterbricht Cara.</p>"
       },
       {
        "type": "paragraph",
@@ -9843,7 +9899,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Madame Rose, ich …«,&nbsp;doch bevor er seinen Satz ausspricht, sagt Rose: »Danke <em>Henry</em>, passen sie auf sich auf!«</p>"
+       "text": "<p>»Madame Rose, ich …«,&nbsp;doch bevor er seinen Satz ausspricht, sagt Rose: »Danke <em>Henry</em>, passen Sie auf sich auf!«</p>"
       },
       {
        "type": "paragraph",
@@ -10576,7 +10632,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du bist erleichtert, dass Cara, immer zu dir gehalten hat. Eine wahre Freundschaft.</p>"
+       "text": "<p>Du bist erleichtert, dass Cara immer zu dir gehalten hat. Eine wahre Freundschaft.</p>"
       }
      ],
      "next": [
@@ -10706,14 +10762,9 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 7",
        "chapterId": "7",
        "sectionId": "020"
-      },
-      {
-       "title": "Kapitel 8",
-       "chapterId": "8",
-       "sectionId": "001"
       }
      ]
     },
@@ -10740,20 +10791,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 7",
        "chapterId": "7",
        "sectionId": "020"
-      },
-      {
-       "title": "Kapitel 8",
-       "chapterId": "8",
-       "sectionId": "001"
       }
      ]
     },
     {
      "id": "020",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -10765,11 +10811,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -10785,7 +10831,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, trifft sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, treffen sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
       },
       {
        "type": "if",
@@ -10794,11 +10840,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Snow <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Snow kann in letzter Sekunde von Frank gerettet werden. Albert und Ella sind mit einem großen Schrecken davongekommen.</p>"
@@ -10807,7 +10855,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem Bewohner von Snow Peaks spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
       },
       {
        "type": "paragraph",
@@ -10835,19 +10883,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
+       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime, ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in diese Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
+       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in dieser Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreis ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
+       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreises ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreis handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
+       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreises handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -10855,7 +10903,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Neben Judys Geschichte, lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
+       "text": "<p>Neben Judys Geschichte lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
       },
       {
        "type": "paragraph",
@@ -10863,11 +10911,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Georgy und Dean werden vom Regime gezwungen an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
+       "text": "<p>Georgy und Dean werden vom Regime gezwungen, an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreis konfrontiert. Beim Versuch Dean zu Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
+       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreises konfrontiert. Beim Versuch, Dean zur Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -10884,11 +10932,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise stirbt Rose. Hätte ihr Tod verhindert werden können?</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Rose <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Rose überlebt, ist aber vorerst nicht ansprechbar.</p>"
@@ -10906,9 +10956,28 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Hotel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Dir gefällt Hollow White und du möchtest uns unterstützen?«</p>"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "<p><a href=\"https://bit.ly/3Mg53r5\" rel=\"noopener noreferrer\" target=\"_blank\">Hier erfährst du mehr</a>.</p>"
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Kapitel 8",
        "chapterId": "8",
@@ -11616,14 +11685,9 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 8",
        "chapterId": "8",
        "sectionId": "013"
-      },
-      {
-       "title": "Kapitel 9",
-       "chapterId": "9",
-       "sectionId": "001"
       }
      ]
     },
@@ -11659,20 +11723,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 8",
        "chapterId": "8",
        "sectionId": "013"
-      },
-      {
-       "title": "Kapitel 9",
-       "chapterId": "9",
-       "sectionId": "001"
       }
      ]
     },
     {
      "id": "013",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -11684,11 +11743,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -11704,7 +11763,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, trifft sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, treffen sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
       },
       {
        "type": "if",
@@ -11713,11 +11772,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Snow <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Snow kann in letzter Sekunde von Frank gerettet werden. Albert und Ella sind mit einem großen Schrecken davongekommen.</p>"
@@ -11726,7 +11787,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem Bewohner von Snow Peaks spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
       },
       {
        "type": "paragraph",
@@ -11754,19 +11815,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
+       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime, ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in diese Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
+       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in dieser Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreis ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
+       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreises ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreis handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
+       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreises handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -11774,7 +11835,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Neben Judys Geschichte, lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
+       "text": "<p>Neben Judys Geschichte lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
       },
       {
        "type": "paragraph",
@@ -11782,11 +11843,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Georgy und Dean werden vom Regime gezwungen an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
+       "text": "<p>Georgy und Dean werden vom Regime gezwungen, an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreis konfrontiert. Beim Versuch Dean zu Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
+       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreises konfrontiert. Beim Versuch, Dean zur Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -11803,11 +11864,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise stirbt Rose. Hätte ihr Tod verhindert werden können?</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Rose <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Rose überlebt, ist aber vorerst nicht ansprechbar.</p>"
@@ -11845,9 +11908,24 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Als er selbst springen will, stellt sich ein alter Bekannter ihm in den Weg. Es ist Dean, der nicht nur lebt, sondern Georgy dem Anschein nach verraten hat und zum Schwarzen Kreis gehört. Georgy schafft es gerade noch durch einen Zeitsprung, den tödlichen Schüssen zu entkommen.</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
+        }
+       ]
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Kapitel 9",
        "chapterId": "9",
@@ -12213,7 +12291,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Maria, Frank und du, schaut ihn gespannt an.</p>"
+       "text": "<p>Maria, Frank und du schaut ihn gespannt an.</p>"
       },
       {
        "type": "paragraph",
@@ -12415,14 +12493,9 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 9",
        "chapterId": "9",
        "sectionId": "014"
-      },
-      {
-       "title": "Kapitel 10",
-       "chapterId": "10",
-       "sectionId": "001"
       }
      ]
     },
@@ -12464,7 +12537,7 @@ const book: Book = (({
     },
     {
      "id": "014",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -12476,11 +12549,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -12496,7 +12569,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, trifft sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, treffen sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
       },
       {
        "type": "if",
@@ -12505,11 +12578,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Snow <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Snow kann in letzter Sekunde von Frank gerettet werden. Albert und Ella sind mit einem großen Schrecken davongekommen.</p>"
@@ -12518,7 +12593,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem Bewohner von Snow Peaks spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
       },
       {
        "type": "paragraph",
@@ -12546,19 +12621,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
+       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime, ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in diese Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
+       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in dieser Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreis ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
+       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreises ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreis handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
+       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreises handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -12566,7 +12641,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Neben Judys Geschichte, lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
+       "text": "<p>Neben Judys Geschichte lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
       },
       {
        "type": "paragraph",
@@ -12574,11 +12649,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Georgy und Dean werden vom Regime gezwungen an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
+       "text": "<p>Georgy und Dean werden vom Regime gezwungen, an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreis konfrontiert. Beim Versuch Dean zu Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
+       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreises konfrontiert. Beim Versuch, Dean zur Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -12595,11 +12670,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise stirbt Rose. Hätte ihr Tod verhindert werden können?</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Rose <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Rose überlebt, ist aber vorerst nicht ansprechbar.</p>"
@@ -12657,9 +12734,24 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Eines Tages klopft es an der Haustüre.</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
+        }
+       ]
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Kapitel 10",
        "chapterId": "10",
@@ -13097,7 +13189,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Durch den Gedächtnisverlust habe ich leider jede Erinnerungen an meine leiblichen Eltern verloren. Georgy, meinen Ziehvater, habe ich geliebt wie meinen eigenen Vater.&nbsp;Meinen leiblichen Vater habe ich weder kennengelernt noch weiß ich um seine Existenz.&nbsp;Georgy hat mir einige Geschichten über uns drei aus seinem Tagebuch gelegentlich abends vorgelesen. Wir waren wie eine kleine Familie, bevor das alles passiert ist. Vor seinem Tod hat er mit mir über meine leibliche Mutter gesprochen und mir Informationen über ihren Aufenthaltsort gegeben. Ich werde dir die nächsten Tage mehr darüber erzählen.</p>"
+         "text": "<p>Durch den Gedächtnisverlust habe ich leider jede Erinnerungen an meine leiblichen Eltern verloren. Georgy, meinen Ziehvater, habe ich geliebt wie meinen eigenen Vater.&nbsp;Meinen leiblichen Vater habe ich weder kennengelernt, noch weiß ich um seine Existenz.&nbsp;Georgy hat mir einige Geschichten über uns drei aus seinem Tagebuch gelegentlich abends vorgelesen. Wir waren wie eine kleine Familie, bevor das alles passiert ist. Vor seinem Tod hat er mit mir über meine leibliche Mutter gesprochen und mir Informationen über ihren Aufenthaltsort gegeben. Ich werde dir die nächsten Tage mehr darüber erzählen.</p>"
         },
         {
          "type": "paragraph",
@@ -13699,20 +13791,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 10",
        "chapterId": "10",
        "sectionId": "013"
-      },
-      {
-       "title": "Kapitel 11",
-       "chapterId": "11",
-       "sectionId": "001"
       }
      ]
     },
     {
      "id": "013",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -13724,11 +13811,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -13744,7 +13831,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, trifft sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, treffen sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
       },
       {
        "type": "if",
@@ -13753,11 +13840,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Snow <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Snow kann in letzter Sekunde von Frank gerettet werden. Albert und Ella sind mit einem großen Schrecken davongekommen.</p>"
@@ -13766,7 +13855,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem Bewohner von Snow Peaks spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
       },
       {
        "type": "paragraph",
@@ -13794,19 +13883,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
+       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime, ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in diese Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
+       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in dieser Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreis ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
+       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreises ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreis handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
+       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreises handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -13814,7 +13903,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Neben Judys Geschichte, lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
+       "text": "<p>Neben Judys Geschichte lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
       },
       {
        "type": "paragraph",
@@ -13822,11 +13911,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Georgy und Dean werden vom Regime gezwungen an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
+       "text": "<p>Georgy und Dean werden vom Regime gezwungen, an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreis konfrontiert. Beim Versuch Dean zu Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
+       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreises konfrontiert. Beim Versuch, Dean zur Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -13843,11 +13932,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise stirbt Rose. Hätte ihr Tod verhindert werden können?</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Rose <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Rose überlebt, ist aber vorerst nicht ansprechbar.</p>"
@@ -13933,9 +14024,24 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Hannah hat einen letzten Wunsch. Sie möchte noch vor ihrem Tod ihre leibliche Mutter aus der Zukunft begegnen.</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
+        }
+       ]
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Kapitel 11",
        "chapterId": "11",
@@ -13981,7 +14087,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Eine Luke unter Laub und Ästen versteckt. Hannah bittet dich mit einer Geste, die Luke davon zu befreien. Mit etwas Handarbeit ist die Metallplatte frei aufgedeckt und Hannah öffnet mit dem verzierten Schlüssel die Ketten eines alten Vorhängeschlosses, sodass der darunter liegende Eingang euch jetzt offen steht.</p>"
+       "text": "<p>Eine Luke unter Laub und Ästen versteckt. Hannah bittet dich mit einer Geste, die Luke davon zu befreien. Mit etwas Handarbeit ist die Metallplatte frei aufgedeckt und Hannah öffnet mit dem verzierten Schlüssel die Ketten eines alten Vorhängeschlosses, sodass der darunterliegende Eingang euch jetzt offen steht.</p>"
       },
       {
        "type": "paragraph",
@@ -14029,7 +14135,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Für dich Ella. Die Truhe ist von Georgy. Der Inhalt wird dir auf viele deiner Fragen Antworten geben. Die Höhle ist unser letztes Geheimnis. Ein Wunder des Universums.</p>"
+         "text": "<p>Für dich, Ella. Die Truhe ist von Georgy. Der Inhalt wird dir auf viele deiner Fragen Antworten geben. Die Höhle ist unser letztes Geheimnis. Ein Wunder des Universums.</p>"
         },
         {
          "type": "paragraph",
@@ -14702,7 +14808,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>»Sie stehen unter Verdacht! Unter Verdacht den <em>Schwarzen Kreis</em> verraten&nbsp;zu haben! Wir werden dem nachgehen. Falls dem so sei, kennen Sie das Urteil. Wir haben ein Auge auf Sie!«, sagt die Person mit furchteinflößender Stimme.</p>"
+         "text": "<p>»Sie stehen unter Verdacht! Unter Verdacht, den <em>Schwarzen Kreis</em> verraten&nbsp;zu haben! Wir werden dem nachgehen. Falls dem so sei, kennen Sie das Urteil. Wir haben ein Auge auf Sie!«, sagt die Person mit furchteinflößender Stimme.</p>"
         },
         {
          "type": "paragraph",
@@ -14998,11 +15104,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bevor du es schaffst, aufzustehen, steht schon ein Arzt und sein Helferteam im Zimmer und versuchen dich zu beruhigen.</p>"
+       "text": "<p>Bevor du es schaffst, aufzustehen, steht schon ein Arzt und sein Helferteam im Zimmer und versuchen, dich zu beruhigen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Was geht hier vor sich?« schreist du verzweifelt. »Wo ist mein Baby?«</p>"
+       "text": "<p>»Was geht hier vor sich?«, schreist du verzweifelt. »Wo ist mein Baby?«</p>"
       },
       {
        "type": "paragraph",
@@ -15069,14 +15175,9 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 11",
        "chapterId": "11",
        "sectionId": "012"
-      },
-      {
-       "title": "Epilog",
-       "chapterId": "12",
-       "sectionId": "001"
       }
      ]
     },
@@ -15135,20 +15236,15 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Rückblick",
+       "title": "Ende Kapitel 11",
        "chapterId": "11",
        "sectionId": "012"
-      },
-      {
-       "title": "Epilog",
-       "chapterId": "12",
-       "sectionId": "001"
       }
      ]
     },
     {
      "id": "012",
-     "title": "Rückblick",
+     "title": "Was bisher geschah",
      "elements": [
       {
        "type": "paragraph",
@@ -15160,11 +15256,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele hunderte von Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
+       "text": "<p>Bei ihrer Suche begegnet sie Albert, einem Mann, der sich in den Wäldern mit seinem Hund Snow zurückgezogen hat. Es geschieht Seltsames, so erfährt Ella vom sagenumwobenen Hollow White, einem Phänomen in der Vergangenheit, an dem viele Menschen spurlos in der Kleinstadt Snow Peaks verschwunden sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam beschließt sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
+       "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
       },
       {
        "type": "paragraph",
@@ -15180,7 +15276,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, trifft sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
+       "text": "<p>Als Ella und Albert mit letzten Kräften das verschneite Städtchen Snow Peaks erreichen, treffen sie auf alte Freunde von Albert. Frank, einem pensionierten Arzt und seiner Frau Marie, die etwas außerhalb der Stadt in einem größeren Anwesen leben.</p>"
       },
       {
        "type": "if",
@@ -15189,11 +15285,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise erliegt Snow an seinen Wunden. Gedanken plagen Ella. Hätte Snow gerettet werden können? Mit diesem ungewissen Gefühl setzt sie ihre Suche fort.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Snow <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Snow kann in letzter Sekunde von Frank gerettet werden. Albert und Ella sind mit einem großen Schrecken davongekommen.</p>"
@@ -15202,7 +15300,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem hunderte von Bewohnern spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
+       "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem Bewohner von Snow Peaks spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
       },
       {
        "type": "paragraph",
@@ -15230,19 +15328,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
+       "text": "<p>Wir springen in der Geschichte ganze 60 Jahre in die Zukunft. Dunkle Zeiten herrschen in Snow Peaks. Der Schwarze Kreis, ein grausames Regime, ist an der Macht, kontrolliert das System und unterdrückt die Bevölkerung.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in diese Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
+       "text": "<p>Wir begleiten Judy, die nach ihrem Verschwinden in Snow Peaks in dieser Zeit aufgewacht ist. Seit ihrem Erscheinen wird sie neben vielen anderen Erschienenen in einem der außerhalb liegenden Lagern gefangen gehalten. Zusammen mit ihrer Freundin Cara gelingt ihr eines Tages die Flucht.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreis ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
+       "text": "<p>Die beiden treffen auf die Widerstandsgruppe, eine Bewegung, die seit Jahren aus dem Untergrund gegen den Schwarzen Kreis kämpft. Rose, die Gründerin des Widerstands, gebietet Judy und Cara Unterschlupf, doch sie verheimlicht etwas. So findet Judy eines Tages heraus, dass Rose unter dem drohenden Befehl des Schwarzen Kreises ihr bereits als Krankenschwester begegnet ist und ihre für tot geglaubte Tochter Hannah bei der Geburt genommen hat. Judys Tochter Hannah lebt, wurde aber vor einigen Jahren vom Schwarzen Kreis der Obhut von Rose wieder entrissen.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreis handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
+       "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreises handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -15250,7 +15348,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Neben Judys Geschichte, lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
+       "text": "<p>Neben Judys Geschichte lernen wir Georgys zeitgleich kennen. Er und ein zweiter Wissenschaftler namens Dean experimentieren unterhalb der Kuppel in einer Höhle am sogenannten Kalten Stern.</p>"
       },
       {
        "type": "paragraph",
@@ -15258,11 +15356,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Georgy und Dean werden vom Regime gezwungen an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
+       "text": "<p>Georgy und Dean werden vom Regime gezwungen, an einer Apparatur am Kalten Stern zu arbeiten, welche Zeitsprünge möglich macht. Es geht um Leben und Tod. Der Schwarze Kreis geht hierbei über Leichen und glaubt an ein apokalyptisches Ende der Welt, welches durch den Auslöser des Hollow White, in der Zukunft geschehen und die Sonne auslöschen wird.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreis konfrontiert. Beim Versuch Dean zu Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
+       "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreises konfrontiert. Beim Versuch, Dean zur Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
       },
       {
        "type": "paragraph",
@@ -15279,11 +15377,13 @@ const book: Book = (({
         {
          "type": "paragraph",
          "text": "<p>Tragischerweise stirbt Rose. Hätte ihr Tod verhindert werden können?</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>//ELSE</p>"
-        },
+        }
+       ]
+      },
+      {
+       "type": "else",
+       "ifCondition": "STATE Rose <= 0",
+       "elements": [
         {
          "type": "paragraph",
          "text": "<p>Rose überlebt, ist aber vorerst nicht ansprechbar.</p>"
@@ -15408,7 +15508,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Sie erfährt von einer Zeit in der Zukunft, als sie selbst unter der Gewalt des Schwarzen Kreis stand und sich als Widerstandskämpferin, gegen diesen gestellt hat.</p>"
+         "text": "<p>Sie erfährt von einer Zeit in der Zukunft, als sie selbst unter der Gewalt des Schwarzen Kreises stand und sich als Widerstandskämpferin, gegen diesen gestellt hat.</p>"
         }
        ]
       },
@@ -15418,7 +15518,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Sie erfährt von einer Zeit in der Zukunft, als sie selbst im Namen des Schwarzen Kreis gehandelt hat und sogar an der Entführung der kleinen Hannah beteiligt war. Mit Gefolgschaft hat sie dem Schwarzen Kreis Treue geschworen.</p>"
+         "text": "<p>Sie erfährt von einer Zeit in der Zukunft, als sie selbst im Namen des Schwarzen Kreises gehandelt hat und sogar an der Entführung der kleinen Hannah beteiligt war. Mit Gefolgschaft hat sie dem Schwarzen Kreis Treue geschworen.</p>"
         }
        ]
       },
@@ -15437,9 +15537,24 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Sie nennen ihre gemeinsame Tochter Rose.</p>"
+      },
+      {
+       "type": "style",
+       "classes": "note-black",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
+        }
+       ]
       }
      ],
      "next": [
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
       {
        "title": "Epilog",
        "chapterId": "12",
@@ -15602,7 +15717,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Deine Entscheidungen konnten das Schlimmste verhindern. Die Welt ist vorerst gerettet. Die Geschichte von <em>Hollow White</em>&nbsp;hat doch noch ein gutes Ende genommen.</p>"
+         "text": "<p>Deine Entscheidungen konnten das Schlimmste verhindern. Die Geschichte von <em>Hollow White</em>&nbsp;hat doch noch ein gutes Ende genommen.</p>"
         },
         {
          "type": "addItem",
@@ -15683,7 +15798,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Großen Dank gilt allen Personen, die uns unterstützt haben. Jeder Impuls hat uns erreicht.</p>"
+       "text": "<p>Großen Dank gilt allen Personen, die uns unterstützt haben. Jeder Impuls hat uns erreicht. Alle Mitwirkende sind auf <a href=\"https://www.hollowwhite.de/\" rel=\"noopener noreferrer\" target=\"_blank\">hollowwhite.de</a>&nbsp;gelistet.</p>"
       },
       {
        "type": "if",
@@ -15716,6 +15831,16 @@ const book: Book = (({
      ],
      "next": [
       {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
+      {
+       "title": "White mit anderen teilen",
+       "id": "share",
+       "data": "Hollow"
+      },
+      {
        "title": "Jetzt aktiv werden",
        "chapterId": "13",
        "sectionId": "003"
@@ -15741,11 +15866,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p><a href=\"https://www.betterplace.org/de/fundraising-events/38873-etwas-gutes-tun-und-baeume-pflanzen\" rel=\"noopener noreferrer\" target=\"_blank\">Mehr erfahren</a></p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>[Hollow White teilen]()</p>"
+       "text": "<p><a href=\"https://bit.ly/3Mg53r5\" rel=\"noopener noreferrer\" target=\"_blank\">Mehr erfahren</a></p>"
       }
      ],
      "next": [
@@ -15759,197 +15880,7 @@ const book: Book = (({
    ]
   }
  ],
- "specials": {
-  "credits": {
-   "id": "credits",
-   "title": "Unterstützen",
-   "elements": [
-    {
-     "type": "paragraph",
-     "text": "<p>Lass uns zusammen etwas Gutes tun.</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p><a href=\"https://www.betterplace.org/de/fundraising-events/38873-etwas-gutes-tun-und-baeume-pflanzen\" rel=\"noopener noreferrer\" target=\"_blank\">Mehr erfahren</a></p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>[Hollow White teilen]()</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p><em>Mitwirkende</em></p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p><em>Idee, Story und UX & UI</em></p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Thomas Kiris</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p><em>Konzept und Programmierung</em></p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Sven Buschbeck</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p><em>Lektor und Mentoring</em></p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Fritz Krautzberger</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p><em>Illustrationen</em></p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Minh Chau Appelhagen-Lu</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Thomas Kiris</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p><em>Tester:innen</em></p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Minh Chau</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Bettina</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Buddy</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Frank</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Elke</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Marina</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Ben</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Franz</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Michi</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Bene</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p><em>Speziellen Dank</em></p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Silke</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Elke</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Bettina</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Buddy aka Lord Neon</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Minh Chau</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Franky</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Chris</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Alex</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Bernd</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Michi</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Varinja</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Andi</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Ben</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Alessandro</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Chris A.</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Franz</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Gabriel Alenius (Hintergrundfoto auf Startseite)</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>© Thomas Kiris</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Wir freuen uns über dein <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a>.</p>"
-    }
-   ],
-   "next": [
-    {
-     "title": "Zurück",
-     "id": "start",
-     "data": ""
-    }
-   ]
-  }
- },
+ "specials": {},
  "config": {
   "items": [
    {
@@ -16162,7 +16093,7 @@ const book: Book = (({
      },
      {
       "type": "paragraph",
-      "text": "<ol start=\"4\">\n<li>40 ml <em>aestesis Gin</em></li>\n</ol>"
+      "text": "<ol start=\"4\">\n<li>40 ml <em>aesthesis Gin</em></li>\n</ol>"
      },
      {
       "type": "paragraph",
@@ -16193,7 +16124,7 @@ const book: Book = (({
      },
      {
       "type": "paragraph",
-      "text": "<ol start=\"4\">\n<li>40 ml <em>aestesis Gin</em></li>\n</ol>"
+      "text": "<ol start=\"4\">\n<li>40 ml <em>aesthesis Gin</em></li>\n</ol>"
      },
      {
       "type": "paragraph",
@@ -16269,7 +16200,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein sehr persönlicher <em>Brief</em>&nbsp;von Roses Mann <em>Pete</em>, denn er kurz vor seinem Tod noch verfasste. <em>Pete</em>&nbsp;ist bei einem tragischen Unfall ums Leben gekommen. Nicht&nbsp;unwahrscheinlich, dass der <em>Schwarze Kreis</em> dahinter steckte.</p>"
+      "text": "<p>Ein sehr persönlicher <em>Brief</em>&nbsp;von Roses Mann <em>Pete</em>, den er kurz vor seinem Tod noch verfasste. <em>Pete</em>&nbsp;ist bei einem tragischen Unfall ums Leben gekommen. Nicht&nbsp;unwahrscheinlich, dass der <em>Schwarze Kreis</em> dahinter steckte.</p>"
      }
     ]
    },
@@ -16478,7 +16409,7 @@ const book: Book = (({
      },
      {
       "type": "paragraph",
-      "text": "<p><a href=\"https://www.betterplace.org/de/fundraising-events/38873-etwas-gutes-tun-und-baeume-pflanzen?utm_campaign=user_share&utm_medium=fepp_stats&utm_source=Link\" rel=\"noopener noreferrer\" target=\"_blank\">Zur Spendenaktion</a></p>"
+      "text": "<p><a href=\"https://bit.ly/3Mg53r5\" rel=\"noopener noreferrer\" target=\"_blank\">Mehr erfahren</a></p>"
      }
     ]
    }
