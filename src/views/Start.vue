@@ -11,6 +11,7 @@
     button(@click="start", :class="{ start: !started, continue: started }")
     button.options(@click="overlay('options')")
     button.credits(@click="overlay('credits')" v-if="hasCredits")
+    button.imprint(@click="overlay('imprint')" v-if="hasImprint")
 </template>
 
 <script lang="ts">
@@ -46,6 +47,9 @@ export default class Start extends Vue {
 
   get hasCredits(): boolean {
     return !!this.book!.specials[Specials.credits];
+  }
+  get hasImprint(): boolean {
+    return !!this.book!.specials[Specials.imprint];
   }
 }
 </script>

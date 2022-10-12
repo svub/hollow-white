@@ -14,6 +14,7 @@ main(:class="page" :lang="lang")
           Chapters(v-if="overlay === 'chapters'" :chapters="chapters")
           Items(v-if="overlay === 'items'" :itemIds="Object.values(items)")
           Credits(v-if="overlay === 'credits'")
+          Imprint(v-if="overlay === 'imprint'")
           Options(v-if="overlay === 'options'")
           FeedbackMode(v-if="overlay === 'feedbackMode'")
           Share(v-if="overlay === 'shareOverlay'" :url="overlayData.url" :title="overlayData.title")
@@ -44,6 +45,7 @@ import { Option } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
 import Items from './components/overlays/Items.vue';
 import Credits from './components/overlays/Credits.vue';
+import Imprint from './components/overlays/Imprint.vue';
 import Options from './components/overlays/Options.vue';
 import FeedbackMode from './components/overlays/FeedbackMode.vue';
 import Share from './components/overlays/Share.vue';
@@ -53,7 +55,7 @@ const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
 @Component({
   name: "home",
-  components: { Start, Read, Tester, Chapters, Items, Credits, Options, FeedbackMode, Share },
+  components: { Start, Read, Tester, Chapters, Items, Credits, Imprint, Options, FeedbackMode, Share },
 })
 export default class App extends Vue {
   private navbarTitle = `App.vue`;

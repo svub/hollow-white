@@ -24,6 +24,7 @@ export interface Reference {
 export enum Overlays {
   options = 'options',
   credits = 'credits',
+  imprint = 'imprint',
   chapters = 'chapters',
   items = 'items',
   shareOverlay = 'shareOverlay',
