@@ -1,7 +1,7 @@
 import { Book } from "./shared/entities";
 
 const book: Book = (({
- "title": "iBook Example",
+ "title": "Text Adventure Book Example",
  "chapters": [
   {
    "id": "1",
@@ -13,7 +13,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Hey hello! This is an ibook example. You can find the original text with commands and mark up <a href=\"https://docs.google.com/document/d/e/2PACX-1vT5bShbhPzfbS6kkR30qALUyVy7ptxTOxH9E9cBO7mlpSuJqpwhR3mvuLih4DQoUQbDQISUNA9QAbtv/pub\">here</a>. It contains some example text, states, items, styling, and conditionals.</p>"
+       "text": "<p>Hey hello! This is a text adventure example. You can find the original text with commands and mark up <a href=\"https://docs.google.com/document/d/e/2PACX-1vT5bShbhPzfbS6kkR30qALUyVy7ptxTOxH9E9cBO7mlpSuJqpwhR3mvuLih4DQoUQbDQISUNA9QAbtv/pub\" rel=\"noopener noreferrer\" target=\"_blank\">here</a>. It contains some example text, states, items, styling, and conditionals (“if a state is some value then do something, else do something else” that is).</p>"
       },
       {
        "type": "state",
@@ -30,15 +30,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>More text after sandbox item. Followed by an item that has not been configured. You'll see this kind of error message:</p>"
+       "text": "<p>More text after the sandbox item. Followed by an item that has not been configured. You'll see this kind of error message:</p>"
       },
       {
-        "type": "addItem",
-        "id": "missing"
-       },
+       "type": "addItem",
+       "id": "missing"
+      },
       {
        "type": "paragraph",
-       "text": "<p>Formatting is also supported via Markdown. For example <em>emphasis</em> (&lt;em&gt; tag in HTML) and <strong>bold</strong> (&lt;b&gt; tag) - all formattings can be adjusted with CSS. Add <a href=\"https://github.com/svub/ibook-app\">links</a> via Markdown.</p>"
+       "text": "<p>Formatting is also supported via Markdown. For example <em>emphasis</em> (&lt;em&gt; tag in HTML) and <strong>bold</strong> (&lt;b&gt; tag) - all formattings can be adjusted with CSS. Add <a href=\"https://github.com/svub/text-adventure-app\" rel=\"noopener noreferrer\" target=\"_blank\">links</a> via Markdown.</p>"
       },
       {
        "type": "if",
@@ -80,7 +80,7 @@ const book: Book = (({
       {
        "title": "Share this!",
        "id": "share",
-       "data": "https://github.com/svub/ibook-app"
+       "data": "https://github.com/svub/text-adventure-app"
       },
       {
        "title": "next section",
@@ -130,6 +130,17 @@ const book: Book = (({
     }
    ],
    "next": []
+  },
+  "imprint": {
+   "id": "imprint",
+   "title": "Imprint",
+   "elements": [
+    {
+     "type": "paragraph",
+     "text": "<p>A special section for legal info</p>"
+    }
+   ],
+   "next": []
   }
  },
  "config": {
@@ -137,12 +148,13 @@ const book: Book = (({
    {
     "id": "sandbox",
     "category": "boxes",
-    "mediaUrl": "link",
+    "mediaType": "link",
+    "mediaUrl": "https://github.com/svub/text-adventure-app",
     "title": "A sandbox to play in",
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>A <em>sandback</em> with <strong>toys</strong> and <a href=\"https://test.com\">markdown</a> enabled.</p>"
+      "text": "<p>A <em>sandback</em> with <strong>toys</strong> and <a href=\"https://test.com\" rel=\"noopener noreferrer\" target=\"_blank\">markdown</a> enabled.</p>"
      },
      {
       "type": "paragraph",
