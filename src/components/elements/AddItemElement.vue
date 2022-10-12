@@ -6,7 +6,7 @@
     .title Item not found
     .message Item with ID "{{ element.id }}" not found. Did you configure it correctly? Example config:
     pre.example.
-      // itemdef {{ element.id }} item link https://github.com/svub/ibook-app
+      // itemdef {{ element.id }} item link https://github.com/svub/text-adventure-app
 
       A title for the item
 
