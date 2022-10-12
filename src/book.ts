@@ -279,7 +279,7 @@ const book: Book = (({
       },
       {
        "type": "style",
-       "classes": "note-black",
+       "classes": "recording",
        "elements": [
         {
          "type": "paragraph",
@@ -315,7 +315,7 @@ const book: Book = (({
       },
       {
        "type": "style",
-       "classes": "note-black",
+       "classes": "recording",
        "elements": [
         {
          "type": "paragraph",
@@ -365,7 +365,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du nimmst diesen und schweifst mit letzten Kräften die Treppe hoch.</p>"
+       "text": "<p>Du nimmst diesen und schleifst dich mit letzten Kräften die Treppe hoch.</p>"
       },
       {
        "type": "paragraph",
@@ -1207,7 +1207,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Ende der Erinnerung",
+       "title": "Zurück in die Realität",
        "chapterId": "1",
        "sectionId": "022"
       }
@@ -1215,7 +1215,7 @@ const book: Book = (({
     },
     {
      "id": "022",
-     "title": "Ende der Erinnerung",
+     "title": "Zurück in die Realität",
      "elements": [
       {
        "type": "paragraph",
@@ -1373,28 +1373,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Gemeinsam beschließen sie und Albert dorthin aufzubrechen, um nach Hannah und ihrer Identität zu suchen und dem Geheimnis des Städtchens auf den Grund zu gehen.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Dir gefällt Hollow White und du möchtest uns unterstützen?«</p>"
-        }
-       ]
-      },
-      {
-       "type": "paragraph",
-       "text": "<p><a href=\"https://bit.ly/3Mg53r5\" rel=\"noopener noreferrer\" target=\"_blank\">Hier erfährst du mehr</a>.</p>"
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Kapitel 2",
        "chapterId": "2",
@@ -2176,7 +2157,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Den kürzesten Weg am Fluss entlang",
+       "title": "Weg am Fluss entlang",
        "chapterId": "2",
        "sectionId": "018"
       },
@@ -2219,12 +2200,12 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Du kümmerst dich um Snow",
+       "title": "Snow verarzten",
        "chapterId": "2",
        "sectionId": "016"
       },
       {
-       "title": "Vielleicht ist am besten, wenn sich Albert um Snow kümmert",
+       "title": "Albert verarztet Snow",
        "chapterId": "2",
        "sectionId": "017"
       }
@@ -2232,7 +2213,7 @@ const book: Book = (({
     },
     {
      "id": "016",
-     "title": "Du kümmerst dich um Snow",
+     "title": "Snow verarzten",
      "elements": [
       {
        "type": "state",
@@ -2278,7 +2259,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Den kürzesten Weg am Fluss entlang",
+       "title": "Weg am Fluss entlang",
        "chapterId": "2",
        "sectionId": "018"
       },
@@ -2291,7 +2272,7 @@ const book: Book = (({
     },
     {
      "id": "017",
-     "title": "Vielleicht ist am besten, wenn sich Albert um Snow kümmert",
+     "title": "Albert verarztet Snow",
      "elements": [
       {
        "type": "state",
@@ -2328,7 +2309,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Den kürzesten Weg am Fluss entlang",
+       "title": "Weg am Fluss entlang",
        "chapterId": "2",
        "sectionId": "018"
       },
@@ -2341,7 +2322,7 @@ const book: Book = (({
     },
     {
      "id": "018",
-     "title": "Den kürzesten Weg am Fluss entlang",
+     "title": "Weg am Fluss entlang",
      "elements": [
       {
        "type": "paragraph",
@@ -2367,7 +2348,7 @@ const book: Book = (({
     },
     {
      "id": "019",
-     "title": "Ihr sucht das Waldgebiet ab",
+     "title": "Wald absuchen",
      "elements": [
       {
        "type": "state",
@@ -2602,24 +2583,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Eine spannungsgeladene Reise beginnt, in welcher Ella, Albert und Snow ums nackte Überleben in der eisigen und gefährlichen Landschaft von White Valley kämpfen. Snow wird dabei stark verletzt.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
-        }
-       ]
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Kapitel 3",
        "chapterId": "3",
@@ -3220,7 +3186,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Nach Snow Peaks",
+       "title": "Willkommen in Snow Peaks",
        "chapterId": "3",
        "sectionId": "011"
       }
@@ -3258,7 +3224,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Snow Peaks",
+       "title": "Willkommen in Snow Peaks",
        "chapterId": "3",
        "sectionId": "011"
       }
@@ -3266,7 +3232,7 @@ const book: Book = (({
     },
     {
      "id": "011",
-     "title": "Snow Peaks",
+     "title": "Willkommen in Snow Peaks",
      "elements": [
       {
        "type": "paragraph",
@@ -3287,12 +3253,12 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Den Vogel begraben",
+       "title": "Vogel begraben",
        "chapterId": "3",
        "sectionId": "012"
       },
       {
-       "title": "Den Vogel liegen lassen",
+       "title": "Vogel liegen lassen",
        "chapterId": "3",
        "sectionId": "013"
       }
@@ -3300,7 +3266,7 @@ const book: Book = (({
     },
     {
      "id": "012",
-     "title": "Den Vogel begraben",
+     "title": "Vogel begraben",
      "elements": [
       {
        "type": "state",
@@ -3404,7 +3370,7 @@ const book: Book = (({
     },
     {
      "id": "013",
-     "title": "Den Vogel liegen lassen",
+     "title": "Vogel liegen lassen",
      "elements": [
       {
        "type": "paragraph",
@@ -3680,7 +3646,7 @@ const book: Book = (({
     },
     {
      "id": "020",
-     "title": "Du fragst nach der Kuppel",
+     "title": "»Kuppel?«",
      "elements": [
       {
        "type": "paragraph",
@@ -3709,7 +3675,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Zeit vor Snow Peaks",
+       "title": "Mehr erfahren",
        "chapterId": "3",
        "sectionId": "022"
       },
@@ -3735,7 +3701,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Mehr über die Zeit vor Snow Peaks erfahren",
+       "title": "Mehr erfahren",
        "chapterId": "3",
        "sectionId": "022"
       },
@@ -3748,7 +3714,7 @@ const book: Book = (({
     },
     {
      "id": "022",
-     "title": "Mehr über die Zeit vor Snow Peaks erfahren",
+     "title": "Mehr erfahren",
      "elements": [
       {
        "type": "paragraph",
@@ -3819,12 +3785,12 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Dem Mann etwas geben",
+       "title": "Etwas geben",
        "chapterId": "3",
        "sectionId": "025"
       },
       {
-       "title": "Den Mann ignorieren",
+       "title": "Ignorieren",
        "chapterId": "3",
        "sectionId": "026"
       }
@@ -3832,7 +3798,7 @@ const book: Book = (({
     },
     {
      "id": "025",
-     "title": "Dem Mann etwas geben",
+     "title": "Etwas geben",
      "elements": [
       {
        "type": "state",
@@ -3920,7 +3886,7 @@ const book: Book = (({
     },
     {
      "id": "026",
-     "title": "Den Mann ignorieren",
+     "title": "Ignorieren",
      "elements": [
       {
        "type": "state",
@@ -4409,24 +4375,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Am ersten Tag in der Stadt lüftet Ella viele Geheimnisse rund um Snow Peaks und deren Einwohner. So erfährt sie vom sagenumwobenen Geschehnis des Hollow White, einer Art Naturphänomen vor über 70 Jahren in der Vergangenheit, bei welchem Bewohner von Snow Peaks spurlos verschwunden sind. Seitdem ist die Stadt in Alarmbereitschaft und es gibt immer wieder Einzelfälle des Verschwindens.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
-        }
-       ]
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Kapitel 4",
        "chapterId": "4",
@@ -4597,7 +4548,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Andere Verschwundene?",
+       "title": "»Andere Verschwundene?«",
        "chapterId": "4",
        "sectionId": "003"
       },
@@ -4610,7 +4561,7 @@ const book: Book = (({
     },
     {
      "id": "003",
-     "title": "Andere Verschwundene?",
+     "title": "»Andere Verschwundene?«",
      "elements": [
       {
        "type": "paragraph",
@@ -5377,12 +5328,12 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Gin",
+       "title": "»Gerne einen Gin«",
        "chapterId": "4",
        "sectionId": "021"
       },
       {
-       "title": "»Lieber eine Zigarette!«",
+       "title": "»Lieber eine Zigarette«",
        "chapterId": "4",
        "sectionId": "024"
       }
@@ -5390,7 +5341,7 @@ const book: Book = (({
     },
     {
      "id": "021",
-     "title": "Gin",
+     "title": "»Gerne einen Gin«",
      "elements": [
       {
        "type": "paragraph",
@@ -5498,7 +5449,7 @@ const book: Book = (({
     },
     {
      "id": "024",
-     "title": "»Lieber eine Zigarette!«",
+     "title": "»Lieber eine Zigarette«",
      "elements": [
       {
        "type": "state",
@@ -5548,7 +5499,7 @@ const book: Book = (({
       {
        "title": "Judy",
        "chapterId": "4",
-       "sectionId": "026"
+       "sectionId": "025"
       }
      ]
     },
@@ -5680,7 +5631,7 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Du bleibst stehen",
+       "title": "Stehen bleiben",
        "chapterId": "4",
        "sectionId": "027"
       },
@@ -5693,7 +5644,7 @@ const book: Book = (({
     },
     {
      "id": "027",
-     "title": "Du bleibst stehen",
+     "title": "Stehen bleiben",
      "elements": [
       {
        "type": "paragraph",
@@ -6169,28 +6120,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Ella und Albert kommen sich auf ihrer Reise immer näher und können ihre Gefühle zueinander nicht mehr verstecken. Als sie neben Albert einschläft, hat sie eine Vision in einem Traum. Ist sie selbst auch eine Verschwundene aus einer anderen Zeit?</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Dir gefällt Hollow White und du möchtest uns unterstützen?«</p>"
-        }
-       ]
-      },
-      {
-       "type": "paragraph",
-       "text": "<p><a href=\"https://bit.ly/3Mg53r5\" rel=\"noopener noreferrer\" target=\"_blank\">Hier erfährst du mehr</a>.</p>"
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Kapitel 5",
        "chapterId": "5",
@@ -8326,24 +8258,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Rose beteuert, dass sie unter drohendem Befehl des Schwarzen Kreises handelte und ihr aller Leben auf dem Spiel stand. So zeigt sie Judy eines Nachts ein Schlupfloch zur streng bewachten Kuppel, wo Hannah das letzte Mal gesehen wurde.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
-        }
-       ]
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Kapitel 6",
        "chapterId": "6",
@@ -8387,11 +8304,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du drehst dich um und ein Wissenschaftler in gleicher Montur steht vor dir.</p>"
+       "text": "<p>Dean schaut auf die blinkenden Lichter im Hintergrund.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Du sprichst.</p>"
+       "text": "<p>»Georgy, die Geräte reagieren zum Teil wieder … trotzdem habe ich ein sehr ungutes Gefühl bei der ganzen Sache.</p>"
       },
       {
        "type": "paragraph",
@@ -8407,7 +8324,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich weiß Dean, es steht sehr viel auf dem Spiel, aber wir müssen diesen letzten Versuch mit der uns noch vorhandenen Apparatur wagen.</p>"
+       "text": "<p>Dean schaut skeptisch.</p>"
       },
       {
        "type": "paragraph",
@@ -8500,7 +8417,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Dean dreht dir den Rücken zu.</p>"
+       "text": "<p>Dean dreht dir den Rücken zu und starrt auf die Kreidezeichnungen. Viele Linien und Verknüpfungen sind auf die Wände gezeichnet.</p>"
       },
       {
        "type": "paragraph",
@@ -9413,24 +9330,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Die Nerven liegen blank, sodass Dean eines Tages die Beherrschung verliert und sich mit den Soldaten des Schwarzen Kreises konfrontiert. Beim Versuch, Dean zur Hilfe zu kommen, fallen Schüsse und Georgy wird bewusstlos geschlagen. Als er in einer Zelle wieder aufwacht, muss er dort mehrere Tage ausharren, bis ihm über einen Mittelsmann der Befehl erteilt wird, seine Forschungsarbeit am Kalten Stern fortzusetzen. Zuvor muss er erfahren, dass sein Freund Dean vom Schwarzen Kreis exekutiert wurde.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
-        }
-       ]
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Kapitel 7",
        "chapterId": "7",
@@ -9450,7 +9352,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Judy zieht erschrocken ihre Hand vom <em>Kalten Stern</em>.</p>"
+       "text": "<p>Du&nbsp;ziehst erschrocken deine Hand vom <em>Kalten Stern</em>.</p>"
       },
       {
        "type": "paragraph",
@@ -9701,7 +9603,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Cara schneidet vorsichtig mit einer Schere den blutigen Stoff der Bluse weg und betrachtet die Schusswunde. Das Blut tritt sofort aus der Wunde, als ihr den Stofffetzen von der Wunde nimmt.</p>"
+       "text": "<p>Cara schneidet vorsichtig mit einer Schere den blutigen Stoff der Bluse weg und betrachtet die Schusswunde. Das Blut tritt sofort aus der Wunde, als ihr den Stofffetzen von der Wunde nehmt.</p>"
       },
       {
        "type": "paragraph",
@@ -9827,7 +9729,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Wohin des Weges so mitten in der Nacht?«, fragt der Soldat mit provokanten Ton. »Sie wissen schon, dass eine Ausgangssperre besteht?«</p>"
+       "text": "<p>»Wohin des Weges so mitten in der Nacht?«, fragt der Soldat in provokantem Ton. »Sie wissen schon, dass eine Ausgangssperre besteht?«</p>"
       },
       {
        "type": "paragraph",
@@ -9851,7 +9753,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Madame Rose, sind sie das?«, entgegnet der bewaffnete Soldat.</p>"
+       "text": "<p>»Madame Rose, sind Sie das?«, fragt der bewaffnete Soldat.</p>"
       },
       {
        "type": "paragraph",
@@ -9881,7 +9783,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Dieser drückt nach einer kurzen Pause auf den Sprachknopf und antwortet.</p>"
+       "text": "<p>Dieser drückt nach einer kurzen Pause auf den Sprachknopf und antwortet:</p>"
       },
       {
        "type": "style",
@@ -9895,7 +9797,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Überrascht, schaut ihr den Soldaten an, der seine Waffe in den Halfter steckt.</p>"
+       "text": "<p>Überrascht schaut ihr den Soldaten an, der seine Waffe in den Halfter steckt.</p>"
       },
       {
        "type": "paragraph",
@@ -9911,7 +9813,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ein alter Freund von Pete, sagt Rose mit schwacher Stimme und schläft ein.</p>"
+       "text": "<p>»Ein alter Freund von Pete«, sagt Rose mit schwacher Stimme und schläft ein.</p>"
       }
      ],
      "next": [
@@ -9932,7 +9834,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Charlie tritt kräftig aufs Gaspedal. Das Fahrzeug beschleunigt. Du hältst dich am Vordersitz fest und stützt Rose. Ihr kracht mit voller Geschwindigkeit an dem Soldaten vorbei und durchbrecht die Schranke. Dieser läuft noch hektisch ein kurzes Stück mit gezogener Waffe und Funkgerät hinter eurem Fahrzeug her aber schießt glücklicherweise nicht.</p>"
+       "text": "<p>Charlie tritt kräftig aufs Gaspedal. Das Fahrzeug beschleunigt. Du hältst dich am Vordersitz fest und stützt Rose. Ihr kracht mit voller Geschwindigkeit an dem Soldaten vorbei und durchbrecht die Schranke. Dieser läuft noch hektisch ein kurzes Stück mit gezogener Waffe und Funkgerät hinter eurem Fahrzeug her, aber schießt glücklicherweise nicht.</p>"
       },
       {
        "type": "paragraph",
@@ -9969,7 +9871,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du beginnst zu erzählen…</p>"
+       "text": "<p>Du beginnst zu erzählen:</p>"
       },
       {
        "type": "paragraph",
@@ -9977,7 +9879,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Rose lächelt und gibt Dir einen Schlüssel, den sie um den Hals trägt.</p>"
+       "text": "<p>Rose lächelt und gibt dir einen Schlüssel, den sie um den Hals trägt.</p>"
       },
       {
        "type": "paragraph",
@@ -10069,7 +9971,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Cara, können wir kurz uns unter vier Augen sprechen?«</p>"
+       "text": "<p>»Cara, können wir kurz unter vier Augen sprechen?«</p>"
       },
       {
        "type": "if",
@@ -10083,7 +9985,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Klar«, antwortet Cara, steht auf und geht mit dir in Rose´s und Petés Schlafzimmer.</p>"
+       "text": "<p>»Klar«, antwortet Cara, steht auf und geht mit dir in Roses und Petes Schlafzimmer.</p>"
       },
       {
        "type": "paragraph",
@@ -10099,15 +10001,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich kenne den Ort, nicht weit von hier. Rose hat mir erzählt, dass sie mit Pete oft dort war, als sie noch jünger waren«, sagt Cara.</p>"
+       "text": "<p>»Ich kenne den Ort, er ist nicht weit von hier. Rose hat mir erzählt, dass sie mit Pete oft dort war, als sie noch jünger waren«, sagt Cara.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Ihr zieht euch warm an, packt paar Sachen für unterwegs ein und geht los.</p>"
+       "text": "<p>Ihr zieht euch warm an, packt ein paar Sachen für unterwegs ein und geht los.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Es ist noch hell und ihr brecht auf.</p>"
+       "text": "<p>Es ist noch hell, als ihr aufbrecht.</p>"
       },
       {
        "type": "if",
@@ -10150,15 +10052,15 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich kenne den Ort, nicht weit von hier. Rose hat mir erzählt, dass sie mit Pete oft dort Zeit verbracht hat, als sie noch jünger waren«, sagt Cara.</p>"
+       "text": "<p>»Ich kenne den Ort, nicht weit von hier. Rose hat mir erzählt, dass sie mit Pete dort oft Zeit verbracht hat, als sie noch jünger waren«, sagt Cara.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Ihr zieht euch warm an und packt paar Sachen für unterwegs ein.</p>"
+       "text": "<p>Ihr zieht euch warm an und packt ein paar Sachen für unterwegs ein.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Es ist noch hell und ihr brecht auf.</p>"
+       "text": "<p>Es ist noch hell, als ihr aufbrecht.</p>"
       },
       {
        "type": "if",
@@ -10201,7 +10103,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Darunter ist eine Art Loch im Baum. Vorsichtig, schaust du durch die kleine Öffnung. Es ist so dunkel und feucht, dass du nichts erkennen kannst.</p>"
+       "text": "<p>Darunter ist eine Art Loch im Baum. Vorsichtig schaust du durch die kleine Öffnung. Es ist so dunkel und feucht, dass du nichts erkennen kannst.</p>"
       },
       {
        "type": "paragraph",
@@ -10276,7 +10178,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es wird langsam dunkel und ihr beschließt zurück zur Hütte zu gehen.</p>"
+       "text": "<p>Es wird langsam dunkel und ihr beschließt, zurück zur Hütte zu gehen.</p>"
       },
       {
        "type": "if",
@@ -10284,7 +10186,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Bevor ihr euch aufmacht bleibt Cara kurz stehen und holt etwas aus ihrem Rucksack.</p>"
+         "text": "<p>Bevor ihr euch aufmacht, bleibt Cara kurz stehen und holt etwas aus ihrem Rucksack.</p>"
         },
         {
          "type": "paragraph",
@@ -10292,7 +10194,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Sie öffnet diese und verteilt Rosés Asche an der großen Tanne.</p>"
+         "text": "<p>Sie öffnet diese und verteilt Roses Asche an der großen Tanne.</p>"
         },
         {
          "type": "paragraph",
@@ -10344,7 +10246,7 @@ const book: Book = (({
       },
       {
        "type": "addItem",
-       "id": "chest"
+       "id": "chest-old"
       },
       {
        "type": "paragraph",
@@ -10352,7 +10254,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es wird langsam dunkel und ihr beschließt zurück zur Hütte zu gehen.</p>"
+       "text": "<p>Es wird langsam dunkel und ihr beschließt, zurück zur Hütte zu gehen.</p>"
       },
       {
        "type": "if",
@@ -10360,7 +10262,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Bevor ihr euch aufmacht bleibt Cara kurz stehen und holt etwas aus ihrem Rucksack.</p>"
+         "text": "<p>Bevor ihr euch aufmacht, bleibt Cara kurz stehen und holt etwas aus ihrem Rucksack.</p>"
         },
         {
          "type": "paragraph",
@@ -10368,7 +10270,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Sie öffnet diese und verteilt Rosés Asche an der Tanne.</p>"
+         "text": "<p>Sie öffnet diese und verteilt Roses Asche an der Tanne.</p>"
         },
         {
          "type": "paragraph",
@@ -10395,7 +10297,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Langsam steckst du diesen in das Schloss der Truhe.</p>"
+       "text": "<p>Langsam steckst du ihn in das Schloss der Truhe.</p>"
       },
       {
        "type": "paragraph",
@@ -10411,7 +10313,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Truhe öffnen sich.</p>"
+       "text": "<p>Die Truhe öffnet sich.</p>"
       },
       {
        "type": "paragraph",
@@ -10419,7 +10321,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Gemeinsam schaut ihr über den darin sich befindenden Inhalt:</p>"
+       "text": "<p>Darin: mehrere Fotos und ein verschlossener Umschlag.</p>"
       },
       {
        "type": "style",
@@ -10427,19 +10329,19 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p><em>Bild 1</em></p>"
+         "text": "<p><em>Foto&nbsp;1</em></p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>Ein gemeinsames Bild von dir und dem unbekannten Mann aus deiner letzten Erinnerung am Frozen Lake</p>"
+         "text": "<p>Ein kleiner weißer Husky-Welpe.</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p><em>Bild 2</em></p>"
+         "text": "<p>Auf der Rückseite des Fotos steht: Snow</p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>Ein kleiner weißer Husky Welpe</p>"
+         "text": "<p><em>Foto 2</em></p>"
         },
         {
          "type": "paragraph",
@@ -10447,7 +10349,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Eine unbekannte Frau mit Babybauch und dem unbekannten Mann vom ersten Bild.</p>"
+         "text": "<p>Auf der Rückseite des Fotos steht: Bald zu dritt</p>"
         },
         {
          "type": "paragraph",
@@ -10471,11 +10373,15 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p><em>Bild 5</em></p>"
+         "text": "<p><em>Foto 13</em></p>"
         },
         {
          "type": "paragraph",
-         "text": "<p>Eine jüngere Rose und Pete vor der Tanne mit der geschnitzten Rose. Rose und Pete kennen sich schon ein ganzes Leben lang.</p>"
+         "text": "<p>Ein junges Pärchen unter der Tanne mit der geschnitzten Rose.</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Auf der Rückseite steht: Für meine Rose. In Liebe, Pete</p>"
         }
        ]
       },
@@ -10495,49 +10401,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du legst die Bilder zur Seite und öffnest den ersten Umschlag auf welchem Judy steht.</p>"
+       "text": "<p>Nachdenklich legst du die Fotos zurück in die Truhe und begreifst, dass jedes der Bilder letzte Erinnerungen an Roses Familie sind.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Der erste Brief ist von dem unbekannten Mann auf den Bildern.</p>"
+       "text": "<p>Ihre Mutter, ihr Vater und ihr Mann Pete.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Er heißt Albert.</p>"
+       "text": "<p>Was wohl mit ihrer Familie genau geschehen ist?</p>"
       },
       {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>Liebe Judy,</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>ich habe unzählige Male diesen Brief angefangen und immer wieder von vorne begonnen.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Es ist sehr viel Zeit vergangen, wenn du diesen Brief in den Händen hältst und liest. Wenn du diese Zeilen jedoch liest, war unsere Rose erfolgreich und hat dich gefunden.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Es gibt so viel, was ich dir sagen möchte, aber ich kann nicht. Ich darf nicht, weil es dich in Gefahr bringen könnte.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Es gibt keinen Tag, an welchem ich dich nicht vermisse.</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>In Liebe</p>"
-        },
-        {
-         "type": "paragraph",
-         "text": "<p>Albert</p>"
-        }
-       ]
+       "type": "paragraph",
+       "text": "<p>Du ahnst Schreckliches.</p>"
       },
       {
        "type": "paragraph",
@@ -10553,11 +10429,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du öffnest den Umschlag.</p>"
+       "text": "<p>In diesem befindet sich ein mehrfach gefalteter weißer Zettel. Schritt für Schritt faltest du diesen auf.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>In diesem befindet sich ein einfacher weißer Zettel mit nur drei handgeschriebenen Zeilen in eleganter Handschrift. Der Absender ist unbekannt.</p>"
+       "text": "<p>Drei handgeschriebene Zeilen –&nbsp;wieder in eleganter Handschrift. Der Absender ist unbekannt.</p>"
       },
       {
        "type": "style",
@@ -10599,7 +10475,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Klar, du sollst um 00:22 Uhr beim Midnight sein. Das Midnight ist ein Motel in <em>White Valley</em>, manche nennen das Gebiet auch <em>Hollow White</em>«, sagt Cara selbstverständlich.</p>"
+       "text": "<p>Überrascht schenkst du Cara ein hoffnungsvolles Lächeln.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Ob der Hinweis dich zu Hannah führt?</p>"
       }
      ],
      "next": [
@@ -10619,6 +10499,11 @@ const book: Book = (({
      "id": "016",
      "title": "Mit Cara sprechen",
      "elements": [
+      {
+       "type": "state",
+       "id": "karma",
+       "modifier": "+1"
+      },
       {
        "type": "paragraph",
        "text": "<p>»Du kanntest also Rose schon länger?«</p>"
@@ -10641,7 +10526,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es sind einige Jahre verstrichen als mich über Josef eine Nachricht von Rose erreicht hat. Es ging um deine Tochter Hannah und einen Plan uns aus dem Lager zu befreien. Ich musste Rose versprechen, zu unserem eigenen Schutz nichts zu sagen.</p>"
+       "text": "<p>Es sind einige Jahre verstrichen, als mich über Josef eine Nachricht von Rose erreicht hat. Es ging um deine Tochter Hannah und einen Plan, uns aus dem Lager zu befreien. Ich musste Rose versprechen, zu unserem eigenen Schutz nichts zu sagen.</p>"
       },
       {
        "type": "paragraph",
@@ -10674,7 +10559,7 @@ const book: Book = (({
         },
         {
          "type": "paragraph",
-         "text": "<p>Sie ist wach. Schwach aber ansprechbar.</p>"
+         "text": "<p>Sie ist wach. Schwach, aber ansprechbar.</p>"
         },
         {
          "type": "paragraph",
@@ -10766,7 +10651,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du gehst einen Schritt zurück als die Tür sich vor dir langsam öffnet.</p>"
+       "text": "<p>Du gehst einen Schritt zurück, als die Tür sich vor dir langsam öffnet.</p>"
       },
       {
        "type": "paragraph",
@@ -10791,7 +10676,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>Die Tür ist verschlossen, als du die Klinke herrunterdrückst. Doch du hörst auf einmal Geräusche die sich aus dem Zimmer der Tür nähern.</p>"
+       "text": "<p>Die Tür ist verschlossen, als du die Klinke herunterdrückst. Doch du hörst auf einmal Geräusche, die sich aus dem Zimmer der Tür nähern.</p>"
       },
       {
        "type": "paragraph",
@@ -10973,28 +10858,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Hotel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Dir gefällt Hollow White und du möchtest uns unterstützen?«</p>"
-        }
-       ]
-      },
-      {
-       "type": "paragraph",
-       "text": "<p><a href=\"https://bit.ly/3Mg53r5\" rel=\"noopener noreferrer\" target=\"_blank\">Hier erfährst du mehr</a>.</p>"
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Kapitel 8",
        "chapterId": "8",
@@ -11208,6 +11074,10 @@ const book: Book = (({
        "text": "<p>Sie öffnet die linke Hand. Ein geflochtenes Armband aus dünnen Kabeln und Drähten.</p>"
       },
       {
+       "type": "addItem",
+       "id": "bracelet"
+      },
+      {
        "type": "paragraph",
        "text": "<p>»Für dich«, sagt Hannah mit strahlenden Augen.</p>"
       },
@@ -11221,7 +11091,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»So wirst du mich nie vergessen Onkel Georgy.«</p>"
+       "text": "<p>»So wirst du mich nie vergessen, Onkel Georgy.«</p>"
       },
       {
        "type": "paragraph",
@@ -11246,15 +11116,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Das ist unfair.«, sagst du.</p>"
+       "text": "<p>»Das ist unfair«, sagst du.</p>"
       },
       {
        "type": "paragraph",
        "text": "<p>Hannah lacht und zieht etwas aus ihrer Hosentasche.</p>"
-      },
-      {
-       "type": "addItem",
-       "id": "heart"
       },
       {
        "type": "paragraph",
@@ -11263,6 +11129,10 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Ein kleiner Stein, der die Form eines Herzens hat.</p>"
+      },
+      {
+       "type": "addItem",
+       "id": "heart"
       },
       {
        "type": "paragraph",
@@ -11330,7 +11200,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du hast nur noch diesen einen Tag bis der <em>Schwarze Kreis</em>&nbsp;Ergebnisse einfordert.</p>"
+       "text": "<p>Du hast nur noch diesen einen Tag, bis der <em>Schwarze Kreis</em>&nbsp;Ergebnisse einfordert.</p>"
       },
       {
        "type": "paragraph",
@@ -11342,7 +11212,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Sie lässt kleine Schiffchen eine kleine Wasserquelle, die aus der Wand kommt, durch den seichten Strom des Wasser fahren.</p>"
+       "text": "<p>Sie lässt kleine Schiffchen eine Wasserquelle, die aus der Wand kommt, hinab durch den seichten Strom fahren.</p>"
       },
       {
        "type": "paragraph",
@@ -11402,11 +11272,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich bin so schnell es geht bei Dir!«.</p>"
+       "text": "<p>»Ich bin so schnell es geht bei dir!«</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Die Höhle erleuchtet strahlend hell und ein lauter Knall ertönt. Du hältst Dir die Augen zu. Als du sie wieder öffnest, ist die kleine Hannah weg.</p>"
+       "text": "<p>Die Höhle erleuchtet strahlend hell und ein lauter Knall ertönt. Du hältst dir die Augen zu. Als du sie wieder öffnest, ist die kleine Hannah weg.</p>"
       },
       {
        "type": "paragraph",
@@ -11422,7 +11292,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Dir geht eine Erinnerungen durch den Kopf aus der Zeit, als du in der Zelle warst:</p>"
+       "text": "<p>Dir geht eine Erinnerung durch den Kopf aus der Zeit, als du in der Zelle warst:</p>"
       },
       {
        "type": "paragraph",
@@ -11430,7 +11300,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du küsst die kalte glatte Fläche des roten Splitters. »Bring mir Glück… Ella«</p>"
+       "text": "<p>Du küsst die kalte glatte Fläche des roten Splitters. »Bring mir Glück, Ella.«</p>"
       },
       {
        "type": "paragraph",
@@ -11446,7 +11316,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Tu es nicht Georgy!«, ertönt eine dumpfe Stimme hinter der Maskierung.</p>"
+       "text": "<p>»Tu es nicht, Georgy!«, ertönt eine dumpfe Stimme hinter der Maskierung.</p>"
       },
       {
        "type": "paragraph",
@@ -11477,7 +11347,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als du zurückweichst, ertönt ein Schuss dessen Kugel nur wenige Meter vor deinen Füßen im Wasser einschlägt.</p>"
+       "text": "<p>Als du zurückweichst, ertönt ein Schuss, dessen Kugel nur wenige Meter vor deinen Füßen im Wasser einschlägt.</p>"
       },
       {
        "type": "paragraph",
@@ -11543,7 +11413,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Doch dein Schrei wird durch die laute, erste Phase deiner Sprungsequenz übertönt.</p>"
+       "text": "<p>Doch dein Schrei wird durch die laute erste Phase deiner Sprungsequenz übertönt.</p>"
       },
       {
        "type": "paragraph",
@@ -11559,7 +11429,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ich dachte… ich dachte du wärst tot!«, schreit Georgy.</p>"
+       "text": "<p>»Ich dachte … ich dachte, du wärst tot!«, schreist du.</p>"
       },
       {
        "type": "paragraph",
@@ -11647,11 +11517,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du drehst dich um und läufst die letzten Meter, so schnell du kannst zur Spitze des <em>Kalten Stern</em>.</p>"
+       "text": "<p>Du drehst dich um und läufst die letzten Meter so schnell du kannst zur Spitze des <em>Kalten Sterns</em>.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Das laute Summen baut sich auf und füllt die ganze Halle der Höhle.</p>"
+       "text": "<p>Das laute Summen baut sich auf und erfüllt die ganze Halle der Höhle.</p>"
       },
       {
        "type": "paragraph",
@@ -11921,24 +11791,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Als er selbst springen will, stellt sich ein alter Bekannter ihm in den Weg. Es ist Dean, der nicht nur lebt, sondern Georgy dem Anschein nach verraten hat und zum Schwarzen Kreis gehört. Georgy schafft es gerade noch durch einen Zeitsprung, den tödlichen Schüssen zu entkommen.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
-        }
-       ]
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Kapitel 9",
        "chapterId": "9",
@@ -12055,7 +11910,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Draußen steht Albert mit seinem Truck davor.</p>"
+       "text": "<p>Draußen steht Albert mit seinem Truck.</p>"
       },
       {
        "type": "paragraph",
@@ -12093,7 +11948,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Bis in einer Stunde, ich hole dich genau hier wieder ab«, sagt er, startet den Motor und fährt weiter.</p>"
+       "text": "<p>»Bis in einer Stunde, ich hole dich genau hier wieder ab«, sagt er und fährt weiter.</p>"
       },
       {
        "type": "paragraph",
@@ -12308,7 +12163,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Ella, du &nbsp;gehörst jetzt offiziell zu unserer Gemeinde von <em>Snow Peaks</em>.«</p>"
+       "text": "<p>»Ella, du gehörst jetzt offiziell zu unserer Gemeinde von <em>Snow Peaks</em>.«</p>"
       },
       {
        "type": "paragraph",
@@ -12346,7 +12201,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Albert ist für die Stadt beschäftigt und tagsüber meistens mit dem Truck unterwegs.</p>"
+       "text": "<p>Albert ist Beschäftigter der Stadt und tagsüber meistens mit dem Truck unterwegs.</p>"
       },
       {
        "type": "paragraph",
@@ -12516,6 +12371,11 @@ const book: Book = (({
      "id": "013",
      "title": "Tür nicht öffnen",
      "elements": [
+      {
+       "type": "state",
+       "id": "karma",
+       "modifier": "+1"
+      },
       {
        "type": "paragraph",
        "text": "<p>Du lässt die Haustür wieder ins Schloss fallen, diese Situation ist zu seltsam, so selten ist hier draußen Besuch. Erneut klopft es an die Tür.</p>"
@@ -12742,24 +12602,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Eines Tages klopft es an der Haustüre.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
-        }
-       ]
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Kapitel 10",
        "chapterId": "10",
@@ -14032,24 +13877,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Hannah hat einen letzten Wunsch. Sie möchte noch vor ihrem Tod ihre leibliche Mutter aus der Zukunft begegnen.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
-        }
-       ]
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Kapitel 11",
        "chapterId": "11",
@@ -14135,7 +13965,7 @@ const book: Book = (({
       },
       {
        "type": "addItem",
-       "id": "chest-old"
+       "id": "chest"
       },
       {
        "type": "style",
@@ -14506,7 +14336,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ein letzter Blick auf die glühende Spitze des <em>Kalten Stern</em>.</p>"
+       "text": "<p>Ein letzter Blick auf die glühende Spitze des <em>Kalten Sterns</em>.</p>"
       },
       {
        "type": "paragraph",
@@ -14639,7 +14469,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ein letzter Blick auf die glühende Spitze des <em>Kalten Stern</em>&nbsp;und die daran verbundene Apparatur.</p>"
+       "text": "<p>Ein letzter Blick auf die glühende Spitze des <em>Kalten Sterns</em>&nbsp;und die daran verbundene Apparatur.</p>"
       },
       {
        "type": "paragraph",
@@ -15545,24 +15375,9 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Sie nennen ihre gemeinsame Tochter Rose.</p>"
-      },
-      {
-       "type": "style",
-       "classes": "note-black",
-       "elements": [
-        {
-         "type": "paragraph",
-         "text": "<p>»Hollow White – das interaktive Mystery-Textadventure«</p>"
-        }
-       ]
       }
      ],
      "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
       {
        "title": "Epilog",
        "chapterId": "12",
@@ -15806,7 +15621,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Großen Dank gilt allen Personen, die uns unterstützt haben. Jeder Impuls hat uns erreicht. Alle Mitwirkende sind auf <a href=\"https://www.hollowwhite.de/\" rel=\"noopener noreferrer\" target=\"_blank\">hollowwhite.de</a>&nbsp;gelistet.</p>"
+       "text": "<p>Großen Dank gilt allen Personen, die uns unterstützt haben. Jeder Impuls hat uns erreicht.</p>"
       },
       {
        "type": "if",
@@ -15831,50 +15646,6 @@ const book: Book = (({
       {
        "type": "paragraph",
        "text": "<p>Jetzt liegt es wieder an dir, wie es weitergeht.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Deine letzte Entscheidung.</p>"
-      }
-     ],
-     "next": [
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
-      {
-       "title": "White mit anderen teilen",
-       "id": "share",
-       "data": "Hollow"
-      },
-      {
-       "title": "Jetzt aktiv werden",
-       "chapterId": "13",
-       "sectionId": "003"
-      },
-      {
-       "title": "Hollow White neu beginnen",
-       "id": "reset",
-       "data": ""
-      }
-     ]
-    },
-    {
-     "id": "003",
-     "title": "Jetzt aktiv werden",
-     "elements": [
-      {
-       "type": "addItem",
-       "id": "plant"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p>Lass uns zusammen etwas Gutes tun.</p>"
-      },
-      {
-       "type": "paragraph",
-       "text": "<p><a href=\"https://bit.ly/3Mg53r5\" rel=\"noopener noreferrer\" target=\"_blank\">Mehr erfahren</a></p>"
       }
      ],
      "next": [
@@ -16047,6 +15818,10 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
+     "text": "<p>Gabriel Alenius (Foto Startseite)</p>"
+    },
+    {
+     "type": "paragraph",
      "text": "<p>Wir freuen uns über dein <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a>.</p>"
     }
    ],
@@ -16056,6 +15831,87 @@ const book: Book = (({
      "id": "share",
      "data": "Hollow"
     },
+    {
+     "title": "Zurück",
+     "id": "start",
+     "data": ""
+    }
+   ]
+  },
+  "imprint": {
+   "id": "imprint",
+   "title": "Impressum",
+   "elements": [
+    {
+     "type": "paragraph",
+     "text": "<p><em>Angaben gem. § 5 TMG</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Thomas Kiris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Schellingstraße 78</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>80799 München</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Kontaktaufnahme</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>E-Mail: info@hollowwhite.de</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Haftung für Inhalte</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Alle Inhalte unseres Internetauftritts wurden mit größter Sorgfalt und nach bestem Gewissen erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntniserlangung einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von den o.g. Rechtsverletzungen werden wir diese Inhalte unverzüglich entfernen.</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Haftungsbeschränkung für externe Links</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Unsere Webseite enthält Links auf externe Webseiten Dritter. Auf die Inhalte dieser direkt oder indirekt verlinkten Webseiten haben wir keinen Einfluss. Daher können wir für die „externen Links“ auch keine Gewähr auf Richtigkeit der Inhalte übernehmen. Für die Inhalte der externen Links sind die jeweiligen Anbieter oder Betreiber (Urheber) der Seiten verantwortlich.</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Die externen Links wurden zum Zeitpunkt der Linksetzung auf eventuelle Rechtsverstöße überprüft und waren im Zeitpunkt der Linksetzung frei von rechtswidrigen Inhalten. Eine ständige inhaltliche Überprüfung der externen Links ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht möglich. Bei direkten oder indirekten Verlinkungen auf die Webseiten Dritter, die außerhalb unseres Verantwortungsbereichs liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall nur bestehen, wenn wir von den Inhalten Kenntnis erlangen und es uns technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern.</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Diese Haftungsausschlusserklärung gilt auch innerhalb des eigenen Internetauftrittes „Name Ihrer Domain“ gesetzten Links und Verweise von Fragestellern, Blogeinträgern, Gästen des Diskussionsforums. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargestellten Informationen entstehen, haftet allein der Diensteanbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Werden uns Rechtsverletzungen bekannt, werden die externen Links durch uns unverzüglich entfernt.</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Urheberrecht</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Die auf unserer Webseite veröffentlichen Inhalte und Werke unterliegen dem deutschen Urheberrecht (http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf) . Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung des geistigen Eigentums in ideeller und materieller Sicht des Urhebers außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Urhebers i.S.d. Urhebergesetzes (http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf&nbsp;). Downloads und Kopien dieser Seite sind nur für den privaten und nicht kommerziellen Gebrauch erlaubt. Sind die Inhalte auf unserer Webseite nicht von uns erstellt wurden, sind die Urheberrechte Dritter zu beachten. Die Inhalte Dritter werden als solche kenntlich gemacht. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte unverzüglich entfernen.</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Dieses Impressum&nbsp;wurde freundlicherweise von <a href=\"https://jurarat.de/\" rel=\"noopener noreferrer\" target=\"_blank\">jurarat.de</a>&nbsp;zur Verfügung gestellt.</p>"
+    }
+   ],
+   "next": [
     {
      "title": "Zurück",
      "id": "start",
@@ -16631,17 +16487,17 @@ const book: Book = (({
     "choices": [
      {
       "id": "size-m",
-      "title": "Mittel",
+      "title": "M",
       "default": false
      },
      {
       "id": "size-l",
-      "title": "Groß",
+      "title": "L",
       "default": false
      },
      {
       "id": "size-xl",
-      "title": "Sehr groß",
+      "title": "XL",
       "default": false
      }
     ]
