@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import { Chapter, Link, Reference, Section, State, ChangeState, AddItem, RemoveItem, Option, Choice, Overlays, SpecialLink, isSpecialLink } from '../shared/entities';
 import { equal, warn, logJson, log, error } from '../shared/util';
-import VuexPersistence from 'vuex-persist';
+import createPersistedState from "vuex-persist-indexeddb";
 import book from '@/book';
 
 Vue.use(Vuex)
@@ -225,17 +225,15 @@ export default new Vuex.Store({
   modules: {
   },
   plugins: [
-    new VuexPersistence<AppState>({
-      storage: window.localStorage,
-      reducer: (state) => {
+    createPersistedState({
+      reducer(state, paths) {
         const reduced = {}
         Object.keys(state).forEach(key => {
           if (dontStore.indexOf(key) < 0) reduced[key] = state[key];
         });
         return reduced;
-      },
-      filter: (mutation) => dontStore.indexOf(mutation.type) < 0
-    }).plugin
+      }
+    })
   ],
   devtools: true,
 })
