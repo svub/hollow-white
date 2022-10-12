@@ -94,6 +94,8 @@ export default class App extends Vue {
 
     // for debugging and testing
     window["appState"] = appState;
+
+    document.title = book.title;
   }
 
   mounted() {
