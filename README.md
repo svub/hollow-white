@@ -22,7 +22,7 @@ While working on your book app, you won´t need to update the app code usually. 
 * Check if the changes are fine with you, e.g. check if an import change of yours would be overwritten, 
 * And if your OK with everything, merge the new version in
 ```
-git fetch app/main
+git fetch app
 git diff ..app/main
 git merge app/main
 ```
