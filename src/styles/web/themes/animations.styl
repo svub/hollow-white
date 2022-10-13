@@ -1,6 +1,10 @@
-z = 150px
-body
-  perspective 1000px
+// z = 150px
+z = 30vw
+main
+  perspective 400vw
+
+.page
+  transform-origin left
 
 .page-enter-active, .page-leave-active
   transition transform .4s ease-in-out
@@ -15,13 +19,13 @@ body
 
 .start
   &.page-enter
-    transform translate3d(-100vw, 0, z) rotateY(-90deg)
+    transform translate3d(-50vw, 0, z) rotateY(-90deg)
   &.page-enter-to
     transform translate3d(0, 0, 0) rotateY(0deg)
   &.page-leave
     transform translate3d(0, 0, 0) rotateY(0deg)
   &.page-leave-to
-    transform translate3d(-100vw, 0, z) rotateY(-90deg)
+    transform translate3d(-50vw, 0, z) rotateY(-90deg)
 
 .section-enter-active
   animation .4s section-in
