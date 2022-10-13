@@ -1,7 +1,7 @@
 .page.start
   text-align center
   asset('start-background.jpg')
-  background-size cover
+  background-size cover  
 
   .title
     flex 2
@@ -17,7 +17,8 @@
   .buttons
     flex 1
     flex-column()
-    justify-content space-between
+    justify-content end
+    padding-bottom 26px
 
     .status
       @extend .small
@@ -28,6 +29,7 @@
 
       &.start, &.continue
         @extends .pill-button
+        margin-bottom 18px
 
       &.options, &.credits, &.imprint
         @extends .text-button
@@ -35,7 +37,7 @@
         font-size 16px
         font-weight 300
         letter-spacing 1.25px
-        line-height 20px
+        margin-bottom 18px
         opacity .75
 
       &.options
