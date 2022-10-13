@@ -92,13 +92,15 @@ export default class Read extends Vue {
     this.goto(link);
   }
 
-  share(title: string, url?: string) {
+  async share(title: string, url?: string) {
     if (!url) error('Read.share: url not defined', title);
     const data = { title, url };
+    let nativeFailed = false;
     if (navigator.share) {
-      navigator.share(data);
+      try { await navigator.share(data); }
+      catch (e) { nativeFailed = true }
     }
-    else {
+    if (!navigator.share || nativeFailed) {
       this.overlay({ overlay: Overlays.shareOverlay, data });
     }
   }
