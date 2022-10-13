@@ -224,9 +224,7 @@ html.overlay-open
         &.size .size-xl button
           image-button('options-size-xl.svg')
 
-  &.credits
-    text-align center
-
+  &.credits, &.imprint
     p
       font-weight 400
 
@@ -239,6 +237,17 @@ html.overlay-open
 
     .paragraph-element:last-child
       margin-top 1em
+
+    .next.links
+      margin-top 2em
+
+      button
+        display block
+        margin auto
+        margin-bottom .5em
+
+  &.credits, &.imprint
+    text-align center
 
   &.items
     flex-column()
