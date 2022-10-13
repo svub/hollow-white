@@ -17,7 +17,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p><em>Hollow White</em>&nbsp;ist ein interaktives Mystery-Textadventure mit einer Dauer von zirka zwei bis drei Stunden. Es wurde von kreativen Köpfen entwickelt, die Lust hatten etwas Neues zu machen – und es ist frei zugänglich.</p>"
+       "text": "<p><em>Hollow White</em>&nbsp;ist ein interaktives Mystery-Textadventure mit einer Dauer von zirka zwei bis drei Stunden.</p>"
       },
       {
        "type": "paragraph",
@@ -15827,14 +15827,9 @@ const book: Book = (({
    ],
    "next": [
     {
-     "title": "White mit anderen teilen",
+     "title": "Hollow White mit anderen teilen",
      "id": "share",
-     "data": "Hollow"
-    },
-    {
-     "title": "Zurück",
-     "id": "start",
-     "data": ""
+     "data": "https://hollowwhite.de"
     }
    ]
   },
@@ -15911,13 +15906,7 @@ const book: Book = (({
      "text": "<p>Dieses Impressum&nbsp;wurde freundlicherweise von <a href=\"https://jurarat.de/\" rel=\"noopener noreferrer\" target=\"_blank\">jurarat.de</a>&nbsp;zur Verfügung gestellt.</p>"
     }
    ],
-   "next": [
-    {
-     "title": "Zurück",
-     "id": "start",
-     "data": ""
-    }
-   ]
+   "next": []
   }
  },
  "config": {
@@ -16459,6 +16448,11 @@ const book: Book = (({
     "title": "Design",
     "choices": [
      {
+      "id": "light-theme",
+      "title": "Light",
+      "default": false
+     },
+     {
       "id": "dark-theme",
       "title": "Dark",
       "default": true
@@ -16472,12 +16466,12 @@ const book: Book = (({
      {
       "id": "font-sans",
       "title": "Modern",
-      "default": true
+      "default": false
      },
      {
       "id": "font-serif",
       "title": "Classic",
-      "default": false
+      "default": true
      }
     ]
    },

@@ -15,10 +15,14 @@ html
     --linkColor #5bf0f0
     --linkColorRgb 97, 255, 255
 
-    // specials
-    --overlayBg @css { radial-gradient(circle, #394349 0%, #0D1B22 100%) }
+    // read
     --decisionButtonBg #0A1116
+    --decisionButtonBorder rgba(255,255,255,.3)
     --itemOutline #53585C
+
+    // overlay
+    --overlayBg @css { radial-gradient(circle, #394349 0%, #0D1B22 100%) }
+    --closeButtonBg var(--bgColor)
 
     // options panel
     --alert #ff483d
@@ -26,8 +30,16 @@ html
     --inactive #888
     --bgHighlight rgba(255, 255, 255, .1)
 
+    // chapters overlay
+    --chapterIdTextColor var(--textColor)
+
+    // item
+    --itemTextColor var(--fgColor)
+    --itemTextHighlightColor var(--fgColorInverse)
+    --itemTextHighlightColorRgb var(--fgColorInverseRgb)
+
   &.light-theme
-    --bgColor white
+    --bgColor #f4f4f4
     --bgColorRgb 255, 255, 255
     --bgColorInverse black
     --bgColorInverseRgb 0, 0, 0
@@ -35,21 +47,33 @@ html
     --fgColorRgb 0, 0, 0
     --fgColorInverse white
     --fgColorInverseRgb 255, 255, 255
-    --textColor rbga(0, 0, 0, .65)
-    --textColorRgb 170, 170, 170
+    --textColor #333
+    --textColorRgb 51, 51, 51
     --textColorInverse #ccc
     --textColorInverseRgb 204, 204, 204
 
-    // specials
-    --overlayBg @css { radial-gradient(circle, #394349 0%, #0D1B22 100%) }
-    --decisionButtonBg #0A1116
+    // read
+    --decisionButtonBg #fff
+    --decisionButtonBorder #dfdfdf
     --itemOutline #53585C
 
+    // overlay
+    --overlayBg #F4F4F4
+    --closeButtonBg #fff
+  
     // options panel
     --alert #ff483d
     --active #36c64f
     --inactive #888
-    --bgHighlight rgba(255, 255, 255, .1)
+    --bgHighlight #fff
+
+    // chapters overlay
+    --chapterIdTextColor rgba(51, 51, 51, .65)
+
+    // item
+    --itemTextColor var(--textColorInverse)
+    --itemTextHighlightColor var(--fgColorInverse)
+    --itemTextHighlightColorRgb var(--fgColorInverseRgb)
 
   --fontSerif 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   --fontSans 'Merriweather Sans', Helvetica, 'Open Sans', Verdana, Arial, sans-serif

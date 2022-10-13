@@ -95,6 +95,7 @@ html.overlay-open
     button.close
       @extends .outline-button
       image-button('options-close-x.svg')
+      background var(--closeButtonBg)
       border-radius 50%
       padding 0
 
@@ -109,7 +110,7 @@ html.overlay-open
 
       .chapter-id
         @extends h6
-        color var(--textColor)
+        color var(--chapterIdTextColor)
         margin-bottom 5px
 
       h3
@@ -246,7 +247,7 @@ html.overlay-open
         margin auto
         margin-bottom .5em
 
-  &.credits, &.imprint
+  &.credits
     text-align center
 
   &.items

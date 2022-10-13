@@ -6,6 +6,9 @@
   height toRem(402)
   // max-height 500px
   height s("calc(300px + %s)", toRem(150))
+  --textColor var(--itemTextColor)
+  --fgColor  var(--itemTextHighlightColor)
+  --fgColorRgb var(--itemTextHighlightColorRgb)
 
   .flipper
     border-radius toRem(30)
@@ -31,13 +34,14 @@
 
       h3
         @extends h5
-        &:before
+        &:after
           content 'Sammelobjekt'
           display block
           @extends .label
           font-size toRem(12)
           line-height toRem(20)
           font-weight 300
+          margin-top 2px
 
     .content
       flex-column()

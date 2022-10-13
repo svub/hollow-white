@@ -22,14 +22,6 @@ main(:class="page" :lang="lang")
           button.close(@click="setOverlay('')")
   //- HelloWorld(:msg="msg")
 </template>
-<template native>
-  <Page>
-    <ActionBar :title="navbarTitle" />
-    <GridLayout rows="auto, auto">
-      <HelloWorld :msg="msg" />
-    </GridLayout>
-  </Page>
-</template>
 
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
@@ -58,8 +50,6 @@ const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
   components: { Start, Read, Tester, Chapters, Items, Credits, Imprint, Options, FeedbackMode, Share },
 })
 export default class App extends Vue {
-  private navbarTitle = `App.vue`;
-  // private msg = `Mode=${VUE_APP_MODE} and Platform=${VUE_APP_PLATFORM}`;
 
   @State page;
   @State overlay;
