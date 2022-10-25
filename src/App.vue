@@ -25,11 +25,12 @@ main(:class="page" :lang="lang")
 
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
-// import HelloWorld from './components/HelloWorld.vue';
+import { State, Action } from "vuex-class";
+import uniq from "lodash/uniq";
+// import localforage from "localforage";
 import Start from "./views/Start.vue";
 import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
-import { State, Action } from "vuex-class";
 import book from "./book";
 import { clone, logJson, warn } from "./shared/util";
 import appState from "./store";
@@ -41,7 +42,6 @@ import Imprint from './components/overlays/Imprint.vue';
 import Options from './components/overlays/Options.vue';
 import FeedbackMode from './components/overlays/FeedbackMode.vue';
 import Share from './components/overlays/Share.vue';
-import uniq from "lodash/uniq";
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
@@ -80,6 +80,20 @@ export default class App extends Vue {
       warn("TEST: opening overlay ", testOverlay);
       this.setOverlay(testOverlay);
     }
+
+    // add import and export functionality for indexedDB for testing purposes
+    // localforage.config({ name: "vuex" });
+    // const store = localforage;
+    // console.log(store);
+    // window["exportDb"] = async () => {
+    //   const result: Array<Record<string, any>> = [];
+    //   console.log(await store.keys());
+    //   await store.iterate((value, key) => {
+    //     console.log(key, value);
+    //     result.push({ key, value });
+    //   });
+    //   return result;
+    // };
 
     // set root lang
     document.documentElement.lang = this.lang;

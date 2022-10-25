@@ -2,6 +2,7 @@
 node_modules
 /dist
 rebase-app.sh
+states.txt
 
 # local env files
 .env.local
