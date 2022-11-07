@@ -20,8 +20,8 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
   components: {}
 })
 export default class Share extends Vue {
-  @Prop(String) private url!: string;
-  @Prop(String) private title!: string;
+  @Prop(String) url!: string;
+  @Prop(String) title!: string;
 
   copied = false;
 

@@ -8,7 +8,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Action } from 'vuex-class';
-import { Functions, Overlays, Section, SpecialLink, Specials } from '../../shared/entities';
+import { Functions, Overlays, Section, Link, SpecialLink, Specials, isSpecialLink } from '../../shared/entities';
 import { error, logJson } from '../../shared/util';
 import book from "../../book";
 import TextElement from '../elements/TextElement.vue';
@@ -26,18 +26,24 @@ export default class Credits extends Vue {
     return this.book.specials[Specials.credits] ?? error('Credits not found!');
   }
   
-  open(link: SpecialLink) {
-    if (link.id === Functions.share) return this.share(link.title, link.data);
-    if (Overlays[link.id]) return this.overlay(link.id);
+  open(link: SpecialLink | Link) {
+    if (isSpecialLink(link)) {
+      if (link.id === Functions.share) return this.share(link.title, link.data);
+      if (Overlays[link.id]) return this.overlay(link.id);
+    }
   }
 
   async share(title: string, url?: string) {
     if (!url) error('Credits.share: url not defined', title);
-    const data = { title, url };
+    const data = { title, url, text: url };
     let nativeFailed = false;
     if (navigator.share) {
       try { await navigator.share(data); }
-      catch (e) { nativeFailed = true }
+      catch (e) { 
+        alert(e);
+        alert((e as Error).message);
+        nativeFailed = true 
+      }
     }
     if (!navigator.share || nativeFailed) {
       this.overlay({ overlay: Overlays.shareOverlay, data });
