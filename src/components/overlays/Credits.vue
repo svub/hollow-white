@@ -35,7 +35,7 @@ export default class Credits extends Vue {
 
   async share(title: string, url?: string) {
     if (!url) error('Credits.share: url not defined', title);
-    const data = { title, url, text: url };
+    const data = { title, url };
     let nativeFailed = false;
     if (navigator.share) {
       try { await navigator.share(data); }
