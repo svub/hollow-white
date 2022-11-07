@@ -38,11 +38,15 @@ export default class Credits extends Vue {
     const data = { title, url };
     let nativeFailed = false;
     if (navigator.share) {
-      try { await navigator.share(data); }
-      catch (e) { 
-        alert(e);
-        alert((e as Error).message);
-        nativeFailed = true 
+      if (!(navigator.canShare(data))) {
+        alert(`Can't share data ${JSON.stringify(data)}`);
+      } else {
+        try { await navigator.share(data); }
+        catch (e) { 
+          alert(e);
+          alert((e as Error).message);
+          nativeFailed = true;
+        }
       }
     }
     if (!navigator.share || nativeFailed) {
