@@ -67,17 +67,20 @@ const find = (chapterId?: string | null, sectionId?: string | null): Position =>
   return { chapter, section };
 };
 
+const scrollContainer = () => document.getElementsByTagName('main')[0];
+
 // cf. https://stackoverflow.com/a/55686711/548955
-const scrollUpThen = (callback: Function) => {
+const scrollUpThen = (callback?: Function) => {
+  const container = scrollContainer();
   const onScroll = function () {
-    if (window.pageYOffset < 1) {
-      window.removeEventListener('scroll', onScroll);
-      callback();
+    if (container.scrollTop < 1) {
+      container.removeEventListener('scroll', onScroll);
+      callback?.();
     }
   }
-  window.addEventListener('scroll', onScroll)
+  container.addEventListener('scroll', onScroll)
   onScroll()
-  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  container.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 };
 
 export default new Vuex.Store({
@@ -174,12 +177,7 @@ export default new Vuex.Store({
       dispatch('page', 'read');
     },
     goto({ commit, state }, link: Reference) {
-      // const scrollUp = () => {
-      //   window.scrollTo(0, 0);
-      //   window.removeEventListener('animation', scrollUp);
-      // };
-      // window.addEventListener('animationend', scrollUp);
-      setTimeout(() => window.scrollTo(0, 0), book.config.pageScrollUpDelay ?? 1);
+      setTimeout(() => scrollContainer().scrollTo(0, 0), book.config.pageScrollUpDelay ?? 1);
       commit('setSection', link);
       if (!inPath(link, state.path)) commit('addToPath');
     },
