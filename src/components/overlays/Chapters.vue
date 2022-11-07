@@ -22,17 +22,17 @@ import { Chapter } from "../../shared/entities";
   components: {},
 })
 export default class Chapters extends Vue {
-  @Prop(Array) private chapters!: Chapter[];
   @Getter private position!: Position;
-  @Action private goto!: Function;
-  @Action private overlay!: Function;
-  private opened = '';
+  @Prop(Array) chapters!: Chapter[];
+  @Action goto!: Function;
+  @Action overlay!: Function;
+  opened = '';
 
   async mounted() {
     this.opened = this.position.chapter.id;
     await this.$nextTick();
     const top = (this.$el.querySelector('.chapter.open') as HTMLElement).offsetTop;
-    (document.body.querySelector('.overlay.chapters') as HTMLElement).scrollTo(0, top);
+    (document.body.querySelector('.overlay.chapters') as HTMLElement).scrollTo(0, Math.max(top - 24, 0));
   }
 
   toggle(id: string) {
