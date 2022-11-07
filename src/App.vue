@@ -129,8 +129,6 @@ export default class App extends Vue {
   updateClasses() {
     document.documentElement.className = Object.values(this.options).join(' ') + (this.overlay ? ' overlay-open' : '');
   }
-  //   document.body.className = Object.values(this.options).join(' ');
-  // }
 }
 </script>
 
