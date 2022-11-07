@@ -44,7 +44,6 @@
     "noImplicitAny": false,
   },
   "vueCompilerOptions": {
-    "target": 2,
     "plugins": [
       "@volar/vue-language-plugin-pug"
     ]
