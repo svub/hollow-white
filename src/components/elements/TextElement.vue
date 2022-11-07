@@ -13,7 +13,7 @@ import AddItemElement from "./AddItemElement.vue";
 import RemoveItemElement from "./RemoveItemElement.vue";
 import ChangeStateElement from "./ChangeStateElement.vue";
 import StyleElement from "./StyleElement.vue";
-import { logJson } from "../../shared/util";
+// import { logJson } from "../../shared/util";
 
 @Component({
   name: "TextElement",
@@ -28,7 +28,7 @@ import { logJson } from "../../shared/util";
   },
 })
 export default class TextElement extends Vue {
-  @Prop(Array) private elements!: Element[];
+  @Prop(Array) elements!: Element[];
 
   // mounted() {
   //   logJson('text elements:', this.elements);

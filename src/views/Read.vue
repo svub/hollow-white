@@ -12,7 +12,6 @@
     transition(name="section" mode="out-in")
       .section(:key="`${position.chapter.id}-${position.section.id}`")
         .title
-          //- .icon icon
           .position(v-if="feedbackEnabled") {{ position.chapter.id }}-{{ position.section.id }}
           h2(v-if="isFirst") {{ position.chapter.title }}
           h3 {{ position.section.title }}
@@ -31,7 +30,6 @@
 import { Component, Vue, Watch } from "vue-property-decorator";
 import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
-// import hyphenopoly from "hyphenopoly";
 import { Link, SpecialLink, isSpecialLink, Reference, Overlays, Functions, Pages } from "../shared/entities";
 import TextElement from "../components/elements/TextElement.vue";
 import { inPath, Items, Position } from "../store";
@@ -52,20 +50,7 @@ export default class Read extends Vue {
   @Getter position!: Position;
   @Getter feedbackEnabled!: boolean;
   @Getter itemCount!: number;
-  // translator: Function;
   config = book.config;
-
-  // not working :( - can't find a suitable version that works for dynamic languages
-  // might have to do that as part of the parsing process
-  // TODO: move that to importer! that saves on deps and does the work once! :)
-  // async created() {
-  //   const lang = config.language || "en-us";
-  //   log('Read created', lang);
-  //   const hyphenator = hyphenopoly.config({ "require": [lang] });
-  //   logRaw('create hypenator', hyphenator);
-  //   this.translator = await hyphenator.get(lang);
-  //   logRaw('create translator', this.translator);
-  // }
 
   enabled(link: Link | SpecialLink): boolean {
     // enabled if: decision taken before (in path); or if last in progress == current (any decision possible)
