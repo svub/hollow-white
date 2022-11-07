@@ -18,8 +18,8 @@ main(:class="page" :lang="lang")
           Options(v-if="overlay === 'options'")
           FeedbackMode(v-if="overlay === 'feedbackMode'")
           Share(v-if="overlay === 'shareOverlay'" :url="overlayData.url" :title="overlayData.title")
-        .actions
-          button.close(@click="setOverlay('')")
+      .actions
+        button.close(@click="setOverlay('')")
   //- HelloWorld(:msg="msg")
 </template>
 

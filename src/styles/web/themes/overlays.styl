@@ -16,6 +16,14 @@
   80%
     backdrop-filter blur(4px)
 
+@keyframes overlay-actions
+  0%
+    opacity 0
+  50%
+    opacity 0
+  100%
+    opacity 1
+
 .backdrop
   position fixed
   top 0
@@ -36,28 +44,55 @@
     width 100%
     max-width maxWidth
     max-height 100%
-    overflow auto
+    overflow hidden auto
     box-shadow 0 0 50px @css { rgba(var(--textColorRgb), .2) }
 
-  &.overlay-enter-active, &.overlay-enter-active .overlay
-    animation-duration .6s
-  &.overlay-leave-active, &.overlay-leave-active .overlay
-    animation-duration .3s
-    animation-direction reverse
+  $inDuration = .6s
+  $outDuration = .3s
+
+  &.overlay-enter-active
+    &, & .overlay, & .actions
+      animation-duration $inDuration
+
+  &.overlay-leave-active
+    &, & .overlay, & .actions
+      animation-duration $outDuration
+      animation-direction reverse
 
   &.overlay-enter-active, &.overlay-leave-active
     animation-name overlay-backdrop
-  &.overlay-enter-active .overlay, &.overlay-leave-active .overlay
-    animation-name overlay
+  
+    & .overlay
+      animation-name overlay
+
+    & .actions
+      animation-name overlay-actions
 
 // theme
 
-html.overlay-open
-  &, body
-    overflow hidden
+html.overlay-open main
+  overflow-y hidden
+
+closePad = 60px
+
+.actions
+  flex-row()
+  justify-content center
+  position fixed
+  bottom 0
+  max-width maxWidth
+  z-index 3
+  padding closePad
+  background @css { linear-gradient(0deg, var(--bgColor) 0%, rgba(var(--bgColorRgb), .8) 47.79%, rgba(var(--bgColorRgb), 0) 100%) }
+
+  button.close
+    @extends .outline-button
+    image-button('options-close-x.svg')
+    background var(--closeButtonBg)
+    border-radius 50%
+    padding 0
 
 .overlay
-  closePad = 60px
   position relative
   max-height 100%
   z-index 2
@@ -81,23 +116,6 @@ html.overlay-open
       content ''
       display block
       height 3*closePad
-
-  .actions
-    flex-row()
-    justify-content center
-    position fixed
-    bottom 0
-    max-width maxWidth
-    z-index 3
-    padding closePad
-    background @css { linear-gradient(0deg, var(--bgColor) 0%, rgba(var(--bgColorRgb), .8) 47.79%, rgba(var(--bgColorRgb), 0) 100%) }
-
-    button.close
-      @extends .outline-button
-      image-button('options-close-x.svg')
-      background var(--closeButtonBg)
-      border-radius 50%
-      padding 0
 
   &.chapters .list
     flex-column()
