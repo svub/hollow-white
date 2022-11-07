@@ -82,6 +82,11 @@ const book: Book = (({
        "modifier": "=2"
       },
       {
+       "type": "state",
+       "id": "crash",
+       "modifier": "=0"
+      },
+      {
        "type": "paragraph",
        "text": "<p>Erschreckt reißt du im&nbsp;allerletzten&nbsp;Moment&nbsp;das Lenkrad zur Seite, um dem gähnenden Abgrund, der sich neben dir erstreckt, auszuweichen.</p>"
       },
@@ -3512,7 +3517,7 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Ihr habt in der entsprechenden Situation richtig gehandelt. Snow ist mit Riesenglück mit dem Leben davongekommen ist.</p>"
+         "text": "<p>Ihr habt in der entsprechenden Situation richtig gehandelt. Snow ist mit Riesenglück, mit dem Leben davongekommen.</p>"
         }
        ]
       }
@@ -3832,7 +3837,7 @@ const book: Book = (({
         {
          "type": "state",
          "id": "coin",
-         "modifier": "=0"
+         "modifier": "=2"
         }
        ]
       },
@@ -3929,7 +3934,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "if",
-       "condition": "STATE coin > 0",
+       "condition": "STATE coin = 1",
        "elements": [
         {
          "type": "paragraph",
@@ -8487,6 +8492,11 @@ const book: Book = (({
        "modifier": "+1"
       },
       {
+       "type": "state",
+       "id": "rebell",
+       "modifier": "+1"
+      },
+      {
        "type": "paragraph",
        "text": "<p>Du spuckst der Wache ins Gesicht.</p>"
       },
@@ -8595,7 +8605,17 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als euch die Soldaten aus dem Fahrzeug zerren, wird Dean von einem der Soldaten mit Gewalt aus dem Licht gezogen. »Mit dir sind wir noch nicht fertig, Freundchen!«</p>"
+       "text": "<p>Als euch die Soldaten aus dem Fahrzeug zerren, wird Dean von einem der Soldaten mit Gewalt aus dem Licht gezogen.</p>"
+      },
+      {
+       "type": "if",
+       "condition": "STATE Rebell > 0",
+       "elements": [
+        {
+         "type": "paragraph",
+         "text": "<p>»Mit dir sind wir noch nicht fertig, Freundchen!«</p>"
+        }
+       ]
       },
       {
        "type": "paragraph",
@@ -12863,7 +12883,7 @@ const book: Book = (({
       },
       {
        "type": "if",
-       "condition": "STATE crash > 0",
+       "condition": "STATE Crash > 0",
        "elements": [
         {
          "type": "paragraph",
@@ -15650,6 +15670,36 @@ const book: Book = (({
      ],
      "next": [
       {
+       "title": "Jetzt aktiv werden",
+       "chapterId": "13",
+       "sectionId": "003"
+      },
+      {
+       "title": "Hollow White neu beginnen",
+       "id": "reset",
+       "data": ""
+      }
+     ]
+    },
+    {
+     "id": "003",
+     "title": "Jetzt aktiv werden",
+     "elements": [
+      {
+       "type": "addItem",
+       "id": "plant"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Lass uns zusammen etwas Gutes tun.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Effective Altruism, die Organisation hinter Giving What We Can, stellt sicher, dass ihre Spende so wirkungsvoll wie möglich ist: <a href=\"https://www.givingwhatwecan.org/donate/organizations?utm_source=hollowwhite&utm_medium=webapp&utm_campaign=beta_release&utm_id=hollowwhitebeta\" rel=\"noopener noreferrer\" target=\"_blank\">Jetzt mehr erfahren und unterstützen.</a></p>"
+      }
+     ],
+     "next": [
+      {
        "title": "Hollow White neu beginnen",
        "id": "reset",
        "data": ""
@@ -15775,6 +15825,10 @@ const book: Book = (({
     {
      "type": "paragraph",
      "text": "<p>Christian Wussow</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Maximilian Harz</p>"
     },
     {
      "type": "paragraph",
@@ -16434,10 +16488,6 @@ const book: Book = (({
      {
       "type": "paragraph",
       "text": "<p>Lass uns zusammen etwas Gutes tun.</p>"
-     },
-     {
-      "type": "paragraph",
-      "text": "<p><a href=\"https://bit.ly/3Mg53r5\" rel=\"noopener noreferrer\" target=\"_blank\">Mehr erfahren</a></p>"
      }
     ]
    }
