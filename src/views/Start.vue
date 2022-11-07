@@ -8,7 +8,7 @@
     .status(v-if="started")
       span.chapter {{ position.chapter.id }}
       span.progress {{ Math.floor(progress * 100) }}%
-    button(@click="start", :class="{ start: !started, continue: started }")
+    button(@click="startReading", :class="{ start: !started, continue: started }")
     button.options(@click="overlay('options')")
     button.credits(@click="overlay('credits')" v-if="hasCredits")
     button.imprint(@click="overlay('imprint')" v-if="hasImprint")
@@ -17,6 +17,8 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Action, Getter } from "vuex-class";
+import intersection from 'lodash/intersection';
+import keys from 'lodash/keysIn';
 import book from "../book";
 import { Specials } from "../shared/entities";
 import { Position } from "../store";
@@ -30,6 +32,26 @@ export default class Start extends Vue {
   @Getter position: Position;
   @Getter started: boolean;
   book = book;
+  fullscreenElement = document.body;
+
+  mounted() {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    }
+  }
+
+  startReading() {
+    if (!document.fullscreenElement) {
+      const prefixes = ['', 'webkit', 'moz', 'ms'].map((prefix) => prefix ? prefix + 'Request' : 'request');
+      const methodNames = prefixes.map((prefix) => prefix + 'Fullscreen').concat(prefixes.map((prefix) => prefix + 'FullScreen'));
+      const requestMethod = this.fullscreenElement[intersection(keys(this.fullscreenElement), methodNames)?.[0]];
+      
+      if (requestMethod) {
+        requestMethod.call(this.fullscreenElement);
+      } 
+    }
+    this.start();
+  }
 
   get progress(): number {
     // calculate over all sections
