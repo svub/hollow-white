@@ -40,11 +40,14 @@
     flex 1
 
   .overlay
+    position relative
+    z-index 2
     margin auto
     width 100%
     max-width maxWidth
     max-height 100%
     overflow hidden auto
+    -webkit-overflow-scrolling touch
     box-shadow 0 0 50px @css { rgba(var(--textColorRgb), .2) }
 
   $inDuration = .6s
@@ -93,10 +96,6 @@ closePad = 60px
     padding 0
 
 .overlay
-  position relative
-  max-height 100%
-  z-index 2
-  overflow auto
   background var(--overlayBg)
   font-family var(--fontFamily)
 
