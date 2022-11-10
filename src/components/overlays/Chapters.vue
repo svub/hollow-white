@@ -3,10 +3,10 @@
   .list
     .chapter(v-for="chapter in chapters" @click="toggle(chapter.id)" :class="{ open: opened === chapter.id}")
       .chapter-id {{ chapter.id }}
-      h3 {{ chapter.title }}
+      h3(:key="chapter.id") {{ chapter.title }}
       .sections
         button.section(v-for="section in chapter.sections" @click="goto({ chapterId: chapter.id, sectionId: section.id }); overlay()" :class="{ current: section.id === position.section.id}")
-          h4 {{ section.title }}
+          h4(:key="section.id") {{ section.title }}
 </template>
 
 <script lang="ts">
@@ -22,7 +22,7 @@ import { Chapter } from "../../shared/entities";
   components: {},
 })
 export default class Chapters extends Vue {
-  @Getter private position!: Position;
+  @Getter position!: Position;
   @Prop(Array) chapters!: Chapter[];
   @Action goto!: Function;
   @Action overlay!: Function;

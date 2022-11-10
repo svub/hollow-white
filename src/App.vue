@@ -34,7 +34,7 @@ import Tester from "./views/Tester.vue";
 import book from "./book";
 import { clone, logJson, warn } from "./shared/util";
 import appState from "./store";
-import { Option } from "./shared/entities";
+import { Option, Reference } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
 import Items from './components/overlays/Items.vue';
 import Credits from './components/overlays/Credits.vue';
@@ -56,7 +56,7 @@ export default class App extends Vue {
   @State overlayData;
   @State theme;
   @State items;
-  @State path;
+  @State path!: Array<Reference>;
   @State options!: { [id: string]: Option };
   @Action init;
   @Action("page") setPage;
@@ -115,7 +115,8 @@ export default class App extends Vue {
       .filter(chapter => !!chapter)
       .map((chapter) => {
         chapter!.sections = chapter!.sections
-          .filter(section => !!this.path.find(r => r.chapterId === chapter!.id && r.sectionId === section.id));
+          .filter(section => !!this.path.find(r => r.chapterId === chapter!.id && r.sectionId === section.id))
+          .map(section => ({ id: section.id, title: section.title, next: [], elements: [] }));
         return chapter;
       }))!;
   }
