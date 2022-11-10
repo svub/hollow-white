@@ -30,14 +30,17 @@
       content 'Optionen'
     .reset
       label:before
-        content 'Speicherstand löschen'
+        content 'Fortschritt löschen'
       .confirm
         h2:before
           content 'Bist du sicher?'
         p:before
-          content 'Dein Gesamtfortschritt und Sammelobjekte gehen verloren.'
-        button.ok:before
-          content 'Speicherstand löschen'
+          content 'Dein Gesamtfortschritt geht verloren, die Sammelobjekte kannst du behalten, wenn du möchtest.'
+        button.ok
+          &.progress:before
+            content 'Fortschritt löschen'
+          &.all:before
+            content 'Alles löschen'
         button.cancel:before
           content 'Abbrechen'
 

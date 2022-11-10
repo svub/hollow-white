@@ -7,7 +7,8 @@
       .confirm(v-if="confirm")
         h2
         p
-        button.ok(@click="reset(); confirm = false")
+        button.ok.progress(@click="reset({ keepItems: true }); confirm = false")
+        button.ok.all(@click="reset(); confirm = false")
         button.cancel(@click="confirm = false")
 
   .list
@@ -31,20 +32,16 @@ import book from '../../book';
   },
 })
 export default class Options extends Vue {
-  @State private options!: OptionsType;
-  @Getter private started!: boolean;
   @Action private setOption!: Function;
-  @Action private reset!: Function;
-  private config = book.config;
-  private confirm = false;
+  @State options!: OptionsType;
+  @Getter started!: boolean;
+  @Action reset!: Function;
+  config = book.config;
+  confirm = false;
 
   choose(option: Option, choice: Choice) {
     this.setOption({ option, choice });
   }
-
-  // doReset() {
-  //   if (confirm('Really start from scratch?')) this.reset()
-  // }
 }
 </script>
 

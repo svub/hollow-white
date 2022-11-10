@@ -197,9 +197,13 @@ closePad = 60px
           @extends .pill-button
 
           &.ok
-            margin (40 / baseFontSize)rem 0 (20 / baseFontSize)rem
             color var(--fgColor)
             background var(--alert)
+
+            &.progress
+              margin (40 / baseFontSize)rem 0 (20 / baseFontSize)rem
+            &.all
+              margin-bottom (54 / baseFontSize)rem
 
         &.fade-enter-active, &.fade-leave-active
           transition opacity .5s
