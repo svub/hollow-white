@@ -22,7 +22,7 @@ export class TextBase extends Vue {
     const data = { title, url };
     let nativeFailed = false;
     if (navigator.share) {
-      if (!(navigator.canShare(data))) {
+      if (navigator.canShare && !(navigator.canShare(data))) {
         error('Can\'t share data. Please notify the Hollow White team about this.', data);
       } else {
         try { await navigator.share(data); }

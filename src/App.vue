@@ -50,7 +50,6 @@ const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
   components: { Start, Read, Tester, Chapters, Items, Credits, Imprint, Options, FeedbackMode, Share },
 })
 export default class App extends Vue {
-
   @State page;
   @State overlay;
   @State overlayData;
