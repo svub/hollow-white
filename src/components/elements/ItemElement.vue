@@ -1,20 +1,19 @@
 <template lang="pug">
-  transition(name="flip")
-    .item(:class="[item.id, item.category, { flipped }]")
-      .flipper
-        .title(@click="flipped = true")
-          .number #[span.current {{ itemIndex(item)+1 }}] #[span.total {{ itemCount }}]
-          h3 {{ item.title }}
-
-        .content
-          TextElement.description(@click.native="flipped = false" :elements="item.elements")
-          .media(v-if="item.mediaUrl" :class="item.mediaType")
-            a.link(v-if="item.mediaType == 'link'" :href="item.mediaUrl") {{ item.title }}
-            audio(v-else-if="item.mediaType == 'audio'" controls :src="item.mediaUrl")
-              | Your browser does not support embedded audio.
-            video(v-else-if="item.mediaType == 'video'" controls)
-              source(:src="item.mediaUrl")
-              | Your browser does not support embedded video.
+transition(name="flip")
+  .item(:class="[item.id, item.category, { flipped }]")
+    .flipper
+      .title(@click="flipped = true")
+        .number #[span.current {{ itemIndex+1 }}] #[span.total {{ itemCount }}]
+        h3 {{ item.title }}
+      .content
+        TextElement.description(@click.native="flipped = false" :elements="item.elements")
+        .media(v-if="item.mediaUrl" :class="item.mediaType")
+          a.link(v-if="item.mediaType == 'link'" :href="item.mediaUrl") {{ item.title }}
+          audio(v-else-if="item.mediaType == 'audio'" controls :src="url")
+            | Your browser does not support embedded audio.
+          video(v-else-if="item.mediaType == 'video'" controls)
+            source(:src="url")
+            | Your browser does not support embedded video.
 </template>
 
 <script lang="ts">
@@ -32,13 +31,17 @@ import { Item } from '../../shared/entities';
   }
 })
 export default class ItemElement extends Vue {
-  @Prop(Object) private item!: Item;
-  @State private items!: Items;
-  @Getter private itemCount!: number;
-  private flipped = false;
+  @Prop(Object) item!: Item;
+  @State items!: Items;
+  @Getter itemCount!: number;
+  flipped = false;
 
-  itemIndex(): number {
+  get itemIndex(): number {
     return this.items.indexOf(this.item.id);
+  }
+
+  get url(): string | undefined {
+    return this.flipped ? this.item.mediaUrl : ''; // load when flipping to the backside only
   }
 }
 </script>
