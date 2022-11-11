@@ -10,17 +10,19 @@ html, body, main, main .page
 html, body
   display flex
 
+body
+  max-height 100vh
+  overflow hidden auto
+  -webkit-overflow-scrolling touch
+
 main
   position relative
   max-width maxWidth
   margin auto
   background-clip border-box
-  overflow hidden auto
-  -webkit-overflow-scrolling touch
 
   .page
     position absolute
-    grid-area a
     max-width 100%
     flex-column()
     padding pad
