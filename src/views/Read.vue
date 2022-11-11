@@ -27,20 +27,20 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator";
+import { Component } from "vue-property-decorator";
 import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
-import { Link, SpecialLink, isSpecialLink, Reference, Overlays, Functions, Pages } from "../shared/entities";
+import { Link, SpecialLink, isSpecialLink, Reference } from "../shared/entities";
 import TextElement from "../components/elements/TextElement.vue";
 import { inPath, Items, Position } from "../store";
 import book from "../book";
-import { error, logJson } from "../shared/util";
+import { TextBase } from "@/utls/TextBase";
 
 @Component({
   name: "Read",
   components: { TextElement },
 })
-export default class Read extends Vue {
+export default class Read extends TextBase {
   @State path!: Reference[];
   @State items!: Items;
   @Action page!: Function;
@@ -62,32 +62,6 @@ export default class Read extends Vue {
   selected(link: Link | SpecialLink): boolean {
     if (isSpecialLink(link)) return false;
     return inPath(link, this.path);
-  }
-
-  open(link: Link | SpecialLink) {
-    if (isSpecialLink(link)) {
-      // Special functions
-      if (link.id === Functions.reset) return this.reset({ keepItems: true });
-      if (link.id === Functions.share) return this.share(link.title, link.data);
-      // Pages
-      if (Pages[link.id]) return this.page(link.id);
-      // Overlays
-      if (Overlays[link.id]) return this.overlay(link.id);
-    }
-    this.goto(link);
-  }
-
-  async share(title: string, url?: string) {
-    if (!url) error('Read.share: url not defined', title);
-    const data = { title, url };
-    let nativeFailed = false;
-    if (navigator.share) {
-      try { await navigator.share(data); }
-      catch (e) { nativeFailed = true }
-    }
-    if (!navigator.share || nativeFailed) {
-      this.overlay({ overlay: Overlays.shareOverlay, data });
-    }
   }
 
   get isFirst(): boolean {
