@@ -67,7 +67,8 @@ const find = (chapterId?: string | null, sectionId?: string | null): Position =>
   return { chapter, section };
 };
 
-const scrollContainer = () => document.getElementsByTagName('main')[0];
+// const scrollContainer = () => document.getElementsByTagName('main')[0];
+const scrollContainer = () => document.body;
 
 // cf. https://stackoverflow.com/a/55686711/548955
 const scrollUpThen = (callback?: Function) => {
