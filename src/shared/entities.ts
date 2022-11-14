@@ -109,6 +109,7 @@ export interface Config {
   feedbackMode?: FeedbackMode;
   language?: string; // default 'en'
   pageScrollUpDelay?: number; // delay to allow for page change animations
+  fullscreen?: boolean;
 }
 
 // text elements
