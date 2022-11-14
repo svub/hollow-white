@@ -67,7 +67,6 @@ const find = (chapterId?: string | null, sectionId?: string | null): Position =>
   return { chapter, section };
 };
 
-// const scrollContainer = () => document.getElementsByTagName('main')[0];
 const scrollContainer = () => document.body;
 
 // cf. https://stackoverflow.com/a/55686711/548955
@@ -165,6 +164,7 @@ export default new Vuex.Store({
     overlay({ commit }, overlay: string | { overlay: string; data: any } = '') {
       const entry = typeof overlay === 'string' ? { overlay, data: undefined } : overlay;
       if (entry.overlay !== '' && !Overlays[entry.overlay]) error('Overlay not found', overlay);
+      if (!entry.overlay) scrollUpThen(); // scroll up when closing overlay
       commit('overlay', entry);
     },
     start({ getters, dispatch }) {
