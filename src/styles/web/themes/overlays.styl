@@ -75,6 +75,10 @@
 .overlay-open main
   perspective none
 
+  > :not(.backdrop)
+    max-height 100vh
+    overflow: hidden
+
 closePad = 60px
 
 .actions
