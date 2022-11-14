@@ -27,10 +27,10 @@ import { Position } from "../store";
   name: "Start",
 })
 export default class Start extends Vue {
-  @Action start: Function;
-  @Action overlay: Function;
-  @Getter position: Position;
-  @Getter started: boolean;
+  @Action start!: Function;
+  @Action overlay!: Function;
+  @Getter position!: Position;
+  @Getter started!: boolean;
   book = book;
   fullscreenElement = document.body;
 
