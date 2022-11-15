@@ -9,9 +9,9 @@ transition(name="flip")
         TextElement.description(@click.native="flipped = false" :elements="item.elements")
         .media(v-if="item.mediaUrl" :class="item.mediaType")
           a.link(v-if="item.mediaType == 'link'" :href="item.mediaUrl") {{ item.title }}
-          audio(v-else-if="item.mediaType == 'audio'" controls :src="url")
+          audio(v-else-if="item.mediaType == 'audio'" controls="" :src="url")
             | Your browser does not support embedded audio.
-          video(v-else-if="item.mediaType == 'video'" controls)
+          video(v-else-if="item.mediaType == 'video'" controls="")
             source(:src="url")
             | Your browser does not support embedded video.
 </template>
