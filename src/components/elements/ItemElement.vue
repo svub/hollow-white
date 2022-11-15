@@ -41,7 +41,8 @@ export default class ItemElement extends Vue {
   }
 
   get url(): string | undefined {
-    return this.flipped ? this.item.mediaUrl : ''; // load when flipping to the backside only
+    // TODO put the "silent.mp3" into a var of some sorts
+    return this.flipped ? this.item.mediaUrl : '/assets/items/silent.mp3'; // load when flipping to the backside only
   }
 }
 </script>
