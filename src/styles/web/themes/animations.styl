@@ -1,7 +1,9 @@
 // z = 150px
 z = 30vw
-main, main .page .content
+main
   perspective 400vw
+main .page .content
+  perspective 800vw
 
 .page
   transform-origin left
@@ -34,7 +36,7 @@ main, main .page .content
 
 @keyframes section-in
   from
-    transform translate3d(100vw, 0, z*-1) rotateY(20deg)
+    transform translate3d(100vw, 0, 0) rotateY(10deg)
     opacity .5
 
   to
@@ -47,5 +49,5 @@ main, main .page .content
     opacity 1
 
   to
-    transform translate3d(-100vw, 0, z*-1) rotateY(-50deg)
+    transform translate3d(-100vw, 0, 0) rotateY(-7deg)
     opacity 0
