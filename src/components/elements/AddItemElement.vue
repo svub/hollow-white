@@ -1,6 +1,5 @@
 <template lang="pug">
 .add-item(v-observe-visibility="visibilityChanged")
-  //- addItem {{ element }} {{ item }}
   ItemElement(v-if="item" :item="item")
   .error(v-else)
     .title Item not found

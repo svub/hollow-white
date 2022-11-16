@@ -1,11 +1,11 @@
 <template lang="pug">
 transition(name="flip")
-  .item(:class="[item.id, item.category, { flipped }]")
+  .item(:class="[item.id, item.category, { flipped, visible }]" v-observe-visibility="visibilityChanged")
     .flipper
-      .title(v-if="!flipped" @click="flipped = true")
+      .title(@click="flipped = true")
         .number #[span.current {{ itemIndex+1 }}] #[span.total {{ itemCount }}]
         h3 {{ item.title }}
-      .content(v-else)
+      .content()
         TextElement.description(@click.native="flipped = false" :elements="item.elements")
         .media(v-if="item.mediaUrl" :class="item.mediaType")
           a.link(v-if="item.mediaType == 'link'" :href="item.mediaUrl") {{ item.title }}
@@ -21,6 +21,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 import { Getter, State } from 'vuex-class';
 import { Items } from '../../store';
 import { Item } from '../../shared/entities';
+import { log } from '@/shared/util';
 
 @Component({
   name: 'ItemElement',
@@ -35,6 +36,13 @@ export default class ItemElement extends Vue {
   @State items!: Items;
   @Getter itemCount!: number;
   flipped = false;
+  visible = false;
+
+  visibilityChanged(isVisible) {
+    log("ItemElement.visibilityChanged", isVisible);
+    this.visible = isVisible;
+    if (!isVisible) this.flipped = false;
+  }
 
   get itemIndex(): number {
     return this.items.indexOf(this.item.id);
