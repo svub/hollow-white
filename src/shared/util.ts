@@ -20,55 +20,55 @@ export function shortenString(s: string, maxLength = 100): string {
 }
 
 function _log(f = console.log, message: string, ...data: any[]){
-    // f.apply(console, [message, ...(data.map(o => shortenString(JSON.stringify(o))))]);
-    const args = (data.map(o => shortenString(JSON.stringify(o))));
-    args.unshift(message);
-    f.apply(console, args);
+    f.apply(console, [message, ...(data.map(o => shortenString(JSON.stringify(o))))]);
+    // const args = (data.map(o => shortenString(JSON.stringify(o))));
+    // args.unshift(message);
+    // f.apply(console, args);
 }
 
 function _logJson(f = console.log, message: string, ...data: any[]){
-    // f.apply(console, [message, ...(data.map(o => JSON.stringify(o, undefined, ' ')))]);
-    const args = data.map(o => JSON.stringify(o, undefined, ' '));
-    args.unshift(message);
-    f.apply(console, args);
+    f.apply(console, [message, ...(data.map(o => JSON.stringify(o, undefined, ' ')))]);
+    // const args = data.map(o => JSON.stringify(o, undefined, ' '));
+    // args.unshift(message);
+    // f.apply(console, args);
 }
 
 export function log<T>(message: string, o?: T, ...rest: any[]): T | undefined {
-    // _log(console.log, message, [o, ...rest]);
-    rest.unshift(o);
-    _log(console.log, message, rest);
+    _log(console.log, message, [o, ...rest]);
+    // rest.unshift(o);
+    // _log(console.log, message, rest);
     return o;
 }
 
 export function logJson<T>(message: string, o: T | undefined, ...rest: any[]): T | undefined {
-    // _logJson(console.log, message, [o, ...rest]);
-    rest.unshift(o);
-    _logJson(console.log, message, rest);
+    _logJson(console.log, message, [o, ...rest]);
+    // rest.unshift(o);
+    // _logJson(console.log, message, rest);
     return o;
 }
 
 export function logRaw<T>(message: string, o: T, ...rest: any[]): T {
-    // console.log.apply(console, [message, o, ...rest]);
-    rest.unshift(o);
-    rest.unshift(message);
-    // @ts-ignore
-    console.log.apply(console, rest);
+    console.log.apply(console, [message, o, ...rest]);
+    // rest.unshift(o);
+    // rest.unshift(message);
+    // ts-ignore
+    // console.log.apply(console, rest);
     return o;
 }
 
 export function warn<T>(message: string, o?: T, ...rest: any[]): T | undefined {
-    // _log(console.warn, message, [o, ...rest]);
-    rest.unshift(o);
-    _log(console.warn, message, rest);
+    _log(console.warn, message, [o, ...rest]);
+    // rest.unshift(o);
+    // _log(console.warn, message, rest);
     return o;
 }
 
 export function error(message: string, ...data: any[]): never {
-    // _log(console.error, message, ...data);
-    data.unshift(message);
-    data.unshift(console.error);
-    // @ts-ignore
-    _log.apply(undefined, data as any);
+    _log(console.error, message, ...data);
+    // data.unshift(message);
+    // data.unshift(console.error);
+    // // ts-ignore
+    // _log.apply(undefined, data as any);
     throw new Error(message);
 }
 

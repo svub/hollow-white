@@ -28,6 +28,7 @@
     "lodash": "^4.17.20",
     "nativescript-vue": "^2.5.0-alpha.3",
     "tns-core-modules": "^6.3.2",
+    "tslib": "^2.4.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2",
