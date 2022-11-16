@@ -1,24 +1,28 @@
-.item.visible
-  perspective 1000px
+.item
+  &:not(.visible) .flipper .content
+    display none
 
-  &.flipped .flipper
-    transform rotateY(-179.9999deg) // iOS Safari hack, 180 deg makes the SVG disappear.
+  &.visible
+    perspective 1000px
 
-  .flipper
-    position relative
-    transition 1s cubic-bezier(0.25, 0.25, 0.45, 1) //ease-in-out
-    transform-style preserve-3d
-    transform-origin 50% 0
-    transform rotateY(-0.0001deg) // iOS Safari hack, 180 deg makes the SVG disappear.
+    &.flipped .flipper
+      transform rotateY(-179.9999deg) // iOS Safari hack, 180 deg makes the SVG disappear.
 
-    .title, .content
-      position absolute
-      top 0
-      backface-visibility hidden
+    .flipper
+      position relative
+      transition 1s cubic-bezier(0.25, 0.25, 0.45, 1) //ease-in-out
+      transform-style preserve-3d
+      transform-origin 50% 0
+      transform rotateY(-0.0001deg) // iOS Safari hack, 180 deg makes the SVG disappear.
 
-    .title
-      z-index 2
-      transform rotateY(0deg)
+      .title, .content
+        position absolute
+        top 0
+        backface-visibility hidden
 
-    .content
-      transform rotateY(180deg)
+      .title
+        z-index 2
+        transform rotateY(0deg)
+
+      .content
+        transform rotateY(180deg)
