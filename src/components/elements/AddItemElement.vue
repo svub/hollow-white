@@ -33,7 +33,7 @@ import book from "../../book";
   components: { ItemElement },
 })
 export default class AddItemElement extends Vue {
-  @Prop(Object) private element: AddItem;
+  @Prop(Object) element!: AddItem;
   @State items;
   @Action addItem;
 

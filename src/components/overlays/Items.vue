@@ -27,12 +27,6 @@ export default class Items extends Vue {
     return this.itemIds.map(id => book.config.items.find(item => item.id === id)!);
   }
 
-  // get limitedItems(): Item[] {
-  //   // return this.items.slice(0, Math.min(this.items.length - 1, 19)); // first twenty
-  //   // return this.items.slice(-24); // last 24
-  //   return this.items;
-  // }
-
   get itemCount(): number {
     return this.items.length;
   }
