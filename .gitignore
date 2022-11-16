@@ -3,6 +3,8 @@ node_modules
 /dist
 rebase-app.sh
 states.txt
+dist-esnext
+test
 
 # local env files
 .env.local
