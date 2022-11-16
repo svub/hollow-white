@@ -4,6 +4,7 @@ import { Chapter, Link, Reference, Section, State, ChangeState, AddItem, RemoveI
 import { equal, warn, logJson, log, error } from '../shared/util';
 import createPersistedState from "vuex-persist-indexeddb";
 import book from '@/book';
+import { scrollContainer, scrollUpThen } from '@/utls/scroll';
 
 Vue.use(Vuex)
 
@@ -65,22 +66,6 @@ const find = (chapterId?: string | null, sectionId?: string | null): Position =>
   const chapter = book.chapters.find(chapter => chapter.id === chapterId) ?? book.chapters[0];
   const section = chapter.sections.find(section => section.id === sectionId) ?? chapter.sections[0];
   return { chapter, section };
-};
-
-const scrollContainer = () => document.body;
-
-// cf. https://stackoverflow.com/a/55686711/548955
-const scrollUpThen = (callback?: Function) => {
-  const container = scrollContainer();
-  const onScroll = function () {
-    if (container.scrollTop < 1) {
-      container.removeEventListener('scroll', onScroll);
-      callback?.();
-    }
-  }
-  container.addEventListener('scroll', onScroll)
-  onScroll()
-  container.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 };
 
 export default new Vuex.Store({

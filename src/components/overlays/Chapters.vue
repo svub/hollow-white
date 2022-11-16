@@ -11,6 +11,7 @@
 
 <script lang="ts">
 import { Position } from "@/store";
+import { scrollTo } from "@/utls/scroll";
 import Vue from "vue";
 import Component from "vue-class-component";
 import { Prop } from "vue-property-decorator";
@@ -32,7 +33,9 @@ export default class Chapters extends Vue {
     this.opened = this.position.chapter.id;
     await this.$nextTick();
     const top = (this.$el.querySelector('.chapter.open') as HTMLElement).offsetTop;
-    (document.body.querySelector('.overlay.chapters') as HTMLElement).scrollTo(0, Math.max(top - 24, 0));
+    // (document.body.querySelector('.overlay.chapters') as HTMLElement).scrollTo(0, Math.max(top - 24, 0));
+    // scrollContainer().scrollTo(0, Math.max(top - 24, 0));
+    scrollTo(Math.max(top - 24, 0));
   }
 
   toggle(id: string) {
