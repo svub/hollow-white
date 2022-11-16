@@ -22,7 +22,7 @@ export type States = { [id: string]: State };
 export interface BookState {
   position: Reference | null;
   path: Array<Reference>;
-  items: string[];
+  items: string[]; // item IDs
   states: States;
 }
 
@@ -218,7 +218,8 @@ export default new Vuex.Store({
       return true;
     },
     itemCount({ items }): number {
-      return Object.values(items).length;
+      // return Object.values(items).length; // NOTE maybe was a relict of when items was an array of item objects, keyed by their ID?
+      return items.length;
     },
   },
   modules: {
