@@ -54,7 +54,7 @@ export default class App extends Vue {
   @State overlay;
   @State overlayData;
   @State theme;
-  @State items = []; // clear items for testing
+  @State items;
   @State path!: Array<Reference>;
   @State options!: { [id: string]: Option };
   @Action init;
