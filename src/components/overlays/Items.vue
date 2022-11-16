@@ -28,7 +28,8 @@ export default class Items extends Vue {
   }
 
   get limitedItems(): Item[] {
-    return this.items.slice(0, Math.min(this.items.length - 1, 19));
+    // return this.items.slice(0, Math.min(this.items.length - 1, 19)); // first twenty
+    return this.items.slice(0, Math.min(-25)); // last 25
   }
 
   get itemCount(): number {
