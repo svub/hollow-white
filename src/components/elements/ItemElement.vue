@@ -7,7 +7,7 @@ transition(name="flip")
         h3 {{ item.title }}
       .content(v-else)
         TextElement.description(@click.native="flipped = false" :elements="item.elements")
-        .media(v-if="false && item.mediaUrl" :class="item.mediaType")
+        .media(v-if="item.mediaUrl" :class="item.mediaType")
           a.link(v-if="item.mediaType == 'link'" :href="item.mediaUrl") {{ item.title }}
           audio(v-else-if="item.mediaType == 'audio'" controls :src="url")
             | Your browser does not support embedded audio.
