@@ -14348,7 +14348,7 @@ const book: Book = (({
       {
        "type": "state",
        "id": "karma",
-       "modifier": "+10"
+       "modifier": "+2"
       },
       {
        "type": "paragraph",
@@ -14376,7 +14376,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Der Zettel ist ein fein zusammen gefaltetes Foto. Jemand muss es im Kassettenfach versteckt haben.</p>"
+       "text": "<p>Der Zettel ist ein fein zusammengefaltetes Foto. Jemand muss es im Kassettenfach versteckt haben.</p>"
       },
       {
        "type": "paragraph",
@@ -14442,7 +14442,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ella auf dem Foto sieht dir alles andere als ähnlich. Eine Frau mit halblangen dunkelblonden Haaren, Brille und einem kleinen Leberfleck auf der Wange.</p>"
+       "text": "<p>Ella auf dem Foto sieht dir alles andere als ähnlich. Eine Frau mit halblangen, dunkelblonden Haaren, Brille und einem kleinen Leberfleck auf der Wange.</p>"
       },
       {
        "type": "paragraph",
@@ -14481,7 +14481,7 @@ const book: Book = (({
       {
        "type": "state",
        "id": "karma",
-       "modifier": "-10"
+       "modifier": "-2"
       },
       {
        "type": "paragraph",
@@ -14493,7 +14493,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du machst die Laterne an und begibst dich mit der kleinen Truhe in der Hand zurück an die Oberfläche. Mit jeder Treppenstufe gehen dir Georgys letzte Worte von dem Tonband durch den Kopf. War es wirklich die richtige Entscheidung, die Apparatur in der Höhle nicht zu zerstören? Was für Auswirkungen diese Entscheidungen wohl auf die Zukunft hat?</p>"
+       "text": "<p>Du machst die Laterne an und begibst dich mit der kleinen Truhe in der Hand zurück an die Oberfläche. Mit jeder Treppenstufe gehen dir Georgys letzte Worte von dem Tonband durch den Kopf. War es wirklich die richtige Entscheidung, die Apparatur in der Höhle nicht zu zerstören? Was für Auswirkungen diese Entscheidungen wohl auf die Zukunft haben?</p>"
       },
       {
        "type": "paragraph",
@@ -14517,7 +14517,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Es ist ein fein zusammen gefaltetes Foto. Jemand muss es im Kassettenfach versteckt haben.</p>"
+       "text": "<p>Es ist ein fein zusammengefaltetes Foto. Jemand muss es im Kassettenfach versteckt haben.</p>"
       },
       {
        "type": "paragraph",
@@ -14583,7 +14583,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ella auf dem Foto sieht dir alles andere als ähnlich. Eine Frau mit halblangen dunkelblonden Haaren, Brille und einem kleinen Leberfleck auf der Wange.</p>"
+       "text": "<p>Ella auf dem Foto sieht dir alles andere als ähnlich. Eine Frau mit halblangen, dunkelblonden Haaren, Brille und einem kleinen Leberfleck auf der Wange.</p>"
       },
       {
        "type": "paragraph",
@@ -15898,14 +15898,6 @@ const book: Book = (({
     {
      "type": "paragraph",
      "text": "<p>Thomas Kiris</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Schellingstraße 78</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>80799 München</p>"
     },
     {
      "type": "paragraph",
