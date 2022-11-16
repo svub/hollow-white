@@ -2,7 +2,7 @@
 .items
   .count #[span.current {{ itemCount }}] #[span.total {{ totalItems }}]
 
-  ItemElement(v-for="item in limitedItems" :class="[item.id, item.category].join(' ')" :item="item")
+  ItemElement(v-for="item in items" :class="[item.id, item.category].join(' ')" :item="item")
 </template>
 
 <script lang="ts">
@@ -27,11 +27,11 @@ export default class Items extends Vue {
     return this.itemIds.map(id => book.config.items.find(item => item.id === id)!);
   }
 
-  get limitedItems(): Item[] {
-    // return this.items.slice(0, Math.min(this.items.length - 1, 19)); // first twenty
-    // return this.items.slice(-24); // last 24
-    return this.items;
-  }
+  // get limitedItems(): Item[] {
+  //   // return this.items.slice(0, Math.min(this.items.length - 1, 19)); // first twenty
+  //   // return this.items.slice(-24); // last 24
+  //   return this.items;
+  // }
 
   get itemCount(): number {
     return this.items.length;

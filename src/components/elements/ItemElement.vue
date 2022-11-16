@@ -2,10 +2,10 @@
 transition(name="flip")
   .item(:class="[item.id, item.category, { flipped }]")
     .flipper
-      .title(@click="flipped = true")
+      .title(v-if="!flipped" @click="flipped = true")
         .number #[span.current {{ itemIndex+1 }}] #[span.total {{ itemCount }}]
         h3 {{ item.title }}
-      .content
+      .content(v-else)
         TextElement.description(@click.native="flipped = false" :elements="item.elements")
         .media(v-if="false && item.mediaUrl" :class="item.mediaType")
           a.link(v-if="item.mediaType == 'link'" :href="item.mediaUrl") {{ item.title }}
