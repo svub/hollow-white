@@ -1,5 +1,5 @@
 export function scrollContainer() { 
-  return document.body; 
+  return document.documentElement; 
 }
 
 // cf. https://stackoverflow.com/a/55686711/548955
