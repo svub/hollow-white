@@ -2567,6 +2567,10 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
+       "text": "<p><a class=\"skip-link\" href=\"javascript:document.documentElement.scrollTo({ top: 100000, behavior: 'smooth' })\">Überspringen</a></p>"
+      },
+      {
+       "type": "paragraph",
        "text": "<p><em>Kapitel 1: Ella</em></p>"
       },
       {
@@ -4327,6 +4331,10 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
+       "text": "<p><a class=\"skip-link\" href=\"javascript:document.documentElement.scrollTo({ top: 100000, behavior: 'smooth' })\">Überspringen</a></p>"
+      },
+      {
+       "type": "paragraph",
        "text": "<p><em>Kapitel 1: Ella</em></p>"
       },
       {
@@ -6050,6 +6058,10 @@ const book: Book = (({
      "id": "037",
      "title": "Was bisher geschah",
      "elements": [
+      {
+       "type": "paragraph",
+       "text": "<p><a class=\"skip-link\" href=\"javascript:document.documentElement.scrollTo({ top: 100000, behavior: 'smooth' })\">Überspringen</a></p>"
+      },
       {
        "type": "paragraph",
        "text": "<p><em>Kapitel 1: Ella</em></p>"
@@ -8170,6 +8182,10 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
+       "text": "<p><a class=\"skip-link\" href=\"javascript:document.documentElement.scrollTo({ top: 100000, behavior: 'smooth' })\">Überspringen</a></p>"
+      },
+      {
+       "type": "paragraph",
        "text": "<p><em>Kapitel 1: Ella</em></p>"
       },
       {
@@ -9235,6 +9251,10 @@ const book: Book = (({
      "id": "018",
      "title": "Was bisher geschah",
      "elements": [
+      {
+       "type": "paragraph",
+       "text": "<p><a class=\"skip-link\" href=\"javascript:document.documentElement.scrollTo({ top: 100000, behavior: 'smooth' })\">Überspringen</a></p>"
+      },
       {
        "type": "paragraph",
        "text": "<p><em>Kapitel 1: Ella</em></p>"
@@ -10725,6 +10745,10 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
+       "text": "<p><a class=\"skip-link\" href=\"javascript:document.documentElement.scrollTo({ top: 100000, behavior: 'smooth' })\">Überspringen</a></p>"
+      },
+      {
+       "type": "paragraph",
        "text": "<p><em>Kapitel 1: Ella</em></p>"
       },
       {
@@ -11638,6 +11662,10 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
+       "text": "<p><a class=\"skip-link\" href=\"javascript:document.documentElement.scrollTo({ top: 100000, behavior: 'smooth' })\">Überspringen</a></p>"
+      },
+      {
+       "type": "paragraph",
        "text": "<p><em>Kapitel 1: Ella</em></p>"
       },
       {
@@ -12427,6 +12455,10 @@ const book: Book = (({
      "id": "014",
      "title": "Was bisher geschah",
      "elements": [
+      {
+       "type": "paragraph",
+       "text": "<p><a class=\"skip-link\" href=\"javascript:document.documentElement.scrollTo({ top: 100000, behavior: 'smooth' })\">Überspringen</a></p>"
+      },
       {
        "type": "paragraph",
        "text": "<p><em>Kapitel 1: Ella</em></p>"
@@ -13674,6 +13706,10 @@ const book: Book = (({
      "id": "013",
      "title": "Was bisher geschah",
      "elements": [
+      {
+       "type": "paragraph",
+       "text": "<p><a class=\"skip-link\" href=\"javascript:document.documentElement.scrollTo({ top: 100000, behavior: 'smooth' })\">Überspringen</a></p>"
+      },
       {
        "type": "paragraph",
        "text": "<p><em>Kapitel 1: Ella</em></p>"
@@ -15104,6 +15140,10 @@ const book: Book = (({
      "id": "012",
      "title": "Was bisher geschah",
      "elements": [
+      {
+       "type": "paragraph",
+       "text": "<p><a class=\"skip-link\" href=\"javascript:document.documentElement.scrollTo({ top: 100000, behavior: 'smooth' })\">Überspringen</a></p>"
+      },
       {
        "type": "paragraph",
        "text": "<p><em>Kapitel 1: Ella</em></p>"
