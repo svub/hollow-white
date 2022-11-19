@@ -7,6 +7,7 @@
     "build:android": "npm run setup-webpack-config && tns build android --env.production && npm run remove-webpack-config",
     "build:ios": "npm run setup-webpack-config && tns build ios --env.production && npm run remove-webpack-config",
     "build:web": "vue-cli-service build --mode production.web",
+    "build": "npm run build:web",
     "clean:android": "rimraf platforms/android",
     "clean:ios": "rimraf platforms/ios",
     "clean:platforms": "rimraf platforms",
