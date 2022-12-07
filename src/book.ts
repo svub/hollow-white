@@ -15929,6 +15929,18 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
+     "text": "<p><em>Zusammen etwas Gutes tun</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p>Effective Altruism, die Organisation hinter Giving What We Can, stellt sicher, dass ihre Spende so wirkungsvoll wie möglich ist: <a href=\"https://www.givingwhatwecan.org/donate/organizations?utm_source=hollowwhite&utm_medium=webapp&utm_campaign=beta_release&utm_id=hollowwhitebeta\" rel=\"noopener noreferrer\" target=\"_blank\">Jetzt mehr erfahren und unterstützen.</a></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Feedback und Kontakt</em></p>"
+    },
+    {
+     "type": "paragraph",
      "text": "<p>Wir freuen uns über dein <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfFvQn86vGWkSfUPzoax417FXUGDPwXopJRLxtUUS6orJuixQ/viewform?usp=sf_link\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> oder von dir zu hören. Hier kannst du <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Kontakt</a> mit uns aufnehmen.</p>"
     }
    ],
