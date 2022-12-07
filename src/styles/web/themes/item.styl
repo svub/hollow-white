@@ -61,8 +61,64 @@
         p, em
           font-size toRem(17)
 
-      .media > *
-        max-width 100%
+      .media 
+        buttonOuter = 66px
+        buttonInner = 50px
+        buttonGap = ((buttonOuter - buttonInner) / 2)
+        progressBarThickness = 5px
+        --progress 0
+
+        & > *
+          max-width 100%
+
+        .audio
+
+          button
+            position relative 
+            width buttonOuter
+            height @width
+
+            &:before 
+              content ""
+              display block
+              position absolute
+              top buttonGap
+              left @top
+              width buttonInner
+              height @width
+              asset('audio-play.svg', buttonInner, buttonInner)
+              background-color white
+              border-radius @width
+
+            .progress
+              width buttonOuter
+              height @width
+              position absolute
+              top 0
+              left @top
+              clip rect(0px, (buttonOuter + 1), buttonOuter, (buttonOuter / 2))
+
+              .circle
+                width buttonOuter
+                height @width
+                top 0
+                left @top
+                border progressBarThickness solid #61FFFF
+                border-radius (buttonOuter / 2)
+                position absolute
+                clip rect(0px, (buttonOuter / 2), buttonOuter, 0px)
+                will-change transform
+                transition transform 200ms
+                transform rotate(calc(var(--progress) * 360deg))
+
+              &.beyondHalf
+                clip unset
+
+                .circle.right
+                  transform rotate(180deg)
+
+        &.playing .audio button:before
+          asset('audio-stop.svg', buttonInner, buttonInner)
 
 for item in items
   .item.{item} .title:before

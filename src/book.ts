@@ -15689,7 +15689,11 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Und zum Schluss Danke an dich. Wir hoffen, du hattest eine ganz besondere Leseerfahrung und <em>Hollow White</em>&nbsp;bleibt dir lange Zeit in Erinnerung. Wir freuen uns über dein <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> und wenn du der großen Welt draußen von deinem Abenteuer erzählst.</p>"
+         "text": "<p>Und zum Schluss Danke an dich. Wir hoffen, du hattest eine ganz besondere Leseerfahrung und <em>Hollow White</em>&nbsp;bleibt dir lange Zeit in Erinnerung.</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Wir freuen uns über dein <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfFvQn86vGWkSfUPzoax417FXUGDPwXopJRLxtUUS6orJuixQ/viewform?usp=sf_link\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> oder von dir zu hören. Hier kannst du <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Kontakt</a> mit uns aufnehmen.</p>"
         }
        ]
       },
@@ -15699,7 +15703,11 @@ const book: Book = (({
        "elements": [
         {
          "type": "paragraph",
-         "text": "<p>Und zum Schluss Danke an dich. Wir hoffen, du hattest eine ganz besondere Leseerfahrung und <em>Hollow White</em>&nbsp;bleibt dir lange Zeit in Erinnerung. Wir freuen uns über dein <a href=\"mailto:feedback@schwarzerkreis.de\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> und wenn du der großen Welt draußen von deinem Abenteuer erzählst.</p>"
+         "text": "<p>Und zum Schluss Danke an dich. Wir hoffen, du hattest eine ganz besondere Leseerfahrung und <em>Hollow White</em>&nbsp;bleibt dir lange Zeit in Erinnerung.</p>"
+        },
+        {
+         "type": "paragraph",
+         "text": "<p>Wir freuen uns über dein <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfFvQn86vGWkSfUPzoax417FXUGDPwXopJRLxtUUS6orJuixQ/viewform?usp=sf_link\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> oder von dir zu hören. Hier kannst du <a href=\"mailto:feedback@schwarzerkreis.de\" rel=\"noopener noreferrer\" target=\"_blank\">Kontakt</a> mit uns aufnehmen.</p>"
         }
        ]
       },
@@ -15709,6 +15717,11 @@ const book: Book = (({
       }
      ],
      "next": [
+      {
+       "title": "Hollow White mit anderen teilen",
+       "id": "share",
+       "data": "https://hollowwhite.de"
+      },
       {
        "title": "Jetzt aktiv werden",
        "chapterId": "13",
@@ -15789,6 +15802,18 @@ const book: Book = (({
     {
      "type": "paragraph",
      "text": "<p>Thomas Kiris</p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><em>Künstler</em></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><a href=\"https://on.soundcloud.com/xmg4C\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Neon</a></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><a href=\"https://maeviamusic.com/\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a></p>"
     },
     {
      "type": "paragraph",
@@ -15884,18 +15909,6 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "<p>Minh Chau Appelhagen-Lu</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Lara Kiris</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Lord Neon</p>"
-    },
-    {
-     "type": "paragraph",
      "text": "<p>Alessandro Russo</p>"
     },
     {
@@ -15908,7 +15921,7 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "<p>Kissshirts.de</p>"
+     "text": "<p><a href=\"https://www.kissshirts.de/\" rel=\"noopener noreferrer\" target=\"_blank\">Kissshirts.de</a></p>"
     },
     {
      "type": "paragraph",
@@ -15916,7 +15929,7 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "<p>Wir freuen uns über dein <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a>.</p>"
+     "text": "<p>Wir freuen uns über dein <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfFvQn86vGWkSfUPzoax417FXUGDPwXopJRLxtUUS6orJuixQ/viewform?usp=sf_link\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> oder von dir zu hören. Hier kannst du <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Kontakt</a> mit uns aufnehmen.</p>"
     }
    ],
    "next": [
@@ -16017,6 +16030,10 @@ const book: Book = (({
      {
       "type": "paragraph",
       "text": "<p>Ein uraltes Motel im verschneiten Gebiet von <em>White Valley</em>.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Ein Plattenspieler am Empfang spielt Musik. Mehr zur Band <a href=\"https://maeviamusic.com/\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a> erfahren.</p>"
      }
     ]
    },
@@ -16051,7 +16068,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Der Song <em>The Ride</em>&nbsp;von <em>Lord Neon</em>.</p>"
+      "text": "<p>Mehr zu <a href=\"https://on.soundcloud.com/xmg4C\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Neon</a> erfahren.</p>"
      }
     ]
    },
@@ -16303,7 +16320,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Der Song <em>Dystopia</em>&nbsp;von <em>Lord Neon</em>.</p>"
+      "text": "<p>Mehr zu <a href=\"https://on.soundcloud.com/xmg4C\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Neon</a> erfahren.</p>"
      }
     ]
    },
@@ -16399,11 +16416,11 @@ const book: Book = (({
     "id": "maevia",
     "mediaType": "audio",
     "mediaUrl": "/assets/items/maevia-waiting.mp3",
-    "title": "Maevia",
+    "title": "MAEVIA – Waiting",
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Der Song <em>Waiting</em>&nbsp;von <em>MAEVIA</em>.</p>"
+      "text": "<p>Mehr zur Band <a href=\"https://maeviamusic.com/\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a> erfahren.</p>"
      }
     ]
    },
@@ -16416,7 +16433,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Der Song <em>Chrome Warrior</em>&nbsp;von <em>Lord Neon</em>.</p>"
+      "text": "<p>Mehr zu <a href=\"https://on.soundcloud.com/xmg4C\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Neon</a> erfahren.</p>"
      }
     ]
    },
