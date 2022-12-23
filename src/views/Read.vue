@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts">
-import { Component } from "vue-property-decorator";
+import { Component, Watch } from "vue-property-decorator";
 import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
 import { Link, SpecialLink, isSpecialLink, Reference } from "../shared/entities";
@@ -35,6 +35,7 @@ import TextElement from "../components/elements/TextElement.vue";
 import { inPath, Items, Position } from "../store";
 import book from "../book";
 import { TextBase } from "@/utls/TextBase";
+import logRemote from "@/utls/logRemote";
 
 @Component({
   name: "Read",
@@ -68,9 +69,10 @@ export default class Read extends TextBase {
     return this.position.chapter.sections.indexOf(this.position.section) === 0;
   }
 
-  // @Watch('position') pageChange() {
-  //   logJson('page change', this.position.section);
-  // }
+  @Watch('position') 
+  pageChange() {
+    logRemote(`page_${this.position.chapter.id}_${this.position.section.id}`);
+  }
 }
 </script>
 

@@ -42,6 +42,7 @@ import Imprint from './components/overlays/Imprint.vue';
 import Options from './components/overlays/Options.vue';
 import FeedbackMode from './components/overlays/FeedbackMode.vue';
 import Share from './components/overlays/Share.vue';
+import logRemote from './utls/logRemote';
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
@@ -101,6 +102,8 @@ export default class App extends Vue {
     window["appState"] = appState;
 
     document.title = book.title;
+
+    logRemote(`init_${location.search.replace('?', '')}`);
   }
 
   mounted() {
