@@ -2,6 +2,7 @@ import { Vue } from 'vue-property-decorator';
 import { Functions, Overlays, Link, SpecialLink, Specials, isSpecialLink, Pages } from '../shared/entities';
 import { error } from '../shared/util';
 import store from '../store/index';
+import logRemote from './logRemote';
 
 export class TextBase extends Vue {
   open(link: Link | SpecialLink) {
@@ -34,5 +35,6 @@ export class TextBase extends Vue {
     if (!navigator.share || nativeFailed) {
       store.dispatch('overlay', { overlay: Overlays.shareOverlay, data });
     }
+    logRemote(`share_${nativeFailed ? 'overlay' : 'native'}`);
   }
 }
