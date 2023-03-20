@@ -35,6 +35,6 @@ export class TextBase extends Vue {
     if (!navigator.share || nativeFailed) {
       store.dispatch('overlay', { overlay: Overlays.shareOverlay, data });
     }
-    logRemote(`share_${nativeFailed ? 'overlay' : 'native'}`);
+    logRemote('action', 'share-ui', `${nativeFailed ? 'overlay' : 'native'}`);
   }
 }

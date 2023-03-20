@@ -103,7 +103,7 @@ export default class App extends Vue {
 
     document.title = book.title;
 
-    logRemote(`init_${location.search.replace('?', '')}`);
+    logRemote('app', 'init', `${location.search.replace('?', '')}`);
   }
 
   mounted() {
@@ -113,14 +113,14 @@ export default class App extends Vue {
   get chapters() {
     return logJson('progress',
       uniq(this.path.map(ref => ref.chapterId))
-      .map(id => clone(book.chapters.find(chapter => chapter.id === id)))
-      .filter(chapter => !!chapter)
-      .map((chapter) => {
-        chapter!.sections = chapter!.sections
-          .filter(section => !!this.path.find(r => r.chapterId === chapter!.id && r.sectionId === section.id))
-          .map(section => ({ id: section.id, title: section.title, next: [], elements: [] }));
-        return chapter;
-      }))!;
+        .map(id => clone(book.chapters.find(chapter => chapter.id === id)))
+        .filter(chapter => !!chapter)
+        .map((chapter) => {
+          chapter!.sections = chapter!.sections
+            .filter(section => !!this.path.find(r => r.chapterId === chapter!.id && r.sectionId === section.id))
+            .map(section => ({ id: section.id, title: section.title, next: [], elements: [] }));
+          return chapter;
+        }))!;
   }
 
   get lang() {

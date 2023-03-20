@@ -1,5 +1,15 @@
+/* global ga */
 import store from "@/store";
 
-export default function (text: string) {
-  fetch(`${location.protocol}//schwarzerkreis.de/log.php?${text}`).catch(() => true);
+declare const ga: Function;
+
+export default function (eventCategory: string, eventAction: string, eventLabel: string) {
+  const data = {
+    hitType: 'event',
+    eventCategory,
+    eventAction,
+    eventLabel,
+  };
+  ga('send', data);
+  console.log('log', data);
 }
