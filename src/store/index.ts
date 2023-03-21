@@ -5,7 +5,7 @@ import { equal, warn, logJson, log, error } from '../shared/util';
 import createPersistedState from "vuex-persist-indexeddb";
 import book from '@/book';
 import { scrollContainer, scrollUpThen } from '@/utls/scroll';
-import logRemote from './logRemote';
+import logRemote from '@/utls/logRemote';
 
 Vue.use(Vuex)
 
