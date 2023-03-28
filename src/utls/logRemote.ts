@@ -81,11 +81,15 @@ let gTagConfig: Function | undefined = async () => {
   gtag('config', ID, {
     /* eslint-disable @typescript-eslint/camelcase */
     client_id: await userId,
+    send_page_view: true,
   });
   gTagConfig = undefined;
 };
 async function googleTag(category: string, action: string, label: string) {
   if (gTagConfig) await gTagConfig();
+  category = encodeURIComponent(category);
+  action = encodeURIComponent(action);
+  label = encodeURIComponent(label);
   let data;
   // gtag('event', category, data = {
   //   action,
@@ -94,8 +98,8 @@ async function googleTag(category: string, action: string, label: string) {
   //   // testcid: await userId,
   // });
   gtag('event', 'page_view', {
-    page_location: `${category} > ${action}`,
-    page_title: `${category} > ${action} > ${label}`,
+    page_location: `${category}-${action}`,
+    page_title: `${label}`,
     cat: category,
     act: action,
     label: label,
