@@ -69,10 +69,14 @@ export default class Read extends TextBase {
     return this.position.chapter.sections.indexOf(this.position.section) === 0;
   }
 
-  @Watch('position')
-  pageChange() {
-    logRemote('read', 'page-change', `${this.position.chapter.id}_${this.position.section.id}`);
+  mounted() {
+    logRemote('read', 'init', `${this.position.chapter.id}_${this.position.section.id}`);
   }
+
+  // @Watch('position')
+  // pageChange() {
+  //   logRemote('read', 'page-change', `${this.position.chapter.id}_${this.position.section.id}`);
+  // }
 }
 </script>
 

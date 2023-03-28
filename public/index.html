@@ -14,7 +14,6 @@
     <link rel="mask-icon" href="<%= BASE_URL %>safari-pinned-tab.svg" color="#000000">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <script src="https://unpkg.com/vue-observe-visibility@0.4.2"></script>
-    <!-- Google tag (gtag.js) -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3L6KHGSJ1H"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -23,7 +22,7 @@
 
       gtag('config', 'G-3L6KHGSJ1H');
     </script> -->
-    <script>
+    <!-- <script>
       const cyrb53 = function(str, seed = 0) {
          let h1 = 0xdeadbeef ^ seed,
             h2 = 0x41c6ce57 ^ seed;
@@ -47,6 +46,7 @@
       function start(clientIP) {
         let validityInterval = Math.round (new Date() / 1000 / 3600 / 24 / validityDays);
         let clientIDSource = clientIP + ";" + window.location.host + ";" + navigator.userAgent + ";" + navigator.language + ";" + validityInterval;
+        console.log(clientIDSource);
         let clientIDHashed = cyrb53(clientIDSource).toString(16);
         
         
@@ -58,12 +58,11 @@
         ga('send', 'pageview');
       } 
 
-      // let clientIP = "{$_SERVER['REMOTE_ADDR']}";
       fetch("https://api.ipify.org")
-        .then(response => test.text())
+        .then(response => response.text())
         .then(start)
         .catch(e => start(''));
-    </script>
+    </script> -->
   </head>
   <body>
     <noscript>
