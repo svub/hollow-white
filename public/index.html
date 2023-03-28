@@ -14,14 +14,22 @@
     <link rel="mask-icon" href="<%= BASE_URL %>safari-pinned-tab.svg" color="#000000">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <script src="https://unpkg.com/vue-observe-visibility@0.4.2"></script>
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3L6KHGSJ1H"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3L6KHGSJ1H"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-3L6KHGSJ1H');
-    </script> -->
+      // https://developers.google.com/tag-platform/gtagjs/reference#consent
+      gtag('consent', 'update', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        functionality_storage: 'denied',
+        personalization_storage: 'denied',
+        security_storage: 'denied',
+      });
+    </script>
     <!-- <script>
       const cyrb53 = function(str, seed = 0) {
          let h1 = 0xdeadbeef ^ seed,

@@ -1,9 +1,7 @@
 import store from "@/store";
 import { tryPromise } from "./fp";
 
-declare const ga: Function;
-
-const api = false;
+const api = true;
 const ID = 'G-3L6KHGSJ1H';
 const validityDays = 30; // user ID will be renewed after this time, but also if IP changes.
 const campaignId = ''; // optional if deploying to track specific campaign
@@ -29,6 +27,7 @@ export const userId = (async () => {
   return hash(idString);
 })();
 
+declare const ga: Function;
 function proprietaryGaEvent(eventCategory: string, eventAction: string, eventLabel: string) {
   const data = {
     hitType: 'event',
@@ -77,17 +76,24 @@ async function directGoogleAnalytics(event = 'pageview', more: {}) {
   await fetch(url);
 }
 
+declare const gtag: Function;
+function googleTag(eventCategory: string, action: string, label: string) {
+  gtag('event', eventCategory, {
+    action,
+    label
+  });
+
+}
+
 export function logAction (eventCategory: string, eventAction: string, eventLabel: string) {
   console.log('log', eventCategory, eventAction, eventLabel);
-  if (api) {
-    proprietaryGaEvent(eventCategory, eventAction, eventLabel);
-  } else {
-    directGoogleAnalytics('event', {
-      ec: eventCategory,
-      ea: eventAction,
-      el: eventLabel,
-    });
-  }
+  // proprietaryGaEvent(eventCategory, eventAction, eventLabel);
+  // directGoogleAnalytics('event', {
+  //   ec: eventCategory,
+  //   ea: eventAction,
+  //   el: eventLabel,
+  // });
+  googleTag(eventCategory, eventAction, eventLabel);
 }
 export default logAction;
 
