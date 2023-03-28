@@ -15,12 +15,19 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <script src="https://unpkg.com/vue-observe-visibility@0.4.2"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3L6KHGSJ1H"></script>
-    <script>
+    <!-- <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-3L6KHGSJ1H');
+    </script> -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // gtag('config', 'G-3L6KHGSJ1H');
       // https://developers.google.com/tag-platform/gtagjs/reference#consent
       // gtag('consent', 'update', {
       //   ad_storage: 'denied',
@@ -29,9 +36,9 @@
       //   personalization_storage: 'denied',
       //   security_storage: 'denied',
       // });
-      gtag('send', 'pageview', {
-        page_location: '/',
-      });
+      // gtag('send', 'pageview', {
+      //   page_location: '/',
+      // });
       // add when working: gtag('config', 'GA_TRACKING_ID', { 'send_page_view': false });
     </script>
     <!-- <script>

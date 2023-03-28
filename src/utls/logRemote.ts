@@ -78,25 +78,31 @@ async function directGoogleAnalytics(event = 'pageview', more: {}) {
 
 declare const gtag: Function;
 let gTagConfig: Function | undefined = async () => {
-  gtag('config', 'cid', await userId);
-  gtag('config', 'client_id', await userId);
-  gtag('config', ID, 'client_id', await userId);
-  gtag('set', ID, 'client_id', await userId);
-  gtag('set', ID, 'cid', await userId);
-  gtag('config', 'event', {
-    cid: await userId
+  gtag('config', ID, {
+    /* eslint-disable @typescript-eslint/camelcase */
+    client_id: await userId,
   });
   gTagConfig = undefined;
 };
-async function googleTag(eventCategory: string, action: string, label: string) {
+async function googleTag(category: string, action: string, label: string) {
   if (gTagConfig) await gTagConfig();
-  gtag('event', eventCategory, {
-    action,
-    label,
-    cid: await userId,
-    testcid: await userId,
+  let data;
+  // gtag('event', category, data = {
+  //   action,
+  //   label,
+  //   cid: await userId,
+  //   // testcid: await userId,
+  // });
+  gtag('event', 'page_view', {
+    page_location: `${category} > ${action}`,
+    page_title: `${category} > ${action} > ${label}`,
+    cat: category,
+    act: action,
+    label: label,
+    page_cat: category,
+    page_act: action,
+    page_label: label,
   });
-
 }
 
 export function logAction (eventCategory: string, eventAction: string, eventLabel: string) {
