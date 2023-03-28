@@ -41,21 +41,27 @@
       // });
       // add when working: gtag('config', 'GA_TRACKING_ID', { 'send_page_view': false });
 
+      let s = 100;
+      const step = 10000;
       gtag('config', 'G-3L6KHGSJ1H');
-      gtag('event', 'pageview', {
+      setTimeout(() => gtag('event', 'pageview', {
         page_location: '1-location',
         page_title: '1-title'
-      });
-      gtag('event', 'page-view', {
+      }), s+=step);
+      setTimeout(() => gtag('event', 'page-view', {
         page_location: '2-location',
         page_title: '2-title'
-      });
-      gtag('event', 'page_view', {
+      }), s+=step);
+      setTimeout(() => gtag('event', 'page_view', {
         page_location: '3-location',
         page_title: '3-title'
-      });
-
-</script>
+      }), s+=step);
+      setTimeout(() => gtag('event', 'test', {
+        page_title: '4-title'
+        page_location: '4-location',
+        label: '4-label',
+      }), s+=step);
+    </script>
     <!-- <script>
       const cyrb53 = function(str, seed = 0) {
          let h1 = 0xdeadbeef ^ seed,
