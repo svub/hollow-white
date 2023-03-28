@@ -103,7 +103,7 @@ export default class App extends Vue {
 
     document.title = book.title;
 
-    logRemote('app', 'init', ''); //`params:${location.search.replace('?', '')}`);
+    logRemote('app', 'init', location.search.replace('?', ''));
   }
 
   mounted() {

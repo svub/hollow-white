@@ -90,7 +90,7 @@ async function googleTag(category: string, action: string, label: string) {
   category = encodeURIComponent(category);
   action = encodeURIComponent(action);
   label = encodeURIComponent(label);
-  let data;
+  // let data;
   // gtag('event', category, data = {
   //   action,
   //   label,
@@ -98,14 +98,14 @@ async function googleTag(category: string, action: string, label: string) {
   //   // testcid: await userId,
   // });
   gtag('event', 'page_view', {
-    page_location: `${category}-${action}`,
-    page_title: `${label}`,
-    cat: category,
-    act: action,
-    label: label,
-    page_cat: category,
-    page_act: action,
-    page_label: label,
+    page_location: category + '_' +  action,
+    page_title: label,
+    // cat: category,
+    // act: action,
+    // label: label,
+    // page_cat: category,
+    // page_act: action,
+    // page_label: label,
   });
 }
 
