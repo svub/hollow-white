@@ -27,16 +27,16 @@ export const userId = (async () => {
   return hash(idString);
 })();
 
-declare const ga: Function;
-function proprietaryGaEvent(eventCategory: string, eventAction: string, eventLabel: string) {
-  const data = {
-    hitType: 'event',
-    eventCategory,
-    eventAction,
-    eventLabel,
-  };
-  ga('send', data);
-}
+// declare const ga: Function;
+// function proprietaryGaEvent(eventCategory: string, eventAction: string, eventLabel: string) {
+//   const data = {
+//     hitType: 'event',
+//     eventCategory,
+//     eventAction,
+//     eventLabel,
+//   };
+//   ga('send', data);
+// }
 
 // url: www.google-analytics.com
 // method: GET
@@ -77,10 +77,24 @@ async function directGoogleAnalytics(event = 'pageview', more: {}) {
 }
 
 declare const gtag: Function;
-function googleTag(eventCategory: string, action: string, label: string) {
+let gTagConfig: Function | undefined = async () => {
+  gtag('config', 'cid', await userId);
+  gtag('config', 'client_id', await userId);
+  gtag('config', ID, 'client_id', await userId);
+  gtag('set', ID, 'client_id', await userId);
+  gtag('set', ID, 'cid', await userId);
+  gtag('config', 'event', {
+    cid: await userId
+  });
+  gTagConfig = undefined;
+};
+async function googleTag(eventCategory: string, action: string, label: string) {
+  if (gTagConfig) await gTagConfig();
   gtag('event', eventCategory, {
     action,
-    label
+    label,
+    cid: await userId,
+    testcid: await userId,
   });
 
 }

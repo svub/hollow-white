@@ -22,13 +22,17 @@
 
       gtag('config', 'G-3L6KHGSJ1H');
       // https://developers.google.com/tag-platform/gtagjs/reference#consent
-      gtag('consent', 'update', {
-        ad_storage: 'denied',
-        analytics_storage: 'denied',
-        functionality_storage: 'denied',
-        personalization_storage: 'denied',
-        security_storage: 'denied',
+      // gtag('consent', 'update', {
+      //   ad_storage: 'denied',
+      //   analytics_storage: 'denied',
+      //   functionality_storage: 'denied',
+      //   personalization_storage: 'denied',
+      //   security_storage: 'denied',
+      // });
+      gtag('send', 'pageview', {
+        page_location: '/',
       });
+      // add when working: gtag('config', 'GA_TRACKING_ID', { 'send_page_view': false });
     </script>
     <!-- <script>
       const cyrb53 = function(str, seed = 0) {
