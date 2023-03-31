@@ -78,10 +78,34 @@ async function directGoogleAnalytics(event = 'pageview', more: {}) {
 
 declare const gtag: Function;
 let gTagConfig: Function | undefined = async () => {
+  // GA and gTag do not respect user settings -> disable all cookies by hacking the JS env
+  Object.defineProperty(document, 'cookie', {
+    get: function() { return ''; },
+    set: function(c) { console.log('Nope', c); }
+  });
   gtag('config', ID, {
     /* eslint-disable @typescript-eslint/camelcase */
     client_id: await userId,
     send_page_view: true,
+    // all below seem to be ignored. Google does not provide any useful documentation
+    anonymize_ip: true, 
+    storage: 'none',
+    client_storage: 'none', // https://support.google.com/analytics/thread/39104158?hl=en&msgid=41685874
+    // from gTag source code
+    ad_storage: 'none', 
+    analytics_storage: 'none',
+    cookie_expires: 1,
+    // https://docs.tealium.com/client-side-tags/google-analytics-gtagjs-tag/
+    allow_google_signals: false, 
+    allow_ad_personalization_signals: false,
+  });
+  // https://developers.google.com/tag-platform/gtagjs/reference#consent
+  gtag('consent', 'update', {
+    ad_storage: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'denied',
+    personalization_storage: 'denied',
+    security_storage: 'denied',
   });
   gTagConfig = undefined;
 };
@@ -98,14 +122,16 @@ async function googleTag(category: string, action: string, label: string) {
   //   // testcid: await userId,
   // });
   gtag('event', 'page_view', {
-    page_location: category + '_' +  action,
+    page_location: category + '_' + action,
     page_title: label,
-    // cat: category,
-    // act: action,
-    // label: label,
-    // page_cat: category,
-    // page_act: action,
-    // page_label: label,
+    category,
+    action,
+    label,
+  });
+  gtag('event', 'c-' + category, {
+    category,
+    action,
+    label,
   });
 }
 
