@@ -1,7 +1,6 @@
 <template web lang="pug">
 main(:class="page" :lang="lang")
   transition(name="page")
-    //- use dynamic component: component(:is=page)
     Start(key="1", v-if="page === 'start'")
     Read(key="2", v-if="page === 'read'")
     Tester(key="3", v-if="page === 'test'")
@@ -20,14 +19,12 @@ main(:class="page" :lang="lang")
           Share(v-if="overlay === 'shareOverlay'" :url="overlayData.url" :title="overlayData.title")
       .actions
         button.close(@click="setOverlay('')")
-  //- HelloWorld(:msg="msg")
 </template>
 
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
 import { State, Action } from "vuex-class";
 import uniq from "lodash/uniq";
-// import localforage from "localforage";
 import Start from "./views/Start.vue";
 import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
@@ -42,6 +39,7 @@ import Imprint from './components/overlays/Imprint.vue';
 import Options from './components/overlays/Options.vue';
 import FeedbackMode from './components/overlays/FeedbackMode.vue';
 import Share from './components/overlays/Share.vue';
+import logRemote from './utls/logRemote';
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
@@ -80,20 +78,6 @@ export default class App extends Vue {
       this.setOverlay(testOverlay);
     }
 
-    // add import and export functionality for indexedDB for testing purposes
-    // localforage.config({ name: "vuex" });
-    // const store = localforage;
-    // console.log(store);
-    // window["exportDb"] = async () => {
-    //   const result: Array<Record<string, any>> = [];
-    //   console.log(await store.keys());
-    //   await store.iterate((value, key) => {
-    //     console.log(key, value);
-    //     result.push({ key, value });
-    //   });
-    //   return result;
-    // };
-
     // set root lang
     document.documentElement.lang = this.lang;
 
@@ -101,6 +85,8 @@ export default class App extends Vue {
     window["appState"] = appState;
 
     document.title = book.title;
+
+    logRemote('app', 'init', location.search.replace('?', ''));
   }
 
   mounted() {
@@ -110,14 +96,14 @@ export default class App extends Vue {
   get chapters() {
     return logJson('progress',
       uniq(this.path.map(ref => ref.chapterId))
-      .map(id => clone(book.chapters.find(chapter => chapter.id === id)))
-      .filter(chapter => !!chapter)
-      .map((chapter) => {
-        chapter!.sections = chapter!.sections
-          .filter(section => !!this.path.find(r => r.chapterId === chapter!.id && r.sectionId === section.id))
-          .map(section => ({ id: section.id, title: section.title, next: [], elements: [] }));
-        return chapter;
-      }))!;
+        .map(id => clone(book.chapters.find(chapter => chapter.id === id)))
+        .filter(chapter => !!chapter)
+        .map((chapter) => {
+          chapter!.sections = chapter!.sections
+            .filter(section => !!this.path.find(r => r.chapterId === chapter!.id && r.sectionId === section.id))
+            .map(section => ({ id: section.id, title: section.title, next: [], elements: [] }));
+          return chapter;
+        }))!;
   }
 
   get lang() {

@@ -5,6 +5,7 @@ import { equal, warn, logJson, log, error } from '../shared/util';
 import createPersistedState from "vuex-persist-indexeddb";
 import book from '@/book';
 import { scrollContainer, scrollUpThen } from '@/utls/scroll';
+import logRemote from '@/utls/logRemote';
 
 Vue.use(Vuex)
 
@@ -142,6 +143,7 @@ export default new Vuex.Store({
   actions: {
     page({ commit }, page) {
       if (['start', 'read', 'tester'].indexOf(page) < 0) error('Page not found', page);
+      logRemote('action', 'page', page);
       scrollUpThen(() => {
         commit('page', { page });
       });
@@ -150,6 +152,7 @@ export default new Vuex.Store({
       const entry = typeof overlay === 'string' ? { overlay, data: undefined } : overlay;
       if (entry.overlay !== '' && !Overlays[entry.overlay]) error('Overlay not found', overlay);
       if (!entry.overlay) scrollUpThen(); // scroll up when closing overlay
+      logRemote('action', 'overlay', entry.overlay);
       commit('overlay', entry);
     },
     start({ getters, dispatch }) {
@@ -164,6 +167,7 @@ export default new Vuex.Store({
     },
     goto({ commit, state }, link: Reference) {
       setTimeout(() => scrollContainer().scrollTo(0, 0), book.config.pageScrollUpDelay ?? 1);
+      logRemote('action', 'goto', `${link.chapterId}_${link.sectionId}`);
       commit('setSection', link);
       if (!inPath(link, state.path)) commit('addToPath');
     },
@@ -181,6 +185,7 @@ export default new Vuex.Store({
     },
     reset({ commit, dispatch }, payload: { keepItems: boolean } = { keepItems: false }) {
       commit('reset', payload);
+      logRemote('action', 'reset', `keep items = ${payload.keepItems}`);
       dispatch('page', 'start');
       dispatch('overlay', '');
     },
