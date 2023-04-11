@@ -6,7 +6,6 @@ export async function tryPromise<T>(fn: () => Promise<T>, defaultValue: T): Prom
     } while (r instanceof Promise);
     return r;
   } catch (e) {
-    // return new Promise<T>(() => defaultValue);
     return defaultValue;
   }
 }

@@ -1,7 +1,6 @@
 <template web lang="pug">
 main(:class="page" :lang="lang")
   transition(name="page")
-    //- use dynamic component: component(:is=page)
     Start(key="1", v-if="page === 'start'")
     Read(key="2", v-if="page === 'read'")
     Tester(key="3", v-if="page === 'test'")
@@ -20,14 +19,12 @@ main(:class="page" :lang="lang")
           Share(v-if="overlay === 'shareOverlay'" :url="overlayData.url" :title="overlayData.title")
       .actions
         button.close(@click="setOverlay('')")
-  //- HelloWorld(:msg="msg")
 </template>
 
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
 import { State, Action } from "vuex-class";
 import uniq from "lodash/uniq";
-// import localforage from "localforage";
 import Start from "./views/Start.vue";
 import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
@@ -80,20 +77,6 @@ export default class App extends Vue {
       warn("TEST: opening overlay ", testOverlay);
       this.setOverlay(testOverlay);
     }
-
-    // add import and export functionality for indexedDB for testing purposes
-    // localforage.config({ name: "vuex" });
-    // const store = localforage;
-    // console.log(store);
-    // window["exportDb"] = async () => {
-    //   const result: Array<Record<string, any>> = [];
-    //   console.log(await store.keys());
-    //   await store.iterate((value, key) => {
-    //     console.log(key, value);
-    //     result.push({ key, value });
-    //   });
-    //   return result;
-    // };
 
     // set root lang
     document.documentElement.lang = this.lang;

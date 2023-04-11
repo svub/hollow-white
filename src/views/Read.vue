@@ -72,11 +72,6 @@ export default class Read extends TextBase {
   mounted() {
     logRemote('read', 'init', `${this.position.chapter.id}_${this.position.section.id}`);
   }
-
-  // @Watch('position')
-  // pageChange() {
-  //   logRemote('read', 'page-change', `${this.position.chapter.id}_${this.position.section.id}`);
-  // }
 }
 </script>
 
