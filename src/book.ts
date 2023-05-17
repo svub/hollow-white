@@ -3701,7 +3701,7 @@ const book: Book = (({
      "elements": [
       {
        "type": "paragraph",
-       "text": "<p>»Das weiß leider niemand, nur dass damals an den Orten der <em>Verschwunden</em>&nbsp;seltsame Artefakte in Form kleiner Steinplatten aufgetaucht sind. Diese sogenannten <em>Splitter</em> werden im <em>Observatorium</em>&nbsp;etwas außerhalb der Stadt verwahrt.</p>"
+       "text": "<p>»Das weiß leider niemand, nur dass damals an den Orten der <em>Verschwundenen</em>&nbsp;seltsame Artefakte in Form kleiner Steinplatten aufgetaucht sind. Diese sogenannten <em>Splitter</em> werden im <em>Observatorium</em>&nbsp;etwas außerhalb der Stadt verwahrt.</p>"
       },
       {
        "type": "paragraph",
@@ -5596,7 +5596,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Dennoch gehen dir viele Frage durch den Kopf.</p>"
+       "text": "<p>Dennoch gehen dir viele Fragen durch den Kopf.</p>"
       },
       {
        "type": "paragraph",
@@ -6520,11 +6520,11 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Ihr folgt einem engen Gang, entlang dem hallenden Echo eurer Schritte.</p>"
+       "text": "<p>Ihr folgt einem engen Gang, entlang des hallenden Echos eurer Schritte.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>Der Unbekannte muss sich sichtlich bücken, damit er mit seinem Kopf nicht an die tiefe Decke anstößt. Obwohl er in eurem Alter zu sein scheint, wirkt er mit seiner strengen und kühlen Art älter und bedrohlich. Ihr sagt nichts. Nach einigen Metern geht es paar Treppenstufen hinauf und ihr betretet einen Keller mit vielen Büchern und alten antiken Möbel.</p>"
+       "text": "<p>Der Unbekannte muss sich sichtlich bücken, damit er mit seinem Kopf nicht an die tiefe Decke anstößt. Obwohl er in eurem Alter zu sein scheint, wirkt er mit seiner strengen und kühlen Art älter und bedrohlich. Ihr sagt nichts. Nach einigen Metern geht es paar Treppenstufen hinauf und ihr betretet einen Keller mit vielen Büchern und alten antiken Möbeln.</p>"
       },
       {
        "type": "paragraph",
@@ -6709,7 +6709,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Viele Monate müssen dort vergangenen sein, ich kann mich an diese Zeit kaum erinnern. Ich wurde sofort unter starke Medikamente gesetzt und war lange Zeit nicht bei Bewusstsein.«</p>"
+       "text": "<p>Viele Monate müssen dort vergangen sein, ich kann mich an diese Zeit kaum erinnern. Ich wurde sofort unter starke Medikamente gesetzt und war lange Zeit nicht bei Bewusstsein.«</p>"
       },
       {
        "type": "paragraph",
@@ -6814,11 +6814,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Als ihr unten das Wohnzimmer betretet, sitzt Charlie auf einem der Sessel und blättert in einem alten Buch. Er sieht nicht ganz so munter wie sonst aus. Hinter euch kommt Cara rein.</p>"
+       "text": "<p>Als ihr unten das Wohnzimmer betretet, sitzt Charlie auf einem der Sessel und blättert in einem alten Buch. Dunkle Ringe zeichnen sich unter seinen Augen. Er wirkt müder als sonst.</p>"
       },
       {
        "type": "paragraph",
-       "text": "<p>»Guten Morgen Charles«, grinst Cara. »Wie war dein freier Abend gestern? Kann es sein, dass du erst heute früh zurückgekommen bist?« Charlie schenkt Cara ein gequältes Lächeln und verlässt das Wohnzimmer.</p>"
+       "text": "<p>Hinter euch kommt Cara rein.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>»Guten Morgen Charles«, grinst Cara. »Wie war dein Abend gestern? Ging ganz schön lang?« Charlie schenkt Cara ein geheimnisvolles Lächeln und verlässt das Wohnzimmer.</p>"
+      },
+      {
+       "type": "addItem",
+       "id": "takodavibe"
       },
       {
        "type": "paragraph",
@@ -13342,7 +13350,7 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>Du nimmst deinen ganzen Mut zusammen und drehst dich um. Nichts. Mit langsamen Schritten näherst du dich einer großen Tanne, bleibst hinter dem Stamm stehen und lauscht. Es ist vollkommen still. Als du zur Seite blickst, siehst du plötzlich einen schnellen Blitz an dir vorbeiflitzen. Du verlierst das Gleichgewicht und landest im Schnee. Du traust deinen Augen nicht.</p>"
+       "text": "<p>Du nimmst deinen ganzen Mut zusammen und drehst dich um. Nichts. Mit langsamen Schritten näherst du dich einer großen Tanne, bleibst hinter dem Stamm stehen und lauschst. Es ist vollkommen still. Als du zur Seite blickst, siehst du plötzlich einen schnellen Blitz an dir vorbeiflitzen. Du verlierst das Gleichgewicht und landest im Schnee. Du traust deinen Augen nicht.</p>"
       },
       {
        "type": "paragraph",
@@ -15718,11 +15726,6 @@ const book: Book = (({
      ],
      "next": [
       {
-       "title": "Hollow White mit anderen teilen",
-       "id": "share",
-       "data": "https://hollowwhite.de"
-      },
-      {
        "title": "Jetzt aktiv werden",
        "chapterId": "13",
        "sectionId": "003"
@@ -15853,10 +15856,6 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "<p>Marina Siciliano</p>"
-    },
-    {
-     "type": "paragraph",
      "text": "<p>Ben Regali</p>"
     },
     {
@@ -15886,10 +15885,6 @@ const book: Book = (({
     {
      "type": "paragraph",
      "text": "<p>Michael Heller</p>"
-    },
-    {
-     "type": "paragraph",
-     "text": "<p>Christian Wussow</p>"
     },
     {
      "type": "paragraph",
@@ -16302,6 +16297,22 @@ const book: Book = (({
     ]
    },
    {
+    "id": "takodavibe",
+    "mediaType": "audio",
+    "mediaUrl": "/assets/items/takoda-vibe-cyberpan.mp3",
+    "title": "Takoda Vibe",
+    "elements": [
+     {
+      "type": "paragraph",
+      "text": "<p>Ein Künstler der im Nachtleben von <em>Snow Peaks</em>&nbsp;immer wieder bei geheimen Veranstaltungen in Clubs auftritt.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Mehr zu <a href=\"https://soundcloud.com/takoda_vibe/popular-tracks\" rel=\"noopener noreferrer\" target=\"_blank\">Takoda Vibe</a> erfahren.</p>"
+     }
+    ]
+   },
+   {
     "id": "ink",
     "category": "",
     "title": "Tinte",
@@ -16319,7 +16330,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p><em>Roses Zimmerschlüssel</em>, &nbsp;der von ihrem Kater Platon verwahrt wird. Ein sehr gemütliches Tier.</p>"
+      "text": "<p><em>Roses Zimmerschlüssel</em>, der von ihrem Kater Platon verwahrt wird. Ein sehr gemütliches Tier.</p>"
      }
     ]
    },
