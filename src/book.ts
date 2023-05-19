@@ -16308,7 +16308,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Ein talentierter Musiker, der im Nachtleben von <em>Snow Peaks</em>&nbsp;regelmäßig&nbsp;im <em>Nachtflug</em>&nbsp;auflegt. Bunte Lichter, laute Musik, tanzende Menschen in einem stillgelegten Flugzeughangar abseits der Stadt. Die mitreißende Stimmung und dichte Atmosphäre in den unterirdischen Gemäuern lässt die Angst für einen kurzen Moment vergessen. Mehr zu <a href=\"https://soundcloud.com/takoda_vibe/popular-tracks\" rel=\"noopener noreferrer\" target=\"_blank\">Takoda&nbsp;Vibe</a>.</p>"
+      "text": "<p>Ein talentierter Musiker, der im Nachtleben von <em>Snow Peaks</em>&nbsp;regelmäßig&nbsp;im <em>Nachtflug</em>&nbsp;auflegt. Bunte Lichter, laute Musik, tanzende Menschen in einem stillgelegten Flugzeughangar abseits der Stadt.&nbsp;Mehr&nbsp;zu <a href=\"https://soundcloud.com/takoda_vibe/popular-tracks\" rel=\"noopener noreferrer\" target=\"_blank\">Takoda Vibe</a>.</p>"
      }
     ]
    },
