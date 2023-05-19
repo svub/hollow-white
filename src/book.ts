@@ -16303,7 +16303,7 @@ const book: Book = (({
    {
     "id": "takodavibe",
     "mediaType": "audio",
-    "mediaUrl": "/assets/items/takoda-vibe-cyberpan.mp3",
+    "mediaUrl": "/assets/items/takoda-vibe-vibe-inside-me.mp3",
     "title": "Takoda Vibe",
     "elements": [
      {
