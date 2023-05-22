@@ -6822,11 +6822,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Guten Morgen Charles«, grinst Cara. »Wie war dein Abend gestern? Ging ganz schön lang?« Charlie schenkt Cara ein geheimnisvolles Lächeln und verlässt das Wohnzimmer.</p>"
+       "text": "<p>»Guten Morgen Charles«, grinst Cara.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>»Es muss ganz schön spät geworden sein. Wie war dein Abend im <em>Nachtflug</em>?«</p>"
       },
       {
        "type": "addItem",
        "id": "takodavibe"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Charlie schenkt Cara ein geheimnisvolles Lächeln und verlässt wortlos das Wohnzimmer.</p>"
       },
       {
        "type": "paragraph",
