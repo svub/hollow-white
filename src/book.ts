@@ -487,6 +487,10 @@ const book: Book = (({
        "text": "<p>Hektisch reißt du das Lenkrad zur Seite. Das Fahrzeug kommt ins Rutschen und du verlierst jegliche Kontrolle. Über einen Schneehügel hinweg dreht sich das Auto zur Seite, überschlägt sich mehrfach und landet völlig demoliert mit zersplitterten Scheiben abseits der Straße im Schnee. Du spürst noch die harten Schläge, bevor es dir schwarz vor Augen wird.</p>"
       },
       {
+       "type": "addItem",
+       "id": "undying"
+      },
+      {
        "type": "paragraph",
        "text": "<p>Du öffnest langsam deine Augen.</p>"
       },
@@ -6822,11 +6826,19 @@ const book: Book = (({
       },
       {
        "type": "paragraph",
-       "text": "<p>»Guten Morgen Charles«, grinst Cara. »Wie war dein Abend gestern? Ging ganz schön lang?« Charlie schenkt Cara ein geheimnisvolles Lächeln und verlässt das Wohnzimmer.</p>"
+       "text": "<p>»Guten Morgen Charles«, grinst Cara.</p>"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>»Es muss ganz schön spät geworden sein. Wie war dein Abend im <em>Nachtflug</em>?«</p>"
       },
       {
        "type": "addItem",
        "id": "takodavibe"
+      },
+      {
+       "type": "paragraph",
+       "text": "<p>Charlie schenkt Cara ein geheimnisvolles Lächeln und verlässt wortlos das Wohnzimmer.</p>"
       },
       {
        "type": "paragraph",
@@ -15816,11 +15828,15 @@ const book: Book = (({
     },
     {
      "type": "paragraph",
-     "text": "<p><a href=\"https://maeviamusic.com/\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a></p>"
+     "text": "<p><a href=\"https://maeviamusic.com\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a></p>"
     },
     {
      "type": "paragraph",
      "text": "<p><a href=\"https://soundcloud.com/takoda_vibe/popular-tracks\" rel=\"noopener noreferrer\" target=\"_blank\">Takoda Vibe</a></p>"
+    },
+    {
+     "type": "paragraph",
+     "text": "<p><a href=\"https://www.aweckesser.com\" rel=\"noopener noreferrer\" target=\"_blank\">A. Weckesser</a></p>"
     },
     {
      "type": "paragraph",
@@ -16044,7 +16060,23 @@ const book: Book = (({
      },
      {
       "type": "paragraph",
-      "text": "<p>Ein Plattenspieler am Empfang spielt Musik. Mehr zur Band <a href=\"https://maeviamusic.com/\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a> erfahren.</p>"
+      "text": "<p>Ein Plattenspieler am Empfang spielt Musik. Mehr zu <a href=\"https://maeviamusic.com/\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a> erfahren.</p>"
+     }
+    ]
+   },
+   {
+    "id": "undying",
+    "mediaType": "audio",
+    "mediaUrl": "/assets/items/weckesser-undying.mp3",
+    "title": "Unsterblich",
+    "elements": [
+     {
+      "type": "paragraph",
+      "text": "<p>Getragen vom Willen des Überlebens, auf den <em>unsterblichen</em>&nbsp;Klängen der Unendlichkeit, schlägst du die Augen wieder auf.</p>"
+     },
+     {
+      "type": "paragraph",
+      "text": "<p>Mehr zu <a href=\"https://www.aweckesser.com\" rel=\"noopener noreferrer\" target=\"_blank\">A. Weckesser</a> erfahren.</p>"
      }
     ]
    },
@@ -16443,7 +16475,7 @@ const book: Book = (({
     "elements": [
      {
       "type": "paragraph",
-      "text": "<p>Mehr zur Band <a href=\"https://maeviamusic.com/\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a> erfahren.</p>"
+      "text": "<p>Mehr zu <a href=\"https://maeviamusic.com/\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a> erfahren.</p>"
      }
     ]
    },
