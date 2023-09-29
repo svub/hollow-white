@@ -1,6 +1,9 @@
 export interface HasElements {
   elements: Element[];
 }
+export function hasElements(element: any): element is HasElements {
+  return (element as HasElements).elements !== undefined;
+}
 
 // generics
 export interface Entity {
@@ -131,6 +134,7 @@ export type Element = {
 export interface Paragraph extends Element {
   type: ElementType.paragraph;
   text: string;
+id: string;
 }
 
 export interface If extends Element, HasElements {
