@@ -113,6 +113,7 @@ export interface Config {
   language?: string; // default 'en'
   pageScrollUpDelay?: number; // delay to allow for page change animations
   fullscreen?: boolean;
+  readOutLoud: boolean;
 }
 
 // text elements
@@ -125,6 +126,7 @@ export enum ElementType {
   removeItem = 'removeItem',
   state = 'state',
   style = 'style',
+  image = 'image',
 }
 
 export type Element = {
@@ -134,7 +136,7 @@ export type Element = {
 export interface Paragraph extends Element {
   type: ElementType.paragraph;
   text: string;
-id: string;
+  index: number;
 }
 
 export interface If extends Element, HasElements {
@@ -167,3 +169,10 @@ export interface Style extends Element, HasElements {
   type: ElementType.style;
   classes: string;
 }
+
+export interface Image extends Element {
+  type: ElementType.image;
+  id: string;
+  alt?: string;
+}
+
