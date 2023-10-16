@@ -5,6 +5,8 @@ rebase-app.sh
 states.txt
 dist-esnext
 test
+*.ignore.*
+*.ignore/*
 
 # local env files
 .env.local
