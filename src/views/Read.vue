@@ -4,7 +4,9 @@
     button.back(@click="page('start')")
     .menu
       button.feedback-mode(v-if="feedbackEnabled" @click="overlay('feedbackMode')")
-      button.playback(v-if="config.readOutLoud" @click="startPlayback()")
+      button.playback(v-if="config.readOutLoud" 
+        :class="{ playing: player.playing }" 
+        @click="player.playing ? stopPlayback() : startPlayback()")
       button.items(v-if="config.items && itemCount > 0" @click="overlay('items')")
       button.chapters(@click="overlay('chapters')")
       button.options(@click="overlay('options')")
@@ -25,7 +27,7 @@
             @click="open(link)"
             :disabled="!enabled(link)"
             :class="{ selected: selected(link) }") {{ link.title }}
-  .playback(v-if="playback")
+  .playback(v-if="player.playing")
     button.stop(@click="stopPlayback()")
     button.play(:class="{ playing: player.playing }" @click="player.toggle()")
     button.speed(@click="switchSpeed()") {{ playbackSpeed }}   
@@ -67,7 +69,7 @@ export default class Read extends TextBase {
   currentParagraphId!: string;
   config = book.config;
   player = new Player('/assets/audio/', true);
-  playback = false;
+  // playback = false;
   playbackSpeed = '';
 
   enabled(link: Link | SpecialLink): boolean {
