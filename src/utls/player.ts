@@ -5,10 +5,12 @@ export default class Player {
   private list: string[] = [];
   private current = 0;
   private folder: string;
+  private autoplay = false;
 
   constructor(rootFolder: string, autoplay = true) {
+    this.autoplay = autoplay;
     this.audio = new Audio();
-    this.audio.autoplay = autoplay;
+    this.audio.autoplay = true;
     this.audio.addEventListener('ended', () => {
       if (this.current < this.list.length -1){
         this.current++
@@ -24,7 +26,7 @@ export default class Player {
   set playlist(list: string[]) {
     this.current = 0
     this.list = list;
-    if (this.audio.autoplay) this.play();
+    if (this.autoplay) this.play();
     else this.pause();
   }
 
@@ -35,11 +37,10 @@ export default class Player {
   async play() {
     this.audio.src = this.folder + this.list[this.current];
     log('Player.play', this.audio.src);
-    if (!this.audio.autoplay) await this.audio.play();
   }
 
   pause() {
-    this.audio.pause();
+    if (this.playing) this.audio.pause();
   }
 
   toggle() {
