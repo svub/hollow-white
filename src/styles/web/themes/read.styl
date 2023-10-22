@@ -27,9 +27,7 @@
         margin-right -9px
 
   .content
-
     .section
-
       .title .position
         @extends h5
         color var(--textColor)
@@ -46,6 +44,9 @@
           p // showdown sometimes generates p tags inside, hide them
             margin 0
             display inline
+          &.paragraph.current
+            &, & p
+              color: var(--currentParagraph)
 
         .style
           &.note-black p
@@ -144,3 +145,44 @@
 
             &:not(:first-child)
               margin-top gap
+
+
+  .player
+    flex-row()
+    position fixed
+    bottom 0
+    width "calc(%s - 2rem)" % maxWidth
+    z-index 3
+    justify-content space-between
+    padding 60px
+    background @css { linear-gradient(rgba(var(--bgColorRgb), 0), var(--bgColor)) }
+    pointer-events none
+    duration = .8s
+    &.overlay-enter-active, &.overlay-leave-active
+      animation-name overlay
+      animation-duration duration
+    &.overlay-leave-active
+      animation-direction reverse
+
+    diameter = toRem(35)
+
+    button
+      width diameter
+      height diameter
+      border-radius (diameter/2)
+      background var(--bgColorInverse)
+      pointer-events auto
+      text-align center
+
+      &.stop
+        asset('player-stop.svg', diameter, diameter)
+      &.play
+        asset('player-pause.svg', diameter, diameter)
+        &.paused
+          asset('player-play.svg', diameter, diameter)
+      &.speed
+        font-size toRem(14)
+        color var(--fgColorInverse)
+
+main.player-open
+  perspective none

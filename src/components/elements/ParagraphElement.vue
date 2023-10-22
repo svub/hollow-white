@@ -1,10 +1,11 @@
 <template lang="pug">
-p.paragraph(v-html="element.text")
+p.paragraph(v-html="element.text" :class="{ current }")
 </template>
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
 import { Paragraph } from "../../shared/entities";
 import { log } from "@/shared/util";
+import { State } from "vuex-class";
 
 const map = new Map<number, Paragraph>();
 let trace = true;
@@ -27,6 +28,7 @@ export function enableVisibleParagraphTracing(enable = true) {
 })
 export default class ParagraphElement extends Vue {
   @Prop(Object) element!: Paragraph;
+  @State paragraph;
 
   mounted() {
     if (trace) {
@@ -38,6 +40,19 @@ export default class ParagraphElement extends Vue {
   beforeUnmount() {
     log('paragraph map: remove ', this.element.index);
     map.delete(this.element.index);
+  }
+
+  get current() {
+    const isCurrent = `` + this.element.index == this.paragraph;
+    if (isCurrent && this.$el) {
+      const elementRect = this.$el.getBoundingClientRect();
+      const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+
+      if (elementRect.bottom > viewHeight) {
+        this.$el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    return isCurrent;
   }
 }
 </script>

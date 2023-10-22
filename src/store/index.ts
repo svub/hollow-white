@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import createPersistedState from "vuex-persist-indexeddb";
+import { getField, updateField } from 'vuex-map-fields';
 import { Chapter, Link, Reference, Section, State, ChangeState, AddItem, RemoveItem, Option, Choice, Overlays, SpecialLink, isSpecialLink } from '../shared/entities';
 import { equal, warn, logJson, log, error } from '../shared/util';
-import createPersistedState from "vuex-persist-indexeddb";
 import book from '@/book';
 import { scrollContainer, scrollUpThen } from '@/utls/scroll';
 import logRemote from '@/utls/logRemote';
@@ -23,12 +24,13 @@ export type Items = string[];
 export type States = { [id: string]: State };
 export interface BookState {
   position: Reference | null;
+  paragraph: string;
   path: Array<Reference>;
   items: string[]; // item IDs
   states: States;
 }
 
-export interface AppState extends Settings, BookState {}
+export interface AppState extends Settings, BookState { }
 
 export function inPath(link: Reference | Link, path: Array<Reference>): boolean {
   return !!path.find(pathItem => pathItem.chapterId === link.chapterId && pathItem.sectionId === link.sectionId);
@@ -47,6 +49,7 @@ function initialSettings(): Settings {
 function initialBookState(): BookState {
   return {
     position: null,
+    paragraph: '',
     path: [],
     items: [],
     states: {},
@@ -75,7 +78,7 @@ export default new Vuex.Store({
     page(state, { page }) {
       state.page = page;
     },
-    overlay(state, { overlay, data}: { overlay: string; data: any | undefined }) {
+    overlay(state, { overlay, data }: { overlay: string; data: any | undefined }) {
       state.overlay = overlay;
       state.overlayData = data;
     },
@@ -108,10 +111,10 @@ export default new Vuex.Store({
     },
     addItem(state, { item }: { item: AddItem }) {
       if (state.items.includes(item.id)) {
-        return log(`addItem: item ${ item.id } already in inventory`);
+        return log(`addItem: item ${item.id} already in inventory`);
       }
       if (!book.config.items.find(i => i.id === item.id)) {
-        return error(`Definition for item ${ item.id } not found!`, book.config.items);
+        return error(`Definition for item ${item.id} not found!`, book.config.items);
       }
       // Vue.set(state.items, itemDefinition.id, itemDefinition);
       state.items.push(item.id);
@@ -119,7 +122,7 @@ export default new Vuex.Store({
     removeItem(state, { item }: { item: RemoveItem }) {
       const index = state.items.indexOf(item.id);
       if (index < 0) {
-        return warn(`removeItem: item ${ item.id } not in inventory`);
+        return warn(`removeItem: item ${item.id} not in inventory`);
       }
       // TODO is it enough to just remove the item? or do I need to recreate the map?
       // Vue.delete(state.items, item.id);
@@ -139,6 +142,7 @@ export default new Vuex.Store({
         state[field] = initial[field];
       }
     },
+    updateField,
   },
   actions: {
     page({ commit }, page) {
@@ -211,6 +215,7 @@ export default new Vuex.Store({
       // return Object.values(items).length; // NOTE maybe was a relict of when items was an array of item objects, keyed by their ID?
       return items.length;
     },
+    getField,
   },
   modules: {
   },

@@ -35,7 +35,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Watch } from "vue-property-decorator";
+import { Component } from "vue-property-decorator";
 import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
 import { mapFields } from 'vuex-map-fields';
@@ -47,13 +47,18 @@ import { TextBase } from "@/utls/TextBase";
 import logRemote from "@/utls/logRemote";
 import { getVisibleParagraphs, resetVisibleParagraphs } from "@/components/elements/ParagraphElement.vue";
 import { paragraphFilename, titleFilename, decisionFilename } from "../shared/audio";
-import { warn, log } from "@/shared/util";
+import { warn, log, logRaw } from "@/shared/util";
+
+type PlaylistItem = {
+  filename: string;
+  paragraph: string;
+}
 
 @Component({
   name: "Read",
   components: { TextElement },
   computed: {
-    ...mapFields(['currentParagraphId',]),
+    ...mapFields(['paragraph',]),
   },
 })
 export default class Read extends TextBase {
@@ -61,6 +66,7 @@ export default class Read extends TextBase {
   @State items!: Items;
   @State("overlay") currentOverlay;
   @State("page") currentPage;
+  // @State paragraph;
   @Action page!: Function;
   @Action goto!: Function;
   @Action overlay!: Function;
@@ -68,7 +74,7 @@ export default class Read extends TextBase {
   @Getter position!: Position;
   @Getter feedbackEnabled!: boolean;
   @Getter itemCount!: number;
-  currentParagraphId!: string;
+  paragraph!: string;
   config = book.config;
   rootFolder = '/assets/audio/';
   audio = new Audio();
@@ -77,7 +83,7 @@ export default class Read extends TextBase {
   paused = true;
   current = 0;
   playbackSpeed = '1.0';
-  playlist: string[] = [];
+  playlist: PlaylistItem[] = [];
 
   enabled(link: Link | SpecialLink): boolean {
     // enabled if: decision taken before (in path); or if last in progress == current (any decision possible)
@@ -144,7 +150,9 @@ export default class Read extends TextBase {
   }
 
   async playTrack() {
-    this.audio.src = this.rootFolder + this.playlist[this.current];
+    const item = this.playlist[this.current];
+    this.audio.src = this.rootFolder + item.filename;
+    this.paragraph = item.paragraph;
     this.audio.playbackRate = parseFloat(this.playbackSpeed);
     this.paused = false;
     log('Read.playTrack', this.audio.src);
@@ -178,15 +186,18 @@ export default class Read extends TextBase {
     return this.player && !this.currentOverlay;
   }
 
-  createPlaylist() {
+  createPlaylist(): PlaylistItem[] {
     const chapterId = this.position.chapter.id;
     const sectionId = this.position.section.id;
-    return [titleFilename(chapterId, sectionId),
+    const makeItem = (filename: string, paragraph: string) => ({ filename, paragraph });
+
     // TODO make jingle configurable
-    ...getVisibleParagraphs().map(paragraph => paragraphFilename(chapterId, sectionId, paragraph.index)),
-      'before-decision-jingle.mp3',
-    decisionFilename(chapterId, sectionId)
-    ];
+    return logRaw('Read.createPlaylist', [
+      makeItem(titleFilename(chapterId, sectionId), 'title'),
+      ...getVisibleParagraphs().map(p => makeItem(paragraphFilename(chapterId, sectionId, p.index), '' + p.index)),
+      makeItem('before-decision-jingle.mp3', 'jingle'),
+      makeItem(decisionFilename(chapterId, sectionId), 'decision'),
+    ]);
   }
 
   switchSpeed() {
