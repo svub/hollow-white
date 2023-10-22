@@ -1,5 +1,5 @@
 export async function tryPromise<T>(fn: () => Promise<T>, defaultValue: T): Promise<T> {
-  let r;
+  let r: T;
   try {
     do {
       r = await fn();

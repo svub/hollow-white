@@ -1,11 +1,11 @@
 <template lang="pug">
 .feedback-mode
   .state
-    h3
-    p
+    h3 Feedback
+    p For giving feedback or reporting issues, please include the following text as is.
     textarea {{ stateString }}
 
-  a.feedback-link(:href="config.feedbackLink")
+  a.feedback-link(v-if="config.feedbackMode && config.feedbackMode.enabled" :href="config.feedbackMode.feedbackLink") Feedback link
 </template>
 
 <script lang="ts">
@@ -17,7 +17,7 @@ import book from '../../book';
   components: {}
 })
 export default class FeedbackMode extends Vue {
-  private config = book.config;
+  config = book.config;
 
   get stateString(): string {
     return JSON.stringify(this.$store.state, undefined, ' ');
