@@ -1,18 +1,18 @@
 <template lang="pug">
 .page.read(:class="`chapter-${position.chapter.id} section-${position.section.id}${isFirst ? ' first-section' : ''}`")
   nav
-    button.back(@click="page('start')")
+    button.back(@click="endReading()")
     .menu
       button.feedback-mode(v-if="feedbackEnabled" @click="overlay('feedbackMode')")
       button.playback(v-if="config.readOutLoud" 
-        :class="{ playing: player.playing }" 
-        @click="player.playing ? stopPlayback() : startPlayback()")
+        :class="{ playing: playback }" 
+        @click="playback ? stopPlayback() : startPlayback()")
       button.items(v-if="config.items && itemCount > 0" @click="overlay('items')")
       button.chapters(@click="overlay('chapters')")
       button.options(@click="overlay('options')")
 
   .content
-    transition(name="section" mode="out-in")
+    transition(name="section" mode="out-in" v-on:after-enter="sectionChanged")
       .section(:key="`${position.chapter.id}-${position.section.id}`")
         .title
           .position(v-if="feedbackEnabled") {{ position.chapter.id }}-{{ position.section.id }}
@@ -27,14 +27,15 @@
             @click="open(link)"
             :disabled="!enabled(link)"
             :class="{ selected: selected(link) }") {{ link.title }}
-  .playback(v-if="player.playing")
-    button.stop(@click="stopPlayback()")
-    button.play(:class="{ playing: player.playing }" @click="player.toggle()")
-    button.speed(@click="switchSpeed()") {{ playbackSpeed }}   
+  transition(name="overlay" appear)
+    .player(v-if="playerVisible")
+      button.stop(@click="stopPlayback()")
+      button.play(:class="{ paused }" @click="togglePlayPause()")
+      button.speed(@click="switchSpeed()") {{ playbackSpeed }}   
 </template>
 
 <script lang="ts">
-import { Component } from "vue-property-decorator";
+import { Component, Watch } from "vue-property-decorator";
 import { State, Action, Getter } from "vuex-class";
 import last from "lodash/last";
 import { mapFields } from 'vuex-map-fields';
@@ -46,8 +47,7 @@ import { TextBase } from "@/utls/TextBase";
 import logRemote from "@/utls/logRemote";
 import { getVisibleParagraphs, resetVisibleParagraphs } from "@/components/elements/ParagraphElement.vue";
 import { paragraphFilename, titleFilename, decisionFilename } from "../shared/audio";
-import Player from '@/utls/player';
-import { log, logRaw } from "@/shared/util";
+import { warn, log } from "@/shared/util";
 
 @Component({
   name: "Read",
@@ -59,6 +59,8 @@ import { log, logRaw } from "@/shared/util";
 export default class Read extends TextBase {
   @State path!: Reference[];
   @State items!: Items;
+  @State("overlay") currentOverlay;
+  @State("page") currentPage;
   @Action page!: Function;
   @Action goto!: Function;
   @Action overlay!: Function;
@@ -68,9 +70,14 @@ export default class Read extends TextBase {
   @Getter itemCount!: number;
   currentParagraphId!: string;
   config = book.config;
-  player = new Player('/assets/audio/', true);
-  // playback = false;
-  playbackSpeed = '';
+  rootFolder = '/assets/audio/';
+  audio = new Audio();
+  player = false;
+  playback = false;
+  paused = true;
+  current = 0;
+  playbackSpeed = '1.0';
+  playlist: string[] = [];
 
   enabled(link: Link | SpecialLink): boolean {
     // enabled if: decision taken before (in path); or if last in progress == current (any decision possible)
@@ -90,11 +97,37 @@ export default class Read extends TextBase {
 
   mounted() {
     logRemote('read', 'init', `${this.position.chapter.id}_${this.position.section.id}`);
+    this.playlist = this.createPlaylist();
+    this.audio.autoplay = true;
+    this.audio.addEventListener('ended', () => {
+      if (this.current < this.playlist.length - 1) {
+        this.current++
+        this.playTrack();
+      } else {
+        this.current = 0;
+        this.paused = true;
+        this.showPlayer(false);
+      }
+    });
+    this.audio.addEventListener('error', () => {
+      warn('Error playing audio:', this.playlist[this.current], this.audio.src);
+    });
   }
 
   beforeUpdate() {
     log('Read.beforeUpdate');
     resetVisibleParagraphs();
+  }
+
+  sectionChanged() {
+    // continue playing after section has changed
+    this.playlist = this.createPlaylist();
+    if (this.playback) this.startPlayback();
+  }
+
+  endReading() {
+    this.stopPlayback();
+    this.page('start');
   }
 
   open(link: Link | SpecialLink) {
@@ -104,19 +137,52 @@ export default class Read extends TextBase {
   }
 
   startPlayback() {
-    logRaw('playlist', this.player.playlist = this.createPlaylist());
+    this.current = 0;
+    this.playTrack();
     this.playback = true;
+    this.showPlayer();
+  }
+
+  async playTrack() {
+    this.audio.src = this.rootFolder + this.playlist[this.current];
+    this.audio.playbackRate = parseFloat(this.playbackSpeed);
+    this.paused = false;
+    log('Read.playTrack', this.audio.src);
   }
 
   stopPlayback() {
-    this.player.pause();
+    log('Read.stopPlayback');
+    if (!this.playback) return;
+    this.audio.pause();
     this.playback = false;
+    this.paused = true;
+    this.showPlayer(false);
+  }
+
+  async togglePlayPause() {
+    if (this.paused) {
+      this.paused = false;
+      await this.audio.play();
+    } else {
+      this.audio.pause();
+      this.paused = true;
+    }
+  }
+
+  showPlayer(show = true) {
+    this.player = show;
+    document.getElementsByTagName('main').item(0)!.classList.toggle('player-open', show);
+  }
+
+  get playerVisible() {
+    return this.player && !this.currentOverlay;
   }
 
   createPlaylist() {
     const chapterId = this.position.chapter.id;
     const sectionId = this.position.section.id;
     return [titleFilename(chapterId, sectionId),
+    // TODO make jingle configurable
     ...getVisibleParagraphs().map(paragraph => paragraphFilename(chapterId, sectionId, paragraph.index)),
       'before-decision-jingle.mp3',
     decisionFilename(chapterId, sectionId)
@@ -126,7 +192,7 @@ export default class Read extends TextBase {
   switchSpeed() {
     const speeds = ['1.0', '1.2', '1.5', '2.0', '0.5', '0.8'];
     this.playbackSpeed = speeds[(speeds.indexOf(this.playbackSpeed) + 1) % speeds.length];
-    this.player.speed = parseFloat(this.playbackSpeed);
+    this.audio.playbackRate = parseFloat(this.playbackSpeed);
   }
 }
 </script>
