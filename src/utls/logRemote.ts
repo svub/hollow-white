@@ -28,10 +28,10 @@ export const userId = (async () => {
 declare const gtag: Function;
 let gTagConfig: Function | undefined = async () => {
   // GA and gTag do not respect user settings -> disable all cookies by hacking the JS env
-  Object.defineProperty(document, 'cookie', {
-    get: function () { return ''; },
-    set: function (c) { console.log('Nope', c); }
-  });
+  // Object.defineProperty(document, 'cookie', {
+  //   get: function () { return ''; },
+  //   set: function (c) { console.log('Nope', c); }
+  // });
   gtag('config', 'G-3L6KHGSJ1H');
   // gtag('config', ID, {
   //   /* eslint-disable @typescript-eslint/camelcase */
