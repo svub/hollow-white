@@ -50,6 +50,8 @@ let gTagConfig: Function | undefined = async () => {
   // });
   // https://developers.google.com/tag-platform/gtagjs/reference#consent
   // https://support.google.com/tagmanager/answer/10718549?hl=en&ref_topic=3002579&sjid=1684707288604651277-EU
+  // 
+  /* eslint-disable */
   gtag('consent', 'update', {
     ad_storage: 'denied',
     analytics_storage: 'denied',
@@ -57,6 +59,7 @@ let gTagConfig: Function | undefined = async () => {
     personalization_storage: 'denied',
     security_storage: 'denied',
   });
+  /* eslint-enable */
   gTagConfig = undefined;
 };
 async function googleTag(category: string, action: string, label: string) {
@@ -64,6 +67,7 @@ async function googleTag(category: string, action: string, label: string) {
   category = encodeURIComponent(category);
   action = encodeURIComponent(action);
   label = encodeURIComponent(label);
+  /* eslint-disable */
   gtag('event', 'page_view', {
     page_location: category + '_' + action,
     page_title: label,
@@ -71,6 +75,7 @@ async function googleTag(category: string, action: string, label: string) {
     action,
     label,
   });
+  /* eslint-enable */
   gtag('event', 'c-' + category, {
     category,
     action,
