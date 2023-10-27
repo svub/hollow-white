@@ -32,6 +32,7 @@ let gTagConfig: Function | undefined = async () => {
     get: function () { return ''; },
     set: function (c) { console.log('Nope', c); }
   });
+  await gtag('config', 'G-3L6KHGSJ1H');
   // gtag('config', ID, {
   //   /* eslint-disable @typescript-eslint/camelcase */
   //   client_id: await userId,
@@ -52,7 +53,7 @@ let gTagConfig: Function | undefined = async () => {
   // https://support.google.com/tagmanager/answer/10718549?hl=en&ref_topic=3002579&sjid=1684707288604651277-EU
   // 
   /* eslint-disable */
-  gtag('consent', 'update', {
+  await gtag('consent', 'update', {
     ad_storage: 'denied',
     analytics_storage: 'denied',
     functionality_storage: 'denied',
