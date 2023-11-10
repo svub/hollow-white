@@ -51,7 +51,7 @@ export type Specials = typeof Specials;
 export interface Book extends Title {
   subTitle?: string;
   chapters: Chapter[];
-  specials: {[id: string]: Section};
+  specials: { [id: string]: Section };
   config: Config;
 }
 
@@ -64,7 +64,7 @@ export interface Section extends HasElements, Entity, Title {
   next: (Link | SpecialLink)[];
 }
 
-export interface Link extends Title, Reference {}
+export interface Link extends Title, Reference { }
 
 export interface SpecialLink extends Title, Entity {
   data?: string;
@@ -137,6 +137,7 @@ export interface Paragraph extends Element {
   type: ElementType.paragraph;
   text: string;
   index: number;
+  hash: string;
 }
 
 export interface If extends Element, HasElements {
