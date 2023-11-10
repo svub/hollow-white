@@ -194,7 +194,7 @@ export default class Read extends TextBase {
     // TODO make jingle configurable
     return logRaw('Read.createPlaylist', [
       makeItem(titleFilename(chapterId, sectionId), 'title'),
-      ...getVisibleParagraphs().map(p => makeItem(paragraphFilename(chapterId, sectionId, p.index), '' + p.index)),
+      ...getVisibleParagraphs().map(p => makeItem(paragraphFilename(chapterId, sectionId, p.hash), '' + p.index)),
       makeItem('before-decision-jingle.mp3', 'jingle'),
       makeItem(decisionFilename(chapterId, sectionId), 'decision'),
     ]);

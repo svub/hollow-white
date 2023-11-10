@@ -1,5 +1,5 @@
-export function paragraphFilename(chapterId: string, sectionId: string, paragraphIndex: number, paragraphHash: string) {
-  return `${chapterId}-${sectionId}-paragraph-${paragraphIndex}-${paragraphHash}.mp3`
+export function paragraphFilename(chapterId: string, sectionId: string, paragraphHash: string) {
+  return `${chapterId}-${sectionId}-paragraph-${paragraphHash}.mp3`
 }
 
 
