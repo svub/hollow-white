@@ -22425,7 +22425,7 @@ const book: Book = (({
       {
         "id": "ship",
         "mediaType": "audio",
-        "mediaUrl": "/assets/items/RIVELAZIONE.mp3",
+        "mediaUrl": "/assets/items/rivelazione.mp3",
         "title": "Schiffchen",
         "elements": [
           {
