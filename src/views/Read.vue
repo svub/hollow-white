@@ -27,7 +27,7 @@
             @click="open(link)"
             :disabled="!enabled(link)"
             :class="{ selected: selected(link) }") {{ link.title }}
-  transition(name="overlay" appear)
+  transition(name="overlay" appear @after-leave="playerLeft")
     .player(v-if="playerVisible")
       button.stop(@click="stopPlayback()")
       button.play(:class="{ paused }" @click="togglePlayPause()")
@@ -47,7 +47,7 @@ import { TextBase } from "@/utls/TextBase";
 import logRemote from "@/utls/logRemote";
 import { getVisibleParagraphs, resetVisibleParagraphs } from "@/components/elements/ParagraphElement.vue";
 import { paragraphFilename, titleFilename, decisionFilename } from "../shared/audio";
-import { warn, log, logRaw } from "@/shared/util";
+import { warn, log, logRaw, waitFor } from "@/shared/util";
 
 type PlaylistItem = {
   filename: string;
@@ -177,9 +177,15 @@ export default class Read extends TextBase {
     }
   }
 
-  showPlayer(show = true) {
+  async showPlayer(show = true) {
     this.player = show;
-    document.getElementsByTagName('main').item(0)!.classList.toggle('player-open', show);
+    const main = document.getElementsByTagName('main').item(0)!;
+    if (show) main.classList.toggle('player-open', true);
+    // else -- see below
+  }
+
+  playerLeft() { // remove only after player was animated out
+    document.getElementsByTagName('main').item(0)!.classList.toggle('player-open', false);
   }
 
   get playerVisible() {
