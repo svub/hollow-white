@@ -37,12 +37,12 @@ assetx(src, suffix, resolutions = standardResolutions, w = false, h = false)
     {selector} &
       defaultImage = s("%s.%s", unquote(base), unquote(suffix)) 
       rawAsset(defaultImage, w, h) 
-      list = url(defaultImage) 1x, url() 1000x
-      pop(list) // remove dummy element -- TODO: is there a way to initialize "list" as CSV without the dummy element?
+      list = url(defaultImage) 1x, url(defaultImage) 1x
       for resolution in resolutions
         x = s("%sx", resolution)
         u = s("%s@%s.%s", unquote(base), x, unquote(suffix))
         push(list, url(u) x)
+      shift(list) // remove dummy element -- TODO: is there a way to initialize "list" as CSV without the dummy element?
       background-image -webkit-image-set(list)
       background-image image-set(list)
 
