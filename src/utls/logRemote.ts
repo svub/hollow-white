@@ -26,45 +26,45 @@ export const userId = (async () => {
 })();
 
 declare const gtag: Function;
-let gTagConfig: Function | undefined = async () => {
-  // GA and gTag do not respect user settings -> disable all cookies by hacking the JS env
-  // Object.defineProperty(document, 'cookie', {
-  //   get: function () { return ''; },
-  //   set: function (c) { console.log('Nope', c); }
-  // });
-  gtag('config', 'G-3L6KHGSJ1H');
-  // gtag('config', ID, {
-  //   /* eslint-disable @typescript-eslint/camelcase */
-  //   client_id: await userId,
-  //   send_page_view: true,
-  //   // all below seem to be ignored. Google does not provide any useful documentation
-  //   anonymize_ip: true, 
-  //   storage: 'none',
-  //   client_storage: 'none', // https://support.google.com/analytics/thread/39104158?hl=en&msgid=41685874
-  //   // from gTag source code
-  //   ad_storage: 'none', 
-  //   analytics_storage: 'none',
-  //   cookie_expires: 1,
-  //   // https://docs.tealium.com/client-side-tags/google-analytics-gtagjs-tag/
-  //   allow_google_signals: false, 
-  //   allow_ad_personalization_signals: false,
-  // });
-  // https://developers.google.com/tag-platform/gtagjs/reference#consent
-  // https://support.google.com/tagmanager/answer/10718549?hl=en&ref_topic=3002579&sjid=1684707288604651277-EU
-  // 
-  /* eslint-disable */
-  // await gtag('consent', 'update', {
-  //   ad_storage: 'denied',
-  //   analytics_storage: 'denied',
-  //   functionality_storage: 'denied',
-  //   personalization_storage: 'denied',
-  //   security_storage: 'denied',
-  // });
-  /* eslint-enable */
-  gTagConfig = undefined;
-};
+// let gTagConfig: Function | undefined = async () => {
+// GA and gTag do not respect user settings -> disable all cookies by hacking the JS env
+// Object.defineProperty(document, 'cookie', {
+//   get: function () { return ''; },
+//   set: function (c) { console.log('Nope', c); }
+// });
+// gtag('config', 'G-3L6KHGSJ1H');
+// gtag('config', ID, {
+//   /* eslint-disable @typescript-eslint/camelcase */
+//   client_id: await userId,
+//   send_page_view: true,
+//   // all below seem to be ignored. Google does not provide any useful documentation
+//   anonymize_ip: true, 
+//   storage: 'none',
+//   client_storage: 'none', // https://support.google.com/analytics/thread/39104158?hl=en&msgid=41685874
+//   // from gTag source code
+//   ad_storage: 'none', 
+//   analytics_storage: 'none',
+//   cookie_expires: 1,
+//   // https://docs.tealium.com/client-side-tags/google-analytics-gtagjs-tag/
+//   allow_google_signals: false, 
+//   allow_ad_personalization_signals: false,
+// });
+// https://developers.google.com/tag-platform/gtagjs/reference#consent
+// https://support.google.com/tagmanager/answer/10718549?hl=en&ref_topic=3002579&sjid=1684707288604651277-EU
+// 
+/* eslint-disable */
+// await gtag('consent', 'update', {
+//   ad_storage: 'denied',
+//   analytics_storage: 'denied',
+//   functionality_storage: 'denied',
+//   personalization_storage: 'denied',
+//   security_storage: 'denied',
+// });
+/* eslint-enable */
+//   gTagConfig = undefined;
+// };
 async function googleTag(category: string, action: string, label: string) {
-  if (gTagConfig) await gTagConfig();
+  // if (gTagConfig) await gTagConfig();
   category = encodeURIComponent(category);
   action = encodeURIComponent(action);
   label = encodeURIComponent(label);
