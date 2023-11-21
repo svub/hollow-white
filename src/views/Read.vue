@@ -164,6 +164,7 @@ export default class Read extends TextBase {
     this.audio.pause();
     this.playback = false;
     this.paused = true;
+    this.paragraph = '';
     this.showPlayer(false);
   }
 
