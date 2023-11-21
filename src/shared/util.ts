@@ -71,3 +71,9 @@ export function store(key: string, value: unknown) {
 export function parseBool(string = 'false', otherValueOptions: string[] = []): boolean {
   return ['true', 'yes', 'on', 'enabled', '1', ...otherValueOptions].indexOf(string.trim().toLocaleLowerCase()) >= 0;
 }
+
+export async function waitFor(millis: number) {
+  return new Promise(resolve => {
+    setTimeout(resolve, millis);
+  });
+}
