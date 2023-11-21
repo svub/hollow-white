@@ -34,6 +34,7 @@
         margin-bottom .5*gap
 
       .text
+
         p
           margin-bottom 1rem
 
@@ -76,10 +77,13 @@
           padding-left pad
           border-left pad solid var(--alert)
 
-        img.image {
-          margin-top: .4rem;
-          margin-bottom: 1.8rem;
-        }
+        .image-element
+          img.image 
+            margin-top .4rem
+            margin-bottom 1.8rem
+
+          &+.image-element
+            margin-top -1.6rem
 
       .next.links
         icon-width = 250px
