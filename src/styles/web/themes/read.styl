@@ -151,10 +151,12 @@
     flex-row()
     position fixed
     bottom 0
-    width "calc(%s - 2rem)" % maxWidth
+    pad = 60px
+    width "calc(%s - %s)" % (maxWidth pad)
+    // width calc(100% - 2rem)
     z-index 3
     justify-content space-between
-    padding 60px
+    padding pad
     background @css { linear-gradient(rgba(var(--bgColorRgb), 0), var(--bgColor)) }
     pointer-events none
     duration = .8s
