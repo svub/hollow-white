@@ -1,5 +1,6 @@
 @import '../../vars'
 @import '../../macros'
+@import './macros'
 
 .page.read
   nav
@@ -162,6 +163,7 @@
     }
     z-index 3
     justify-content space-between
+    align-items center
     padding pad
     background @css { linear-gradient(rgba(var(--bgColorRgb), 0), var(--bgColor)) }
     pointer-events none
@@ -185,10 +187,20 @@
       &.stop
         asset('player-stop.svg', diameter, diameter)
       &.play
-        asset('player-pause.svg', diameter, diameter)
-        &.paused
-          asset('player-play.svg', diameter, diameter)
+        // buttonOuter = diameter
+        // asset('player-pause.svg', diameter, diameter)
+        // &.paused
+        //   asset('player-play.svg', diameter, diameter)
           // move 2px to the right
+        &.progress 
+          background transparent
+          progressButton('player-pause.svg', var(--bgColorInverse), #61FFFF, diameter + toRem(15), diameter) 
+          &.paused 
+            // asset('player-play.svg', diameter, diameter)
+            progressButtonAsset('player-play.svg')
+          // &:not(.paused)
+          //   background transparent
+          //   progressButton('player-pause.svg', var(--bgColorInverse), #61FFFF, diameter + toRem(15), diameter) 
       &.speed
         font-size toRem(14)
         color var(--fgColorInverse)

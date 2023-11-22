@@ -1,0 +1,59 @@
+progressButton(assetFile, backgroundColor, barColor = #61FFFF, buttonOuter = 66px, buttonInner = buttonOuter*0.7676, buttonGap = ((buttonOuter - buttonInner) / 2), progressBarThickness = 5px) 
+  // buttonOuter = 66px unless lookup('buttonOuter')
+  // buttonInner = buttonOuter - 16px
+  // buttonGap = ((buttonOuter - buttonInner) / 2)
+  // progressBarThickness = 5px
+  --progress 0
+  buttonO buttonOuter
+  buttonI buttonInner
+  buttonG buttonGap
+  buttonBT progressBarThickness
+
+  position relative 
+  width buttonOuter
+  height @width
+  progressButtonAsset(assetFile)
+
+  &:before 
+    content ""
+    display block
+    position absolute
+    top buttonGap
+    left @top
+    width buttonInner
+    height @width
+    // asset(assetFile, buttonInner, buttonInner)
+    // background-color white
+    background-color backgroundColor
+    border-radius @width
+
+  .progress
+    width buttonOuter
+    height @width
+    position absolute
+    top 0
+    left @top
+    clip rect(0px, (buttonOuter + 1), buttonOuter, (buttonOuter / 2))
+
+    .circle
+      width buttonOuter
+      height @width
+      top 0
+      left @top
+      border progressBarThickness solid barColor
+      border-radius (buttonOuter / 2)
+      position absolute
+      clip rect(0px, (buttonOuter / 2), buttonOuter, 0px)
+      will-change transform
+      transition transform 200ms
+      transform rotate(calc(var(--progress) * 360deg))
+
+    &.beyondHalf
+      clip unset
+
+      .circle.right
+        transform rotate(180deg)
+
+progressButtonAsset(assetFile)
+  &:before 
+    asset(assetFile, buttonInner, buttonInner)

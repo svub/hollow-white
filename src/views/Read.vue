@@ -30,7 +30,7 @@
   transition(name="overlay" appear @after-leave="playerLeft")
     .player(v-if="playerVisible")
       button.stop(@click="stopPlayback()")
-      button.play(:class="{ paused }" @click="togglePlayPause()")
+      ProgressButton.play.progress(:class="{ paused }" @click.native="togglePlayPause()" :progress="progress")
       button.speed(@click="switchSpeed()") {{ playbackSpeed }}   
 </template>
 
@@ -48,6 +48,7 @@ import logRemote from "@/utls/logRemote";
 import { getVisibleParagraphs, resetVisibleParagraphs } from "@/components/elements/ParagraphElement.vue";
 import { paragraphFilename, titleFilename, decisionFilename } from "../shared/audio";
 import { warn, log, logRaw, waitFor } from "@/shared/util";
+import ProgressButton from "@/components/ProgressButton.vue";
 
 type PlaylistItem = {
   filename: string;
@@ -56,7 +57,7 @@ type PlaylistItem = {
 
 @Component({
   name: "Read",
-  components: { TextElement },
+  components: { TextElement, ProgressButton },
   computed: {
     ...mapFields(['paragraph',]),
   },
@@ -106,17 +107,11 @@ export default class Read extends TextBase {
     this.playlist = this.createPlaylist();
     this.audio.autoplay = true;
     this.audio.addEventListener('ended', () => {
-      if (this.current < this.playlist.length - 1) {
-        this.current++
-        this.playTrack();
-      } else {
-        this.current = 0;
-        this.paused = true;
-        this.showPlayer(false);
-      }
+      this.next();
     });
     this.audio.addEventListener('error', () => {
       warn('Error playing audio:', this.playlist[this.current], this.audio.src);
+      this.next();
     });
   }
 
@@ -178,6 +173,17 @@ export default class Read extends TextBase {
     }
   }
 
+  next() {
+    if (this.current < this.playlist.length - 1) {
+      this.current++
+      this.playTrack();
+    } else {
+      this.current = 0;
+      this.paused = true;
+      this.showPlayer(false);
+    }
+  }
+
   async showPlayer(show = true) {
     this.player = show;
     const main = document.getElementsByTagName('main').item(0)!;
@@ -212,7 +218,10 @@ export default class Read extends TextBase {
     this.playbackSpeed = speeds[(speeds.indexOf(this.playbackSpeed) + 1) % speeds.length];
     this.audio.playbackRate = parseFloat(this.playbackSpeed);
   }
+
+  get progress(): number {
+    if (!this.playback) return 0;
+    return (this.current + 1) / this.playlist.length;
+  }
 }
 </script>
-
-<style scoped lang="stylus"></style>
