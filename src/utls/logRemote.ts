@@ -32,7 +32,7 @@ declare const gtag: Function;
 //   get: function () { return ''; },
 //   set: function (c) { console.log('Nope', c); }
 // });
-// gtag('config', 'G-3L6KHGSJ1H');
+gtag('config', 'G-3L6KHGSJ1H');
 // gtag('config', ID, {
 //   /* eslint-disable @typescript-eslint/camelcase */
 //   client_id: await userId,
@@ -85,7 +85,7 @@ async function googleTag(category: string, action: string, label: string) {
 }
 
 export function logAction(eventCategory: string, eventAction: string, eventLabel: string) {
-  console.log('log', eventCategory, eventAction, eventLabel);
+  console.log('rlog', eventCategory, eventAction, eventLabel);
   googleTag(eventCategory, eventAction, eventLabel);
 }
 export default logAction;
