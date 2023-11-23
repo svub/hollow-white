@@ -15,7 +15,7 @@ import { Style } from "../../shared/entities";
   },
 })
 export default class StyleElement extends Vue {
-  @Prop(Object) private element!: Style;
+  @Prop(Object) element!: Style;
 }
 </script>
 <style scoped lang="stylus"></style>
