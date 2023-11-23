@@ -156,8 +156,8 @@ export default class Read extends TextBase {
   stopPlayback() {
     log('Read.stopPlayback');
     if (!this.playback) return;
-    this.audio.pause();
     this.playback = false;
+    this.audio.pause();
     this.paused = true;
     this.paragraph = '';
     this.showPlayer(false);
@@ -196,6 +196,7 @@ export default class Read extends TextBase {
   }
 
   get playerVisible() {
+    if (this.currentOverlay) this.stopPlayback();
     return this.player && !this.currentOverlay;
   }
 
