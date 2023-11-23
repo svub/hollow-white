@@ -77,7 +77,7 @@ export function evaluateCondition(condition: string, store: Store<AppState>): bo
   },
 })
 export default class IfElement extends Vue {
-  @Prop(Object) private element!: If;
+  @Prop(Object) element!: If;
 
   get conditionFits(): boolean {
     return evaluateCondition(this.element.condition, this.$store);

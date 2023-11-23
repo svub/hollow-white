@@ -1,5 +1,6 @@
 @import '../../vars'
 @import '../../macros'
+@import './macros'
 
 .page.read
   nav
@@ -14,6 +15,10 @@
       margin-left -9px
 
     .menu
+      .playback
+        asset('read-nav-play.svg', width, height)
+        &.playing
+          asset('read-nav-stop.svg', width, height)
       .items
         asset('read-nav-items.svg', width, height)
       .chapters
@@ -23,15 +28,14 @@
         margin-right -9px
 
   .content
-
     .section
-
       .title .position
         @extends h5
         color var(--textColor)
         margin-bottom .5*gap
 
       .text
+
         p
           margin-bottom 1rem
 
@@ -42,6 +46,9 @@
           p // showdown sometimes generates p tags inside, hide them
             margin 0
             display inline
+          &.paragraph.current
+            &, & p, & h1, & h2, & h3, & em
+              color: var(--currentParagraph)
 
         .style
           &.note-black p
@@ -70,6 +77,14 @@
           @extends p
           padding-left pad
           border-left pad solid var(--alert)
+
+        .image-element
+          img.image 
+            margin-top .4rem
+            margin-bottom 1.8rem
+
+          &+.image-element
+            margin-top -1.6rem
 
       .next.links
         icon-width = 250px
@@ -135,3 +150,52 @@
 
             &:not(:first-child)
               margin-top gap
+
+
+  .player
+    flex-row()
+    position fixed
+    bottom 0
+    pad = 60px
+    width "calc(%s - %s)" % (maxWidth pad)
+    @supports (-webkit-touch-callout: none) {
+      width "calc(%s - %s)" % (maxWidth 1.8*pad)
+    }
+    z-index 3
+    justify-content space-between
+    align-items center
+    padding pad
+    background @css { linear-gradient(rgba(var(--bgColorRgb), 0), var(--bgColor)) }
+    pointer-events none
+    duration = .8s
+    &.overlay-enter-active, &.overlay-leave-active
+      animation-name overlay
+      animation-duration duration
+    &.overlay-leave-active
+      animation-direction reverse
+
+    diameter = toRem(35)
+
+    button
+      width diameter
+      height diameter
+      border-radius (diameter/2)
+      background var(--bgColorInverse)
+      pointer-events auto
+      text-align center
+
+      &.stop
+        asset('player-stop.svg', diameter, diameter)
+      &.play.progress 
+        background transparent
+        progressButton('player-pause.svg', var(--bgColorInverse), #61FFFF, diameter + toRem(15), diameter) 
+        &.paused 
+          progressButtonAsset('player-play.svg')
+          &:before
+            background-position-x 56% // hack for play icon not being symetric
+      &.speed
+        font-size toRem(14)
+        color var(--fgColorInverse)
+
+main.player-open
+  perspective none

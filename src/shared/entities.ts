@@ -1,6 +1,9 @@
 export interface HasElements {
   elements: Element[];
 }
+export function hasElements(element: any): element is HasElements {
+  return (element as HasElements).elements !== undefined;
+}
 
 // generics
 export interface Entity {
@@ -48,7 +51,7 @@ export type Specials = typeof Specials;
 export interface Book extends Title {
   subTitle?: string;
   chapters: Chapter[];
-  specials: {[id: string]: Section};
+  specials: { [id: string]: Section };
   config: Config;
 }
 
@@ -61,7 +64,7 @@ export interface Section extends HasElements, Entity, Title {
   next: (Link | SpecialLink)[];
 }
 
-export interface Link extends Title, Reference {}
+export interface Link extends Title, Reference { }
 
 export interface SpecialLink extends Title, Entity {
   data?: string;
@@ -110,6 +113,7 @@ export interface Config {
   language?: string; // default 'en'
   pageScrollUpDelay?: number; // delay to allow for page change animations
   fullscreen?: boolean;
+  readOutLoud: boolean;
 }
 
 // text elements
@@ -122,6 +126,7 @@ export enum ElementType {
   removeItem = 'removeItem',
   state = 'state',
   style = 'style',
+  image = 'image',
 }
 
 export type Element = {
@@ -131,6 +136,8 @@ export type Element = {
 export interface Paragraph extends Element {
   type: ElementType.paragraph;
   text: string;
+  index: number;
+  hash: string;
 }
 
 export interface If extends Element, HasElements {
@@ -163,3 +170,10 @@ export interface Style extends Element, HasElements {
   type: ElementType.style;
   classes: string;
 }
+
+export interface Image extends Element {
+  type: ElementType.image;
+  id: string;
+  alt?: string;
+}
+

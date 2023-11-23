@@ -5,7 +5,6 @@ rawAsset(url, w = false, h = false)
   background-repeat no-repeat
   if w or h
     background-position center
-    // background-size contain
   if w
     width w
   if h
@@ -17,6 +16,35 @@ asset(src, w = false, h = false, size = '')
     url = s("/assets/%s/%s", unquote(theme), unquote(src))
     {selector} &
       rawAsset(url, w, h)
+
+assetx(src, suffix, w = false, h = false)
+  for theme in themes
+    selector = s(".%s", theme)
+    base = s("/assets/%s/%s", unquote(theme), unquote(src))
+    {selector} &
+      rawAsset(s("%s.%s", unquote(base), unquote(src)), w, h) // fallback + setting basics
+      background-image: -webkit-image-set(
+        url(s("%s.%s", unquote(base), unquote(src))) 1x,
+        url("images/xdesc/lake-2x.jpg") 2x,
+        url("images/xdesc/lake-4x.jpg") 4x
+      );
+
+standardResolutions = 2 3
+assetx(src, suffix, resolutions = standardResolutions, w = false, h = false)
+  for theme in themes
+    selector = s(".%s", theme)
+    base = s("/assets/%s/%s", unquote(theme), unquote(src))
+    {selector} &
+      defaultImage = s("%s.%s", unquote(base), unquote(suffix)) 
+      rawAsset(defaultImage, w, h) 
+      list = url(defaultImage) 1x, url(defaultImage) 1x
+      for resolution in resolutions
+        x = s("%sx", resolution)
+        u = s("%s@%s.%s", unquote(base), x, unquote(suffix))
+        push(list, url(u) x)
+      shift(list) // remove dummy element -- TODO: is there a way to initialize "list" as CSV without the dummy element?
+      background-image -webkit-image-set(list)
+      background-image image-set(list)
 
 flex-column()
   display flex

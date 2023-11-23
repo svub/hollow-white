@@ -6,11 +6,12 @@ transition(name="flip")
         .number #[span.current {{ itemIndex+1 }}] #[span.total {{ itemCount }}]
         h3 {{ item.title }}
       .content()
-        TextElement.description(@click.native="flipped = false" :elements="item.elements")
+        TextElement.description(@click.native="flipped = false" :elements="item.elements" :dontTrace="true")
         .media(v-if="item.mediaUrl" :class="[ item.mediaType, { playing: mediaPlaying }]" :style="`--progress: ${mediaProgress}`")
           a.link(v-if="item.mediaType == 'link'" :href="item.mediaUrl") {{ item.title }}
           .audio(v-else-if="item.mediaType == 'audio'")
             audio(ref="audio" :src="url")
+            // TODO re-use ProgressButton here -- see Read/player
             button(@click="toggleAudio()")
               .progress(:class="{ beyondHalf: mediaProgress > 0.5 }")
                 .circle
