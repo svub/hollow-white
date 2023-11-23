@@ -187,20 +187,12 @@
       &.stop
         asset('player-stop.svg', diameter, diameter)
       &.play
-        // buttonOuter = diameter
-        // asset('player-pause.svg', diameter, diameter)
-        // &.paused
-        //   asset('player-play.svg', diameter, diameter)
-          // move 2px to the right
         &.progress 
           background transparent
           progressButton('player-pause.svg', var(--bgColorInverse), #61FFFF, diameter + toRem(15), diameter) 
           &.paused 
-            // asset('player-play.svg', diameter, diameter)
             progressButtonAsset('player-play.svg')
-          // &:not(.paused)
-          //   background transparent
-          //   progressButton('player-pause.svg', var(--bgColorInverse), #61FFFF, diameter + toRem(15), diameter) 
+            background-position-x 56%
       &.speed
         font-size toRem(14)
         color var(--fgColorInverse)
