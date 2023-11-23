@@ -1,6 +1,6 @@
 #!/bin/bash
 git checkout main
-yarn build # test before publishing
+npm run build # test before publishing
 read -p "Ready to publish?"
 git checkout live
 git merge --commit main
