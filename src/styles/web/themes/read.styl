@@ -186,13 +186,13 @@
 
       &.stop
         asset('player-stop.svg', diameter, diameter)
-      &.play
-        &.progress 
-          background transparent
-          progressButton('player-pause.svg', var(--bgColorInverse), #61FFFF, diameter + toRem(15), diameter) 
-          &.paused 
-            progressButtonAsset('player-play.svg')
-            background-position-x 56%
+      &.play.progress 
+        background transparent
+        progressButton('player-pause.svg', var(--bgColorInverse), #61FFFF, diameter + toRem(15), diameter) 
+        &.paused 
+          progressButtonAsset('player-play.svg')
+          &:before
+            background-position-x 56% // hack for play icon not being symetric
       &.speed
         font-size toRem(14)
         color var(--fgColorInverse)
