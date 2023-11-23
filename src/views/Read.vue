@@ -47,7 +47,7 @@ import { TextBase } from "@/utls/TextBase";
 import logRemote from "@/utls/logRemote";
 import { getVisibleParagraphs, resetVisibleParagraphs } from "@/components/elements/ParagraphElement.vue";
 import { paragraphFilename, titleFilename, decisionFilename } from "../shared/audio";
-import { warn, log, logRaw, waitFor } from "@/shared/util";
+import { warn, log, logRaw } from "@/shared/util";
 import ProgressButton from "@/components/ProgressButton.vue";
 
 type PlaylistItem = {

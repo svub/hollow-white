@@ -5,7 +5,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
-import { Element, Paragraph } from "../../shared/entities";
+import { Element } from "../../shared/entities";
 import ParagraphElement, { enableVisibleParagraphTracing } from "./ParagraphElement.vue";
 import IfElement from "./IfElement.vue";
 import ElseElement from "./ElseElement.vue";
