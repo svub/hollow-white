@@ -32,12 +32,12 @@ export default class TextElement extends Vue {
   @Prop(Array) elements!: Element[];
   @Prop({ type: Boolean, default: false }) dontTrace!: boolean;
 
-  beforeMount() {
-    if (this.dontTrace) enableVisibleParagraphTracing(false);
-  }
-  mounted() {
-    if (this.dontTrace) enableVisibleParagraphTracing(true);
-  }
+  // beforeMount() {
+  //   if (this.dontTrace) enableVisibleParagraphTracing(false);
+  // }
+  // mounted() {
+  //   if (this.dontTrace) enableVisibleParagraphTracing(true);
+  // }
 
   componentName(element: Element): string {
     return `${element.type}-element`;

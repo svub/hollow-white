@@ -31,8 +31,8 @@ export default class ParagraphElement extends Vue {
   @State paragraph;
 
   mounted() {
+    log('paragraph map: add?', trace, this.element.index);
     if (trace) {
-      log('paragraph map: add ', this.element.index);
       map.set(this.element.index, this.element);
     }
   }
@@ -46,7 +46,8 @@ export default class ParagraphElement extends Vue {
     const isCurrent = `` + this.element.index == this.paragraph;
     if (isCurrent && this.$el) {
       const elementRect = this.$el.getBoundingClientRect();
-      const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      // -120: leave some space for the player below
+      const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight) - 120;
 
       if (elementRect.bottom > viewHeight) {
         this.$el.scrollIntoView({ behavior: "smooth" });
