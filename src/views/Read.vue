@@ -21,7 +21,7 @@
 
         TextElement.text(:elements="position.section.elements")
 
-        .next.links(:class="'count-'+position.section.next.length")
+        .next.links(:class="'count-'+position.section.next.length" ref="links")
           button(
             v-for="link in position.section.next",
             @click="open(link)"
@@ -150,6 +150,9 @@ export default class Read extends TextBase {
     this.paragraph = item.paragraph;
     this.audio.playbackRate = parseFloat(this.playbackSpeed);
     this.paused = false;
+    if (item.paragraph === 'jingle') { // scroll to links at the end
+      (this.$refs.links as HTMLElement).scrollIntoView({ behavior: "smooth", block: "center" });
+    }
     log('Read.playTrack', this.audio.src);
   }
 
@@ -205,10 +208,10 @@ export default class Read extends TextBase {
     const sectionId = this.position.section.id;
     const makeItem = (filename: string, paragraph: string) => ({ filename, paragraph });
 
-    // TODO make jingle configurable
     return logRaw('Read.createPlaylist', [
       makeItem(titleFilename(chapterId, sectionId), 'title'),
       ...getVisibleParagraphs().map(p => makeItem(paragraphFilename(chapterId, sectionId, p.hash), '' + p.index)),
+      // TODO make jingle configurable
       makeItem('before-decision-jingle.mp3', 'jingle'),
       makeItem(decisionFilename(chapterId, sectionId), 'decision'),
     ]);
