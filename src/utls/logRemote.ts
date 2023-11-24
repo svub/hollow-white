@@ -1,29 +1,29 @@
-import { tryPromise } from "./fp";
+// import { tryPromise } from "./fp";
 
-const ID = 'G-3L6KHGSJ1H';
-const validityDays = 30; // user ID will be renewed after this time, but also if IP changes.
-const campaignId = ''; // optional if deploying to track specific campaign
+const GA_ID = 'G-3L6KHGSJ1H';
+// const validityDays = 30; // user ID will be renewed after this time, but also if IP changes.
+// const campaignId = ''; // optional if deploying to track specific campaign
 
-function hash(str, seed = 0) { // cyrb53
-  let h1 = 0xdeadbeef ^ seed,
-    h2 = 0x41c6ce57 ^ seed;
-  for (let i = 0, ch; i < str.length; i++) {
-    ch = str.charCodeAt(i);
-    h1 = Math.imul(h1 ^ ch, 2654435761);
-    h2 = Math.imul(h2 ^ ch, 1597334677);
-  }
-  h1 = Math.imul(h1 ^ h1 >>> 16, 2246822507) ^ Math.imul(h2 ^ h2 >>> 13, 3266489909);
-  h2 = Math.imul(h2 ^ h2 >>> 16, 2246822507) ^ Math.imul(h1 ^ h1 >>> 13, 3266489909);
-  return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(16);
-}
+// function hash(str, seed = 0) { // cyrb53
+//   let h1 = 0xdeadbeef ^ seed,
+//     h2 = 0x41c6ce57 ^ seed;
+//   for (let i = 0, ch; i < str.length; i++) {
+//     ch = str.charCodeAt(i);
+//     h1 = Math.imul(h1 ^ ch, 2654435761);
+//     h2 = Math.imul(h2 ^ ch, 1597334677);
+//   }
+//   h1 = Math.imul(h1 ^ h1 >>> 16, 2246822507) ^ Math.imul(h2 ^ h2 >>> 13, 3266489909);
+//   h2 = Math.imul(h2 ^ h2 >>> 16, 2246822507) ^ Math.imul(h1 ^ h1 >>> 13, 3266489909);
+//   return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(16);
+// }
 
-export const userId = (async () => {
-  const ip = await tryPromise(async () => (await fetch("https://api.ipify.org")).text(), '');
-  const validityInterval = Math.round(new Date().getTime() / 1000 / 3600 / 24 / validityDays);
-  const idString = ip + ";" + window.location.host + ";" + navigator.userAgent + ";" + navigator.language + ";" + validityInterval;
-  console.log(idString);
-  return hash(idString);
-})();
+// export const userId = (async () => {
+//   const ip = await tryPromise(async () => (await fetch("https://api.ipify.org")).text(), '');
+//   const validityInterval = Math.round(new Date().getTime() / 1000 / 3600 / 24 / validityDays);
+//   const idString = ip + ";" + window.location.host + ";" + navigator.userAgent + ";" + navigator.language + ";" + validityInterval;
+//   console.log(idString);
+//   return hash(idString);
+// })();
 
 declare const gtag: Function;
 // let gTagConfig: Function | undefined = async () => {
@@ -32,7 +32,7 @@ declare const gtag: Function;
 //   get: function () { return ''; },
 //   set: function (c) { console.log('Nope', c); }
 // });
-gtag('config', 'G-3L6KHGSJ1H');
+// gtag('config', GA_ID);
 // gtag('config', ID, {
 //   /* eslint-disable @typescript-eslint/camelcase */
 //   client_id: await userId,
