@@ -157,10 +157,10 @@
     position fixed
     bottom 0
     pad = 60px
-    width "calc(%s - %s)" % (maxWidth pad)
-    @supports (-webkit-touch-callout: none) {
-      width "calc(%s - %s)" % (maxWidth 1.8*pad)
-    }
+    width "calc(%s - 2rem + 1px)" % maxWidth
+    // @supports (-webkit-touch-callout: none) {
+    //   width "calc(%s - %s)" % (maxWidth 1.8*pad)
+    // }
     z-index 3
     justify-content space-between
     align-items center
@@ -200,7 +200,7 @@
         asset('player-stop.svg', diameter, diameter)
       &.play.progress 
         background transparent
-        progressButton('player-pause.svg', var(--bgColorInverse), #61FFFF, diameter + toRem(15), diameter) 
+        progressButton('player-pause.svg', var(--bgColorInverse), var(--currentParagraph), diameter + toRem(15), diameter) 
         &.paused 
           progressButtonAsset('player-play.svg')
           &:before
