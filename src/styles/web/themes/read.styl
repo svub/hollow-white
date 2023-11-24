@@ -183,6 +183,18 @@
       background var(--bgColorInverse)
       pointer-events auto
       text-align center
+      position relative
+
+      &:after // increase click area
+        content ""
+        display block
+        width diameter*2
+        border-radius (@width/2)
+        height @width
+        // outline 2px solid lime
+        position absolute
+        top diameter*-.5
+        left @top
 
       &.stop
         asset('player-stop.svg', diameter, diameter)
@@ -193,9 +205,13 @@
           progressButtonAsset('player-play.svg')
           &:before
             background-position-x 56% // hack for play icon not being symetric
+        &:after
+          top diameter*-.25
+          left @top
       &.speed
         font-size toRem(14)
         color var(--fgColorInverse)
+
 
 main.player-open
   perspective none
