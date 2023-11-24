@@ -158,9 +158,9 @@
     bottom 0
     pad = 60px
     width "calc(%s - 2rem + 1px)" % maxWidth
-    // @supports (-webkit-touch-callout: none) {
-    //   width "calc(%s - %s)" % (maxWidth 1.8*pad)
-    // }
+    @supports (-webkit-touch-callout: none) {
+      width "calc(%s - 3.7rem)" % maxWidth
+    }
     z-index 3
     justify-content space-between
     align-items center
