@@ -7,5 +7,6 @@ module.exports = {
               args[0].title = "Hollow White";
               return args;
           })
-  }
+  },
+  transpileDependencies: [ '@gtm-support/core', '@gtm-support/vue2-gtm' ],
 }
