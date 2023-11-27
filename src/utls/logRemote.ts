@@ -1,5 +1,7 @@
 // import { tryPromise } from "./fp";
 
+import { warn } from "@/shared/util";
+
 const GA_ID = 'G-3L6KHGSJ1H';
 // const validityDays = 30; // user ID will be renewed after this time, but also if IP changes.
 // const campaignId = ''; // optional if deploying to track specific campaign
@@ -63,8 +65,19 @@ declare const gtag: Function;
 /* eslint-enable */
 //   gTagConfig = undefined;
 // };
+
+// type Entry = {
+//   category: string,
+//   action: string,
+//   label: string,
+// }
+
+// const queue: Entry[] = [];
 async function googleTag(category: string, action: string, label: string) {
   // if (gTagConfig) await gTagConfig();
+  if (!gtag) {
+    return warn('rlog: gtag not initialized', category, action, label);
+  }
   category = encodeURIComponent(category);
   action = encodeURIComponent(action);
   label = encodeURIComponent(label);
