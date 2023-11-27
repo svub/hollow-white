@@ -157,9 +157,9 @@
     position fixed
     bottom 0
     pad = 60px
-    width "calc(%s - %s)" % (maxWidth pad)
+    width "calc(%s - 2rem + 1px)" % maxWidth
     @supports (-webkit-touch-callout: none) {
-      width "calc(%s - %s)" % (maxWidth 1.8*pad)
+      width "calc(%s - 3.7rem)" % maxWidth
     }
     z-index 3
     justify-content space-between
@@ -183,19 +183,35 @@
       background var(--bgColorInverse)
       pointer-events auto
       text-align center
+      position relative
+
+      &:after // increase click area
+        content ""
+        display block
+        width diameter*2
+        border-radius (@width/2)
+        height @width
+        // outline 2px solid lime
+        position absolute
+        top diameter*-.5
+        left @top
 
       &.stop
         asset('player-stop.svg', diameter, diameter)
       &.play.progress 
         background transparent
-        progressButton('player-pause.svg', var(--bgColorInverse), #61FFFF, diameter + toRem(15), diameter) 
+        progressButton('player-pause.svg', var(--bgColorInverse), var(--currentParagraph), diameter + toRem(15), diameter) 
         &.paused 
           progressButtonAsset('player-play.svg')
           &:before
             background-position-x 56% // hack for play icon not being symetric
+        &:after
+          top diameter*-.25
+          left @top
       &.speed
         font-size toRem(14)
         color var(--fgColorInverse)
+
 
 main.player-open
   perspective none

@@ -82,6 +82,7 @@ export default class App extends Vue {
     document.documentElement.lang = this.lang;
 
     // for debugging and testing
+    // Example use: window.appState.dispatch('goto', { chapterId: '8', sectionId: '008' }); 
     window["appState"] = appState;
 
     document.title = book.title;
