@@ -17,6 +17,7 @@ main(:class="page" :lang="lang")
           Options(v-if="overlay === 'options'")
           FeedbackMode(v-if="overlay === 'feedbackMode'")
           Share(v-if="overlay === 'shareOverlay'" :url="overlayData.url" :title="overlayData.title")
+          //- ConsentOverlay(v-if="overlay === 'consent'")
       .actions
         button.close(@click="setOverlay('')")
 </template>
@@ -24,14 +25,15 @@ main(:class="page" :lang="lang")
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
 import { State, Action } from "vuex-class";
+import { mapFields } from 'vuex-map-fields';
 import uniq from "lodash/uniq";
 import Start from "./views/Start.vue";
 import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
 import book from "./book";
 import { clone, logJson, warn } from "./shared/util";
-import appState from "./store";
-import { Option, Reference } from "./shared/entities";
+import appState, { Consent } from "./store";
+import { Option, Overlays, Reference } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
 import Items from './components/overlays/Items.vue';
 import Credits from './components/overlays/Credits.vue';
@@ -39,13 +41,17 @@ import Imprint from './components/overlays/Imprint.vue';
 import Options from './components/overlays/Options.vue';
 import FeedbackMode from './components/overlays/FeedbackMode.vue';
 import Share from './components/overlays/Share.vue';
+// import ConsentOverlay from './components/overlays/ConsentOverlay.vue';
 import logRemote from './utls/logRemote';
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
 @Component({
   name: "home",
-  components: { Start, Read, Tester, Chapters, Items, Credits, Imprint, Options, FeedbackMode, Share },
+  components: { Start, Read, Tester, Chapters, Items, Credits, Imprint, Options, FeedbackMode, Share, ConsentOverlay },
+  // computed: {
+  //   ...mapFields(['consent',]),
+  // },
 })
 export default class App extends Vue {
   @State page;
@@ -58,6 +64,7 @@ export default class App extends Vue {
   @Action init;
   @Action("page") setPage;
   @Action("overlay") setOverlay;
+  // consent?: Consent;
 
   config = book.config;
 
@@ -92,6 +99,15 @@ export default class App extends Vue {
 
   mounted() {
     this.updateClasses();
+
+    // setTimeout(() => {
+    //   const MAX_CONSENT_DURATION = 365 * 24 * 60 * 60 * 1000; // days
+    //   // warn('consent age', this.consent?.date.getTime(), new Date().getTime(), new Date().getTime() - MAX_CONSENT_DURATION);
+    //   if (!this.consent || (this.consent.date.getTime() < new Date().getTime() - MAX_CONSENT_DURATION)) {
+    //     this.consent = undefined;
+    //     this.setOverlay(Overlays.consent);
+    //   }
+    // }, 1000);
   }
 
   get chapters() {

@@ -13,11 +13,13 @@ Vue.use(Vuex)
 const dontStore = ['page', 'overlay'];
 
 export type Options = { [id: string]: string }
+// export type Consent = { allowGoogleAnalytics: boolean; date: Date }
 export interface Settings {
   page: string;
   overlay?: string;
   overlayData?: any;
   options: Options;
+  // consent?: Consent;
 }
 
 export type Items = string[];
