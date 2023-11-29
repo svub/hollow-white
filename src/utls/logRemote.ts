@@ -96,8 +96,12 @@ const GTM_ID = 'GTM-TZ48N5ZX';
 
 // const queue: Entry[] = [];
 let gtm: GtmSupport | undefined;
+let enabled = false;
+
 async function googleTag(category: string, action: string, label: string) {
+  if (!enabled) return warn('Logr: not enabled, dropping log entry', category, action, label);
   // if (gTagConfig) await gTagConfig();
+  // const gtm = (window as any).google_tag_manager as Function;
   if (!gtm) gtm = useGtm();
 
   if (!gtm) {
@@ -120,18 +124,23 @@ async function googleTag(category: string, action: string, label: string) {
   //   action,
   //   label,
   // });
-  gtm.trackEvent({
-    event: 'page_view',
-    category,
-    action,
-    label,
-    value: label,
-    noninteraction: false,
-  });
+  // gtm.trackEvent({
+  //   event: 'interaction',
+  //   category,
+  //   action,
+  //   label,
+  //   value: label,
+  //   // noninteraction: false,
+  // });
+  gtm
+}
+
+export function logEnable(enable = true) {
+  enabled = enable;
 }
 
 export function logAction(eventCategory: string, eventAction: string, eventLabel: string) {
-  console.log('rlog', eventCategory, eventAction, eventLabel);
-  googleTag(eventCategory, eventAction, eventLabel);
+  // console.log('rlog', eventCategory, eventAction, eventLabel);
+  // googleTag(eventCategory, eventAction, eventLabel);
 }
 export default logAction;

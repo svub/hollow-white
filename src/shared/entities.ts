@@ -32,11 +32,14 @@ export enum Overlays {
   items = 'items',
   shareOverlay = 'shareOverlay',
   feedbackMode = 'feedbackMode',
+  // consent = 'consent',
 }
 
 export enum Functions {
   reset = 'reset',
   share = 'share',
+  // consentYes = 'consentYes',
+  // consentNo = 'consentNo',
 }
 
 export enum Pages {
