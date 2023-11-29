@@ -32,7 +32,7 @@ import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
 import book from "./book";
 import { clone, logJson, warn } from "./shared/util";
-import appState, { Consent } from "./store";
+import appState from "./store";
 import { Option, Overlays, Reference } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
 import Items from './components/overlays/Items.vue';
@@ -48,7 +48,7 @@ const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
 @Component({
   name: "home",
-  components: { Start, Read, Tester, Chapters, Items, Credits, Imprint, Options, FeedbackMode, Share, ConsentOverlay },
+  components: { Start, Read, Tester, Chapters, Items, Credits, Imprint, Options, FeedbackMode, Share },
   // computed: {
   //   ...mapFields(['consent',]),
   // },
