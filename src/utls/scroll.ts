@@ -1,5 +1,5 @@
-export function scrollContainer() { 
-  return document.documentElement; 
+export function scrollContainer() {
+  return document.documentElement;
 }
 
 // cf. https://stackoverflow.com/a/55686711/548955
@@ -17,6 +17,6 @@ export function scrollUpThen(callback?: Function) {
 }
 
 export function scrollTo(top: number, left = 0, behavior: ScrollBehavior = 'smooth') {
-  scrollContainer().scrollTo({ top, left: 0, behavior });
+  scrollContainer().scrollTo({ top, left, behavior });
 }
 
