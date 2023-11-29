@@ -21798,7 +21798,7 @@ const book: Book = (({
     },
     "imprint": {
       "id": "imprint",
-      "title": "Impressum",
+      "title": "Impressum & Datenschutz",
       "elements": [
         {
           "type": "paragraph",
@@ -21889,9 +21889,153 @@ const book: Book = (({
           "text": "<p>Dieses Impressum&nbsp;wurde freundlicherweise von <a href=\"https://jurarat.de/\" rel=\"noopener noreferrer\" target=\"_blank\">jurarat.de</a>&nbsp;zur Verfügung gestellt.</p>",
           "index": 2616,
           "hash": "39935030"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p><em>Datenschutz –Nutzung von Google Analytics</em></p>",
+          "index": 2617,
+          "hash": "63311db3"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Wir verwenden Google Analytics, um die Website-Nutzung zu analysieren. Die daraus gewonnenen Daten werden genutzt, um unsere Website sowie Werbemaßnahmen zu optimieren.</p>",
+          "index": 2618,
+          "hash": "49406391"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Google Analytics wird uns von Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland) bereitgestellt. Google verarbeitet die Daten zur Website-Nutzung in unserem Auftrag und verpflichtet sich vertraglich zu Maßnahmen, um die Sicherheit und Vertraulichkeit der verarbeiteten Daten zu gewährleisten.</p>",
+          "index": 2619,
+          "hash": "4edda12a"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Während Ihres Website-Besuchs werden u. a. folgende Daten aufgezeichnet:</p>",
+          "index": 2620,
+          "hash": "baa4c3d0"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>– Aufgerufene Seiten</p>",
+          "index": 2621,
+          "hash": "0c159e1f"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>– Bestellungen inkl. des Umsatzes und der bestellten Produkte</p>",
+          "index": 2622,
+          "hash": "4577fc30"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>– Die Erreichung von „Website-Zielen“ (z. B. Kontaktanfragen und Newsletter-Anmeldungen)</p>",
+          "index": 2623,
+          "hash": "328d45e0"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>– Ihr Verhalten auf den Seiten (beispielsweise Verweildauer, Klicks, Scrollverhalten)</p>",
+          "index": 2624,
+          "hash": "781fd262"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>– Ihr ungefährer Standort (Land und Stadt)</p>",
+          "index": 2625,
+          "hash": "8d87ae0a"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>– Ihre IP-Adresse (in gekürzter Form, sodass keine eindeutige Zuordnung möglich ist)</p>",
+          "index": 2626,
+          "hash": "8459e0f2"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>– Technische Informationen wie Browser, Internetanbieter, Endgerät und Bildschirmauflösung</p>",
+          "index": 2627,
+          "hash": "330cd7c9"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>– Herkunftsquelle Ihres Besuchs (d. h. über welche Website bzw. über welches Werbemittel Sie zu uns gekommen sind)</p>",
+          "index": 2628,
+          "hash": "0cff0a06"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Es werden niemals persönliche Daten wie Name, Anschrift oder Kontaktdaten an Google Analytics übertragen.</p>",
+          "index": 2629,
+          "hash": "6e55ac38"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Diese Daten werden an Server von Google in den USA übertragen. Wir weisen darauf hin, dass in den USA datenschutzrechtlich nicht das gleiche Schutzniveau wie innerhalb der EU garantiert werden kann.</p>",
+          "index": 2630,
+          "hash": "0e461ebc"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Google Analytics speichert Cookies in Ihrem Webbrowser für die Dauer von zwei Jahren seit Ihrem letzten Besuch. Diese Cookies enthaltene eine zufallsgenerierte User-ID, mit der Sie bei zukünftigen Website-Besuchen wiedererkannt werden können.</p>",
+          "index": 2631,
+          "hash": "255f4a8e"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Die aufgezeichneten Daten werden zusammen mit der zufallsgenerierten User-ID gespeichert, was die Auswertung pseudonymer Nutzerprofile ermöglicht. Diese nutzerbezogenen Daten werden automatisch nach 14 Monaten gelöscht. Sonstige Daten bleiben in aggregierter Form unbefristet gespeichert.</p>",
+          "index": 2632,
+          "hash": "7a51a1be"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Sollten Sie mit der Erfassung nicht einverstanden sein, können Sie diese mit der einmaligen Installation des Browser-Add-ons zur Deaktivierung von Google Analytics unterbinden oder durch das Ablehnen der Cookies über unseren Cookie-Einstellungs-Dialog.</p>",
+          "index": 2633,
+          "hash": "1932e6e5"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Quelle:<a href=\"https://traffic3.net/\" rel=\"noopener noreferrer\" target=\"_blank\">traffic3.net</a></p>",
+          "index": 2634,
+          "hash": "19a79b95"
         }
       ],
       "next": []
+    },
+    "consent": {
+      "id": "consent",
+      "title": "Unterstützen & Datenschutz",
+      "elements": [
+        {
+          "type": "paragraph",
+          "text": "<p><em>Unterstützen</em></p>",
+          "index": 2635,
+          "hash": "aad92a18"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Hollow White ist ein gemeinnütziges Projekt. Wenn du uns unterstützen möchtest, kannst du natürlich das Projekt teilen, aber du kannst uns auch erlauben, dir bei der Benutzung über die Schulter zu schauen, damit wir sehen können, wie Hollow White verwendet wird und wo wir noch etwas verbessern können. Das alles passiert natürlich anonymisiert. Für das Tracking verwenden wir Google Analytics.</p>",
+          "index": 2636,
+          "hash": "46344d8f"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p><em>Aber es ist natürlich deine ganz freie Entscheidung.</em></p>",
+          "index": 2637,
+          "hash": "30654dac"
+        }
+      ],
+      "next": [
+        {
+          "title": "Nein",
+          "id": "consentNo",
+          "data": ""
+        },
+        {
+          "title": "Ja",
+          "id": "consentYes",
+          "data": ""
+        }
+      ]
     }
   },
   "config": {
