@@ -157,7 +157,6 @@ export default new Vuex.Store({
     overlay({ commit }, overlay: string | { overlay: string; data: any } = '') {
       const entry = typeof overlay === 'string' ? { overlay, data: undefined } : overlay;
       if (entry.overlay !== '' && !Overlays[entry.overlay]) error('Overlay not found', overlay);
-      if (!entry.overlay) scrollUpThen(); // scroll up when closing overlay
       logRemote('action', 'overlay', entry.overlay);
       commit('overlay', entry);
     },

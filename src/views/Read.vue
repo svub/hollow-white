@@ -7,7 +7,7 @@
       button.playback(v-if="config.readOutLoud" 
         :class="{ playing: playback }" 
         @click="playback ? stopPlayback() : startPlayback()")
-      button.items(v-if="config.items && itemCount > 0" @click="overlay('items')")
+      button.collectables(v-if="config.items && itemCount > 0" @click="overlay('collectables')")
       button.chapters(@click="overlay('chapters')")
       button.options(@click="overlay('options')")
 

@@ -11,7 +11,7 @@ main(:class="page" :lang="lang")
           h2
         .content
           Chapters(v-if="overlay === 'chapters'" :chapters="chapters")
-          Items(v-if="overlay === 'items'" :itemIds="items")
+          Collectables(v-if="overlay === 'collectables'" :itemIds="items")
           Credits(v-if="overlay === 'credits'")
           Imprint(v-if="overlay === 'imprint'")
           Options(v-if="overlay === 'options'")
@@ -19,7 +19,7 @@ main(:class="page" :lang="lang")
           Share(v-if="overlay === 'shareOverlay'" :url="overlayData.url" :title="overlayData.title")
           //- ConsentOverlay(v-if="overlay === 'consent'")
       .actions
-        button.close(@click="setOverlay('')")
+        button.close(@click="closeOverlay()")
 </template>
 
 <script lang="ts">
@@ -31,11 +31,11 @@ import Start from "./views/Start.vue";
 import Read from "./views/Read.vue";
 import Tester from "./views/Tester.vue";
 import book from "./book";
-import { clone, logJson, warn } from "./shared/util";
+import { clone, logJson, waitFor, warn } from "./shared/util";
 import appState from "./store";
 import { Option, Overlays, Reference } from "./shared/entities";
 import Chapters from './components/overlays/Chapters.vue';
-import Items from './components/overlays/Items.vue';
+import Collectables from './components/overlays/Collectables.vue';
 import Credits from './components/overlays/Credits.vue';
 import Imprint from './components/overlays/Imprint.vue';
 import Options from './components/overlays/Options.vue';
@@ -43,12 +43,13 @@ import FeedbackMode from './components/overlays/FeedbackMode.vue';
 import Share from './components/overlays/Share.vue';
 // import ConsentOverlay from './components/overlays/ConsentOverlay.vue';
 import logRemote from './utls/logRemote';
+import { scrollUpThen } from "./utls/scroll";
 
 const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
 @Component({
   name: "home",
-  components: { Start, Read, Tester, Chapters, Items, Credits, Imprint, Options, FeedbackMode, Share },
+  components: { Start, Read, Tester, Chapters, Collectables, Credits, Imprint, Options, FeedbackMode, Share },
   // computed: {
   //   ...mapFields(['consent',]),
   // },
@@ -131,6 +132,12 @@ export default class App extends Vue {
   @Watch('overlay', { immediate: true })
   updateClasses() {
     document.documentElement.className = Object.values(this.options).join(' ') + (this.overlay ? ' overlay-open' : '');
+  }
+
+  async closeOverlay() {
+    scrollUpThen();
+    await waitFor(250);
+    this.setOverlay('')
   }
 }
 </script>

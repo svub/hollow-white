@@ -3,17 +3,18 @@
 // animations
 @keyframes overlay
   0%
-    opacity 0
     transform translateY(100vh)
+    opacity 0
   50%
-    opacity 1
+    opacity 0
   100%
+    opacity 1
     transform translateY(0)
 
 @keyframes overlay-backdrop
   0%
     backdrop-filter blur(0px)
-  80%, 100%
+  100%
     backdrop-filter blur(4px)
 
 @keyframes overlay-actions
@@ -59,8 +60,8 @@
       animation-name overlay
     & .actions
       animation-name overlay-actions
-  $inDuration = .8s
-  $outDuration = .8s
+  $inDuration = .4s
+  $outDuration = .4s
   &.overlay-enter-active
     &, &::after, & .overlay, & .actions
       animation-duration $inDuration
@@ -147,14 +148,11 @@ closePad = 60px
         stack()
         text-align center
         margin-top 4*gap
-        // position relative
 
         .chapter
           margin-bottom 35px
           cursor pointer
-          // position relative
           left 0vw
-          // transition left ease 20s
           transition transform ease .5s
 
           &.left-leave
@@ -330,7 +328,7 @@ closePad = 60px
   &.credits
     text-align center
 
-  &.items
+  &.collectables
     flex-column()
     text-align center
 
@@ -342,13 +340,36 @@ closePad = 60px
 
       .count
         @extends .label
+        color var(--textColor)
 
         .total
           &:before
             content ' von '
           &:after
-            content ' Karten entdeckt'
+            content ' entdeckt'
+          
+      .tabs
+        flex-row()
+        justify-content center
+        margin 1.5rem 0 1.7rem
+        button
+          margin 0 1rem
+          &.current
+            text-decoration underline 
+      .list
+        stack()
+        .images, .items
+          transition opacity ease .5s
+          &.v-enter
+            opacity 0
+          &.v-enter-to
+            opacity 1
+          &.v-leave
+            opacity 1
+          &.v-leave-to
+            opacity 0
 
-    .item
-      @extends .item
-      margin-top toRem(40)
+      .items
+        .item
+          @extends .item
+          margin-bottom toRem(40)

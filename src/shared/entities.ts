@@ -29,7 +29,7 @@ export enum Overlays {
   credits = 'credits',
   imprint = 'imprint',
   chapters = 'chapters',
-  items = 'items',
+  collectables = 'collectables',
   shareOverlay = 'shareOverlay',
   feedbackMode = 'feedbackMode',
   // consent = 'consent',

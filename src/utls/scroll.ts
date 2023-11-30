@@ -5,14 +5,16 @@ export function scrollContainer() {
 // cf. https://stackoverflow.com/a/55686711/548955
 export function scrollUpThen(callback?: Function) {
   const container = scrollContainer();
-  const onScroll = function () {
-    if (container.scrollTop < 1) {
-      container.removeEventListener('scroll', onScroll);
-      callback?.();
+  if (callback) {
+    const onScroll = function () {
+      if (container.scrollTop < 1) {
+        container.removeEventListener('scroll', onScroll);
+        callback();
+      }
     }
+    container.addEventListener('scroll', onScroll)
+    onScroll()
   }
-  container.addEventListener('scroll', onScroll)
-  onScroll()
   container.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
 
