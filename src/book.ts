@@ -21501,9 +21501,9 @@ const book: Book = (({
       "elements": [
         {
           "type": "paragraph",
-          "text": "<p><em>Idee, Story und UX & UI</em></p>",
+          "text": "<p><em>Autor, UX/UI & Illustrationen</em></p>",
           "index": 2554,
-          "hash": "234bfc94"
+          "hash": "e55ad370"
         },
         {
           "type": "paragraph",
@@ -21513,9 +21513,9 @@ const book: Book = (({
         },
         {
           "type": "paragraph",
-          "text": "<p><em>Konzept und Programmierung</em></p>",
+          "text": "<p><em>Konzept & Programmierung</em></p>",
           "index": 2556,
-          "hash": "94c00f4e"
+          "hash": "fc1ded58"
         },
         {
           "type": "paragraph",
@@ -21525,9 +21525,9 @@ const book: Book = (({
         },
         {
           "type": "paragraph",
-          "text": "<p><em>Lektor und Mentoring</em></p>",
+          "text": "<p><em>Lektor & Mentoring</em></p>",
           "index": 2558,
-          "hash": "474b6c45"
+          "hash": "66fadf2c"
         },
         {
           "type": "paragraph",
@@ -21537,9 +21537,9 @@ const book: Book = (({
         },
         {
           "type": "paragraph",
-          "text": "<p><em>Illustrationen</em></p>",
+          "text": "<p><em>Icon Design</em></p>",
           "index": 2560,
-          "hash": "02f7855d"
+          "hash": "427e32cd"
         },
         {
           "type": "paragraph",
@@ -21555,236 +21555,224 @@ const book: Book = (({
         },
         {
           "type": "paragraph",
-          "text": "<p><em>Conceptart & Storyboard</em></p>",
+          "text": "<p><em>Hollow White Teaser Video</em></p>",
           "index": 2563,
-          "hash": "332c0dbc"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Thomas Kiris</p>",
-          "index": 2564,
-          "hash": "44232db7"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p><em>Hollow White Teaser</em></p>",
-          "index": 2565,
-          "hash": "a41848cc"
+          "hash": "49d99d3f"
         },
         {
           "type": "paragraph",
           "text": "<p>Helge Stang</p>",
-          "index": 2566,
+          "index": 2564,
           "hash": "59cb6cda"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Künstler</em></p>",
-          "index": 2567,
+          "index": 2565,
           "hash": "dfb2bd0a"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://on.soundcloud.com/xmg4C\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Neon</a></p>",
-          "index": 2568,
+          "index": 2566,
           "hash": "7bfc9cf1"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://maevia.bandcamp.com\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a></p>",
-          "index": 2569,
+          "index": 2567,
           "hash": "655429af"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://soundcloud.com/takoda_vibe/popular-tracks\" rel=\"noopener noreferrer\" target=\"_blank\">Takoda Vibe</a></p>",
-          "index": 2570,
+          "index": 2568,
           "hash": "720df678"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://www.aweckesser.com\" rel=\"noopener noreferrer\" target=\"_blank\">A. Weckesser</a></p>",
-          "index": 2571,
+          "index": 2569,
           "hash": "688fc132"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://www.facebook.com/people/M-O-E/100064279232589\" rel=\"noopener noreferrer\" target=\"_blank\">M O E</a></p>",
-          "index": 2572,
+          "index": 2570,
           "hash": "71d1ecf8"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Testleser</em></p>",
-          "index": 2573,
+          "index": 2571,
           "hash": "bcfa2e86"
         },
         {
           "type": "paragraph",
           "text": "<p>Minh Chau Appelhagen-Lu</p>",
-          "index": 2574,
+          "index": 2572,
           "hash": "7cd81117"
         },
         {
           "type": "paragraph",
           "text": "<p>Benedikt Rascop</p>",
-          "index": 2575,
+          "index": 2573,
           "hash": "4b5ac1c5"
         },
         {
           "type": "paragraph",
           "text": "<p>Bettina Buschbeck</p>",
-          "index": 2576,
+          "index": 2574,
           "hash": "1f0150d6"
         },
         {
           "type": "paragraph",
           "text": "<p>Sven Buschbeck</p>",
-          "index": 2577,
+          "index": 2575,
           "hash": "643d775e"
         },
         {
           "type": "paragraph",
           "text": "<p>Alexandra Röhl</p>",
-          "index": 2578,
+          "index": 2576,
           "hash": "7ccc7415"
         },
         {
           "type": "paragraph",
           "text": "<p>Sebastian Anton</p>",
-          "index": 2579,
+          "index": 2577,
           "hash": "6da96192"
         },
         {
           "type": "paragraph",
           "text": "<p>Frank Wehrle</p>",
-          "index": 2580,
+          "index": 2578,
           "hash": "331a5ab4"
         },
         {
           "type": "paragraph",
           "text": "<p>Elke Kiris</p>",
-          "index": 2581,
+          "index": 2579,
           "hash": "0c178fb4"
         },
         {
           "type": "paragraph",
           "text": "<p>Ben Regali</p>",
-          "index": 2582,
+          "index": 2580,
           "hash": "4d2a7b54"
         },
         {
           "type": "paragraph",
           "text": "<p>Franz Schelke</p>",
-          "index": 2583,
+          "index": 2581,
           "hash": "98658972"
         },
         {
           "type": "paragraph",
           "text": "<p>Michael Krett</p>",
-          "index": 2584,
+          "index": 2582,
           "hash": "42cb0edc"
         },
         {
           "type": "paragraph",
           "text": "<p>Varinja Kiris</p>",
-          "index": 2585,
+          "index": 2583,
           "hash": "be077764"
         },
         {
           "type": "paragraph",
-          "text": "<p>Andi Kiris</p>",
-          "index": 2586,
-          "hash": "7f5dbba5"
+          "text": "<p>HAndi Kiris</p>",
+          "index": 2584,
+          "hash": "e7ef8076"
         },
         {
           "type": "paragraph",
           "text": "<p>Bernd Schreyer</p>",
-          "index": 2587,
+          "index": 2585,
           "hash": "770d43ea"
         },
         {
           "type": "paragraph",
           "text": "<p>Christoph Jaster</p>",
-          "index": 2588,
+          "index": 2586,
           "hash": "58c16da0"
         },
         {
           "type": "paragraph",
           "text": "<p>Michael Heller</p>",
-          "index": 2589,
+          "index": 2587,
           "hash": "ac8b7b50"
         },
         {
           "type": "paragraph",
           "text": "<p>Maximilian Harz</p>",
-          "index": 2590,
+          "index": 2588,
           "hash": "eea5803a"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Speziellen Dank</em></p>",
-          "index": 2591,
+          "index": 2589,
           "hash": "67562eef"
         },
         {
           "type": "paragraph",
           "text": "<p>Silke Kiris</p>",
-          "index": 2592,
+          "index": 2590,
           "hash": "8f40020a"
         },
         {
           "type": "paragraph",
           "text": "<p>Benedikt Rascop</p>",
-          "index": 2593,
+          "index": 2591,
           "hash": "4b5ac1c5"
         },
         {
           "type": "paragraph",
           "text": "<p>Alessandro Russo</p>",
-          "index": 2594,
+          "index": 2592,
           "hash": "4e02cd8a"
         },
         {
           "type": "paragraph",
           "text": "<p>Franz Schelke</p>",
-          "index": 2595,
+          "index": 2593,
           "hash": "98658972"
         },
         {
           "type": "paragraph",
           "text": "<p>Christian Aschoff</p>",
-          "index": 2596,
+          "index": 2594,
           "hash": "a5475384"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://www.kissshirts.de/\" rel=\"noopener noreferrer\" target=\"_blank\">Kissshirts.de</a></p>",
-          "index": 2597,
+          "index": 2595,
           "hash": "61481e00"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Zusammen etwas Gutes tun</em></p>",
-          "index": 2598,
+          "index": 2596,
           "hash": "4335f769"
         },
         {
           "type": "paragraph",
           "text": "<p>Effective Altruism, die Organisation hinter Giving What We Can, stellt sicher, dass ihre Spende so wirkungsvoll wie möglich ist: <a href=\"https://www.givingwhatwecan.org/donate/organizations?utm_source=hollowwhite&utm_medium=webapp&utm_campaign=beta_release&utm_id=hollowwhitebeta\" rel=\"noopener noreferrer\" target=\"_blank\">Jetzt mehr erfahren und unterstützen.</a></p>",
-          "index": 2599,
+          "index": 2597,
           "hash": "188d85d6"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Feedback und Kontakt</em></p>",
-          "index": 2600,
+          "index": 2598,
           "hash": "7ff1ef06"
         },
         {
           "type": "paragraph",
           "text": "<p>Wir freuen uns über dein <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfFvQn86vGWkSfUPzoax417FXUGDPwXopJRLxtUUS6orJuixQ/viewform?usp=sf_link\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> oder von dir zu hören. Hier kannst du <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Kontakt</a> mit uns aufnehmen.</p>",
-          "index": 2601,
+          "index": 2599,
           "hash": "648c10da"
         }
       ],
@@ -21798,205 +21786,97 @@ const book: Book = (({
     },
     "imprint": {
       "id": "imprint",
-      "title": "Impressum & Datenschutz",
+      "title": "Impressum",
       "elements": [
         {
           "type": "paragraph",
           "text": "<p><em>Angaben gem. § 5 TMG</em></p>",
-          "index": 2602,
+          "index": 2600,
           "hash": "0d4554b1"
         },
         {
           "type": "paragraph",
           "text": "<p>Thomas Kiris</p>",
-          "index": 2603,
+          "index": 2601,
           "hash": "44232db7"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Kontaktaufnahme</em></p>",
-          "index": 2604,
+          "index": 2602,
           "hash": "13582252"
         },
         {
           "type": "paragraph",
           "text": "<p>E-Mail: info@hollowwhite.de</p>",
-          "index": 2605,
+          "index": 2603,
           "hash": "65955022"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Haftung für Inhalte</em></p>",
-          "index": 2606,
+          "index": 2604,
           "hash": "e5adc0e0"
         },
         {
           "type": "paragraph",
           "text": "<p>Alle Inhalte unseres Internetauftritts wurden mit größter Sorgfalt und nach bestem Gewissen erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.</p>",
-          "index": 2607,
+          "index": 2605,
           "hash": "22476703"
         },
         {
           "type": "paragraph",
           "text": "<p>Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntniserlangung einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von den o.g. Rechtsverletzungen werden wir diese Inhalte unverzüglich entfernen.</p>",
-          "index": 2608,
+          "index": 2606,
           "hash": "1928416a"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Haftungsbeschränkung für externe Links</em></p>",
-          "index": 2609,
+          "index": 2607,
           "hash": "323a4c46"
         },
         {
           "type": "paragraph",
           "text": "<p>Unsere Webseite enthält Links auf externe Webseiten Dritter. Auf die Inhalte dieser direkt oder indirekt verlinkten Webseiten haben wir keinen Einfluss. Daher können wir für die „externen Links“ auch keine Gewähr auf Richtigkeit der Inhalte übernehmen. Für die Inhalte der externen Links sind die jeweiligen Anbieter oder Betreiber (Urheber) der Seiten verantwortlich.</p>",
-          "index": 2610,
+          "index": 2608,
           "hash": "cb90cd3c"
         },
         {
           "type": "paragraph",
           "text": "<p>Die externen Links wurden zum Zeitpunkt der Linksetzung auf eventuelle Rechtsverstöße überprüft und waren im Zeitpunkt der Linksetzung frei von rechtswidrigen Inhalten. Eine ständige inhaltliche Überprüfung der externen Links ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht möglich. Bei direkten oder indirekten Verlinkungen auf die Webseiten Dritter, die außerhalb unseres Verantwortungsbereichs liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall nur bestehen, wenn wir von den Inhalten Kenntnis erlangen und es uns technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern.</p>",
-          "index": 2611,
+          "index": 2609,
           "hash": "5ab63440"
         },
         {
           "type": "paragraph",
           "text": "<p>Diese Haftungsausschlusserklärung gilt auch innerhalb des eigenen Internetauftrittes „hollowwhite.de“ gesetzten Links und Verweise von Fragestellern, Blogeinträgern, Gästen des Diskussionsforums. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargestellten Informationen entstehen, haftet allein der Diensteanbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.</p>",
-          "index": 2612,
+          "index": 2610,
           "hash": "5eac54a6"
         },
         {
           "type": "paragraph",
           "text": "<p>Werden uns Rechtsverletzungen bekannt, werden die externen Links durch uns unverzüglich entfernt.</p>",
-          "index": 2613,
+          "index": 2611,
           "hash": "fb1ec3ee"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Urheberrecht</em></p>",
-          "index": 2614,
+          "index": 2612,
           "hash": "c5f7aa62"
         },
         {
           "type": "paragraph",
           "text": "<p>Die auf unserer Webseite veröffentlichen Inhalte und Werke unterliegen dem deutschen Urheberrecht (http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf) . Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung des geistigen Eigentums in ideeller und materieller Sicht des Urhebers außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Urhebers i.S.d. Urhebergesetzes (http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf&nbsp;). Downloads und Kopien dieser Seite sind nur für den privaten und nicht kommerziellen Gebrauch erlaubt. Sind die Inhalte auf unserer Webseite nicht von uns erstellt wurden, sind die Urheberrechte Dritter zu beachten. Die Inhalte Dritter werden als solche kenntlich gemacht. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte unverzüglich entfernen.</p>",
-          "index": 2615,
+          "index": 2613,
           "hash": "9fc1d61a"
         },
         {
           "type": "paragraph",
           "text": "<p>Dieses Impressum&nbsp;wurde freundlicherweise von <a href=\"https://jurarat.de/\" rel=\"noopener noreferrer\" target=\"_blank\">jurarat.de</a>&nbsp;zur Verfügung gestellt.</p>",
-          "index": 2616,
+          "index": 2614,
           "hash": "39935030"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p><em>Datenschutz –Nutzung von Google Analytics</em></p>",
-          "index": 2617,
-          "hash": "63311db3"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Wir verwenden Google Analytics, um die Website-Nutzung zu analysieren. Die daraus gewonnenen Daten werden genutzt, um unsere Website sowie Werbemaßnahmen zu optimieren.</p>",
-          "index": 2618,
-          "hash": "49406391"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Google Analytics wird uns von Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland) bereitgestellt. Google verarbeitet die Daten zur Website-Nutzung in unserem Auftrag und verpflichtet sich vertraglich zu Maßnahmen, um die Sicherheit und Vertraulichkeit der verarbeiteten Daten zu gewährleisten.</p>",
-          "index": 2619,
-          "hash": "4edda12a"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Während Ihres Website-Besuchs werden u. a. folgende Daten aufgezeichnet:</p>",
-          "index": 2620,
-          "hash": "baa4c3d0"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>– Aufgerufene Seiten</p>",
-          "index": 2621,
-          "hash": "0c159e1f"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>– Bestellungen inkl. des Umsatzes und der bestellten Produkte</p>",
-          "index": 2622,
-          "hash": "4577fc30"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>– Die Erreichung von „Website-Zielen“ (z. B. Kontaktanfragen und Newsletter-Anmeldungen)</p>",
-          "index": 2623,
-          "hash": "328d45e0"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>– Ihr Verhalten auf den Seiten (beispielsweise Verweildauer, Klicks, Scrollverhalten)</p>",
-          "index": 2624,
-          "hash": "781fd262"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>– Ihr ungefährer Standort (Land und Stadt)</p>",
-          "index": 2625,
-          "hash": "8d87ae0a"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>– Ihre IP-Adresse (in gekürzter Form, sodass keine eindeutige Zuordnung möglich ist)</p>",
-          "index": 2626,
-          "hash": "8459e0f2"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>– Technische Informationen wie Browser, Internetanbieter, Endgerät und Bildschirmauflösung</p>",
-          "index": 2627,
-          "hash": "330cd7c9"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>– Herkunftsquelle Ihres Besuchs (d. h. über welche Website bzw. über welches Werbemittel Sie zu uns gekommen sind)</p>",
-          "index": 2628,
-          "hash": "0cff0a06"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Es werden niemals persönliche Daten wie Name, Anschrift oder Kontaktdaten an Google Analytics übertragen.</p>",
-          "index": 2629,
-          "hash": "6e55ac38"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Diese Daten werden an Server von Google in den USA übertragen. Wir weisen darauf hin, dass in den USA datenschutzrechtlich nicht das gleiche Schutzniveau wie innerhalb der EU garantiert werden kann.</p>",
-          "index": 2630,
-          "hash": "0e461ebc"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Google Analytics speichert Cookies in Ihrem Webbrowser für die Dauer von zwei Jahren seit Ihrem letzten Besuch. Diese Cookies enthaltene eine zufallsgenerierte User-ID, mit der Sie bei zukünftigen Website-Besuchen wiedererkannt werden können.</p>",
-          "index": 2631,
-          "hash": "255f4a8e"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Die aufgezeichneten Daten werden zusammen mit der zufallsgenerierten User-ID gespeichert, was die Auswertung pseudonymer Nutzerprofile ermöglicht. Diese nutzerbezogenen Daten werden automatisch nach 14 Monaten gelöscht. Sonstige Daten bleiben in aggregierter Form unbefristet gespeichert.</p>",
-          "index": 2632,
-          "hash": "7a51a1be"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Sollten Sie mit der Erfassung nicht einverstanden sein, können Sie diese mit der einmaligen Installation des Browser-Add-ons zur Deaktivierung von Google Analytics unterbinden oder durch das Ablehnen der Cookies über unseren Cookie-Einstellungs-Dialog.</p>",
-          "index": 2633,
-          "hash": "1932e6e5"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Quelle:<a href=\"https://traffic3.net/\" rel=\"noopener noreferrer\" target=\"_blank\">traffic3.net</a></p>",
-          "index": 2634,
-          "hash": "19a79b95"
         }
       ],
       "next": []
@@ -22008,19 +21888,19 @@ const book: Book = (({
         {
           "type": "paragraph",
           "text": "<p><em>Unterstützen</em></p>",
-          "index": 2635,
+          "index": 2615,
           "hash": "aad92a18"
         },
         {
           "type": "paragraph",
           "text": "<p>Hollow White ist ein gemeinnütziges Projekt. Wenn du uns unterstützen möchtest, kannst du natürlich das Projekt teilen, aber du kannst uns auch erlauben, dir bei der Benutzung über die Schulter zu schauen, damit wir sehen können, wie Hollow White verwendet wird und wo wir noch etwas verbessern können. Das alles passiert natürlich anonymisiert. Für das Tracking verwenden wir Google Analytics.</p>",
-          "index": 2636,
+          "index": 2616,
           "hash": "46344d8f"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Aber es ist natürlich deine ganz freie Entscheidung.</em></p>",
-          "index": 2637,
+          "index": 2617,
           "hash": "30654dac"
         }
       ],
