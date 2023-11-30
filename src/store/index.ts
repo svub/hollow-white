@@ -38,6 +38,7 @@ export function inPath(link: Reference | Link, path: Array<Reference>): boolean 
   return !!path.find(pathItem => pathItem.chapterId === link.chapterId && pathItem.sectionId === link.sectionId);
 }
 
+// IDEA check window.matchMedia('(prefers-color-scheme: dark)') and select the suitable theme as default
 const defaultOptions: { [id: string]: string } = {};
 book.config.options.forEach(option => defaultOptions[option.id] = (option.choices.find(c => c.default) ?? option.choices[0]).id);
 
