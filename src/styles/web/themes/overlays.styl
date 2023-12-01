@@ -358,7 +358,7 @@ closePad = 60px
             text-decoration underline 
       .list
         stack()
-        .images, .items
+        > *
           transition opacity ease .5s
           &.v-enter
             opacity 0
@@ -368,6 +368,10 @@ closePad = 60px
             opacity 1
           &.v-leave-to
             opacity 0
+        .empty
+          flex-column()
+          min-height 8rem
+          justify-content center
 
       .items
         .item

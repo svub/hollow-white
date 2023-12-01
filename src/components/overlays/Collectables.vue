@@ -9,10 +9,11 @@
 
   .list
     transition
-      .images(v-if="showing === 'images'" key="images")
+      .images(v-if="showing === 'images' && images.length > 0" key="images")
         ImageElement(v-for="image in images" :class="image.id" :element="image")
-      .items(v-if="showing === 'items'" key="items")
+      .items(v-else-if="showing === 'items' && items.length > 0" key="items")
         ItemElement(v-for="item in items" :class="[item.id, item.category].join(' ')" :item="item")
+      .empty(v-else)
 </template>
 
 <script lang="ts">
