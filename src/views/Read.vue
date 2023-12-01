@@ -122,22 +122,23 @@ export default class Read extends TextBase {
     // this.playlist = this.createPlaylist();
   }
 
-  // beforeUpdate() {
-  //   log('Read.beforeUpdate');
-  //   // resetVisibleParagraphs();
-  // }
+  beforeUpdate() {
+    log('Read.beforeUpdate');
+    resetVisibleParagraphs();
+  }
 
-  // updated() {
-  //   log('Read.updated: updatePlaylist', this.updatePlaylist)
-  //   if (this.updatePlaylist) {
-  //     this.updatePlaylist = false
-  //     this.playlist = this.createPlaylist();
-  //     // resetVisibleParagraphs();
-  //     if (this.playback) this.startPlayback();
-  //   }
-  // }
+  updated() {
+    log('Read.updated: updatePlaylist', this.updatePlaylist)
+    // if (this.updatePlaylist) {
+    //   this.updatePlaylist = false
+    //   this.playlist = this.createPlaylist();
+    //   // resetVisibleParagraphs();
+    //   if (this.playback) this.startPlayback();
+    // }
+  }
 
   sectionChanged() {
+    // after the new section faded in, definitely after the text has fully rendered
     log('Read.sectionChanged');
     // continue playing after section has changed
     this.updatePlaylist = true;
