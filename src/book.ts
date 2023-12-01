@@ -14396,9 +14396,9 @@ const book: Book = (({
               "elements": [
                 {
                   "type": "paragraph",
-                  "text": "<p>Bevor ihr losfährt, hört ihr Rose Stimme im Nebenraum.</p>",
+                  "text": "<p>Bevor ihr losfahrt, hört ihr Roses Stimme im Nebenraum.</p>",
                   "index": 1660,
-                  "hash": "2596fb48"
+                  "hash": "a19ee670"
                 },
                 {
                   "type": "paragraph",
