@@ -47,7 +47,7 @@ import { TextBase } from "@/utls/TextBase";
 import logRemote from "@/utls/logRemote";
 import { getVisibleParagraphs, resetVisibleParagraphs } from "@/components/elements/ParagraphElement.vue";
 import { paragraphFilename, titleFilename, decisionFilename } from "../shared/audio";
-import { warn, log, logRaw } from "@/shared/util";
+import { warn, log, logRaw, error } from "@/shared/util";
 import ProgressButton from "@/components/ProgressButton.vue";
 import { allImagesCollected } from "@/components/overlays/Collectables.vue";
 
@@ -86,6 +86,7 @@ export default class Read extends TextBase {
   current = 0;
   playbackSpeed = '1.0';
   playlist: PlaylistItem[] = [];
+  updatePlaylist = true;
 
   enabled(link: Link | SpecialLink): boolean {
     // enabled if: decision taken before (in path); or if last in progress == current (any decision possible)
@@ -107,9 +108,8 @@ export default class Read extends TextBase {
     return allImagesCollected(this.path).length;
   }
 
-  mounted() {
+  async mounted() {
     logRemote('read', 'init', `${this.position.chapter.id}_${this.position.section.id}`);
-    this.playlist = this.createPlaylist();
     this.audio.autoplay = true;
     this.audio.addEventListener('ended', () => {
       this.next();
@@ -118,20 +118,29 @@ export default class Read extends TextBase {
       warn('Error playing audio:', this.playlist[this.current], this.audio.src);
       this.next();
     });
+    // await nextTick();
+    // this.playlist = this.createPlaylist();
   }
 
-  beforeUpdate() {
-    log('Read.beforeUpdate');
-    resetVisibleParagraphs();
-  }
+  // beforeUpdate() {
+  //   log('Read.beforeUpdate');
+  //   // resetVisibleParagraphs();
+  // }
 
-  afterUpdate() {
-    warn('after update');
-  }
+  // updated() {
+  //   log('Read.updated: updatePlaylist', this.updatePlaylist)
+  //   if (this.updatePlaylist) {
+  //     this.updatePlaylist = false
+  //     this.playlist = this.createPlaylist();
+  //     // resetVisibleParagraphs();
+  //     if (this.playback) this.startPlayback();
+  //   }
+  // }
 
   sectionChanged() {
+    log('Read.sectionChanged');
     // continue playing after section has changed
-    this.playlist = this.createPlaylist();
+    this.updatePlaylist = true;
     if (this.playback) this.startPlayback();
   }
 
@@ -142,12 +151,19 @@ export default class Read extends TextBase {
 
   open(link: Link | SpecialLink) {
     log('Read.open', link);
-    resetVisibleParagraphs();
+    // resetVisibleParagraphs();
     return super.open(link);
   }
 
   startPlayback() {
     this.current = 0;
+    if (this.updatePlaylist) {
+      this.updatePlaylist = false;
+      this.playlist = this.createPlaylist();
+      if (this.playlist.length < 1) {
+        error('Empty playlist created!');
+      }
+    }
     this.playTrack();
     this.playback = true;
     this.showPlayer();
@@ -216,12 +232,13 @@ export default class Read extends TextBase {
     const chapterId = this.position.chapter.id;
     const sectionId = this.position.section.id;
     const makeItem = (filename: string, paragraph: string) => ({ filename, paragraph });
+    const visibleParagraphs = getVisibleParagraphs().map(p => makeItem(paragraphFilename(chapterId, sectionId, p.hash), '' + p.index));
+    resetVisibleParagraphs();
 
     return logRaw('Read.createPlaylist', [
       makeItem(titleFilename(chapterId, sectionId), 'title'),
-      ...getVisibleParagraphs().map(p => makeItem(paragraphFilename(chapterId, sectionId, p.hash), '' + p.index)),
-      // TODO make jingle configurable
-      makeItem('before-decision-jingle.mp3', 'jingle'),
+      ...visibleParagraphs,
+      makeItem('before-decision-jingle.mp3', 'jingle'), // TODO make jingle configurable
       makeItem(decisionFilename(chapterId, sectionId), 'decision'),
     ]);
   }
