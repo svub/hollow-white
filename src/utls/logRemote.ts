@@ -1,6 +1,6 @@
 // import { tryPromise } from "./fp";
 import VueGtm, { GtmSupport, useGtm } from '@gtm-support/vue2-gtm';
-import { warn } from "@/shared/util";
+import { log, warn } from "@/shared/util";
 import Vue from 'vue';
 
 const GA_ID = 'G-3L6KHGSJ1H';
@@ -140,7 +140,7 @@ export function logEnable(enable = true) {
 }
 
 export function logAction(eventCategory: string, eventAction: string, eventLabel: string) {
-  // console.log('rlog', eventCategory, eventAction, eventLabel);
+  log('rlog', eventCategory, eventAction, eventLabel);
   // googleTag(eventCategory, eventAction, eventLabel);
 }
 export default logAction;

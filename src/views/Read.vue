@@ -118,8 +118,7 @@ export default class Read extends TextBase {
       warn('Error playing audio:', this.playlist[this.current], this.audio.src);
       this.next();
     });
-    // await nextTick();
-    // this.playlist = this.createPlaylist();
+    setTimeout(() => this.playlist = this.createPlaylist(), 100)
   }
 
   beforeUpdate() {
@@ -138,10 +137,9 @@ export default class Read extends TextBase {
   }
 
   sectionChanged() {
-    // after the new section faded in, definitely after the text has fully rendered
     log('Read.sectionChanged');
+    this.playlist = this.createPlaylist();
     // continue playing after section has changed
-    this.updatePlaylist = true;
     if (this.playback) this.startPlayback();
   }
 
@@ -157,20 +155,17 @@ export default class Read extends TextBase {
   }
 
   startPlayback() {
-    this.current = 0;
-    if (this.updatePlaylist) {
-      this.updatePlaylist = false;
-      this.playlist = this.createPlaylist();
-      if (this.playlist.length < 1) {
-        error('Empty playlist created!');
-      }
+    if (this.playlist.length < 1) {
+      error('Read.startPlayback: empty playlist!');
     }
+    this.current = 0;
     this.playTrack();
     this.playback = true;
     this.showPlayer();
   }
 
   async playTrack() {
+    if (this.playlist.length < 1) error('Read.playTrack: playlist empty', this.playlist);
     const item = this.playlist[this.current];
     this.audio.src = this.rootFolder + item.filename;
     this.paragraph = item.paragraph;

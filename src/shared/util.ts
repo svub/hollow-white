@@ -22,7 +22,8 @@ export function shortenString(s: string, maxLength = 100): string {
 }
 
 function _log(f = console.log, message: string, ...data: any[]) {
-  f.apply(console, [message, ...(data.map(o => shortenString(JSON.stringify(o))))]);
+  const time = Date.now().toString().split('').slice(-6).join('');
+  f.apply(console, [time, message, ...(data.map(o => shortenString(JSON.stringify(o))))]);
 }
 
 function _logJson(f = console.log, message: string, ...data: any[]) {
