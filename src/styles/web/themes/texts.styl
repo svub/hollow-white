@@ -16,7 +16,7 @@
   button.credits:before
     content "Mitwirkende"
   button.imprint:before
-    content "Impressum & Datenschutz"
+    content "Impressum"
 
 .page.read
   .next.links:before
@@ -27,51 +27,60 @@
 .overlay
   &.options
     .title h2:before
-      content 'Optionen'
+      content "Optionen"
     .reset
       label:before
-        content 'Fortschritt löschen'
+        content "Fortschritt löschen"
       .confirm
         h2:before
-          content 'Bist du sicher?'
+          content "Bist du sicher?"
         p:before
-          content 'Dein Gesamtfortschritt geht verloren, die Sammelobjekte kannst du behalten, wenn du möchtest.'
+          content "Dein Gesamtfortschritt geht verloren, die Sammelobjekte kannst du behalten, wenn du möchtest."
         button.ok
           &.progress:before
-            content 'Fortschritt löschen'
+            content "Fortschritt löschen"
           &.all:before
-            content 'Alles löschen'
+            content "Alles löschen"
         button.cancel:before
-          content 'Abbrechen'
+          content "Abbrechen"
 
 
   &.feedback-mode
     .title h2:before
-      content 'Danke für dein Feedback!'
+      content "Danke für dein Feedback!"
     textarea:before
-      content 'Bitte kopiere den Inhalt des folgenden Textfeldes und sende es mit dem Feedbackformular. Einfach den Link unten anklicken.'
+      content "Bitte kopiere den Inhalt des folgenden Textfeldes und sende es mit dem Feedbackformular. Einfach den Link unten anklicken."
     a.feedback-link:before
-      content 'Feedbackformular starten'
+      content "Feedbackformular starten"
 
   &.chapters
     .title h2:before
-      content 'Inhalt'
+      content "Inhalt"
 
     .chapter-id:before
-      content 'Kapitel '
+      content "Kapitel "
 
   &.credits
     .title h2:before
-      content 'Mitwirkende'
+      content "Mitwirkende"
 
   &.imprint
     .title h2:before
-      content 'Impressum & Datenschutz'
+      content "Impressum"
 
-  &.consent
-    .title h2:before
-      content 'Unterstützen & Datenschutz'
+  // &.consent
+  //   .title h2:before
+  //     content "Unterstützen & Datenschutz"
 
-  &.items
+  &.collectables
     .title h2:before
-      content 'Deine Sammlung'
+      content "Deine Sammlung"
+
+    .tabs
+      button.images:before
+        content "Fotos"
+      button.items:before
+        content "Karten"
+
+    .list .empty:before
+      content: "Noch nichts gefunden."

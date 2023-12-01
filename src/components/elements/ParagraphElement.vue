@@ -4,18 +4,21 @@ p.paragraph(v-html="element.text" :class="{ current }")
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
 import { Paragraph } from "../../shared/entities";
-import { log } from "@/shared/util";
+import { log, logRaw } from "@/shared/util";
 import { State } from "vuex-class";
 
 const map = new Map<number, Paragraph>();
 let trace = true;
 
 export function getVisibleParagraphs(): Paragraph[] {
-  return [...map.values()].sort((a, b) => a.index - b.index);
+  return logRaw(
+    'ParagraphElement.getVisibleParagraphs',
+    [...map.values()].sort((a, b) => a.index - b.index));
 }
 
 export function resetVisibleParagraphs() {
-  return map.clear();
+  log('ParagraphElement.resetVisibleParagraphs', map.size);
+  map.clear();
 }
 
 export function enableVisibleParagraphTracing(enable = true) {
@@ -43,14 +46,16 @@ export default class ParagraphElement extends Vue {
   }
 
   get current() {
-    const isCurrent = `` + this.element.index == this.paragraph;
+    const isCurrent = this.element.index == parseInt(this.paragraph);
     if (isCurrent && this.$el) {
       const elementRect = this.$el.getBoundingClientRect();
       // -120: leave some space for the player below
       const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight) - 120;
+      log('ParagraphElement.current: rect, height', elementRect, viewHeight);
 
       if (elementRect.bottom > viewHeight) {
-        this.$el.scrollIntoView({ behavior: "smooth" });
+
+        this.$el.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     }
     return isCurrent;

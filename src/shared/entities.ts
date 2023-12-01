@@ -21,6 +21,9 @@ export interface Reference {
   chapterId: string;
   sectionId: string;
 }
+export function sameRef(a, b: Reference) {
+  return a.chapterId === b.chapterId && a.sectionId === b.sectionId;
+}
 
 // entities
 
@@ -29,7 +32,7 @@ export enum Overlays {
   credits = 'credits',
   imprint = 'imprint',
   chapters = 'chapters',
-  items = 'items',
+  collectables = 'collectables',
   shareOverlay = 'shareOverlay',
   feedbackMode = 'feedbackMode',
   // consent = 'consent',

@@ -1,3 +1,5 @@
+import { Book, ElementType, HasElements, Reference, hasElements, Element } from "@/shared/entities";
+
 export async function loadText(url: string) {
   return await (await fetch(url)).text()
 }
@@ -20,7 +22,8 @@ export function shortenString(s: string, maxLength = 100): string {
 }
 
 function _log(f = console.log, message: string, ...data: any[]) {
-  f.apply(console, [message, ...(data.map(o => shortenString(JSON.stringify(o))))]);
+  const time = Date.now().toString().split('').slice(-6).join('');
+  f.apply(console, [time, message, ...(data.map(o => shortenString(JSON.stringify(o))))]);
 }
 
 function _logJson(f = console.log, message: string, ...data: any[]) {
@@ -76,4 +79,34 @@ export async function waitFor(millis: number) {
   return new Promise(resolve => {
     setTimeout(resolve, millis);
   });
+}
+
+export type ElementReference<Type extends Element> = Reference & {
+  element: Type;
+}
+
+export function getAllElements<Type extends Element>(book: Book, filterType?: ElementType): ElementReference<Type>[] {
+  function findElements(chapterId: string, sectionId: string, has: HasElements) {
+    const results: ElementReference<Type>[] = [];
+    has.elements.forEach((element) => {
+      if (hasElements(element)) {
+        results.push(...findElements(chapterId, sectionId, element as HasElements));
+      }
+      if (filterType && element.type != filterType) return;
+      results.push({
+        chapterId,
+        sectionId,
+        element: element as Type,
+      });
+    });
+    return results;
+  }
+
+  const elements: ElementReference<Type>[] = [];
+  book.chapters.forEach((chapter) => {
+    chapter.sections.forEach((section) => {
+      elements.push(...findElements(chapter.id, section.id, section));
+    });
+  });
+  return elements;
 }
