@@ -45,7 +45,8 @@ export default class Collectables extends Vue {
   @Prop(Array) itemIds!: string[];
   @State path!: Reference[];
   allImages = allImages()
-  showing = this.images.length > 0 ? 'images' : 'items';
+  // showing = this.itemIds.length > 0 ? 'items' : 'images';
+  showing = 'images'; // there will always be images before the reader collects the first item
 
   itemIndex(item: Item): number {
     return this.itemIds.indexOf(item.id);
