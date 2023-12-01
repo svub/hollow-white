@@ -7,7 +7,7 @@
       button.playback(v-if="config.readOutLoud" 
         :class="{ playing: playback }" 
         @click="playback ? stopPlayback() : startPlayback()")
-      button.collectables(v-if="config.items && itemCount > 0" @click="overlay('collectables')")
+      button.collectables(v-if="config.items && itemCount + imageCount > 0" @click="overlay('collectables')")
       button.chapters(@click="overlay('chapters')")
       button.options(@click="overlay('options')")
 
@@ -49,6 +49,7 @@ import { getVisibleParagraphs, resetVisibleParagraphs } from "@/components/eleme
 import { paragraphFilename, titleFilename, decisionFilename } from "../shared/audio";
 import { warn, log, logRaw } from "@/shared/util";
 import ProgressButton from "@/components/ProgressButton.vue";
+import { allImagesCollected } from "@/components/overlays/Collectables.vue";
 
 type PlaylistItem = {
   filename: string;
@@ -102,6 +103,10 @@ export default class Read extends TextBase {
     return this.position.chapter.sections.indexOf(this.position.section) === 0;
   }
 
+  get imageCount() {
+    return allImagesCollected(this.path).length;
+  }
+
   mounted() {
     logRemote('read', 'init', `${this.position.chapter.id}_${this.position.section.id}`);
     this.playlist = this.createPlaylist();
@@ -118,6 +123,10 @@ export default class Read extends TextBase {
   beforeUpdate() {
     log('Read.beforeUpdate');
     resetVisibleParagraphs();
+  }
+
+  afterUpdate() {
+    warn('after update');
   }
 
   sectionChanged() {

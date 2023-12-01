@@ -18,13 +18,24 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import TextElement from '../elements/TextElement.vue';
-import { ElementType, Image, Item, Reference } from '../../shared/entities';
+import { ElementType, Image, Item, Reference, sameRef } from '../../shared/entities';
 import book from '../../book';
 import ItemElement from '../elements/ItemElement.vue';
 import ImageElement from '../elements/ImageElement.vue';
 import { State } from 'vuex-class';
 import { getAllElements } from '@/shared/util';
 import { find, uniqBy } from 'lodash';
+
+
+export function allImages() {
+  return uniqBy(getAllElements<Image>(book, ElementType.image), ir => ir.chapterId + ir.sectionId);
+}
+
+export function allImagesCollected(path: Reference[]) {
+  return allImages() // filter out images that belong to sections in the path
+    .filter(imageRef => find(path, ref => sameRef(imageRef, ref)))
+    .map(ref => ref.element);
+}
 
 @Component({
   name: 'Collectables',
@@ -33,8 +44,8 @@ import { find, uniqBy } from 'lodash';
 export default class Collectables extends Vue {
   @Prop(Array) itemIds!: string[];
   @State path!: Reference[];
-  allImages = uniqBy(getAllElements<Image>(book, ElementType.image), ir => ir.chapterId + ir.sectionId);
-  showing = 'images';
+  allImages = allImages()
+  showing = this.images.length > 0 ? 'images' : 'items';
 
   itemIndex(item: Item): number {
     return this.itemIds.indexOf(item.id);
@@ -45,10 +56,7 @@ export default class Collectables extends Vue {
   }
 
   get images(): Image[] {
-    const sectionIds = this.path.map(ref => ref.sectionId);
-    return this.allImages
-      .filter(imageRef => find(this.path, ref => imageRef.chapterId === ref.chapterId && imageRef.sectionId === ref.sectionId))
-      .map(ref => ref.element);
+    return allImagesCollected(this.path);
   }
 
   // get itemCount(): number {

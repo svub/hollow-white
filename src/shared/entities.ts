@@ -20,6 +20,10 @@ export interface TextEntity extends Entity, Text {
 export interface Reference {
   chapterId: string;
   sectionId: string;
+  same: (otherRef: Reference) => boolean
+}
+export function sameRef(a, b: Reference) {
+  return a.chapterId === b.chapterId && a.sectionId === b.sectionId;
 }
 
 // entities
