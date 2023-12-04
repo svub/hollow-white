@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000">
+    <style>
+      @keyframes pulsate {
+        0% {
+          opacity: .3;
+        }
+        50% {
+          opacity: .6;
+        }
+        100% {
+          opacity: .3;
+        }
+      }
+
+      #app:before {
+        position: absolute;
+        content: "Lädt gerade";
+        top: 33vh;
+        left: calc(50vw - 3rem);
+        animation: pulsate 1250ms ease infinite;
+      }
+    </style>
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>favicon-32x32.png">
