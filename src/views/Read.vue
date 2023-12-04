@@ -28,10 +28,14 @@
             :disabled="!enabled(link)"
             :class="{ selected: selected(link) }") {{ link.title }}
   transition(name="overlay" appear @after-leave="playerLeft")
-    .player(v-if="playerVisible")
-      button.stop(@click="stopPlayback()")
-      ProgressButton.play.progress(:class="{ paused }" @click.native="togglePlayPause()" :progress="progress")
-      button.speed(@click="switchSpeed()") {{ playbackSpeed }}   
+    .player(v-if="playerVisible" :class="{ loading, failed: playbackFailed }")
+      .playing(v-if="!playbackFailed")
+        button.stop(@click="stopPlayback()")
+        ProgressButton.play.progress(:class="{ paused }" @click.native="togglePlayPause()" :progress="progress")
+        button.speed(@click="switchSpeed()") {{ playbackSpeed }}   
+      .failed(v-else)
+        p.message
+        button.stop(@click="stopPlayback()")
 </template>
 
 <script lang="ts">
@@ -47,12 +51,13 @@ import { TextBase } from "@/utls/TextBase";
 import logRemote from "@/utls/logRemote";
 import { getVisibleParagraphs, resetVisibleParagraphs } from "@/components/elements/ParagraphElement.vue";
 import { paragraphFilename, titleFilename, decisionFilename } from "../shared/audio";
-import { warn, log, logRaw, error } from "@/shared/util";
+import { warn, log, error } from "@/shared/util";
 import ProgressButton from "@/components/ProgressButton.vue";
 import { allImagesCollected } from "@/components/overlays/Collectables.vue";
+import { Loader } from "@/utls/loader";
 
 type PlaylistItem = {
-  filename: string;
+  url: string;
   paragraph: string;
 }
 
@@ -86,7 +91,9 @@ export default class Read extends TextBase {
   current = 0;
   playbackSpeed = '1.0';
   playlist: PlaylistItem[] = [];
-  updatePlaylist = true;
+  loader?: Loader;
+  loading = false;
+  playbackFailed = false;
 
   enabled(link: Link | SpecialLink): boolean {
     // enabled if: decision taken before (in path); or if last in progress == current (any decision possible)
@@ -126,16 +133,6 @@ export default class Read extends TextBase {
     resetVisibleParagraphs();
   }
 
-  updated() {
-    log('Read.updated: updatePlaylist', this.updatePlaylist)
-    // if (this.updatePlaylist) {
-    //   this.updatePlaylist = false
-    //   this.playlist = this.createPlaylist();
-    //   // resetVisibleParagraphs();
-    //   if (this.playback) this.startPlayback();
-    // }
-  }
-
   sectionChanged() {
     log('Read.sectionChanged');
     this.playlist = this.createPlaylist();
@@ -148,15 +145,15 @@ export default class Read extends TextBase {
     this.page('start');
   }
 
-  open(link: Link | SpecialLink) {
-    log('Read.open', link);
-    // resetVisibleParagraphs();
-    return super.open(link);
-  }
-
   startPlayback() {
     if (this.playlist.length < 1) {
       error('Read.startPlayback: empty playlist!');
+    }
+    try {
+      this.playbackFailed = false;
+      this.loader = new Loader(this.playlist.map(item => item.url), { startImmediately: true });
+    } catch (e) {
+      warn('Read.startPlayback: error starting loader', e);
     }
     this.current = 0;
     this.playTrack();
@@ -167,7 +164,15 @@ export default class Read extends TextBase {
   async playTrack() {
     if (this.playlist.length < 1) error('Read.playTrack: playlist empty', this.playlist);
     const item = this.playlist[this.current];
-    this.audio.src = this.rootFolder + item.filename;
+    try {
+      this.loading = true;
+      const blob = await this.loader!.get(item.url)!;
+      this.audio.src = log(`Read.playTrack blob URL ${item.url}`, URL.createObjectURL(blob))!;
+    } catch (e) {
+      log('Read.playTrack: error loading track', e);
+      this.playbackFailed = true;
+    }
+    this.loading = false;
     this.paragraph = item.paragraph;
     this.audio.playbackRate = parseFloat(this.playbackSpeed);
     this.paused = false;
@@ -227,16 +232,20 @@ export default class Read extends TextBase {
   createPlaylist(): PlaylistItem[] {
     const chapterId = this.position.chapter.id;
     const sectionId = this.position.section.id;
-    const makeItem = (filename: string, paragraph: string) => ({ filename, paragraph });
+    const makeItem = (filename: string, paragraph: string): PlaylistItem => {
+      return ({ url: this.rootFolder + filename, paragraph });
+    };
     const visibleParagraphs = getVisibleParagraphs().map(p => makeItem(paragraphFilename(chapterId, sectionId, p.hash), '' + p.index));
     resetVisibleParagraphs();
 
-    return logRaw('Read.createPlaylist', [
+    const list = log('Read.createPlaylist', [
       makeItem(titleFilename(chapterId, sectionId), 'title'),
       ...visibleParagraphs,
       makeItem('before-decision-jingle.mp3', 'jingle'), // TODO make jingle configurable
       makeItem(decisionFilename(chapterId, sectionId), 'decision'),
     ]);
+
+    return list;
   }
 
   switchSpeed() {

@@ -162,8 +162,6 @@
       width "calc(%s - 3.7rem)" % maxWidth
     }
     z-index 3
-    justify-content space-between
-    align-items center
     padding pad
     background @css { linear-gradient(rgba(var(--bgColorRgb), 0), var(--bgColor)) }
     pointer-events none
@@ -175,6 +173,16 @@
       animation-direction reverse
 
     diameter = toRem(35)
+
+    &.loading
+      button:not(.stop)
+        animation pulsate 1250ms ease infinite
+        pointer-events none
+
+    .playing
+      flex-row()
+      justify-content space-between
+      align-items center
 
     button
       width diameter
@@ -212,6 +220,21 @@
         font-size toRem(14)
         color var(--fgColorInverse)
 
+    .failed
+      flex-row()
+      align-items center
+      box-shadow 0 0 1rem var(--alert)
+      border-radius 1rem
+      padding 1rem
+      background @css { rgba(var(--bgColorRgb), 0.666) }
+
+      .message
+        flex 3
+        // outline 4px solid red
+      .stop
+        flex 1
+        pointer-events auto
+        // outline 1px solid green
 
 main.player-open
   perspective none
