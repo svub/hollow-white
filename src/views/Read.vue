@@ -181,7 +181,11 @@ export default class Read extends TextBase {
       // expected: it should notice 404 on first try and not try again
       // todo: what to return here ? error ? undefined ?
       logJson('Read.playTrack: error loading track', e);
-      this.playbackFailed = !(isError(e) && !!e.abort);
+      if (isError(e) && e.abort) {
+        this.next(); // skip 404 errors
+      } else {
+        this.playbackFailed = true;
+      }
     }
     this.loading = false;
     this.paragraph = item.paragraph;
