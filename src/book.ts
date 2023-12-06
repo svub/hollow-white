@@ -19,15 +19,15 @@ const book: Book = (({
             },
             {
               "type": "paragraph",
-              "text": "<p><em>Hollow White</em>&nbsp;ist ein interaktives Mystery-Textadventure mit einer Dauer von zirka zwei bis drei Stunden.</p>",
+              "text": "<p><em>Hollow White</em>&nbsp;ist ein interaktiver Mystery-Thriller mit einer Dauer von zirka zwei bis drei Stunden.</p>",
               "index": 1,
-              "hash": "473a65ca"
+              "hash": "712ef9e4"
             },
             {
               "type": "paragraph",
-              "text": "<p>Neben dem künstlerischen Gedanken der Geschichte von <em>Hollow White</em>, stehen deine Entscheidungen im Mittelpunkt.</p>",
+              "text": "<p>Neben dem künstlerischen Gedanken stehen deine Entscheidungen im Mittelpunkt.</p>",
               "index": 2,
-              "hash": "2ebae800"
+              "hash": "3a8b23ce"
             },
             {
               "type": "paragraph",
@@ -21681,9 +21681,9 @@ const book: Book = (({
         },
         {
           "type": "paragraph",
-          "text": "<p>HAndi Kiris</p>",
+          "text": "<p>Andi Kiris</p>",
           "index": 2584,
-          "hash": "e7ef8076"
+          "hash": "7f5dbba5"
         },
         {
           "type": "paragraph",
@@ -21753,26 +21753,50 @@ const book: Book = (({
         },
         {
           "type": "paragraph",
-          "text": "<p><em>Zusammen etwas Gutes tun</em></p>",
+          "text": "<p><em>Linktree</em></p>",
           "index": 2596,
+          "hash": "118eed1e"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p><a href=\"https://twitter.com/HollowWhite23\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></p>",
+          "index": 2597,
+          "hash": "725434b0"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p><a href=\"https://www.instagram.com/hollowwhite_mysterythriller/?utm_source=qr\" rel=\"noopener noreferrer\" target=\"_blank\">Instagram</a></p>",
+          "index": 2598,
+          "hash": "6629dc1f"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p><a href=\"https://www.youtube.com/channel/UChYmSgjyu6-R42qcbROr_wQ\" rel=\"noopener noreferrer\" target=\"_blank\">Youtube</a></p>",
+          "index": 2599,
+          "hash": "55f06be6"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p><em>Zusammen etwas Gutes tun</em></p>",
+          "index": 2600,
           "hash": "4335f769"
         },
         {
           "type": "paragraph",
           "text": "<p>Effective Altruism, die Organisation hinter Giving What We Can, stellt sicher, dass ihre Spende so wirkungsvoll wie möglich ist: <a href=\"https://www.givingwhatwecan.org/donate/organizations?utm_source=hollowwhite&utm_medium=webapp&utm_campaign=beta_release&utm_id=hollowwhitebeta\" rel=\"noopener noreferrer\" target=\"_blank\">Jetzt mehr erfahren und unterstützen.</a></p>",
-          "index": 2597,
+          "index": 2601,
           "hash": "188d85d6"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Feedback und Kontakt</em></p>",
-          "index": 2598,
+          "index": 2602,
           "hash": "7ff1ef06"
         },
         {
           "type": "paragraph",
           "text": "<p>Wir freuen uns über dein <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfFvQn86vGWkSfUPzoax417FXUGDPwXopJRLxtUUS6orJuixQ/viewform?usp=sf_link\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> oder von dir zu hören. Hier kannst du <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Kontakt</a> mit uns aufnehmen.</p>",
-          "index": 2599,
+          "index": 2603,
           "hash": "648c10da"
         }
       ],
@@ -21791,91 +21815,91 @@ const book: Book = (({
         {
           "type": "paragraph",
           "text": "<p><em>Angaben gem. § 5 TMG</em></p>",
-          "index": 2600,
+          "index": 2604,
           "hash": "0d4554b1"
         },
         {
           "type": "paragraph",
           "text": "<p>Thomas Kiris</p>",
-          "index": 2601,
+          "index": 2605,
           "hash": "44232db7"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Kontaktaufnahme</em></p>",
-          "index": 2602,
+          "index": 2606,
           "hash": "13582252"
         },
         {
           "type": "paragraph",
           "text": "<p>E-Mail: info@hollowwhite.de</p>",
-          "index": 2603,
+          "index": 2607,
           "hash": "65955022"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Haftung für Inhalte</em></p>",
-          "index": 2604,
+          "index": 2608,
           "hash": "e5adc0e0"
         },
         {
           "type": "paragraph",
           "text": "<p>Alle Inhalte unseres Internetauftritts wurden mit größter Sorgfalt und nach bestem Gewissen erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.</p>",
-          "index": 2605,
+          "index": 2609,
           "hash": "22476703"
         },
         {
           "type": "paragraph",
           "text": "<p>Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntniserlangung einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von den o.g. Rechtsverletzungen werden wir diese Inhalte unverzüglich entfernen.</p>",
-          "index": 2606,
+          "index": 2610,
           "hash": "1928416a"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Haftungsbeschränkung für externe Links</em></p>",
-          "index": 2607,
+          "index": 2611,
           "hash": "323a4c46"
         },
         {
           "type": "paragraph",
           "text": "<p>Unsere Webseite enthält Links auf externe Webseiten Dritter. Auf die Inhalte dieser direkt oder indirekt verlinkten Webseiten haben wir keinen Einfluss. Daher können wir für die „externen Links“ auch keine Gewähr auf Richtigkeit der Inhalte übernehmen. Für die Inhalte der externen Links sind die jeweiligen Anbieter oder Betreiber (Urheber) der Seiten verantwortlich.</p>",
-          "index": 2608,
+          "index": 2612,
           "hash": "cb90cd3c"
         },
         {
           "type": "paragraph",
           "text": "<p>Die externen Links wurden zum Zeitpunkt der Linksetzung auf eventuelle Rechtsverstöße überprüft und waren im Zeitpunkt der Linksetzung frei von rechtswidrigen Inhalten. Eine ständige inhaltliche Überprüfung der externen Links ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht möglich. Bei direkten oder indirekten Verlinkungen auf die Webseiten Dritter, die außerhalb unseres Verantwortungsbereichs liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall nur bestehen, wenn wir von den Inhalten Kenntnis erlangen und es uns technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern.</p>",
-          "index": 2609,
+          "index": 2613,
           "hash": "5ab63440"
         },
         {
           "type": "paragraph",
           "text": "<p>Diese Haftungsausschlusserklärung gilt auch innerhalb des eigenen Internetauftrittes „hollowwhite.de“ gesetzten Links und Verweise von Fragestellern, Blogeinträgern, Gästen des Diskussionsforums. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargestellten Informationen entstehen, haftet allein der Diensteanbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.</p>",
-          "index": 2610,
+          "index": 2614,
           "hash": "5eac54a6"
         },
         {
           "type": "paragraph",
           "text": "<p>Werden uns Rechtsverletzungen bekannt, werden die externen Links durch uns unverzüglich entfernt.</p>",
-          "index": 2611,
+          "index": 2615,
           "hash": "fb1ec3ee"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Urheberrecht</em></p>",
-          "index": 2612,
+          "index": 2616,
           "hash": "c5f7aa62"
         },
         {
           "type": "paragraph",
           "text": "<p>Die auf unserer Webseite veröffentlichen Inhalte und Werke unterliegen dem deutschen Urheberrecht (http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf) . Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung des geistigen Eigentums in ideeller und materieller Sicht des Urhebers außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Urhebers i.S.d. Urhebergesetzes (http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf&nbsp;). Downloads und Kopien dieser Seite sind nur für den privaten und nicht kommerziellen Gebrauch erlaubt. Sind die Inhalte auf unserer Webseite nicht von uns erstellt wurden, sind die Urheberrechte Dritter zu beachten. Die Inhalte Dritter werden als solche kenntlich gemacht. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte unverzüglich entfernen.</p>",
-          "index": 2613,
+          "index": 2617,
           "hash": "9fc1d61a"
         },
         {
           "type": "paragraph",
           "text": "<p>Dieses Impressum&nbsp;wurde freundlicherweise von <a href=\"https://jurarat.de/\" rel=\"noopener noreferrer\" target=\"_blank\">jurarat.de</a>&nbsp;zur Verfügung gestellt.</p>",
-          "index": 2614,
+          "index": 2618,
           "hash": "39935030"
         }
       ],
@@ -21888,19 +21912,19 @@ const book: Book = (({
         {
           "type": "paragraph",
           "text": "<p><em>Unterstützen</em></p>",
-          "index": 2615,
+          "index": 2619,
           "hash": "aad92a18"
         },
         {
           "type": "paragraph",
           "text": "<p>Hollow White ist ein gemeinnütziges Projekt. Wenn du uns unterstützen möchtest, kannst du natürlich das Projekt teilen, aber du kannst uns auch erlauben, dir bei der Benutzung über die Schulter zu schauen, damit wir sehen können, wie Hollow White verwendet wird und wo wir noch etwas verbessern können. Das alles passiert natürlich anonymisiert. Für das Tracking verwenden wir Google Analytics.</p>",
-          "index": 2616,
+          "index": 2620,
           "hash": "46344d8f"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Aber es ist natürlich deine ganz freie Entscheidung.</em></p>",
-          "index": 2617,
+          "index": 2621,
           "hash": "30654dac"
         }
       ],
