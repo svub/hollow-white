@@ -1,4 +1,4 @@
-import { error, log } from "@/shared/util";
+import { error, log, waitFor } from "@/shared/util";
 
 type Options = {
   retries: number;
@@ -8,7 +8,7 @@ type Options = {
 
 const defaults: Options = {
   retries: 3,
-  timeout: 1000,
+  timeout: 3000,
   startImmediately: false,
 };
 
@@ -22,7 +22,8 @@ export class Loader {
   private urls: string[];
   private results = new Map<string, Result>();
   private options: Options;
-  private listening: ((result: Result) => void)[] = [];
+  private listening: ((result?: Result) => void)[] = [];
+  cancelled = false;
 
   constructor(urls: string[], options?: Partial<Options>) {
     if (urls.length < 1) error('No URLs provided.');
@@ -35,7 +36,9 @@ export class Loader {
   get(url: string) {
     return new Promise<Blob>((resolve, reject) => {
       const callback = (result?: Result) => {
-        if (result && result.url === url) {
+        if (this.cancelled) {
+          reject({ url, text: "Downloading cancelled." });
+        } else if (result && result.url === url) {
           this.listening.splice(this.listening.indexOf(callback), 1);
           if (result.blob) {
             resolve(result.blob);
@@ -49,7 +52,7 @@ export class Loader {
     });
   }
 
-  private notify(result: Result) {
+  private notify(result?: Result) {
     this.listening.forEach(callback => callback(result));
   }
 
@@ -69,19 +72,26 @@ export class Loader {
     }
   }
 
-  loadAndRetry(url: string): Promise<Blob> {
-    let retry = 0
-    while (retry < this.options.retries) {
+  cancel() {
+    log("Loader.cancel: cancelled.");
+    this.cancelled = true;
+    this.notify();
+  }
+
+  async loadAndRetry(url: string): Promise<Blob> {
+    let retry = 0;
+    while (retry <= this.options.retries) {
       try {
-        return this.load(url);
+        return await this.load(url);
       } catch (error) {
         if (retry >= this.options.retries) {
           return Promise.reject(error);
         }
       }
+      await waitFor(this.options.timeout);
       retry++;
     }
-    return Promise.reject('#########');
+    return Promise.reject('Loader.loadAndRetry: the impossible error!');
   }
 
   async load(url: string): Promise<Blob> {

@@ -12,7 +12,7 @@
       button.options(@click="overlay('options')")
 
   .content
-    transition(name="section" mode="out-in" v-on:after-enter="sectionChanged")
+    transition(name="section" mode="out-in" @before-enter="beforeSectionChanged" @after-enter="afterSectionChanged")
       .section(:key="`${position.chapter.id}-${position.section.id}`")
         .title
           .position(v-if="feedbackEnabled") {{ position.chapter.id }}-{{ position.section.id }}
@@ -32,10 +32,15 @@
       .playing(v-if="!playbackFailed")
         button.stop(@click="stopPlayback()")
         ProgressButton.play.progress(:class="{ paused }" @click.native="togglePlayPause()" :progress="progress")
-        button.speed(@click="switchSpeed()") {{ playbackSpeed }}   
-      .failed(v-else)
-        p.message
-        button.stop(@click="stopPlayback()")
+        button.speed(@click="switchSpeed()") {{ playbackSpeed }}  
+      .failed.backdrop(v-else @click="stopPlayback()")
+        .overlay
+          .title
+          .content
+            .text
+              p.message
+        .actions
+          button.close(@click="stopPlayback()")
 </template>
 
 <script lang="ts">
@@ -128,13 +133,15 @@ export default class Read extends TextBase {
     setTimeout(() => this.playlist = this.createPlaylist(), 100)
   }
 
-  beforeUpdate() {
-    log('Read.beforeUpdate');
+  beforeSectionChanged() {
+    log('Read.beforeSectionChanged');
+    this.togglePlayPause(false);
     resetVisibleParagraphs();
+    this.loader?.cancel();
   }
 
-  sectionChanged() {
-    log('Read.sectionChanged');
+  afterSectionChanged() {
+    log('Read.afterSectionChanged');
     this.playlist = this.createPlaylist();
     // continue playing after section has changed
     if (this.playback) this.startPlayback();
@@ -151,7 +158,7 @@ export default class Read extends TextBase {
     }
     try {
       this.playbackFailed = false;
-      this.loader = new Loader(this.playlist.map(item => item.url), { startImmediately: true });
+      this.loader = new Loader(this.playlist.map(item => item.url), { startImmediately: true, timeout: 2000, retries: 10 });
     } catch (e) {
       warn('Read.startPlayback: error starting loader', e);
     }
@@ -192,8 +199,8 @@ export default class Read extends TextBase {
     this.showPlayer(false);
   }
 
-  async togglePlayPause() {
-    if (this.paused) {
+  async togglePlayPause(startPlaying = this.paused) {
+    if (startPlaying) {
       this.paused = false;
       await this.audio.play();
     } else {
