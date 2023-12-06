@@ -12,10 +12,19 @@ const defaults: Options = {
   startImmediately: false,
 };
 
-type Result = {
+export type Result = {
   url: string;
   blob?: Blob;
-  error?: any;
+  error?: Error;
+}
+
+export type Error = {
+  message: string;
+  reason: any;
+  abort?: boolean;
+}
+export function isError(element: any): element is Error {
+  return (element as Error)?.message !== undefined;
 }
 
 export class Loader {
@@ -64,7 +73,10 @@ export class Loader {
         const blob = await this.loadAndRetry(url);
         result = { url, blob };
       } catch (error) {
-        result = { url, error };
+        if (isError(error))
+          result = { url, error };
+        else
+          result = { url, error: { message: "Loading failed for an unknown reason. ", reason: error } };
       }
       this.results.set(url, result);
       this.notify(result);
@@ -76,6 +88,7 @@ export class Loader {
     log("Loader.cancel: cancelled.");
     this.cancelled = true;
     this.notify();
+    // TODO use AbortController to cancel ongoing downloads https://developer.mozilla.org/en-US/docs/Web/API/AbortController
   }
 
   async loadAndRetry(url: string): Promise<Blob> {
@@ -83,40 +96,48 @@ export class Loader {
     while (retry <= this.options.retries) {
       try {
         return await this.load(url);
-      } catch (error) {
+      } catch (reason) {
+        if (isError(reason)) {
+          if (reason.abort) {
+            return Promise.reject(reason);
+          }
+        }
         if (retry >= this.options.retries) {
-          return Promise.reject(error);
+          return Promise.reject({ message: `Loader.loadAndRetry: failed after ${this.options.retries} retries.`, reason });
         }
       }
       await waitFor(this.options.timeout);
       retry++;
     }
-    return Promise.reject('Loader.loadAndRetry: the impossible error!');
+    return Promise.reject({ message: 'Loader.loadAndRetry: the impossible error!', reason: false });
   }
 
   async load(url: string): Promise<Blob> {
     return new Promise<Blob>((resolve, reject) => {
+      const nope = (message, reason, more?) => reject({ message, reason, ...more } as Error);
       try {
         const p = fetch(url)
           .then(response => {
-            if (response.status === 404) {
-              reject('Resource does not exists. 404.');
-            }
             if (!response.ok) {
-              reject({ status: response.status, text: response.statusText });
+              log('Loader.load: fetch !ok; url, status, text', url, response.status, response.statusText);
+              const reason = { status: response.status, text: response.statusText };
+              if (response.status === 404) {
+                return nope('Resource does not exists. 404.', reason, { abort: true });
+              }
+              return nope('Loading failed.', reason);
             }
             response.blob()
               .then(blob => {
                 // make sure the file is loaded completely
                 blob.arrayBuffer()
                   .then(() => resolve(blob))
-                  .catch(reason => reject({ text: 'Loader.load: fetch failed (catch)', reason }))
+                  .catch(reason => nope('Loader.load: fetch failed (catch)', reason))
               })
-              .catch(reason => reject({ text: 'Loader.load: failed to load blob', reason }))
+              .catch(reason => nope('Loader.load: failed to load blob', reason))
           })
-          .catch(reason => reject({ text: 'Loader.load: fetch failed (catch)', reason }))
+          .catch(reason => nope('Loader.load: fetch failed (catch)', reason))
       } catch (reason) {
-        reject({ text: 'Loader.load: fetch failed (try)', reason });
+        nope('Loader.load: fetch failed (try)', reason);
       }
     });
   }

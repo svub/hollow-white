@@ -38,7 +38,7 @@ export default class Chapters extends Vue {
   current = 0;
 
   created() {
-    this.current = warn('Chapters initial index', findIndex(this.chapters, chapter => chapter.id === this.position.chapter.id))!;
+    this.current = warn('Chapters.created: initial index', findIndex(this.chapters, chapter => chapter.id === this.position.chapter.id))!;
   }
 
   show(index = this.current) {

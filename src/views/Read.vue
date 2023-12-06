@@ -56,10 +56,10 @@ import { TextBase } from "@/utls/TextBase";
 import logRemote from "@/utls/logRemote";
 import { getVisibleParagraphs, resetVisibleParagraphs } from "@/components/elements/ParagraphElement.vue";
 import { paragraphFilename, titleFilename, decisionFilename } from "../shared/audio";
-import { warn, log, error } from "@/shared/util";
+import { warn, log, error, logJson } from "@/shared/util";
 import ProgressButton from "@/components/ProgressButton.vue";
 import { allImagesCollected } from "@/components/overlays/Collectables.vue";
-import { Loader } from "@/utls/loader";
+import { Loader, Error, isError } from "@/utls/loader";
 
 type PlaylistItem = {
   url: string;
@@ -158,7 +158,7 @@ export default class Read extends TextBase {
     }
     try {
       this.playbackFailed = false;
-      this.loader = new Loader(this.playlist.map(item => item.url), { startImmediately: true, timeout: 2000, retries: 10 });
+      this.loader = new Loader(this.playlist.map(item => item.url), { startImmediately: true, timeout: 5000, retries: 6 });
     } catch (e) {
       warn('Read.startPlayback: error starting loader', e);
     }
@@ -176,8 +176,12 @@ export default class Read extends TextBase {
       const blob = await this.loader!.get(item.url)!;
       this.audio.src = log(`Read.playTrack blob URL ${item.url}`, URL.createObjectURL(blob))!;
     } catch (e) {
-      log('Read.playTrack: error loading track', e);
-      this.playbackFailed = true;
+      // situation: I get an error after 10 retries -> shows dialog
+      // problem: it might be an audio file that doesn't exist (item text)
+      // expected: it should notice 404 on first try and not try again
+      // todo: what to return here ? error ? undefined ?
+      logJson('Read.playTrack: error loading track', e);
+      this.playbackFailed = !(isError(e) && !!e.abort);
     }
     this.loading = false;
     this.paragraph = item.paragraph;
