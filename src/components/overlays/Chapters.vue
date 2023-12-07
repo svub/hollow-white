@@ -11,8 +11,8 @@
               h4(:key="section.id") {{ section.title }}
     .go.left(:class="{ enabled: current > 0 }" @click="previous = current--") &laquo;
     .go.right(:class="{ enabled: current < chapters.length -1 }" @click="previous = current++") &raquo;
-  .dots
-    button.dot(v-for="(chapter, index) in chapters" @click="show(index)" :class="{ open: index === current }") {{ chapter.id }}
+  //- .dots
+  //-   button.dot(v-for="(chapter, index) in chapters" @click="show(index)" :class="{ open: index === current }") {{ chapter.id }}
 </template>
 
 <script lang="ts">
