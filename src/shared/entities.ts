@@ -21,8 +21,8 @@ export interface Reference {
   chapterId: string;
   sectionId: string;
 }
-export function sameRef(a, b: Reference) {
-  return a.chapterId === b.chapterId && a.sectionId === b.sectionId;
+export function sameRef(a: Reference, b: Reference) {
+  return (a.chapterId === b.chapterId) && (a.sectionId === b.sectionId);
 }
 
 // entities

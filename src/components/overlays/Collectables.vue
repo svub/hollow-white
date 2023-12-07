@@ -29,7 +29,7 @@ import { find, uniqBy } from 'lodash';
 
 
 export function allImages() {
-  return uniqBy(getAllElements<Image>(book, ElementType.image), ir => ir.chapterId + ir.sectionId);
+  return uniqBy(getAllElements<Image>(book, ElementType.image), ir => ir.element.id);
 }
 
 export function allImagesCollected(path: Reference[]) {
