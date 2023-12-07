@@ -120,8 +120,13 @@ export default class Read extends TextBase {
     return allImagesCollected(this.path).length;
   }
 
+  created() {
+    log('Read.created');
+    resetVisibleParagraphs();
+  }
+
   async mounted() {
-    logRemote('read', 'init', `${this.position.chapter.id}_${this.position.section.id}`);
+    log('Read.mounted', `${this.position.chapter.id}_${this.position.section.id}`);
     this.audio.autoplay = true;
     this.audio.addEventListener('ended', () => {
       this.next();
