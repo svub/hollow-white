@@ -1,6 +1,7 @@
 @import '../../vars'
 @import '../../macros'
 @import './macros'
+@import './buttons'
 
 .page.read
   nav
@@ -162,8 +163,6 @@
       width "calc(%s - 3.7rem)" % maxWidth
     }
     z-index 3
-    justify-content space-between
-    align-items center
     padding pad
     background @css { linear-gradient(rgba(var(--bgColorRgb), 0), var(--bgColor)) }
     pointer-events none
@@ -175,6 +174,16 @@
       animation-direction reverse
 
     diameter = toRem(35)
+
+    &.loading
+      button:not(.stop)
+        animation pulsate 1250ms ease infinite
+        pointer-events none
+
+    .playing
+      flex-row()
+      justify-content space-between
+      align-items center
 
     button
       width diameter
@@ -211,6 +220,30 @@
       &.speed
         font-size toRem(14)
         color var(--fgColorInverse)
+
+    &.failed
+      padding 0
+      pointer-events auto
+      text-align center
+
+      .failed.backdrop
+        flex-row()
+        align-items center
+        border-radius 1rem
+        padding 1rem
+        background @css { rgba(var(--bgColorRgb), 0.666) }
+        position relative
+        padding 0
+
+        .actions
+          position absolute
+          width 100%
+          button.close
+            @extends .outline-button
+            image-button('options-close-x.svg')
+            background var(--closeButtonBg)
+            border-radius 50%
+            padding 0
 
 
 main.player-open

@@ -23,6 +23,11 @@
     content "Deine Entscheidung"
   .next.links.count-1:before
     content "Weiter zu"
+  .player .failed.backdrop
+    .title:before
+      content "Verbindungsprobleme"
+    .message:before
+      content "Bitte probiere es später noch einmal.";
 
 .overlay
   &.options
@@ -67,10 +72,6 @@
   &.imprint
     .title h2:before
       content "Impressum"
-
-  // &.consent
-  //   .title h2:before
-  //     content "Unterstützen & Datenschutz"
 
   &.collectables
     .title h2:before

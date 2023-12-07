@@ -19,15 +19,15 @@ const book: Book = (({
             },
             {
               "type": "paragraph",
-              "text": "<p><em>Hollow White</em>&nbsp;ist ein interaktives Mystery-Textadventure mit einer Dauer von zirka zwei bis drei Stunden.</p>",
+              "text": "<p><em>Hollow White</em>&nbsp;ist ein interaktiver Mystery-Thriller mit einer Dauer von zirka zwei bis drei Stunden.</p>",
               "index": 1,
-              "hash": "473a65ca"
+              "hash": "712ef9e4"
             },
             {
               "type": "paragraph",
-              "text": "<p>Neben dem künstlerischen Gedanken der Geschichte von <em>Hollow White</em>, stehen deine Entscheidungen im Mittelpunkt.</p>",
+              "text": "<p>Neben dem künstlerischen Gedanken stehen deine Entscheidungen im Mittelpunkt.</p>",
               "index": 2,
-              "hash": "2ebae800"
+              "hash": "3a8b23ce"
             },
             {
               "type": "paragraph",
@@ -21347,9 +21347,9 @@ const book: Book = (({
             },
             {
               "type": "paragraph",
-              "text": "<p>Doch <em>Hollow White</em>&nbsp;ist noch nicht zu Ende. Du kannst das Abenteuer wiederholen und weitere Geheimnisse aufdecken oder du machst dich auf die Suche nach den restlichen versteckten &nbsp;<em>Fotos</em> und&nbsp;<em>Sammelobjekten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Nur wenn du den Speicherstand oder den Browserspeicher löschst, gehen sie verloren.</p>",
+              "text": "<p>Doch <em>Hollow White</em>&nbsp;ist noch nicht zu Ende. Du kannst das Abenteuer wiederholen und weitere Geheimnisse aufdecken oder du machst dich auf die Suche nach den restlichen versteckten <em>Fotos</em> und&nbsp;<em>Sammelobjekten</em>. Deine bisherige Sammlung bleibt natürlich erhalten. Nur wenn du den Speicherstand oder den Browserspeicher löschst, gehen sie verloren.</p>",
               "index": 2539,
-              "hash": "eccd9cb4"
+              "hash": "48958982"
             },
             {
               "type": "paragraph",
@@ -21363,6 +21363,11 @@ const book: Book = (({
               "title": "Nachwort",
               "chapterId": "13",
               "sectionId": "002"
+            },
+            {
+              "title": "Unterstützen",
+              "chapterId": "13",
+              "sectionId": "003"
             }
           ]
         },
@@ -21372,86 +21377,38 @@ const book: Book = (({
           "elements": [
             {
               "type": "paragraph",
-              "text": "<p>Danke an alle, die uns unterstützt haben.</p>",
-              "index": 2541,
-              "hash": "6841306c"
-            },
-            {
-              "type": "paragraph",
-              "text": "<p>Inspiriert von Mystery-Klassikern, aktuellen Werken und Zeitgeschehen ist die Idee zu <em>Hollow White</em> entstanden.</p>",
-              "index": 2542,
-              "hash": "f1d644a6"
-            },
-            {
-              "type": "paragraph",
-              "text": "<p>Motivation war es, eine fiktive spannende Geschichte mit einer eigenen Art von Schreibstil zu erschaffen, in welcher die Leser selbst ins Geschehen eintauchen und sich mit den Charakteren und deren Entscheidungen verbinden.</p>",
-              "index": 2543,
-              "hash": "90abebc2"
-            },
-            {
-              "type": "paragraph",
               "text": "<p>Mit viel Teamspirit und Herzblut haben wir es geschafft <em>Hollow White</em>&nbsp;zu veröffentlichen.</p>",
-              "index": 2544,
+              "index": 2541,
               "hash": "3782babe"
             },
             {
               "type": "paragraph",
               "text": "<p>Großen Dank gilt allen Mitwirkenden, die uns unterstützt haben.</p>",
-              "index": 2545,
+              "index": 2542,
               "hash": "7f2fadab"
             },
             {
               "type": "paragraph",
               "text": "<p>Jeder Impuls hat uns erreicht.</p>",
-              "index": 2546,
+              "index": 2543,
               "hash": "1b9ccbe8"
             },
             {
-              "type": "if",
-              "condition": "STATE karma > 3",
-              "elements": [
-                {
-                  "type": "paragraph",
-                  "text": "<p>Und zum Schluss Danke an dich. Wir hoffen, du hattest eine ganz besondere Leseerfahrung und <em>Hollow White</em>&nbsp;bleibt dir lange Zeit in Erinnerung.</p>",
-                  "index": 2547,
-                  "hash": "5870037c"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "<p>Wir freuen uns über dein <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfFvQn86vGWkSfUPzoax417FXUGDPwXopJRLxtUUS6orJuixQ/viewform?usp=sf_link\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> oder von dir zu hören. Hier kannst du <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Kontakt</a> mit uns aufnehmen.</p>",
-                  "index": 2548,
-                  "hash": "648c10da"
-                }
-              ]
-            },
-            {
-              "type": "else",
-              "ifCondition": "STATE karma > 3",
-              "elements": [
-                {
-                  "type": "paragraph",
-                  "text": "<p>Und zum Schluss Danke an dich. Wir hoffen, du hattest eine ganz besondere Leseerfahrung und <em>Hollow White</em>&nbsp;bleibt dir lange Zeit in Erinnerung.</p>",
-                  "index": 2549,
-                  "hash": "5870037c"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "<p>Wir freuen uns über dein <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfFvQn86vGWkSfUPzoax417FXUGDPwXopJRLxtUUS6orJuixQ/viewform?usp=sf_link\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> oder von dir zu hören. Hier kannst du <a href=\"mailto:feedback@schwarzerkreis.de\" rel=\"noopener noreferrer\" target=\"_blank\">Kontakt</a> mit uns aufnehmen.</p>",
-                  "index": 2550,
-                  "hash": "7d8fecb4"
-                }
-              ]
+              "type": "paragraph",
+              "text": "<p>Und zum Schluss Danke an dich. Wir freuen uns über dein <a href=\"https://linktr.ee/hollow_white\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> und von dir zu hören.</p>",
+              "index": 2544,
+              "hash": "41204f10"
             },
             {
               "type": "paragraph",
-              "text": "<p>Jetzt liegt es wieder an dir, wie es weitergeht.</p>",
-              "index": 2551,
-              "hash": "f2695638"
+              "text": "<p>Jetzt liegt es bei dir, wie es weitergeht.</p>",
+              "index": 2545,
+              "hash": "7b8d603b"
             }
           ],
           "next": [
             {
-              "title": "Jetzt aktiv werden",
+              "title": "Unterstützen",
               "chapterId": "13",
               "sectionId": "003"
             },
@@ -21464,7 +21421,7 @@ const book: Book = (({
         },
         {
           "id": "003",
-          "title": "Jetzt aktiv werden",
+          "title": "Jetzt aktiv werden und unterstützen",
           "elements": [
             {
               "type": "addItem",
@@ -21473,17 +21430,22 @@ const book: Book = (({
             {
               "type": "paragraph",
               "text": "<p>Lass uns zusammen etwas Gutes tun.</p>",
-              "index": 2552,
+              "index": 2546,
               "hash": "769baee5"
             },
             {
               "type": "paragraph",
-              "text": "<p>Effective Altruism, die Organisation hinter Giving What We Can, stellt sicher, dass ihre Spende so wirkungsvoll wie möglich ist: <a href=\"https://www.givingwhatwecan.org/donate/organizations?utm_source=hollowwhite&utm_medium=webapp&utm_campaign=beta_release&utm_id=hollowwhitebeta\" rel=\"noopener noreferrer\" target=\"_blank\">Jetzt mehr erfahren und unterstützen.</a></p>",
-              "index": 2553,
-              "hash": "188d85d6"
+              "text": "<p><em>Effective Altruism</em>, die Organisation hinter Giving What We Can, stellt sicher, dass ihre Spende so wirkungsvoll wie möglich ist: <a href=\"https://www.givingwhatwecan.org/donate/organizations?utm_source=hollowwhite&utm_medium=webapp&utm_campaign=christmas2023&utm_id=hollowwhite2023\" rel=\"noopener noreferrer\" target=\"_blank\">Jetzt mehr erfahren und unterstützen</a>.</p>",
+              "index": 2547,
+              "hash": "91c332f6"
             }
           ],
           "next": [
+            {
+              "title": "Nachwort",
+              "chapterId": "13",
+              "sectionId": "002"
+            },
             {
               "title": "Hollow White neu beginnen",
               "id": "reset",
@@ -21502,278 +21464,278 @@ const book: Book = (({
         {
           "type": "paragraph",
           "text": "<p><em>Autor, UX/UI & Illustrationen</em></p>",
-          "index": 2554,
+          "index": 2548,
           "hash": "e55ad370"
         },
         {
           "type": "paragraph",
-          "text": "<p>Thomas Kiris</p>",
-          "index": 2555,
-          "hash": "44232db7"
+          "text": "<p><a href=\"https://linktr.ee/hollow_white\" rel=\"noopener noreferrer\" target=\"_blank\">Thomas Kiris</a></p>",
+          "index": 2549,
+          "hash": "85245910"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Konzept & Programmierung</em></p>",
-          "index": 2556,
+          "index": 2550,
           "hash": "fc1ded58"
         },
         {
           "type": "paragraph",
-          "text": "<p>Sven Buschbeck</p>",
-          "index": 2557,
-          "hash": "643d775e"
+          "text": "<p><a href=\"https://linktr.ee/svenbuschbeck\" rel=\"noopener noreferrer\" target=\"_blank\">Sven Buschbeck</a></p>",
+          "index": 2551,
+          "hash": "778a7942"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Lektor & Mentoring</em></p>",
-          "index": 2558,
+          "index": 2552,
           "hash": "66fadf2c"
         },
         {
           "type": "paragraph",
           "text": "<p>Fritz Krautzberger</p>",
-          "index": 2559,
+          "index": 2553,
           "hash": "42b42378"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Icon Design</em></p>",
-          "index": 2560,
+          "index": 2554,
           "hash": "427e32cd"
         },
         {
           "type": "paragraph",
           "text": "<p>Minh Chau Appelhagen-Lu</p>",
-          "index": 2561,
+          "index": 2555,
           "hash": "7cd81117"
         },
         {
           "type": "paragraph",
           "text": "<p>Thomas Kiris</p>",
-          "index": 2562,
+          "index": 2556,
           "hash": "44232db7"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Hollow White Teaser Video</em></p>",
-          "index": 2563,
+          "index": 2557,
           "hash": "49d99d3f"
         },
         {
           "type": "paragraph",
           "text": "<p>Helge Stang</p>",
-          "index": 2564,
+          "index": 2558,
           "hash": "59cb6cda"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Künstler</em></p>",
-          "index": 2565,
+          "index": 2559,
           "hash": "dfb2bd0a"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://on.soundcloud.com/xmg4C\" rel=\"noopener noreferrer\" target=\"_blank\">Lord Neon</a></p>",
-          "index": 2566,
+          "index": 2560,
           "hash": "7bfc9cf1"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://maevia.bandcamp.com\" rel=\"noopener noreferrer\" target=\"_blank\">MAEVIA</a></p>",
-          "index": 2567,
+          "index": 2561,
           "hash": "655429af"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://soundcloud.com/takoda_vibe/popular-tracks\" rel=\"noopener noreferrer\" target=\"_blank\">Takoda Vibe</a></p>",
-          "index": 2568,
+          "index": 2562,
           "hash": "720df678"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://www.aweckesser.com\" rel=\"noopener noreferrer\" target=\"_blank\">A. Weckesser</a></p>",
-          "index": 2569,
+          "index": 2563,
           "hash": "688fc132"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://www.facebook.com/people/M-O-E/100064279232589\" rel=\"noopener noreferrer\" target=\"_blank\">M O E</a></p>",
-          "index": 2570,
+          "index": 2564,
           "hash": "71d1ecf8"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Testleser</em></p>",
-          "index": 2571,
+          "index": 2565,
           "hash": "bcfa2e86"
         },
         {
           "type": "paragraph",
           "text": "<p>Minh Chau Appelhagen-Lu</p>",
-          "index": 2572,
+          "index": 2566,
           "hash": "7cd81117"
         },
         {
           "type": "paragraph",
           "text": "<p>Benedikt Rascop</p>",
-          "index": 2573,
+          "index": 2567,
           "hash": "4b5ac1c5"
         },
         {
           "type": "paragraph",
           "text": "<p>Bettina Buschbeck</p>",
-          "index": 2574,
+          "index": 2568,
           "hash": "1f0150d6"
         },
         {
           "type": "paragraph",
           "text": "<p>Sven Buschbeck</p>",
-          "index": 2575,
+          "index": 2569,
           "hash": "643d775e"
         },
         {
           "type": "paragraph",
           "text": "<p>Alexandra Röhl</p>",
-          "index": 2576,
+          "index": 2570,
           "hash": "7ccc7415"
         },
         {
           "type": "paragraph",
           "text": "<p>Sebastian Anton</p>",
-          "index": 2577,
+          "index": 2571,
           "hash": "6da96192"
         },
         {
           "type": "paragraph",
           "text": "<p>Frank Wehrle</p>",
-          "index": 2578,
+          "index": 2572,
           "hash": "331a5ab4"
         },
         {
           "type": "paragraph",
           "text": "<p>Elke Kiris</p>",
-          "index": 2579,
+          "index": 2573,
           "hash": "0c178fb4"
         },
         {
           "type": "paragraph",
           "text": "<p>Ben Regali</p>",
-          "index": 2580,
+          "index": 2574,
           "hash": "4d2a7b54"
         },
         {
           "type": "paragraph",
           "text": "<p>Franz Schelke</p>",
-          "index": 2581,
+          "index": 2575,
           "hash": "98658972"
         },
         {
           "type": "paragraph",
           "text": "<p>Michael Krett</p>",
-          "index": 2582,
+          "index": 2576,
           "hash": "42cb0edc"
         },
         {
           "type": "paragraph",
           "text": "<p>Varinja Kiris</p>",
-          "index": 2583,
+          "index": 2577,
           "hash": "be077764"
         },
         {
           "type": "paragraph",
-          "text": "<p>HAndi Kiris</p>",
-          "index": 2584,
-          "hash": "e7ef8076"
+          "text": "<p>Andi Kiris</p>",
+          "index": 2578,
+          "hash": "7f5dbba5"
         },
         {
           "type": "paragraph",
           "text": "<p>Bernd Schreyer</p>",
-          "index": 2585,
+          "index": 2579,
           "hash": "770d43ea"
         },
         {
           "type": "paragraph",
           "text": "<p>Christoph Jaster</p>",
-          "index": 2586,
+          "index": 2580,
           "hash": "58c16da0"
         },
         {
           "type": "paragraph",
           "text": "<p>Michael Heller</p>",
-          "index": 2587,
+          "index": 2581,
           "hash": "ac8b7b50"
         },
         {
           "type": "paragraph",
           "text": "<p>Maximilian Harz</p>",
-          "index": 2588,
+          "index": 2582,
           "hash": "eea5803a"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Speziellen Dank</em></p>",
-          "index": 2589,
+          "index": 2583,
           "hash": "67562eef"
         },
         {
           "type": "paragraph",
           "text": "<p>Silke Kiris</p>",
-          "index": 2590,
+          "index": 2584,
           "hash": "8f40020a"
         },
         {
           "type": "paragraph",
           "text": "<p>Benedikt Rascop</p>",
-          "index": 2591,
+          "index": 2585,
           "hash": "4b5ac1c5"
         },
         {
           "type": "paragraph",
           "text": "<p>Alessandro Russo</p>",
-          "index": 2592,
+          "index": 2586,
           "hash": "4e02cd8a"
         },
         {
           "type": "paragraph",
           "text": "<p>Franz Schelke</p>",
-          "index": 2593,
+          "index": 2587,
           "hash": "98658972"
         },
         {
           "type": "paragraph",
           "text": "<p>Christian Aschoff</p>",
-          "index": 2594,
+          "index": 2588,
           "hash": "a5475384"
         },
         {
           "type": "paragraph",
           "text": "<p><a href=\"https://www.kissshirts.de/\" rel=\"noopener noreferrer\" target=\"_blank\">Kissshirts.de</a></p>",
-          "index": 2595,
+          "index": 2589,
           "hash": "61481e00"
         },
         {
           "type": "paragraph",
+          "text": "<p><em>Kontakt & Feedback</em></p>",
+          "index": 2590,
+          "hash": "091f2db7"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Hier kannst du <a href=\"https://linktr.ee/hollow_white\" rel=\"noopener noreferrer\" target=\"_blank\">Kontakt</a> mit uns aufnehmen.</p>",
+          "index": 2591,
+          "hash": "7f4ceacb"
+        },
+        {
+          "type": "paragraph",
           "text": "<p><em>Zusammen etwas Gutes tun</em></p>",
-          "index": 2596,
+          "index": 2592,
           "hash": "4335f769"
         },
         {
           "type": "paragraph",
-          "text": "<p>Effective Altruism, die Organisation hinter Giving What We Can, stellt sicher, dass ihre Spende so wirkungsvoll wie möglich ist: <a href=\"https://www.givingwhatwecan.org/donate/organizations?utm_source=hollowwhite&utm_medium=webapp&utm_campaign=beta_release&utm_id=hollowwhitebeta\" rel=\"noopener noreferrer\" target=\"_blank\">Jetzt mehr erfahren und unterstützen.</a></p>",
-          "index": 2597,
-          "hash": "188d85d6"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p><em>Feedback und Kontakt</em></p>",
-          "index": 2598,
-          "hash": "7ff1ef06"
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>Wir freuen uns über dein <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfFvQn86vGWkSfUPzoax417FXUGDPwXopJRLxtUUS6orJuixQ/viewform?usp=sf_link\" rel=\"noopener noreferrer\" target=\"_blank\">Feedback</a> oder von dir zu hören. Hier kannst du <a href=\"mailto:feedback@hollowwhite.de\" rel=\"noopener noreferrer\" target=\"_blank\">Kontakt</a> mit uns aufnehmen.</p>",
-          "index": 2599,
-          "hash": "648c10da"
+          "text": "<p>Effective Altruism, die Organisation hinter Giving What We Can, stellt sicher, dass deine Spende so wirkungsvoll wie möglich ist: <a href=\"https://www.givingwhatwecan.org/donate/organizations?utm_source=hollowwhite&utm_medium=webapp&utm_campaign=beta_release&utm_id=hollowwhitebeta\" rel=\"noopener noreferrer\" target=\"_blank\">Jetzt mehr erfahren und unterstützen.</a></p>",
+          "index": 2593,
+          "hash": "3511288b"
         }
       ],
       "next": [
@@ -21791,91 +21753,91 @@ const book: Book = (({
         {
           "type": "paragraph",
           "text": "<p><em>Angaben gem. § 5 TMG</em></p>",
-          "index": 2600,
+          "index": 2594,
           "hash": "0d4554b1"
         },
         {
           "type": "paragraph",
           "text": "<p>Thomas Kiris</p>",
-          "index": 2601,
+          "index": 2595,
           "hash": "44232db7"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Kontaktaufnahme</em></p>",
-          "index": 2602,
+          "index": 2596,
           "hash": "13582252"
         },
         {
           "type": "paragraph",
           "text": "<p>E-Mail: info@hollowwhite.de</p>",
-          "index": 2603,
+          "index": 2597,
           "hash": "65955022"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Haftung für Inhalte</em></p>",
-          "index": 2604,
+          "index": 2598,
           "hash": "e5adc0e0"
         },
         {
           "type": "paragraph",
           "text": "<p>Alle Inhalte unseres Internetauftritts wurden mit größter Sorgfalt und nach bestem Gewissen erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.</p>",
-          "index": 2605,
+          "index": 2599,
           "hash": "22476703"
         },
         {
           "type": "paragraph",
           "text": "<p>Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntniserlangung einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von den o.g. Rechtsverletzungen werden wir diese Inhalte unverzüglich entfernen.</p>",
-          "index": 2606,
+          "index": 2600,
           "hash": "1928416a"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Haftungsbeschränkung für externe Links</em></p>",
-          "index": 2607,
+          "index": 2601,
           "hash": "323a4c46"
         },
         {
           "type": "paragraph",
           "text": "<p>Unsere Webseite enthält Links auf externe Webseiten Dritter. Auf die Inhalte dieser direkt oder indirekt verlinkten Webseiten haben wir keinen Einfluss. Daher können wir für die „externen Links“ auch keine Gewähr auf Richtigkeit der Inhalte übernehmen. Für die Inhalte der externen Links sind die jeweiligen Anbieter oder Betreiber (Urheber) der Seiten verantwortlich.</p>",
-          "index": 2608,
+          "index": 2602,
           "hash": "cb90cd3c"
         },
         {
           "type": "paragraph",
           "text": "<p>Die externen Links wurden zum Zeitpunkt der Linksetzung auf eventuelle Rechtsverstöße überprüft und waren im Zeitpunkt der Linksetzung frei von rechtswidrigen Inhalten. Eine ständige inhaltliche Überprüfung der externen Links ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht möglich. Bei direkten oder indirekten Verlinkungen auf die Webseiten Dritter, die außerhalb unseres Verantwortungsbereichs liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall nur bestehen, wenn wir von den Inhalten Kenntnis erlangen und es uns technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern.</p>",
-          "index": 2609,
+          "index": 2603,
           "hash": "5ab63440"
         },
         {
           "type": "paragraph",
           "text": "<p>Diese Haftungsausschlusserklärung gilt auch innerhalb des eigenen Internetauftrittes „hollowwhite.de“ gesetzten Links und Verweise von Fragestellern, Blogeinträgern, Gästen des Diskussionsforums. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargestellten Informationen entstehen, haftet allein der Diensteanbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.</p>",
-          "index": 2610,
+          "index": 2604,
           "hash": "5eac54a6"
         },
         {
           "type": "paragraph",
           "text": "<p>Werden uns Rechtsverletzungen bekannt, werden die externen Links durch uns unverzüglich entfernt.</p>",
-          "index": 2611,
+          "index": 2605,
           "hash": "fb1ec3ee"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Urheberrecht</em></p>",
-          "index": 2612,
+          "index": 2606,
           "hash": "c5f7aa62"
         },
         {
           "type": "paragraph",
           "text": "<p>Die auf unserer Webseite veröffentlichen Inhalte und Werke unterliegen dem deutschen Urheberrecht (http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf) . Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung des geistigen Eigentums in ideeller und materieller Sicht des Urhebers außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Urhebers i.S.d. Urhebergesetzes (http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf&nbsp;). Downloads und Kopien dieser Seite sind nur für den privaten und nicht kommerziellen Gebrauch erlaubt. Sind die Inhalte auf unserer Webseite nicht von uns erstellt wurden, sind die Urheberrechte Dritter zu beachten. Die Inhalte Dritter werden als solche kenntlich gemacht. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte unverzüglich entfernen.</p>",
-          "index": 2613,
+          "index": 2607,
           "hash": "9fc1d61a"
         },
         {
           "type": "paragraph",
           "text": "<p>Dieses Impressum&nbsp;wurde freundlicherweise von <a href=\"https://jurarat.de/\" rel=\"noopener noreferrer\" target=\"_blank\">jurarat.de</a>&nbsp;zur Verfügung gestellt.</p>",
-          "index": 2614,
+          "index": 2608,
           "hash": "39935030"
         }
       ],
@@ -21888,19 +21850,19 @@ const book: Book = (({
         {
           "type": "paragraph",
           "text": "<p><em>Unterstützen</em></p>",
-          "index": 2615,
+          "index": 2609,
           "hash": "aad92a18"
         },
         {
           "type": "paragraph",
           "text": "<p>Hollow White ist ein gemeinnütziges Projekt. Wenn du uns unterstützen möchtest, kannst du natürlich das Projekt teilen, aber du kannst uns auch erlauben, dir bei der Benutzung über die Schulter zu schauen, damit wir sehen können, wie Hollow White verwendet wird und wo wir noch etwas verbessern können. Das alles passiert natürlich anonymisiert. Für das Tracking verwenden wir Google Analytics.</p>",
-          "index": 2616,
+          "index": 2610,
           "hash": "46344d8f"
         },
         {
           "type": "paragraph",
           "text": "<p><em>Aber es ist natürlich deine ganz freie Entscheidung.</em></p>",
-          "index": 2617,
+          "index": 2611,
           "hash": "30654dac"
         }
       ],

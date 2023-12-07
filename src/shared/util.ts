@@ -30,7 +30,9 @@ function _logJson(f = console.log, message: string, ...data: any[]) {
   f.apply(console, [message, ...(data.map(o => JSON.stringify(o, undefined, ' ')))]);
 }
 
-export function log<T>(message: string, o?: T, ...rest: any[]): T | undefined {
+export function log<T>(message: string, o: T, ...rest: any[]): T;
+export function log<T>(message: string, ...rest: any[]): undefined;
+export function log<T>(message: string, o: T, ...rest: any[]) {
   _log(console.log, message, [o, ...rest]);
   return o;
 }
