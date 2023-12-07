@@ -135,6 +135,7 @@ export default class Read extends TextBase {
 
   beforeSectionChanged() {
     log('Read.beforeSectionChanged');
+    this.playbackFailed = false;
     this.togglePlayPause(false);
     resetVisibleParagraphs();
     this.loader?.cancel();
@@ -180,6 +181,7 @@ export default class Read extends TextBase {
       // problem: it might be an audio file that doesn't exist (item text)
       // expected: it should notice 404 on first try and not try again
       // todo: what to return here ? error ? undefined ?
+      // solution: return special error object with "abort" which means "skip this file"
       logJson('Read.playTrack: error loading track', e);
       if (isError(e) && e.abort) {
         this.next(); // skip 404 errors
