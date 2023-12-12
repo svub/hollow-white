@@ -28,7 +28,7 @@ export class TextBase extends Vue {
       } else {
         try { await navigator.share(data); }
         catch (e) {
-          if ((e+'').indexOf('AbortError') < 0) nativeFailed = true;
+          if ((e + '').indexOf('AbortError') < 0) nativeFailed = true;
         }
       }
     }
