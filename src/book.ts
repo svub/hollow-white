@@ -72,6 +72,11 @@ const book: Book = (({
               "title": "Kapitel 1",
               "chapterId": "1",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -1873,6 +1878,11 @@ const book: Book = (({
               "title": "Kapitel 2",
               "chapterId": "2",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -3463,6 +3473,11 @@ const book: Book = (({
               "title": "Kapitel 3",
               "chapterId": "3",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -5881,6 +5896,11 @@ const book: Book = (({
               "title": "Kapitel 4",
               "chapterId": "4",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -8243,6 +8263,11 @@ const book: Book = (({
               "title": "Kapitel 5",
               "chapterId": "5",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -11195,6 +11220,11 @@ const book: Book = (({
               "title": "Kapitel 6",
               "chapterId": "6",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -12728,6 +12758,11 @@ const book: Book = (({
               "title": "Kapitel 7",
               "chapterId": "7",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -14843,6 +14878,11 @@ const book: Book = (({
               "title": "Kapitel 8",
               "chapterId": "8",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -16157,6 +16197,11 @@ const book: Book = (({
               "title": "Kapitel 9",
               "chapterId": "9",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -17241,6 +17286,11 @@ const book: Book = (({
               "title": "Kapitel 10",
               "chapterId": "10",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -18966,6 +19016,11 @@ const book: Book = (({
               "title": "Kapitel 11",
               "chapterId": "11",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -21097,6 +21152,11 @@ const book: Book = (({
               "title": "Epilog",
               "chapterId": "12",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
@@ -21294,6 +21354,11 @@ const book: Book = (({
               "title": "Ende",
               "chapterId": "13",
               "sectionId": "001"
+            },
+            {
+              "title": "Hollow White mit anderen teilen",
+              "id": "share",
+              "data": "https://hollowwhite.de"
             }
           ]
         }
