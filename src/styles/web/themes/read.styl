@@ -158,11 +158,11 @@
     position fixed
     bottom 0
     pad = 60px
-    // width "calc(%s - 2rem + 1px)" % maxWidth
-    width calc(100% - 2rem + 1px)
-    // @supports (-webkit-touch-callout: none) {
-    //   width "calc(%s - 3.7rem)" % maxWidth
-    // }
+    width "calc(%s - 2rem + 1px)" % maxWidth
+    // width calc(100% - 2rem + 1px)
+    @supports (-webkit-touch-callout: none) {
+      width "calc(%s - 3.7rem)" % maxWidth
+    }
     z-index 3
     padding pad
     background @css { linear-gradient(rgba(var(--bgColorRgb), 0), var(--bgColor)) }
