@@ -48,8 +48,8 @@
             margin 0
             display inline
           &.paragraph.current
-            &, & p, & h1, & h2, & h3, & em
-              color: var(--currentParagraph)
+            &, & p, & h1, & h2, & h3
+              color var(--currentParagraph)
 
         .style
           &.note-black p
@@ -159,6 +159,7 @@
     bottom 0
     pad = 60px
     width "calc(%s - 2rem + 1px)" % maxWidth
+    // width calc(100% - 2rem + 1px)
     @supports (-webkit-touch-callout: none) {
       width "calc(%s - 3.7rem)" % maxWidth
     }

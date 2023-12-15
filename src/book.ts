@@ -14526,15 +14526,15 @@ const book: Book = (({
             },
             {
               "type": "paragraph",
-              "text": "<p>Dir wird schnell klar, dass es sich nicht um eine Uhrzeit, sondern um eine Zimmernummer im <em>Midnight Motel</em>&nbsp;handelt. Welches Genie hat sich das denn ausgedacht?</p>",
+              "text": "<p>Dir wird schnell klar, dass es sich nicht um eine Uhrzeit, sondern um eine Zimmernummer im <em>Motel Midnight</em>&nbsp;handelt. Welches Genie hat sich das denn ausgedacht?</p>",
               "index": 1674,
-              "hash": "2f5ee0b7"
+              "hash": "381e5bc9"
             },
             {
               "type": "paragraph",
-              "text": "<p>Als du vor der Tür 00:22 stehst, wird dir ganz anderes. Du atmest schwer. Deine Hoffnung ist so groß, dass du zum ersten Mal deine kleine Hannah in die Arme schließen kannst. Du gehst zur Tür, atmest tief durch und klopfst.</p>",
+              "text": "<p>Als du vor der Tür 00:22 stehst, wird dir ganz anders. Du atmest schwer. Deine Hoffnung ist so groß, dass du zum ersten Mal deine kleine Hannah in die Arme schließen kannst. Du gehst zur Tür, atmest tief durch und klopfst.</p>",
               "index": 1675,
-              "hash": "d4a564a4"
+              "hash": "1284277f"
             },
             {
               "type": "paragraph",
@@ -14868,9 +14868,9 @@ const book: Book = (({
             },
             {
               "type": "paragraph",
-              "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Hotel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>",
+              "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Motel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>",
               "index": 1718,
-              "hash": "7a130c7b"
+              "hash": "7e1b8500"
             }
           ],
           "next": [
@@ -17216,9 +17216,9 @@ const book: Book = (({
             },
             {
               "type": "paragraph",
-              "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Hotel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>",
+              "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Motel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>",
               "index": 2004,
-              "hash": "7a130c7b"
+              "hash": "7e1b8500"
             },
             {
               "type": "paragraph",
@@ -18904,9 +18904,9 @@ const book: Book = (({
             },
             {
               "type": "paragraph",
-              "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Hotel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>",
+              "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Motel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>",
               "index": 2205,
-              "hash": "7a130c7b"
+              "hash": "7e1b8500"
             },
             {
               "type": "paragraph",
@@ -20944,9 +20944,9 @@ const book: Book = (({
             },
             {
               "type": "paragraph",
-              "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Hotel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>",
+              "text": "<p>Die Spur führt Judy und Cara in einer eiskalten Nacht ins Motel Midnight. Dort begegnet sie einer alten Frau mit schneeweißem Haar.</p>",
               "index": 2478,
-              "hash": "7a130c7b"
+              "hash": "7e1b8500"
             },
             {
               "type": "paragraph",
@@ -21500,9 +21500,9 @@ const book: Book = (({
             },
             {
               "type": "paragraph",
-              "text": "<p><em>Effective Altruism</em>, die Organisation hinter Giving What We Can, stellt sicher, dass ihre Spende so wirkungsvoll wie möglich ist: <a href=\"https://www.givingwhatwecan.org/donate/organizations?utm_source=hollowwhite&utm_medium=webapp&utm_campaign=christmas2023&utm_id=hollowwhite2023\" rel=\"noopener noreferrer\" target=\"_blank\">Jetzt mehr erfahren und unterstützen</a>.</p>",
+              "text": "<p><em>Effective Altruism</em>, die Organisation hinter Giving What We Can, stellt sicher, dass deine Spende so wirkungsvoll wie möglich ist: <a href=\"https://www.givingwhatwecan.org/donate/organizations?utm_source=hollowwhite&utm_medium=webapp&utm_campaign=christmas2023&utm_id=hollowwhite2023\" rel=\"noopener noreferrer\" target=\"_blank\">Jetzt mehr erfahren und unterstützen</a>.</p>",
               "index": 2547,
-              "hash": "91c332f6"
+              "hash": "01f2d364"
             }
           ],
           "next": [
