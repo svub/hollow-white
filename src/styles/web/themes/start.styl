@@ -2,7 +2,14 @@
   text-align center
   // asset('start-background.jpg')
   assetx('start-background', 'jpg', 2)
-  background-size cover  
+  background-size cover
+  background-position center
+  // iOS Safari does not resolve `min-height: 100%` through the stretched
+  // flex parents (html > body > main), so the page collapsed to its content
+  // height. Give the start page an explicit viewport height instead.
+  // 100dvh follows the visible area when Safari's toolbars show/hide.
+  min-height 100vh
+  min-height 100dvh
 
   .title
     flex 2
