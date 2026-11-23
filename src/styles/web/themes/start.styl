@@ -66,8 +66,24 @@
       background-image -webkit-image-set(url(s("%s.jpg", base)) 1x, url(s("%s@2x.jpg", base)) 2x)
       background-image image-set(url(s("%s.jpg", base)) 1x, url(s("%s@2x.jpg", base)) 2x)
 
+  // Edge colours of the image (top / bottom rows). Safari 26 tints the
+  // status bar and toolbar areas from the page colours, so they must not be
+  // black here; App.vue also uses --startTop as theme-color.
+  html.dark-theme.page-start
+    --startTop #2e424f
+    --startBottom #19252e
+  html.light-theme.page-start
+    --startTop #d6e0e6
+    --startBottom #ccd1d6
+
+  html.page-start
+    background-color var(--startBottom)
+
+  // transparent so Safari does not pick this fixed layer's colour for the bars
+  html.page-start body::before
+    background-color transparent
+
   html.page-start, html.page-start body::before
-    background-color #000
     background-repeat no-repeat
     background-size cover
     background-position center
