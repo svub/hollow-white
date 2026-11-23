@@ -29,4 +29,8 @@ main
     max-width 100%
     flex-column()
     padding pad
+    // safe areas are non-zero only with viewport-fit=cover (start page,
+    // home-screen app); keep content clear of status bar and home indicator
+    padding-top "calc(%s + env(safe-area-inset-top))" % pad
+    padding-bottom "calc(%s + env(safe-area-inset-bottom))" % pad
 

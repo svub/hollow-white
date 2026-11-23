@@ -138,14 +138,18 @@ export default class App extends Vue {
     this.updateViewportFit();
   }
 
-  // Only the start page draws edge to edge (under the status bar and the
-  // home indicator / Safari toolbar), so only it gets viewport-fit=cover.
-  // Other pages keep the default safe-area layout.
+  // In the Safari tab only the start page draws edge to edge (under the
+  // status bar and the home indicator / toolbar), so only it gets
+  // viewport-fit=cover. Opened from the home screen (standalone, translucent
+  // status bar) every page draws under the status bar, so cover is always on
+  // there and the pages pad themselves with env(safe-area-inset-*).
   updateViewportFit() {
     const meta = document.querySelector('meta[name="viewport"]');
     if (!meta) return;
+    const standalone = (navigator as any).standalone === true
+      || window.matchMedia('(display-mode: standalone)').matches;
     const base = (meta.getAttribute('content') || '').replace(/,\s*viewport-fit=\w+/g, '');
-    meta.setAttribute('content', base + (this.page === 'start' ? ', viewport-fit=cover' : ''));
+    meta.setAttribute('content', base + (standalone || this.page === 'start' ? ', viewport-fit=cover' : ''));
 
     // Safari tints the status bar / toolbar areas; on the start page use the
     // image's edge colour (--startTop, set in start.styl on phones) instead
