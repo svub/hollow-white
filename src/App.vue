@@ -146,6 +146,15 @@ export default class App extends Vue {
     if (!meta) return;
     const base = (meta.getAttribute('content') || '').replace(/,\s*viewport-fit=\w+/g, '');
     meta.setAttribute('content', base + (this.page === 'start' ? ', viewport-fit=cover' : ''));
+
+    // Safari tints the status bar / toolbar areas; on the start page use the
+    // image's edge colour (--startTop, set in start.styl on phones) instead
+    // of black. Everything else keeps the original #000000.
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) {
+      const startTop = getComputedStyle(document.documentElement).getPropertyValue('--startTop').trim();
+      themeColor.setAttribute('content', this.page === 'start' && startTop ? startTop : '#000000');
+    }
   }
 
   async closeOverlay() {
