@@ -135,6 +135,17 @@ export default class App extends Vue {
     document.documentElement.className = Object.values(this.options).join(' ')
       + (this.overlay ? ' overlay-open' : '')
       + (this.page ? ` page-${this.page}` : '');
+    this.updateViewportFit();
+  }
+
+  // Only the start page draws edge to edge (under the status bar and the
+  // home indicator / Safari toolbar), so only it gets viewport-fit=cover.
+  // Other pages keep the default safe-area layout.
+  updateViewportFit() {
+    const meta = document.querySelector('meta[name="viewport"]');
+    if (!meta) return;
+    const base = (meta.getAttribute('content') || '').replace(/,\s*viewport-fit=\w+/g, '');
+    meta.setAttribute('content', base + (this.page === 'start' ? ', viewport-fit=cover' : ''));
   }
 
   async closeOverlay() {
