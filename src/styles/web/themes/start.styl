@@ -51,26 +51,43 @@
       &.options
         display none
 
-// Phones: put the start background on the root element instead of on
-// .page.start. The root background paints the whole canvas, so on iOS Safari
-// it also shows behind the status bar, the translucent toolbars / home
-// indicator and during overscroll, where a background on .page.start left
-// black bars. Wider screens keep the 450px column (the image is portrait and
-// would be upscaled). App.vue sets `page-<name>` on <html> for this.
+// Phones: draw the start background edge to edge. App.vue adds
+// `page-<name>` to <html> and switches the viewport to viewport-fit=cover on
+// the start page, so the page may draw under the status bar and the home
+// indicator / Safari toolbar. The image sits on a fixed layer that is as tall
+// as the large viewport (100lvh), so it also fills the area behind Safari's
+// toolbars; the root background is a fallback for overscroll. Wider screens
+// keep the 450px column (the image is portrait and would be upscaled).
 @media (max-width: maxWidth)
   for theme in themes
     base = s("/assets/%s/start-background", unquote(theme))
-    html.{theme}.page-start
-      background-color #000
+    html.{theme}.page-start, html.{theme}.page-start body::before
       background-image url(s("%s.jpg", base))
       background-image -webkit-image-set(url(s("%s.jpg", base)) 1x, url(s("%s@2x.jpg", base)) 2x)
       background-image image-set(url(s("%s.jpg", base)) 1x, url(s("%s@2x.jpg", base)) 2x)
-      background-repeat no-repeat
-      background-size cover
-      background-position center
+
+  html.page-start, html.page-start body::before
+    background-color #000
+    background-repeat no-repeat
+    background-size cover
+    background-position center
+
+  html.page-start body::before
+    content ''
+    position fixed
+    top 0
+    left 0
+    right 0
+    height 100vh
+    height 100lvh
+    z-index -1
+    pointer-events none
 
   html.page-start body, html.page-start main
     background transparent
 
   html.page-start .page.start
     background-image none
+
+    .buttons
+      padding-bottom calc(26px + env(safe-area-inset-bottom))
