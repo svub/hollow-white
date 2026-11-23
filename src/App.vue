@@ -130,8 +130,11 @@ export default class App extends Vue {
 
   @Watch('options', { deep: true, immediate: true })
   @Watch('overlay', { immediate: true })
+  @Watch('page', { immediate: true })
   updateClasses() {
-    document.documentElement.className = Object.values(this.options).join(' ') + (this.overlay ? ' overlay-open' : '');
+    document.documentElement.className = Object.values(this.options).join(' ')
+      + (this.overlay ? ' overlay-open' : '')
+      + (this.page ? ` page-${this.page}` : '');
   }
 
   async closeOverlay() {
