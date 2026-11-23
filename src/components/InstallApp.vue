@@ -242,13 +242,14 @@ sheetBg = #12191f
 
   h3
     margin 6px 0
+    padding-right 44px // keep clear of the close button
     font-size 21px
     font-weight 500
-    text-align center
+    text-align left
 
   .lead
     margin 0 0 18px
-    text-align center
+    text-align left
     font-size 15px
     color rgba(255, 255, 255, .7)
 
