@@ -7,15 +7,15 @@
     span Als App installieren
 
   transition(name="install-hint")
-    .install-hint(v-if="showIosHint" @click.self="close")
+    .install-hint(v-if="showHint" @click.self="close")
       .sheet(role="dialog" aria-modal="true" aria-labelledby="install-hint-title")
         .grab
         button.x(@click="close" aria-label="Schließen")
           svg(viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true")
             path(d="M6 6l12 12M18 6L6 18")
         h3#install-hint-title Hollow White als App
-        p.lead Ohne App Store – in 4 kurzen Schritten.
-        ol
+        p.lead(v-if="ios") Ohne App Store – in 4 kurzen Schritten.
+        ol(v-if="ios")
           li
             span.n 1
             span.t Tippe unten in der Adressleiste auf das #[b Menü-Symbol].
@@ -42,10 +42,34 @@
             span.i
               svg(viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true")
                 path(d="M5 12.5l4.5 4.5L19 7.5")
-        p.tip
+        p.tip(v-if="ios")
           | Kein Menü-Symbol zu sehen? Dann tippe direkt auf das Teilen-Symbol unten in der Leiste.
           br
           | Gut zu wissen: Die App startet mit einem eigenen, neuen Spielstand.
+        p.lead(v-if="!ios") Ohne App Store – in 3 kurzen Schritten.
+        ol(v-if="!ios")
+          li
+            span.n 1
+            span.t Tippe im Browser oben rechts auf das #[b Menü] (drei Punkte).
+            span.i
+              svg(viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true")
+                circle(cx="12" cy="5" r="1.8")
+                circle(cx="12" cy="12" r="1.8")
+                circle(cx="12" cy="19" r="1.8")
+          li
+            span.n 2
+            span.t Wähle #[b App installieren] oder #[b Zum Startbildschirm hinzufügen].
+            span.i
+              svg(viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true")
+                rect(x="6" y="2.5" width="12" height="19" rx="2.5")
+                path(d="M12 8v6M9 11l3 3 3-3")
+          li
+            span.n 3
+            span.t Bestätige mit #[b Installieren].
+            span.i
+              svg(viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true")
+                path(d="M5 12.5l4.5 4.5L19 7.5")
+        p.tip(v-if="!ios") Gut zu wissen: Dein Spielstand bleibt in der App erhalten.
         button.ok(@click="close") Alles klar
 </template>
 
@@ -81,21 +105,29 @@ function isIos(): boolean {
     || (ua.includes('Macintosh') && navigator.maxTouchPoints > 1); // iPadOS
 }
 
+function isAndroid(): boolean {
+  return /Android/.test(navigator.userAgent);
+}
+
 /**
  * "Als App installieren" on the start page.
- * - Android (Chrome, Edge, Samsung Internet): opens the native install dialog.
- * - iOS: Safari has no install API, so it shows a short how-to sheet.
- * Hidden inside the installed app, on desktop and in browsers that can't install.
+ * - Android: opens the native install dialog when the browser offers it
+ *   (Chrome fires `beforeinstallprompt` only after some engagement), otherwise
+ *   a short how-to sheet for the browser menu.
+ * - iOS: Safari has no install API, so it shows a how-to sheet.
+ * Hidden inside the installed app and on desktop.
  */
 @Component({ name: 'InstallApp' })
 export default class InstallApp extends Vue {
-  showIosHint = false;
+  showHint = false;
   ios = isIos();
+  android = isAndroid();
   standalone = isStandalone();
 
   get visible(): boolean {
     if (this.standalone || installState.installed) return false;
-    if (this.ios) return true;
+    if (this.ios || this.android) return true;
+    // other touch devices only when the browser offers installation
     return !!installState.prompt && window.matchMedia('(pointer: coarse)').matches;
   }
 
@@ -109,13 +141,13 @@ export default class InstallApp extends Vue {
       } finally {
         installState.prompt = null; // a prompt event can only be used once
       }
-    } else if (this.ios) {
-      this.showIosHint = true;
+    } else if (this.ios || this.android) {
+      this.showHint = true;
     }
   }
 
   close() {
-    this.showIosHint = false;
+    this.showHint = false;
   }
 }
 </script>
