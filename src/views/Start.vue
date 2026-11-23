@@ -1,5 +1,6 @@
 <template lang="pug">
 .page.start
+  InstallApp
   .title
     .logo
     h1 {{ book.title }}
@@ -22,9 +23,11 @@ import keys from 'lodash/keysIn';
 import book from "../book";
 import { Specials } from "../shared/entities";
 import { Position } from "../store";
+import InstallApp from "../components/InstallApp.vue";
 
 @Component({
   name: "Start",
+  components: { InstallApp },
 })
 export default class Start extends Vue {
   @Action start!: Function;
